@@ -40,8 +40,8 @@
       seasons: 'Browse all seasons',
     };
     const WEBSITE_NAV_SECTIONS = [
-      { title: 'Database', items: ['operators', 'gadgets', 'maps', 'seasons'] },
-      { title: 'Personal', items: ['favorites', 'settings'] },
+      { label: 'Database', ids: ['operators', 'gadgets', 'maps', 'seasons'] },
+      { label: 'Personal', ids: ['favorites', 'settings'] },
     ];
     const NAV_EXTRA_LABELS = {};
     const getNavDisplayLabel = (id) => {

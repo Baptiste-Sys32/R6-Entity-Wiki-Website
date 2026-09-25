@@ -13,27 +13,64 @@
   <meta property="og:title" content="Siege Wiki - Rainbow Six Siege Database">
   <meta property="og:description" content="Operators, gadgets, maps and seasons for Rainbow Six Siege - a free fan-made companion.">
   <meta property="og:url" content="https://r6-siege-wiki.pages.dev/">
+  <meta property="og:image" content="https://r6-siege-wiki.pages.dev/assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Siege Wiki - fan-made Rainbow Six Siege database">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Siege Wiki - Rainbow Six Siege Database">
+  <meta name="twitter:description" content="Operators, gadgets, maps and seasons for Rainbow Six Siege - a free fan-made companion.">
+  <meta name="twitter:image" content="https://r6-siege-wiki.pages.dev/assets/og-cover.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Siege Wiki",
+    "alternateName": "R6 Siege Wiki",
     "url": "https://r6-siege-wiki.pages.dev/",
     "description": "Free fan-made Rainbow Six Siege database: operators, gadgets, maps and seasons.",
     "inLanguage": "en"
   }
   </script>
-  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
   <script src="./vendor/react.production.min.js"></script>
   <script src="./vendor/react-dom.production.min.js"></script>
   <script src="./vendor/babel.min.js"></script>
   <script src="./vendor/tailwindcss.min.js"></script>
   <script>
+    /* Codex palette remap: warm bone-gray zinc/slate scales + Codex red.
+       Utilities keep their roles (900 = panel, 500 = dim, 300 = faint text). */
     tailwind.config = {
       theme: {
         extend: {
-          borderRadius: { lg: '7px', xl: '9px', '2xl': '11px', '3xl': '13px' },
-          fontFamily: { serif: ['Bitter', 'Georgia', 'serif'] }
+          borderRadius: {
+            lg: '7px', xl: '9px', '2xl': '11px', '3xl': '13px'
+          },
+          fontFamily: {
+            serif: ['Bitter', 'Georgia', 'serif'],
+          },
+          colors: {
+            zinc: {
+              50: '#f4f2ee', 100: '#e8e5df', 200: '#d8d4ca', 300: '#b5afa4',
+              400: '#8f8a80', 500: '#6e6a63', 600: '#4a4741', 700: '#332f2c',
+              800: '#191715', 900: '#0e0d0c', 950: '#050505'
+            },
+            slate: {
+              50: '#f4f2ee', 100: '#e8e5df', 200: '#d8d4ca', 300: '#b5afa4',
+              400: '#8f8a80', 500: '#6e6a63', 600: '#4a4741', 700: '#332f2c',
+              800: '#191715', 900: '#0e0d0c', 950: '#050505'
+            },
+            neutral: {
+              50: '#f4f2ee', 100: '#e8e5df', 200: '#d8d4ca', 300: '#b5afa4',
+              400: '#8f8a80', 500: '#6e6a63', 600: '#4a4741', 700: '#332f2c',
+              800: '#191715', 900: '#0e0d0c', 950: '#050505'
+            },
+            red: {
+              50: '#fff1f0', 100: '#ffdfdd', 200: '#ffc4c1', 300: '#ff9a95',
+              400: '#ff6b63', 500: '#ff3b30', 600: '#e02d23', 700: '#b81f17',
+              800: '#7a130e', 900: '#4a0e0a', 950: '#2a0806'
+            }
+          }
         }
       }
     };
@@ -42,6 +79,22 @@
 </head>
 
 <body>
+  <div id="launch-overlay" class="launch-overlay" aria-live="polite">
+    <div class="launch-stage">
+      <img class="launch-logo" src="./assets/loading/r6-logo-static.png" alt="Siege Wiki logo">
+      <p class="launch-status">Loading</p>
+      <div class="launch-progress-wrap" aria-hidden="true">
+        <div class="launch-progress">
+          <div class="launch-progress-track"></div>
+          <div class="launch-progress-fill"></div>
+        </div>
+      </div>
+      <div class="launch-tip">
+        <span class="launch-tip-label">Tip</span>
+        <p id="launch-overlay-tip" class="launch-tip-text">Drone first, peek second.</p>
+      </div>
+    </div>
+  </div>
   <div id="root"></div>
   <script>
     window.__r6MissingDataScripts = [];
@@ -51,6 +104,43 @@
     };
   </script>
   <script src="data.js" onerror="window.__r6DataScriptError('data.js')"></script>
+  <script>
+    (() => {
+      const LAUNCH_TIPS = [
+        'Drone first, peek second.',
+        'Vertical play wins rounds. Open the floor above the site.',
+        'A default plant beats a hero play.',
+        'Mute jammers stop more than drones.',
+        'Reinforce the right walls, not every wall.',
+        'Sound is intel. Stop sprinting when it matters.',
+        'One ping can save a round. Ping the defuser.',
+        'Check your corners, then check them again.',
+        'Utility wins executes. Save a smoke for the plant.',
+        'Nerf Jackal.',
+        'Do not peek everything at once.',
+        'The defuser wins games. Protect the carrier.',
+      ];
+      const overlay = document.getElementById('launch-overlay');
+      const tipEl = document.getElementById('launch-overlay-tip');
+      const startedAt = Date.now();
+      const LAUNCH_OVERLAY_MIN_MS = 400;
+      if (tipEl) {
+        tipEl.textContent = LAUNCH_TIPS[Math.floor(Math.random() * LAUNCH_TIPS.length)];
+      }
+      window.__hideLaunchOverlay = (immediate = false) => {
+        if (!overlay || overlay.dataset.hidden === 'true') return;
+        const hide = () => {
+          if (overlay.dataset.hidden === 'true') return;
+          overlay.dataset.hidden = 'true';
+          overlay.classList.add('launch-overlay--hidden');
+          window.setTimeout(() => overlay.remove(), 640);
+        };
+        const minDuration = immediate ? 0 : LAUNCH_OVERLAY_MIN_MS;
+        const remaining = Math.max(0, startedAt + minDuration - Date.now());
+        window.setTimeout(hide, remaining);
+      };
+    })();
+  </script>
   <script type="text/babel" src="./engine/icons.js"></script>
   <script type="text/babel" src="./engine/core.js"></script>
   <script type="text/babel" src="./engine/theme.js"></script>
@@ -404,51 +494,224 @@
 
     /* ------------------------------- shell -------------------------------- */
 
-    const DesktopHeader = ({ currentView, setView }) => (
-      <header className="website-topbar hidden md:flex items-center gap-6 px-6 h-16 shrink-0" style={{ borderBottom: '1px solid var(--stroke)', background: 'var(--nav-bg)' }}>
-        <button type="button" onClick={() => setView('home')} className="flex items-center gap-3">
-          <span className="text-lg font-bold tracking-wide" style={{ color: 'var(--text)', fontFamily: 'var(--font-display)' }}>SIEGE <span style={{ color: '#3da5e0' }}>WIKI</span></span>
-        </button>
-        <nav className="flex items-center gap-1">
-          {ALL_NAV_OPTIONS.map((opt) => (
-            <button key={opt.id} type="button" onClick={() => setView(opt.id)} className="rounded-full px-4 py-1.5 text-sm font-semibold" style={{ background: currentView === opt.id ? 'var(--chip)' : 'transparent', color: currentView === opt.id ? 'var(--text)' : 'var(--muted)' }}>{opt.label}</button>
-          ))}
-        </nav>
-      </header>
-    );
-
-    const MobileHeader = ({ title, onOpenDrawer, onOpenSettings }) => (
-      <header className="md:hidden flex items-center gap-3 px-4 h-14 shrink-0" style={{ borderBottom: '1px solid var(--stroke)', background: 'var(--nav-bg)' }}>
-        <button type="button" onClick={onOpenDrawer} aria-label="Open sections" className="p-2" style={{ color: 'var(--text)' }}>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
-        </button>
-        <span className="flex-1 truncate text-base font-bold" style={{ color: 'var(--text)', fontFamily: 'var(--font-display)' }}>{title}</span>
-        <button type="button" onClick={onOpenSettings} aria-label="Open settings" className="p-2" style={{ color: 'var(--text)' }}><Icons.Gear width={20} height={20} /></button>
-      </header>
-    );
-
-    const Sidebar = ({ currentView, setView }) => (
-      <aside className="website-sidebar hidden md:flex flex-col w-60 shrink-0 px-3 py-4 gap-6 overflow-y-auto" style={{ borderRight: '1px solid var(--stroke)' }}>
-        {WEBSITE_NAV_SECTIONS.map((section) => (
-          <div key={section.title}>
-            <p className="px-3 mb-1 text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: 'var(--muted)' }}>{section.title}</p>
-            {section.items.map((id) => {
-              const opt = ALL_NAV_OPTIONS.find((o) => o.id === id);
-              if (!opt) return null;
-              const Icon = Icons[NAV_ICON_MAP[id]] || Icons.Info;
-              const count = id === 'operators' ? OPERATORS.length : id === 'maps' ? MAPS.length : id === 'seasons' ? SEASONS.length : null;
-              return (
-                <button key={id} type="button" onClick={() => setView(id)} className="w-full flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-semibold" style={{ background: currentView === id ? 'var(--chip)' : 'transparent', color: currentView === id ? 'var(--text)' : 'var(--muted)' }}>
-                  <Icon width={17} height={17} />{opt.label}
-                  {count !== null ? <span className="ml-auto text-xs" style={{ color: 'var(--muted)' }}>{count}</span> : null}
-                </button>
-              );
-            })}
+    const WikiHeader = ({ currentView, setView }) => {
+      useEffect(() => {
+        const onKey = (e) => {
+          if (e.key !== '/') return;
+          const tgt = e.target;
+          if (tgt && (tgt.tagName === 'INPUT' || tgt.tagName === 'TEXTAREA' || tgt.tagName === 'SELECT' || tgt.isContentEditable)) return;
+          const slot = document.getElementById('wiki-header-search-slot');
+          const input = slot && slot.querySelector('input');
+          if (input) {
+            e.preventDefault();
+            input.focus();
+            input.select();
+          }
+        };
+        window.addEventListener('keydown', onKey);
+        return () => window.removeEventListener('keydown', onKey);
+      }, []);
+      const hasSearch = !['home'].includes(currentView);
+      return (
+        <header className="wiki-header sticky top-0 z-30 flex items-center justify-between gap-4 px-4">
+          <button type="button" onClick={() => setView('home')} className="flex items-center gap-3 shrink-0" aria-label="Main page">
+            <img src="./assets/wiki-logo.png" alt="" width={100} height={42} className="wiki-logo-img" style={{ objectFit: 'contain' }} />
+            <span className="flex flex-col leading-none text-left">
+              <span className="text-[15px] font-bold text-[var(--text)]" style={{ fontFamily: 'var(--font-display)', fontWeight: 700 }}>Siege Wiki</span>
+              <span className="text-[8.5px] uppercase tracking-[0.18em] mt-1" style={{ color: 'var(--text-faint)' }}>Rainbow Six Siege</span>
+            </span>
+          </button>
+          <div
+            id="wiki-header-search-slot"
+            className="absolute flex items-center"
+            style={{
+              left: '50%',
+              transform: 'translateX(-50%)',
+              width: hasSearch ? '470px' : '0px',
+              opacity: hasSearch ? 1 : 0,
+              pointerEvents: hasSearch ? 'auto' : 'none',
+              overflow: hasSearch ? 'visible' : 'hidden'
+            }}
+          />
+          <button
+            type="button"
+            onClick={() => setView('settings')}
+            className="shrink-0 w-9 h-9 border border-white/10 text-zinc-400 hover:text-white hover:bg-white/10 transition-colors flex items-center justify-center"
+            aria-label="Settings"
+          >
+            <Icons.Gear width={16} height={16} />
+          </button>
+        </header>
+      );
+    };
+    const SiteFooter = ({ currentView }) => {
+      useEffect(() => {
+        if (typeof window === 'undefined') return undefined;
+        if (!window.matchMedia('(min-width: 768px)').matches) return undefined;
+        const timer = window.setTimeout(() => {
+          const root = document.querySelector('[data-smoke-view]');
+          if (!root) return;
+          const div = document.createElement('div');
+          div.className = 'site-footer';
+          div.innerHTML = `
+            <div class="site-footer-legal">
+              <a href="./privacy-policy">Privacy Policy</a>
+              <a href="./privacy-policy#disclaimer">Legal &amp; Disclaimer</a>
+              <span>Operator data &copy; Rainbow Six Wiki contributors (CC-BY-SA)</span>
+            </div>`;
+          const article = root.querySelector('.cx-article');
+          if (article) {
+            article.appendChild(div);
+            return;
+          }
+          const candidates = [root, ...Array.from(root.querySelectorAll('.overflow-y-auto'))]
+            .filter((el) => el.classList.contains('overflow-y-auto'));
+          const scroller = candidates.sort((a, b) => b.scrollHeight - a.scrollHeight)[0];
+          if (!scroller || scroller.scrollHeight <= scroller.clientHeight + 50) return;
+          scroller.appendChild(div);
+          return;
+        }, 60);
+        return () => {
+          document.querySelectorAll('.site-footer').forEach((el) => el.remove());
+          window.clearTimeout(timer);
+        };
+      }, [currentView]);
+      return null;
+    };
+    const WebsiteHeader = ({ currentView, setView, titleOverride, onOpenDrawer }) => {
+      const headerTitle = currentView === 'home' ? 'Search' : (titleOverride || getNavDisplayLabel(currentView));
+      return (
+        <header className="website-topbar shrink-0 px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-1 min-w-0">
+          {onOpenDrawer && (
+            <button type="button" onClick={onOpenDrawer} className="cx-hamb" aria-label="Open navigation">
+              <span aria-hidden="true" /><span aria-hidden="true" /><span aria-hidden="true" />
+            </button>
+          )}
+          <button onClick={() => setView('home')} className="group flex items-center gap-3 min-w-0 text-left" aria-label="Open search">
+            <div className="website-brand-mark w-9 h-9 shrink-0 flex items-center justify-center border border-white/15">
+              <img src="./assets/wiki-logo.png" alt="" width={30} height={30} style={{ objectFit: 'contain' }} />
+            </div>
+            <div className="min-w-0">
+              <p className="text-[9px] font-bold uppercase tracking-[0.32em] text-zinc-500">Siege Wiki</p>
+              <h1 className="text-lg text-[var(--text)] truncate" style={{ fontFamily: 'var(--font-display)', fontWeight: 600, letterSpacing: '0.01em' }}>{headerTitle}</h1>
+            </div>
+          </button>
           </div>
-        ))}
-      </aside>
+          <div className="hidden md:flex items-center gap-5">
+            <span style={{ fontFamily: 'var(--mono-fallback, ui-monospace, monospace)', fontSize: '10px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--faint, var(--muted))' }}>
+              {META.gameVersion} · synced {META.lastSynced}
+            </span>
+          </div>
+          <button
+            onClick={() => setView('settings')}
+            className="shrink-0 w-10 h-10 border border-white/10 bg-white/[0.035] text-zinc-400 hover:text-white hover:bg-white/10 transition-colors flex items-center justify-center"
+            aria-label="Open settings"
+          >
+            <Icons.Gear width={18} height={18} />
+          </button>
+        </header>
+      );
+    };
+    const SiteLegalFooter = ({ className = '' }) => (
+      <div className={`flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-zinc-500 ${className}`}>
+        <a href="./privacy-policy" className="hover:text-zinc-300 transition-colors">Privacy Policy</a>
+        <a href="./privacy-policy#disclaimer" className="hover:text-zinc-300 transition-colors">Legal &amp; Disclaimer</a>
+        <span>Operator data &copy; Rainbow Six Wiki contributors (CC-BY-SA)</span>
+      </div>
     );
-
+    const Navigation = ({ currentView, setView, theme, isMobile = false, customNavItems = [], extraCounts = {} }) => {
+      const navItems = useMemo(() => {
+        const items = [{ id: 'home', label: 'Search' }];
+        customNavItems.forEach(id => {
+          const opt = ALL_NAV_OPTIONS.find(o => o.id === id);
+          if (opt) items.push(opt);
+        });
+        items.push({ id: 'settings', label: 'Settings' });
+        return items;
+      }, [customNavItems]);
+      const navCounts = useMemo(() => {
+        const favCount = () => {
+          try {
+            const s = JSON.parse(localStorage.getItem(R6_STORAGE_KEYS.favorites)) || {};
+            return ['favoriteOperators', 'favoriteMaps', 'favoriteSeasons'].reduce((n, k) => n + ((s[k] || []).length), 0);
+          } catch { return 0; }
+        };
+        return {
+          operators: OPERATORS.length,
+          gadgets: OPERATORS.length,
+          maps: MAPS.length,
+          seasons: SEASONS.length,
+          favorites: favCount(),
+          ...extraCounts,
+        };
+      }, [currentView]);
+      const hasMany = navItems.length > 6;
+      const containerClasses = isMobile
+        ? 'nav-shell nav-scroll rounded-2xl px-3 py-2 border border-white/5 max-w-3xl w-full mx-auto'
+        : `nav-shell rounded-2xl sm:rounded-full px-3 py-2 border border-white/5 ${hasMany ? 'max-w-5xl' : 'max-w-4xl'} w-full mx-auto`;
+      const trackClasses = isMobile
+        ? 'flex items-center gap-1 justify-center w-full overflow-x-auto nav-scroll px-1'
+        : 'flex items-center gap-1 justify-center w-full';
+      if (!isMobile) {
+        return (
+          <aside className="website-sidebar cx-side relative z-10 hidden md:flex h-full shrink-0 flex-col">
+            <nav className="website-sidebar-scroll flex-1 overflow-y-auto cx-side-nav">
+              <button
+                onClick={() => setView('home')}
+                className={`cx-side-link ${currentView === 'home' ? 'cx-side-link--active' : ''} cx-side-mainpage`}
+              >
+                <span className="truncate">Main page</span>
+              </button>
+              {WEBSITE_NAV_SECTIONS.map((section) => (
+                <div key={section.label}>
+                  <h5 className="cx-side-h5">{section.label}</h5>
+                  {section.ids.map((id) => {
+                    const isActive = currentView === id;
+                    const count = navCounts[id];
+                    return (
+                      <button
+                        key={id}
+                        onClick={() => setView(id)}
+                        className={`cx-side-link ${isActive ? 'cx-side-link--active' : ''}`}
+                      >
+                        <span className="truncate">{getNavDisplayLabel(id)}</span>
+                        {typeof count === 'number' && count > 0 ? <span className="cx-side-count">{count}</span> : null}
+                      </button>
+                    );
+                  })}
+                </div>
+              ))}
+            </nav>
+          </aside>
+        );
+      }
+      return (
+        <div className="fixed bottom-0 left-0 w-full z-50 px-2 sm:px-6 pb-2 sm:pb-5 flex flex-col items-center gap-2 nav-safe-area">
+          <div className={containerClasses}>
+            <div className={trackClasses}>
+              {navItems.map((item) => {
+                const isActive = currentView === item.id;
+                const labelVisibility = (isMobile || hasMany) ? (isActive ? '' : 'hidden') : '';
+                const IconComponent = Icons[NAV_ICON_MAP[item.id]] || Icons.Zap;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => setView(item.id)}
+                    aria-label={item.label}
+                    className={`nav-item ${isMobile ? 'shrink-0 flex items-center justify-center gap-2 rounded-xl px-3 py-2' : `flex-1 flex items-center justify-center gap-2 rounded-xl sm:rounded-full py-2.5 ${hasMany ? 'px-3' : ''}`} transition-all duration-200 ${isActive ? 'nav-item--active' : 'hover:text-white'}`}
+                    style={isActive ? { borderColor: theme.accent } : {}}
+                  >
+                    <IconComponent width={20} height={20} strokeWidth={isActive ? 2.3 : 2} />
+                    <span className={`text-[11px] font-semibold ${labelVisibility} ${isActive ? 'text-white' : 'text-zinc-400'}`}>{item.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      );
+    };
     const App = () => {
       const device = useDeviceProfile();
       const [settings, setSettings] = useState(() => ({ ...DEFAULT_SETTINGS, ...(loadFromStorage(R6_STORAGE_KEYS.settings, {})) }));
@@ -536,6 +799,46 @@
         } catch (e) { }
       }, [currentView, viewContext]);
 
+      const theme = useMemo(() => {
+        const gameAccent = (typeof GAME_ACCENT !== 'undefined' && GAME_ACCENT) || {};
+        const palette = COLOR_MODES[settings.colorMode] || COLOR_MODES.oled;
+        return { accent: gameAccent.accent || palette.accent, accentSoft: gameAccent.accentSoft || palette.accentSoft };
+      }, [settings.colorMode]);
+      useEffect(() => { window.__hideLaunchOverlay?.(); }, []);
+      const touchStartRef = useRef(null);
+      const navOrder = useMemo(() => ['home', 'favorites'], []);
+      const isAnyOverlayOpen = drawerOpen;
+      const handleTouchStart = (e) => {
+        if (!e.touches || e.touches.length !== 1) {
+          touchStartRef.current = null;
+          return;
+        }
+        touchStartRef.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      };
+      const handleTouchEnd = (e) => {
+        const start = touchStartRef.current;
+        touchStartRef.current = null;
+        if (!start) return;
+        if (isAnyOverlayOpen) return;
+        const target = e.target;
+        if (target && target.closest && target.closest('input, textarea, select, [data-no-swipe], table.cx-wikitable, .overflow-x-auto, .nav-scroll')) return;
+        const touchEnd = { x: e.changedTouches[0].clientX, y: e.changedTouches[0].clientY };
+        const diffX = start.x - touchEnd.x;
+        const diffY = start.y - touchEnd.y;
+        const minSwipe = 100;
+        const isHorizontalSwipe = Math.abs(diffX) > minSwipe && Math.abs(diffX) > Math.abs(diffY) * 1.5;
+        if (isHorizontalSwipe) {
+          const currentIndex = navOrder.indexOf(currentView);
+          if (currentIndex === -1) return;
+          if (diffX > 0 && currentIndex < navOrder.length - 1) {
+            setView(navOrder[currentIndex + 1]);
+            triggerHaptic('Light');
+          } else if (diffX < 0 && currentIndex > 0) {
+            setView(navOrder[currentIndex - 1]);
+            triggerHaptic('Light');
+          }
+        }
+      };
       const toggleFavorite = useCallback((category, itemId) => {
         const key = FAVORITE_KEYS[category];
         if (!key) return;
@@ -571,12 +874,13 @@
       };
 
       return (
-        <div data-smoke-ready="true" data-smoke-view={currentView} data-smoke-profile={viewContext.id || ''} className="site-shell website-shell flex flex-col h-screen w-full text-slate-100 overflow-hidden relative">
-          {!device.isMobile && <DesktopHeader currentView={currentView} setView={setView} />}
-          {device.isMobile && <MobileHeader title={headerTitle} onOpenDrawer={() => setDrawerOpen(true)} onOpenSettings={() => setView('settings')} />}
+        <div data-smoke-ready="true" data-smoke-view={currentView} data-smoke-profile={viewContext.id || ''} className="site-shell website-shell flex flex-col h-screen w-full text-slate-100 overflow-hidden relative" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+          {!device.isMobile && <WikiHeader currentView={currentView} setView={setView} />}
+          <SiteFooter currentView={currentView} />
+          {device.isMobile && <WebsiteHeader currentView={currentView} setView={setView} onOpenDrawer={() => setDrawerOpen(true)} titleOverride={headerTitle !== getNavDisplayLabel(currentView) ? headerTitle : null} />}
           <div className="website-workspace relative z-10 flex-1 min-h-0 flex">
-            {!device.isMobile && <Sidebar currentView={currentView} setView={setView} />}
-            <main ref={mainRef} className="website-main relative flex-1 min-w-0 overflow-y-auto"><div key={currentView + (viewContext.id || '')} className="view-transition min-h-full" style={{ padding: '20px 16px 120px' }}>{renderContent()}</div></main>
+            {!device.isMobile && <Navigation currentView={currentView} setView={setView} theme={theme} isMobile={false} customNavItems={DEFAULT_SETTINGS.navItems} />}
+            <main ref={mainRef} className="website-main relative flex-1 min-w-0 overflow-hidden"><div key={currentView + (viewContext.id || '')} className="view-transition h-full overflow-y-auto" style={{ padding: '20px 16px 120px' }}>{renderContent()}</div></main>
           </div>
           {device.isMobile && <SectionDrawer open={drawerOpen} currentView={currentView} onBrowse={(vid) => setView(vid)} onClose={() => setDrawerOpen(false)} />}
           <ScrollToTopFAB mainRef={mainRef} currentView={currentView} />
