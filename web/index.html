@@ -57,6 +57,7 @@
   <script type="text/babel" src="./engine/storage.js"></script>
   <script type="text/babel" src="./engine/device.js"></script>
   <script type="text/babel" src="./engine/shell.js"></script>
+  <script type="text/babel" src="./engine/assets.js"></script>
   <script type="text/babel" src="./engine/articles.js"></script>
   <script type="text/babel" src="./games/r6/config.js"></script>
   <script type="text/babel">
@@ -161,7 +162,7 @@
           {list.map((op) => (
             <div key={op.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
               <button type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-3 flex-1 min-w-0 text-left">
-                <OpAvatar name={op.name} side={op.side} />
+                <AssetFrame type="Operator" imageUrl={`./r6_images/operators/icons/${op.id}.png`} fallbackIcon={<OpAvatar name={op.name} side={op.side} />} />
                 <span className="min-w-0"><span className="block font-semibold truncate" style={{ color: 'var(--text)' }}>{op.name}</span>
                   <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{op.gadget} · {op.squad}</span></span>
               </button>
@@ -185,6 +186,7 @@
           lead={<p>{op.ability}</p>}
           infobox={{
             title: op.name, sub: `${op.side} · ${op.squad}`,
+            image: `./r6_images/operators/heroes/${op.id}.png`, imageAlt: op.name, imageType: 'Operator',
             rows: [
               { label: 'Gadget', value: op.gadget },
               { label: 'Role', value: op.role || '—' },
@@ -219,9 +221,9 @@
       const Group = ({ title, items, color }) => (
         <div className="mb-6">
           <h2 className="cx-h2" style={{ color }}>{title}</h2>
-          <table className="cx-wikitable"><thead><tr><th>Gadget</th><th>Operator</th></tr></thead>
+          <table className="cx-wikitable"><thead><tr><th></th><th>Gadget</th><th>Operator</th></tr></thead>
             <tbody>{items.map((op) => (
-              <tr key={op.id}><td>{op.gadget}</td>
+              <tr key={op.id}><td><AssetFrame type="Gadget" imageUrl={`./r6_images/gadgets/${op.id}.png`} /></td><td>{op.gadget}</td>
                 <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('operator', { id: op.id })}>{op.name}</button></td></tr>
             ))}</tbody></table>
         </div>
@@ -242,6 +244,7 @@
         <p className="cx-lead">{MAPS.length} multiplayer maps.</p>
         {MAPS.map((m) => (
           <div key={m.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+            <AssetFrame type="Map" imageUrl={`./r6_images/maps/${m.id}.png`} />
             <button type="button" onClick={() => setView('map', { id: m.id })} className="flex-1 min-w-0 text-left">
               <span className="block font-semibold" style={{ color: 'var(--text)' }}>{m.name}</span>
               <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{m.setting}</span>
@@ -260,7 +263,7 @@
           crumbs={[{ label: 'Main page' }, { label: 'Maps' }, { label: m.name }]}
           title={m.name}
           lead={<p>{m.blurb || m.setting}</p>}
-          infobox={{ title: m.name, sub: 'Multiplayer map', rows: [{ label: 'Setting', value: m.setting || '—' }, { label: 'Terrain', value: m.terrain || '—' }, { label: 'Modes', value: (m.modes || []).join(' · ') }] }}
+          infobox={{ title: m.name, sub: 'Multiplayer map', image: `./r6_images/maps/${m.id}.png`, imageAlt: m.name, imageType: 'Map', rows: [{ label: 'Setting', value: m.setting || '—' }, { label: 'Terrain', value: m.terrain || '—' }, { label: 'Modes', value: (m.modes || []).join(' · ') }] }}
         />
       );
     };
@@ -470,6 +473,8 @@
         rootEl.style.setProperty('--selection-text', palette.selectionText);
         rootEl.style.setProperty('--accent', palette.accent);
         rootEl.style.setProperty('--accent-soft', palette.accentSoft);
+        if (typeof ACCENT_COLOR === 'string' && ACCENT_COLOR) rootEl.style.setProperty('--accent', ACCENT_COLOR);
+        if (typeof ACCENT_SOFT === 'string' && ACCENT_SOFT) rootEl.style.setProperty('--accent-soft', ACCENT_SOFT);
         rootEl.style.fontSize = settings.fontSize === 'small' ? '14px' : settings.fontSize === 'large' ? '18px' : '16px';
         document.body.classList.toggle('light-mode', settings.colorMode === 'light');
         document.body.classList.toggle('oled-mode', settings.colorMode === 'oled');

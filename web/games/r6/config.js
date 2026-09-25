@@ -95,3 +95,15 @@
       operators: 'Operators', operator: 'Operators', gadgets: 'Gadgets', maps: 'Maps', map: 'Maps',
       seasons: 'Seasons', season: 'Seasons', settings: 'Settings', favorites: 'Favorites'
     };
+    const DEFAULT_IMAGES = {
+      Operator: './assets/default-operator.svg',
+      Gadget: './assets/default-gadget.svg',
+      Weapon: './assets/default-weapon.svg',
+      Map: './assets/default-map.svg'
+    };
+    const IMAGE_PREFIXES = ['r6_images/', 'assets/'];
+    const DIAMOND_IMAGE_TYPES = [];
+    const CONTAIN_IMAGE_TYPES = ['Gadget', 'Weapon'];
+    const IMAGE_RESOLVER = null;
+    const ACCENT_COLOR = '#3da5e0';
+    const ACCENT_SOFT = 'rgba(61,165,224,0.14)';
