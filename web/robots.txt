@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://r6-siege-wiki.pages.dev/sitemap.xml

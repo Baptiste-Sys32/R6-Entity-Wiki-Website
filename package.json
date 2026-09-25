@@ -1,0 +1,15 @@
+{
+  "name": "r6-siege-wiki",
+  "version": "0.1.0",
+  "description": "Fan-made Rainbow Six Siege wiki website",
+  "scripts": {
+    "sync:data": "node scripts/sync-r6-data.js",
+    "build:data": "node scripts/build-data.js",
+    "build:sitemap": "node scripts/build-sitemap.js",
+    "check:data": "node scripts/build-data.js --check && node scripts/build-sitemap.js --check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

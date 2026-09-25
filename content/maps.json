@@ -1,0 +1,336 @@
+{
+  "generatedAt": "2026-09-25T13:00:33.402Z",
+  "metadata": {
+    "sources": {
+      "wiki": "https://rainbowsix.fandom.com/api.php",
+      "license": "CC-BY-SA (Fandom contributors)"
+    },
+    "count": 27
+  },
+  "maps": [
+    {
+      "id": "r6-bank",
+      "name": "Bank",
+      "setting": "Los Angeles, California",
+      "terrain": "Urban, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Bank is a map featured in Tom Clancy's Rainbow Six Siege. It recieved a minor rework in the Crystal Guard expansion. The map returns in Tom Clancy's Rainbow Six Mobile."
+    },
+    {
+      "id": "r6-bartlett-u-",
+      "name": "Bartlett U.",
+      "setting": "Cambridge, Massachusetts",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Bartlett U., also known as Bartlett University, is a map featured in Tom Clancy's Rainbow Six Siege."
+    },
+    {
+      "id": "r6-border",
+      "name": "Border",
+      "setting": "Middle East",
+      "terrain": "Sand, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Border is a map featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Dust Line expansion. It was later reworked in the Crimson Heist expansion. The reworked version of the map returns in Tom Clancy's Rainbow Six Mobile."
+    },
+    {
+      "id": "r6-calypso-casino",
+      "name": "Calypso Casino",
+      "setting": "Las Vegas",
+      "terrain": "",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Calypso Casino is a map set to be featured Tom Clancy's Rainbow Six Siege, introduced in the Operation System Override expansion. It is based on the map of the same name from Tom Clancy's Rainbow Six: Vegas and its sequel."
+    },
+    {
+      "id": "r6-chalet",
+      "name": "Chalet",
+      "setting": "Courchevel, France",
+      "terrain": "Snow, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Chalet is a map featured in Tom Clancy's Rainbow Six Siege. A shootout in an “après-ski” chalet in the French alps. This area contrasts the warm, cozy mood of its interiors with the cold, constrained visibility of its exteriors. The map was reworked in the Operation Shadow Legacy expansion."
+    },
+    {
+      "id": "r6-clubhouse",
+      "name": "Clubhouse",
+      "setting": "Hannover, Germany",
+      "terrain": "Urban, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Clubhouse is a map featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile. The interior of the map was reworked alongside the release of the Operation Para Bellum expansion. It received another minor rework in the Crystal Guard expansion."
+    },
+    {
+      "id": "r6-coastline",
+      "name": "Coastline",
+      "setting": "Ibiza, Spain",
+      "terrain": "Interior, Swimming Pool, Gardens",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Coastline is a map featured Tom Clancy's Rainbow Six Siege, introduced in the Operation Velvet Shell expansion. The map received a minor rework in the Crystal Guard expansion."
+    },
+    {
+      "id": "r6-consulate",
+      "name": "Consulate",
+      "setting": "Abidjan, Ivory Coast",
+      "terrain": "Urban, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Consulate is a map featured in Tom Clancy's Rainbow Six Siege."
+    },
+    {
+      "id": "r6-emerald-plains",
+      "name": "Emerald Plains",
+      "setting": "Northern Ireland, United Kingdom",
+      "terrain": "",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Emerald Plains is a map featured in Tom Clancy's Rainbow Six Siege, introduced in the Y7S1.2 patch during the Demon Veil expansion."
+    },
+    {
+      "id": "r6-favela",
+      "name": "Favela",
+      "setting": "Rio de Janeiro, Brazil",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Favela refers to two different maps in Tom Clancy's Rainbow Six Siege."
+    },
+    {
+      "id": "r6-fortress",
+      "name": "Fortress",
+      "setting": "Atlas Mountains, Morocco",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Fortress is a map introduced in the Operation Wind Bastion expansion for Tom Clancy's Rainbow Six Siege. It was later reworked in the Operation Tenfold Pursuit expansion."
+    },
+    {
+      "id": "r6-hereford-base-original-",
+      "name": "Hereford Base (Original)",
+      "setting": "Herefordshire, United Kingdom",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Hereford Base is a map that was featured in Tom Clancy's Rainbow Six Siege. A reimagined Kill House, the map was originally available in Situations, Terrorist Hunt, and normal multiplayer."
+    },
+    {
+      "id": "r6-hereford-base-rework-",
+      "name": "Hereford Base (Rework)",
+      "setting": "Herefordshire, United Kingdom",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Hereford Base is a map featured in Tom Clancy's Rainbow Six Siege. Formerly a non-flying station of the Royal Air Force from World War II to the end of the 20th century, It was redeveloped for use as a training ground for the Special Air Service."
+    },
+    {
+      "id": "r6-house",
+      "name": "House",
+      "setting": "Los Angeles, California",
+      "terrain": "Urban, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "House is a map featured in Tom Clancy's Rainbow Six Siege. It was first shown during the reveal of the game at E3 2014. The map was reworked in the Operation Steel Wave expansion."
+    },
+    {
+      "id": "r6-kafe-dostoyevsky",
+      "name": "Kafe Dostoyevsky",
+      "setting": "Moscow, Russia",
+      "terrain": "Snow, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Kafe Dostoyevsky is a map featured in Tom Clancy's Rainbow Six Siege. The map was reworked in March 2019 with the release of the Operation Phantom Sight expansion. The rework focused on a massive redesign of the interior of the facility."
+    },
+    {
+      "id": "r6-kanal",
+      "name": "Kanal",
+      "setting": "Hamburg, Germany",
+      "terrain": "Urban, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Kanal is a map featured in Tom Clancy's Rainbow Six Siege, taking place in Hamburg, Germany. The map was reworked in September 2019 with the release of Operation Ember Rise."
+    },
+    {
+      "id": "r6-lair",
+      "name": "Lair",
+      "setting": "Portugal",
+      "terrain": "",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Lair is a map featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Deep Freeze expansion. The map is set at the Keres Legion's base of operations in a secret cave complex in Portugal."
+    },
+    {
+      "id": "r6-nighthaven-labs",
+      "name": "Nighthaven Labs",
+      "setting": "Singapore",
+      "terrain": "",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Nighthaven Labs is a map featured Tom Clancy's Rainbow Six Siege, introduced in the Operation Solar Raid expansion. The map is set at the headquarters of Nighthaven on an off-shore location in Singapore."
+    },
+    {
+      "id": "r6-oregon",
+      "name": "Oregon",
+      "setting": "Redmond, Oregon",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Oregon is a map featured in Tom Clancy's Rainbow Six Siege. It is set in an old survivalist compound in Redmond, Oregon. The map was reworked with the release of the Operation Void Edge expansion. The reworked version of the map returns in Tom Clancy's Rainbow Six Mobile."
+    },
+    {
+      "id": "r6-outback",
+      "name": "Outback",
+      "setting": "Australian Outback",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Outback is a map featured in the Operation Burnt Horizon expansion for Tom Clancy's Rainbow Six Siege."
+    },
+    {
+      "id": "r6-presidential-plane",
+      "name": "Presidential Plane",
+      "setting": "Heathrow Airport, West London, United Kingdom",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Presidential Plane is a map featured in Tom Clancy's Rainbow Six Siege. It is a remake of the map 747 from past Rainbow Six installments."
+    },
+    {
+      "id": "r6-skyscraper",
+      "name": "Skyscraper",
+      "setting": "Nagoya, Japan",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Skyscraper is a map featured in Tom Clancy's Rainbow Six Siege that was introduced in the Operation Red Crow expansion. The map was reworked in the Operation Neon Dawn expansion."
+    },
+    {
+      "id": "r6-stadium",
+      "name": "Stadium",
+      "setting": "Elis, Greece",
+      "terrain": "",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Stadium is a map featured in Tom Clancy's Rainbow Six Siege. It was originally available for a limited time in the Road To S.I. 2020 event and later returned reworked in the Road To S.I. 2021 and Road To S.I. 2022 events. The SI 2021 and SI 2022 versions were renamed Stadium Bravo and Stadium Alpha and were introduced as permanent additions in the Operation Brutal Swarm expansion. The original ver"
+    },
+    {
+      "id": "r6-theme-park",
+      "name": "Theme Park",
+      "setting": "Kowloon, Hong Kong",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Theme Park is a map featured in Tom Clancy's Rainbow Six Siege that was introduced in the Operation Blood Orchid expansion. The map was later reworked in the Operation Shifting Tides expansion."
+    },
+    {
+      "id": "r6-tower",
+      "name": "Tower",
+      "setting": "Seoul, South Korea",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Tower is a map featured in Tom Clancy's Rainbow Six Siege and was introduced in the Operation White Noise expansion. Tower is featured in Quick Match and Custom Game playlist."
+    },
+    {
+      "id": "r6-villa",
+      "name": "Villa",
+      "setting": "Tuscany, Italy",
+      "terrain": "Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Villa is a map featured in the Operation Para Bellum expansion for Tom Clancy's Rainbow Six Siege."
+    },
+    {
+      "id": "r6-yacht",
+      "name": "Yacht",
+      "setting": "Baffin Bay, Canada",
+      "terrain": "Snow, Interior",
+      "modes": [
+        "Bomb",
+        "Secure Area",
+        "Hostage"
+      ],
+      "blurb": "Yacht is a map featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Black Ice expansion."
+    }
+  ]
+}

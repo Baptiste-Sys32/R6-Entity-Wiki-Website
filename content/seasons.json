@@ -1,0 +1,578 @@
+{
+  "generatedAt": "2026-09-25T13:00:33.402Z",
+  "metadata": {
+    "sources": {
+      "wiki": "https://rainbowsix.fandom.com/api.php",
+      "license": "CC-BY-SA (Fandom contributors)"
+    },
+    "count": 44
+  },
+  "seasons": [
+    {
+      "id": "r6-operation-black-ice",
+      "name": "Operation Black Ice",
+      "code": "Y1S1",
+      "year": 1,
+      "released": "February 2, 2016 (Worldwide)",
+      "operators": [
+        "Buck",
+        "Frost"
+      ],
+      "map": "Yacht",
+      "squad": "",
+      "blurb": "Operation Black Ice is the first expansion released for Tom Clancy's Rainbow Six Siege. It adds two new Operators from the Joint Task Force 2 CTU, including new weapons, abilities, and gameplay upgrades. The two operators were immediately unlocked for Season Pass owners or 600 R6 Credits. Alternatively, both operators could be unlocked with 25,000 renown each."
+    },
+    {
+      "id": "r6-operation-dust-line",
+      "name": "Operation Dust Line",
+      "code": "Y1S2",
+      "year": 1,
+      "released": "May 10, 2016 (Worldwide)",
+      "operators": [
+        "Valkyrie"
+      ],
+      "map": "Border",
+      "squad": "",
+      "blurb": "Operation Dust Line was the second expansion released for Tom Clancy's Rainbow Six Siege. It was a free expansion which added two new Operators from the U.S. Navy SEALs CTU, introducing new weapons, abilities, and gameplay upgrades."
+    },
+    {
+      "id": "r6-operation-skull-rain",
+      "name": "Operation Skull Rain",
+      "code": "Y1S3",
+      "year": 1,
+      "released": "August 2, 2016 (Worldwide)",
+      "operators": [
+        "Capitão",
+        "Caveira"
+      ],
+      "map": "Favela",
+      "squad": "",
+      "blurb": "Operation Skull Rain was the third free expansion released for Tom Clancy's Rainbow Six Siege. It added two new Operators from the Brazilian BOPE CTU and the map Favela."
+    },
+    {
+      "id": "r6-operation-red-crow",
+      "name": "Operation Red Crow",
+      "code": "Y1S4",
+      "year": 1,
+      "released": "November 17, 2016 (Worldwide)",
+      "operators": [
+        "Echo",
+        "Hibana"
+      ],
+      "map": "Skyscraper",
+      "squad": "",
+      "blurb": "Operation Red Crow was the fourth free expansion to be released for Tom Clancy's Rainbow Six Siege, and the last expansion of Year One. It added two new Operators from the Japanese SAT CTU and the map Skyscraper."
+    },
+    {
+      "id": "r6-operation-velvet-shell",
+      "name": "Operation Velvet Shell",
+      "code": "Y2S1",
+      "year": 2,
+      "released": "February 7, 2017 (Worldwide)",
+      "operators": [
+        "Jackal",
+        "Mira"
+      ],
+      "map": "Coastline",
+      "squad": "",
+      "blurb": "Operation Velvet Shell was the fifth free expansion to be released for Tom Clancy's Rainbow Six Siege, and the first expansion of Year Two. It added two new Operators from the Spanish GEO CTU and the map Coastline."
+    },
+    {
+      "id": "r6-operation-health",
+      "name": "Operation Health",
+      "code": "Y2S2",
+      "year": 2,
+      "released": "June 7, 2017 (PC)June 20, 2017 (Consoles)",
+      "operators": [],
+      "map": "",
+      "squad": "",
+      "blurb": "Operation Health was a major update released for Tom Clancy's Rainbow Six Siege. Released in place of an expansion, it was a free bugfix and technology introduction program, featuring no new content. The goal was to fix reported bugs and introduce new technologies for better servers and matchmaking. Operation Health was released on June 7, 2017 for PC and June 20, 2017 for consoles."
+    },
+    {
+      "id": "r6-operation-blood-orchid",
+      "name": "Operation Blood Orchid",
+      "code": "Y2S3",
+      "year": 2,
+      "released": "August 29, 2017 (TTS, PC only)September 5, 2017 (Worldwide)",
+      "operators": [
+        "Ela",
+        "Lesion",
+        "Ying"
+      ],
+      "map": "Theme Park",
+      "squad": "",
+      "blurb": "Operation Blood Orchid was the sixth free expansion to be released for Tom Clancy's Rainbow Six Siege, and the third expansion of Year Two. It was also the first expansion to add more than two Operators. The expansion added three new Operators (two from SDU, one from GROM) CTUs and the new map Theme Park."
+    },
+    {
+      "id": "r6-operation-white-noise",
+      "name": "Operation White Noise",
+      "code": "Y2S4",
+      "year": 2,
+      "released": "TTS: November 20, 2017WW: December 5, 2017",
+      "operators": [
+        "Dokkaebi",
+        "Vigil",
+        "Zofia"
+      ],
+      "map": "Tower",
+      "squad": "",
+      "blurb": "Operation White Noise is the seventh expansion to be released for Tom Clancy's Rainbow Six Siege. It adds two new Operators from the 707th SMB with the remaining GROM operator and new map Tower."
+    },
+    {
+      "id": "r6-operation-chimera",
+      "name": "Operation Chimera",
+      "code": "Y3S1",
+      "year": 3,
+      "released": "TTS: Feburary 20, 2018WW: March 6, 2018",
+      "operators": [
+        "Finka",
+        "Lion"
+      ],
+      "map": "",
+      "squad": "",
+      "blurb": "Operation Chimera was the eighth free expansion of Tom Clancy's Rainbow Six Siege, and the first expansion of Year Three. It added two new Operators from Team Rainbow's newfound CBRN Threat Unit and a limited-time event called Outbreak, which ended on April 4, 2018."
+    },
+    {
+      "id": "r6-operation-para-bellum",
+      "name": "Operation Para Bellum",
+      "code": "Y3S2",
+      "year": 3,
+      "released": "TTS: May 22, 2018WW: June 7, 2018",
+      "operators": [
+        "Alibi",
+        "Maestro"
+      ],
+      "map": "Villa",
+      "squad": "",
+      "blurb": "Operation Para Bellum was the ninth free expansion for Tom Clancy's Rainbow Six Siege. It added two new Operators from the Italian GIS CTU and the map Villa, along with reworking some maps and introducing new gameplay elements. The game UI was also completely overhauled as well."
+    },
+    {
+      "id": "r6-operation-grim-sky",
+      "name": "Operation Grim Sky",
+      "code": "Y3S3",
+      "year": 3,
+      "released": "TTS: August 20, 2018WW: September 4, 2018",
+      "operators": [
+        "Clash",
+        "Maverick"
+      ],
+      "map": "Hereford Base",
+      "squad": "",
+      "blurb": "Operation Grim Sky was the tenth free expansion for Tom Clancy's Rainbow Six Siege. It added two new Operators, one from Delta Force and the other from MPS, that make up Rainbow's Urban Tactical Response Team, codenamed Grim Sky (GSUTR)."
+    },
+    {
+      "id": "r6-operation-wind-bastion",
+      "name": "Operation Wind Bastion",
+      "code": "Y3S4",
+      "year": 3,
+      "released": "TS: November 20, 2018WW: December 4, 2018",
+      "operators": [
+        "Kaid",
+        "Nomad"
+      ],
+      "map": "Fortress",
+      "squad": "",
+      "blurb": "Operation Wind Bastion is the eleventh free expansion for Tom Clancy's Rainbow Six Siege, and the fourth and final expansion of Year Three. It added two new Operators from the Moroccan GIGR CTU and the map Fortress."
+    },
+    {
+      "id": "r6-operation-burnt-horizon",
+      "name": "Operation Burnt Horizon",
+      "code": "Y4S1",
+      "year": 4,
+      "released": "TS: February 18, 2019WW: March 6, 2019",
+      "operators": [
+        "Gridlock",
+        "Mozzie"
+      ],
+      "map": "Outback",
+      "squad": "",
+      "blurb": "Operation Burnt Horizon is the twelfth expansion for Tom Clancy's Rainbow Six Siege. It adds two new Operators from the Australian SASR CTU and the map Outback, along with the limited time event Rainbow is Magic (April 1, 2019)."
+    },
+    {
+      "id": "r6-operation-phantom-sight",
+      "name": "Operation Phantom Sight",
+      "code": "Y4S2",
+      "year": 4,
+      "released": "TS: May 22, 2019WW: June 11, 2019",
+      "operators": [
+        "Nøkk",
+        "Warden"
+      ],
+      "map": "Kafe Dostoyevsky",
+      "squad": "",
+      "blurb": "Operation Phantom Sight is the thirteenth free expansion for Tom Clancy's Rainbow Six Siege. It adds two new Operators from the American Secret Service and the Danish Jægerkorpset. It will also feature a rework of the map Kafe Dostoyevsky."
+    },
+    {
+      "id": "r6-operation-ember-rise",
+      "name": "Operation Ember Rise",
+      "code": "Y4S3",
+      "year": 4,
+      "released": "TS: August 19, 2019WW: September 11, 2019",
+      "operators": [
+        "Amaru"
+      ],
+      "map": "Kanal",
+      "squad": "",
+      "blurb": "Operation Ember Rise is the fourteenth expansion for Tom Clancy's Rainbow Six Siege. It adds two new Operators from the Peruvian APCA and the Mexican FES. The expansion also features a rework of Kanal."
+    },
+    {
+      "id": "r6-operation-shifting-tides",
+      "name": "Operation Shifting Tides",
+      "code": "Y4S4",
+      "year": 4,
+      "released": "December 3, 2019",
+      "operators": [
+        "Kali",
+        "Wamai"
+      ],
+      "map": "Theme Park",
+      "squad": "NIGHTHAVEN",
+      "blurb": "Operation Shifting Tides is the fifteenth expansion of Tom Clancy's Rainbow Six Siege. It adds two new Operators from the Indian NIGHTHAVEN PMC. The operation also featured a map rework of the Theme Park map."
+    },
+    {
+      "id": "r6-operation-void-edge",
+      "name": "Operation Void Edge",
+      "code": "Y5S1",
+      "year": 5,
+      "released": "TS: February 17, 2020WW: March 10, 2020",
+      "operators": [
+        "Iana",
+        "Oryx"
+      ],
+      "map": "Oregon",
+      "squad": "REU",
+      "blurb": "Operation Void Edge is the sixteenth expansion of Tom Clancy's Rainbow Six Siege. Unlike past expansions, it focused more on story-related content through the Battle Pass."
+    },
+    {
+      "id": "r6-operation-steel-wave",
+      "name": "Operation Steel Wave",
+      "code": "Y5S2",
+      "year": 5,
+      "released": "TS: May 19, 2020WW: June 16, 2020",
+      "operators": [
+        "Ace",
+        "Melusi"
+      ],
+      "map": "House",
+      "squad": "ITF",
+      "blurb": "Operation Steel Wave is the seventeenth expansion for Tom Clancy's Rainbow Six Siege. It adds two new Operators from NIGHTHAVEN and the South African ITF. The expansion also features a rework of House."
+    },
+    {
+      "id": "r6-operation-shadow-legacy",
+      "name": "Operation Shadow Legacy",
+      "code": "Y5S3",
+      "year": 5,
+      "released": "TS: August 17, 2020WW: September 10, 2020",
+      "operators": [
+        "Tachanka",
+        "Zero"
+      ],
+      "map": "Chalet",
+      "squad": "",
+      "blurb": "Operation Shadow Legacy is the eighteenth expansion for Tom Clancy's Rainbow Six Siege."
+    },
+    {
+      "id": "r6-operation-neon-dawn",
+      "name": "Operation Neon Dawn",
+      "code": "Y5S4",
+      "year": 5,
+      "released": "WW: December 1, 2020",
+      "operators": [
+        "Aruni"
+      ],
+      "map": "Skyscraper",
+      "squad": "",
+      "blurb": "Operation Neon Dawn is the nineteenth expansion for Tom Clancy's Rainbow Six Siege. It adds a new Operator from NIGHTHAVEN and features a rework of Skyscraper."
+    },
+    {
+      "id": "r6-crimson-heist",
+      "name": "Crimson Heist",
+      "code": "Y6S1",
+      "year": 6,
+      "released": "WW: March 16, 2021",
+      "operators": [
+        "Flores"
+      ],
+      "map": "Border",
+      "squad": "",
+      "blurb": "Crimson Heist is the twentieth expansion for Tom Clancy's Rainbow Six Siege. It was formally announced on February 16th, 2020 during the Six Invitational 2020. The expansion's name was officially announced on February 16th, 2021 and was fully revealed on February 21st, 2021 during the Six Invitational 2021 Community Event."
+    },
+    {
+      "id": "r6-north-star",
+      "name": "North Star",
+      "code": "Y6S2",
+      "year": 6,
+      "released": "WW: June 14, 2021",
+      "operators": [
+        "Thunderbird"
+      ],
+      "map": "Favela",
+      "squad": "STAR-NET Aviation",
+      "blurb": "North Star is the twenty-first expansion for Tom Clancy's Rainbow Six Siege. It adds one new Operator from the STAR-NET Aviation. It also features a rework of Favela and numerous gameplay changes."
+    },
+    {
+      "id": "r6-crystal-guard",
+      "name": "Crystal Guard",
+      "code": "Y6S3",
+      "year": 6,
+      "released": "WW: September 7, 2021",
+      "operators": [
+        "Osa"
+      ],
+      "map": "Coastline",
+      "squad": "",
+      "blurb": "Crystal Guard is the twenty-second expansion for Tom Clancy's Rainbow Six Siege. It introduces a new Nighthaven operator, Osa, as well a small reworks for several maps and Operators as well as numerous gameplay changes."
+    },
+    {
+      "id": "r6-high-calibre",
+      "name": "High Calibre",
+      "code": "Y6S4",
+      "year": 6,
+      "released": "WW: November 30, 2021",
+      "operators": [
+        "Thorn"
+      ],
+      "map": "Outback",
+      "squad": "Garda",
+      "blurb": "High Calibre is the twenty-third expansion for Tom Clancy's Rainbow Six Siege. It introduces a new operator from the Garda ERU, Thorn, a new weapon, a rework of the Outback map, and several notable gameplay changes."
+    },
+    {
+      "id": "r6-demon-veil",
+      "name": "Demon Veil",
+      "code": "Y7S1",
+      "year": 7,
+      "released": "WW: March 15, 2022",
+      "operators": [
+        "Azami"
+      ],
+      "map": "Emerald Plains",
+      "squad": "",
+      "blurb": "Demon Veil is the twenty-fourth expansion for Tom Clancy's Rainbow Six Siege. It introduces a new operator, a new map, and several other notable gameplay changes and reworks."
+    },
+    {
+      "id": "r6-operation-vector-glare",
+      "name": "Operation Vector Glare",
+      "code": "Y7S2",
+      "year": 7,
+      "released": "WW: June 14, 2022",
+      "operators": [
+        "Sens"
+      ],
+      "map": "Close Quarter",
+      "squad": "SFG",
+      "blurb": "Operation Vector Glare is the twenty-fifth expansion for Tom Clancy's Rainbow Six Siege. It introduces a new operator, weapon, map for Team Deathmatch, and various gameplay improvements"
+    },
+    {
+      "id": "r6-operation-brutal-swarm",
+      "name": "Operation Brutal Swarm",
+      "code": "Y7S3",
+      "year": 7,
+      "released": "WW: September 6, 2022",
+      "operators": [],
+      "map": "Stadium",
+      "squad": "",
+      "blurb": "Operation Brutal Swarm is the twenty-sixth expansion for Tom Clancy's Rainbow Six Siege. It introduces a new operator, the return of a fan-favorite map, and various gameplay improvements"
+    },
+    {
+      "id": "r6-operation-solar-raid",
+      "name": "Operation Solar Raid",
+      "code": "Y7S4",
+      "year": 7,
+      "released": "WW: December 6, 2022",
+      "operators": [
+        "Solis"
+      ],
+      "map": "Nighthaven Labs",
+      "squad": "AFEAU",
+      "blurb": "Operation Solar Raid is the twenty-seventh expansion for Tom Clancy's Rainbow Six Siege. It was formally announced on February 20th, 2022 during the Six Invitational 2022. It introduces a new operator, a new map, a reworked Battle Pass, as well as various gameplay improvements."
+    },
+    {
+      "id": "r6-operation-commanding-force",
+      "name": "Operation Commanding Force",
+      "code": "Y8S1",
+      "year": 8,
+      "released": "WW: March 7, 2023",
+      "operators": [
+        "Brava"
+      ],
+      "map": "",
+      "squad": "COT",
+      "blurb": "Operation Commanding Force is the twenty-eighth expansion for Tom Clancy's Rainbow Six Siege. It introduces a new operator, challenges, and various gameplay improvements."
+    },
+    {
+      "id": "r6-operation-dread-factor",
+      "name": "Operation Dread Factor",
+      "code": "Y8S2",
+      "year": 8,
+      "released": "May 30, 2023",
+      "operators": [
+        "Fenrir"
+      ],
+      "map": "Consulate",
+      "squad": "",
+      "blurb": "Operation Dread Factor is the twenty-ninth expansion for Tom Clancy's Rainbow Six Siege. It introduces a new Operator, a reworked map, the permanent Arcade playlist, a new gadget, and various gameplay improvements."
+    },
+    {
+      "id": "r6-operation-heavy-mettle",
+      "name": "Operation Heavy Mettle",
+      "code": "Y8S3",
+      "year": 8,
+      "released": "WW: August 29, 2023",
+      "operators": [
+        "Ram"
+      ],
+      "map": "",
+      "squad": "35th Commando Battalion",
+      "blurb": "Operation Heavy Mettle is the thirtieth expansion for Tom Clancy's Rainbow Six Siege. It was formally announced on February 18, 2023 during the Six Invitational. The expansion's name was unveiled on August 9, 2023 and was fully revealed on August 13, 2023. It was released on August 29, 2023."
+    },
+    {
+      "id": "r6-operation-deep-freeze",
+      "name": "Operation Deep Freeze",
+      "code": "Y8S4",
+      "year": 8,
+      "released": "WW: December 6, 2023",
+      "operators": [],
+      "map": "Lair",
+      "squad": "DAE",
+      "blurb": "Operation Deep Freeze is the thirty-first expansion for Tom Clancy's Rainbow Six Siege. It was formally announced on February 18th, 2023, during the Six Invitational 2023. The expansion's name was unveiled on November 1st, 2023 at the BLAST R6 Major Atlanta and is set to be fully revealed on November 12th, 2023. It was released on December 6th, 2023."
+    },
+    {
+      "id": "r6-operation-deadly-omen",
+      "name": "Operation Deadly Omen",
+      "code": "Y9S1",
+      "year": 9,
+      "released": "TS: February 28, 2024\nWW: March 12, 2024",
+      "operators": [
+        "Deimos"
+      ],
+      "map": "",
+      "squad": "Keres Legion",
+      "blurb": "Operation Deadly Omen is the thirty-second expansion for Tom Clancy's Rainbow Six Siege. It was fully revealed on February 24th, 2024 and released on March 12, 2024."
+    },
+    {
+      "id": "r6-operation-new-blood",
+      "name": "Operation New Blood",
+      "code": "Y9S2",
+      "year": 9,
+      "released": "TS: May 27, 2024\nWW: June 11, 2024",
+      "operators": [],
+      "map": "",
+      "squad": "",
+      "blurb": "Operation New Blood is the thirty-third expansion for Tom Clancy's Rainbow Six Siege. It was released on June 11th, 2024."
+    },
+    {
+      "id": "r6-operation-twin-shells",
+      "name": "Operation Twin Shells",
+      "code": "Y9S3",
+      "year": 9,
+      "released": "TS: August 26, 2024\nWW: September 10, 2024",
+      "operators": [
+        "Skopós"
+      ],
+      "map": "",
+      "squad": "EKAM",
+      "blurb": "Operation Twin Shells is the thirty-fourth expansion for Tom Clancy's Rainbow Six Siege. It was formally announced during Six Invitational 2024 Year 9 Panel. It was fully revealed on August 25th, 2024 and released on September 10th, 2024."
+    },
+    {
+      "id": "r6-operation-collision-point",
+      "name": "Operation Collision Point",
+      "code": "Y9S4",
+      "year": 9,
+      "released": "TS: November 18, 2024\nWW: December 3, 2024",
+      "operators": [],
+      "map": "",
+      "squad": "",
+      "blurb": "Operation Collision Point is the thirty-fifth expansion for Tom Clancy's Rainbow Six Siege. It was formally announced during Six Invitational 2024 Year 9 Panel. It is set to be fully revealed on November 17, 2024."
+    },
+    {
+      "id": "r6-operation-prep-phase",
+      "name": "Operation Prep Phase",
+      "code": "Y10S1",
+      "year": 10,
+      "released": "TS: February 18, 2025\nWW: March 4, 2025",
+      "operators": [
+        "Rauora"
+      ],
+      "map": "",
+      "squad": "NZSAS",
+      "blurb": "Operation Prep Phase is the thirty-sixth expansion for Tom Clancy's Rainbow Six Siege. It was formally announced and revealed during the Six Invitational 2025 Year 10 Panel, and fully released on March 4, 2025."
+    },
+    {
+      "id": "r6-operation-daybreak",
+      "name": "Operation Daybreak",
+      "code": "Y10S2",
+      "year": 10,
+      "released": "TS: May 20, 2025\nWW: June 10, 2025",
+      "operators": [],
+      "map": "Bank",
+      "squad": "",
+      "blurb": "Operation Daybreak is the thirty-seventh expansion for Tom Clancy's Rainbow Six Siege. It was released on June 10, 2025. Concurrently, Tom Clancy's Rainbow Six Siege was temporarily rebranded as Tom Clancy's Rainbow Six Siege X, incorporating numerous reworked or upgraded gameplay mechanics."
+    },
+    {
+      "id": "r6-operation-high-stakes",
+      "name": "Operation High Stakes",
+      "code": "Y10S3",
+      "year": 10,
+      "released": "TS: August 18, 2025\nWW: September 2, 2025|season=Year 10 Sea",
+      "operators": [],
+      "map": "Nighthaven Labs",
+      "squad": "",
+      "blurb": "Operation High Stakes is the thirty-eighth expansion for Tom Clancy's Rainbow Six Siege. It was revealed worldwide on August 17, 2025, and was fully released on September 2, 2025."
+    },
+    {
+      "id": "r6-operation-tenfold-pursuit",
+      "name": "Operation Tenfold Pursuit",
+      "code": "Y10S4",
+      "year": 10,
+      "released": "TS: November 17, 2025\nWW: December 2, 2025",
+      "operators": [],
+      "map": "Fortress",
+      "squad": "",
+      "blurb": "Operation Tenfold Pursuit is the thirty-ninth expansion for Tom Clancy's Rainbow Six Siege. It was revealed worldwide on November 17, 2025, and was fully released on December 2, 2025."
+    },
+    {
+      "id": "r6-operation-silent-hunt",
+      "name": "Operation Silent Hunt",
+      "code": "Y11S1",
+      "year": 11,
+      "released": "BP: March 3rd, 2026WW: March 3rd, 2026TS: February 17th, 202",
+      "operators": [],
+      "map": "Coastline",
+      "squad": "",
+      "blurb": "Operation Silent Hunt is the fortieth expansion for Tom Clancy's Rainbow Six Siege. It was revealed on February 15, 2026 during the Six Invitational and was released on the Test Server on February 17th, 2026. It was released worldwide on March 3rd, 2026. On the expansion release, the game was rebranded back to Tom Clancy's Rainbow Six Siege."
+    },
+    {
+      "id": "r6-operation-system-override",
+      "name": "Operation System Override",
+      "code": "Y11S2",
+      "year": 11,
+      "released": "TS: May 19th 2026WW: June 2nd 2026",
+      "operators": [],
+      "map": "Calypso Casino",
+      "squad": "",
+      "blurb": "Operation System Override is the forty-first expansion for Tom Clancy's Rainbow Six Siege. It was formally announced on February 15th, 2026 during the Six Invitational."
+    },
+    {
+      "id": "r6-operation-split-fire",
+      "name": "Operation Split Fire",
+      "code": "Y11S3",
+      "year": 11,
+      "released": "BP:September 2026WW:September 2026",
+      "operators": [],
+      "map": "Villa",
+      "squad": "",
+      "blurb": "Operation Split Fire is the forty-second expansion for Tom Clancy's Rainbow Six Siege. It was formally announced on February 15th, 2026 during the Six Invitational."
+    },
+    {
+      "id": "r6-year-eleven-season-three",
+      "name": "Year Eleven Season Three",
+      "code": "Y11S4",
+      "year": 11,
+      "released": "BP:December 2026WW:December 2026",
+      "operators": [],
+      "map": "",
+      "squad": "",
+      "blurb": "Year Eleven Season Four is the placeholder title for the forty-third expansion for Tom Clancy's Rainbow Six Siege. It was formally announced on February 15th, 2026 during the Six Invitational."
+    }
+  ]
+}
