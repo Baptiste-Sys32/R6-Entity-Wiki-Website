@@ -1,0 +1,1833 @@
+{
+  "generatedAt": "2026-09-25T19:19:21.309Z",
+  "images": {
+    "r6_images/operators/icons/r6-ace.png": {
+      "file": "AceIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-ace.png": {
+      "file": "Ace - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-ace.png": {
+      "file": "R6S S.E.L.M.A Aqua Breacher.webp",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-alibi.png": {
+      "file": "AlibiIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-alibi.png": {
+      "file": "Alibi in-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-alibi.png": {
+      "file": "Prisma.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-amaru.png": {
+      "file": "AmaruIconN.png",
+      "width": 256
+    },
+    "r6_images/gadgets/r6-amaru.png": {
+      "file": "Garra_Hook.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-aruni.png": {
+      "file": "AruniIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-aruni.png": {
+      "file": "ARUNI ELITE FULLBODY.webp",
+      "width": 400
+    },
+    "r6_images/operators/icons/r6-ash.png": {
+      "file": "AshIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-ash.png": {
+      "file": "Ash - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-ash.png": {
+      "file": "Breach_round.png",
+      "width": null
+    },
+    "r6_images/weapons/r6-ash-1.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ash-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/operators/icons/r6-azami.png": {
+      "file": "Azami Ability Icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-azami.png": {
+      "file": "Azami Fullbody.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-azami.png": {
+      "file": "Azami Ability Icon.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-bandit.png": {
+      "file": "BanditIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-bandit.png": {
+      "file": "Bandit turn-around.jpg",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-bandit.png": {
+      "file": "Shock_Wire1.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-blackbeard.png": {
+      "file": "BlackbeardIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-blackbeard.png": {
+      "file": "Blackbeard in-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-blackbeard.png": {
+      "file": "H.U.L.L. Adaptable Shield Icon.webp",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-blitz.png": {
+      "file": "BlitzIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-blitz.png": {
+      "file": "Blitz Portrait.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-blitz.png": {
+      "file": "Flash_Shield.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-brava.png": {
+      "file": "Brava icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-brava.png": {
+      "file": "Brava - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-brava.png": {
+      "file": "Kludge Drone.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-buck.png": {
+      "file": "Buck Icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-buck.png": {
+      "file": "Buck - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-buck.png": {
+      "file": "Skeleton_Key.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-capit-o.png": {
+      "file": "CapitaoIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-capit-o.png": {
+      "file": "Capitao Portrait.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-capit-o.png": {
+      "file": "Tactical_Crossbow.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-castle.png": {
+      "file": "CastleIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-castle.png": {
+      "file": "Castle - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-castle.png": {
+      "file": "Armor_Panel.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-caveira.png": {
+      "file": "CaveiraIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-caveira.png": {
+      "file": "Caveira In-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-caveira.png": {
+      "file": "Silent_Step.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-clash.png": {
+      "file": "ClashIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-clash.png": {
+      "file": "Clash in-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-clash.png": {
+      "file": "CCE_Shield.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-deimos.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-deimos.png": {
+      "file": "Deimos Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-deimos.png": {
+      "file": "R6S Deathmark Icon.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-doc.png": {
+      "file": "DocIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-doc.png": {
+      "file": "Doc - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-doc.png": {
+      "file": "Stim_Pistol.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-dokkaebi.png": {
+      "file": "DokkaebiIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-dokkaebi.png": {
+      "file": "Dokkaebi - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-dokkaebi.png": {
+      "file": "Jegeo payload.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-echo.png": {
+      "file": "EchoIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-echo.png": {
+      "file": "Echo - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-echo.png": {
+      "file": "Yokai.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-ela.png": {
+      "file": "ElaIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-ela.png": {
+      "file": "Ela Portrait.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-ela.png": {
+      "file": "Grzmot_Mine.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-fenrir.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-fenrir.png": {
+      "file": "Fenrir - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-fenrir.png": {
+      "file": "F-NATT_DREAD_MINE.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-finka.png": {
+      "file": "FinkaIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-finka.png": {
+      "file": "Finka - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-finka.png": {
+      "file": "Adrenal_Surge.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-flores.png": {
+      "file": "FloresIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-flores.png": {
+      "file": "Flores - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-flores.png": {
+      "file": "RCE-Ratero Charge.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-frost.png": {
+      "file": "Frost Icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-frost.png": {
+      "file": "Frost Fullbody.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-frost.png": {
+      "file": "Welcome_Mat.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-fuze.png": {
+      "file": "Fuze's Icon (Beta).png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-fuze.png": {
+      "file": "Fuze - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-fuze.png": {
+      "file": "Cluster_Charge.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-glaz.png": {
+      "file": "GlazIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-glaz.png": {
+      "file": "Glaz - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-glaz.png": {
+      "file": "Flip_Sight.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-goyo.png": {
+      "file": "GoyoIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/icons/r6-gridlock.png": {
+      "file": "GridlockIconN.png",
+      "width": 256
+    },
+    "r6_images/gadgets/r6-gridlock.png": {
+      "file": "Trax Stingers.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-hibana.png": {
+      "file": "HibanaIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-hibana.png": {
+      "file": "Hibana - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-hibana.png": {
+      "file": "New X-KAIROS.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-iana.png": {
+      "file": "IanaIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-iana.png": {
+      "file": "Iana - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-iana.png": {
+      "file": "Gemini_Replicator1.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-iq.png": {
+      "file": "IqIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-iq.png": {
+      "file": "IQ - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-iq.png": {
+      "file": "Electronics Detector.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-jackal.png": {
+      "file": "JackalIconN.png",
+      "width": 256
+    },
+    "r6_images/gadgets/r6-jackal.png": {
+      "file": "Eyenox_Model_III.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-j-ger.png": {
+      "file": "JagerIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-j-ger.png": {
+      "file": "Jäger Portrait.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-j-ger.png": {
+      "file": "Active_Defense_System.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-kaid.png": {
+      "file": "KaidIconN.png",
+      "width": 256
+    },
+    "r6_images/gadgets/r6-kaid.png": {
+      "file": "Rtila_Electroclaw.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-kali.png": {
+      "file": "KaliIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-kali.png": {
+      "file": "Kali - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-kali.png": {
+      "file": "LV_Explosive_Lance.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-kapkan.png": {
+      "file": "KapkanIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-kapkan.png": {
+      "file": "Kapkan - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-kapkan.png": {
+      "file": "Entry_Denial_Device.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-lesion.png": {
+      "file": "LesionIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-lesion.png": {
+      "file": "Lesion Portrait.png",
+      "width": 400
+    },
+    "r6_images/operators/icons/r6-lion.png": {
+      "file": "LionIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-lion.png": {
+      "file": "Lion - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-lion.png": {
+      "file": "EE-ONE-D.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-maestro.png": {
+      "file": "MaestroIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-maestro.png": {
+      "file": "Maestro in-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-maestro.png": {
+      "file": "Evil Eye.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-maverick.png": {
+      "file": "MaverickIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-maverick.png": {
+      "file": "Maverick - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-maverick.png": {
+      "file": "Breaching_Torch.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-melusi.png": {
+      "file": "MelusiIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-melusi.png": {
+      "file": "Melusi - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-melusi.png": {
+      "file": "BANSHEE SONIC DEFENSE.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-mira.png": {
+      "file": "MiraIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-mira.png": {
+      "file": "Mira Portrait.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-mira.png": {
+      "file": "Black_Mirror.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-montagne.png": {
+      "file": "MontagneIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-montagne.png": {
+      "file": "Montagne - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-montagne.png": {
+      "file": "Extendable_Shield.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-mozzie.png": {
+      "file": "Mozzie2ndIcon.png",
+      "width": 256
+    },
+    "r6_images/gadgets/r6-mozzie.png": {
+      "file": "Pest_Launcher.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-mute.png": {
+      "file": "MuteIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-mute.png": {
+      "file": "Mute - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-mute.png": {
+      "file": "Wifi.png",
+      "width": null
+    },
+    "r6_images/weapons/r6-mute-1.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mute-2.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/operators/icons/r6-nomad.png": {
+      "file": "NomadIconN.png",
+      "width": 256
+    },
+    "r6_images/gadgets/r6-nomad.png": {
+      "file": "Airjab_Launcher.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-n-kk.png": {
+      "file": "NokkIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-n-kk.png": {
+      "file": "Nøkk - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-n-kk.png": {
+      "file": "HEL_Presence_Reduction.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-oryx.png": {
+      "file": "OryxIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-oryx.png": {
+      "file": "Oryx - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-oryx.png": {
+      "file": "Remah Dash​.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-osa.png": {
+      "file": "Osa Icon Small.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-osa.png": {
+      "file": "OSA ELITE FULLBODY.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-osa.png": {
+      "file": "Talon-8 Clear Shield.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-pulse.png": {
+      "file": "PulseIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-pulse.png": {
+      "file": "Pulse - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-pulse.png": {
+      "file": "Heartbeat sensor.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-ram.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-ram.png": {
+      "file": "Ram In-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-ram.png": {
+      "file": "BU-GI Auto-Breacher Activing.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-rauora.png": {
+      "file": "DOM Panel Icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-rauora.png": {
+      "file": "Rauora In-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-rauora.png": {
+      "file": "DOM Panel Icon.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-rook.png": {
+      "file": "RookIconN.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-rook.png": {
+      "file": "Rook - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-rook.png": {
+      "file": "Armor_Pack.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-sens.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-sens.png": {
+      "file": "Sens - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-sens.png": {
+      "file": "Sens Ability Icon.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-skop-s.png": {
+      "file": "PantheonShellsIcon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-skop-s.png": {
+      "file": "Skopós In-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-skop-s.png": {
+      "file": "PantheonShellsIcon.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-sledge.png": {
+      "file": "SledgeNewestIcon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-sledge.png": {
+      "file": "Sledge - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-sledge.png": {
+      "file": "Tactical_Breaching_Hammer.png",
+      "width": null
+    },
+    "r6_images/weapons/r6-sledge-1.png": {
+      "file": "Sledge - M590A1.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-sledge-2.png": {
+      "file": "R6S Stun Grenade.png",
+      "width": 320
+    },
+    "r6_images/operators/icons/r6-smoke.png": {
+      "file": "R6S-renown-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-smoke.png": {
+      "file": "Smoke - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-smoke.png": {
+      "file": "Smoke_grenade.png",
+      "width": null
+    },
+    "r6_images/weapons/r6-smoke-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-smoke-2.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/operators/icons/r6-solis.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-solis.png": {
+      "file": "Solis - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-solis.png": {
+      "file": "SPEC-IO.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-tachanka.png": {
+      "file": "R6S-renown-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-tachanka.png": {
+      "file": "Tachanka - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-tachanka.png": {
+      "file": "R6S Shumikha Launcher.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-thatcher.png": {
+      "file": "ThatcherNewestIcon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-thatcher.png": {
+      "file": "Thatcher - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-thatcher.png": {
+      "file": "EMP_Grenade.png",
+      "width": null
+    },
+    "r6_images/weapons/r6-thatcher-1.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thatcher-2.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/operators/icons/r6-thermite.png": {
+      "file": "R6S-renown-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-thermite.png": {
+      "file": "Thermite - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-thermite.png": {
+      "file": "Breach_charge.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-thorn.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/gadgets/r6-thorn.png": {
+      "file": "Thorn gadget.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-thunderbird.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-thunderbird.png": {
+      "file": "THUNDERBIRD ELITE FULLBODY.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-thunderbird.png": {
+      "file": "Kona Station.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-tubar-o.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/gadgets/r6-tubar-o.png": {
+      "file": "R6S Tubarão Zoto Icon.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-twitch.png": {
+      "file": "R6S-renown-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-twitch.png": {
+      "file": "Twitch - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-twitch.png": {
+      "file": "Shock_Drone.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-valkyrie.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-valkyrie.png": {
+      "file": "Valkyrie In-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-valkyrie.png": {
+      "file": "Black_Eye.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-vigil.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-vigil.png": {
+      "file": "Vigil - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-vigil.png": {
+      "file": "ERC-7.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-wamai.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-wamai.png": {
+      "file": "WAMAI ELITE FULLBODY.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-wamai.png": {
+      "file": "Mag-NET1.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-warden.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-warden.png": {
+      "file": "Warden - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-warden.png": {
+      "file": "Glance_Smart_Glasses.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-ying.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-ying.png": {
+      "file": "Ying - Full Body.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-ying.png": {
+      "file": "Candela.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-zero.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-zero.png": {
+      "file": "Zero In-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-zero.png": {
+      "file": "R6s-operator-ability-zero.png",
+      "width": null
+    },
+    "r6_images/operators/icons/r6-zofia.png": {
+      "file": "R6S-credits-icon.png",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-zofia.png": {
+      "file": "Zofia Portrait.png",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-zofia.png": {
+      "file": "KS79 LIFELINE.png",
+      "width": null
+    },
+    "r6_images/weapons/r6-ace-1.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ace-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-alibi-1.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-alibi-2.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-amaru-1.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-aruni-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-aruni-2.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ash-5.png": {
+      "file": "R6S M45 MEUSOC.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ash-6.png": {
+      "file": "R6S 5.7 USG.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-azami-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-azami-2.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-bandit-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-bandit-2.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-bandit-3.png": {
+      "file": "R6S MP7.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-bandit-4.png": {
+      "file": "R6S M870.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-bandit-5.png": {
+      "file": "R6S Keratos .357.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-bandit-6.png": {
+      "file": "R6S P12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-blackbeard-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-blitz-1.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-blitz-2.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-brava-1.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-brava-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-buck-1.png": {
+      "file": "R6S Stun Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-buck-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-buck-3.png": {
+      "file": "R6S C8-SFW.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-buck-4.png": {
+      "file": "R6S CAMRS.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-buck-5.png": {
+      "file": "R6S Mk1 9mm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-capit-o-1.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-capit-o-2.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-capit-o-4.png": {
+      "file": "R6S PARA-308.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-capit-o-5.png": {
+      "file": "R6S M249.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-capit-o-6.png": {
+      "file": "R6S PMR90A2.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-capit-o-7.png": {
+      "file": "R6S Luison.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-capit-o-8.png": {
+      "file": "R6S GONNE-6.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-castle-1.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-castle-2.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-castle-3.png": {
+      "file": "R6S UMP45.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-castle-4.png": {
+      "file": "R6S M1014.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-castle-5.png": {
+      "file": "R6S 5.7 USG.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-castle-6.png": {
+      "file": "R6S Super Shorty.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-caveira-1.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-caveira-2.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-caveira-3.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-caveira-4.png": {
+      "file": "R6S M12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-caveira-5.png": {
+      "file": "R6S SPAS-15.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-caveira-6.png": {
+      "file": "R6S Luison.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-clash-1.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-clash-2.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-deimos-2.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-deimos-3.png": {
+      "file": "R6S AK-74M.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-deimos-4.png": {
+      "file": "R6S M590A1.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-deimos-5.png": {
+      "file": "R6S .44 Vendetta.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-doc-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-doc-2.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-dokkaebi-1.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-echo-1.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-echo-2.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ela-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ela-2.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ela-3.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fenrir-1.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fenrir-2.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-finka-1.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-finka-3.png": {
+      "file": "R6S Frag Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-flores-1.png": {
+      "file": "R6S Stun Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-flores-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-frost-1.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-frost-2.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-frost-4.png": {
+      "file": "R6S 9mm C1.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-frost-5.png": {
+      "file": "R6S Mk1 9mm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-frost-6.png": {
+      "file": "R6S ITA12S.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fuze-1.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fuze-2.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fuze-3.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-glaz-1.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-glaz-3.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-glaz-4.png": {
+      "file": "R6S OTs-03.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-glaz-5.png": {
+      "file": "R6S PMM.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-glaz-6.png": {
+      "file": "R6S GONNE-6.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-glaz-7.png": {
+      "file": "R6S Bearing 9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-goyo-1.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-goyo-2.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-goyo-3.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-gridlock-1.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-gridlock-3.png": {
+      "file": "R6S Frag Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-hibana-1.png": {
+      "file": "R6S Stun Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-hibana-2.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-hibana-3.png": {
+      "file": "R6S Type-89.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-hibana-4.png": {
+      "file": "R6S SuperNova.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-hibana-5.png": {
+      "file": "R6S PMR90A2.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-hibana-6.png": {
+      "file": "R6S P229.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-hibana-7.png": {
+      "file": "R6S Bearing 9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iana-2.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iq-1.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iq-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iq-3.png": {
+      "file": "R6S Frag Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-jackal-1.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-jackal-2.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-j-ger-1.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-j-ger-2.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-j-ger-3.png": {
+      "file": "R6S M870.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-j-ger-4.png": {
+      "file": "R6S 416-C Carbine.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-j-ger-5.png": {
+      "file": "R6S P-10C.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-j-ger-6.png": {
+      "file": "R6S P12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kaid-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kaid-2.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kaid-3.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kali-1.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kali-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kapkan-1.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kapkan-2.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kapkan-3.png": {
+      "file": "R6S 9x19VSN.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kapkan-4.png": {
+      "file": "R6S SASG-12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kapkan-5.png": {
+      "file": "R6S PMM.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kapkan-6.png": {
+      "file": "R6S GSH-18.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lesion-1.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lesion-2.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lion-1.png": {
+      "file": "R6S Stun Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lion-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lion-4.png": {
+      "file": "R6S V308.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lion-5.png": {
+      "file": "R6S 417.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lion-6.png": {
+      "file": "R6S SG-CQB.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lion-7.png": {
+      "file": "R6S P9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lion-8.png": {
+      "file": "R6S LFP586.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maestro-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maestro-2.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maestro-3.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maestro-4.png": {
+      "file": "R6S ALDA 5.56.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maestro-5.png": {
+      "file": "R6S ACS12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maestro-6.png": {
+      "file": "R6S Bailiff 410.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maestro-7.png": {
+      "file": "R6S Keratos .357.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maverick-1.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maverick-3.png": {
+      "file": "R6S Frag Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-melusi-1.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-melusi-2.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mira-1.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mira-2.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mira-3.png": {
+      "file": "R6S Vector .45 ACP.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mira-4.png": {
+      "file": "R6S ITA12L.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mira-5.png": {
+      "file": "R6S ITA12S.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mira-6.png": {
+      "file": "R6S USP40.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-montagne-1.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-montagne-2.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mozzie-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mozzie-2.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mozzie-3.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mute-5.png": {
+      "file": "R6S P226 Mk 25.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mute-6.png": {
+      "file": "R6S SMG-11.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-nomad-1.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-n-kk-1.png": {
+      "file": "R6S Frag Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-n-kk-2.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-oryx-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-oryx-2.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-osa-1.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-osa-2.png": {
+      "file": "R6S Frag Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-pulse-1.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-pulse-2.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-pulse-3.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ram-2.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rauora-1.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rauora-2.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-sens-1.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-sens-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-skop-s-1.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-skop-s-2.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-sledge-6.png": {
+      "file": "R6S P226 Mk 25.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-smoke-5.png": {
+      "file": "R6S P226 Mk 25.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-smoke-6.png": {
+      "file": "R6S SMG-11.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tachanka-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tachanka-2.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tachanka-3.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thatcher-5.png": {
+      "file": "R6S M590A1.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thatcher-6.png": {
+      "file": "R6S P226 Mk 25.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thermite-1.png": {
+      "file": "R6S Stun Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thermite-2.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thermite-3.png": {
+      "file": "R6S M1014.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thermite-4.png": {
+      "file": "R6S 556xi.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thermite-5.png": {
+      "file": "R6S M45 MEUSOC.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thermite-6.png": {
+      "file": "R6S 5.7 USG.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thermite-7.png": {
+      "file": "R6S ITA12S.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thorn-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thorn-2.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thunderbird-1.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thunderbird-2.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thunderbird-3.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tubar-o-1.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tubar-o-2.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-twitch-1.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-twitch-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-twitch-3.png": {
+      "file": "R6S F2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-twitch-4.png": {
+      "file": "R6S 417.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-twitch-5.png": {
+      "file": "R6S SG-CQB.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-twitch-6.png": {
+      "file": "R6S P9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-twitch-7.png": {
+      "file": "R6S LFP586.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-valkyrie-1.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-valkyrie-2.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-valkyrie-3.png": {
+      "file": "R6S MPX.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-valkyrie-4.png": {
+      "file": "R6S SPAS-12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-valkyrie-5.png": {
+      "file": "R6S D-50.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-vigil-1.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-vigil-2.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-wamai-1.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-wamai-2.png": {
+      "file": "R6S Proximity Alarm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-wamai-3.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-warden-1.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-warden-2.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-warden-3.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ying-1.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ying-2.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ying-3.png": {
+      "file": "R6S T-95 LSW.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ying-4.png": {
+      "file": "R6S SIX12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ying-5.png": {
+      "file": "R6S Q-929.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zero-1.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zero-2.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zofia-1.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zofia-2.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/maps/r6-bank.png": {
+      "file": "Siege Bank Thumbnail.PNG",
+      "width": 400
+    },
+    "r6_images/maps/r6-bartlett-u-.png": {
+      "file": "Bartlett U.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-border.png": {
+      "file": "Border rework.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-calypso-casino.png": {
+      "file": "R6S Calypso Casino.webp",
+      "width": 400
+    },
+    "r6_images/maps/r6-chalet.png": {
+      "file": "Chalet_Rework_1.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-clubhouse.png": {
+      "file": "Siege Clubhouse Thumbnail.jpg",
+      "width": 400
+    },
+    "r6_images/maps/r6-coastline.png": {
+      "file": "CoastlineThumbnailDay.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-consulate.png": {
+      "file": "Siege Consulate Thumbnail.PNG",
+      "width": 400
+    },
+    "r6_images/maps/r6-emerald-plains.png": {
+      "file": "Emerald Plains.jpeg",
+      "width": 400
+    },
+    "r6_images/maps/r6-favela.png": {
+      "file": "Favela rework.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-fortress.png": {
+      "file": "fortress 1.jpg",
+      "width": 400
+    },
+    "r6_images/maps/r6-hereford-base-original-.png": {
+      "file": "Hereford_217063.jpg",
+      "width": 400
+    },
+    "r6_images/maps/r6-hereford-base-rework-.png": {
+      "file": "HEREFORDrework thumbnail.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-house.png": {
+      "file": "House Rework.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-kafe-dostoyevsky.png": {
+      "file": "New r6 kafe.jpg",
+      "width": 400
+    },
+    "r6_images/maps/r6-kanal.png": {
+      "file": "Siege Kanal Thumbnail 2.PNG",
+      "width": 400
+    },
+    "r6_images/maps/r6-lair.png": {
+      "file": "R6S Lair.webp",
+      "width": 400
+    },
+    "r6_images/maps/r6-nighthaven-labs.png": {
+      "file": "R6S_Live_Y7S4_IMG_NH_Labs_LoadingScreen_FINAL.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-oregon.png": {
+      "file": "Oregon Rework.jpeg",
+      "width": 400
+    },
+    "r6_images/maps/r6-outback.png": {
+      "file": "Outback Rework.jpeg",
+      "width": 400
+    },
+    "r6_images/maps/r6-presidential-plane.png": {
+      "file": "Siege Plane Thumbnail.PNG",
+      "width": 400
+    },
+    "r6_images/maps/r6-skyscraper.png": {
+      "file": "Skyscraper Rework.png",
+      "width": 400
+    },
+    "r6_images/maps/r6-stadium.png": {
+      "file": "Stadium Concept 2021 1.jpeg",
+      "width": 400
+    },
+    "r6_images/maps/r6-theme-park.png": {
+      "file": "Themepark rework.jpg",
+      "width": 400
+    },
+    "r6_images/maps/r6-tower.png": {
+      "file": "Siege Tower Thumbnail.PNG",
+      "width": 400
+    },
+    "r6_images/maps/r6-villa.png": {
+      "file": "Siege Villa Thumbnail.jpg",
+      "width": 400
+    },
+    "r6_images/maps/r6-yacht.png": {
+      "file": "Siege Yacht Thumbnail.PNG",
+      "width": 400
+    }
+  }
+}

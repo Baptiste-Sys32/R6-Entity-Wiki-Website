@@ -4,6 +4,8 @@
   Cache-Control: public, max-age=31536000, immutable
 /data.js
   Cache-Control: public, max-age=3600
+/r6_images/*
+  Cache-Control: public, max-age=86400
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY

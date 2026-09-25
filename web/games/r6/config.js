@@ -101,9 +101,7 @@
       Weapon: './assets/default-weapon.svg',
       Map: './assets/default-map.svg'
     };
-    const IMAGE_PREFIXES = ['r6_images/', 'assets/'];
-    const DIAMOND_IMAGE_TYPES = [];
-    const CONTAIN_IMAGE_TYPES = ['Gadget', 'Weapon'];
-    const IMAGE_RESOLVER = null;
-    const ACCENT_COLOR = '#3da5e0';
-    const ACCENT_SOFT = 'rgba(61,165,224,0.14)';
+    const IMAGE_LOCAL_PREFIXES = ['r6_images/', 'assets/'];
+    const IMAGE_DIAMOND_TYPES = [];
+    const IMAGE_CONTAIN_TYPES = ['Gadget', 'Weapon', 'Hero', 'Map'];
+    const GAME_ACCENT = { accent: '#3da5e0', accentSoft: 'rgba(61, 165, 224, 0.14)' };

@@ -64,6 +64,30 @@ function validateSeasons(seasons, operatorNames) {
   });
 }
 
+function validateImagePaths(operators, maps) {
+  const missing = [];
+  const check = (rel, owner) => {
+    if (!rel) return;
+    if (!/^r6_images\//.test(rel)) missing.push(`${owner}: image path escapes r6_images/ (${rel})`);
+    else if (!fs.existsSync(path.join(ROOT, 'web', rel))) missing.push(`${owner}: missing file web/${rel}`);
+    else if (fs.statSync(path.join(ROOT, 'web', rel)).size === 0) missing.push(`${owner}: empty file web/${rel}`);
+  };
+  operators.forEach((op) => {
+    check(op.icon, `operator ${op.id} icon`);
+    check(op.hero, `operator ${op.id} hero`);
+    check(op.gadgetIcon, `operator ${op.id} gadgetIcon`);
+    (op.weapons || []).forEach((w) => check(w.image, `operator ${op.id} weapon ${w.name}`));
+  });
+  maps.forEach((m) => check(m.thumb, `map ${m.id} thumb`));
+  if (missing.length) {
+    console.error(`build-data: ${missing.length} image issues:\n- ${missing.slice(0, 20).join('\n- ')}${missing.length > 20 ? `\n... and ${missing.length - 20} more` : ''}`);
+    process.exit(1);
+  }
+  const count = operators.reduce((n, op) => n + [op.icon, op.hero, op.gadgetIcon].filter(Boolean).length + (op.weapons || []).filter((w) => w.image).length, 0)
+    + maps.filter((m) => m.thumb).length;
+  console.log(`build-data: images ok (${count} files referenced).`);
+}
+
 function main() {
   const operators = readJson(OPERATORS_PATH).operators;
   const maps = readJson(MAPS_PATH).maps;
@@ -71,6 +95,7 @@ function main() {
   validateOperators(operators);
   validateMaps(maps);
   validateSeasons(seasons, new Set(operators.map((op) => op.name)));
+  validateImagePaths(operators, maps);
   const payload = { operators, maps, seasons };
   const output = `var R6_DATABASE = ${JSON.stringify(payload)};\n`;
   if (checkOnly) {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T13:00:33.402Z",
+  "generatedAt": "2026-09-25T19:19:21.309Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -20,7 +20,22 @@
       "realname": "Håvard Haugland",
       "quote": "There is no chasm too wide, no wall too thick, that will stop me from bringing you home.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-ace.png",
+      "hero": "r6_images/operators/heroes/r6-ace.png",
+      "gadgetIcon": "r6_images/gadgets/r6-ace.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-ace-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-ace-2.png"
+        }
+      ]
     },
     {
       "id": "r6-alibi",
@@ -34,7 +49,22 @@
       "realname": "Aria de Luca",
       "quote": "Illusions are fatal. If you waver, you're mine. If you pick wrong, you're mine.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-alibi.png",
+      "hero": "r6_images/operators/heroes/r6-alibi.png",
+      "gadgetIcon": "r6_images/gadgets/r6-alibi.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-alibi-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-alibi-2.png"
+        }
+      ]
     },
     {
       "id": "r6-amaru",
@@ -48,7 +78,22 @@
       "realname": "Azucena Rocío Quispe",
       "quote": "Forget who you are, and nothing else matters. You’ll fight for anyone, and never know why.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-amaru.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-amaru.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-amaru-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade/Siege",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-aruni",
@@ -62,7 +107,22 @@
       "realname": "Apha Tawanroong",
       "quote": "My gate stands like a star in the darkness, a burning light that keeps enemies at bay. Can you take the heat?",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-aruni.png",
+      "hero": "r6_images/operators/heroes/r6-aruni.png",
+      "gadgetIcon": null,
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-aruni-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-aruni-2.png"
+        }
+      ]
     },
     {
       "id": "r6-ash",
@@ -76,7 +136,42 @@
       "realname": "Eliza Cohen",
       "quote": "When I was little, my savta taught me that 'Silence was a woman's best garment'. But, I have to admit, I never really took her advice to heart.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-ash.png",
+      "hero": "r6_images/operators/heroes/r6-ash.png",
+      "gadgetIcon": "r6_images/gadgets/r6-ash.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge",
+          "image": "r6_images/weapons/r6-ash-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-ash-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "G36C",
+          "image": "r6_images/weapons/r6-ash-1.png"
+        },
+        {
+          "slot": "primary",
+          "name": "R4-C",
+          "image": "r6_images/weapons/r6-ash-2.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "M45 MEUSOC",
+          "image": "r6_images/weapons/r6-ash-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "5.7 USG",
+          "image": "r6_images/weapons/r6-ash-6.png"
+        }
+      ]
     },
     {
       "id": "r6-azami",
@@ -90,7 +185,22 @@
       "realname": "Kana Fujiwara",
       "quote": "Honor is not the only thing worth protecting... but sometimes it's all you have left.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-azami.png",
+      "hero": "r6_images/operators/heroes/r6-azami.png",
+      "gadgetIcon": "r6_images/gadgets/r6-azami.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-azami-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-azami-2.png"
+        }
+      ]
     },
     {
       "id": "r6-bandit",
@@ -104,7 +214,42 @@
       "realname": "Dominic Brunsmeier",
       "quote": "I used to be undercover. I did time. I had to deal drugs. I even had to kill. And I was so good at it that, it got me a promotion.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-bandit.png",
+      "hero": "r6_images/operators/heroes/r6-bandit.png",
+      "gadgetIcon": "r6_images/gadgets/r6-bandit.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-bandit-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Nitro Cell",
+          "image": "r6_images/weapons/r6-bandit-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "MP7",
+          "image": "r6_images/weapons/r6-bandit-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M870",
+          "image": "r6_images/weapons/r6-bandit-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Keratos .357",
+          "image": "r6_images/weapons/r6-bandit-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P12",
+          "image": "r6_images/weapons/r6-bandit-6.png"
+        }
+      ]
     },
     {
       "id": "r6-blackbeard",
@@ -118,7 +263,22 @@
       "realname": "Craig Jenson",
       "quote": "When I enlisted, I was told what was expected of me. Be unwavering. Unstoppable. Unbreakable. It's about time the gear matches the operator.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-blackbeard.png",
+      "hero": "r6_images/operators/heroes/r6-blackbeard.png",
+      "gadgetIcon": "r6_images/gadgets/r6-blackbeard.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Frag Grenade",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-blackbeard-2.png"
+        }
+      ]
     },
     {
       "id": "r6-blitz",
@@ -132,7 +292,22 @@
       "realname": "Elias Kötz",
       "quote": "I don't like photos of myself. The lighting is always wrong.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-blitz.png",
+      "hero": "r6_images/operators/heroes/r6-blitz.png",
+      "gadgetIcon": "r6_images/gadgets/r6-blitz.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-blitz-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-blitz-2.png"
+        }
+      ]
     },
     {
       "id": "r6-brava",
@@ -146,7 +321,22 @@
       "realname": "Nayara Cardoso",
       "quote": "Sometimes the only path to justice is through a bullet…",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-brava.png",
+      "hero": "r6_images/operators/heroes/r6-brava.png",
+      "gadgetIcon": "r6_images/gadgets/r6-brava.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-brava-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-brava-2.png"
+        }
+      ]
     },
     {
       "id": "r6-buck",
@@ -160,7 +350,37 @@
       "realname": "Sebastien Côté",
       "quote": "Remember, we are the hunters, they are the prey.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-buck.png",
+      "hero": "r6_images/operators/heroes/r6-buck.png",
+      "gadgetIcon": "r6_images/gadgets/r6-buck.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade",
+          "image": "r6_images/weapons/r6-buck-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-buck-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "C8-SFW",
+          "image": "r6_images/weapons/r6-buck-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "CAMRS",
+          "image": "r6_images/weapons/r6-buck-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Mk1 9mm",
+          "image": "r6_images/weapons/r6-buck-5.png"
+        }
+      ]
     },
     {
       "id": "r6-capit-o",
@@ -174,7 +394,52 @@
       "realname": "Vicente Souza",
       "quote": "Focusing only on the bad things in life will keep you from seeing the many opportunities to do good.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-capit-o.png",
+      "hero": "r6_images/operators/heroes/r6-capit-o.png",
+      "gadgetIcon": "r6_images/gadgets/r6-capit-o.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-capit-o-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-capit-o-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        },
+        {
+          "slot": "primary",
+          "name": "PARA-308",
+          "image": "r6_images/weapons/r6-capit-o-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M249",
+          "image": "r6_images/weapons/r6-capit-o-5.png"
+        },
+        {
+          "slot": "primary",
+          "name": "PMR90A2",
+          "image": "r6_images/weapons/r6-capit-o-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "PRB92",
+          "image": "r6_images/weapons/r6-capit-o-7.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "GONNE-6",
+          "image": "r6_images/weapons/r6-capit-o-8.png"
+        }
+      ]
     },
     {
       "id": "r6-castle",
@@ -188,7 +453,42 @@
       "realname": "Miles Campbell",
       "quote": "Listen people: No one dies today. Any questions'll just have to wait.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-castle.png",
+      "hero": "r6_images/operators/heroes/r6-castle.png",
+      "gadgetIcon": "r6_images/gadgets/r6-castle.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-castle-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-castle-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "UMP45",
+          "image": "r6_images/weapons/r6-castle-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M1014",
+          "image": "r6_images/weapons/r6-castle-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "5.7 USG",
+          "image": "r6_images/weapons/r6-castle-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Super Shorty",
+          "image": "r6_images/weapons/r6-castle-6.png"
+        }
+      ]
     },
     {
       "id": "r6-caveira",
@@ -202,7 +502,42 @@
       "realname": "Taina Pereira",
       "quote": "Not every child gets to choose who they grow up to be.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-caveira.png",
+      "hero": "r6_images/operators/heroes/r6-caveira.png",
+      "gadgetIcon": "r6_images/gadgets/r6-caveira.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-caveira-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-caveira-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-caveira-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M12",
+          "image": "r6_images/weapons/r6-caveira-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SPAS-15",
+          "image": "r6_images/weapons/r6-caveira-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Luison",
+          "image": "r6_images/weapons/r6-caveira-6.png"
+        }
+      ]
     },
     {
       "id": "r6-clash",
@@ -216,7 +551,22 @@
       "realname": "Morowa Evans",
       "quote": "Change will come if you’re willing to fight for it.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-clash.png",
+      "hero": "r6_images/operators/heroes/r6-clash.png",
+      "gadgetIcon": "r6_images/gadgets/r6-clash.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-clash-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-clash-2.png"
+        }
+      ]
     },
     {
       "id": "r6-deimos",
@@ -230,7 +580,37 @@
       "realname": "Gerald Morris",
       "quote": "There's no hiding. Not for you, not for me. Try not to disappoint me, soldier.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-deimos.png",
+      "hero": "r6_images/operators/heroes/r6-deimos.png",
+      "gadgetIcon": "r6_images/gadgets/r6-deimos.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Frag Grenade",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-deimos-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "AK-74M",
+          "image": "r6_images/weapons/r6-deimos-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M590A1",
+          "image": "r6_images/weapons/r6-deimos-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": ".44 Vendetta",
+          "image": "r6_images/weapons/r6-deimos-5.png"
+        }
+      ]
     },
     {
       "id": "r6-doc",
@@ -244,7 +624,22 @@
       "realname": "Gustave Kateb",
       "quote": "I've learned from experience that the place to save lives is in the field, not an office. And sometimes the only way to save a life, is to take one.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-doc.png",
+      "hero": "r6_images/operators/heroes/r6-doc.png",
+      "gadgetIcon": "r6_images/gadgets/r6-doc.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-doc-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-doc-2.png"
+        }
+      ]
     },
     {
       "id": "r6-dokkaebi",
@@ -258,7 +653,22 @@
       "realname": "Grace Nam\nNam Eun-hye",
       "quote": "Your phone is ringing. Here, let me get that for you.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-dokkaebi.png",
+      "hero": "r6_images/operators/heroes/r6-dokkaebi.png",
+      "gadgetIcon": "r6_images/gadgets/r6-dokkaebi.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-dokkaebi-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-echo",
@@ -272,7 +682,22 @@
       "realname": "Masaru Enatsu",
       "quote": "Don't ask me what I'm doing on my phone. You don't want to know.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-echo.png",
+      "hero": "r6_images/operators/heroes/r6-echo.png",
+      "gadgetIcon": "r6_images/gadgets/r6-echo.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-echo-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-echo-2.png"
+        }
+      ]
     },
     {
       "id": "r6-ela",
@@ -286,7 +711,27 @@
       "realname": "Elżbieta Bosak",
       "quote": "It's a brutal, dangerous world out there, but I've found my way. Chaos is my home, and I'll make sure you never escape it.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-ela.png",
+      "hero": "r6_images/operators/heroes/r6-ela.png",
+      "gadgetIcon": "r6_images/gadgets/r6-ela.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-ela-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-ela-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-ela-3.png"
+        }
+      ]
     },
     {
       "id": "r6-fenrir",
@@ -300,7 +745,22 @@
       "realname": "Emil Svensson",
       "quote": "Fear clouds the mind. You can try to fight it, but you will not survive this.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-fenrir.png",
+      "hero": "r6_images/operators/heroes/r6-fenrir.png",
+      "gadgetIcon": "r6_images/gadgets/r6-fenrir.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-fenrir-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-fenrir-2.png"
+        }
+      ]
     },
     {
       "id": "r6-finka",
@@ -314,7 +774,27 @@
       "realname": "Lera Melnikova",
       "quote": "Being afraid of a disease is sometimes worse than the disease itself. There is no cure for fear, so either you surrender to it or you fight it until one of you wins.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-finka.png",
+      "hero": "r6_images/operators/heroes/r6-finka.png",
+      "gadgetIcon": "r6_images/gadgets/r6-finka.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-finka-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade/Siege",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "M67/Siege",
+          "image": "r6_images/weapons/r6-finka-3.png"
+        }
+      ]
     },
     {
       "id": "r6-flores",
@@ -328,7 +808,22 @@
       "realname": "Santiago Miguel Lucero",
       "quote": "Getting the job done often requires a creative approach. That's where I come in.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-flores.png",
+      "hero": "r6_images/operators/heroes/r6-flores.png",
+      "gadgetIcon": "r6_images/gadgets/r6-flores.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade",
+          "image": "r6_images/weapons/r6-flores-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-flores-2.png"
+        }
+      ]
     },
     {
       "id": "r6-frost",
@@ -342,7 +837,42 @@
       "realname": "Tina Lin Tsang",
       "quote": "There are two things the human body needs in a survival situation: water and hope.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-frost.png",
+      "hero": "r6_images/operators/heroes/r6-frost.png",
+      "gadgetIcon": "r6_images/gadgets/r6-frost.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-frost-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-frost-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "Super 90",
+          "image": null
+        },
+        {
+          "slot": "primary",
+          "name": "9mm C1",
+          "image": "r6_images/weapons/r6-frost-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Mk1 9mm",
+          "image": "r6_images/weapons/r6-frost-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "ITA12S",
+          "image": "r6_images/weapons/r6-frost-6.png"
+        }
+      ]
     },
     {
       "id": "r6-fuze",
@@ -356,7 +886,27 @@
       "realname": "Shuhrat Kessikbayev",
       "quote": "Chaos is only an enemy if you're unable to adapt.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-fuze.png",
+      "hero": "r6_images/operators/heroes/r6-fuze.png",
+      "gadgetIcon": "r6_images/gadgets/r6-fuze.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-fuze-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-fuze-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-fuze-3.png"
+        }
+      ]
     },
     {
       "id": "r6-glaz",
@@ -370,7 +920,47 @@
       "realname": "Timur Glazkov",
       "quote": "Do you know what an artist and a sniper have in common? Details. Like when a touch of color is out of place. When a shadow does not match with its surroundings. Or when a shape is not where it is supp",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-glaz.png",
+      "hero": "r6_images/operators/heroes/r6-glaz.png",
+      "gadgetIcon": "r6_images/gadgets/r6-glaz.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-glaz-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Frag Grenade",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-glaz-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "OTs-03",
+          "image": "r6_images/weapons/r6-glaz-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "PMM",
+          "image": "r6_images/weapons/r6-glaz-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "GONNE-6",
+          "image": "r6_images/weapons/r6-glaz-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Bearing 9",
+          "image": "r6_images/weapons/r6-glaz-7.png"
+        }
+      ]
     },
     {
       "id": "r6-goyo",
@@ -384,7 +974,27 @@
       "realname": "César Ruiz Hernández",
       "quote": "A person is never more honest than when they think they're alone.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-goyo.png",
+      "hero": null,
+      "gadgetIcon": null,
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-goyo-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-goyo-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-goyo-3.png"
+        }
+      ]
     },
     {
       "id": "r6-gridlock",
@@ -398,7 +1008,27 @@
       "realname": "Tori Tallyo Fairous",
       "quote": "You've gotta have a couple of roos loose in the top paddock to sign up for this life, but there's nowhere I'd rather be.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-gridlock.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-gridlock.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-gridlock-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "M67/Siege",
+          "image": "r6_images/weapons/r6-gridlock-3.png"
+        }
+      ]
     },
     {
       "id": "r6-hibana",
@@ -412,7 +1042,47 @@
       "realname": "Yumiko Imagawa",
       "quote": "Kyūdō is meditation in action. Explosions are part of that action.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-hibana.png",
+      "hero": "r6_images/operators/heroes/r6-hibana.png",
+      "gadgetIcon": "r6_images/gadgets/r6-hibana.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade",
+          "image": "r6_images/weapons/r6-hibana-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Breach Charge",
+          "image": "r6_images/weapons/r6-hibana-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "Type-89",
+          "image": "r6_images/weapons/r6-hibana-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SuperNova",
+          "image": "r6_images/weapons/r6-hibana-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "PMR90A2",
+          "image": "r6_images/weapons/r6-hibana-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P229",
+          "image": "r6_images/weapons/r6-hibana-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Bearing 9",
+          "image": "r6_images/weapons/r6-hibana-7.png"
+        }
+      ]
     },
     {
       "id": "r6-iana",
@@ -426,7 +1096,22 @@
       "realname": "Nienke Meijer",
       "quote": "All systems are complementary, if you know how to connect them.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-iana.png",
+      "hero": "r6_images/operators/heroes/r6-iana.png",
+      "gadgetIcon": "r6_images/gadgets/r6-iana.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "EMP Grenade",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade/Siege",
+          "image": "r6_images/weapons/r6-iana-2.png"
+        }
+      ]
     },
     {
       "id": "r6-iq",
@@ -440,7 +1125,27 @@
       "realname": "Monika Weiss",
       "quote": "Life is the ultimate Rube Goldberg machine.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-iq.png",
+      "hero": "r6_images/operators/heroes/r6-iq.png",
+      "gadgetIcon": "r6_images/gadgets/r6-iq.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-iq-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-iq-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "M67/Siege",
+          "image": "r6_images/weapons/r6-iq-3.png"
+        }
+      ]
     },
     {
       "id": "r6-jackal",
@@ -454,7 +1159,22 @@
       "realname": "Ryad Ramírez Al-Hassar",
       "quote": "You can't escape me, but that doesn’t mean you won't try.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-jackal.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-jackal.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-jackal-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-jackal-2.png"
+        }
+      ]
     },
     {
       "id": "r6-j-ger",
@@ -468,7 +1188,42 @@
       "realname": "Marius Streicher",
       "quote": "They said it could not be done. They said it was designed for tanks. They said I could not make it smaller and more accurate. They were wrong.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-j-ger.png",
+      "hero": "r6_images/operators/heroes/r6-j-ger.png",
+      "gadgetIcon": "r6_images/gadgets/r6-j-ger.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-j-ger-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-j-ger-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M870",
+          "image": "r6_images/weapons/r6-j-ger-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "416-C Carbine",
+          "image": "r6_images/weapons/r6-j-ger-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P-10C",
+          "image": "r6_images/weapons/r6-j-ger-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P12",
+          "image": "r6_images/weapons/r6-j-ger-6.png"
+        }
+      ]
     },
     {
       "id": "r6-kaid",
@@ -482,7 +1237,27 @@
       "realname": "Jalal El Fassi",
       "quote": "Lead by example and the mountain will move.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-kaid.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-kaid.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-kaid-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-kaid-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-kaid-3.png"
+        }
+      ]
     },
     {
       "id": "r6-kali",
@@ -496,7 +1271,22 @@
       "realname": "Jaimini Kalimohan Shah",
       "quote": "Acceptance of mediocrity is the first step toward failure.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-kali.png",
+      "hero": "r6_images/operators/heroes/r6-kali.png",
+      "gadgetIcon": "r6_images/gadgets/r6-kali.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-kali-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-kali-2.png"
+        }
+      ]
     },
     {
       "id": "r6-kapkan",
@@ -510,7 +1300,42 @@
       "realname": "Maxim Basuda",
       "quote": "These soldiers think their training will keep them alive. They break down doors and come through windows, weapons drawn. They check the corners, watch each other's backs, and give the all clear. But i",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-kapkan.png",
+      "hero": "r6_images/operators/heroes/r6-kapkan.png",
+      "gadgetIcon": "r6_images/gadgets/r6-kapkan.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-kapkan-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-kapkan-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "9x19VSN",
+          "image": "r6_images/weapons/r6-kapkan-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SASG-12",
+          "image": "r6_images/weapons/r6-kapkan-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "PMM",
+          "image": "r6_images/weapons/r6-kapkan-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "GSh-18",
+          "image": "r6_images/weapons/r6-kapkan-6.png"
+        }
+      ]
     },
     {
       "id": "r6-lesion",
@@ -524,7 +1349,22 @@
       "realname": "Liu Tze Long",
       "quote": "Do what you do best. If you're lucky, you won't be a burden.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-lesion.png",
+      "hero": "r6_images/operators/heroes/r6-lesion.png",
+      "gadgetIcon": null,
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-lesion-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-lesion-2.png"
+        }
+      ]
     },
     {
       "id": "r6-lion",
@@ -538,7 +1378,52 @@
       "realname": "Olivier Flament",
       "quote": "People died, and I hope I can find forgiveness for it, but what I did I did to save more lives. I’d do it again. That’s doing my job.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-lion.png",
+      "hero": "r6_images/operators/heroes/r6-lion.png",
+      "gadgetIcon": "r6_images/gadgets/r6-lion.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade",
+          "image": "r6_images/weapons/r6-lion-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-lion-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Frag Grenade",
+          "image": null
+        },
+        {
+          "slot": "primary",
+          "name": "V308",
+          "image": "r6_images/weapons/r6-lion-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "417",
+          "image": "r6_images/weapons/r6-lion-5.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SG-CQB",
+          "image": "r6_images/weapons/r6-lion-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P9",
+          "image": "r6_images/weapons/r6-lion-7.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "LFP586",
+          "image": "r6_images/weapons/r6-lion-8.png"
+        }
+      ]
     },
     {
       "id": "r6-maestro",
@@ -552,7 +1437,47 @@
       "realname": "Adriano Martello",
       "quote": "Did I ever tell you about the time we tree-jumped into the Congo Swamp at night? No? Oh, it's a good one.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-maestro.png",
+      "hero": "r6_images/operators/heroes/r6-maestro.png",
+      "gadgetIcon": "r6_images/gadgets/r6-maestro.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-maestro-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-maestro-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-maestro-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "ALDA 5.56",
+          "image": "r6_images/weapons/r6-maestro-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "ACS12",
+          "image": "r6_images/weapons/r6-maestro-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Bailiff 410",
+          "image": "r6_images/weapons/r6-maestro-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Keratos .357",
+          "image": "r6_images/weapons/r6-maestro-7.png"
+        }
+      ]
     },
     {
       "id": "r6-maverick",
@@ -566,7 +1491,27 @@
       "realname": "Erik Thorn",
       "quote": "I was trapped, for a long time. Lived and seen things, you couldn't imagine. Now I see things... in a different light.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-maverick.png",
+      "hero": "r6_images/operators/heroes/r6-maverick.png",
+      "gadgetIcon": "r6_images/gadgets/r6-maverick.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-maverick-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade/Siege",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "M67/Siege",
+          "image": "r6_images/weapons/r6-maverick-3.png"
+        }
+      ]
     },
     {
       "id": "r6-melusi",
@@ -580,7 +1525,22 @@
       "realname": "Thandiwe Ndlovu",
       "quote": "Understanding is the only tool that vanquishes ignorance.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-melusi.png",
+      "hero": "r6_images/operators/heroes/r6-melusi.png",
+      "gadgetIcon": "r6_images/gadgets/r6-melusi.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-melusi-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-melusi-2.png"
+        }
+      ]
     },
     {
       "id": "r6-mira",
@@ -594,7 +1554,42 @@
       "realname": "Elena María Álvarez",
       "quote": "Think of me as your conscience. I see everything, and I'm just as ruthless.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-mira.png",
+      "hero": "r6_images/operators/heroes/r6-mira.png",
+      "gadgetIcon": "r6_images/gadgets/r6-mira.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-mira-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Nitro Cell",
+          "image": "r6_images/weapons/r6-mira-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "Vector .45 ACP",
+          "image": "r6_images/weapons/r6-mira-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "ITA12L",
+          "image": "r6_images/weapons/r6-mira-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "ITA12S",
+          "image": "r6_images/weapons/r6-mira-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "USP40",
+          "image": "r6_images/weapons/r6-mira-6.png"
+        }
+      ]
     },
     {
       "id": "r6-montagne",
@@ -608,7 +1603,27 @@
       "realname": "Gilles Touré",
       "quote": "Every conflict is an iteration upon the last. Every scar, a victory.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-montagne.png",
+      "hero": "r6_images/operators/heroes/r6-montagne.png",
+      "gadgetIcon": "r6_images/gadgets/r6-montagne.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-montagne-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-montagne-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-mozzie",
@@ -622,7 +1637,27 @@
       "realname": "Max Goose",
       "quote": "Some say I'm a pest. I say right back atcha, mate!",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-mozzie.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-mozzie.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-mozzie-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-mozzie-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-mozzie-3.png"
+        }
+      ]
     },
     {
       "id": "r6-mute",
@@ -636,7 +1671,42 @@
       "realname": "Mark R. Chandar",
       "quote": "People think my codename is Mute because I don't like to talk. Maybe I just don't like you.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-mute.png",
+      "hero": "r6_images/operators/heroes/r6-mute.png",
+      "gadgetIcon": "r6_images/gadgets/r6-mute.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Nitro Cell",
+          "image": "r6_images/weapons/r6-mute-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-mute-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "MP5K",
+          "image": "r6_images/weapons/r6-mute-1.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M590A1",
+          "image": "r6_images/weapons/r6-mute-2.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P226 Mk 25",
+          "image": "r6_images/weapons/r6-mute-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "SMG-11",
+          "image": "r6_images/weapons/r6-mute-6.png"
+        }
+      ]
     },
     {
       "id": "r6-nomad",
@@ -650,7 +1720,22 @@
       "realname": "Sanaa El Maktoub",
       "quote": "Deep down in my veins, I knew I had to travel. Now that I have, I’m certain I haven’t traveled enough.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-nomad.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-nomad.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-nomad-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade/Siege",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-n-kk",
@@ -664,7 +1749,27 @@
       "realname": "Karina Gaarddhøje",
       "quote": "The only thing I feel when I pull the trigger is recoil.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-n-kk.png",
+      "hero": "r6_images/operators/heroes/r6-n-kk.png",
+      "gadgetIcon": "r6_images/gadgets/r6-n-kk.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "M67/Siege",
+          "image": "r6_images/weapons/r6-n-kk-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-n-kk-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-oryx",
@@ -678,7 +1783,22 @@
       "realname": "Saif Al Hadid",
       "quote": "Sometimes, the only way out is through.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-oryx.png",
+      "hero": "r6_images/operators/heroes/r6-oryx.png",
+      "gadgetIcon": "r6_images/gadgets/r6-oryx.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-oryx-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-oryx-2.png"
+        }
+      ]
     },
     {
       "id": "r6-osa",
@@ -692,7 +1812,27 @@
       "realname": "Anja Katarina Janković",
       "quote": "My work keeps us one step ahead. The best that money can buy. Our agents may have their skill sets, but my designs? They give us the edge in the field. So that we can hit hard, and come back safe. Not",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-osa.png",
+      "hero": "r6_images/operators/heroes/r6-osa.png",
+      "gadgetIcon": "r6_images/gadgets/r6-osa.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-osa-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "M67/Siege",
+          "image": "r6_images/weapons/r6-osa-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-pulse",
@@ -706,7 +1846,27 @@
       "realname": "Jack Estrada",
       "quote": "In a life threatening situation, the average person's heartbeat can be upwards of 175 beats per minute. A well trained tango is able to stay cool, keep calm. Their heart rates can be 70 to 100 beats p",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-pulse.png",
+      "hero": "r6_images/operators/heroes/r6-pulse.png",
+      "gadgetIcon": "r6_images/gadgets/r6-pulse.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-pulse-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-pulse-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-pulse-3.png"
+        }
+      ]
     },
     {
       "id": "r6-ram",
@@ -720,7 +1880,22 @@
       "realname": "Choi Bo-ram",
       "quote": "If we're coming for you, run. We don't stop for anything, or anyone. We are the danger from above.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-ram.png",
+      "hero": "r6_images/operators/heroes/r6-ram.png",
+      "gadgetIcon": "r6_images/gadgets/r6-ram.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade/Siege",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-ram-2.png"
+        }
+      ]
     },
     {
       "id": "r6-rauora",
@@ -734,7 +1909,22 @@
       "realname": "Hāpai Iwini",
       "quote": "With fires and firefights, controlling the environment is a must. And sometimes that means waiting for the right door to open. But I've never been a patient sort. So mine will be ready when I need it",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-rauora.png",
+      "hero": "r6_images/operators/heroes/r6-rauora.png",
+      "gadgetIcon": "r6_images/gadgets/r6-rauora.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-rauora-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-rauora-2.png"
+        }
+      ]
     },
     {
       "id": "r6-rook",
@@ -748,7 +1938,11 @@
       "realname": "Julien Nizan",
       "quote": "I trust that the ceramic trauma plate I'm wearing will stop a .357 Magnum round traveling at four-hundred and ninety meters per second. I trust myself not to move, not to flinch. I trust my team mates",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-rook.png",
+      "hero": "r6_images/operators/heroes/r6-rook.png",
+      "gadgetIcon": "r6_images/gadgets/r6-rook.png",
+      "weapons": []
     },
     {
       "id": "r6-sens",
@@ -762,7 +1956,27 @@
       "realname": "Néon Ngoma Mutombo",
       "quote": "Fighting hostiles is like... solving a puzzle. All the pieces are a total mess. Then, you solve it as if you always knew the answer.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-sens.png",
+      "hero": "r6_images/operators/heroes/r6-sens.png",
+      "gadgetIcon": "r6_images/gadgets/r6-sens.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-sens-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-sens-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Frag Grenade",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-skop-s",
@@ -776,7 +1990,22 @@
       "realname": "Kure Galanos",
       "quote": "I was an apex killer, fueled by instinct and adrenaline. Times change though, and so have I. Now I'm twice as dangerous.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-skop-s.png",
+      "hero": "r6_images/operators/heroes/r6-skop-s.png",
+      "gadgetIcon": "r6_images/gadgets/r6-skop-s.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-skop-s-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-skop-s-2.png"
+        }
+      ]
     },
     {
       "id": "r6-sledge",
@@ -790,7 +2019,47 @@
       "realname": "Seamus Cowden",
       "quote": "Remember, I take the doors.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-sledge.png",
+      "hero": "r6_images/operators/heroes/r6-sledge.png",
+      "gadgetIcon": "r6_images/gadgets/r6-sledge.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Frag Grenade",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade",
+          "image": "r6_images/weapons/r6-sledge-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        },
+        {
+          "slot": "primary",
+          "name": "M590A1",
+          "image": "r6_images/weapons/r6-sledge-1.png"
+        },
+        {
+          "slot": "primary",
+          "name": "L85A2",
+          "image": "r6_images/weapons/r6-sledge-2.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P226 Mk 25",
+          "image": "r6_images/weapons/r6-sledge-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Reaper Mk2",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-smoke",
@@ -804,7 +2073,42 @@
       "realname": "James Porter",
       "quote": "I know what you're wondering. \"What's in the canister?\" I could tell ya, but then I'd have to kill you. Hehe. I'm only mucking about, relax. As for what's in the canister, it's best you don't ask.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-smoke.png",
+      "hero": "r6_images/operators/heroes/r6-smoke.png",
+      "gadgetIcon": "r6_images/gadgets/r6-smoke.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-smoke-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-smoke-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "FMG-9",
+          "image": "r6_images/weapons/r6-smoke-1.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M590A1",
+          "image": "r6_images/weapons/r6-smoke-2.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P226 Mk 25",
+          "image": "r6_images/weapons/r6-smoke-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "SMG-11",
+          "image": "r6_images/weapons/r6-smoke-6.png"
+        }
+      ]
     },
     {
       "id": "r6-solis",
@@ -818,7 +2122,11 @@
       "realname": "Ana Valentina Diaz",
       "quote": "If you know the game before it starts, no pawn can stand in your way.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-solis.png",
+      "hero": "r6_images/operators/heroes/r6-solis.png",
+      "gadgetIcon": "r6_images/gadgets/r6-solis.png",
+      "weapons": []
     },
     {
       "id": "r6-tachanka",
@@ -832,7 +2140,27 @@
       "realname": "Alexsandr Senaviev",
       "quote": "They told me I’d died. They were wrong. I was reborn.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-tachanka.png",
+      "hero": "r6_images/operators/heroes/r6-tachanka.png",
+      "gadgetIcon": "r6_images/gadgets/r6-tachanka.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-tachanka-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-tachanka-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-tachanka-3.png"
+        }
+      ]
     },
     {
       "id": "r6-thatcher",
@@ -846,7 +2174,42 @@
       "realname": "Mike Baker",
       "quote": "GPS satellites? Unmanned drones? Fookin' laser sights? The more crutches you have, the more it hurts when they're kicked out from under ya. If there's one thing I know for sure, it's that a six inch b",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-thatcher.png",
+      "hero": "r6_images/operators/heroes/r6-thatcher.png",
+      "gadgetIcon": "r6_images/gadgets/r6-thatcher.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-thatcher-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Breach Charge",
+          "image": "r6_images/weapons/r6-thatcher-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "AR33",
+          "image": "r6_images/weapons/r6-thatcher-1.png"
+        },
+        {
+          "slot": "primary",
+          "name": "L85A2",
+          "image": "r6_images/weapons/r6-thatcher-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M590A1",
+          "image": "r6_images/weapons/r6-thatcher-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P226 Mk 25",
+          "image": "r6_images/weapons/r6-thatcher-6.png"
+        }
+      ]
     },
     {
       "id": "r6-thermite",
@@ -860,7 +2223,47 @@
       "realname": "Jordan Trace",
       "quote": "When you mix fuel, metal oxide and metal powder in just the right way, it burns at 2000 degrees Celsius. Hot enough to cut through nearly any barrier known to man. Throw some C4 into the mix, and you'",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-thermite.png",
+      "hero": "r6_images/operators/heroes/r6-thermite.png",
+      "gadgetIcon": "r6_images/gadgets/r6-thermite.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade",
+          "image": "r6_images/weapons/r6-thermite-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-thermite-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M1014",
+          "image": "r6_images/weapons/r6-thermite-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "556xi",
+          "image": "r6_images/weapons/r6-thermite-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "M45 MEUSOC",
+          "image": "r6_images/weapons/r6-thermite-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "5.7 USG",
+          "image": "r6_images/weapons/r6-thermite-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "ITA12S",
+          "image": "r6_images/weapons/r6-thermite-7.png"
+        }
+      ]
     },
     {
       "id": "r6-thorn",
@@ -874,7 +2277,22 @@
       "realname": "Brianna Skehan",
       "quote": "You know, having four gobshite brothers taught me a valuable lesson. Don't waste your energy on the first three.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-thorn.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-thorn.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-thorn-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-thorn-2.png"
+        }
+      ]
     },
     {
       "id": "r6-thunderbird",
@@ -888,7 +2306,27 @@
       "realname": "Mina Sky",
       "quote": "Preparation, speed, precision. These are essential when it comes to saving lives. And that's how I fly.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-thunderbird.png",
+      "hero": "r6_images/operators/heroes/r6-thunderbird.png",
+      "gadgetIcon": "r6_images/gadgets/r6-thunderbird.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-thunderbird-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-thunderbird-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-thunderbird-3.png"
+        }
+      ]
     },
     {
       "id": "r6-tubar-o",
@@ -902,7 +2340,22 @@
       "realname": "Isaac Nunes Oliveira",
       "quote": "In combat, every second counts, and time waits for no one. Unless... you can slow things down.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-tubar-o.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-tubar-o.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-tubar-o-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-tubar-o-2.png"
+        }
+      ]
     },
     {
       "id": "r6-twitch",
@@ -916,7 +2369,47 @@
       "realname": "Emmanuelle Pichon",
       "quote": "If you have a few spare hours, I'd love to share the details of how this device is a masterpiece of design. Quadruple independent gear boxes enabling zero to twenty in under four seconds, ten kilomete",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-twitch.png",
+      "hero": "r6_images/operators/heroes/r6-twitch.png",
+      "gadgetIcon": "r6_images/gadgets/r6-twitch.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-twitch-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-twitch-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "F2",
+          "image": "r6_images/weapons/r6-twitch-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "417",
+          "image": "r6_images/weapons/r6-twitch-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SG-CQB",
+          "image": "r6_images/weapons/r6-twitch-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P9",
+          "image": "r6_images/weapons/r6-twitch-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "LFP586",
+          "image": "r6_images/weapons/r6-twitch-7.png"
+        }
+      ]
     },
     {
       "id": "r6-valkyrie",
@@ -930,7 +2423,37 @@
       "realname": "Meghan J. Castellano",
       "quote": "If you don't constantly feel like you're being watched, then you aren't paying attention.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-valkyrie.png",
+      "hero": "r6_images/operators/heroes/r6-valkyrie.png",
+      "gadgetIcon": "r6_images/gadgets/r6-valkyrie.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-valkyrie-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Nitro Cell",
+          "image": "r6_images/weapons/r6-valkyrie-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "MPX",
+          "image": "r6_images/weapons/r6-valkyrie-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SPAS-12",
+          "image": "r6_images/weapons/r6-valkyrie-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "D-50",
+          "image": "r6_images/weapons/r6-valkyrie-5.png"
+        }
+      ]
     },
     {
       "id": "r6-vigil",
@@ -944,7 +2467,22 @@
       "realname": "Hwa Chul-kyung",
       "quote": "You never saw me coming. Don't feel so bad. Nobody ever sees me. I'm in everyone's blind spot.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-vigil.png",
+      "hero": "r6_images/operators/heroes/r6-vigil.png",
+      "gadgetIcon": "r6_images/gadgets/r6-vigil.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-vigil-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-vigil-2.png"
+        }
+      ]
     },
     {
       "id": "r6-wamai",
@@ -958,7 +2496,27 @@
       "realname": "Ngũgĩ Muchoki Furaha",
       "quote": "The closer you are to death, the more vibrant life becomes.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-wamai.png",
+      "hero": "r6_images/operators/heroes/r6-wamai.png",
+      "gadgetIcon": "r6_images/gadgets/r6-wamai.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-wamai-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-wamai-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-wamai-3.png"
+        }
+      ]
     },
     {
       "id": "r6-warden",
@@ -972,7 +2530,27 @@
       "realname": "Collinn McKinley\n|organization \\ Secret Service Rainbow (formerly) Ghosteyes (fo",
       "quote": "I won't leave you behind, not now, not ever.",
       "armor": 0,
-      "speed": 0
+      "speed": 0,
+      "icon": "r6_images/operators/icons/r6-warden.png",
+      "hero": "r6_images/operators/heroes/r6-warden.png",
+      "gadgetIcon": "r6_images/gadgets/r6-warden.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-warden-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-warden-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-warden-3.png"
+        }
+      ]
     },
     {
       "id": "r6-ying",
@@ -986,7 +2564,42 @@
       "realname": "Siu Mei Lin",
       "quote": "The punch starts from the heart and does not miss.",
       "armor": 2,
-      "speed": 2
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-ying.png",
+      "hero": "r6_images/operators/heroes/r6-ying.png",
+      "gadgetIcon": "r6_images/gadgets/r6-ying.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-ying-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-ying-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "T-95 LSW",
+          "image": "r6_images/weapons/r6-ying-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SIX12",
+          "image": "r6_images/weapons/r6-ying-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Q-929",
+          "image": "r6_images/weapons/r6-ying-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Reaper MK2",
+          "image": null
+        }
+      ]
     },
     {
       "id": "r6-zero",
@@ -1000,7 +2613,22 @@
       "realname": "Samuel Leo Fisher",
       "quote": "You should know better than to write me off. Consider this a teaching moment.",
       "armor": 1,
-      "speed": 3
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-zero.png",
+      "hero": "r6_images/operators/heroes/r6-zero.png",
+      "gadgetIcon": "r6_images/gadgets/r6-zero.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-zero-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-zero-2.png"
+        }
+      ]
     },
     {
       "id": "r6-zofia",
@@ -1014,7 +2642,22 @@
       "realname": "Zofia Bosak",
       "quote": "I decide when to restrain and when to kill. Only the best calls the shots.",
       "armor": 3,
-      "speed": 1
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-zofia.png",
+      "hero": "r6_images/operators/heroes/r6-zofia.png",
+      "gadgetIcon": "r6_images/gadgets/r6-zofia.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-zofia-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-zofia-2.png"
+        }
+      ]
     }
   ]
 }

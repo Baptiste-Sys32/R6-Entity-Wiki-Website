@@ -186,7 +186,7 @@
           lead={<p>{op.ability}</p>}
           infobox={{
             title: op.name, sub: `${op.side} · ${op.squad}`,
-            image: `./r6_images/operators/heroes/${op.id}.png`, imageAlt: op.name, imageType: 'Operator',
+            image: `./r6_images/operators/heroes/${op.id}.png`, imageAlt: op.name, imageType: 'Hero',
             rows: [
               { label: 'Gadget', value: op.gadget },
               { label: 'Role', value: op.role || '—' },
@@ -202,8 +202,30 @@
             {season ? <button type="button" onClick={() => setView('season', { id: season.id })} className="cx-alink text-sm">{season.name} →</button> : null}
           </div>
           <CxSection title="Gadget">
-            <p><strong>{op.gadget}.</strong> {op.ability}</p>
+            <div className="flex items-center gap-3">
+              <AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} />
+              <p><strong>{op.gadget}.</strong> {op.ability}</p>
+            </div>
           </CxSection>
+          {(op.weapons || []).length > 0 ? (
+            <CxSection title="Loadout">
+              {[['primary', 'Primaries'], ['secondary', 'Secondaries'], ['gadget', 'Gadgets']].map(([slot, label]) => {
+                const items = (op.weapons || []).filter((w) => w.slot === slot);
+                if (!items.length) return null;
+                return (
+                  <div key={slot} className="mb-4">
+                    <h3 className="cx-sub">{label}</h3>
+                    {items.map((w, i) => (
+                      <div key={`${w.name}-${i}`} className="flex items-center gap-3 rounded-2xl p-2.5 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+                        {slot === 'gadget' ? null : <AssetFrame type="Weapon" imageUrl={w.image ? `./${w.image}` : null} />}
+                        <span className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{w.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                );
+              })}
+            </CxSection>
+          ) : null}
         </ArticleShell>
       );
     };
@@ -299,12 +321,13 @@
     const SeasonArticle = ({ id, setView }) => {
       const s = seasonsById.get(id);
       if (!s) return <div className="cx-article"><h1 className="cx-title">Not found</h1></div>;
+      const seasonMap = MAPS.find((m) => m.name === s.map);
       return (
         <ArticleShell
           crumbs={[{ label: 'Main page' }, { label: 'Seasons' }, { label: s.name }]}
           title={s.name}
           lead={<p>{s.blurb}</p>}
-          infobox={{ title: s.code, sub: 'Season', rows: [{ label: 'Released', value: s.released || '—' }, { label: 'Map', value: s.map || '—' }, { label: 'Operators', value: (s.operators || []).join(', ') || '—' }] }}
+          infobox={{ title: s.code, sub: 'Season', image: seasonMap && seasonMap.thumb ? `./${seasonMap.thumb}` : null, imageAlt: s.map, imageType: 'Map', rows: [{ label: 'Released', value: s.released || '—' }, { label: 'Map', value: s.map || '—' }, { label: 'Operators', value: (s.operators || []).join(', ') || '—' }] }}
         >
           {(s.operators || []).length > 0 ? (
             <CxSection title="Operators">
@@ -471,8 +494,9 @@
         rootEl.style.setProperty('--ambient-opacity', palette.ambientOpacity);
         rootEl.style.setProperty('--selection-bg', palette.selectionBg);
         rootEl.style.setProperty('--selection-text', palette.selectionText);
-        rootEl.style.setProperty('--accent', palette.accent);
-        rootEl.style.setProperty('--accent-soft', palette.accentSoft);
+        const gameAccent = (typeof GAME_ACCENT !== 'undefined' && GAME_ACCENT) || {};
+        rootEl.style.setProperty('--accent', gameAccent.accent || palette.accent);
+        rootEl.style.setProperty('--accent-soft', gameAccent.accentSoft || palette.accentSoft);
         if (typeof ACCENT_COLOR === 'string' && ACCENT_COLOR) rootEl.style.setProperty('--accent', ACCENT_COLOR);
         if (typeof ACCENT_SOFT === 'string' && ACCENT_SOFT) rootEl.style.setProperty('--accent-soft', ACCENT_SOFT);
         rootEl.style.fontSize = settings.fontSize === 'small' ? '14px' : settings.fontSize === 'large' ? '18px' : '16px';
