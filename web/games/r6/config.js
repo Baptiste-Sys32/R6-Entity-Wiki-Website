@@ -79,7 +79,8 @@
     };
     const R6_STORAGE_KEYS = {
       settings: 'r6_settings_v1',
-      favorites: 'r6_favorites_v1'
+      favorites: 'r6_favorites_v1',
+      notes: 'r6_notes_v1'
     };
     const RARITY_ALIASES = {};
     const RARITY_ORDER = {};
