@@ -104,6 +104,7 @@
     };
   </script>
   <script src="data.js" onerror="window.__r6DataScriptError('data.js')"></script>
+  <script src="lore.js" onerror="window.__r6DataScriptError('lore.js')"></script>
   <script>
     (() => {
       const LAUNCH_TIPS = [
@@ -158,6 +159,8 @@
     const MAPS = DB.maps || [];
     const SEASONS = DB.seasons || [];
     const operatorsById = new Map(OPERATORS.map((op) => [op.id, op]));
+    const LORE = (typeof R6_LORE !== 'undefined' && R6_LORE) || {};
+    const loreParas = (text) => String(text || '').split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
     const mapsById = new Map(MAPS.map((m) => [m.id, m]));
     const seasonsById = new Map(SEASONS.map((s) => [s.id, s]));
 
@@ -331,13 +334,19 @@
       const op = operatorsById.get(id);
       if (!op) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown operator.</p></div>;
       const season = SEASONS.find((s) => s.name === op.season || s.name === `Operation ${op.season}` || op.season === s.name);
+      const lore = LORE[id] || {};
+      const toc = [{ id: 'gadget', label: 'Gadget' }, { id: 'loadout', label: 'Loadout' }];
+      if (lore.biography || lore.ubiBio) toc.push({ id: 'biography', label: 'Biography' });
+      if (lore.psychReport || lore.psychProfile) toc.push({ id: 'psych', label: 'Psychological Report' });
+      if ((lore.quotes || []).length) toc.push({ id: 'quotes', label: 'Quotes' });
+      if ((lore.trivia || []).length) toc.push({ id: 'trivia', label: 'Trivia' });
       return (
         <ArticleShell
           crumbs={[{ label: 'Main page' }, { label: 'Operators' }, { label: op.name }]}
           title={op.name}
           hatnote={op.quote ? `\u201c${op.quote}\u201d` : null}
-          lead={<p>{op.ability}</p>}
-          toc={[{ id: 'gadget', label: 'Gadget' }, { id: 'loadout', label: 'Loadout' }]}
+          lead={<p>{lore.ubiBio || op.ability}</p>}
+          toc={toc}
           categories={[op.side + 's', op.squad]}
           infobox={{
             title: op.name, sub: `${op.side} · ${op.squad}`,
@@ -345,10 +354,12 @@
             rows: [
               { label: 'Gadget', value: op.gadget },
               { label: 'Role', value: op.role || '—' },
+              ...(lore.specialties && lore.specialties.length ? [{ label: 'Specialties', value: lore.specialties.join(', ') }] : []),
               { label: 'Squad', value: op.squad },
               { label: 'Season', value: op.season },
               { label: 'Armor / Speed', value: `${'●'.repeat(op.armor)}${'○'.repeat(Math.max(0, 3 - op.armor))} / ${'●'.repeat(op.speed)}${'○'.repeat(Math.max(0, 3 - op.speed))}` },
-              ...(op.realname ? [{ label: 'Real name', value: op.realname }] : []),
+              ...(op.realname || lore.realName ? [{ label: 'Real name', value: op.realname || lore.realName }] : []),
+              ...((lore.dob || lore.birthplace) ? [{ label: 'Born', value: [lore.birthplace, lore.dob].filter(Boolean).join(' · ') }] : []),
             ],
           }}
         >
@@ -379,6 +390,28 @@
                   </div>
                 );
               })}
+            </CxSection>
+          ) : null}
+          {lore.biography || lore.ubiBio ? (
+            <CxSection id="biography" title="Biography">
+              {loreParas(lore.biography).map((para, i) => <p key={i}>{para}</p>)}
+            </CxSection>
+          ) : null}
+          {lore.psychReport || lore.psychProfile ? (
+            <CxSection id="psych" title="Psychological Report">
+              {lore.psychProfile ? <p><em>{lore.psychProfile}</em></p> : null}
+              {loreParas(lore.psychReport).map((para, i) => <p key={i}>{para}</p>)}
+              <p className="text-sm" style={{ color: 'var(--muted)' }}>— Dr. Harishva "Harry" Pandey, Director of Rainbow</p>
+            </CxSection>
+          ) : null}
+          {(lore.quotes || []).length ? (
+            <CxSection id="quotes" title="Quotes">
+              <ul>{lore.quotes.map((quote, i) => <li key={i}>“{quote}”</li>)}</ul>
+            </CxSection>
+          ) : null}
+          {(lore.trivia || []).length ? (
+            <CxSection id="trivia" title="Trivia">
+              <ul>{lore.trivia.map((item, i) => <li key={i}>{item}</li>)}</ul>
             </CxSection>
           ) : null}
           <NotesEditor title="Operator Notes" value={note || ''} onChange={onNoteChange} placeholder="Strats, counters, setups..." />

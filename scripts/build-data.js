@@ -10,7 +10,9 @@ const ROOT = path.resolve(__dirname, '..');
 const OPERATORS_PATH = path.join(ROOT, 'content', 'operators.json');
 const MAPS_PATH = path.join(ROOT, 'content', 'maps.json');
 const SEASONS_PATH = path.join(ROOT, 'content', 'seasons.json');
+const LORE_PATH = path.join(ROOT, 'content', 'lore.json');
 const DATA_PATH = path.join(ROOT, 'web', 'data.js');
+const LORE_BUNDLE_PATH = path.join(ROOT, 'web', 'lore.js');
 
 const checkOnly = new Set(process.argv.slice(2)).has('--check');
 
@@ -88,27 +90,72 @@ function validateImagePaths(operators, maps) {
   console.log(`build-data: images ok (${count} files referenced).`);
 }
 
+function validateLore(entries, operatorIds) {
+  const CAPS = { ubiBio: 1200, ubiPsych: 2500, biography: 4000, psychProfile: 800, psychReport: 3000 };
+  const LEAK = /(\[\[|\{\{|<ref|<div|&quot;|&(#[0-9]+|[a-z]+);|==[^=\n]+==)/;
+  const issues = [];
+  for (const id of operatorIds) {
+    const entry = entries[id];
+    if (!entry || typeof entry !== 'object') {
+      issues.push(`lore missing entry for ${id}`);
+      continue;
+    }
+    for (const [key, cap] of Object.entries(CAPS)) {
+      const value = entry[key];
+      if (value !== undefined && value !== null && typeof value !== 'string') issues.push(`lore ${id}.${key} not a string`);
+      else if (typeof value === 'string' && value) {
+        if (value.length > cap) issues.push(`lore ${id}.${key} over cap (${value.length} > ${cap})`);
+        if (LEAK.test(value)) issues.push(`lore ${id}.${key} has markup leak`);
+      }
+    }
+    for (const key of ['quotes', 'trivia', 'specialties']) {
+      if (entry[key] !== undefined && !Array.isArray(entry[key])) issues.push(`lore ${id}.${key} not an array`);
+    }
+    for (const key of ['health', 'speed', 'difficulty']) {
+      const value = entry[key];
+      if (value !== undefined && value !== null && !(Number.isInteger(value) && value >= 1 && value <= 3)) issues.push(`lore ${id}.${key} invalid rating`);
+    }
+  }
+  if (issues.length) {
+    console.error(`build-data: ${issues.length} lore issues:\n- ${issues.slice(0, 20).join('\n- ')}${issues.length > 20 ? `\n... and ${issues.length - 20} more` : ''}`);
+    process.exit(1);
+  }
+  const filled = Object.values(entries).filter((e) => e && (e.biography || e.ubiBio)).length;
+  console.log(`build-data: lore ok (filled=${filled}/${operatorIds.length}).`);
+}
+
 function main() {
   const operators = readJson(OPERATORS_PATH).operators;
   const maps = readJson(MAPS_PATH).maps;
   const seasons = readJson(SEASONS_PATH).seasons;
+  const lore = readJson(LORE_PATH);
+  const operatorIds = operators.map((op) => op.id);
   validateOperators(operators);
   validateMaps(maps);
   validateSeasons(seasons, new Set(operators.map((op) => op.name)));
+  validateLore(lore.entries || {}, operatorIds);
   validateImagePaths(operators, maps);
   const payload = { operators, maps, seasons };
   const output = `var R6_DATABASE = ${JSON.stringify(payload)};\n`;
+  const loreOutput = `var R6_LORE = ${JSON.stringify(lore.entries || {})};\n`;
   if (checkOnly) {
     const current = fs.existsSync(DATA_PATH) ? fs.readFileSync(DATA_PATH, 'utf8') : '';
     if (current !== output) {
       console.error('build-data: web/data.js is stale, run node scripts/build-data.js');
       process.exit(1);
     }
+    const currentLore = fs.existsSync(LORE_BUNDLE_PATH) ? fs.readFileSync(LORE_BUNDLE_PATH, 'utf8') : '';
+    if (currentLore !== loreOutput) {
+      console.error('build-data: web/lore.js is stale, run node scripts/build-data.js');
+      process.exit(1);
+    }
     console.log(`build-data: data fresh (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
     return;
   }
   fs.writeFileSync(DATA_PATH, output);
+  fs.writeFileSync(LORE_BUNDLE_PATH, loreOutput);
   console.log(`build-data: wrote web/data.js (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
+  console.log(`build-data: wrote web/lore.js.`);
 }
 
 main();
