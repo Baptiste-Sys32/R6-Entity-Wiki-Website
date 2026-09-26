@@ -4,29 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Siege Wiki - Rainbow Six Siege Database</title>
+  <title>R6 Wiki - Rainbow Six Siege Database</title>
   <meta name="description" content="Free fan-made Rainbow Six Siege database: operators, gadgets, maps, seasons and lore - a community companion.">
   <link rel="canonical" href="https://r6-siege-wiki.pages.dev/">
   <meta name="theme-color" content="#090b11">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Siege Wiki">
-  <meta property="og:title" content="Siege Wiki - Rainbow Six Siege Database">
+  <meta property="og:site_name" content="R6 Wiki">
+  <meta property="og:title" content="R6 Wiki - Rainbow Six Siege Database">
   <meta property="og:description" content="Operators, gadgets, maps and seasons for Rainbow Six Siege - a free fan-made companion.">
   <meta property="og:url" content="https://r6-siege-wiki.pages.dev/">
   <meta property="og:image" content="https://r6-siege-wiki.pages.dev/assets/og-cover.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Siege Wiki - fan-made Rainbow Six Siege database">
+  <meta property="og:image:alt" content="R6 Wiki - fan-made Rainbow Six Siege database">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Siege Wiki - Rainbow Six Siege Database">
+  <meta name="twitter:title" content="R6 Wiki - Rainbow Six Siege Database">
   <meta name="twitter:description" content="Operators, gadgets, maps and seasons for Rainbow Six Siege - a free fan-made companion.">
   <meta name="twitter:image" content="https://r6-siege-wiki.pages.dev/assets/og-cover.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Siege Wiki",
-    "alternateName": "R6 Siege Wiki",
+    "name": "R6 Wiki",
+    "alternateName": "R6 R6 Wiki",
     "url": "https://r6-siege-wiki.pages.dev/",
     "description": "Free fan-made Rainbow Six Siege database: operators, gadgets, maps and seasons.",
     "inLanguage": "en"
@@ -76,12 +76,18 @@
     };
   </script>
   <link rel="stylesheet" href="./engine/engine.css">
+  <style>
+    /* R6 Wiki: blocky wiki imagery, no rounded boxes. */
+    .sq-img, .sq-img > div { border-radius: 0 !important; }
+    .sq-img img { border-radius: 0 !important; }
+    .cx-infobox .cx-ib-media, .cx-infobox .cx-ib-media * { border-radius: 0 !important; }
+  </style>
 </head>
 
 <body>
   <div id="launch-overlay" class="launch-overlay" aria-live="polite">
     <div class="launch-stage">
-      <img class="launch-logo" src="./assets/loading/r6-logo-static.png" alt="Siege Wiki logo">
+      <img class="launch-logo" src="./assets/loading/r6-logo-static.png" alt="R6 Wiki logo">
       <p class="launch-status">Loading</p>
       <div class="launch-progress-wrap" aria-hidden="true">
         <div class="launch-progress">
@@ -105,6 +111,7 @@
   </script>
   <script src="data.js" onerror="window.__r6DataScriptError('data.js')"></script>
   <script src="lore.js" onerror="window.__r6DataScriptError('lore.js')"></script>
+  <script src="weapons.js" onerror="window.__r6DataScriptError('weapons.js')"></script>
   <script>
     (() => {
       const LAUNCH_TIPS = [
@@ -160,6 +167,59 @@
     const SEASONS = DB.seasons || [];
     const operatorsById = new Map(OPERATORS.map((op) => [op.id, op]));
     const LORE = (typeof R6_LORE !== 'undefined' && R6_LORE) || {};
+    const WEAPON_STORE = (typeof R6_WEAPONS !== 'undefined' && R6_WEAPONS) || { weapons: [], attachments: [], aliases: {} };
+    const WEAPONS = WEAPON_STORE.weapons || [];
+    const ATTACHMENTS = WEAPON_STORE.attachments || [];
+    const WEAPON_ALIASES = WEAPON_STORE.aliases || {};
+    const weaponsByName = new Map(WEAPONS.map((w) => [w.name, w]));
+    const normWeaponKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const resolveWeapon = (name) => {
+      if (!name) return null;
+      if (weaponsByName.has(name)) return weaponsByName.get(name);
+      const alias = WEAPON_ALIASES[normWeaponKey(name)];
+      if (alias && weaponsByName.has(alias)) return weaponsByName.get(alias);
+      return null;
+    };
+    const DROPOFF = {
+      AR: { close: [0, 25], far: [35, null], mult: 0.6, label: 'Full damage to 25m, 60% past 35m' },
+      SMG: { close: [0, 20], far: [28, null], mult: 0.6, label: 'Full damage to 20m, 60% past 28m' },
+      MP: { close: [0, 20], far: [28, null], mult: 0.6, label: 'Full damage to 20m, 60% past 28m' },
+      DMR: { close: [0, 30], far: [40, null], mult: 0.7, label: 'Full damage to 30m, 70% past 40m' },
+      LMG: { close: [0, 25], far: [35, null], mult: 0.65, label: 'Full damage to 25m, 65% past 35m' },
+      SR: { close: [0, 30], far: [40, null], mult: 0.8, label: 'Full damage to 30m, 80% past 40m' },
+      H: { close: [0, 12], far: [15, null], mult: 0.6, label: 'Full damage to 12m, 60% past 15m' },
+      S: { close: [0, 12], far: [15, null], mult: 0.6, label: 'Full damage to 12m, 60% past 15m' },
+      SG: { close: [0, 5], far: [12, null], mult: 0.45, label: 'Full damage to 5m, 45% past 12m (per pellet)' },
+      SG_BAILIFF: { close: [0, 5], far: [12, null], mult: 0.45, label: 'Full damage to 5m, 45% past 12m (per pellet)' },
+    };
+    const DropoffChart = ({ weapon }) => {
+      const model = weapon.damageModel;
+      let close = null, far = null, note = null;
+      if (model && model.mode === 'ranged') {
+        close = { dmg: model.close.dmg, label: `${model.close.dmg} (${model.close.range[0]}–${model.close.range[1]}m)` };
+        far = { dmg: model.far.dmg, label: `${model.far.dmg} (${model.far.range[0]}m+)` };
+        if (model.pellets) note = `×${model.pellets} pellets`;
+      } else if (model && model.mode === 'class' && DROPOFF[model.class]) {
+        const rule = DROPOFF[model.class];
+        close = { dmg: model.base, label: `${model.base} (${rule.close[0]}–${rule.close[1]}m)` };
+        far = { dmg: Math.round(model.base * rule.mult), label: `${Math.round(model.base * rule.mult)} (${rule.far[0]}m+)` };
+        note = rule.label;
+      } else return null;
+      const max = Math.max(close.dmg, far.dmg, 1);
+      const Bar = ({ entry, color }) => (
+        <div className="flex items-center gap-2 mb-1">
+          <div className="rounded" style={{ width: `${Math.max(4, Math.round((entry.dmg / max) * 160))}px`, height: '10px', background: color }} />
+          <span className="text-xs" style={{ color: 'var(--muted)' }}>{entry.label}</span>
+        </div>
+      );
+      return (
+        <div className="rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+          <Bar entry={close} color="#3da5e0" />
+          <Bar entry={far} color="#8f8a80" />
+          {note ? <p className="text-xs mt-1" style={{ color: 'var(--muted)' }}>{note}</p> : null}
+        </div>
+      );
+    };
     const loreParas = (text) => String(text || '').split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
     const mapsById = new Map(MAPS.map((m) => [m.id, m]));
     const seasonsById = new Map(SEASONS.map((s) => [s.id, s]));
@@ -221,18 +281,17 @@
       return (
         <div className="cx-article">
           <div className="max-w-3xl mx-auto">
-            <div className="flex items-center border rounded-lg p-2" style={{ background: 'rgba(255,255,255,0.05)' }}>
-              <Icons.Search width={18} height={18} style={{ color: 'var(--muted)' }} />
-              <input id="home-search-input" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} placeholder="Search operators, gadgets, maps, seasons... (op:, map:, season:, gadget:, random:)" aria-label="Search the wiki"
-                className="flex-1 bg-transparent px-3 py-1.5 text-[15px] outline-none" style={{ color: 'var(--text)' }} />
-              {searchTerm ? <button type="button" onClick={() => setSearchTerm('')} aria-label="Clear search" style={{ color: 'var(--muted)' }}><Icons.X width={16} height={16} /></button> : null}
+            <div className="relative flex items-center bg-white/5 border border-white/15 rounded-lg p-2">
+              <div className="pl-4 text-zinc-400"><Icons.Search width={18} height={18} /></div>
+              <input type="text" className="w-full bg-transparent text-white p-3 text-sm sm:text-base font-medium placeholder-zinc-600 focus:outline-none" id="home-search-input" placeholder="Search operators, gadgets, maps, seasons... (op:, map:, season:, gadget:, random:)" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+              {searchTerm ? <button type="button" onClick={() => setSearchTerm('')} className="p-2 mr-1 rounded-xl bg-white/5 text-zinc-300 hover:text-white hover:bg-white/10 transition-colors" aria-label="Clear search"><Icons.X width={18} height={18} /></button> : null}
             </div>
           </div>
           <div className="home-command mt-2 pb-24">
             {prefix === 'random' && randomOp ? (
               <div className="max-w-3xl mx-auto">
                 <div className="p-4 rounded-2xl border flex items-center gap-4" style={{ background: 'var(--panel)', borderColor: 'var(--stroke)' }}>
-                  <AssetFrame type="Operator" imageUrl={randomOp.icon ? `./${randomOp.icon}` : null} fallbackIcon={<OpAvatar name={randomOp.name} side={randomOp.side} />} />
+                  <span className="sq-img"><AssetFrame type="Operator" imageUrl={randomOp.icon ? `./${randomOp.icon}` : null} /></span> fallbackIcon={<OpAvatar name={randomOp.name} side={randomOp.side} />} />
                   <span><span className="block text-lg font-bold" style={{ color: 'var(--text)', fontFamily: 'var(--font-display)' }}>{randomOp.name}</span>
                     <span className="block text-sm" style={{ color: 'var(--muted)' }}>{randomOp.gadget}</span></span>
                   <span className="flex-1" />
@@ -252,7 +311,7 @@
             ) : (
               <div>
                 <div className="mp-welcome">
-                  <p className="mp-welcome-title">Welcome to <span className="mp-welcome-name">Siege Wiki,</span></p>
+                  <p className="mp-welcome-title">Welcome to <span className="mp-welcome-name">R6 Wiki,</span></p>
                   <p className="mp-welcome-sub">The free Rainbow Six Siege encyclopedia.</p>
                 </div>
                 <section id="browse">
@@ -318,7 +377,7 @@
           {list.map((op) => (
             <div key={op.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
               <button type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-3 flex-1 min-w-0 text-left">
-                <AssetFrame type="Operator" imageUrl={`./r6_images/operators/icons/${op.id}.png`} fallbackIcon={<OpAvatar name={op.name} side={op.side} />} />
+                <span className="sq-img"><AssetFrame type="Operator" imageUrl={`./r6_images/operators/icons/${op.id}.png`} /></span> fallbackIcon={<OpAvatar name={op.name} side={op.side} />} />
                 <span className="min-w-0"><span className="block font-semibold truncate" style={{ color: 'var(--text)' }}>{op.name}</span>
                   <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{op.gadget} · {op.squad}</span></span>
               </button>
@@ -336,16 +395,22 @@
       const season = SEASONS.find((s) => s.name === op.season || s.name === `Operation ${op.season}` || op.season === s.name);
       const lore = LORE[id] || {};
       const toc = [{ id: 'gadget', label: 'Gadget' }, { id: 'loadout', label: 'Loadout' }];
+      if ((lore.tips || []).length) toc.push({ id: 'howtoplay', label: 'How to play' });
       if (lore.biography || lore.ubiBio) toc.push({ id: 'biography', label: 'Biography' });
       if (lore.psychReport || lore.psychProfile) toc.push({ id: 'psych', label: 'Psychological Report' });
       if ((lore.quotes || []).length) toc.push({ id: 'quotes', label: 'Quotes' });
       if ((lore.trivia || []).length) toc.push({ id: 'trivia', label: 'Trivia' });
       return (
         <ArticleShell
-          crumbs={[{ label: 'Main page' }, { label: 'Operators' }, { label: op.name }]}
+          crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Operators', onClick: () => setView('operators') }, { label: op.name }]}
           title={op.name}
           hatnote={op.quote ? `\u201c${op.quote}\u201d` : null}
-          lead={<p>{lore.ubiBio || op.ability}</p>}
+          lead={<p>{(() => {
+            const src = lore.howto || ((lore.tips || [])[0] && lore.tips[0].text) || lore.ubiBio || op.ability;
+            const sentences = String(src).match(/[^.!?]+[.!?]+/g) || [src];
+            const short = (sentences[0] || '') + (sentences[1] || '');
+            return short.length > 320 ? short.slice(0, 317).trimEnd() + '…' : short;
+          })()}</p>}
           toc={toc}
           categories={[op.side + 's', op.squad]}
           infobox={{
@@ -367,9 +432,20 @@
             <FavButton active={(favorites.operators || []).includes(op.id)} onToggle={() => onToggleFavorite('Operator', op.id)} label={`Favorite ${op.name}`} />
             {season ? <button type="button" onClick={() => setView('season', { id: season.id })} className="cx-alink text-sm">{season.name} →</button> : null}
           </div>
+          {(lore.tips || []).length ? (
+            <CxSection id="howtoplay" title="How to play">
+              {(lore.tips || []).map((tip, i) => (
+                <div key={i} className="flex items-start gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+                  {tip.poster ? <span className="sq-img shrink-0" style={{ width: '120px' }}><AssetFrame type="Gadget" imageUrl={`./${tip.poster}`} /></span> : null}
+                  <span><span className="block font-bold text-sm" style={{ color: 'var(--text)' }}>{tip.title}</span>
+                    <span className="block text-sm" style={{ color: 'var(--text)' }}>{tip.text}</span></span>
+                </div>
+              ))}
+            </CxSection>
+          ) : null}
           <CxSection id="gadget" title="Gadget">
             <div className="flex items-center gap-3">
-              <AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} />
+              <span className="sq-img"><AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} /></span>
               <p><strong>{op.gadget}.</strong> {op.ability}</p>
             </div>
           </CxSection>
@@ -383,8 +459,19 @@
                     <h3 className="cx-sub">{label}</h3>
                     {items.map((w, i) => (
                       <div key={`${w.name}-${i}`} className="flex items-center gap-3 rounded-2xl p-2.5 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                        {slot === 'gadget' ? null : <AssetFrame type="Weapon" imageUrl={w.image ? `./${w.image}` : null} />}
-                        <span className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{w.name}</span>
+                        {slot === 'gadget' ? null : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={w.image ? `./${w.image}` : null} /></span>}
+                        <span className="min-w-0 flex-1">
+                          {slot === 'gadget' || !resolveWeapon(w.name) ? (
+                            <span className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{w.name}</span>
+                          ) : (
+                            <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('weapon', { id: resolveWeapon(w.name).name })}>{w.name}</button>
+                          )}
+                          {slot !== 'gadget' && resolveWeapon(w.name) ? (
+                            <span className="block text-xs" style={{ color: 'var(--muted)' }}>
+                              {[resolveWeapon(w.name).damage ? `${resolveWeapon(w.name).damage} DMG` : null, resolveWeapon(w.name).rof ? `${resolveWeapon(w.name).rof} RPM` : null, resolveWeapon(w.name).magazine || null].filter(Boolean).join(' · ')}
+                            </span>
+                          ) : null}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -437,7 +524,7 @@
           <h2 className="cx-h2" style={{ color }}>{title}</h2>
           <table className="cx-wikitable"><thead><tr><th></th><th>Gadget</th><th>Operator</th></tr></thead>
             <tbody>{items.map((op) => (
-              <tr key={op.id}><td><AssetFrame type="Gadget" imageUrl={`./r6_images/gadgets/${op.id}.png`} /></td><td>{op.gadget}</td>
+              <tr key={op.id}><td><span className="sq-img"><AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} /></span></td><td>{op.gadget}</td>
                 <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('operator', { id: op.id })}>{op.name}</button></td></tr>
             ))}</tbody></table>
         </div>
@@ -452,6 +539,100 @@
           </WikiHeaderSearchPortal>
           <Group title="Attacker gadgets" items={attackers} color={SIDE_COLOR.Attacker} />
           <Group title="Defender gadgets" items={defenders} color={SIDE_COLOR.Defender} />
+        </div>
+      );
+    };
+
+    const WeaponArticle = ({ id, setView }) => {
+      const weapon = weaponsByName.get(id) || resolveWeapon(id);
+      if (!weapon) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown weapon.</p></div>;
+      const users = (weapon.users || []).map((name) => OPERATORS.find((o) => o.name === name)).filter(Boolean);
+      const attachNames = Object.keys(weapon.attachments || {}).filter((k) => weapon.attachments[k]);
+      const toc = [{ id: 'stats', label: 'Stats' }];
+      if (attachNames.length) toc.push({ id: 'attachments', label: 'Attachments' });
+      if ((weapon.pros || []).length) toc.push({ id: 'notes', label: 'Notes' });
+      return (
+        <ArticleShell
+          crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Weapons', onClick: () => setView('gadgets') }, { label: weapon.name }]}
+          title={weapon.name}
+          lead={<p>{weapon.type}{weapon.fire ? ` · ${weapon.fire}` : ''}</p>}
+          toc={toc}
+          categories={['Weapons', weapon.type]}
+          infobox={{
+            title: weapon.name, sub: weapon.type,
+            rows: [
+              ...(weapon.damage ? [{ label: 'Damage', value: weapon.damage }] : []),
+              ...(weapon.rof ? [{ label: 'Fire rate', value: `${weapon.rof} RPM` }] : []),
+              ...(weapon.magazine ? [{ label: 'Magazine', value: weapon.magazine }] : []),
+              ...(weapon.adsMs ? [{ label: 'ADS time', value: `${weapon.adsMs}ms` }] : []),
+              ...(weapon.mobility ? [{ label: 'Mobility', value: weapon.mobility }] : []),
+              ...(weapon.reload ? [{ label: 'Reload', value: weapon.reload }] : []),
+            ],
+          }}
+        >
+          <CxSection id="stats" title="Damage dropoff">
+            <DropoffChart weapon={weapon} />
+            {weapon.ttk && (weapon.ttk.armor1 || weapon.ttk.armor2 || weapon.ttk.armor3) ? (
+              <table className="cx-wikitable"><thead><tr><th>Armor</th><th>Time to kill</th></tr></thead>
+                <tbody>
+                  {weapon.ttk.armor1 ? <tr><td>1</td><td>{weapon.ttk.armor1}</td></tr> : null}
+                  {weapon.ttk.armor2 ? <tr><td>2</td><td>{weapon.ttk.armor2}</td></tr> : null}
+                  {weapon.ttk.armor3 ? <tr><td>3</td><td>{weapon.ttk.armor3}</td></tr> : null}
+                </tbody></table>
+            ) : null}
+          </CxSection>
+          {attachNames.length ? (
+            <CxSection id="attachments" title="Attachments">
+              <div className="flex flex-wrap gap-2">
+                {attachNames.map((key) => (
+                  <button key={key} type="button" onClick={() => setView('attachments')} className="cx-chip">{key.replace(/_/g, ' ')}</button>
+                ))}
+              </div>
+            </CxSection>
+          ) : null}
+          {(weapon.pros || []).length || (weapon.cons || []).length ? (
+            <CxSection id="notes" title="Notes">
+              {(weapon.pros || []).map((pro, i) => <p key={'p' + i}>+ {pro}</p>)}
+              {(weapon.cons || []).map((con, i) => <p key={'c' + i}>− {con}</p>)}
+            </CxSection>
+          ) : null}
+          {users.length ? (
+            <CxSection id="users" title="Used by">
+              <div className="flex flex-wrap gap-2">
+                {users.map((op) => (
+                  <button key={op.id} type="button" onClick={() => setView('operator', { id: op.id })} className="cx-chip">{op.name}</button>
+                ))}
+              </div>
+            </CxSection>
+          ) : null}
+        </ArticleShell>
+      );
+    };
+    const AttachmentsView = ({ setView }) => {
+      const [q, setQ] = useState('');
+      const query = q.trim().toLowerCase();
+      const list = ATTACHMENTS.filter((a) => !query || (a.name + ' ' + (a.type || '')).toLowerCase().includes(query));
+      return (
+        <div className="cx-article">
+          <h1 className="cx-title">Attachments</h1>
+          <p className="cx-lead">{ATTACHMENTS.length} muzzle devices, grips, sights and gadgets.</p>
+          <WikiHeaderSearchPortal>
+            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter attachments..." aria-label="Filter attachments"
+              className="w-full rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+          </WikiHeaderSearchPortal>
+          <div className="grid gap-3 sm:grid-cols-2 mt-3">
+            {list.map((a) => (
+              <div key={a.id} className="rounded-2xl p-4" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="sq-img"><AssetFrame type="Gadget" imageUrl={a.image ? `./${a.image}` : null} /></span>
+                  <span><span className="block font-bold" style={{ color: 'var(--text)', fontFamily: 'var(--font-display)' }}>{a.name}</span>
+                    <span className="block text-xs uppercase" style={{ color: 'var(--muted)' }}>{a.type}</span></span>
+                </div>
+                <p className="text-sm" style={{ color: 'var(--text)' }}>{(a.effect || '').split('\n\n')[0]}</p>
+              </div>
+            ))}
+          </div>
+          {list.length === 0 ? <p style={{ color: 'var(--muted)' }}>No attachments match.</p> : null}
         </div>
       );
     };
@@ -479,7 +660,7 @@
         <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{list.length} maps</p>
         {list.map((m) => (
           <div key={m.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-            <AssetFrame type="Map" imageUrl={m.thumb ? `./${m.thumb}` : null} />
+            <span className="sq-img"><AssetFrame type="Map" imageUrl={m.thumb ? `./${m.thumb}` : null} /></span>
             <button type="button" onClick={() => setView('map', { id: m.id })} className="flex-1 min-w-0 text-left">
               <span className="block font-semibold" style={{ color: 'var(--text)' }}>{m.name}</span>
               <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{m.setting}</span>
@@ -497,12 +678,25 @@
       if (!m) return <div className="cx-article"><h1 className="cx-title">Not found</h1></div>;
       return (
         <ArticleShell
-          crumbs={[{ label: 'Main page' }, { label: 'Maps' }, { label: m.name }]}
+          crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Maps', onClick: () => setView('maps') }, { label: m.name }]}
           title={m.name}
           lead={<p>{m.blurb || m.setting}</p>}
           categories={['Maps']}
           infobox={{ title: m.name, sub: 'Multiplayer map', image: m.thumb ? `./${m.thumb}` : null, imageAlt: m.name, imageType: 'Map', rows: [{ label: 'Setting', value: m.setting || '—' }, { label: 'Terrain', value: m.terrain || '—' }, { label: 'Modes', value: (m.modes || []).join(' · ') }] }}
+          toc={(m.layouts || []).length ? [{ id: 'layouts', label: 'Layouts' }] : null}
         >
+          {(m.layouts || []).length ? (
+            <CxSection id="layouts" title="Layouts">
+              <div className="grid gap-3 sm:grid-cols-2">
+                {(m.layouts || []).map((l, i) => (
+                  <div key={i} className="rounded-2xl p-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+                    <span className="sq-img"><AssetFrame type="Map" imageUrl={`./${l.image}`} /></span>
+                    <p className="text-xs mt-1 px-1" style={{ color: 'var(--muted)' }}>{l.label}</p>
+                  </div>
+                ))}
+              </div>
+            </CxSection>
+          ) : null}
           <NotesEditor title="Map Notes" value={note || ''} onChange={onNoteChange} placeholder="Setups, callouts, defaults..." />
         </ArticleShell>
       );
@@ -549,7 +743,7 @@
       const seasonMap = MAPS.find((m) => m.name === s.map);
       return (
         <ArticleShell
-          crumbs={[{ label: 'Main page' }, { label: 'Seasons' }, { label: s.name }]}
+          crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Seasons', onClick: () => setView('seasons') }, { label: s.name }]}
           title={s.name}
           lead={<p>{s.blurb}</p>}
           toc={(s.operators || []).length > 0 ? [{ id: 'operators', label: 'Operators' }] : null}
@@ -609,61 +803,100 @@
       );
     };
 
-    const SettingsView = ({ settings, setSettings }) => (
+    const SettingsView = ({ settings, setSettings, onBack }) => {
+      const updateSetting = (field, value) => setSettings((prev) => ({ ...prev, [field]: value }));
+      return (
       <div className="cx-article">
+        <ViewCrumbs trail={[{ label: 'Main page', onClick: onBack }]} current="Settings" />
         <h1 className="cx-title">Settings</h1>
-        <h2 className="cx-h2">Appearance</h2>
-        <div className="flex gap-2 mb-4">
-          {[['oled', 'Black'], ['dark', 'Dark'], ['light', 'Light']].map(([mode, label]) => (
-            <button key={mode} type="button" onClick={() => { setSettings((p) => ({ ...p, colorMode: mode })); triggerHaptic('Light'); }} className="rounded-full px-4 py-1.5 text-sm font-semibold" style={{ background: settings.colorMode === mode ? 'var(--text)' : 'transparent', color: settings.colorMode === mode ? 'var(--bg-01)' : 'var(--muted)', border: '1px solid var(--stroke)' }}>{label}</button>
-          ))}
-        </div>
-        <h2 className="cx-h2">Text size</h2>
-        <div className="flex gap-2 mb-4">
-          {[['small', 'Small'], ['default', 'Default'], ['large', 'Large']].map(([size, label]) => (
-            <button key={size} type="button" onClick={() => setSettings((p) => ({ ...p, fontSize: size }))} className="rounded-full px-4 py-1.5 text-sm font-semibold" style={{ background: settings.fontSize === size ? 'var(--text)' : 'transparent', color: settings.fontSize === size ? 'var(--bg-01)' : 'var(--muted)', border: '1px solid var(--stroke)' }}>{label}</button>
-          ))}
-        </div>
-        <h2 className="cx-h2">Backup</h2>
-        <p className="text-sm mb-2" style={{ color: 'var(--muted)' }}>Export settings, favorites and notes as JSON, or restore from a backup file.</p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          <button type="button" onClick={() => {
-            try {
-              const payload = { app: 'siege-wiki', version: 1, exportedAt: new Date().toISOString(), settings, favorites: loadFromStorage(R6_STORAGE_KEYS.favorites, {}), notes: loadFromStorage(R6_STORAGE_KEYS.notes, {}) };
-              const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
-              const a = document.createElement('a');
-              a.href = URL.createObjectURL(blob);
-              a.download = 'siege-wiki-backup.json';
-              a.click();
-              setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-            } catch (e) { }
-          }} className="cx-toolbtn">Download backup</button>
-          <label className="cx-toolbtn cx-toolbtn--quiet" style={{ cursor: 'pointer' }}>Restore backup
-            <input type="file" accept="application/json" hidden onChange={(e) => {
-              const file = e.target.files && e.target.files[0];
-              if (!file) return;
-              const reader = new FileReader();
-              reader.onload = () => {
-                try {
-                  const payload = JSON.parse(reader.result);
-                  if (payload.app !== 'siege-wiki') throw new Error('bad backup');
-                  if (payload.settings) setSettings((p) => ({ ...p, ...payload.settings }));
-                  if (payload.favorites) saveToStorage(R6_STORAGE_KEYS.favorites, payload.favorites);
-                  if (payload.notes) saveToStorage(R6_STORAGE_KEYS.notes, payload.notes);
-                  window.location.reload();
-                } catch (err) { }
-              };
-              reader.readAsText(file);
-              e.target.value = '';
-            }} />
-          </label>
-        </div>
-        <h2 className="cx-h2">About</h2>
-        <p className="text-sm" style={{ color: 'var(--muted)' }}>Siege Wiki {META.siteVersion} · data through {META.gameVersion} · synced {META.lastSynced}. Fan project, not affiliated with Ubisoft. Operator, map and season text: Rainbow Six Wiki contributors (CC-BY-SA).</p>
-        <button type="button" onClick={() => { try { Object.keys(localStorage).filter((k) => k.startsWith('r6_')).forEach((k) => localStorage.removeItem(k)); } catch (e) { } window.location.reload(); }} className="mt-4 rounded-2xl px-5 py-2.5 text-sm font-semibold" style={{ background: 'rgba(225,29,72,0.15)', border: '1px solid rgba(225,29,72,0.4)', color: '#fda4af' }}>Clear saved data & reload</button>
+        <p className="cx-hatnote">Website preferences and backups.</p>
+        <h2 className="cx-sec">Website info</h2>
+        <table className="cx-wikitable"><tbody>
+          <tr><th scope="row">Website Version</th><td><span className="font-semibold" style={{ color: 'var(--text)' }}>{META.siteVersion}</span></td></tr>
+          <tr><th scope="row">Game Update / Data Updated</th><td><span className="font-semibold" style={{ color: 'var(--text)' }}>{META.gameVersion} / {META.lastSynced}</span></td></tr>
+          <tr><th scope="row">Legal</th><td><SiteLegalFooter className="mt-3" /></td></tr>
+        </tbody></table>
+        <h2 className="cx-sec">Data sources</h2>
+        <table className="cx-wikitable"><tbody>
+          <tr><th scope="row">Rainbow Six Wiki</th><td>Operators, maps, seasons, weapons and lore (CC-BY-SA, no verbatim reuse beyond facts).</td></tr>
+          <tr><th scope="row">Ubisoft</th><td>Canonical bios, loadouts, gameplay tips and renders used to verify data per season.</td></tr>
+        </tbody></table>
+        <h2 className="cx-sec">Appearance</h2>
+        <table className="cx-wikitable"><tbody>
+          <tr><th scope="row">Color</th><td>
+            <div className="grid grid-cols-3 gap-1.5">
+              {[
+                { id: 'dark', label: 'Dark' },
+                { id: 'oled', label: 'Black' },
+                { id: 'light', label: 'Light' }
+              ].map((mode) => {
+                const isActive = (settings.colorMode || 'oled') === mode.id;
+                return (
+                  <button
+                    key={mode.id}
+                    type="button"
+                    onClick={() => updateSetting('colorMode', mode.id)}
+                    className={`mode-choice ${isActive ? 'mode-choice--active' : ''} rounded-xl px-2 py-2 text-xs font-bold transition-colors`}
+                    aria-pressed={isActive}
+                  >
+                    {mode.label}
+                  </button>
+                );
+              })}
+            </div>
+          </td></tr>
+          <tr><th scope="row">Text size</th><td>
+            <select value={settings.fontSize} onChange={e => updateSetting('fontSize', e.target.value)} className="themed-select w-full text-sm">
+              <option value="small">Small</option>
+              <option value="default">Standard</option>
+              <option value="large">Large</option>
+            </select>
+          </td></tr>
+        </tbody></table>
+        <h2 className="cx-sec">Backup</h2>
+        <table className="cx-wikitable"><tbody>
+          <tr><th scope="row">Export</th><td>
+            <p className="text-sm mb-2" style={{ color: 'var(--muted)' }}>Settings, favorites and notes as JSON.</p>
+            <button type="button" onClick={() => {
+              try {
+                const payload = { app: 'r6-wiki', version: 1, exportedAt: new Date().toISOString(), settings, favorites: loadFromStorage(R6_STORAGE_KEYS.favorites, {}), notes: loadFromStorage(R6_STORAGE_KEYS.notes, {}) };
+                const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'r6-wiki-backup.json';
+                a.click();
+                setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+              } catch (e) { }
+            }} className="cx-toolbtn">Download backup</button>
+          </td></tr>
+          <tr><th scope="row">Restore</th><td>
+            <label className="cx-toolbtn cx-toolbtn--quiet" style={{ cursor: 'pointer' }}>Restore backup
+              <input type="file" accept="application/json" hidden onChange={(e) => {
+                const file = e.target.files && e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = () => {
+                  try {
+                    const payload = JSON.parse(reader.result);
+                    if (payload.app !== 'r6-wiki') throw new Error('bad backup');
+                    if (payload.settings) setSettings((p) => ({ ...p, ...payload.settings }));
+                    if (payload.favorites) saveToStorage(R6_STORAGE_KEYS.favorites, payload.favorites);
+                    if (payload.notes) saveToStorage(R6_STORAGE_KEYS.notes, payload.notes);
+                    window.location.reload();
+                  } catch (err) { }
+                };
+                reader.readAsText(file);
+                e.target.value = '';
+              }} />
+            </label>
+          </td></tr>
+          <tr><th scope="row">Reset</th><td>
+            <button type="button" onClick={() => { try { Object.keys(localStorage).filter((k) => k.startsWith('r6_')).forEach((k) => localStorage.removeItem(k)); } catch (e) { } window.location.reload(); }} className="cx-toolbtn" style={{ background: 'rgba(225,29,72,0.15)', borderColor: 'rgba(225,29,72,0.4)', color: '#fda4af' }}>Clear saved data &amp; reload</button>
+          </td></tr>
+        </tbody></table>
       </div>
-    );
-
+      );
+    };
     /* ------------------------------- shell -------------------------------- */
 
     const WikiHeader = ({ currentView, setView }) => {
@@ -687,11 +920,7 @@
       return (
         <header className="wiki-header sticky top-0 z-30 flex items-center justify-between gap-4 px-4">
           <button type="button" onClick={() => setView('home')} className="flex items-center gap-3 shrink-0" aria-label="Main page">
-            <img src="./assets/wiki-logo.png" alt="" width={100} height={42} className="wiki-logo-img" style={{ objectFit: 'contain' }} />
-            <span className="flex flex-col leading-none text-left">
-              <span className="text-[15px] font-bold text-[var(--text)]" style={{ fontFamily: 'var(--font-display)', fontWeight: 700 }}>Siege Wiki</span>
-              <span className="text-[8.5px] uppercase tracking-[0.18em] mt-1" style={{ color: 'var(--text-faint)' }}>Rainbow Six Siege</span>
-            </span>
+            <img src="./assets/wiki-logo.png" alt="R6 Wiki" width={110} height={46} className="wiki-logo-img" style={{ objectFit: 'contain' }} />
           </button>
           <div
             id="wiki-header-search-slot"
@@ -765,7 +994,6 @@
               <img src="./assets/wiki-logo.png" alt="" width={30} height={30} style={{ objectFit: 'contain' }} />
             </div>
             <div className="min-w-0">
-              <p className="text-[9px] font-bold uppercase tracking-[0.32em] text-zinc-500">Siege Wiki</p>
               <h1 className="text-lg text-[var(--text)] truncate" style={{ fontFamily: 'var(--font-display)', fontWeight: 600, letterSpacing: '0.01em' }}>{headerTitle}</h1>
             </div>
           </button>
@@ -950,6 +1178,10 @@
             let entry = null;
             for (const pool of pools) { entry = (pool || []).find((e) => e && e.id === id) || null; if (entry) break; }
             if (!entry) entry = SEASONS.find((s) => s && s.id === id) || null;
+            if (!entry && currentView === 'weapon' && id) {
+              const w = weaponsByName.get(id) || resolveWeapon(id);
+              if (w && w.name) entry = w;
+            }
             if (entry && entry.name) title = `${entry.name}${suffix}`;
             else if (viewLabels[currentView]) title = `${viewLabels[currentView]}${suffix}`;
           } else if (viewLabels[currentView]) {
@@ -1041,12 +1273,14 @@
           case 'operators': return <OperatorsView setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} />;
           case 'operator': return <OperatorArticle id={id} setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} note={getEntityNote('operator', id)} onNoteChange={(v) => setEntityNote('operator', id, v)} />;
           case 'gadgets': return <GadgetsView setView={setView} />;
+          case 'weapon': return <WeaponArticle id={id} setView={setView} />;
+          case 'attachments': return <AttachmentsView setView={setView} />;
           case 'maps': return <MapsView setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} />;
           case 'map': return <MapArticle id={id} setView={setView} note={getEntityNote('map', id)} onNoteChange={(v) => setEntityNote('map', id, v)} />;
           case 'seasons': return <SeasonsView setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} />;
           case 'season': return <SeasonArticle id={id} setView={setView} note={getEntityNote('season', id)} onNoteChange={(v) => setEntityNote('season', id, v)} />;
           case 'favorites': return <FavoritesView favorites={favorites} setView={setView} onToggleFavorite={toggleFavorite} />;
-          case 'settings': return <SettingsView settings={settings} setSettings={setSettings} />;
+          case 'settings': return <SettingsView settings={settings} setSettings={setSettings} onBack={() => setView('home')} />;
           default: return <HomeView setView={setView} counts={{ operators: OPERATORS.length, maps: MAPS.length, seasons: SEASONS.length }} />;
         }
       };

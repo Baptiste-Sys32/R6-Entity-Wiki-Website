@@ -55,7 +55,7 @@ function stripMarkup(text) {
   out = out.replace(/\[\[(?:File|Image|Category):[^\]]*\]\]/gi, '');
   out = out.replace(/\[\[([^|\]]*\|)?([^\]]+)\]\]/g, '$2');
   out = out.replace(/<\/?[a-z][^>]*>/gi, '');
-  out = out.replace(/'''?/g, '');
+  out = out.replace(/'''?/g, '').replace(/\*\*/g, '');
   out = out.replace(/&(#[0-9]+|[a-z]+);/gi, ' ');
   out = out.replace(/\[…\]|\[…\]/g, '');
   out = out.replace(/[ \t]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
@@ -64,6 +64,7 @@ function stripMarkup(text) {
 
 function cleanSection(text) {
   return String(text || '')
+    .replace(/\{\|[\s\S]*?\|\}/g, '')
     .split('\n')
     .map((line) => line.trim())
     .filter((line) => line && !/^={2,}.*={2,}$/.test(line) && !/^[A-Za-z.' ]{1,32}?=$/.test(line))
@@ -79,7 +80,7 @@ function cap(text, n) {
 }
 
 function paras(wikitext, n) {
-  return cleanSection(String(wikitext || '')).replace(/^==[^=\n]+==\s*/, '')
+  return cleanSection(String(wikitext || '')).replace(/^==[^=\n]+==\s*/, '').replace(/\n\*+/g, '\n\n')
     .split(/\n{2,}/)
     .map((p) => stripMarkup(p).replace(/\s+/g, ' ').trim())
     .filter((p) => p.length > 40)
@@ -106,7 +107,7 @@ async function fandomSectionText(title, index) {
 }
 
 async function scrapeFandomOp(op, fandomTitle) {
-  const out = { biography: '', psychProfile: '', psychReport: '', quotes: [], trivia: [] };
+  const out = { biography: '', psychProfile: '', psychReport: '', quotes: [], trivia: [], howto: '' };
   let sections = {};
   try {
     sections = await fandomSections(fandomTitle);
@@ -139,7 +140,26 @@ async function scrapeFandomOp(op, fandomTitle) {
     .map((l) => stripMarkup(l.replace(/^\*\s*/, '').replace(/^\|-\|[^=\n]+?=\s*/, '')).replace(/\s+/g, ' ').trim())
     .filter((l) => l.length > 4 && l.length < 300)
     .slice(0, 10);
+  const gameplay = await get(['gameplay description']);
+  const noLoadout = (() => {
+    let out = gameplay;
+    const start = out.indexOf('{{Infobox/Loadout');
+    if (start >= 0) {
+      let depth = 0, end = -1;
+      for (let i = start; i < out.length - 1; i++) {
+        if (out[i] === '{' && out[i + 1] === '{') { depth += 1; i += 1; }
+        else if (out[i] === '}' && out[i + 1] === '}') {
+          depth -= 1; i += 1;
+          if (depth === 0) { end = i + 1; break; }
+        }
+      }
+      if (end > 0) out = out.slice(0, start) + out.slice(end);
+    }
+    return out;
+  })();
+  const howto = paras(noLoadout, 3).join('\n\n').slice(0, 900);
   const trivia = await get(['trivia']);
+  out.howto = howto;
   out.trivia = trivia.split('\n')
     .map((l) => stripMarkup(l.replace(/^\*\s*/, '').replace(/^\|-\|[^=\n]+?=\s*/, '')).replace(/\s+/g, ' ').trim())
     .filter((l) => l.startsWith('*') || l.length > 40)
@@ -186,8 +206,21 @@ async function ubiIndexSlugs() {
   return slugs;
 }
 
-async function scrapeUbiOp(slug) {
+async function scrapeUbiOp(slug, opId, manifest) {
   const html = await ubiGet(UBI_OP + slug);
+  const tipsSection = (String(html).split('operator-gameplay-tips')[1] || '').split('operator__biography')[0];
+  const tips = [];
+  for (const m of tipsSection.matchAll(/promo__content__title"[^>]*>([^<]{4,120})<\/h2>\s*<p>([^<]{20,600})<\/p>/gi)) {
+    const poster = (tipsSection.slice(m.index).match(/<img[^>]+src="([^"]+\.(?:jpg|png))"/i) || [])[1] || null;
+    const tip = { title: decodeEntities(m[1]).trim(), text: decodeEntities(m[2]).trim(), poster: null };
+    if (poster) {
+      const rel = `r6_images/tips/${opId}-${tips.length + 1}.jpg`;
+      manifest[rel] = { url: poster, referer: UBI_OP + slug };
+      tip.poster = rel;
+    }
+    tips.push(tip);
+    if (tips.length >= 4) break;
+  }
   const bioMatch = html.match(/<h3[^>]*>\s*Biography\s*<\/h3>([\s\S]{0,6000}?)<h3/i);
   const bioHtml = bioMatch ? bioMatch[1] : '';
   const quoteMatch = bioHtml.match(/<h3[^>]*>([^<]{4,200})<\/h3>/i) || bioHtml.match(/"([^"]{10,200})"/);
@@ -201,6 +234,7 @@ async function scrapeUbiOp(slug) {
   let bio = rawBio.replace(/^[“"'][^“"']{2,120}[”"']\s*/, '');
   if (rawQuote && bio.startsWith(rawQuote)) bio = bio.slice(rawQuote.length).replace(/^[\s"“”.,-]+/, '');
   return {
+    tips,
     bio,
     quote: rawQuote,
     psychReport: textOf(psychMatch ? psychMatch[1] : '', 2500),
@@ -218,11 +252,16 @@ async function scrapeUbiOp(slug) {
 
 async function main() {
   fs.mkdirSync(CONTENT_DIR, { recursive: true });
+  const tipManifestPath = path.join(ROOT, 'review', 'r6-image-manifest.json');
+  const tipManifest = JSON.parse(fs.readFileSync(tipManifestPath, 'utf8'));
   const operators = JSON.parse(fs.readFileSync(OPERATORS_PATH, 'utf8')).operators;
   console.log(`sync-lore: ${operators.length} operators`);
 
   console.log('sync-lore: resolving fandom titles...');
-  const catData = await fandom({ action: 'query', list: 'categorymembers', cmtitle: 'Category:Rainbow Operators', cmlimit: 500, cmtype: 'page' });
+  const catAtk = await fandom({ action: 'query', list: 'categorymembers', cmtitle: 'Category:Attacker', cmlimit: 500, cmtype: 'page' });
+  const catDef = await fandom({ action: 'query', list: 'categorymembers', cmtitle: 'Category:Defender', cmlimit: 500, cmtype: 'page' });
+  const catMembers = [...catAtk.query.categorymembers, ...catDef.query.categorymembers];
+  const catData = { query: { categorymembers: catMembers.length ? catMembers : (await fandom({ action: 'query', list: 'categorymembers', cmtitle: 'Category:Rainbow Operators', cmlimit: 500, cmtype: 'page' })).query.categorymembers } };
   const JUNK = /\(Extraction\)|\(Novel\)|\(TV series\)|\(Disambig\)|\(Codex\)|Flubber|Breacher \(Operator\)|Assaulter|Bishop|Noor|Pointman|Protector|Recruit|Striker|Sentry|Solid Snake|Trapper|Bosak|Patcher|Reserves/i;
   const titleByName = new Map();
   for (const m of catData.query.categorymembers) {
@@ -248,11 +287,11 @@ async function main() {
     } catch (error) {
       console.warn(`sync-lore: fandom failed for ${op.name}: ${error.message}`);
     }
-    let ubi = { bio: '', quote: '', psychReport: '', specialties: [], health: null, speed: null, difficulty: null, realName: '', dob: '', birthplace: '' };
+    let ubi = { bio: '', quote: '', psychReport: '', specialties: [], health: null, speed: null, difficulty: null, realName: '', dob: '', birthplace: '', tips: [] };
     const slug = slugify(op.name);
     if (ubiSlugs.has(slug)) {
       try {
-        ubi = await scrapeUbiOp(slug);
+        ubi = await scrapeUbiOp(slug, op.id, tipManifest.images);
       } catch (error) {
         console.warn(`sync-lore: ubisoft failed for ${op.name} (${slug}): ${error.message}`);
       }
@@ -261,17 +300,19 @@ async function main() {
       console.warn(`sync-lore: no ubisoft slug for ${op.name} (tried ${slug})`);
     }
     entries[op.id] = {
-      ubiBio: ubi.bio, ubiQuote: ubi.quote, ubiPsych: ubi.psychReport,
+      ubiBio: ubi.bio, ubiQuote: ubi.quote, ubiPsych: ubi.psychReport, tips: ubi.tips || [],
       specialties: ubi.specialties, health: ubi.health, speed: ubi.speed,
       difficulty: ubi.difficulty, realName: ubi.realName, dob: ubi.dob,
       birthplace: ubi.birthplace,
       biography: fandom.biography, psychProfile: fandom.psychProfile,
       psychReport: fandom.psychReport, quotes: fandom.quotes, trivia: fandom.trivia,
+      howto: fandom.howto || '',
     };
     if (n % 12 === 0) console.log(`sync-lore: ${n}/${operators.length}...`);
   }
 
   const generatedAt = new Date().toISOString();
+  fs.writeFileSync(tipManifestPath, JSON.stringify(tipManifest, null, 2) + '\n');
   fs.writeFileSync(LORE_PATH, JSON.stringify({
     generatedAt,
     metadata: {

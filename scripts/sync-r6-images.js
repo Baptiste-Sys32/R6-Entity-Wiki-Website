@@ -34,10 +34,10 @@ async function resolveUrl(file, width) {
   return width && info.thumburl ? info.thumburl : info.url;
 }
 
-async function download(url, dest) {
+async function download(url, dest, referer) {
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      const response = await fetch(url, { headers: { 'User-Agent': UA, Referer: 'https://rainbowsix.fandom.com/' } });
+      const response = await fetch(url, { headers: { 'User-Agent': UA, Referer: referer || 'https://rainbowsix.fandom.com/' } });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const buffer = Buffer.from(await response.arrayBuffer());
       if (buffer.length === 0) throw new Error('empty body');
@@ -58,19 +58,19 @@ async function main() {
   console.log(`sync-r6-images: ${entries.length} files`);
   let done = 0, skipped = 0, bytes = 0;
   const failures = [];
-  for (const [local, { file, width }] of entries) {
+  for (const [local, spec] of entries) {
     const dest = path.join(WEB_ROOT, local);
     if (!force && fs.existsSync(dest) && fs.statSync(dest).size > 0) {
       skipped += 1;
       continue;
     }
     try {
-      const url = await resolveUrl(file, width);
-      bytes += await download(url, dest);
+      const url = spec.url || await resolveUrl(spec.file, spec.width);
+      bytes += await download(url, dest, spec.referer);
       done += 1;
       if (done % 25 === 0) console.log(`sync-r6-images: ${done} downloaded...`);
     } catch (error) {
-      failures.push(`${local} (${file}): ${error.message}`);
+      failures.push(`${local} (${spec.file || spec.url}): ${error.message}`);
     }
     await sleep(SLEEP_MS);
   }

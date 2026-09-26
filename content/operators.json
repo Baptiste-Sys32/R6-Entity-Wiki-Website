@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-25T19:19:21.309Z",
+  "generatedAt": "2026-09-26T09:41:45.326Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
       "license": "CC-BY-SA (Fandom contributors)"
     },
-    "count": 72
+    "count": 74
   },
   "operators": [
     {
@@ -38,35 +38,6 @@
       ]
     },
     {
-      "id": "r6-alibi",
-      "name": "Alibi",
-      "side": "Defender",
-      "squad": "Viperstrike",
-      "season": "Operation Para Bellum",
-      "role": "",
-      "gadget": "Prisma",
-      "ability": "A Light Health Operator, Alibi carries three Prismas, special devices that project volumetric displays of herself. If an enemy were to interfere with the program, they will activate a tracking feature that will cause the victim to be detected for a short while.",
-      "realname": "Aria de Luca",
-      "quote": "Illusions are fatal. If you waver, you're mine. If you pick wrong, you're mine.",
-      "armor": 1,
-      "speed": 3,
-      "icon": "r6_images/operators/icons/r6-alibi.png",
-      "hero": "r6_images/operators/heroes/r6-alibi.png",
-      "gadgetIcon": "r6_images/gadgets/r6-alibi.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-alibi-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-alibi-2.png"
-        }
-      ]
-    },
-    {
       "id": "r6-amaru",
       "name": "Amaru",
       "side": "Attacker",
@@ -92,35 +63,6 @@
           "slot": "gadget",
           "name": "Stun Grenade/Siege",
           "image": null
-        }
-      ]
-    },
-    {
-      "id": "r6-aruni",
-      "name": "Aruni",
-      "side": "Defender",
-      "squad": "NIGHTHAVEN",
-      "season": "Operation Neon Dawn",
-      "role": "Secure, Intel Gatherer, Anchor",
-      "gadget": "SURYA LASER GATE",
-      "ability": "Apha \"Aruni\" Tawanroong (Thai: อาภา ตะวันรุ่ง), is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Neon Dawn expansion.",
-      "realname": "Apha Tawanroong",
-      "quote": "My gate stands like a star in the darkness, a burning light that keeps enemies at bay. Can you take the heat?",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-aruni.png",
-      "hero": "r6_images/operators/heroes/r6-aruni.png",
-      "gadgetIcon": null,
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-aruni-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-aruni-2.png"
         }
       ]
     },
@@ -174,89 +116,11 @@
       ]
     },
     {
-      "id": "r6-azami",
-      "name": "Azami",
-      "side": "Defender",
-      "squad": "Viperstrike",
-      "season": "Demon Veil",
-      "role": "Area Denial",
-      "gadget": "Kiba Barrier",
-      "ability": "Kana \"Azami\" Fujiwara (Japanese: 藤原加奈, Fujiwara Kana) is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Demon Veil expansion.",
-      "realname": "Kana Fujiwara",
-      "quote": "Honor is not the only thing worth protecting... but sometimes it's all you have left.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-azami.png",
-      "hero": "r6_images/operators/heroes/r6-azami.png",
-      "gadgetIcon": "r6_images/gadgets/r6-azami.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-azami-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-azami-2.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-bandit",
-      "name": "Bandit",
-      "side": "Defender",
-      "squad": "GSG 9",
-      "season": "Launch",
-      "role": "",
-      "gadget": "Shock Wire x 4",
-      "ability": "Dominic \"Bandit\" Brunsmeier is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
-      "realname": "Dominic Brunsmeier",
-      "quote": "I used to be undercover. I did time. I had to deal drugs. I even had to kill. And I was so good at it that, it got me a promotion.",
-      "armor": 1,
-      "speed": 3,
-      "icon": "r6_images/operators/icons/r6-bandit.png",
-      "hero": "r6_images/operators/heroes/r6-bandit.png",
-      "gadgetIcon": "r6_images/gadgets/r6-bandit.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-bandit-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Nitro Cell",
-          "image": "r6_images/weapons/r6-bandit-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "MP7",
-          "image": "r6_images/weapons/r6-bandit-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "M870",
-          "image": "r6_images/weapons/r6-bandit-4.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "Keratos .357",
-          "image": "r6_images/weapons/r6-bandit-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "P12",
-          "image": "r6_images/weapons/r6-bandit-6.png"
-        }
-      ]
-    },
-    {
       "id": "r6-blackbeard",
       "name": "Blackbeard",
       "side": "Attacker",
       "squad": "Redhammer",
-      "season": "Launch",
+      "season": "Operation Dust Line",
       "role": "",
       "gadget": "H.U.L.L. Adaptable Shield",
       "ability": "Blackbeard is a 1-Speed, 3 Health Operator, equipped with the Hybrid Utility Lightweight Layered Adaptable Shield, or H.U.L.L. for short. It is a ballistic shield, made up of four segmented panels. The three body panels are made of a titanium alloy blend, and the last is a transparent polycarbonate which allows Blackbeard to observe his surroundings.",
@@ -442,133 +306,6 @@
       ]
     },
     {
-      "id": "r6-castle",
-      "name": "Castle",
-      "side": "Defender",
-      "squad": "FBI SWAT",
-      "season": "Launch",
-      "role": "",
-      "gadget": "Armor Panel x 4",
-      "ability": "Miles Campbell, codenamed Castle, is a defending Operator featured in Tom Clancy's Rainbow Six Siege",
-      "realname": "Miles Campbell",
-      "quote": "Listen people: No one dies today. Any questions'll just have to wait.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-castle.png",
-      "hero": "r6_images/operators/heroes/r6-castle.png",
-      "gadgetIcon": "r6_images/gadgets/r6-castle.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-castle-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-castle-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "UMP45",
-          "image": "r6_images/weapons/r6-castle-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "M1014",
-          "image": "r6_images/weapons/r6-castle-4.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "5.7 USG",
-          "image": "r6_images/weapons/r6-castle-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "Super Shorty",
-          "image": "r6_images/weapons/r6-castle-6.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-caveira",
-      "name": "Caveira",
-      "side": "Defender",
-      "squad": "BOPE",
-      "season": "Operation Skull Rain",
-      "role": "Roam, Crowd control, Flank, Intel}}\n\nCaveira\nTaina \"Caveira\" Pereira is a Defending Operator featured in Tom Clancy's Ra",
-      "gadget": "Silent Step",
-      "ability": "Taina \"Caveira\" Pereira is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Skull Rain expansion alongside Capitão.",
-      "realname": "Taina Pereira",
-      "quote": "Not every child gets to choose who they grow up to be.",
-      "armor": 1,
-      "speed": 3,
-      "icon": "r6_images/operators/icons/r6-caveira.png",
-      "hero": "r6_images/operators/heroes/r6-caveira.png",
-      "gadgetIcon": "r6_images/gadgets/r6-caveira.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-caveira-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-caveira-2.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-caveira-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "M12",
-          "image": "r6_images/weapons/r6-caveira-4.png"
-        },
-        {
-          "slot": "primary",
-          "name": "SPAS-15",
-          "image": "r6_images/weapons/r6-caveira-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "Luison",
-          "image": "r6_images/weapons/r6-caveira-6.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-clash",
-      "name": "Clash",
-      "side": "Defender",
-      "squad": "Wolfguard",
-      "season": "Operation Grim Sky",
-      "role": "",
-      "gadget": "CCE Shield",
-      "ability": "A Heavy Armored Operator, Clash comes equipped with a special Crowd Control Electro Shield. When in use, it fully extends to cover her front-side. The Shield also has a taser function that can slow down enemies in front of her, preventing incoming rushes from Attackers.",
-      "realname": "Morowa Evans",
-      "quote": "Change will come if you’re willing to fight for it.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-clash.png",
-      "hero": "r6_images/operators/heroes/r6-clash.png",
-      "gadgetIcon": "r6_images/gadgets/r6-clash.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-clash-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-clash-2.png"
-        }
-      ]
-    },
-    {
       "id": "r6-deimos",
       "name": "Deimos",
       "side": "Attacker",
@@ -613,35 +350,6 @@
       ]
     },
     {
-      "id": "r6-doc",
-      "name": "Doc",
-      "side": "Defender",
-      "squad": "GIGN",
-      "season": "Launch",
-      "role": "",
-      "gadget": "MPD-0 Stim Pistol",
-      "ability": "Doc is a 3-Health, 1-Speed Defending Operator, and his unique gadget is the MPD-0 Stim Pistol. It is a handheld air pistol which shoots syringes filled with doses of epinephrine.",
-      "realname": "Gustave Kateb",
-      "quote": "I've learned from experience that the place to save lives is in the field, not an office. And sometimes the only way to save a life, is to take one.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-doc.png",
-      "hero": "r6_images/operators/heroes/r6-doc.png",
-      "gadgetIcon": "r6_images/gadgets/r6-doc.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-doc-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-doc-2.png"
-        }
-      ]
-    },
-    {
       "id": "r6-dokkaebi",
       "name": "Dokkaebi",
       "side": "Attacker",
@@ -667,98 +375,6 @@
           "slot": "gadget",
           "name": "Impact EMP Grenade",
           "image": null
-        }
-      ]
-    },
-    {
-      "id": "r6-echo",
-      "name": "Echo",
-      "side": "Defender",
-      "squad": "Viperstrike",
-      "season": "Operation Red Crow",
-      "role": "",
-      "gadget": "Yokai",
-      "ability": "A Medium Health Operator, Echo's unique gadgets are three hovering drones called Yokai, which can stick to flat surfaces on a ceiling, as well as emit ultrasonic bursts that can disorient the enemy.",
-      "realname": "Masaru Enatsu",
-      "quote": "Don't ask me what I'm doing on my phone. You don't want to know.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-echo.png",
-      "hero": "r6_images/operators/heroes/r6-echo.png",
-      "gadgetIcon": "r6_images/gadgets/r6-echo.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-echo-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-echo-2.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-ela",
-      "name": "Ela",
-      "side": "Defender",
-      "squad": "Nighthaven",
-      "season": "Operation Blood Orchid",
-      "role": "",
-      "gadget": "Grzmot Mine",
-      "ability": "Elżbieta \"Ela\" Bosak is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Blood Orchid expansion alongside Ying and Lesion.",
-      "realname": "Elżbieta Bosak",
-      "quote": "It's a brutal, dangerous world out there, but I've found my way. Chaos is my home, and I'll make sure you never escape it.",
-      "armor": 1,
-      "speed": 3,
-      "icon": "r6_images/operators/icons/r6-ela.png",
-      "hero": "r6_images/operators/heroes/r6-ela.png",
-      "gadgetIcon": "r6_images/gadgets/r6-ela.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-ela-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-ela-2.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-ela-3.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-fenrir",
-      "name": "Fenrir",
-      "side": "Defender",
-      "squad": "Redhammer",
-      "season": "Operation Dread Factor",
-      "role": "Crowd control, Trapper",
-      "gadget": "F-NATT Dread Mine",
-      "ability": "Emil \"Fenrir\" Svensson is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
-      "realname": "Emil Svensson",
-      "quote": "Fear clouds the mind. You can try to fight it, but you will not survive this.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-fenrir.png",
-      "hero": "r6_images/operators/heroes/r6-fenrir.png",
-      "gadgetIcon": "r6_images/gadgets/r6-fenrir.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-fenrir-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-fenrir-2.png"
         }
       ]
     },
@@ -822,55 +438,6 @@
           "slot": "gadget",
           "name": "Claymore",
           "image": "r6_images/weapons/r6-flores-2.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-frost",
-      "name": "Frost",
-      "side": "Defender",
-      "squad": "JTF2",
-      "season": "Operation Black Ice",
-      "role": "",
-      "gadget": "Welcome Mat x 3",
-      "ability": "Tina Lin \"Frost\" Tsang is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
-      "realname": "Tina Lin Tsang",
-      "quote": "There are two things the human body needs in a survival situation: water and hope.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-frost.png",
-      "hero": "r6_images/operators/heroes/r6-frost.png",
-      "gadgetIcon": "r6_images/gadgets/r6-frost.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-frost-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-frost-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "Super 90",
-          "image": null
-        },
-        {
-          "slot": "primary",
-          "name": "9mm C1",
-          "image": "r6_images/weapons/r6-frost-4.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "Mk1 9mm",
-          "image": "r6_images/weapons/r6-frost-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "ITA12S",
-          "image": "r6_images/weapons/r6-frost-6.png"
         }
       ]
     },
@@ -963,40 +530,6 @@
       ]
     },
     {
-      "id": "r6-goyo",
-      "name": "Goyo",
-      "side": "Defender",
-      "squad": "Redhammer",
-      "season": "Launch",
-      "role": "",
-      "gadget": "Volcán Canister",
-      "ability": "César Ruiz Hernández, codenamed Goyo, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
-      "realname": "César Ruiz Hernández",
-      "quote": "A person is never more honest than when they think they're alone.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-goyo.png",
-      "hero": null,
-      "gadgetIcon": null,
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-goyo-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-goyo-2.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-goyo-3.png"
-        }
-      ]
-    },
-    {
       "id": "r6-gridlock",
       "name": "Gridlock",
       "side": "Attacker",
@@ -1027,6 +560,40 @@
           "slot": "gadget",
           "name": "M67/Siege",
           "image": "r6_images/weapons/r6-gridlock-3.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-grim",
+      "name": "Grim",
+      "side": "Attacker",
+      "squad": "Nighthaven",
+      "season": "Operation Brutal Swarm",
+      "role": "Intel Gathering, Area Denial",
+      "gadget": "Kawan Hive Launcher",
+      "ability": "Grim is a 1-Health, 3-Speed Attacking Operator, equipped with the Kawan Hive Launcher. It is a shoulder-mounted launcher which fires projectiles that deploy canisters upon impact. The canisters will release a swarm of \"micro air vehicles\" within a set area, and they will linger for a set duration.",
+      "realname": "Charlie Tho Keng Boon",
+      "quote": "The faint buzz is a warning. It may be the last thing you hear, but I'm the last thing you'll see.",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-grim.png",
+      "hero": "r6_images/operators/heroes/r6-grim.png",
+      "gadgetIcon": "r6_images/gadgets/r6-grim.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-grim-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-grim-3.png"
         }
       ]
     },
@@ -1177,89 +744,6 @@
       ]
     },
     {
-      "id": "r6-j-ger",
-      "name": "Jäger",
-      "side": "Defender",
-      "squad": "GSG 9",
-      "season": "Launch",
-      "role": "Secure, Roam }}\nJäger\nMarius \"Jäger\" Streicher (pronounced Yeh-ger) is a Defending Operator featured in Tom Clancy's Rai",
-      "gadget": "Active Defense System x 3",
-      "ability": "Marius \"Jäger\" Streicher (pronounced Yeh-ger) is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
-      "realname": "Marius Streicher",
-      "quote": "They said it could not be done. They said it was designed for tanks. They said I could not make it smaller and more accurate. They were wrong.",
-      "armor": 1,
-      "speed": 3,
-      "icon": "r6_images/operators/icons/r6-j-ger.png",
-      "hero": "r6_images/operators/heroes/r6-j-ger.png",
-      "gadgetIcon": "r6_images/gadgets/r6-j-ger.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-j-ger-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-j-ger-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "M870",
-          "image": "r6_images/weapons/r6-j-ger-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "416-C Carbine",
-          "image": "r6_images/weapons/r6-j-ger-4.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "P-10C",
-          "image": "r6_images/weapons/r6-j-ger-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "P12",
-          "image": "r6_images/weapons/r6-j-ger-6.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-kaid",
-      "name": "Kaid",
-      "side": "Defender",
-      "squad": "Redhammer",
-      "season": "Operation Wind Bastion",
-      "role": "Anti Hard Breach, Anchor, Secure",
-      "gadget": "\"Rtila\" Electroclaw",
-      "ability": "A Heavy Armored Operator, Kaid is equipped with two throwable \"Rtila\" Electroclaws that can be thrown onto any surface it can attach to, electrifying metal objects within a certain radius of the gadget.",
-      "realname": "Jalal El Fassi",
-      "quote": "Lead by example and the mountain will move.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-kaid.png",
-      "hero": null,
-      "gadgetIcon": "r6_images/gadgets/r6-kaid.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-kaid-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "C4",
-          "image": "r6_images/weapons/r6-kaid-2.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-kaid-3.png"
-        }
-      ]
-    },
-    {
       "id": "r6-kali",
       "name": "Kali",
       "side": "Attacker",
@@ -1285,84 +769,6 @@
           "slot": "gadget",
           "name": "Claymore",
           "image": "r6_images/weapons/r6-kali-2.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-kapkan",
-      "name": "Kapkan",
-      "side": "Defender",
-      "squad": "Spetsnaz",
-      "season": "Launch",
-      "role": "Trapper, Anti-entry}}\nKapkan\nMaxim \"Kapkan\" Basuda (Russian: Максим Басуда) is a Defending Operator featured in Tom Clan",
-      "gadget": "Entry Denial Device x 5",
-      "ability": "Maxim \"Kapkan\" Basuda (Russian: Максим Басуда) is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
-      "realname": "Maxim Basuda",
-      "quote": "These soldiers think their training will keep them alive. They break down doors and come through windows, weapons drawn. They check the corners, watch each other's backs, and give the all clear. But i",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-kapkan.png",
-      "hero": "r6_images/operators/heroes/r6-kapkan.png",
-      "gadgetIcon": "r6_images/gadgets/r6-kapkan.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-kapkan-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-kapkan-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "9x19VSN",
-          "image": "r6_images/weapons/r6-kapkan-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "SASG-12",
-          "image": "r6_images/weapons/r6-kapkan-4.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "PMM",
-          "image": "r6_images/weapons/r6-kapkan-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "GSh-18",
-          "image": "r6_images/weapons/r6-kapkan-6.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-lesion",
-      "name": "Lesion",
-      "side": "Defender",
-      "squad": "SDU",
-      "season": "Operation Blood Orchid",
-      "role": "",
-      "gadget": "Gu",
-      "ability": "Liu Tze Long (Chinese: 廖子朗), codenamed Lesion, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Blood Orchid expansion alongside Ying and Ela.",
-      "realname": "Liu Tze Long",
-      "quote": "Do what you do best. If you're lucky, you won't be a burden.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-lesion.png",
-      "hero": "r6_images/operators/heroes/r6-lesion.png",
-      "gadgetIcon": null,
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-lesion-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-lesion-2.png"
         }
       ]
     },
@@ -1426,60 +832,6 @@
       ]
     },
     {
-      "id": "r6-maestro",
-      "name": "Maestro",
-      "side": "Defender",
-      "squad": "GIS",
-      "season": "Operation Para Bellum",
-      "role": "",
-      "gadget": "Compact Laser Emplacement x 3",
-      "ability": "Adriano \"Maestro\" Martello is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
-      "realname": "Adriano Martello",
-      "quote": "Did I ever tell you about the time we tree-jumped into the Congo Swamp at night? No? Oh, it's a good one.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-maestro.png",
-      "hero": "r6_images/operators/heroes/r6-maestro.png",
-      "gadgetIcon": "r6_images/gadgets/r6-maestro.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-maestro-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-maestro-2.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-maestro-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "ALDA 5.56",
-          "image": "r6_images/weapons/r6-maestro-4.png"
-        },
-        {
-          "slot": "primary",
-          "name": "ACS12",
-          "image": "r6_images/weapons/r6-maestro-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "Bailiff 410",
-          "image": "r6_images/weapons/r6-maestro-6.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "Keratos .357",
-          "image": "r6_images/weapons/r6-maestro-7.png"
-        }
-      ]
-    },
-    {
       "id": "r6-maverick",
       "name": "Maverick",
       "side": "Attacker",
@@ -1514,84 +866,6 @@
       ]
     },
     {
-      "id": "r6-melusi",
-      "name": "Melusi",
-      "side": "Defender",
-      "squad": "Wolfguard",
-      "season": "Operation Steel Wave",
-      "role": "Crowd-Control, Intel-Gatherer, Secure}}\nMelusi\nThandiwe \"Melusi\" Ndlovu, is a Defending Operator featured in Tom Clancy'",
-      "gadget": "Banshee SonicDefense",
-      "ability": "Thandiwe \"Melusi\" Ndlovu, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Steel Wave expansion alongside Ace.",
-      "realname": "Thandiwe Ndlovu",
-      "quote": "Understanding is the only tool that vanquishes ignorance.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-melusi.png",
-      "hero": "r6_images/operators/heroes/r6-melusi.png",
-      "gadgetIcon": "r6_images/gadgets/r6-melusi.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-melusi-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-melusi-2.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-mira",
-      "name": "Mira",
-      "side": "Defender",
-      "squad": "Rainbow",
-      "season": "Operation Velvet Shell",
-      "role": "",
-      "gadget": "Black Mirror x 2",
-      "ability": "Elena María Álvarez, codenamed Mira, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Velvet Shell expansion alongside Jackal.",
-      "realname": "Elena María Álvarez",
-      "quote": "Think of me as your conscience. I see everything, and I'm just as ruthless.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-mira.png",
-      "hero": "r6_images/operators/heroes/r6-mira.png",
-      "gadgetIcon": "r6_images/gadgets/r6-mira.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-mira-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Nitro Cell",
-          "image": "r6_images/weapons/r6-mira-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "Vector .45 ACP",
-          "image": "r6_images/weapons/r6-mira-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "ITA12L",
-          "image": "r6_images/weapons/r6-mira-4.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "ITA12S",
-          "image": "r6_images/weapons/r6-mira-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "USP40",
-          "image": "r6_images/weapons/r6-mira-6.png"
-        }
-      ]
-    },
-    {
       "id": "r6-montagne",
       "name": "Montagne",
       "side": "Attacker",
@@ -1622,89 +896,6 @@
           "slot": "gadget",
           "name": "Impact EMP Grenade",
           "image": null
-        }
-      ]
-    },
-    {
-      "id": "r6-mozzie",
-      "name": "Mozzie",
-      "side": "Defender",
-      "squad": "SASR",
-      "season": "Operation Burnt Horizon",
-      "role": "Intel Denier, Intel Gatherer, Secure",
-      "gadget": "Pest Launcher",
-      "ability": "Max Goose, codenamed Mozzie, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
-      "realname": "Max Goose",
-      "quote": "Some say I'm a pest. I say right back atcha, mate!",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-mozzie.png",
-      "hero": null,
-      "gadgetIcon": "r6_images/gadgets/r6-mozzie.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-mozzie-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-mozzie-2.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "C4",
-          "image": "r6_images/weapons/r6-mozzie-3.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-mute",
-      "name": "Mute",
-      "side": "Defender",
-      "squad": "SAS",
-      "season": "Launch",
-      "role": "Intel Denial, Support",
-      "gadget": "Signal Disruptor",
-      "ability": "Chandar, codenamed Mute, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
-      "realname": "Mark R. Chandar",
-      "quote": "People think my codename is Mute because I don't like to talk. Maybe I just don't like you.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-mute.png",
-      "hero": "r6_images/operators/heroes/r6-mute.png",
-      "gadgetIcon": "r6_images/gadgets/r6-mute.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Nitro Cell",
-          "image": "r6_images/weapons/r6-mute-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-mute-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "MP5K",
-          "image": "r6_images/weapons/r6-mute-1.png"
-        },
-        {
-          "slot": "primary",
-          "name": "M590A1",
-          "image": "r6_images/weapons/r6-mute-2.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "P226 Mk 25",
-          "image": "r6_images/weapons/r6-mute-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "SMG-11",
-          "image": "r6_images/weapons/r6-mute-6.png"
         }
       ]
     },
@@ -1772,35 +963,6 @@
       ]
     },
     {
-      "id": "r6-oryx",
-      "name": "Oryx",
-      "side": "Defender",
-      "squad": "GIGR",
-      "season": "Operation Void Edge",
-      "role": "Roam, Soft-Breach",
-      "gadget": "Remah Dash",
-      "ability": "A Medium Armored Operator, Oryx's unique ability is the Remah Dash. When activated, he performs a quick dash, making him move faster than any other Defender for a short period of time. While dashing, Oryx can smash through Barricades unreinforced walls, Osa shields and Deployable Shields, and can knock down any Attackers he dashes into, including shield bearers such as Montagne, Blitz and Fuze.",
-      "realname": "Saif Al Hadid",
-      "quote": "Sometimes, the only way out is through.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-oryx.png",
-      "hero": "r6_images/operators/heroes/r6-oryx.png",
-      "gadgetIcon": "r6_images/gadgets/r6-oryx.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-oryx-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-oryx-2.png"
-        }
-      ]
-    },
-    {
       "id": "r6-osa",
       "name": "Osa",
       "side": "Attacker",
@@ -1831,40 +993,6 @@
           "slot": "gadget",
           "name": "Impact EMP Grenade",
           "image": null
-        }
-      ]
-    },
-    {
-      "id": "r6-pulse",
-      "name": "Pulse",
-      "side": "Defender",
-      "squad": "FBI SWAT",
-      "season": "Launch",
-      "role": "Intel, Roam",
-      "gadget": "Heartbeat Sensor",
-      "ability": "Jack \"Pulse\" Estrada is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
-      "realname": "Jack Estrada",
-      "quote": "In a life threatening situation, the average person's heartbeat can be upwards of 175 beats per minute. A well trained tango is able to stay cool, keep calm. Their heart rates can be 70 to 100 beats p",
-      "armor": 1,
-      "speed": 3,
-      "icon": "r6_images/operators/icons/r6-pulse.png",
-      "hero": "r6_images/operators/heroes/r6-pulse.png",
-      "gadgetIcon": "r6_images/gadgets/r6-pulse.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "C4",
-          "image": "r6_images/weapons/r6-pulse-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-pulse-2.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-pulse-3.png"
         }
       ]
     },
@@ -1927,24 +1055,6 @@
       ]
     },
     {
-      "id": "r6-rook",
-      "name": "Rook",
-      "side": "Defender",
-      "squad": "GIGN",
-      "season": "Launch",
-      "role": "",
-      "gadget": "Armor Pack x 1 (5)",
-      "ability": "Julien \"Rook\" Nizan is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
-      "realname": "Julien Nizan",
-      "quote": "I trust that the ceramic trauma plate I'm wearing will stop a .357 Magnum round traveling at four-hundred and ninety meters per second. I trust myself not to move, not to flinch. I trust my team mates",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-rook.png",
-      "hero": "r6_images/operators/heroes/r6-rook.png",
-      "gadgetIcon": "r6_images/gadgets/r6-rook.png",
-      "weapons": []
-    },
-    {
       "id": "r6-sens",
       "name": "Sens",
       "side": "Attacker",
@@ -1975,35 +1085,6 @@
           "slot": "gadget",
           "name": "Frag Grenade",
           "image": null
-        }
-      ]
-    },
-    {
-      "id": "r6-skop-s",
-      "name": "Skopós",
-      "side": "Defender",
-      "squad": "Wolfguard",
-      "season": "Operation Twin Shells",
-      "role": "Intel, Support",
-      "gadget": "V10 Pantheon Shells",
-      "ability": "Skopós' Unique Gadget are the V10 Pantheon Shells, a pair of humanoid robots which she remotely controls and act as her body in the field. The Shells can move, shoot and use gadgets like any other operator, but Skopós can only activate and control one Shell at a time. The other Shell will be inactive, in which it will crouch down and deploy a Bulletproof Shield to protect itself, and act as a remote camera. Skopós can switch control from one Shell to the other at any time, allowing her to quickly",
-      "realname": "Kure Galanos",
-      "quote": "I was an apex killer, fueled by instinct and adrenaline. Times change though, and so have I. Now I'm twice as dangerous.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-skop-s.png",
-      "hero": "r6_images/operators/heroes/r6-skop-s.png",
-      "gadgetIcon": "r6_images/gadgets/r6-skop-s.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-skop-s-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-skop-s-2.png"
         }
       ]
     },
@@ -2058,107 +1139,6 @@
           "slot": "secondary",
           "name": "Reaper Mk2",
           "image": null
-        }
-      ]
-    },
-    {
-      "id": "r6-smoke",
-      "name": "Smoke",
-      "side": "Defender",
-      "squad": "SAS",
-      "season": "Launch",
-      "role": "Area Denial, Support, Anchor",
-      "gadget": "Remote Gas Grenade x 3",
-      "ability": "James Porter, codenamed Smoke, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
-      "realname": "James Porter",
-      "quote": "I know what you're wondering. \"What's in the canister?\" I could tell ya, but then I'd have to kill you. Hehe. I'm only mucking about, relax. As for what's in the canister, it's best you don't ask.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-smoke.png",
-      "hero": "r6_images/operators/heroes/r6-smoke.png",
-      "gadgetIcon": "r6_images/gadgets/r6-smoke.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-smoke-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-smoke-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "FMG-9",
-          "image": "r6_images/weapons/r6-smoke-1.png"
-        },
-        {
-          "slot": "primary",
-          "name": "M590A1",
-          "image": "r6_images/weapons/r6-smoke-2.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "P226 Mk 25",
-          "image": "r6_images/weapons/r6-smoke-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "SMG-11",
-          "image": "r6_images/weapons/r6-smoke-6.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-solis",
-      "name": "Solis",
-      "side": "Defender",
-      "squad": "Ghosteyes",
-      "season": "Operation Solar Raid",
-      "role": "",
-      "gadget": "SPEC-IO Electro Sensor",
-      "ability": "Ana \"Solis\" Valentina Díaz is a Defending Operator featured in Tom Clancy's Rainbow Six Siege introduced in the Operation Solar Raid expansion.",
-      "realname": "Ana Valentina Diaz",
-      "quote": "If you know the game before it starts, no pawn can stand in your way.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-solis.png",
-      "hero": "r6_images/operators/heroes/r6-solis.png",
-      "gadgetIcon": "r6_images/gadgets/r6-solis.png",
-      "weapons": []
-    },
-    {
-      "id": "r6-tachanka",
-      "name": "Tachanka",
-      "side": "Defender",
-      "squad": "Spetsnaz",
-      "season": "Operation Shadow Legacy",
-      "role": "",
-      "gadget": "Shumikha Launcher",
-      "ability": "]] Aleksandr Senav'yev), codenamed Tachanka (Тачанка) (Tachankin in Russian localisation, Тачанкин), is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
-      "realname": "Alexsandr Senaviev",
-      "quote": "They told me I’d died. They were wrong. I was reborn.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-tachanka.png",
-      "hero": "r6_images/operators/heroes/r6-tachanka.png",
-      "gadgetIcon": "r6_images/gadgets/r6-tachanka.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-tachanka-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-tachanka-2.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-tachanka-3.png"
         }
       ]
     },
@@ -2266,6 +1246,1250 @@
       ]
     },
     {
+      "id": "r6-twitch",
+      "name": "Twitch",
+      "side": "Attacker",
+      "squad": "Wolfguard",
+      "season": "Launch",
+      "role": "",
+      "gadget": "Shock Drone x 2",
+      "ability": "Emmanuelle Pichon, codenamed Twitch, is an Attacking Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
+      "realname": "Emmanuelle Pichon",
+      "quote": "If you have a few spare hours, I'd love to share the details of how this device is a masterpiece of design. Quadruple independent gear boxes enabling zero to twenty in under four seconds, ten kilomete",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-twitch.png",
+      "hero": "r6_images/operators/heroes/r6-twitch.png",
+      "gadgetIcon": "r6_images/gadgets/r6-twitch.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-twitch-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-twitch-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "F2",
+          "image": "r6_images/weapons/r6-twitch-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "417",
+          "image": "r6_images/weapons/r6-twitch-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SG-CQB",
+          "image": "r6_images/weapons/r6-twitch-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P9",
+          "image": "r6_images/weapons/r6-twitch-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "LFP586",
+          "image": "r6_images/weapons/r6-twitch-7.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-ying",
+      "name": "Ying",
+      "side": "Attacker",
+      "squad": "SDU",
+      "season": "Operation Blood Orchid",
+      "role": "",
+      "gadget": "Candela x 4",
+      "ability": "Siu Mei Lin (Chinese: 蕭美蓮), codenamed Ying, is an Attacking Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Blood Orchid expansion alongside Lesion and Ela.",
+      "realname": "Siu Mei Lin",
+      "quote": "The punch starts from the heart and does not miss.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-ying.png",
+      "hero": "r6_images/operators/heroes/r6-ying.png",
+      "gadgetIcon": "r6_images/gadgets/r6-ying.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-ying-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-ying-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "T-95 LSW",
+          "image": "r6_images/weapons/r6-ying-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SIX12",
+          "image": "r6_images/weapons/r6-ying-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Q-929",
+          "image": "r6_images/weapons/r6-ying-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Reaper MK2",
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "r6-zero",
+      "name": "Zero",
+      "side": "Attacker",
+      "squad": "Ghosteyes",
+      "season": "Operation Shadow Legacy",
+      "role": "Intel-DenierIntel-Gatherer",
+      "gadget": "ARGUS LAUNCHER",
+      "ability": "A Medium Health Operator, Zero's gadget is the ARGUS Launcher, which launches small cameras. These cameras can burrow into any surface, including reinforced walls and hatches, and provide a camera view on both sides of the deployed surface.",
+      "realname": "Samuel Leo Fisher",
+      "quote": "You should know better than to write me off. Consider this a teaching moment.",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-zero.png",
+      "hero": "r6_images/operators/heroes/r6-zero.png",
+      "gadgetIcon": "r6_images/gadgets/r6-zero.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-zero-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Hard Breach Charge",
+          "image": "r6_images/weapons/r6-zero-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-zofia",
+      "name": "Zofia",
+      "side": "Attacker",
+      "squad": "GROM",
+      "season": "Operation White Noise",
+      "role": "Entry Frag, Soft Breach}}\nZofia\nZofia Bosak is an Attacking Operator featured in Tom Clancy's Rainbow Six Siege, introdu",
+      "gadget": "KS79 LIFELINE",
+      "ability": "Zofia Bosak is an Attacking Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation White Noise expansion alongside Dokkaebi and Vigil.",
+      "realname": "Zofia Bosak",
+      "quote": "I decide when to restrain and when to kill. Only the best calls the shots.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-zofia.png",
+      "hero": "r6_images/operators/heroes/r6-zofia.png",
+      "gadgetIcon": "r6_images/gadgets/r6-zofia.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-zofia-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Claymore",
+          "image": "r6_images/weapons/r6-zofia-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-alibi",
+      "name": "Alibi",
+      "side": "Defender",
+      "squad": "Viperstrike",
+      "season": "Operation Para Bellum",
+      "role": "",
+      "gadget": "Prisma",
+      "ability": "A Light Health Operator, Alibi carries three Prismas, special devices that project volumetric displays of herself. If an enemy were to interfere with the program, they will activate a tracking feature that will cause the victim to be detected for a short while.",
+      "realname": "Aria de Luca",
+      "quote": "Illusions are fatal. If you waver, you're mine. If you pick wrong, you're mine.",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-alibi.png",
+      "hero": "r6_images/operators/heroes/r6-alibi.png",
+      "gadgetIcon": "r6_images/gadgets/r6-alibi.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-alibi-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-alibi-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-aruni",
+      "name": "Aruni",
+      "side": "Defender",
+      "squad": "NIGHTHAVEN",
+      "season": "Operation Neon Dawn",
+      "role": "Secure, Intel Gatherer, Anchor",
+      "gadget": "SURYA LASER GATE",
+      "ability": "Apha \"Aruni\" Tawanroong (Thai: อาภา ตะวันรุ่ง), is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Neon Dawn expansion.",
+      "realname": "Apha Tawanroong",
+      "quote": "My gate stands like a star in the darkness, a burning light that keeps enemies at bay. Can you take the heat?",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-aruni.png",
+      "hero": "r6_images/operators/heroes/r6-aruni.png",
+      "gadgetIcon": null,
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-aruni-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-aruni-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-azami",
+      "name": "Azami",
+      "side": "Defender",
+      "squad": "Viperstrike",
+      "season": "Demon Veil",
+      "role": "Area Denial",
+      "gadget": "Kiba Barrier",
+      "ability": "Kana \"Azami\" Fujiwara (Japanese: 藤原加奈, Fujiwara Kana) is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Demon Veil expansion.",
+      "realname": "Kana Fujiwara",
+      "quote": "Honor is not the only thing worth protecting... but sometimes it's all you have left.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-azami.png",
+      "hero": "r6_images/operators/heroes/r6-azami.png",
+      "gadgetIcon": "r6_images/gadgets/r6-azami.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-azami-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-azami-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-bandit",
+      "name": "Bandit",
+      "side": "Defender",
+      "squad": "GSG 9",
+      "season": "Launch",
+      "role": "",
+      "gadget": "Shock Wire x 4",
+      "ability": "Dominic \"Bandit\" Brunsmeier is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
+      "realname": "Dominic Brunsmeier",
+      "quote": "I used to be undercover. I did time. I had to deal drugs. I even had to kill. And I was so good at it that, it got me a promotion.",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-bandit.png",
+      "hero": "r6_images/operators/heroes/r6-bandit.png",
+      "gadgetIcon": "r6_images/gadgets/r6-bandit.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-bandit-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Nitro Cell",
+          "image": "r6_images/weapons/r6-bandit-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "MP7",
+          "image": "r6_images/weapons/r6-bandit-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M870",
+          "image": "r6_images/weapons/r6-bandit-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Keratos .357",
+          "image": "r6_images/weapons/r6-bandit-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P12",
+          "image": "r6_images/weapons/r6-bandit-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-castle",
+      "name": "Castle",
+      "side": "Defender",
+      "squad": "FBI SWAT",
+      "season": "Launch",
+      "role": "",
+      "gadget": "Armor Panel x 4",
+      "ability": "Miles Campbell, codenamed Castle, is a defending Operator featured in Tom Clancy's Rainbow Six Siege",
+      "realname": "Miles Campbell",
+      "quote": "Listen people: No one dies today. Any questions'll just have to wait.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-castle.png",
+      "hero": "r6_images/operators/heroes/r6-castle.png",
+      "gadgetIcon": "r6_images/gadgets/r6-castle.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-castle-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-castle-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "UMP45",
+          "image": "r6_images/weapons/r6-castle-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M1014",
+          "image": "r6_images/weapons/r6-castle-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "5.7 USG",
+          "image": "r6_images/weapons/r6-castle-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Super Shorty",
+          "image": "r6_images/weapons/r6-castle-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-caveira",
+      "name": "Caveira",
+      "side": "Defender",
+      "squad": "BOPE",
+      "season": "Operation Skull Rain",
+      "role": "Roam, Crowd control, Flank, Intel}}\n\nCaveira\nTaina \"Caveira\" Pereira is a Defending Operator featured in Tom Clancy's Ra",
+      "gadget": "Silent Step",
+      "ability": "Taina \"Caveira\" Pereira is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Skull Rain expansion alongside Capitão.",
+      "realname": "Taina Pereira",
+      "quote": "Not every child gets to choose who they grow up to be.",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-caveira.png",
+      "hero": "r6_images/operators/heroes/r6-caveira.png",
+      "gadgetIcon": "r6_images/gadgets/r6-caveira.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-caveira-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-caveira-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-caveira-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M12",
+          "image": "r6_images/weapons/r6-caveira-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SPAS-15",
+          "image": "r6_images/weapons/r6-caveira-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Luison",
+          "image": "r6_images/weapons/r6-caveira-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-clash",
+      "name": "Clash",
+      "side": "Defender",
+      "squad": "Wolfguard",
+      "season": "Operation Grim Sky",
+      "role": "",
+      "gadget": "CCE Shield",
+      "ability": "A Heavy Armored Operator, Clash comes equipped with a special Crowd Control Electro Shield. When in use, it fully extends to cover her front-side. The Shield also has a taser function that can slow down enemies in front of her, preventing incoming rushes from Attackers.",
+      "realname": "Morowa Evans",
+      "quote": "Change will come if you’re willing to fight for it.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-clash.png",
+      "hero": "r6_images/operators/heroes/r6-clash.png",
+      "gadgetIcon": "r6_images/gadgets/r6-clash.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-clash-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-clash-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-denari",
+      "name": "Denari",
+      "side": "Defender",
+      "squad": "Nighthaven",
+      "season": "Operation High Stakes",
+      "role": "Anti-Entry",
+      "gadget": "T.R.I.P Connector x7",
+      "ability": "A 3-Speed, 1-Health Defending Operator, Denari is equipped with the Trigonometric Realignment Injection Paranode Connector, or T.R.I.P Connector for short. It is a small, polyhedral device which sticks to flat surfaces. When at least two T.R.I.P. connectors are deployed and have line-of-sight of each other, they will generate a laser between them.",
+      "realname": "Leon Winzenried",
+      "quote": "You made a bad bet. Play the odds and risked it all. But you‘re playing my game now. And I’m here to clean house.",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-denari.png",
+      "hero": "r6_images/operators/heroes/r6-denari.png",
+      "gadgetIcon": "r6_images/gadgets/r6-denari.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-denari-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-denari-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-doc",
+      "name": "Doc",
+      "side": "Defender",
+      "squad": "GIGN",
+      "season": "Launch",
+      "role": "",
+      "gadget": "MPD-0 Stim Pistol",
+      "ability": "Doc is a 3-Health, 1-Speed Defending Operator, and his unique gadget is the MPD-0 Stim Pistol. It is a handheld air pistol which shoots syringes filled with doses of epinephrine.",
+      "realname": "Gustave Kateb",
+      "quote": "I've learned from experience that the place to save lives is in the field, not an office. And sometimes the only way to save a life, is to take one.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-doc.png",
+      "hero": "r6_images/operators/heroes/r6-doc.png",
+      "gadgetIcon": "r6_images/gadgets/r6-doc.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-doc-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-doc-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-echo",
+      "name": "Echo",
+      "side": "Defender",
+      "squad": "Viperstrike",
+      "season": "Operation Red Crow",
+      "role": "",
+      "gadget": "Yokai",
+      "ability": "A Medium Health Operator, Echo's unique gadgets are three hovering drones called Yokai, which can stick to flat surfaces on a ceiling, as well as emit ultrasonic bursts that can disorient the enemy.",
+      "realname": "Masaru Enatsu",
+      "quote": "Don't ask me what I'm doing on my phone. You don't want to know.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-echo.png",
+      "hero": "r6_images/operators/heroes/r6-echo.png",
+      "gadgetIcon": "r6_images/gadgets/r6-echo.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-echo-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-echo-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-ela",
+      "name": "Ela",
+      "side": "Defender",
+      "squad": "Nighthaven",
+      "season": "Operation Blood Orchid",
+      "role": "",
+      "gadget": "Grzmot Mine",
+      "ability": "Elżbieta \"Ela\" Bosak is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Blood Orchid expansion alongside Ying and Lesion.",
+      "realname": "Elżbieta Bosak",
+      "quote": "It's a brutal, dangerous world out there, but I've found my way. Chaos is my home, and I'll make sure you never escape it.",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-ela.png",
+      "hero": "r6_images/operators/heroes/r6-ela.png",
+      "gadgetIcon": "r6_images/gadgets/r6-ela.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-ela-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-ela-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-ela-3.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-fenrir",
+      "name": "Fenrir",
+      "side": "Defender",
+      "squad": "Redhammer",
+      "season": "Operation Dread Factor",
+      "role": "Crowd control, Trapper",
+      "gadget": "F-NATT Dread Mine",
+      "ability": "Emil \"Fenrir\" Svensson is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
+      "realname": "Emil Svensson",
+      "quote": "Fear clouds the mind. You can try to fight it, but you will not survive this.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-fenrir.png",
+      "hero": "r6_images/operators/heroes/r6-fenrir.png",
+      "gadgetIcon": "r6_images/gadgets/r6-fenrir.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-fenrir-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-fenrir-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-frost",
+      "name": "Frost",
+      "side": "Defender",
+      "squad": "JTF2",
+      "season": "Operation Black Ice",
+      "role": "",
+      "gadget": "Welcome Mat x 3",
+      "ability": "Tina Lin \"Frost\" Tsang is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
+      "realname": "Tina Lin Tsang",
+      "quote": "There are two things the human body needs in a survival situation: water and hope.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-frost.png",
+      "hero": "r6_images/operators/heroes/r6-frost.png",
+      "gadgetIcon": "r6_images/gadgets/r6-frost.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-frost-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-frost-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "Super 90",
+          "image": null
+        },
+        {
+          "slot": "primary",
+          "name": "9mm C1",
+          "image": "r6_images/weapons/r6-frost-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Mk1 9mm",
+          "image": "r6_images/weapons/r6-frost-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "ITA12S",
+          "image": "r6_images/weapons/r6-frost-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-goyo",
+      "name": "Goyo",
+      "side": "Defender",
+      "squad": "Redhammer",
+      "season": "Operation Ember Rise",
+      "role": "",
+      "gadget": "Volcán Canister",
+      "ability": "César Ruiz Hernández, codenamed Goyo, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
+      "realname": "César Ruiz Hernández",
+      "quote": "A person is never more honest than when they think they're alone.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-goyo.png",
+      "hero": null,
+      "gadgetIcon": null,
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-goyo-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-goyo-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-goyo-3.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-j-ger",
+      "name": "Jäger",
+      "side": "Defender",
+      "squad": "GSG 9",
+      "season": "Launch",
+      "role": "Secure, Roam }}\nJäger\nMarius \"Jäger\" Streicher (pronounced Yeh-ger) is a Defending Operator featured in Tom Clancy's Rai",
+      "gadget": "Active Defense System x 3",
+      "ability": "Marius \"Jäger\" Streicher (pronounced Yeh-ger) is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
+      "realname": "Marius Streicher",
+      "quote": "They said it could not be done. They said it was designed for tanks. They said I could not make it smaller and more accurate. They were wrong.",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-j-ger.png",
+      "hero": "r6_images/operators/heroes/r6-j-ger.png",
+      "gadgetIcon": "r6_images/gadgets/r6-j-ger.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-j-ger-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-j-ger-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M870",
+          "image": "r6_images/weapons/r6-j-ger-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "416-C Carbine",
+          "image": "r6_images/weapons/r6-j-ger-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P-10C",
+          "image": "r6_images/weapons/r6-j-ger-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P12",
+          "image": "r6_images/weapons/r6-j-ger-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-kaid",
+      "name": "Kaid",
+      "side": "Defender",
+      "squad": "Redhammer",
+      "season": "Operation Wind Bastion",
+      "role": "Anti Hard Breach, Anchor, Secure",
+      "gadget": "\"Rtila\" Electroclaw",
+      "ability": "A Heavy Armored Operator, Kaid is equipped with two throwable \"Rtila\" Electroclaws that can be thrown onto any surface it can attach to, electrifying metal objects within a certain radius of the gadget.",
+      "realname": "Jalal El Fassi",
+      "quote": "Lead by example and the mountain will move.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-kaid.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-kaid.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-kaid-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-kaid-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-kaid-3.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-kapkan",
+      "name": "Kapkan",
+      "side": "Defender",
+      "squad": "Spetsnaz",
+      "season": "Launch",
+      "role": "Trapper, Anti-entry}}\nKapkan\nMaxim \"Kapkan\" Basuda (Russian: Максим Басуда) is a Defending Operator featured in Tom Clan",
+      "gadget": "Entry Denial Device x 5",
+      "ability": "Maxim \"Kapkan\" Basuda (Russian: Максим Басуда) is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
+      "realname": "Maxim Basuda",
+      "quote": "These soldiers think their training will keep them alive. They break down doors and come through windows, weapons drawn. They check the corners, watch each other's backs, and give the all clear. But i",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-kapkan.png",
+      "hero": "r6_images/operators/heroes/r6-kapkan.png",
+      "gadgetIcon": "r6_images/gadgets/r6-kapkan.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-kapkan-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-kapkan-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "9x19VSN",
+          "image": "r6_images/weapons/r6-kapkan-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "SASG-12",
+          "image": "r6_images/weapons/r6-kapkan-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "PMM",
+          "image": "r6_images/weapons/r6-kapkan-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "GSh-18",
+          "image": "r6_images/weapons/r6-kapkan-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-lesion",
+      "name": "Lesion",
+      "side": "Defender",
+      "squad": "SDU",
+      "season": "Operation Blood Orchid",
+      "role": "",
+      "gadget": "Gu",
+      "ability": "Liu Tze Long (Chinese: 廖子朗), codenamed Lesion, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Blood Orchid expansion alongside Ying and Ela.",
+      "realname": "Liu Tze Long",
+      "quote": "Do what you do best. If you're lucky, you won't be a burden.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-lesion.png",
+      "hero": "r6_images/operators/heroes/r6-lesion.png",
+      "gadgetIcon": null,
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-lesion-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-lesion-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-maestro",
+      "name": "Maestro",
+      "side": "Defender",
+      "squad": "GIS",
+      "season": "Operation Para Bellum",
+      "role": "",
+      "gadget": "Compact Laser Emplacement x 3",
+      "ability": "Adriano \"Maestro\" Martello is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
+      "realname": "Adriano Martello",
+      "quote": "Did I ever tell you about the time we tree-jumped into the Congo Swamp at night? No? Oh, it's a good one.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-maestro.png",
+      "hero": "r6_images/operators/heroes/r6-maestro.png",
+      "gadgetIcon": "r6_images/gadgets/r6-maestro.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-maestro-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-maestro-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-maestro-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "ALDA 5.56",
+          "image": "r6_images/weapons/r6-maestro-4.png"
+        },
+        {
+          "slot": "primary",
+          "name": "ACS12",
+          "image": "r6_images/weapons/r6-maestro-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Bailiff 410",
+          "image": "r6_images/weapons/r6-maestro-6.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "Keratos .357",
+          "image": "r6_images/weapons/r6-maestro-7.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-melusi",
+      "name": "Melusi",
+      "side": "Defender",
+      "squad": "Wolfguard",
+      "season": "Operation Steel Wave",
+      "role": "Crowd-Control, Intel-Gatherer, Secure}}\nMelusi\nThandiwe \"Melusi\" Ndlovu, is a Defending Operator featured in Tom Clancy'",
+      "gadget": "Banshee SonicDefense",
+      "ability": "Thandiwe \"Melusi\" Ndlovu, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Steel Wave expansion alongside Ace.",
+      "realname": "Thandiwe Ndlovu",
+      "quote": "Understanding is the only tool that vanquishes ignorance.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-melusi.png",
+      "hero": "r6_images/operators/heroes/r6-melusi.png",
+      "gadgetIcon": "r6_images/gadgets/r6-melusi.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-melusi-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-melusi-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-mira",
+      "name": "Mira",
+      "side": "Defender",
+      "squad": "Rainbow",
+      "season": "Operation Velvet Shell",
+      "role": "",
+      "gadget": "Black Mirror x 2",
+      "ability": "Elena María Álvarez, codenamed Mira, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Velvet Shell expansion alongside Jackal.",
+      "realname": "Elena María Álvarez",
+      "quote": "Think of me as your conscience. I see everything, and I'm just as ruthless.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-mira.png",
+      "hero": "r6_images/operators/heroes/r6-mira.png",
+      "gadgetIcon": "r6_images/gadgets/r6-mira.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-mira-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Nitro Cell",
+          "image": "r6_images/weapons/r6-mira-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "Vector .45 ACP",
+          "image": "r6_images/weapons/r6-mira-3.png"
+        },
+        {
+          "slot": "primary",
+          "name": "ITA12L",
+          "image": "r6_images/weapons/r6-mira-4.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "ITA12S",
+          "image": "r6_images/weapons/r6-mira-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "USP40",
+          "image": "r6_images/weapons/r6-mira-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-mozzie",
+      "name": "Mozzie",
+      "side": "Defender",
+      "squad": "SASR",
+      "season": "Operation Burnt Horizon",
+      "role": "Intel Denier, Intel Gatherer, Secure",
+      "gadget": "Pest Launcher",
+      "ability": "Max Goose, codenamed Mozzie, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
+      "realname": "Max Goose",
+      "quote": "Some say I'm a pest. I say right back atcha, mate!",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-mozzie.png",
+      "hero": null,
+      "gadgetIcon": "r6_images/gadgets/r6-mozzie.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-mozzie-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-mozzie-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-mozzie-3.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-mute",
+      "name": "Mute",
+      "side": "Defender",
+      "squad": "SAS",
+      "season": "Launch",
+      "role": "Intel Denial, Support",
+      "gadget": "Signal Disruptor",
+      "ability": "Chandar, codenamed Mute, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
+      "realname": "Mark R. Chandar",
+      "quote": "People think my codename is Mute because I don't like to talk. Maybe I just don't like you.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-mute.png",
+      "hero": "r6_images/operators/heroes/r6-mute.png",
+      "gadgetIcon": "r6_images/gadgets/r6-mute.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Nitro Cell",
+          "image": "r6_images/weapons/r6-mute-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Bulletproof Camera",
+          "image": "r6_images/weapons/r6-mute-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "MP5K",
+          "image": "r6_images/weapons/r6-mute-1.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M590A1",
+          "image": "r6_images/weapons/r6-mute-2.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P226 Mk 25",
+          "image": "r6_images/weapons/r6-mute-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "SMG-11",
+          "image": "r6_images/weapons/r6-mute-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-oryx",
+      "name": "Oryx",
+      "side": "Defender",
+      "squad": "GIGR",
+      "season": "Operation Void Edge",
+      "role": "Roam, Soft-Breach",
+      "gadget": "Remah Dash",
+      "ability": "A Medium Armored Operator, Oryx's unique ability is the Remah Dash. When activated, he performs a quick dash, making him move faster than any other Defender for a short period of time. While dashing, Oryx can smash through Barricades unreinforced walls, Osa shields and Deployable Shields, and can knock down any Attackers he dashes into, including shield bearers such as Montagne, Blitz and Fuze.",
+      "realname": "Saif Al Hadid",
+      "quote": "Sometimes, the only way out is through.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-oryx.png",
+      "hero": "r6_images/operators/heroes/r6-oryx.png",
+      "gadgetIcon": "r6_images/gadgets/r6-oryx.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-oryx-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-oryx-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-pulse",
+      "name": "Pulse",
+      "side": "Defender",
+      "squad": "FBI SWAT",
+      "season": "Launch",
+      "role": "Intel, Roam",
+      "gadget": "Heartbeat Sensor",
+      "ability": "Jack \"Pulse\" Estrada is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
+      "realname": "Jack Estrada",
+      "quote": "In a life threatening situation, the average person's heartbeat can be upwards of 175 beats per minute. A well trained tango is able to stay cool, keep calm. Their heart rates can be 70 to 100 beats p",
+      "armor": 1,
+      "speed": 3,
+      "icon": "r6_images/operators/icons/r6-pulse.png",
+      "hero": "r6_images/operators/heroes/r6-pulse.png",
+      "gadgetIcon": "r6_images/gadgets/r6-pulse.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "C4",
+          "image": "r6_images/weapons/r6-pulse-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-pulse-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Observation Blocker",
+          "image": "r6_images/weapons/r6-pulse-3.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-rook",
+      "name": "Rook",
+      "side": "Defender",
+      "squad": "GIGN",
+      "season": "Launch",
+      "role": "",
+      "gadget": "Armor Pack x 1 (5)",
+      "ability": "Julien \"Rook\" Nizan is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
+      "realname": "Julien Nizan",
+      "quote": "I trust that the ceramic trauma plate I'm wearing will stop a .357 Magnum round traveling at four-hundred and ninety meters per second. I trust myself not to move, not to flinch. I trust my team mates",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-rook.png",
+      "hero": "r6_images/operators/heroes/r6-rook.png",
+      "gadgetIcon": "r6_images/gadgets/r6-rook.png",
+      "weapons": []
+    },
+    {
+      "id": "r6-skop-s",
+      "name": "Skopós",
+      "side": "Defender",
+      "squad": "Wolfguard",
+      "season": "Operation Twin Shells",
+      "role": "Intel, Support",
+      "gadget": "V10 Pantheon Shells",
+      "ability": "Skopós' Unique Gadget are the V10 Pantheon Shells, a pair of humanoid robots which she remotely controls and act as her body in the field. The Shells can move, shoot and use gadgets like any other operator, but Skopós can only activate and control one Shell at a time. The other Shell will be inactive, in which it will crouch down and deploy a Bulletproof Shield to protect itself, and act as a remote camera. Skopós can switch control from one Shell to the other at any time, allowing her to quickly",
+      "realname": "Kure Galanos",
+      "quote": "I was an apex killer, fueled by instinct and adrenaline. Times change though, and so have I. Now I'm twice as dangerous.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-skop-s.png",
+      "hero": "r6_images/operators/heroes/r6-skop-s.png",
+      "gadgetIcon": "r6_images/gadgets/r6-skop-s.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Impact Grenade",
+          "image": "r6_images/weapons/r6-skop-s-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-skop-s-2.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-smoke",
+      "name": "Smoke",
+      "side": "Defender",
+      "squad": "SAS",
+      "season": "Launch",
+      "role": "Area Denial, Support, Anchor",
+      "gadget": "Remote Gas Grenade x 3",
+      "ability": "James Porter, codenamed Smoke, is a Defending Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
+      "realname": "James Porter",
+      "quote": "I know what you're wondering. \"What's in the canister?\" I could tell ya, but then I'd have to kill you. Hehe. I'm only mucking about, relax. As for what's in the canister, it's best you don't ask.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-smoke.png",
+      "hero": "r6_images/operators/heroes/r6-smoke.png",
+      "gadgetIcon": "r6_images/gadgets/r6-smoke.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-smoke-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-smoke-2.png"
+        },
+        {
+          "slot": "primary",
+          "name": "FMG-9",
+          "image": "r6_images/weapons/r6-smoke-1.png"
+        },
+        {
+          "slot": "primary",
+          "name": "M590A1",
+          "image": "r6_images/weapons/r6-smoke-2.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "P226 Mk 25",
+          "image": "r6_images/weapons/r6-smoke-5.png"
+        },
+        {
+          "slot": "secondary",
+          "name": "SMG-11",
+          "image": "r6_images/weapons/r6-smoke-6.png"
+        }
+      ]
+    },
+    {
+      "id": "r6-solis",
+      "name": "Solis",
+      "side": "Defender",
+      "squad": "Ghosteyes",
+      "season": "Operation Solar Raid",
+      "role": "",
+      "gadget": "SPEC-IO Electro Sensor",
+      "ability": "Ana \"Solis\" Valentina Díaz is a Defending Operator featured in Tom Clancy's Rainbow Six Siege introduced in the Operation Solar Raid expansion.",
+      "realname": "Ana Valentina Diaz",
+      "quote": "If you know the game before it starts, no pawn can stand in your way.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-solis.png",
+      "hero": "r6_images/operators/heroes/r6-solis.png",
+      "gadgetIcon": "r6_images/gadgets/r6-solis.png",
+      "weapons": []
+    },
+    {
+      "id": "r6-tachanka",
+      "name": "Tachanka",
+      "side": "Defender",
+      "squad": "Spetsnaz",
+      "season": "Operation Shadow Legacy",
+      "role": "",
+      "gadget": "Shumikha Launcher",
+      "ability": "]] Aleksandr Senav'yev), codenamed Tachanka (Тачанка) (Tachankin in Russian localisation, Тачанкин), is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
+      "realname": "Alexsandr Senaviev",
+      "quote": "They told me I’d died. They were wrong. I was reborn.",
+      "armor": 3,
+      "speed": 1,
+      "icon": "r6_images/operators/icons/r6-tachanka.png",
+      "hero": "r6_images/operators/heroes/r6-tachanka.png",
+      "gadgetIcon": "r6_images/gadgets/r6-tachanka.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-tachanka-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-tachanka-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Proximity Alarm",
+          "image": "r6_images/weapons/r6-tachanka-3.png"
+        }
+      ]
+    },
+    {
       "id": "r6-thorn",
       "name": "Thorn",
       "side": "Defender",
@@ -2333,7 +2557,7 @@
       "name": "Tubarão",
       "side": "Defender",
       "squad": "Wolfguard",
-      "season": "Launch",
+      "season": "Operation Deep Freeze",
       "role": "Anti-Entry, Anti-Gadget",
       "gadget": "Zoto Canister",
       "ability": "|Tubarão}}Isaac \"Tubarão\" Nunes Oliveira is a Defending Operator featured in Tom Clancy's Rainbow Six Siege.",
@@ -2354,60 +2578,6 @@
           "slot": "gadget",
           "name": "Proximity Alarm",
           "image": "r6_images/weapons/r6-tubar-o-2.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-twitch",
-      "name": "Twitch",
-      "side": "Attacker",
-      "squad": "Wolfguard",
-      "season": "Launch",
-      "role": "",
-      "gadget": "Shock Drone x 2",
-      "ability": "Emmanuelle Pichon, codenamed Twitch, is an Attacking Operator featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile.",
-      "realname": "Emmanuelle Pichon",
-      "quote": "If you have a few spare hours, I'd love to share the details of how this device is a masterpiece of design. Quadruple independent gear boxes enabling zero to twenty in under four seconds, ten kilomete",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-twitch.png",
-      "hero": "r6_images/operators/heroes/r6-twitch.png",
-      "gadgetIcon": "r6_images/gadgets/r6-twitch.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-twitch-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Claymore",
-          "image": "r6_images/weapons/r6-twitch-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "F2",
-          "image": "r6_images/weapons/r6-twitch-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "417",
-          "image": "r6_images/weapons/r6-twitch-4.png"
-        },
-        {
-          "slot": "primary",
-          "name": "SG-CQB",
-          "image": "r6_images/weapons/r6-twitch-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "P9",
-          "image": "r6_images/weapons/r6-twitch-6.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "LFP586",
-          "image": "r6_images/weapons/r6-twitch-7.png"
         }
       ]
     },
@@ -2549,113 +2719,6 @@
           "slot": "gadget",
           "name": "Observation Blocker",
           "image": "r6_images/weapons/r6-warden-3.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-ying",
-      "name": "Ying",
-      "side": "Attacker",
-      "squad": "SDU",
-      "season": "Operation Blood Orchid",
-      "role": "",
-      "gadget": "Candela x 4",
-      "ability": "Siu Mei Lin (Chinese: 蕭美蓮), codenamed Ying, is an Attacking Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Blood Orchid expansion alongside Lesion and Ela.",
-      "realname": "Siu Mei Lin",
-      "quote": "The punch starts from the heart and does not miss.",
-      "armor": 2,
-      "speed": 2,
-      "icon": "r6_images/operators/icons/r6-ying.png",
-      "hero": "r6_images/operators/heroes/r6-ying.png",
-      "gadgetIcon": "r6_images/gadgets/r6-ying.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-ying-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-ying-2.png"
-        },
-        {
-          "slot": "primary",
-          "name": "T-95 LSW",
-          "image": "r6_images/weapons/r6-ying-3.png"
-        },
-        {
-          "slot": "primary",
-          "name": "SIX12",
-          "image": "r6_images/weapons/r6-ying-4.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "Q-929",
-          "image": "r6_images/weapons/r6-ying-5.png"
-        },
-        {
-          "slot": "secondary",
-          "name": "Reaper MK2",
-          "image": null
-        }
-      ]
-    },
-    {
-      "id": "r6-zero",
-      "name": "Zero",
-      "side": "Attacker",
-      "squad": "Ghosteyes",
-      "season": "Operation Shadow Legacy",
-      "role": "Intel-DenierIntel-Gatherer",
-      "gadget": "ARGUS LAUNCHER",
-      "ability": "A Medium Health Operator, Zero's gadget is the ARGUS Launcher, which launches small cameras. These cameras can burrow into any surface, including reinforced walls and hatches, and provide a camera view on both sides of the deployed surface.",
-      "realname": "Samuel Leo Fisher",
-      "quote": "You should know better than to write me off. Consider this a teaching moment.",
-      "armor": 1,
-      "speed": 3,
-      "icon": "r6_images/operators/icons/r6-zero.png",
-      "hero": "r6_images/operators/heroes/r6-zero.png",
-      "gadgetIcon": "r6_images/gadgets/r6-zero.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Claymore",
-          "image": "r6_images/weapons/r6-zero-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-zero-2.png"
-        }
-      ]
-    },
-    {
-      "id": "r6-zofia",
-      "name": "Zofia",
-      "side": "Attacker",
-      "squad": "GROM",
-      "season": "Operation White Noise",
-      "role": "Entry Frag, Soft Breach}}\nZofia\nZofia Bosak is an Attacking Operator featured in Tom Clancy's Rainbow Six Siege, introdu",
-      "gadget": "KS79 LIFELINE",
-      "ability": "Zofia Bosak is an Attacking Operator featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation White Noise expansion alongside Dokkaebi and Vigil.",
-      "realname": "Zofia Bosak",
-      "quote": "I decide when to restrain and when to kill. Only the best calls the shots.",
-      "armor": 3,
-      "speed": 1,
-      "icon": "r6_images/operators/icons/r6-zofia.png",
-      "hero": "r6_images/operators/heroes/r6-zofia.png",
-      "gadgetIcon": "r6_images/gadgets/r6-zofia.png",
-      "weapons": [
-        {
-          "slot": "gadget",
-          "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-zofia-1.png"
-        },
-        {
-          "slot": "gadget",
-          "name": "Claymore",
-          "image": "r6_images/weapons/r6-zofia-2.png"
         }
       ]
     }

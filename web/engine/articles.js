@@ -25,10 +25,11 @@
                 const isLast = i === crumbs.length - 1;
                 const label = typeof crumb === "string" ? crumb : crumb.label;
                 const href = typeof crumb === "string" ? "#" : (crumb.href || "#");
+                const onCrumb = typeof crumb === "string" ? null : (crumb.onClick || null);
                 return (
                   <span key={i}>
                     {i > 0 ? <span className="cx-sep" aria-hidden="true">›</span> : null}
-                    {isLast ? <b>{label}</b> : <a href={href}>{label}</a>}
+                    {isLast ? <b>{label}</b> : onCrumb ? <button type="button" className="cx-alink" onClick={onCrumb}>{label}</button> : <a href={href}>{label}</a>}
                   </span>
                 );
               })}

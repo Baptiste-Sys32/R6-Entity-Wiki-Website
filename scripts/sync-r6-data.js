@@ -253,7 +253,7 @@ function parseOperator(title, wt, seasonCat) {
     side,
     squad: squad || 'Rainbow',
     season: seasonCat ? seasonCat.replace(/^Category:Tom Clancy's Rainbow Six Siege:\s*/, '')
-      : (/introduced in \[\[([^|\]]+)(?:\|[^\]]+)?\]\]/.test(wt)
+      : (/introduced in (?:the )?'{0,2}\[\[([^|\]]+)(?:\|[^\]]+)?\]\]/.test(wt)
         ? RegExp.$1.replace(/^Tom Clancy's Rainbow Six Siege:\s*/, '') : 'Launch'),
     role: stripMarkup(infoboxField(wt, 'role')).slice(0, 120),
     gadget,
@@ -352,7 +352,11 @@ async function main() {
   console.log(`sync-r6: seasons=${seasons.length}`);
 
   console.log('sync-r6: listing operators...');
-  const opTitles = normalizeOperatorTitles(await categoryMembers('Category:Rainbow Operators'));
+  const sideMembers = [
+    ...(await categoryMembers('Category:Attacker')),
+    ...(await categoryMembers('Category:Defender')),
+  ];
+  const opTitles = normalizeOperatorTitles(sideMembers.length ? sideMembers : await categoryMembers('Category:Rainbow Operators'));
   console.log(`sync-r6: ${opTitles.length} operator candidates`);
   const opCats = await categoriesFor(opTitles.map((o) => o.title));
 
@@ -472,6 +476,21 @@ async function main() {
     const files = mapImages[mapTitleById.get(map.id)] || [];
     const thumbFile = map.galleryImage || pickFile(files, [/Siege_.*_Thumbnail/i, /Thumbnail/i]);
     map.thumb = local(`r6_images/maps/${map.id}.png`, thumbFile, 400);
+    const layouts = [];
+    for (const f of files) {
+      if (layouts.length >= 8) break;
+      if (!/\.(png|webp|jpg|jpeg)$/i.test(f)) continue;
+      if (/Layout|Blueprint/i.test(f) && !/R6M |Mobile/i.test(f)) layouts.push(f);
+    }
+    for (const f of files) {
+      if (layouts.length >= 8) break;
+      if (!/\.png$/i.test(f)) continue;
+      if (/\bfloor\b|roof|basement/i.test(f) && !layouts.includes(f)) layouts.push(f);
+    }
+    map.layouts = layouts.map((f, i) => {
+      const rel = `r6_images/maps/${map.id}-layout-${i + 1}.png`;
+      return { label: f.replace(/\.(png|webp|jpg|jpeg)$/i, '').replace(/_/g, ' '), image: local(rel, f, 800) };
+    }).filter((l) => l.image);
     delete map.galleryImage;
   });
   console.log(`sync-r6: thumbs=${maps.filter((m) => m.thumb).length}/${maps.length}`);

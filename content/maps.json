@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T19:19:21.309Z",
+  "generatedAt": "2026-09-26T09:41:45.326Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -19,7 +19,41 @@
         "Hostage"
       ],
       "blurb": "Bank is a map featured in Tom Clancy's Rainbow Six Siege. It recieved a minor rework in the Crystal Guard expansion. The map returns in Tom Clancy's Rainbow Six Mobile.",
-      "thumb": "r6_images/maps/r6-bank.png"
+      "thumb": "r6_images/maps/r6-bank.png",
+      "layouts": [
+        {
+          "label": "Siege Bank Layout 1",
+          "image": "r6_images/maps/r6-bank-layout-1.png"
+        },
+        {
+          "label": "Siege Bank Layout 2",
+          "image": "r6_images/maps/r6-bank-layout-2.png"
+        },
+        {
+          "label": "Siege Bank Layout 3",
+          "image": "r6_images/maps/r6-bank-layout-3.png"
+        },
+        {
+          "label": "Siege Bank Layout 4",
+          "image": "r6_images/maps/r6-bank-layout-4.png"
+        },
+        {
+          "label": "Bank 2nd floor secure area",
+          "image": "r6_images/maps/r6-bank-layout-5.png"
+        },
+        {
+          "label": "Bank basement secure area",
+          "image": "r6_images/maps/r6-bank-layout-6.png"
+        },
+        {
+          "label": "Bank first floor secure area",
+          "image": "r6_images/maps/r6-bank-layout-7.png"
+        },
+        {
+          "label": "Siege Bank 1st-floor rooms",
+          "image": "r6_images/maps/r6-bank-layout-8.png"
+        }
+      ]
     },
     {
       "id": "r6-bartlett-u-",
@@ -32,7 +66,21 @@
         "Hostage"
       ],
       "blurb": "Bartlett U., also known as Bartlett University, is a map featured in Tom Clancy's Rainbow Six Siege.",
-      "thumb": "r6_images/maps/r6-bartlett-u-.png"
+      "thumb": "r6_images/maps/r6-bartlett-u-.png",
+      "layouts": [
+        {
+          "label": "Bartlett floor 1",
+          "image": "r6_images/maps/r6-bartlett-u--layout-1.png"
+        },
+        {
+          "label": "Bartlett floor 2",
+          "image": "r6_images/maps/r6-bartlett-u--layout-2.png"
+        },
+        {
+          "label": "Bartlett roof",
+          "image": "r6_images/maps/r6-bartlett-u--layout-3.png"
+        }
+      ]
     },
     {
       "id": "r6-border",
@@ -45,7 +93,21 @@
         "Hostage"
       ],
       "blurb": "Border is a map featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Dust Line expansion. It was later reworked in the Crimson Heist expansion. The reworked version of the map returns in Tom Clancy's Rainbow Six Mobile.",
-      "thumb": "r6_images/maps/r6-border.png"
+      "thumb": "r6_images/maps/r6-border.png",
+      "layouts": [
+        {
+          "label": "R6-maps-border-blueprint-1",
+          "image": "r6_images/maps/r6-border-layout-1.png"
+        },
+        {
+          "label": "R6-maps-border-blueprint-2",
+          "image": "r6_images/maps/r6-border-layout-2.png"
+        },
+        {
+          "label": "R6-maps-border-blueprint-3",
+          "image": "r6_images/maps/r6-border-layout-3.png"
+        }
+      ]
     },
     {
       "id": "r6-calypso-casino",
@@ -58,7 +120,8 @@
         "Hostage"
       ],
       "blurb": "Calypso Casino is a map set to be featured Tom Clancy's Rainbow Six Siege, introduced in the Operation System Override expansion. It is based on the map of the same name from Tom Clancy's Rainbow Six: Vegas and its sequel.",
-      "thumb": "r6_images/maps/r6-calypso-casino.png"
+      "thumb": "r6_images/maps/r6-calypso-casino.png",
+      "layouts": []
     },
     {
       "id": "r6-chalet",
@@ -71,7 +134,41 @@
         "Hostage"
       ],
       "blurb": "Chalet is a map featured in Tom Clancy's Rainbow Six Siege. A shootout in an “après-ski” chalet in the French alps. This area contrasts the warm, cozy mood of its interiors with the cold, constrained visibility of its exteriors. The map was reworked in the Operation Shadow Legacy expansion.",
-      "thumb": "r6_images/maps/r6-chalet.png"
+      "thumb": "r6_images/maps/r6-chalet.png",
+      "layouts": [
+        {
+          "label": "Siege Chalet Layout 1",
+          "image": "r6_images/maps/r6-chalet-layout-1.png"
+        },
+        {
+          "label": "Siege Chalet Layout 2",
+          "image": "r6_images/maps/r6-chalet-layout-2.png"
+        },
+        {
+          "label": "Siege Chalet Layout 3",
+          "image": "r6_images/maps/r6-chalet-layout-3.png"
+        },
+        {
+          "label": "Siege Chalet Layout 4",
+          "image": "r6_images/maps/r6-chalet-layout-4.png"
+        },
+        {
+          "label": "Chalet basement secure area",
+          "image": "r6_images/maps/r6-chalet-layout-5.png"
+        },
+        {
+          "label": "Chalet first floor",
+          "image": "r6_images/maps/r6-chalet-layout-6.png"
+        },
+        {
+          "label": "Chalet rework basement",
+          "image": "r6_images/maps/r6-chalet-layout-7.png"
+        },
+        {
+          "label": "Chalet rework roof",
+          "image": "r6_images/maps/r6-chalet-layout-8.png"
+        }
+      ]
     },
     {
       "id": "r6-clubhouse",
@@ -84,7 +181,21 @@
         "Hostage"
       ],
       "blurb": "Clubhouse is a map featured in Tom Clancy's Rainbow Six Siege and Tom Clancy's Rainbow Six Mobile. The interior of the map was reworked alongside the release of the Operation Para Bellum expansion. It received another minor rework in the Crystal Guard expansion.",
-      "thumb": "r6_images/maps/r6-clubhouse.png"
+      "thumb": "r6_images/maps/r6-clubhouse.png",
+      "layouts": [
+        {
+          "label": "Club Floor 1",
+          "image": "r6_images/maps/r6-clubhouse-layout-1.png"
+        },
+        {
+          "label": "Club Floor 2",
+          "image": "r6_images/maps/r6-clubhouse-layout-2.png"
+        },
+        {
+          "label": "Club roof",
+          "image": "r6_images/maps/r6-clubhouse-layout-3.png"
+        }
+      ]
     },
     {
       "id": "r6-coastline",
@@ -97,7 +208,21 @@
         "Hostage"
       ],
       "blurb": "Coastline is a map featured Tom Clancy's Rainbow Six Siege, introduced in the Operation Velvet Shell expansion. The map received a minor rework in the Crystal Guard expansion.",
-      "thumb": "r6_images/maps/r6-coastline.png"
+      "thumb": "r6_images/maps/r6-coastline.png",
+      "layouts": [
+        {
+          "label": "Coastline Floor 1",
+          "image": "r6_images/maps/r6-coastline-layout-1.png"
+        },
+        {
+          "label": "Coastline Floor 2",
+          "image": "r6_images/maps/r6-coastline-layout-2.png"
+        },
+        {
+          "label": "Coastline Roof",
+          "image": "r6_images/maps/r6-coastline-layout-3.png"
+        }
+      ]
     },
     {
       "id": "r6-consulate",
@@ -110,7 +235,25 @@
         "Hostage"
       ],
       "blurb": "Consulate is a map featured in Tom Clancy's Rainbow Six Siege.",
-      "thumb": "r6_images/maps/r6-consulate.png"
+      "thumb": "r6_images/maps/r6-consulate.png",
+      "layouts": [
+        {
+          "label": "Siege Consulate Layout 1",
+          "image": "r6_images/maps/r6-consulate-layout-1.png"
+        },
+        {
+          "label": "Siege Consulate Layout 2",
+          "image": "r6_images/maps/r6-consulate-layout-2.png"
+        },
+        {
+          "label": "Siege Consulate Layout 3",
+          "image": "r6_images/maps/r6-consulate-layout-3.png"
+        },
+        {
+          "label": "Siege Consulate Layout 4",
+          "image": "r6_images/maps/r6-consulate-layout-4.png"
+        }
+      ]
     },
     {
       "id": "r6-emerald-plains",
@@ -123,7 +266,21 @@
         "Hostage"
       ],
       "blurb": "Emerald Plains is a map featured in Tom Clancy's Rainbow Six Siege, introduced in the Y7S1.2 patch during the Demon Veil expansion.",
-      "thumb": "r6_images/maps/r6-emerald-plains.png"
+      "thumb": "r6_images/maps/r6-emerald-plains.png",
+      "layouts": [
+        {
+          "label": "Emerald-plains-blueprint-floor-1",
+          "image": "r6_images/maps/r6-emerald-plains-layout-1.png"
+        },
+        {
+          "label": "Emerald-plains-blueprint-floor-2",
+          "image": "r6_images/maps/r6-emerald-plains-layout-2.png"
+        },
+        {
+          "label": "Emerald-plains-blueprint-roof",
+          "image": "r6_images/maps/r6-emerald-plains-layout-3.png"
+        }
+      ]
     },
     {
       "id": "r6-favela",
@@ -136,7 +293,13 @@
         "Hostage"
       ],
       "blurb": "Favela refers to two different maps in Tom Clancy's Rainbow Six Siege.",
-      "thumb": "r6_images/maps/r6-favela.png"
+      "thumb": "r6_images/maps/r6-favela.png",
+      "layouts": [
+        {
+          "label": "Favela Roof",
+          "image": "r6_images/maps/r6-favela-layout-1.png"
+        }
+      ]
     },
     {
       "id": "r6-fortress",
@@ -149,7 +312,8 @@
         "Hostage"
       ],
       "blurb": "Fortress is a map introduced in the Operation Wind Bastion expansion for Tom Clancy's Rainbow Six Siege. It was later reworked in the Operation Tenfold Pursuit expansion.",
-      "thumb": "r6_images/maps/r6-fortress.png"
+      "thumb": "r6_images/maps/r6-fortress.png",
+      "layouts": []
     },
     {
       "id": "r6-hereford-base-original-",
@@ -162,7 +326,8 @@
         "Hostage"
       ],
       "blurb": "Hereford Base is a map that was featured in Tom Clancy's Rainbow Six Siege. A reimagined Kill House, the map was originally available in Situations, Terrorist Hunt, and normal multiplayer.",
-      "thumb": "r6_images/maps/r6-hereford-base-original-.png"
+      "thumb": "r6_images/maps/r6-hereford-base-original-.png",
+      "layouts": []
     },
     {
       "id": "r6-hereford-base-rework-",
@@ -175,7 +340,8 @@
         "Hostage"
       ],
       "blurb": "Hereford Base is a map featured in Tom Clancy's Rainbow Six Siege. Formerly a non-flying station of the Royal Air Force from World War II to the end of the 20th century, It was redeveloped for use as a training ground for the Special Air Service.",
-      "thumb": "r6_images/maps/r6-hereford-base-rework-.png"
+      "thumb": "r6_images/maps/r6-hereford-base-rework-.png",
+      "layouts": []
     },
     {
       "id": "r6-house",
@@ -188,7 +354,33 @@
         "Hostage"
       ],
       "blurb": "House is a map featured in Tom Clancy's Rainbow Six Siege. It was first shown during the reveal of the game at E3 2014. The map was reworked in the Operation Steel Wave expansion.",
-      "thumb": "r6_images/maps/r6-house.png"
+      "thumb": "r6_images/maps/r6-house.png",
+      "layouts": [
+        {
+          "label": "Siege House Layout 1",
+          "image": "r6_images/maps/r6-house-layout-1.png"
+        },
+        {
+          "label": "Siege House Layout 2",
+          "image": "r6_images/maps/r6-house-layout-2.png"
+        },
+        {
+          "label": "Siege House Layout 3",
+          "image": "r6_images/maps/r6-house-layout-3.png"
+        },
+        {
+          "label": "Siege House Layout 4",
+          "image": "r6_images/maps/r6-house-layout-4.png"
+        },
+        {
+          "label": "House Basement",
+          "image": "r6_images/maps/r6-house-layout-5.png"
+        },
+        {
+          "label": "House Roof",
+          "image": "r6_images/maps/r6-house-layout-6.png"
+        }
+      ]
     },
     {
       "id": "r6-kafe-dostoyevsky",
@@ -201,7 +393,33 @@
         "Hostage"
       ],
       "blurb": "Kafe Dostoyevsky is a map featured in Tom Clancy's Rainbow Six Siege. The map was reworked in March 2019 with the release of the Operation Phantom Sight expansion. The rework focused on a massive redesign of the interior of the facility.",
-      "thumb": "r6_images/maps/r6-kafe-dostoyevsky.png"
+      "thumb": "r6_images/maps/r6-kafe-dostoyevsky.png",
+      "layouts": [
+        {
+          "label": "Siege Kafe Map Layout 1",
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-1.png"
+        },
+        {
+          "label": "Siege Kafe Map Layout 2",
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-2.png"
+        },
+        {
+          "label": "Siege Kafe Map Layout 3",
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-3.png"
+        },
+        {
+          "label": "Siege Kafe Map Layout 4",
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-4.png"
+        },
+        {
+          "label": "Cafe basement",
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-5.png"
+        },
+        {
+          "label": "Cafe rooftop",
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-6.png"
+        }
+      ]
     },
     {
       "id": "r6-kanal",
@@ -214,7 +432,41 @@
         "Hostage"
       ],
       "blurb": "Kanal is a map featured in Tom Clancy's Rainbow Six Siege, taking place in Hamburg, Germany. The map was reworked in September 2019 with the release of Operation Ember Rise.",
-      "thumb": "r6_images/maps/r6-kanal.png"
+      "thumb": "r6_images/maps/r6-kanal.png",
+      "layouts": [
+        {
+          "label": "Siege Kanal Blueprint 1",
+          "image": "r6_images/maps/r6-kanal-layout-1.png"
+        },
+        {
+          "label": "Siege Kanal Blueprint 2",
+          "image": "r6_images/maps/r6-kanal-layout-2.png"
+        },
+        {
+          "label": "Siege Kanal Blueprint 3",
+          "image": "r6_images/maps/r6-kanal-layout-3.png"
+        },
+        {
+          "label": "Siege Kanal Blueprint 4",
+          "image": "r6_images/maps/r6-kanal-layout-4.png"
+        },
+        {
+          "label": "Siege Kanal Blueprint 5",
+          "image": "r6_images/maps/r6-kanal-layout-5.png"
+        },
+        {
+          "label": "Kanal 1st floor 227430",
+          "image": "r6_images/maps/r6-kanal-layout-6.png"
+        },
+        {
+          "label": "Kanal 2nd floor 227431",
+          "image": "r6_images/maps/r6-kanal-layout-7.png"
+        },
+        {
+          "label": "Kanal ground floor 227433",
+          "image": "r6_images/maps/r6-kanal-layout-8.png"
+        }
+      ]
     },
     {
       "id": "r6-lair",
@@ -227,7 +479,25 @@
         "Hostage"
       ],
       "blurb": "Lair is a map featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Deep Freeze expansion. The map is set at the Keres Legion's base of operations in a secret cave complex in Portugal.",
-      "thumb": "r6_images/maps/r6-lair.png"
+      "thumb": "r6_images/maps/r6-lair.png",
+      "layouts": [
+        {
+          "label": "R6Map Lair Blueprint 1st-Floor",
+          "image": "r6_images/maps/r6-lair-layout-1.png"
+        },
+        {
+          "label": "R6Map Lair Blueprint 2nd-Floor",
+          "image": "r6_images/maps/r6-lair-layout-2.png"
+        },
+        {
+          "label": "R6Map Lair Blueprint Basement",
+          "image": "r6_images/maps/r6-lair-layout-3.png"
+        },
+        {
+          "label": "R6Map Lair Blueprint Roof",
+          "image": "r6_images/maps/r6-lair-layout-4.png"
+        }
+      ]
     },
     {
       "id": "r6-nighthaven-labs",
@@ -240,7 +510,17 @@
         "Hostage"
       ],
       "blurb": "Nighthaven Labs is a map featured Tom Clancy's Rainbow Six Siege, introduced in the Operation Solar Raid expansion. The map is set at the headquarters of Nighthaven on an off-shore location in Singapore.",
-      "thumb": "r6_images/maps/r6-nighthaven-labs.png"
+      "thumb": "r6_images/maps/r6-nighthaven-labs.png",
+      "layouts": [
+        {
+          "label": "R6-maps-nighthavenlabs-blueprint-1",
+          "image": "r6_images/maps/r6-nighthaven-labs-layout-1.png"
+        },
+        {
+          "label": "R6-maps-nighthavenlabs-blueprint-4-thumb",
+          "image": "r6_images/maps/r6-nighthaven-labs-layout-2.png"
+        }
+      ]
     },
     {
       "id": "r6-oregon",
@@ -253,7 +533,41 @@
         "Hostage"
       ],
       "blurb": "Oregon is a map featured in Tom Clancy's Rainbow Six Siege. It is set in an old survivalist compound in Redmond, Oregon. The map was reworked with the release of the Operation Void Edge expansion. The reworked version of the map returns in Tom Clancy's Rainbow Six Mobile.",
-      "thumb": "r6_images/maps/r6-oregon.png"
+      "thumb": "r6_images/maps/r6-oregon.png",
+      "layouts": [
+        {
+          "label": "Siege Oregon Layout 1",
+          "image": "r6_images/maps/r6-oregon-layout-1.png"
+        },
+        {
+          "label": "Siege Oregon Layout 2",
+          "image": "r6_images/maps/r6-oregon-layout-2.png"
+        },
+        {
+          "label": "Siege Oregon Layout 3",
+          "image": "r6_images/maps/r6-oregon-layout-3.png"
+        },
+        {
+          "label": "Siege Oregon Layout 4",
+          "image": "r6_images/maps/r6-oregon-layout-4.png"
+        },
+        {
+          "label": "Siege Oregon Layout 5",
+          "image": "r6_images/maps/r6-oregon-layout-5.png"
+        },
+        {
+          "label": "Oregon 1st floor secure area",
+          "image": "r6_images/maps/r6-oregon-layout-6.png"
+        },
+        {
+          "label": "Oregon 2nd floor secure area",
+          "image": "r6_images/maps/r6-oregon-layout-7.png"
+        },
+        {
+          "label": "Oregon basement secure area",
+          "image": "r6_images/maps/r6-oregon-layout-8.png"
+        }
+      ]
     },
     {
       "id": "r6-outback",
@@ -266,7 +580,37 @@
         "Hostage"
       ],
       "blurb": "Outback is a map featured in the Operation Burnt Horizon expansion for Tom Clancy's Rainbow Six Siege.",
-      "thumb": "r6_images/maps/r6-outback.png"
+      "thumb": "r6_images/maps/r6-outback.png",
+      "layouts": [
+        {
+          "label": "R6-maps-outback-blueprint-1",
+          "image": "r6_images/maps/r6-outback-layout-1.png"
+        },
+        {
+          "label": "R6-maps-outback-blueprint-2",
+          "image": "r6_images/maps/r6-outback-layout-2.png"
+        },
+        {
+          "label": "R6-maps-outback-blueprint-3",
+          "image": "r6_images/maps/r6-outback-layout-3.png"
+        },
+        {
+          "label": "Siege Outback Layout 1",
+          "image": "r6_images/maps/r6-outback-layout-4.png"
+        },
+        {
+          "label": "Siege Outback Layout 2",
+          "image": "r6_images/maps/r6-outback-layout-5.png"
+        },
+        {
+          "label": "Siege Outback Layout 3",
+          "image": "r6_images/maps/r6-outback-layout-6.png"
+        },
+        {
+          "label": "Siege Outback Layout 4",
+          "image": "r6_images/maps/r6-outback-layout-7.png"
+        }
+      ]
     },
     {
       "id": "r6-presidential-plane",
@@ -279,7 +623,37 @@
         "Hostage"
       ],
       "blurb": "Presidential Plane is a map featured in Tom Clancy's Rainbow Six Siege. It is a remake of the map 747 from past Rainbow Six installments.",
-      "thumb": "r6_images/maps/r6-presidential-plane.png"
+      "thumb": "r6_images/maps/r6-presidential-plane.png",
+      "layouts": [
+        {
+          "label": "Siege Plane Layout 1",
+          "image": "r6_images/maps/r6-presidential-plane-layout-1.png"
+        },
+        {
+          "label": "Siege Plane Layout 2",
+          "image": "r6_images/maps/r6-presidential-plane-layout-2.png"
+        },
+        {
+          "label": "Siege Plane Layout 3",
+          "image": "r6_images/maps/r6-presidential-plane-layout-3.png"
+        },
+        {
+          "label": "Siege Plane Layout 4",
+          "image": "r6_images/maps/r6-presidential-plane-layout-4.png"
+        },
+        {
+          "label": "Presidential plane 1st floor secure area",
+          "image": "r6_images/maps/r6-presidential-plane-layout-5.png"
+        },
+        {
+          "label": "Presidential plane 2nd floor secure area",
+          "image": "r6_images/maps/r6-presidential-plane-layout-6.png"
+        },
+        {
+          "label": "Presidential plane basement secure floor",
+          "image": "r6_images/maps/r6-presidential-plane-layout-7.png"
+        }
+      ]
     },
     {
       "id": "r6-skyscraper",
@@ -292,7 +666,33 @@
         "Hostage"
       ],
       "blurb": "Skyscraper is a map featured in Tom Clancy's Rainbow Six Siege that was introduced in the Operation Red Crow expansion. The map was reworked in the Operation Neon Dawn expansion.",
-      "thumb": "r6_images/maps/r6-skyscraper.png"
+      "thumb": "r6_images/maps/r6-skyscraper.png",
+      "layouts": [
+        {
+          "label": "R6-maps-skyscraper-blueprint-1",
+          "image": "r6_images/maps/r6-skyscraper-layout-1.png"
+        },
+        {
+          "label": "R6-maps-skyscraper-blueprint-2",
+          "image": "r6_images/maps/r6-skyscraper-layout-2.png"
+        },
+        {
+          "label": "R6-maps-skyscraper-blueprint-3",
+          "image": "r6_images/maps/r6-skyscraper-layout-3.png"
+        },
+        {
+          "label": "Skyscraper floor 1",
+          "image": "r6_images/maps/r6-skyscraper-layout-4.png"
+        },
+        {
+          "label": "Skyscraper floor 2",
+          "image": "r6_images/maps/r6-skyscraper-layout-5.png"
+        },
+        {
+          "label": "Skyscraper roof",
+          "image": "r6_images/maps/r6-skyscraper-layout-6.png"
+        }
+      ]
     },
     {
       "id": "r6-stadium",
@@ -305,7 +705,8 @@
         "Hostage"
       ],
       "blurb": "Stadium is a map featured in Tom Clancy's Rainbow Six Siege. It was originally available for a limited time in the Road To S.I. 2020 event and later returned reworked in the Road To S.I. 2021 and Road To S.I. 2022 events. The SI 2021 and SI 2022 versions were renamed Stadium Bravo and Stadium Alpha and were introduced as permanent additions in the Operation Brutal Swarm expansion. The original ver",
-      "thumb": "r6_images/maps/r6-stadium.png"
+      "thumb": "r6_images/maps/r6-stadium.png",
+      "layouts": []
     },
     {
       "id": "r6-theme-park",
@@ -318,7 +719,21 @@
         "Hostage"
       ],
       "blurb": "Theme Park is a map featured in Tom Clancy's Rainbow Six Siege that was introduced in the Operation Blood Orchid expansion. The map was later reworked in the Operation Shifting Tides expansion.",
-      "thumb": "r6_images/maps/r6-theme-park.png"
+      "thumb": "r6_images/maps/r6-theme-park.png",
+      "layouts": [
+        {
+          "label": "Theme Park floor 1",
+          "image": "r6_images/maps/r6-theme-park-layout-1.png"
+        },
+        {
+          "label": "Theme Park floor 2",
+          "image": "r6_images/maps/r6-theme-park-layout-2.png"
+        },
+        {
+          "label": "Theme Park roof",
+          "image": "r6_images/maps/r6-theme-park-layout-3.png"
+        }
+      ]
     },
     {
       "id": "r6-tower",
@@ -331,7 +746,21 @@
         "Hostage"
       ],
       "blurb": "Tower is a map featured in Tom Clancy's Rainbow Six Siege and was introduced in the Operation White Noise expansion. Tower is featured in Quick Match and Custom Game playlist.",
-      "thumb": "r6_images/maps/r6-tower.png"
+      "thumb": "r6_images/maps/r6-tower.png",
+      "layouts": [
+        {
+          "label": "Siege Tower Layout Roof",
+          "image": "r6_images/maps/r6-tower-layout-1.png"
+        },
+        {
+          "label": "Map - Tower - 1st floor",
+          "image": "r6_images/maps/r6-tower-layout-2.png"
+        },
+        {
+          "label": "Map - Tower - 2nd floor",
+          "image": "r6_images/maps/r6-tower-layout-3.png"
+        }
+      ]
     },
     {
       "id": "r6-villa",
@@ -344,7 +773,8 @@
         "Hostage"
       ],
       "blurb": "Villa is a map featured in the Operation Para Bellum expansion for Tom Clancy's Rainbow Six Siege.",
-      "thumb": "r6_images/maps/r6-villa.png"
+      "thumb": "r6_images/maps/r6-villa.png",
+      "layouts": []
     },
     {
       "id": "r6-yacht",
@@ -357,7 +787,41 @@
         "Hostage"
       ],
       "blurb": "Yacht is a map featured in Tom Clancy's Rainbow Six Siege, introduced in the Operation Black Ice expansion.",
-      "thumb": "r6_images/maps/r6-yacht.png"
+      "thumb": "r6_images/maps/r6-yacht.png",
+      "layouts": [
+        {
+          "label": "Siege Yacht Layout 1",
+          "image": "r6_images/maps/r6-yacht-layout-1.png"
+        },
+        {
+          "label": "Siege Yacht Layout 2",
+          "image": "r6_images/maps/r6-yacht-layout-2.png"
+        },
+        {
+          "label": "Siege Yacht Layout 3",
+          "image": "r6_images/maps/r6-yacht-layout-3.png"
+        },
+        {
+          "label": "Siege Yacht Layout 4",
+          "image": "r6_images/maps/r6-yacht-layout-4.png"
+        },
+        {
+          "label": "Siege Yacht Layout 5",
+          "image": "r6_images/maps/r6-yacht-layout-5.png"
+        },
+        {
+          "label": "Yacht basement",
+          "image": "r6_images/maps/r6-yacht-layout-6.png"
+        },
+        {
+          "label": "Yacht floor 01",
+          "image": "r6_images/maps/r6-yacht-layout-7.png"
+        },
+        {
+          "label": "Yacht roof",
+          "image": "r6_images/maps/r6-yacht-layout-8.png"
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T19:19:21.309Z",
+  "generatedAt": "2026-09-26T09:41:45.326Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -29,6 +29,7 @@
       "year": 1,
       "released": "May 10, 2016 (Worldwide)",
       "operators": [
+        "Blackbeard",
         "Valkyrie"
       ],
       "map": "Border",
@@ -56,8 +57,8 @@
       "year": 1,
       "released": "November 17, 2016 (Worldwide)",
       "operators": [
-        "Echo",
-        "Hibana"
+        "Hibana",
+        "Echo"
       ],
       "map": "Skyscraper",
       "squad": "",
@@ -95,9 +96,9 @@
       "year": 2,
       "released": "August 29, 2017 (TTS, PC only)September 5, 2017 (Worldwide)",
       "operators": [
+        "Ying",
         "Ela",
-        "Lesion",
-        "Ying"
+        "Lesion"
       ],
       "map": "Theme Park",
       "squad": "",
@@ -111,8 +112,8 @@
       "released": "TTS: November 20, 2017WW: December 5, 2017",
       "operators": [
         "Dokkaebi",
-        "Vigil",
-        "Zofia"
+        "Zofia",
+        "Vigil"
       ],
       "map": "Tower",
       "squad": "",
@@ -153,8 +154,8 @@
       "year": 3,
       "released": "TTS: August 20, 2018WW: September 4, 2018",
       "operators": [
-        "Clash",
-        "Maverick"
+        "Maverick",
+        "Clash"
       ],
       "map": "Hereford Base",
       "squad": "",
@@ -167,8 +168,8 @@
       "year": 3,
       "released": "TS: November 20, 2018WW: December 4, 2018",
       "operators": [
-        "Kaid",
-        "Nomad"
+        "Nomad",
+        "Kaid"
       ],
       "map": "Fortress",
       "squad": "",
@@ -209,7 +210,8 @@
       "year": 4,
       "released": "TS: August 19, 2019WW: September 11, 2019",
       "operators": [
-        "Amaru"
+        "Amaru",
+        "Goyo"
       ],
       "map": "Kanal",
       "squad": "",
@@ -264,8 +266,8 @@
       "year": 5,
       "released": "TS: August 17, 2020WW: September 10, 2020",
       "operators": [
-        "Tachanka",
-        "Zero"
+        "Zero",
+        "Tachanka"
       ],
       "map": "Chalet",
       "squad": "",
@@ -368,7 +370,9 @@
       "code": "Y7S3",
       "year": 7,
       "released": "WW: September 6, 2022",
-      "operators": [],
+      "operators": [
+        "Grim"
+      ],
       "map": "Stadium",
       "squad": "",
       "blurb": "Operation Brutal Swarm is the twenty-sixth expansion for Tom Clancy's Rainbow Six Siege. It introduces a new operator, the return of a fan-favorite map, and various gameplay improvements"
@@ -431,7 +435,9 @@
       "code": "Y8S4",
       "year": 8,
       "released": "WW: December 6, 2023",
-      "operators": [],
+      "operators": [
+        "Tubarão"
+      ],
       "map": "Lair",
       "squad": "DAE",
       "blurb": "Operation Deep Freeze is the thirty-first expansion for Tom Clancy's Rainbow Six Siege. It was formally announced on February 18th, 2023, during the Six Invitational 2023. The expansion's name was unveiled on November 1st, 2023 at the BLAST R6 Major Atlanta and is set to be fully revealed on November 12th, 2023. It was released on December 6th, 2023."
@@ -514,7 +520,9 @@
       "code": "Y10S3",
       "year": 10,
       "released": "TS: August 18, 2025\nWW: September 2, 2025|season=Year 10 Sea",
-      "operators": [],
+      "operators": [
+        "Denari"
+      ],
       "map": "Nighthaven Labs",
       "squad": "",
       "blurb": "Operation High Stakes is the thirty-eighth expansion for Tom Clancy's Rainbow Six Siege. It was revealed worldwide on August 17, 2025, and was fully released on September 2, 2025."
