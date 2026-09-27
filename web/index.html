@@ -291,7 +291,7 @@
             {prefix === 'random' && randomOp ? (
               <div className="max-w-3xl mx-auto">
                 <div className="p-4 rounded-2xl border flex items-center gap-4" style={{ background: 'var(--panel)', borderColor: 'var(--stroke)' }}>
-                  <span className="sq-img"><AssetFrame type="Operator" imageUrl={randomOp.icon ? `./${randomOp.icon}` : null} /></span> fallbackIcon={<OpAvatar name={randomOp.name} side={randomOp.side} />} />
+                  <span className="sq-img"><AssetFrame type="Operator" imageUrl={randomOp.icon ? `./${randomOp.icon}` : null} fallbackIcon={<OpAvatar name={randomOp.name} side={randomOp.side} />} /></span>
                   <span><span className="block text-lg font-bold" style={{ color: 'var(--text)', fontFamily: 'var(--font-display)' }}>{randomOp.name}</span>
                     <span className="block text-sm" style={{ color: 'var(--muted)' }}>{randomOp.gadget}</span></span>
                   <span className="flex-1" />
@@ -377,7 +377,7 @@
           {list.map((op) => (
             <div key={op.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
               <button type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-3 flex-1 min-w-0 text-left">
-                <span className="sq-img"><AssetFrame type="Operator" imageUrl={`./r6_images/operators/icons/${op.id}.png`} /></span> fallbackIcon={<OpAvatar name={op.name} side={op.side} />} />
+                <span className="sq-img"><AssetFrame type="Operator" imageUrl={`./r6_images/operators/icons/${op.id}.png`} fallbackIcon={<OpAvatar name={op.name} side={op.side} />} /></span>
                 <span className="min-w-0"><span className="block font-semibold truncate" style={{ color: 'var(--text)' }}>{op.name}</span>
                   <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{op.gadget} · {op.squad}</span></span>
               </button>
@@ -757,7 +757,7 @@
                   const op = OPERATORS.find((o) => o.name === name);
                   return op ? (
                     <button key={name} type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-2 rounded-full pl-1 pr-3 py-1 text-sm font-semibold" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }}>
-                      <OpAvatar name={op.name} side={op.side} size={28} />{op.name}
+                      <span className="sq-img" style={{ width: '28px', height: '28px', display: 'inline-flex' }}><AssetFrame type="Operator" imageUrl={op.icon ? `./${op.icon}` : null} fallbackIcon={<OpAvatar name={op.name} side={op.side} size={28} />} /></span>{op.name}
                     </button>
                   ) : <span key={name} className="text-sm" style={{ color: 'var(--muted)' }}>{name}</span>;
                 })}
@@ -781,7 +781,7 @@
             <div>
               {favOps.map((op) => (
                 <div key={op.id} className="flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                  <button type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-3 flex-1 text-left"><OpAvatar name={op.name} side={op.side} size={36} /><span className="font-semibold" style={{ color: 'var(--text)' }}>{op.name}</span></button>
+                  <button type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-3 flex-1 text-left"><span className="sq-img"><AssetFrame type="Operator" imageUrl={op.icon ? `./${op.icon}` : null} fallbackIcon={<OpAvatar name={op.name} side={op.side} size={36} />} /></span><span className="font-semibold" style={{ color: 'var(--text)' }}>{op.name}</span></button>
                   <FavButton active onToggle={() => onToggleFavorite('Operator', op.id)} label={`Unfavorite ${op.name}`} />
                 </div>
               ))}
