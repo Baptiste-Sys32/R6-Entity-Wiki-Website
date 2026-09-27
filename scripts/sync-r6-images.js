@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
 // Downloads R6 wiki images into web/r6_images/ from review/r6-image-manifest.json
-// (written by sync-r6-data.js). Skips files already present; --force re-downloads.
+// (written by sync-r6-data.js). Skips files already present AND unchanged;
+// re-downloads when the source revision changes (Fandom `cb` param) or the
+// manifest points the path at a different file; --force re-downloads all.
+// State lives in review/r6-image-state.json (path -> source revision).
 // Usage: node scripts/sync-r6-images.js [--force]
 
 const fs = require('fs');
@@ -10,6 +13,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const WEB_ROOT = path.join(ROOT, 'web');
 const MANIFEST_PATH = path.join(ROOT, 'review', 'r6-image-manifest.json');
+const STATE_PATH = path.join(ROOT, 'review', 'r6-image-state.json');
 const API = 'https://rainbowsix.fandom.com/api.php';
 const UA = 'R6-Siege-Wiki-Sync/0.1 (fan wiki content sync; contact via repo issues)';
 const SLEEP_MS = 250;
@@ -52,29 +56,45 @@ async function download(url, dest, referer) {
   return 0;
 }
 
+function revisionOf(url, file) {
+  try {
+    const cb = new URL(url).searchParams.get('cb');
+    if (cb) return `cb:${cb}`;
+  } catch { /* fall through */ }
+  return `file:${file || url}`;
+}
+
 async function main() {
   const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')).images;
+  const state = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, 'utf8')) : {};
   const entries = Object.entries(manifest);
   console.log(`sync-r6-images: ${entries.length} files`);
-  let done = 0, skipped = 0, bytes = 0;
+  let done = 0, skipped = 0, refreshed = 0, bytes = 0;
   const failures = [];
   for (const [local, spec] of entries) {
     const dest = path.join(WEB_ROOT, local);
-    if (!force && fs.existsSync(dest) && fs.statSync(dest).size > 0) {
-      skipped += 1;
-      continue;
-    }
     try {
       const url = spec.url || await resolveUrl(spec.file, spec.width);
+      const revision = revisionOf(url, spec.file);
+      const fresh = fs.existsSync(dest) && fs.statSync(dest).size > 0
+        && state[local] && state[local].revision === revision && state[local].file === (spec.file || spec.url);
+      if (!force && fresh) {
+        skipped += 1;
+        continue;
+      }
+      const hadFile = fs.existsSync(dest) && fs.statSync(dest).size > 0;
       bytes += await download(url, dest, spec.referer);
+      state[local] = { revision, file: spec.file || spec.url };
       done += 1;
+      if (hadFile) refreshed += 1;
       if (done % 25 === 0) console.log(`sync-r6-images: ${done} downloaded...`);
     } catch (error) {
       failures.push(`${local} (${spec.file || spec.url}): ${error.message}`);
     }
     await sleep(SLEEP_MS);
   }
-  console.log(`sync-r6-images: downloaded=${done} skipped=${skipped} bytes=${(bytes / 1048576).toFixed(1)}MB failures=${failures.length}`);
+  fs.writeFileSync(STATE_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), files: state }, null, 2) + '\n');
+  console.log(`sync-r6-images: downloaded=${done} (refreshed=${refreshed}) skipped=${skipped} bytes=${(bytes / 1048576).toFixed(1)}MB failures=${failures.length}`);
   failures.forEach((f) => console.warn(`sync-r6-images: FAILED ${f}`));
   if (failures.length && !process.env.R6_IMAGES_TOLERATE_FAILURES) process.exitCode = 1;
 }
