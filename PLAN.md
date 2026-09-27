@@ -111,7 +111,30 @@ Do not propose it as a next step before then.
 - Do NOT paper over these with gadget faces or currency icons — null beats
   wrong (enforced by picker denylist + `gadget != icon` assertion).
 
-## 7. Risks
+## 7. Missing data tracker (audit 2026-09-27, recheck on every resync)
+
+Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
+
+- **Hero portraits (11)**: Amaru, Capitão, Gridlock, Jackal, Nomad, Bandit,
+  Goyo, Kaid, Mozzie, Thorn, Tubarão. Article infoboxes fall back cleanly.
+- **Gadget icons (4)**: Aruni, Goyo, Lesion, Vigil (Vigil's gadget art may
+  exist under a non-obvious filename — worth one manual check).
+- **Map layouts (3 maps)**: Calypso Casino, Fortress, Hereford Base (Rework).
+  Articles show the "no floor plans" panel; modal never mounts empty.
+- **Quotes (9 ops)**: Kali, Ram, Rauora, Sens, Solid Snake, Denari, Noor,
+  Oryx, Tubarão. Quotes section hides when empty (no placeholder).
+- **Trivia (1)**: Solid Snake. **How-to (1)**: Rook.
+- **Attachments 13/15**: Horizontal Grip and Scope/Siege are wiki stubs
+  (no infobox) — unwinnable until upstream fills them.
+- **Weapon TTK 13/62**: only arms with wiki TTK tables show the table;
+  section hides otherwise. No computed TTK — never derive stats.
+
+Stale-meta hygiene (fix when touching nearby code, not urgent):
+
+- `README` still says 72 operators (actual 76); `META.gameVersion: Y8S4`
+  vs Y11 content; `PROGRESSION_TABS=[]`.
+
+## 8. Risks
 
 - Fandom patch-day staleness → patch-history cross-checks + `lastSynced`.
 - Recoil numerics need testing, not scraping.
