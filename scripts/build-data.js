@@ -87,7 +87,11 @@ function validateImagePaths(operators, maps, seasons) {
     check(m.thumb, `map ${m.id} thumb`);
     (m.layouts || []).forEach((l, i) => {
       if (!l || typeof l.image !== 'string' || !l.label) missing.push(`map ${m.id} layout #${i + 1} invalid`);
-      else check(l.image, `map ${m.id} layout ${l.label}`);
+      else {
+        if (!['basement', 'floor-1', 'floor-2', 'floor-3', 'roof', 'spawn', 'overview'].includes(l.floor)) missing.push(`map ${m.id} layout ${l.label} has bad floor`);
+        if (!Number.isInteger(l.order)) missing.push(`map ${m.id} layout ${l.label} has bad order`);
+        check(l.image, `map ${m.id} layout ${l.label}`);
+      }
     });
   });
   (seasons || []).forEach((s) => check(s.cover, `season ${s.id} cover`));
@@ -95,9 +99,18 @@ function validateImagePaths(operators, maps, seasons) {
     console.error(`build-data: ${missing.length} image issues:\n- ${missing.slice(0, 20).join('\n- ')}${missing.length > 20 ? `\n... and ${missing.length - 20} more` : ''}`);
     process.exit(1);
   }
-  const count = operators.reduce((n, op) => n + [op.icon, op.hero, op.gadgetIcon].filter(Boolean).length + (op.weapons || []).filter((w) => w.image).length, 0)
-    + maps.filter((m) => m.thumb).length;
-  console.log(`build-data: images ok (${count} files referenced).`);
+  const refs = new Set();
+  const track = (rel) => { if (rel) refs.add(rel); };
+  operators.forEach((op) => {
+    track(op.icon); track(op.hero); track(op.gadgetIcon);
+    (op.weapons || []).forEach((w) => track(w.image));
+  });
+  maps.forEach((m) => {
+    track(m.thumb);
+    (m.layouts || []).forEach((l) => track(l.image));
+  });
+  (seasons || []).forEach((s) => track(s.cover));
+  console.log(`build-data: images ok (${refs.size} files referenced).`);
 }
 
 function validateLore(entries, operatorIds) {

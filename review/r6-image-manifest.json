@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T16:07:14.848Z",
+  "generatedAt": "2026-09-27T16:53:20.779Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -1817,6 +1817,22 @@
       "file": "Siege Bank 1st-floor rooms.png",
       "width": 800
     },
+    "r6_images/maps/r6-bank-layout-9.png": {
+      "file": "Siege Bank 2nd-floor rooms.png",
+      "width": 800
+    },
+    "r6_images/maps/r6-bank-layout-10.png": {
+      "file": "Siege Bank Alley Access (roof).png",
+      "width": 800
+    },
+    "r6_images/maps/r6-bank-layout-11.png": {
+      "file": "Siege Bank Alley Access (spawn).png",
+      "width": 800
+    },
+    "r6_images/maps/r6-bank-layout-12.png": {
+      "file": "Siege Bank Jewelry Front (spawn).png",
+      "width": 800
+    },
     "r6_images/maps/r6-bartlett-u-.png": {
       "file": "Bartlett U.png",
       "width": 400
@@ -1889,6 +1905,10 @@
       "file": "Chalet rework roof.png",
       "width": 800
     },
+    "r6_images/maps/r6-chalet-layout-9.png": {
+      "file": "Chalet second floor.png",
+      "width": 800
+    },
     "r6_images/maps/r6-clubhouse.png": {
       "file": "Siege Clubhouse Thumbnail.jpg",
       "width": 400
@@ -1941,6 +1961,22 @@
       "file": "Siege Consulate Layout 4.jpg",
       "width": 800
     },
+    "r6_images/maps/r6-consulate-layout-5.png": {
+      "file": "ConsulateBasement 217070.jpg",
+      "width": 800
+    },
+    "r6_images/maps/r6-consulate-layout-6.png": {
+      "file": "ConsulateRoof.jpg",
+      "width": 800
+    },
+    "r6_images/maps/r6-consulate-layout-7.png": {
+      "file": "Consulate Rework-Basement.jpg",
+      "width": 800
+    },
+    "r6_images/maps/r6-consulate-layout-8.png": {
+      "file": "Consulate Rework-Roof.jpg",
+      "width": 800
+    },
     "r6_images/maps/r6-emerald-plains.png": {
       "file": "Emerald Plains.jpeg",
       "width": 400
@@ -1965,6 +2001,10 @@
       "file": "Favela Roof.png",
       "width": 800
     },
+    "r6_images/maps/r6-favela-layout-2.png": {
+      "file": "R6S Live Y6S2 IMG Favela Roof.jpg",
+      "width": 800
+    },
     "r6_images/maps/r6-fortress.png": {
       "file": "fortress 1.jpg",
       "width": 400
@@ -1972,6 +2012,30 @@
     "r6_images/maps/r6-hereford-base-original-.png": {
       "file": "Hereford_217063.jpg",
       "width": 400
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-1.png": {
+      "file": "Headquarters 1st Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-2.png": {
+      "file": "Headquarters 2nd Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-3.png": {
+      "file": "Headquarters 3rd Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-4.png": {
+      "file": "Headquarters Basement.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-5.png": {
+      "file": "HerefordBasement 217064.jpg",
+      "width": 800
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-6.png": {
+      "file": "HerefordRoof.jpg",
+      "width": 800
     },
     "r6_images/maps/r6-hereford-base-rework-.png": {
       "file": "HEREFORDrework thumbnail.png",
@@ -1998,10 +2062,18 @@
       "width": 800
     },
     "r6_images/maps/r6-house-layout-5.png": {
-      "file": "House Basement.png",
+      "file": "HouseBasement 217059.jpg",
       "width": 800
     },
     "r6_images/maps/r6-house-layout-6.png": {
+      "file": "HouseRoof.jpg",
+      "width": 800
+    },
+    "r6_images/maps/r6-house-layout-7.png": {
+      "file": "House Basement.png",
+      "width": 800
+    },
+    "r6_images/maps/r6-house-layout-8.png": {
       "file": "House Roof.png",
       "width": 800
     },
@@ -2069,6 +2141,10 @@
       "file": "Kanal ground floor 227433.png",
       "width": 800
     },
+    "r6_images/maps/r6-kanal-layout-9.png": {
+      "file": "Kanal roof 227432.png",
+      "width": 800
+    },
     "r6_images/maps/r6-lair.png": {
       "file": "R6S Lair.webp",
       "width": 400
@@ -2134,6 +2210,22 @@
       "width": 800
     },
     "r6_images/maps/r6-oregon-layout-8.png": {
+      "file": "Oregon Rework 1st Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-oregon-layout-9.png": {
+      "file": "Oregon Rework 2nd Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-oregon-layout-10.png": {
+      "file": "Oregon Rework Basement.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-oregon-layout-11.png": {
+      "file": "Oregon Rework Roof.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-oregon-layout-12.png": {
       "file": "Oregon basement secure area.png",
       "width": 800
     },
@@ -2233,6 +2325,30 @@
       "file": "Stadium Concept 2021 1.jpeg",
       "width": 400
     },
+    "r6_images/maps/r6-stadium-layout-1.png": {
+      "file": "Stadium 1st Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-stadium-layout-2.png": {
+      "file": "Stadium 2020 1st Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-stadium-layout-3.png": {
+      "file": "Stadium 2020 2nd Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-stadium-layout-4.png": {
+      "file": "Stadium 2nd Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-stadium-layout-5.png": {
+      "file": "Stadium Rework 1st Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-stadium-layout-6.png": {
+      "file": "Stadium Rework 2nd Floor.jpeg",
+      "width": 800
+    },
     "r6_images/maps/r6-theme-park.png": {
       "file": "Themepark rework.jpg",
       "width": 400
@@ -2268,6 +2384,18 @@
     "r6_images/maps/r6-villa.png": {
       "file": "Siege Villa Thumbnail.jpg",
       "width": 400
+    },
+    "r6_images/maps/r6-villa-layout-1.png": {
+      "file": "Villa 1st Floor.jpg",
+      "width": 800
+    },
+    "r6_images/maps/r6-villa-layout-2.png": {
+      "file": "Villa 2nd Floor.jpg",
+      "width": 800
+    },
+    "r6_images/maps/r6-villa-layout-3.png": {
+      "file": "Villa Bottom Floor.jpg",
+      "width": 800
     },
     "r6_images/maps/r6-yacht.png": {
       "file": "Siege Yacht Thumbnail.PNG",

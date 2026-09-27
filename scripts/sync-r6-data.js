@@ -551,22 +551,64 @@ async function main() {
     map.thumb = local(`r6_images/maps/${map.id}.png`, thumbFile, 400);
     const layouts = [];
     for (const f of files) {
-      if (layouts.length >= 8) break;
+      if (layouts.length >= 12) break;
       if (!/\.(png|webp|jpg|jpeg)$/i.test(f)) continue;
       if (/Layout|Blueprint/i.test(f) && !/R6M |Mobile/i.test(f)) layouts.push(f);
     }
     for (const f of files) {
-      if (layouts.length >= 8) break;
-      if (!/\.png$/i.test(f)) continue;
-      if (/\bfloor\b|roof|basement/i.test(f) && !layouts.includes(f)) layouts.push(f);
+      if (layouts.length >= 12) break;
+      if (!/\.(png|webp|jpg|jpeg)$/i.test(f)) continue;
+      if (/\bfloor\b|roof|basement|spawn/i.test(f) && !layouts.includes(f)) layouts.push(f);
     }
+    const FLOOR_ORDER = { basement: 0, 'floor-1': 1, 'floor-2': 2, 'floor-3': 3, roof: 4, spawn: 5, overview: 6 };
+    const classifyFloor = (f) => {
+      const n = f.toLowerCase();
+      if (/basement/.test(n)) return 'basement';
+      if (/roof|rooftop/.test(n)) return 'roof';
+      if (/spawn|exterior/.test(n)) return 'spawn';
+      if (/(^|[^a-z])(ground|1st|first|floor[- ]?0?1|[^0-9]1f)([^a-z]|$)/.test(n)) return 'floor-1';
+      if (/(^|[^a-z])(2nd|second|floor[- ]?2)([^a-z]|$)/.test(n)) return 'floor-2';
+      if (/(^|[^a-z])(3rd|third|floor[- ]?3)([^a-z]|$)/.test(n)) return 'floor-3';
+      return 'overview';
+    };
+    const humanizeLabel = (f, floor) => {
+      const base = f.replace(/\.(png|webp|jpg|jpeg)$/i, '').replace(/_/g, ' ').replace(/\s+/g, ' ').trim();
+      if (floor === 'overview') {
+        const m = base.match(/(Layout|Blueprint)\s*(\d+)/i);
+        if (m) return `${m[1][0].toUpperCase() + m[1].slice(1).toLowerCase()} ${m[2]}`;
+        return base.length > 40 ? base.slice(0, 37).trimEnd() + '…' : base;
+      }
+      const names = { basement: 'Basement', 'floor-1': 'Floor 1', 'floor-2': 'Floor 2', 'floor-3': 'Floor 3', roof: 'Roof', spawn: 'Spawns' };
+      return names[floor] || base;
+    };
     map.layouts = layouts.map((f, i) => {
       const rel = `r6_images/maps/${map.id}-layout-${i + 1}.png`;
-      return { label: f.replace(/\.(png|webp|jpg|jpeg)$/i, '').replace(/_/g, ' '), image: local(rel, f, 800) };
+      const floor = classifyFloor(f);
+      return { label: humanizeLabel(f, floor), source: f, floor, order: FLOOR_ORDER[floor], image: local(rel, f, 800) };
     }).filter((l) => l.image);
+    map.layouts.sort((a, b) => (a.order - b.order) || a.label.localeCompare(b.label));
     delete map.galleryImage;
   });
   console.log(`sync-r6: thumbs=${maps.filter((m) => m.thumb).length}/${maps.length}`);
+
+  // Sweep orphaned per-map layout files (indices shift when floor order changes).
+  const referenced = new Set();
+  maps.forEach((m) => {
+    if (m.thumb) referenced.add(m.thumb);
+    (m.layouts || []).forEach((l) => { if (l.image) referenced.add(l.image); });
+  });
+  const mapsDir = path.join(ROOT, 'web', 'r6_images', 'maps');
+  if (fs.existsSync(mapsDir)) {
+    let swept = 0;
+    for (const file of fs.readdirSync(mapsDir)) {
+      const rel = `r6_images/maps/${file}`;
+      if (/-layout-\d+\.png$/.test(file) && !referenced.has(rel)) {
+        fs.unlinkSync(path.join(mapsDir, file));
+        swept += 1;
+      }
+    }
+    if (swept) console.log(`sync-r6: swept ${swept} orphaned layout files`);
+  }
 
   console.log('sync-r6: resolving season covers...');
   seasons.forEach((season) => {

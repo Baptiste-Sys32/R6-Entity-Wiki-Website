@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T16:07:14.848Z",
+  "generatedAt": "2026-09-27T16:53:20.779Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -22,36 +22,88 @@
       "thumb": "r6_images/maps/r6-bank.png",
       "layouts": [
         {
-          "label": "Siege Bank Layout 1",
-          "image": "r6_images/maps/r6-bank-layout-1.png"
-        },
-        {
-          "label": "Siege Bank Layout 2",
-          "image": "r6_images/maps/r6-bank-layout-2.png"
-        },
-        {
-          "label": "Siege Bank Layout 3",
-          "image": "r6_images/maps/r6-bank-layout-3.png"
-        },
-        {
-          "label": "Siege Bank Layout 4",
-          "image": "r6_images/maps/r6-bank-layout-4.png"
-        },
-        {
-          "label": "Bank 2nd floor secure area",
-          "image": "r6_images/maps/r6-bank-layout-5.png"
-        },
-        {
-          "label": "Bank basement secure area",
+          "label": "Basement",
+          "source": "Bank basement secure area.png",
+          "floor": "basement",
+          "order": 0,
           "image": "r6_images/maps/r6-bank-layout-6.png"
         },
         {
-          "label": "Bank first floor secure area",
+          "label": "Floor 1",
+          "source": "Bank first floor secure area.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-bank-layout-7.png"
         },
         {
-          "label": "Siege Bank 1st-floor rooms",
+          "label": "Floor 1",
+          "source": "Siege Bank 1st-floor rooms.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-bank-layout-8.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Bank 2nd floor secure area.png",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-bank-layout-5.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Siege Bank 2nd-floor rooms.png",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-bank-layout-9.png"
+        },
+        {
+          "label": "Roof",
+          "source": "Siege Bank Alley Access (roof).png",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-bank-layout-10.png"
+        },
+        {
+          "label": "Spawns",
+          "source": "Siege Bank Alley Access (spawn).png",
+          "floor": "spawn",
+          "order": 5,
+          "image": "r6_images/maps/r6-bank-layout-11.png"
+        },
+        {
+          "label": "Spawns",
+          "source": "Siege Bank Jewelry Front (spawn).png",
+          "floor": "spawn",
+          "order": 5,
+          "image": "r6_images/maps/r6-bank-layout-12.png"
+        },
+        {
+          "label": "Layout 1",
+          "source": "Siege Bank Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-bank-layout-1.png"
+        },
+        {
+          "label": "Layout 2",
+          "source": "Siege Bank Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-bank-layout-2.png"
+        },
+        {
+          "label": "Layout 3",
+          "source": "Siege Bank Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-bank-layout-3.png"
+        },
+        {
+          "label": "Layout 4",
+          "source": "Siege Bank Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-bank-layout-4.png"
         }
       ]
     },
@@ -69,15 +121,24 @@
       "thumb": "r6_images/maps/r6-bartlett-u-.png",
       "layouts": [
         {
-          "label": "Bartlett floor 1",
+          "label": "Floor 1",
+          "source": "Bartlett floor 1.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-bartlett-u--layout-1.png"
         },
         {
-          "label": "Bartlett floor 2",
+          "label": "Floor 2",
+          "source": "Bartlett floor 2.png",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-bartlett-u--layout-2.png"
         },
         {
-          "label": "Bartlett roof",
+          "label": "Roof",
+          "source": "Bartlett roof.png",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-bartlett-u--layout-3.png"
         }
       ]
@@ -97,14 +158,23 @@
       "layouts": [
         {
           "label": "R6-maps-border-blueprint-1",
+          "source": "R6-maps-border-blueprint-1.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-border-layout-1.png"
         },
         {
           "label": "R6-maps-border-blueprint-2",
+          "source": "R6-maps-border-blueprint-2.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-border-layout-2.png"
         },
         {
           "label": "R6-maps-border-blueprint-3",
+          "source": "R6-maps-border-blueprint-3.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-border-layout-3.png"
         }
       ]
@@ -137,36 +207,67 @@
       "thumb": "r6_images/maps/r6-chalet.png",
       "layouts": [
         {
-          "label": "Siege Chalet Layout 1",
-          "image": "r6_images/maps/r6-chalet-layout-1.png"
-        },
-        {
-          "label": "Siege Chalet Layout 2",
-          "image": "r6_images/maps/r6-chalet-layout-2.png"
-        },
-        {
-          "label": "Siege Chalet Layout 3",
-          "image": "r6_images/maps/r6-chalet-layout-3.png"
-        },
-        {
-          "label": "Siege Chalet Layout 4",
-          "image": "r6_images/maps/r6-chalet-layout-4.png"
-        },
-        {
-          "label": "Chalet basement secure area",
+          "label": "Basement",
+          "source": "Chalet basement secure area.png",
+          "floor": "basement",
+          "order": 0,
           "image": "r6_images/maps/r6-chalet-layout-5.png"
         },
         {
-          "label": "Chalet first floor",
-          "image": "r6_images/maps/r6-chalet-layout-6.png"
-        },
-        {
-          "label": "Chalet rework basement",
+          "label": "Basement",
+          "source": "Chalet rework basement.png",
+          "floor": "basement",
+          "order": 0,
           "image": "r6_images/maps/r6-chalet-layout-7.png"
         },
         {
-          "label": "Chalet rework roof",
+          "label": "Floor 1",
+          "source": "Chalet first floor.png",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-chalet-layout-6.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Chalet second floor.png",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-chalet-layout-9.png"
+        },
+        {
+          "label": "Roof",
+          "source": "Chalet rework roof.png",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-chalet-layout-8.png"
+        },
+        {
+          "label": "Layout 1",
+          "source": "Siege Chalet Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-chalet-layout-1.png"
+        },
+        {
+          "label": "Layout 2",
+          "source": "Siege Chalet Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-chalet-layout-2.png"
+        },
+        {
+          "label": "Layout 3",
+          "source": "Siege Chalet Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-chalet-layout-3.png"
+        },
+        {
+          "label": "Layout 4",
+          "source": "Siege Chalet Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-chalet-layout-4.png"
         }
       ]
     },
@@ -184,15 +285,24 @@
       "thumb": "r6_images/maps/r6-clubhouse.png",
       "layouts": [
         {
-          "label": "Club Floor 1",
+          "label": "Floor 1",
+          "source": "Club Floor 1.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-clubhouse-layout-1.png"
         },
         {
-          "label": "Club Floor 2",
+          "label": "Floor 2",
+          "source": "Club Floor 2.png",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-clubhouse-layout-2.png"
         },
         {
-          "label": "Club roof",
+          "label": "Roof",
+          "source": "Club roof.png",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-clubhouse-layout-3.png"
         }
       ]
@@ -211,15 +321,24 @@
       "thumb": "r6_images/maps/r6-coastline.png",
       "layouts": [
         {
-          "label": "Coastline Floor 1",
+          "label": "Floor 1",
+          "source": "Coastline Floor 1.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-coastline-layout-1.png"
         },
         {
-          "label": "Coastline Floor 2",
+          "label": "Floor 2",
+          "source": "Coastline Floor 2.png",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-coastline-layout-2.png"
         },
         {
-          "label": "Coastline Roof",
+          "label": "Roof",
+          "source": "Coastline Roof.png",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-coastline-layout-3.png"
         }
       ]
@@ -238,19 +357,59 @@
       "thumb": "r6_images/maps/r6-consulate.png",
       "layouts": [
         {
-          "label": "Siege Consulate Layout 1",
+          "label": "Basement",
+          "source": "ConsulateBasement 217070.jpg",
+          "floor": "basement",
+          "order": 0,
+          "image": "r6_images/maps/r6-consulate-layout-5.png"
+        },
+        {
+          "label": "Basement",
+          "source": "Consulate Rework-Basement.jpg",
+          "floor": "basement",
+          "order": 0,
+          "image": "r6_images/maps/r6-consulate-layout-7.png"
+        },
+        {
+          "label": "Roof",
+          "source": "ConsulateRoof.jpg",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-consulate-layout-6.png"
+        },
+        {
+          "label": "Roof",
+          "source": "Consulate Rework-Roof.jpg",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-consulate-layout-8.png"
+        },
+        {
+          "label": "Layout 1",
+          "source": "Siege Consulate Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-consulate-layout-1.png"
         },
         {
-          "label": "Siege Consulate Layout 2",
+          "label": "Layout 2",
+          "source": "Siege Consulate Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-consulate-layout-2.png"
         },
         {
-          "label": "Siege Consulate Layout 3",
+          "label": "Layout 3",
+          "source": "Siege Consulate Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-consulate-layout-3.png"
         },
         {
-          "label": "Siege Consulate Layout 4",
+          "label": "Layout 4",
+          "source": "Siege Consulate Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-consulate-layout-4.png"
         }
       ]
@@ -269,15 +428,24 @@
       "thumb": "r6_images/maps/r6-emerald-plains.png",
       "layouts": [
         {
-          "label": "Emerald-plains-blueprint-floor-1",
+          "label": "Floor 1",
+          "source": "Emerald-plains-blueprint-floor-1.webp",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-emerald-plains-layout-1.png"
         },
         {
-          "label": "Emerald-plains-blueprint-floor-2",
+          "label": "Floor 2",
+          "source": "Emerald-plains-blueprint-floor-2.webp",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-emerald-plains-layout-2.png"
         },
         {
-          "label": "Emerald-plains-blueprint-roof",
+          "label": "Roof",
+          "source": "Emerald-plains-blueprint-roof.webp",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-emerald-plains-layout-3.png"
         }
       ]
@@ -296,8 +464,18 @@
       "thumb": "r6_images/maps/r6-favela.png",
       "layouts": [
         {
-          "label": "Favela Roof",
+          "label": "Roof",
+          "source": "Favela Roof.png",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-favela-layout-1.png"
+        },
+        {
+          "label": "Roof",
+          "source": "R6S Live Y6S2 IMG Favela Roof.jpg",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-favela-layout-2.png"
         }
       ]
     },
@@ -327,7 +505,50 @@
       ],
       "blurb": "Hereford Base is a map that was featured in Tom Clancy's Rainbow Six Siege. A reimagined Kill House, the map was originally available in Situations, Terrorist Hunt, and normal multiplayer.",
       "thumb": "r6_images/maps/r6-hereford-base-original-.png",
-      "layouts": []
+      "layouts": [
+        {
+          "label": "Basement",
+          "source": "Headquarters Basement.jpeg",
+          "floor": "basement",
+          "order": 0,
+          "image": "r6_images/maps/r6-hereford-base-original--layout-4.png"
+        },
+        {
+          "label": "Basement",
+          "source": "HerefordBasement 217064.jpg",
+          "floor": "basement",
+          "order": 0,
+          "image": "r6_images/maps/r6-hereford-base-original--layout-5.png"
+        },
+        {
+          "label": "Floor 1",
+          "source": "Headquarters 1st Floor.jpeg",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-hereford-base-original--layout-1.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Headquarters 2nd Floor.jpeg",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-hereford-base-original--layout-2.png"
+        },
+        {
+          "label": "Floor 3",
+          "source": "Headquarters 3rd Floor.jpeg",
+          "floor": "floor-3",
+          "order": 3,
+          "image": "r6_images/maps/r6-hereford-base-original--layout-3.png"
+        },
+        {
+          "label": "Roof",
+          "source": "HerefordRoof.jpg",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-hereford-base-original--layout-6.png"
+        }
+      ]
     },
     {
       "id": "r6-hereford-base-rework-",
@@ -357,28 +578,60 @@
       "thumb": "r6_images/maps/r6-house.png",
       "layouts": [
         {
-          "label": "Siege House Layout 1",
-          "image": "r6_images/maps/r6-house-layout-1.png"
-        },
-        {
-          "label": "Siege House Layout 2",
-          "image": "r6_images/maps/r6-house-layout-2.png"
-        },
-        {
-          "label": "Siege House Layout 3",
-          "image": "r6_images/maps/r6-house-layout-3.png"
-        },
-        {
-          "label": "Siege House Layout 4",
-          "image": "r6_images/maps/r6-house-layout-4.png"
-        },
-        {
-          "label": "House Basement",
+          "label": "Basement",
+          "source": "HouseBasement 217059.jpg",
+          "floor": "basement",
+          "order": 0,
           "image": "r6_images/maps/r6-house-layout-5.png"
         },
         {
-          "label": "House Roof",
+          "label": "Basement",
+          "source": "House Basement.png",
+          "floor": "basement",
+          "order": 0,
+          "image": "r6_images/maps/r6-house-layout-7.png"
+        },
+        {
+          "label": "Roof",
+          "source": "HouseRoof.jpg",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-house-layout-6.png"
+        },
+        {
+          "label": "Roof",
+          "source": "House Roof.png",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-house-layout-8.png"
+        },
+        {
+          "label": "Layout 1",
+          "source": "Siege House Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-house-layout-1.png"
+        },
+        {
+          "label": "Layout 2",
+          "source": "Siege House Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-house-layout-2.png"
+        },
+        {
+          "label": "Layout 3",
+          "source": "Siege House Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-house-layout-3.png"
+        },
+        {
+          "label": "Layout 4",
+          "source": "Siege House Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-house-layout-4.png"
         }
       ]
     },
@@ -396,28 +649,46 @@
       "thumb": "r6_images/maps/r6-kafe-dostoyevsky.png",
       "layouts": [
         {
-          "label": "Siege Kafe Map Layout 1",
-          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-1.png"
-        },
-        {
-          "label": "Siege Kafe Map Layout 2",
-          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-2.png"
-        },
-        {
-          "label": "Siege Kafe Map Layout 3",
-          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-3.png"
-        },
-        {
-          "label": "Siege Kafe Map Layout 4",
-          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-4.png"
-        },
-        {
-          "label": "Cafe basement",
+          "label": "Basement",
+          "source": "Cafe basement.PNG",
+          "floor": "basement",
+          "order": 0,
           "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-5.png"
         },
         {
-          "label": "Cafe rooftop",
+          "label": "Roof",
+          "source": "Cafe rooftop.PNG",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-6.png"
+        },
+        {
+          "label": "Layout 1",
+          "source": "Siege Kafe Map Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-1.png"
+        },
+        {
+          "label": "Layout 2",
+          "source": "Siege Kafe Map Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-2.png"
+        },
+        {
+          "label": "Layout 3",
+          "source": "Siege Kafe Map Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-3.png"
+        },
+        {
+          "label": "Layout 4",
+          "source": "Siege Kafe Map Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kafe-dostoyevsky-layout-4.png"
         }
       ]
     },
@@ -435,36 +706,67 @@
       "thumb": "r6_images/maps/r6-kanal.png",
       "layouts": [
         {
-          "label": "Siege Kanal Blueprint 1",
-          "image": "r6_images/maps/r6-kanal-layout-1.png"
-        },
-        {
-          "label": "Siege Kanal Blueprint 2",
-          "image": "r6_images/maps/r6-kanal-layout-2.png"
-        },
-        {
-          "label": "Siege Kanal Blueprint 3",
-          "image": "r6_images/maps/r6-kanal-layout-3.png"
-        },
-        {
-          "label": "Siege Kanal Blueprint 4",
-          "image": "r6_images/maps/r6-kanal-layout-4.png"
-        },
-        {
-          "label": "Siege Kanal Blueprint 5",
-          "image": "r6_images/maps/r6-kanal-layout-5.png"
-        },
-        {
-          "label": "Kanal 1st floor 227430",
+          "label": "Floor 1",
+          "source": "Kanal 1st floor 227430.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-kanal-layout-6.png"
         },
         {
-          "label": "Kanal 2nd floor 227431",
+          "label": "Floor 1",
+          "source": "Kanal ground floor 227433.png",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-kanal-layout-8.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Kanal 2nd floor 227431.png",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-kanal-layout-7.png"
         },
         {
-          "label": "Kanal ground floor 227433",
-          "image": "r6_images/maps/r6-kanal-layout-8.png"
+          "label": "Roof",
+          "source": "Kanal roof 227432.png",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-kanal-layout-9.png"
+        },
+        {
+          "label": "Blueprint 1",
+          "source": "Siege Kanal Blueprint 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kanal-layout-1.png"
+        },
+        {
+          "label": "Blueprint 2",
+          "source": "Siege Kanal Blueprint 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kanal-layout-2.png"
+        },
+        {
+          "label": "Blueprint 3",
+          "source": "Siege Kanal Blueprint 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kanal-layout-3.png"
+        },
+        {
+          "label": "Blueprint 4",
+          "source": "Siege Kanal Blueprint 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kanal-layout-4.png"
+        },
+        {
+          "label": "Blueprint 5",
+          "source": "Siege Kanal Blueprint 5.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-kanal-layout-5.png"
         }
       ]
     },
@@ -482,19 +784,31 @@
       "thumb": "r6_images/maps/r6-lair.png",
       "layouts": [
         {
-          "label": "R6Map Lair Blueprint 1st-Floor",
-          "image": "r6_images/maps/r6-lair-layout-1.png"
-        },
-        {
-          "label": "R6Map Lair Blueprint 2nd-Floor",
-          "image": "r6_images/maps/r6-lair-layout-2.png"
-        },
-        {
-          "label": "R6Map Lair Blueprint Basement",
+          "label": "Basement",
+          "source": "R6Map Lair Blueprint Basement.jpg",
+          "floor": "basement",
+          "order": 0,
           "image": "r6_images/maps/r6-lair-layout-3.png"
         },
         {
-          "label": "R6Map Lair Blueprint Roof",
+          "label": "Floor 1",
+          "source": "R6Map Lair Blueprint 1st-Floor.jpg",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-lair-layout-1.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "R6Map Lair Blueprint 2nd-Floor.jpg",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-lair-layout-2.png"
+        },
+        {
+          "label": "Roof",
+          "source": "R6Map Lair Blueprint Roof.jpg",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-lair-layout-4.png"
         }
       ]
@@ -514,10 +828,16 @@
       "layouts": [
         {
           "label": "R6-maps-nighthavenlabs-blueprint-1",
+          "source": "R6-maps-nighthavenlabs-blueprint-1.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-nighthaven-labs-layout-1.png"
         },
         {
           "label": "R6-maps-nighthavenlabs-blueprint-4-thumb",
+          "source": "R6-maps-nighthavenlabs-blueprint-4-thumb.webp",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-nighthaven-labs-layout-2.png"
         }
       ]
@@ -536,36 +856,88 @@
       "thumb": "r6_images/maps/r6-oregon.png",
       "layouts": [
         {
-          "label": "Siege Oregon Layout 1",
-          "image": "r6_images/maps/r6-oregon-layout-1.png"
+          "label": "Basement",
+          "source": "Oregon Rework Basement.jpeg",
+          "floor": "basement",
+          "order": 0,
+          "image": "r6_images/maps/r6-oregon-layout-10.png"
         },
         {
-          "label": "Siege Oregon Layout 2",
-          "image": "r6_images/maps/r6-oregon-layout-2.png"
+          "label": "Basement",
+          "source": "Oregon basement secure area.png",
+          "floor": "basement",
+          "order": 0,
+          "image": "r6_images/maps/r6-oregon-layout-12.png"
         },
         {
-          "label": "Siege Oregon Layout 3",
-          "image": "r6_images/maps/r6-oregon-layout-3.png"
-        },
-        {
-          "label": "Siege Oregon Layout 4",
-          "image": "r6_images/maps/r6-oregon-layout-4.png"
-        },
-        {
-          "label": "Siege Oregon Layout 5",
-          "image": "r6_images/maps/r6-oregon-layout-5.png"
-        },
-        {
-          "label": "Oregon 1st floor secure area",
+          "label": "Floor 1",
+          "source": "Oregon 1st floor secure area.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-oregon-layout-6.png"
         },
         {
-          "label": "Oregon 2nd floor secure area",
+          "label": "Floor 1",
+          "source": "Oregon Rework 1st Floor.jpeg",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-oregon-layout-8.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Oregon 2nd floor secure area.png",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-oregon-layout-7.png"
         },
         {
-          "label": "Oregon basement secure area",
-          "image": "r6_images/maps/r6-oregon-layout-8.png"
+          "label": "Floor 2",
+          "source": "Oregon Rework 2nd Floor.jpeg",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-oregon-layout-9.png"
+        },
+        {
+          "label": "Roof",
+          "source": "Oregon Rework Roof.jpeg",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-oregon-layout-11.png"
+        },
+        {
+          "label": "Layout 1",
+          "source": "Siege Oregon Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-oregon-layout-1.png"
+        },
+        {
+          "label": "Layout 2",
+          "source": "Siege Oregon Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-oregon-layout-2.png"
+        },
+        {
+          "label": "Layout 3",
+          "source": "Siege Oregon Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-oregon-layout-3.png"
+        },
+        {
+          "label": "Layout 4",
+          "source": "Siege Oregon Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-oregon-layout-4.png"
+        },
+        {
+          "label": "Layout 5",
+          "source": "Siege Oregon Layout 5.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-oregon-layout-5.png"
         }
       ]
     },
@@ -583,32 +955,53 @@
       "thumb": "r6_images/maps/r6-outback.png",
       "layouts": [
         {
+          "label": "Layout 1",
+          "source": "Siege Outback Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-outback-layout-4.png"
+        },
+        {
+          "label": "Layout 2",
+          "source": "Siege Outback Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-outback-layout-5.png"
+        },
+        {
+          "label": "Layout 3",
+          "source": "Siege Outback Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-outback-layout-6.png"
+        },
+        {
+          "label": "Layout 4",
+          "source": "Siege Outback Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-outback-layout-7.png"
+        },
+        {
           "label": "R6-maps-outback-blueprint-1",
+          "source": "R6-maps-outback-blueprint-1.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-outback-layout-1.png"
         },
         {
           "label": "R6-maps-outback-blueprint-2",
+          "source": "R6-maps-outback-blueprint-2.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-outback-layout-2.png"
         },
         {
           "label": "R6-maps-outback-blueprint-3",
+          "source": "R6-maps-outback-blueprint-3.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-outback-layout-3.png"
-        },
-        {
-          "label": "Siege Outback Layout 1",
-          "image": "r6_images/maps/r6-outback-layout-4.png"
-        },
-        {
-          "label": "Siege Outback Layout 2",
-          "image": "r6_images/maps/r6-outback-layout-5.png"
-        },
-        {
-          "label": "Siege Outback Layout 3",
-          "image": "r6_images/maps/r6-outback-layout-6.png"
-        },
-        {
-          "label": "Siege Outback Layout 4",
-          "image": "r6_images/maps/r6-outback-layout-7.png"
         }
       ]
     },
@@ -626,32 +1019,53 @@
       "thumb": "r6_images/maps/r6-presidential-plane.png",
       "layouts": [
         {
-          "label": "Siege Plane Layout 1",
-          "image": "r6_images/maps/r6-presidential-plane-layout-1.png"
+          "label": "Basement",
+          "source": "Presidential plane basement secure floor.png",
+          "floor": "basement",
+          "order": 0,
+          "image": "r6_images/maps/r6-presidential-plane-layout-7.png"
         },
         {
-          "label": "Siege Plane Layout 2",
-          "image": "r6_images/maps/r6-presidential-plane-layout-2.png"
-        },
-        {
-          "label": "Siege Plane Layout 3",
-          "image": "r6_images/maps/r6-presidential-plane-layout-3.png"
-        },
-        {
-          "label": "Siege Plane Layout 4",
-          "image": "r6_images/maps/r6-presidential-plane-layout-4.png"
-        },
-        {
-          "label": "Presidential plane 1st floor secure area",
+          "label": "Floor 1",
+          "source": "Presidential plane 1st floor secure area.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-presidential-plane-layout-5.png"
         },
         {
-          "label": "Presidential plane 2nd floor secure area",
+          "label": "Floor 2",
+          "source": "Presidential plane 2nd floor secure area.png",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-presidential-plane-layout-6.png"
         },
         {
-          "label": "Presidential plane basement secure floor",
-          "image": "r6_images/maps/r6-presidential-plane-layout-7.png"
+          "label": "Layout 1",
+          "source": "Siege Plane Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-presidential-plane-layout-1.png"
+        },
+        {
+          "label": "Layout 2",
+          "source": "Siege Plane Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-presidential-plane-layout-2.png"
+        },
+        {
+          "label": "Layout 3",
+          "source": "Siege Plane Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-presidential-plane-layout-3.png"
+        },
+        {
+          "label": "Layout 4",
+          "source": "Siege Plane Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-presidential-plane-layout-4.png"
         }
       ]
     },
@@ -669,28 +1083,46 @@
       "thumb": "r6_images/maps/r6-skyscraper.png",
       "layouts": [
         {
+          "label": "Floor 1",
+          "source": "Skyscraper floor 1.png",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-skyscraper-layout-4.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Skyscraper floor 2.png",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-skyscraper-layout-5.png"
+        },
+        {
+          "label": "Roof",
+          "source": "Skyscraper roof.png",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-skyscraper-layout-6.png"
+        },
+        {
           "label": "R6-maps-skyscraper-blueprint-1",
+          "source": "R6-maps-skyscraper-blueprint-1.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-skyscraper-layout-1.png"
         },
         {
           "label": "R6-maps-skyscraper-blueprint-2",
+          "source": "R6-maps-skyscraper-blueprint-2.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-skyscraper-layout-2.png"
         },
         {
           "label": "R6-maps-skyscraper-blueprint-3",
+          "source": "R6-maps-skyscraper-blueprint-3.jpg",
+          "floor": "overview",
+          "order": 6,
           "image": "r6_images/maps/r6-skyscraper-layout-3.png"
-        },
-        {
-          "label": "Skyscraper floor 1",
-          "image": "r6_images/maps/r6-skyscraper-layout-4.png"
-        },
-        {
-          "label": "Skyscraper floor 2",
-          "image": "r6_images/maps/r6-skyscraper-layout-5.png"
-        },
-        {
-          "label": "Skyscraper roof",
-          "image": "r6_images/maps/r6-skyscraper-layout-6.png"
         }
       ]
     },
@@ -706,7 +1138,50 @@
       ],
       "blurb": "Stadium is a map featured in Tom Clancy's Rainbow Six Siege. It was originally available for a limited time in the Road To S.I. 2020 event and later returned reworked in the Road To S.I. 2021 and Road To S.I. 2022 events. The SI 2021 and SI 2022 versions were renamed Stadium Bravo and Stadium Alpha and were introduced as permanent additions in the Operation Brutal Swarm expansion. The original ver",
       "thumb": "r6_images/maps/r6-stadium.png",
-      "layouts": []
+      "layouts": [
+        {
+          "label": "Floor 1",
+          "source": "Stadium 1st Floor.jpeg",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-stadium-layout-1.png"
+        },
+        {
+          "label": "Floor 1",
+          "source": "Stadium 2020 1st Floor.jpeg",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-stadium-layout-2.png"
+        },
+        {
+          "label": "Floor 1",
+          "source": "Stadium Rework 1st Floor.jpeg",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-stadium-layout-5.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Stadium 2020 2nd Floor.jpeg",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-stadium-layout-3.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Stadium 2nd Floor.jpeg",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-stadium-layout-4.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Stadium Rework 2nd Floor.jpeg",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-stadium-layout-6.png"
+        }
+      ]
     },
     {
       "id": "r6-theme-park",
@@ -722,15 +1197,24 @@
       "thumb": "r6_images/maps/r6-theme-park.png",
       "layouts": [
         {
-          "label": "Theme Park floor 1",
+          "label": "Floor 1",
+          "source": "Theme Park floor 1.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-theme-park-layout-1.png"
         },
         {
-          "label": "Theme Park floor 2",
+          "label": "Floor 2",
+          "source": "Theme Park floor 2.png",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-theme-park-layout-2.png"
         },
         {
-          "label": "Theme Park roof",
+          "label": "Roof",
+          "source": "Theme Park roof.png",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-theme-park-layout-3.png"
         }
       ]
@@ -749,16 +1233,25 @@
       "thumb": "r6_images/maps/r6-tower.png",
       "layouts": [
         {
-          "label": "Siege Tower Layout Roof",
-          "image": "r6_images/maps/r6-tower-layout-1.png"
-        },
-        {
-          "label": "Map - Tower - 1st floor",
+          "label": "Floor 1",
+          "source": "Map - Tower - 1st floor.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-tower-layout-2.png"
         },
         {
-          "label": "Map - Tower - 2nd floor",
+          "label": "Floor 2",
+          "source": "Map - Tower - 2nd floor.png",
+          "floor": "floor-2",
+          "order": 2,
           "image": "r6_images/maps/r6-tower-layout-3.png"
+        },
+        {
+          "label": "Roof",
+          "source": "Siege Tower Layout Roof.PNG",
+          "floor": "roof",
+          "order": 4,
+          "image": "r6_images/maps/r6-tower-layout-1.png"
         }
       ]
     },
@@ -774,7 +1267,29 @@
       ],
       "blurb": "Villa is a map featured in the Operation Para Bellum expansion for Tom Clancy's Rainbow Six Siege.",
       "thumb": "r6_images/maps/r6-villa.png",
-      "layouts": []
+      "layouts": [
+        {
+          "label": "Floor 1",
+          "source": "Villa 1st Floor.jpg",
+          "floor": "floor-1",
+          "order": 1,
+          "image": "r6_images/maps/r6-villa-layout-1.png"
+        },
+        {
+          "label": "Floor 2",
+          "source": "Villa 2nd Floor.jpg",
+          "floor": "floor-2",
+          "order": 2,
+          "image": "r6_images/maps/r6-villa-layout-2.png"
+        },
+        {
+          "label": "Villa Bottom Floor",
+          "source": "Villa Bottom Floor.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-villa-layout-3.png"
+        }
+      ]
     },
     {
       "id": "r6-yacht",
@@ -790,36 +1305,60 @@
       "thumb": "r6_images/maps/r6-yacht.png",
       "layouts": [
         {
-          "label": "Siege Yacht Layout 1",
-          "image": "r6_images/maps/r6-yacht-layout-1.png"
-        },
-        {
-          "label": "Siege Yacht Layout 2",
-          "image": "r6_images/maps/r6-yacht-layout-2.png"
-        },
-        {
-          "label": "Siege Yacht Layout 3",
-          "image": "r6_images/maps/r6-yacht-layout-3.png"
-        },
-        {
-          "label": "Siege Yacht Layout 4",
-          "image": "r6_images/maps/r6-yacht-layout-4.png"
-        },
-        {
-          "label": "Siege Yacht Layout 5",
-          "image": "r6_images/maps/r6-yacht-layout-5.png"
-        },
-        {
-          "label": "Yacht basement",
+          "label": "Basement",
+          "source": "Yacht basement.PNG",
+          "floor": "basement",
+          "order": 0,
           "image": "r6_images/maps/r6-yacht-layout-6.png"
         },
         {
-          "label": "Yacht floor 01",
+          "label": "Floor 1",
+          "source": "Yacht floor 01.png",
+          "floor": "floor-1",
+          "order": 1,
           "image": "r6_images/maps/r6-yacht-layout-7.png"
         },
         {
-          "label": "Yacht roof",
+          "label": "Roof",
+          "source": "Yacht roof.png",
+          "floor": "roof",
+          "order": 4,
           "image": "r6_images/maps/r6-yacht-layout-8.png"
+        },
+        {
+          "label": "Layout 1",
+          "source": "Siege Yacht Layout 1.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-yacht-layout-1.png"
+        },
+        {
+          "label": "Layout 2",
+          "source": "Siege Yacht Layout 2.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-yacht-layout-2.png"
+        },
+        {
+          "label": "Layout 3",
+          "source": "Siege Yacht Layout 3.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-yacht-layout-3.png"
+        },
+        {
+          "label": "Layout 4",
+          "source": "Siege Yacht Layout 4.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-yacht-layout-4.png"
+        },
+        {
+          "label": "Layout 5",
+          "source": "Siege Yacht Layout 5.jpg",
+          "floor": "overview",
+          "order": 6,
+          "image": "r6_images/maps/r6-yacht-layout-5.png"
         }
       ]
     }

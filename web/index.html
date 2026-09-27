@@ -675,9 +675,13 @@
       );
     };
 
-    const MapArticle = ({ id, setView, note, onNoteChange }) => {
+    const MapArticle = ({ id, setView, note, onNoteChange, onOpenLayout }) => {
       const m = mapsById.get(id);
       if (!m) return <div className="cx-article"><h1 className="cx-title">Not found</h1></div>;
+      const layouts = m.layouts || [];
+      const [floorTab, setFloorTab] = useState('all');
+      const visibleLayouts = floorTab === 'all' ? layouts : layouts.filter((l) => l.floor === floorTab);
+      const floorTabs = [...new Set(layouts.map((l) => l.floor))];
       return (
         <ArticleShell
           crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Maps', onClick: () => setView('maps') }, { label: m.name }]}
@@ -685,22 +689,134 @@
           lead={<p>{m.blurb || m.setting}</p>}
           categories={['Maps']}
           infobox={{ title: m.name, sub: 'Multiplayer map', image: m.thumb ? `./${m.thumb}` : null, imageAlt: m.name, imageType: 'Map', rows: [{ label: 'Setting', value: m.setting || '—' }, { label: 'Terrain', value: m.terrain || '—' }, { label: 'Modes', value: (m.modes || []).join(' · ') }] }}
-          toc={(m.layouts || []).length ? [{ id: 'layouts', label: 'Layouts' }] : null}
+          toc={layouts.length ? [{ id: 'layouts', label: 'Layouts' }] : null}
         >
-          {(m.layouts || []).length ? (
-            <CxSection id="layouts" title="Layouts">
-              <div className="grid gap-3 sm:grid-cols-2">
-                {(m.layouts || []).map((l, i) => (
-                  <div key={i} className="rounded-2xl p-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                    <span className="sq-img"><AssetFrame type="Map" imageUrl={`./${l.image}`} /></span>
-                    <p className="text-xs mt-1 px-1" style={{ color: 'var(--muted)' }}>{l.label}</p>
+          <CxSection id="layouts" title="Layouts">
+            {!layouts.length ? (
+              <p style={{ color: 'var(--muted)' }}>No floor plans bundled yet.</p>
+            ) : (
+              <div>
+                {floorTabs.length > 1 ? (
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <button type="button" onClick={() => setFloorTab('all')}
+                      className="rounded-full px-3 py-1 text-xs font-bold"
+                      style={floorTab === 'all' ? { background: 'var(--text)', color: 'var(--bg-01)' } : { background: 'transparent', color: 'var(--muted)', border: '1px solid var(--stroke)' }}>
+                      All
+                    </button>
+                    {floorTabs.map((f) => (
+                      <button key={f} type="button" onClick={() => setFloorTab(f)}
+                        className="rounded-full px-3 py-1 text-xs font-bold"
+                        style={floorTab === f ? { background: 'var(--text)', color: 'var(--bg-01)' } : { background: 'transparent', color: 'var(--muted)', border: '1px solid var(--stroke)' }}>
+                        {FLOOR_LABELS[f] || f}
+                      </button>
+                    ))}
                   </div>
-                ))}
+                ) : null}
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {visibleLayouts.map((l) => (
+                    <button key={l.image} type="button" onClick={() => onOpenLayout && onOpenLayout(layouts.indexOf(l))}
+                      className="rounded-2xl p-2 text-left transition-all hover:-translate-y-0.5" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', cursor: 'zoom-in' }}>
+                      <span className="sq-img block w-full overflow-hidden rounded-xl" style={{ aspectRatio: '16/9' }}><AssetFrame type="Map" size="fill" imageUrl={`./${l.image}`} /></span>
+                      <p className="text-xs mt-1 px-1" style={{ color: 'var(--muted)' }}>{l.label}</p>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </CxSection>
-          ) : null}
+            )}
+          </CxSection>
           <NotesEditor title="Map Notes" value={note || ''} onChange={onNoteChange} placeholder="Setups, callouts, defaults..." />
         </ArticleShell>
+      );
+    };
+
+    const FLOOR_LABELS = { basement: 'Basement', 'floor-1': 'Floor 1', 'floor-2': 'Floor 2', 'floor-3': 'Floor 3', roof: 'Roof', spawn: 'Spawns', overview: 'Overview' };
+
+    const MapFloorModal = ({ map, initialIndex, onClose, noteValue, onNoteChange }) => {
+      const layouts = (map && map.layouts) || [];
+      const [currentIndex, setCurrentIndex] = useState(initialIndex || 0);
+      const [layoutBroken, setLayoutBroken] = useState(false);
+      const [zoom, setZoom] = useState(1);
+      useEffect(() => {
+        setCurrentIndex(initialIndex || 0);
+        setLayoutBroken(false);
+        setZoom(1);
+      }, [map && map.id, initialIndex]);
+      useEffect(() => {
+        const onKey = (e) => {
+          if (e.key === 'Escape') onClose();
+          else if (e.key === 'ArrowRight') { setCurrentIndex((i) => Math.min(layouts.length - 1, i + 1)); setLayoutBroken(false); setZoom(1); }
+          else if (e.key === 'ArrowLeft') { setCurrentIndex((i) => Math.max(0, i - 1)); setLayoutBroken(false); setZoom(1); }
+        };
+        window.addEventListener('keydown', onKey);
+        return () => window.removeEventListener('keydown', onKey);
+      }, [onClose, layouts.length]);
+      if (!map) return null;
+      const current = layouts[currentIndex];
+      const currentFloor = current ? current.floor : null;
+      const floorJumps = [];
+      layouts.forEach((l, i) => {
+        if (!floorJumps.some((f) => f.floor === l.floor)) floorJumps.push({ floor: l.floor, index: i });
+      });
+      const step = (dir) => {
+        setCurrentIndex((i) => Math.max(0, Math.min(layouts.length - 1, i + dir)));
+        setLayoutBroken(false);
+        setZoom(1);
+      };
+      return (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ background: 'rgba(0,0,0,0.9)', backdropFilter: 'blur(4px)' }} onClick={onClose} role="dialog" aria-label={`${map.name} floor plans`}>
+          <div className="w-full max-w-2xl max-h-[90vh] flex flex-col rounded-2xl overflow-hidden" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }} onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-start gap-3 px-5 pt-4 pb-3 shrink-0" style={{ borderBottom: '1px solid var(--stroke)' }}>
+              <span className="flex-1 min-w-0">
+                <span className="block text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: 'var(--muted)' }}>Map Details</span>
+                <span className="block text-lg font-bold truncate" style={{ color: 'var(--text)', fontFamily: 'var(--font-display)' }}>{map.name}</span>
+                <span className="block text-xs" style={{ color: 'var(--muted)' }}>{current ? (FLOOR_LABELS[current.floor] || current.label) : 'No layout art'}</span>
+              </span>
+              <button type="button" onClick={onClose} aria-label="Close" className="p-2 rounded-full" style={{ color: 'var(--muted)' }}><Icons.X width={18} height={18} /></button>
+            </div>
+            <div className="overflow-y-auto px-5 py-4 flex-1 min-h-0">
+              {!current ? (
+                <p style={{ color: 'var(--muted)' }}>No floor plans bundled yet.</p>
+              ) : (
+                <div>
+                  <div className="flex items-center gap-2">
+                    <button type="button" onClick={() => step(-1)} disabled={currentIndex === 0} aria-label="Previous floor" className="p-2 rounded-full shrink-0" style={{ color: 'var(--muted)', opacity: currentIndex === 0 ? 0.3 : 1 }}>‹</button>
+                    <div className="relative flex-1 min-w-0 overflow-hidden rounded-xl flex items-center justify-center" style={{ background: 'rgba(0,0,0,0.4)', maxHeight: '55vh' }}
+                      onWheel={(e) => { if (e.ctrlKey || e.metaKey) return; setZoom((z) => Math.max(1, Math.min(3, z + (e.deltaY < 0 ? 0.25 : -0.25)))); }}>
+                      {!layoutBroken ? (
+                        <img src={`./${current.image}`} alt={`${map.name} — ${current.label}`} className="w-full" style={{ objectFit: 'contain', maxHeight: '55vh', transform: `scale(${zoom})`, transformOrigin: 'center', transition: 'transform 0.15s' }} onError={() => setLayoutBroken(true)} />
+                      ) : (
+                        <p className="p-8 text-sm" style={{ color: 'var(--muted)' }}>Layout image failed to load.</p>
+                      )}
+                    </div>
+                    <button type="button" onClick={() => step(1)} disabled={currentIndex === layouts.length - 1} aria-label="Next floor" className="p-2 rounded-full shrink-0" style={{ color: 'var(--muted)', opacity: currentIndex === layouts.length - 1 ? 0.3 : 1 }}>›</button>
+                  </div>
+                  <div className="flex items-center gap-2 mt-3">
+                    <div className="flex flex-wrap gap-1.5 flex-1">
+                      {floorJumps.map(({ floor, index }) => (
+                        <button key={floor} type="button" onClick={() => { setCurrentIndex(index); setLayoutBroken(false); setZoom(1); }}
+                          className="rounded-full px-3 py-1 text-xs font-bold"
+                          style={floor === currentFloor ? { background: 'var(--text)', color: 'var(--bg-01)' } : { background: 'transparent', color: 'var(--muted)', border: '1px solid var(--stroke)' }}>
+                          {FLOOR_LABELS[floor] || floor}
+                        </button>
+                      ))}
+                    </div>
+                    <div className="flex gap-1 shrink-0">
+                      <button type="button" onClick={() => setZoom((z) => Math.max(1, z - 0.5))} aria-label="Zoom out" className="px-2 py-1 rounded-lg text-sm font-bold" style={{ border: '1px solid var(--stroke)', color: 'var(--muted)' }}>−</button>
+                      <button type="button" onClick={() => setZoom(1)} aria-label="Reset zoom" className="px-2 py-1 rounded-lg text-xs font-bold" style={{ border: '1px solid var(--stroke)', color: 'var(--muted)' }}>{Math.round(zoom * 100)}%</button>
+                      <button type="button" onClick={() => setZoom((z) => Math.min(3, z + 0.5))} aria-label="Zoom in" className="px-2 py-1 rounded-lg text-sm font-bold" style={{ border: '1px solid var(--stroke)', color: 'var(--muted)' }}>+</button>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <NotesEditor title="Map Notes" value={noteValue || ''} onChange={onNoteChange} placeholder="Setups, callouts, defaults..." />
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="px-5 py-3 shrink-0" style={{ borderTop: '1px solid var(--stroke)' }}>
+              <button type="button" onClick={onClose} className="cx-toolbtn w-full">Close</button>
+            </div>
+          </div>
+        </div>
       );
     };
 
@@ -1131,6 +1247,7 @@
       const [currentView, setCurrentView] = useState(initialUi.view);
       const [viewContext, setViewContext] = useState(initialUi.context);
       const [drawerOpen, setDrawerOpen] = useState(false);
+      const [floorModal, setFloorModal] = useState(null);
       const mainRef = useRef(null);
       const setView = useCallback((view, context = {}) => {
         setCurrentView(view); setViewContext(context || {});
@@ -1213,7 +1330,7 @@
       useEffect(() => { window.__hideLaunchOverlay?.(); }, []);
       const touchStartRef = useRef(null);
       const navOrder = useMemo(() => ['home', 'favorites'], []);
-      const isAnyOverlayOpen = drawerOpen;
+      const isAnyOverlayOpen = drawerOpen || !!floorModal;
       const handleTouchStart = (e) => {
         if (!e.touches || e.touches.length !== 1) {
           touchStartRef.current = null;
@@ -1278,7 +1395,7 @@
           case 'weapon': return <WeaponArticle id={id} setView={setView} />;
           case 'attachments': return <AttachmentsView setView={setView} />;
           case 'maps': return <MapsView setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} />;
-          case 'map': return <MapArticle id={id} setView={setView} note={getEntityNote('map', id)} onNoteChange={(v) => setEntityNote('map', id, v)} />;
+          case 'map': return <MapArticle id={id} setView={setView} note={getEntityNote('map', id)} onNoteChange={(v) => setEntityNote('map', id, v)} onOpenLayout={(index) => setFloorModal({ mapId: id, index })} />;
           case 'seasons': return <SeasonsView setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} />;
           case 'season': return <SeasonArticle id={id} setView={setView} note={getEntityNote('season', id)} onNoteChange={(v) => setEntityNote('season', id, v)} />;
           case 'favorites': return <FavoritesView favorites={favorites} setView={setView} onToggleFavorite={toggleFavorite} />;
@@ -1297,6 +1414,10 @@
             <main ref={mainRef} className="website-main relative flex-1 min-w-0 overflow-hidden"><div key={currentView + (viewContext.id || '')} className="view-transition h-full overflow-y-auto" style={{ padding: '20px 16px 120px' }}>{renderContent()}</div></main>
           </div>
           {device.isMobile && <SectionDrawer open={drawerOpen} currentView={currentView} onBrowse={(vid) => setView(vid)} onClose={() => setDrawerOpen(false)} />}
+          {floorModal && mapsById.get(floorModal.mapId) ? (
+            <MapFloorModal map={mapsById.get(floorModal.mapId)} initialIndex={floorModal.index} onClose={() => setFloorModal(null)}
+              noteValue={getEntityNote('map', floorModal.mapId)} onNoteChange={(v) => setEntityNote('map', floorModal.mapId, v)} />
+          ) : null}
           <ScrollToTopFAB mainRef={mainRef} currentView={currentView} />
           {device.isMobile && (
             <div className="fixed bottom-0 left-0 w-full z-[55] px-2 sm:px-6 pb-2 sm:pb-5 flex flex-col items-center gap-2 nav-safe-area">
