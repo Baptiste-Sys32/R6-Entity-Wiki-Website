@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T09:41:45.326Z",
+  "generatedAt": "2026-09-27T16:07:14.848Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -93,17 +93,9 @@
       "file": "CapitaoIconN.png",
       "width": 256
     },
-    "r6_images/operators/heroes/r6-capit-o.png": {
-      "file": "Capitao Portrait.png",
-      "width": 400
-    },
     "r6_images/gadgets/r6-capit-o.png": {
       "file": "Tactical_Crossbow.png",
       "width": null
-    },
-    "r6_images/operators/icons/r6-deimos.png": {
-      "file": "R6S-credits-icon.png",
-      "width": 256
     },
     "r6_images/operators/heroes/r6-deimos.png": {
       "file": "Deimos Full Body.png",
@@ -150,7 +142,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-fuze.png": {
-      "file": "Fuze's Icon (Beta).png",
+      "file": "FuzeIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-fuze.png": {
@@ -310,7 +302,7 @@
       "width": 256
     },
     "r6_images/operators/heroes/r6-osa.png": {
-      "file": "OSA ELITE FULLBODY.webp",
+      "file": "Osa - Full Body.png",
       "width": 400
     },
     "r6_images/gadgets/r6-osa.png": {
@@ -318,7 +310,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-ram.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "Y8S3 - RAM ICON.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-ram.png": {
@@ -330,7 +322,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-rauora.png": {
-      "file": "DOM Panel Icon.png",
+      "file": "RAUORA ICON HIGH RES.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-rauora.png": {
@@ -342,7 +334,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-sens.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "Sens Icon.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-sens.png": {
@@ -373,6 +365,18 @@
       "file": "R6S Stun Grenade.png",
       "width": 320
     },
+    "r6_images/operators/icons/r6-solid-snake.png": {
+      "file": "SOLID SNAKE ICON HIGH RES.webp",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-solid-snake.png": {
+      "file": "Solid Snake In-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-solid-snake.png": {
+      "file": "Soliton Radar MKIII Icon.webp",
+      "width": null
+    },
     "r6_images/operators/icons/r6-thatcher.png": {
       "file": "ThatcherNewestIcon.png",
       "width": 256
@@ -394,7 +398,7 @@
       "width": 320
     },
     "r6_images/operators/icons/r6-thermite.png": {
-      "file": "R6S-renown-icon.png",
+      "file": "ThermiteIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-thermite.png": {
@@ -406,7 +410,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-twitch.png": {
-      "file": "R6S-renown-icon.png",
+      "file": "TwitchIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-twitch.png": {
@@ -418,7 +422,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-ying.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "YingIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-ying.png": {
@@ -430,7 +434,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-zero.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "ZeroIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-zero.png": {
@@ -442,7 +446,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-zofia.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "ZofiaIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-zofia.png": {
@@ -470,11 +474,11 @@
       "width": 256
     },
     "r6_images/operators/heroes/r6-aruni.png": {
-      "file": "ARUNI ELITE FULLBODY.webp",
+      "file": "Aruni Fullbody cropped resized truecolor.png",
       "width": 400
     },
     "r6_images/operators/icons/r6-azami.png": {
-      "file": "Azami Ability Icon.png",
+      "file": "Azami Icon.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-azami.png": {
@@ -488,10 +492,6 @@
     "r6_images/operators/icons/r6-bandit.png": {
       "file": "BanditIconN.png",
       "width": 256
-    },
-    "r6_images/operators/heroes/r6-bandit.png": {
-      "file": "Bandit turn-around.jpg",
-      "width": 400
     },
     "r6_images/gadgets/r6-bandit.png": {
       "file": "Shock_Wire1.png",
@@ -582,7 +582,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-fenrir.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "Y8S2 - FENRIR ICON .png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-fenrir.png": {
@@ -614,7 +614,7 @@
       "width": 256
     },
     "r6_images/operators/heroes/r6-j-ger.png": {
-      "file": "Jäger Portrait.png",
+      "file": "JagerElitePortrait.png",
       "width": 400
     },
     "r6_images/gadgets/r6-j-ger.png": {
@@ -686,7 +686,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-mozzie.png": {
-      "file": "Mozzie2ndIcon.png",
+      "file": "MozzieIconN.png",
       "width": 256
     },
     "r6_images/gadgets/r6-mozzie.png": {
@@ -712,6 +712,18 @@
     "r6_images/weapons/r6-mute-2.png": {
       "file": "R6S Bulletproof Camera.png",
       "width": 320
+    },
+    "r6_images/operators/icons/r6-noor.png": {
+      "file": "NOOR ICON HIGH RES.webp",
+      "width": 256
+    },
+    "r6_images/operators/heroes/r6-noor.png": {
+      "file": "Noor In-game Fullbody.webp",
+      "width": 400
+    },
+    "r6_images/gadgets/r6-noor.png": {
+      "file": "Horus Lance Launcher Icon.png",
+      "width": null
     },
     "r6_images/operators/icons/r6-oryx.png": {
       "file": "OryxIconN.png",
@@ -749,10 +761,6 @@
       "file": "Armor_Pack.png",
       "width": null
     },
-    "r6_images/operators/icons/r6-skop-s.png": {
-      "file": "PantheonShellsIcon.png",
-      "width": 256
-    },
     "r6_images/operators/heroes/r6-skop-s.png": {
       "file": "Skopós In-game Fullbody.webp",
       "width": 400
@@ -762,7 +770,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-smoke.png": {
-      "file": "R6S-renown-icon.png",
+      "file": "SmokeIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-smoke.png": {
@@ -782,7 +790,7 @@
       "width": 320
     },
     "r6_images/operators/icons/r6-solis.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "Solis icon.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-solis.png": {
@@ -794,7 +802,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-tachanka.png": {
-      "file": "R6S-renown-icon.png",
+      "file": "Tachanka Badge New.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-tachanka.png": {
@@ -806,7 +814,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-thorn.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "Thorn icon.png",
       "width": 256
     },
     "r6_images/gadgets/r6-thorn.png": {
@@ -814,27 +822,23 @@
       "width": null
     },
     "r6_images/operators/icons/r6-thunderbird.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "Thunderbird Icon.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-thunderbird.png": {
-      "file": "THUNDERBIRD ELITE FULLBODY.webp",
+      "file": "Thunderbird Fullbody.png",
       "width": 400
     },
     "r6_images/gadgets/r6-thunderbird.png": {
       "file": "Kona Station.png",
       "width": null
     },
-    "r6_images/operators/icons/r6-tubar-o.png": {
-      "file": "R6S-credits-icon.png",
-      "width": 256
-    },
     "r6_images/gadgets/r6-tubar-o.png": {
       "file": "R6S Tubarão Zoto Icon.png",
       "width": null
     },
     "r6_images/operators/icons/r6-valkyrie.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "ValkyrieIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-valkyrie.png": {
@@ -846,23 +850,19 @@
       "width": null
     },
     "r6_images/operators/icons/r6-vigil.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "VigilIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-vigil.png": {
       "file": "Vigil - Full Body.png",
       "width": 400
     },
-    "r6_images/gadgets/r6-vigil.png": {
-      "file": "ERC-7.png",
-      "width": null
-    },
     "r6_images/operators/icons/r6-wamai.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "WamaiIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-wamai.png": {
-      "file": "WAMAI ELITE FULLBODY.webp",
+      "file": "Wamai - Full Body.png",
       "width": 400
     },
     "r6_images/gadgets/r6-wamai.png": {
@@ -870,7 +870,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-warden.png": {
-      "file": "R6S-credits-icon.png",
+      "file": "WardenIconN.png",
       "width": 256
     },
     "r6_images/operators/heroes/r6-warden.png": {
@@ -1203,6 +1203,18 @@
     },
     "r6_images/weapons/r6-sledge-6.png": {
       "file": "R6S P226 Mk 25.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solid-snake-1.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solid-snake-2.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solid-snake-5.png": {
+      "file": "R6S Frag Grenade.png",
       "width": 320
     },
     "r6_images/weapons/r6-thatcher-5.png": {
@@ -1631,6 +1643,14 @@
     },
     "r6_images/weapons/r6-mute-6.png": {
       "file": "R6S SMG-11.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-noor-1.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-noor-2.png": {
+      "file": "R6S Barbed Wire.png",
       "width": 320
     },
     "r6_images/weapons/r6-oryx-1.png": {
@@ -2285,45 +2305,181 @@
       "file": "Yacht roof.png",
       "width": 800
     },
-    "r6_images/tips/r6-ash-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75t7NR33Wx6QqE6GSjX4Bl/0415cdad52a25604ee9eec90a849b5d0/mqdefault.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+    "r6_images/seasons/r6-operation-black-ice.png": {
+      "file": "Siege Black Ice.jpeg",
+      "width": 800
     },
-    "r6_images/tips/r6-fuze-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/OdYWP0rJu7LHHY9RIvcXY/8f7a3ca62aa0ad6bf633402e4a817d40/mqdefault.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fuze"
+    "r6_images/seasons/r6-operation-dust-line.png": {
+      "file": "Dust Line.jpg",
+      "width": 800
     },
-    "r6_images/tips/r6-glaz-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1tQKn2Vv1UGyx7OXM2V6rD/86277da8e5c911b6026b79483d138cc3/mqdefault.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/glaz"
+    "r6_images/seasons/r6-operation-skull-rain.png": {
+      "file": "Rb6-skull-rain-img.jpg",
+      "width": 800
     },
-    "r6_images/tips/r6-thermite-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4XynU2pg9WrWW4TDyenIyE/3198e44b42838af0af06c9783d1a2a6e/mqdefault.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thermite"
+    "r6_images/seasons/r6-operation-red-crow.png": {
+      "file": "R6S-red-crow-image.jpg",
+      "width": 800
     },
-    "r6_images/tips/r6-twitch-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/fDEvw6KEXiJX4Xl6YdjWK/999706dc4158da0949c36190bf189f15/operator-video-ability-twitch.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/twitch"
+    "r6_images/seasons/r6-operation-velvet-shell.png": {
+      "file": "Velvet Shell poster.jpg",
+      "width": 800
     },
-    "r6_images/tips/r6-bandit-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4y2Uuj6PTMBmVdswfPQ6jO/84bcca8848c16acac702d0349ece44fc/operator-video-ability-bandit.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/bandit"
+    "r6_images/seasons/r6-operation-health.png": {
+      "file": "R6S_OpHealth.jpg",
+      "width": 800
     },
-    "r6_images/tips/r6-j-ger-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ZrIpMSqjYindpCtks1Byf/0b8997540cddfcb9b9d05578479d3eaa/mqdefault.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jager"
+    "r6_images/seasons/r6-operation-blood-orchid.png": {
+      "file": "BloodOrchid3.jpg",
+      "width": 800
     },
-    "r6_images/tips/r6-kapkan-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2hqxPlfmtJ7MFOFAq14Ysc/fa9156de16258c412fc41be58b6e6a05/r6-kapkan-ability-thumbnail.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kapkan"
+    "r6_images/seasons/r6-operation-white-noise.png": {
+      "file": "Dokkaebi and Vigil promotional artwork.jpg",
+      "width": 800
     },
-    "r6_images/tips/r6-pulse-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4a3EtFa0ynXGK05wkZH62r/e3e8d6c52ee02280de1c8d7d7b66e81a/mqdefault.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/pulse"
+    "r6_images/seasons/r6-operation-chimera.png": {
+      "file": "Chimera-0.jpg",
+      "width": 800
     },
-    "r6_images/tips/r6-rook-1.jpg": {
-      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6YPJok4eqE7BtviRbb02Mt/dcb4f467de54f2b01b93e2fa9d363916/roo.jpg",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rook"
+    "r6_images/seasons/r6-operation-para-bellum.png": {
+      "file": "parabellum main keyart with logo 322472.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-grim-sky.png": {
+      "file": "R6 live y3s3 img main-keyart 332305.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-wind-bastion.png": {
+      "file": "windbastion 2.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-burnt-horizon.png": {
+      "file": "burnthorizon 1.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-phantom-sight.png": {
+      "file": "Phantom Sight.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-ember-rise.png": {
+      "file": "R6 Siege Operation Ember Rise.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-shifting-tides.png": {
+      "file": "Operation Shifting Tides Background.PNG",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-void-edge.png": {
+      "file": "Operation Void Edge Promo.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-steel-wave.png": {
+      "file": "Operation Steel Wave Promo.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-shadow-legacy.png": {
+      "file": "Shadow Legacy Promo.PNG",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-neon-dawn.png": {
+      "file": "Operation Neon Dawn.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-crimson-heist.png": {
+      "file": "Operation Crimson Heist.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-north-star.png": {
+      "file": "North Star Cover.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-crystal-guard.png": {
+      "file": "Crystal Guard.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-high-calibre.png": {
+      "file": "High Calibre.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-demon-veil.png": {
+      "file": "Demon Veil.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-vector-glare.png": {
+      "file": "Y7S2 - OPERATION VECTOR GLARE TEASER 1.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-brutal-swarm.png": {
+      "file": "Brutal-swarm-keyart.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-solar-raid.png": {
+      "file": "solar-raid-keyart.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-commanding-force.png": {
+      "file": "Operation Commanding Force teaser 1.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-dread-factor.png": {
+      "file": "Y8S2 - DREAD FACTOR TEASER 2.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-heavy-mettle.png": {
+      "file": "RS6 Heavy Mettle Promo.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-deep-freeze.png": {
+      "file": "R6S Deep Freeze Promo.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-deadly-omen.png": {
+      "file": "Deadly Omen Teaser 3.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-new-blood.png": {
+      "file": "New Blood Cover01.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-twin-shells.png": {
+      "file": "TWIN SHELLS TEASER 1.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-collision-point.png": {
+      "file": "Y9S4 COLLISION POINT - TEASER 2.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-prep-phase.png": {
+      "file": "Y10S1 Season Promo.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-daybreak.png": {
+      "file": "Y10S2 Clash Operator Keyart 1080x1080.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-high-stakes.png": {
+      "file": "Y10S3 Season Promo.png",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-tenfold-pursuit.png": {
+      "file": "R6S Tenfold Pursuit.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-silent-hunt.png": {
+      "file": "Operation Silent Hunt.jpeg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-system-override.png": {
+      "file": "Operation System Override.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-operation-split-fire.png": {
+      "file": "Operation Split Fire.jpg",
+      "width": 800
+    },
+    "r6_images/seasons/r6-year-eleven-season-four.png": {
+      "file": "R6logo.jpeg",
+      "width": 800
     }
   }
 }

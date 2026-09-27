@@ -546,7 +546,9 @@
     const WeaponArticle = ({ id, setView }) => {
       const weapon = weaponsByName.get(id) || resolveWeapon(id);
       if (!weapon) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown weapon.</p></div>;
-      const users = (weapon.users || []).map((name) => OPERATORS.find((o) => o.name === name)).filter(Boolean);
+            const normOpName = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[øØ]/g, 'o').toLowerCase();
+      const users = (weapon.users || []).map((name) => OPERATORS.find((o) => o.name === name)
+        || OPERATORS.find((o) => normOpName(o.name) === normOpName(name))).filter(Boolean);
       const attachNames = Object.keys(weapon.attachments || {}).filter((k) => weapon.attachments[k]);
       const toc = [{ id: 'stats', label: 'Stats' }];
       if (attachNames.length) toc.push({ id: 'attachments', label: 'Attachments' });
@@ -748,7 +750,7 @@
           lead={<p>{s.blurb}</p>}
           toc={(s.operators || []).length > 0 ? [{ id: 'operators', label: 'Operators' }] : null}
           categories={['Seasons', s.code]}
-          infobox={{ title: s.code, sub: 'Season', image: seasonMap && seasonMap.thumb ? `./${seasonMap.thumb}` : null, imageAlt: s.map, imageType: 'Map', rows: [{ label: 'Released', value: s.released || '—' }, { label: 'Map', value: s.map || '—' }, { label: 'Operators', value: (s.operators || []).join(', ') || '—' }] }}
+          infobox={{ title: s.code, sub: 'Season', image: s.cover ? `./${s.cover}` : (seasonMap && seasonMap.thumb ? `./${seasonMap.thumb}` : null), imageAlt: s.name, imageType: 'Map', rows: [{ label: 'Released', value: s.released || '—' }, ...(s.patch ? [{ label: 'Patch', value: s.patch }] : []), { label: 'Map', value: (s.maps && s.maps.length ? s.maps.join(', ') : (s.map || '—')) }, { label: 'Operators', value: (s.operators || []).join(', ') || '—' }] }}
         >
           {(s.operators || []).length > 0 ? (
             <CxSection id="operators" title="Operators">

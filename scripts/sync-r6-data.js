@@ -208,7 +208,8 @@ function matchWeaponFile(files, baseName, weaponName) {
 // --- operators --------------------------------------------------------------
 
 function normalizeOperatorTitles(titles) {
-  const JUNK = /\(Extraction\)|\(Novel\)|\(TV series\)|\(Disambig\)|\(Codex\)|Flubber|Breacher \(Operator\)|Assaulter|Bishop|Noor|Pointman|Protector|Recruit|Striker|Sentry|Solid Snake|Trapper|Bosak|Patcher|Reserves/i;
+  const JUNK = /\(Extraction\)|\(Novel\)|\(TV series\)|\(Disambig\)|\(Codex\)|Flubber|Breacher \(Operator\)|Assaulter|Bishop|Pointman|Protector|Recruit|Striker|Sentry|Trapper|Bosak|Patcher|Reserves/i;
+  const CROSSOVER = new Set(['Solid Snake']);
   const byName = new Map();
   for (const title of titles) {
     if (JUNK.test(title)) continue;
@@ -216,7 +217,7 @@ function normalizeOperatorTitles(titles) {
     const siege = title.endsWith(' (Siege)');
     if (!byName.has(name) || !siege) byName.set(name, title);
   }
-  return [...byName.entries()].map(([name, title]) => ({ name, title }));
+  return [...byName.entries()].map(([name, title]) => ({ name, title, crossover: CROSSOVER.has(name) }));
 }
 
 function parseOperator(title, wt, seasonCat) {
@@ -316,14 +317,37 @@ function parseSeason(title, wt) {
   const quoteMatch = wt.match(/\{\{Quote\|([^|}]+)/);
   const intro = introParagraph(wt);
   const rawName = stripMarkup(infoboxField(wt, 'name')) || title.replace(/^Tom Clancy's Rainbow Six Siege:\s*/, '');
+  const code = `Y${yearMatch[1]}S${yearMatch[2]}`;
+  // The wiki's Y11S4 infobox misspells its own name ("...Season Three");
+  // trust the Year/Season fields over the name string.
+  const fixedName = (code === 'Y11S4' && /Three/i.test(rawName)) ? rawName.replace(/Three/i, 'Four') : rawName;
+  const mapField = infoboxField(wt, 'map');
+  const mapLinks = [...mapField.matchAll(/\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/g)]
+    .filter((m) => !/^(File|Image|Category):/i.test(m[1].trim()))
+    .map((m) => (m[2] || m[1]).trim())
+    .filter((t) => t && !/^(File|Image|Category):/i.test(t))
+    .slice(0, 8);
+  const operatorField = infoboxField(wt, 'operator');
+  const seasonOperators = [...operatorField.matchAll(/\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/g)]
+    .filter((m) => !/^(File|Image|Category):/i.test(m[1].trim()))
+    .map((m) => (m[2] || m[1]).trim())
+    .filter((t) => t && !/^(File|Image|Category):/i.test(t))
+    .slice(0, 6);
   return {
-    id: `r6-${rawName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`,
-    name: stripMarkup(infoboxField(wt, 'name')),
-    code: `Y${yearMatch[1]}S${yearMatch[2]}`,
+    id: `r6-${fixedName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`,
+    name: fixedName,
+    code,
     year: Number(yearMatch[1]),
-    released: stripMarkup(infoboxField(wt, 'released')).slice(0, 60),
+    released: stripMarkup(infoboxField(wt, 'released')).split('|')[0].trim().slice(0, 60),
     operators: [],
-    map: firstWikiLinkText(infoboxField(wt, 'map').split('<br')[0]).slice(0, 60),
+    map: mapLinks[0] || '',
+    maps: mapLinks,
+    patch: stripMarkup(infoboxField(wt, 'patch')).split('|')[0].trim().slice(0, 80),
+    coverFile: (() => {
+      const img = infoboxField(wt, 'image').split('\n')[0].split('|')[0].trim().replace(/^\[\[(File:)?/i, '').replace(/\]\]$/, '');
+      return img && !/[<>]/.test(img) ? img : null;
+    })(),
+    seasonOperators,
     squad: stripMarkup(infoboxField(wt, 'ctu')).slice(0, 120),
     blurb: (quoteMatch ? stripMarkup(quoteMatch[1]) + ' ' : '').slice(0, 0) || intro.slice(0, 400),
   };
@@ -361,14 +385,17 @@ async function main() {
   const opCats = await categoriesFor(opTitles.map((o) => o.title));
 
   const operators = [];
-  for (const { name, title } of opTitles) {
+  for (const { name, title, crossover } of opTitles) {
     try {
       const wt = await wikitext(title);
       const seasonCats = (opCats[title] || [])
         .filter((c) => c.startsWith("Category:Tom Clancy's Rainbow Six Siege:"))
         .filter((c) => validSeasons.has(c.replace(/^Category:Tom Clancy's Rainbow Six Siege:\s*/, '').replace(/^Operation /, '')));
       const op = parseOperator(title, wt, seasonCats.length === 1 ? seasonCats[0] : null);
-      if (op) operators.push(op);
+      if (op) {
+        if (crossover) op.crossover = true;
+        operators.push(op);
+      }
       else console.warn(`sync-r6: skipped ${title} (no attacker/defender infobox)`);
     } catch (error) {
       console.warn(`sync-r6: failed ${title}: ${error.message}`);
@@ -386,21 +413,67 @@ async function main() {
     manifest[rel] = { file, width };
     return rel;
   };
+  // Icon/hero/gadget picks: name-anchored, denylisted, null-on-miss.
+  // A wrong face is worse than a fallback SVG, so the icon has NO
+  // unanchored fallback — it must contain the operator's name token.
+  const ICON_DENY = /credits|renown|beta|small|ability|panel|shell|gadget|weapon|portrait|full.?body|profile|turn-around|operator.?card|elite|charm|skin|loadout|badge|flag|logo|hud|video|trailer|gameplay|concept|chibi|spray|bundle|set\b|uniform|headgear/i;
+    const normName = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[øØ]/g, 'o').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const pickIcon = (files, baseName) => {
+    const token = normName(baseName);
+    const stemOf = (f) => normName(f.replace(/\.(png|webp|jpg|jpeg)$/i, '').replace(/^y\d+s\d+\s*-?\s*/i, ''));
+    const anchored = files.filter((f) => stemOf(f).startsWith(token) && !ICON_DENY.test(f));
+    const exact = (suffix) => anchored.find((f) => stemOf(f) === token + suffix);
+    const hit = exact('newesticon') || exact('iconn') || exact('iconstandard') || exact('icon');
+    if (hit) return hit;
+    // Last resort: anchored real face that only failed the soft denylist
+    // (e.g. legacy "Small" icons). Must still look like an icon/portrait —
+    // never concept art, bundles, or currency.
+    const HARD_DENY = /credits|renown|beta|ability|panel|gadget|weapon|portrait|body|profile|card|elite|concept|bundle|artwork|spray|charm|skin|uniform|headgear|loadout|trailer|video|gameplay|poster|keyart|wallpaper|meme/i;
+    const fallback = files.find((f) => stemOf(f).startsWith(token) && /icon|badge|avatar|head/i.test(f) && !HARD_DENY.test(f));
+    if (fallback) console.warn(`sync-r6: degraded icon for ${baseName} (${fallback})`);
+    return fallback || null;
+  };
+  const pickHero = (files, baseName) => {
+    const fullBody = files.filter((f) => /Full[ _-]?Body/i.test(f) && !/elite/i.test(f));
+    if (fullBody.length) return fullBody[0];
+    const inGame = files.filter((f) => /In-game Fullbody/i.test(f) && !/elite/i.test(f));
+    if (inGame.length) return inGame[0];
+    const portraitExact = new RegExp(`^${baseName.replace(/[^a-z0-9]+/gi, '[ _-]')} +Portrait\\.png$`, 'i');
+    const portrait = files.find((f) => portraitExact.test(f));
+    if (portrait) return portrait;
+    const profile = files.find((f) => /Profile\.png/i.test(f) && !ICON_DENY.test(f));
+    if (profile) return profile;
+    const elite = files.find((f) => /ElitePortrait/i.test(f));
+    if (elite) {
+      console.warn(`sync-r6: elite-only hero for ${baseName} (${elite})`);
+      return elite;
+    }
+    return null;
+  };
   operators.forEach((op) => {
     const title = opTitleById.get(op.id);
     const files = opImages[title] || [];
     const baseName = title.replace(/ \(Siege\)$/, '');
-    const iconFile = pickFile(files, [/NewestIcon/i, /Icon_-_Standard/i, /Icon.*\.png/i]);
-    const portraitExact = new RegExp(`^${baseName.replace(/[^a-z0-9]+/gi, '[ _-]')} +Portrait\\.png$`, 'i');
-    const heroFile = pickFile(files, [/Full[ _-]?Body/i, /In-game Fullbody/i, portraitExact, / Portrait\.png/i, /Profile\.png/i, /ElitePortrait/i, /turn-around/i, /Operator Card/i]);
+    const iconFile = pickIcon(files, baseName);
+    if (!iconFile) console.warn(`sync-r6: no anchored icon for ${baseName}`);
+    const heroFile = pickHero(files, baseName);
+    if (!heroFile) console.warn(`sync-r6: no hero for ${baseName}`);
     op.icon = local(`r6_images/operators/icons/${op.id}.png`, iconFile, 256);
     op.hero = local(`r6_images/operators/heroes/${op.id}.png`, heroFile, 400);
     let gadgetFile = op.gadgetFile;
     if (!gadgetFile && op.gadget) {
       const token = op.gadget.toLowerCase().replace(/\sx\s*\d+$/, '').replace(/[^a-z0-9]+/g, '');
-      if (token.length >= 4) {
-        gadgetFile = files.find((f) => f.toLowerCase().replace(/[^a-z0-9]+/g, '').includes(token) && /\.(png|webp|jpg|jpeg)$/i.test(f) && !/IconN|Full[ _-]Body|Operator Card|ElitePortrait|turn-around|Profile\.png/i.test(f)) || null;
+      if (token.length >= 5) {
+        gadgetFile = files.find((f) => {
+          const n = f.toLowerCase().replace(/[^a-z0-9]+/g, '');
+          return n.includes(token) && /\.(png|webp|jpg|jpeg)$/i.test(f)
+            && !/credits|renown|beta|newesticon|portrait|operator.?card|elite|IconN|Full[ _-]?Body|Profile\.png|turn-around/i.test(f);
+        }) || null;
       }
+    }
+    if (gadgetFile && iconFile && gadgetFile === iconFile) {
+      console.warn(`sync-r6: gadget==icon for ${baseName}, dropping gadget icon`);
+      gadgetFile = null;
     }
     op.gadgetIcon = local(`r6_images/gadgets/${op.id}.png`, gadgetFile, null);
     op.weapons = [];
@@ -495,11 +568,28 @@ async function main() {
   });
   console.log(`sync-r6: thumbs=${maps.filter((m) => m.thumb).length}/${maps.length}`);
 
+  console.log('sync-r6: resolving season covers...');
+  seasons.forEach((season) => {
+    season.cover = local(`r6_images/seasons/${season.id}.png`, season.coverFile, 800);
+    delete season.coverFile;
+  });
+  console.log(`sync-r6: covers=${seasons.filter((s) => s.cover).length}/${seasons.length}`);
+
   const seasonByName = new Map(seasons.map((s) => [s.name.replace(/^Operation /, ''), s]));
+  const rosterNames = new Set(operators.map((op) => op.name));
   operators.forEach((op) => {
     const key = op.season.replace(/^Operation /, '');
     const season = seasonByName.get(key) || seasons.find((s) => s.name.endsWith(key));
     if (season && !season.operators.includes(op.name)) season.operators.push(op.name);
+  });
+  // Alarm: season infobox names an operator the roster sync dropped.
+  seasons.forEach((season) => {
+    (season.seasonOperators || []).forEach((name) => {
+      const base = name.replace(/ \(.*\)$/, '');
+      if (!rosterNames.has(name) && !rosterNames.has(base) && !/remaster|recruit|sentry|striker|assaulter|pointman|protector|breacher|trapper/i.test(name)) {
+        console.warn(`sync-r6: season ${season.code} names unrostered operator "${name}"`);
+      }
+    });
   });
   console.log(`sync-r6: seasons=${seasons.length}`);
 

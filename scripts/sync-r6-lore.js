@@ -262,7 +262,7 @@ async function main() {
   const catDef = await fandom({ action: 'query', list: 'categorymembers', cmtitle: 'Category:Defender', cmlimit: 500, cmtype: 'page' });
   const catMembers = [...catAtk.query.categorymembers, ...catDef.query.categorymembers];
   const catData = { query: { categorymembers: catMembers.length ? catMembers : (await fandom({ action: 'query', list: 'categorymembers', cmtitle: 'Category:Rainbow Operators', cmlimit: 500, cmtype: 'page' })).query.categorymembers } };
-  const JUNK = /\(Extraction\)|\(Novel\)|\(TV series\)|\(Disambig\)|\(Codex\)|Flubber|Breacher \(Operator\)|Assaulter|Bishop|Noor|Pointman|Protector|Recruit|Striker|Sentry|Solid Snake|Trapper|Bosak|Patcher|Reserves/i;
+  const JUNK = /\(Extraction\)|\(Novel\)|\(TV series\)|\(Disambig\)|\(Codex\)|Flubber|Breacher \(Operator\)|Assaulter|Bishop|Pointman|Protector|Recruit|Striker|Sentry|Trapper|Bosak|Patcher|Reserves/i;
   const titleByName = new Map();
   for (const m of catData.query.categorymembers) {
     if (JUNK.test(m.title)) continue;

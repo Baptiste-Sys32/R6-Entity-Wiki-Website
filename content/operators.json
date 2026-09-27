@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-26T09:41:45.326Z",
+  "generatedAt": "2026-09-27T16:07:14.848Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
       "license": "CC-BY-SA (Fandom contributors)"
     },
-    "count": 74
+    "count": 76
   },
   "operators": [
     {
@@ -260,7 +260,7 @@
       "armor": 1,
       "speed": 3,
       "icon": "r6_images/operators/icons/r6-capit-o.png",
-      "hero": "r6_images/operators/heroes/r6-capit-o.png",
+      "hero": null,
       "gadgetIcon": "r6_images/gadgets/r6-capit-o.png",
       "weapons": [
         {
@@ -318,7 +318,7 @@
       "quote": "There's no hiding. Not for you, not for me. Try not to disappoint me, soldier.",
       "armor": 2,
       "speed": 2,
-      "icon": "r6_images/operators/icons/r6-deimos.png",
+      "icon": null,
       "hero": "r6_images/operators/heroes/r6-deimos.png",
       "gadgetIcon": "r6_images/gadgets/r6-deimos.png",
       "weapons": [
@@ -1143,6 +1143,51 @@
       ]
     },
     {
+      "id": "r6-solid-snake",
+      "name": "Solid Snake",
+      "side": "Attacker",
+      "squad": "Rainbow",
+      "season": "Operation Silent Hunt",
+      "role": "Intel, Front Line",
+      "gadget": "Soliton Radar MKIII",
+      "ability": "David, codenamed Solid Snake, is a former spy, special operations soldier, and mercenary.",
+      "realname": "David \n||position = Attacker",
+      "quote": "It's easy to forget what a sin is in the middle of a battlefield.",
+      "armor": 1,
+      "speed": 3,
+      "crossover": true,
+      "icon": "r6_images/operators/icons/r6-solid-snake.png",
+      "hero": "r6_images/operators/heroes/r6-solid-snake.png",
+      "gadgetIcon": "r6_images/gadgets/r6-solid-snake.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Breach Charge/Siege",
+          "image": "r6_images/weapons/r6-solid-snake-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Smoke Grenade",
+          "image": "r6_images/weapons/r6-solid-snake-2.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Impact EMP Grenade",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "Stun Grenade/Siege",
+          "image": null
+        },
+        {
+          "slot": "gadget",
+          "name": "M67/Siege",
+          "image": "r6_images/weapons/r6-solid-snake-5.png"
+        }
+      ]
+    },
+    {
       "id": "r6-thatcher",
       "name": "Thatcher",
       "side": "Attacker",
@@ -1507,7 +1552,7 @@
       "armor": 1,
       "speed": 3,
       "icon": "r6_images/operators/icons/r6-bandit.png",
-      "hero": "r6_images/operators/heroes/r6-bandit.png",
+      "hero": null,
       "gadgetIcon": "r6_images/gadgets/r6-bandit.png",
       "weapons": [
         {
@@ -2279,6 +2324,35 @@
       ]
     },
     {
+      "id": "r6-noor",
+      "name": "Noor",
+      "side": "Defender",
+      "squad": "Unit 777",
+      "season": "Operation Split Fire",
+      "role": "",
+      "gadget": "Horus Lance Launcher x5",
+      "ability": "Noor is a 2-Health, 2-Speed Defending Operator, and his gadget is the Horus Lance Launcher.",
+      "realname": "Ahmed Murad",
+      "quote": "كله تمام (It's all good). No shield holds forever.",
+      "armor": 2,
+      "speed": 2,
+      "icon": "r6_images/operators/icons/r6-noor.png",
+      "hero": "r6_images/operators/heroes/r6-noor.png",
+      "gadgetIcon": "r6_images/gadgets/r6-noor.png",
+      "weapons": [
+        {
+          "slot": "gadget",
+          "name": "Deployable Shield",
+          "image": "r6_images/weapons/r6-noor-1.png"
+        },
+        {
+          "slot": "gadget",
+          "name": "Barbed Wire",
+          "image": "r6_images/weapons/r6-noor-2.png"
+        }
+      ]
+    },
+    {
       "id": "r6-oryx",
       "name": "Oryx",
       "side": "Defender",
@@ -2372,7 +2446,7 @@
       "quote": "I was an apex killer, fueled by instinct and adrenaline. Times change though, and so have I. Now I'm twice as dangerous.",
       "armor": 2,
       "speed": 2,
-      "icon": "r6_images/operators/icons/r6-skop-s.png",
+      "icon": null,
       "hero": "r6_images/operators/heroes/r6-skop-s.png",
       "gadgetIcon": "r6_images/gadgets/r6-skop-s.png",
       "weapons": [
@@ -2565,7 +2639,7 @@
       "quote": "In combat, every second counts, and time waits for no one. Unless... you can slow things down.",
       "armor": 2,
       "speed": 2,
-      "icon": "r6_images/operators/icons/r6-tubar-o.png",
+      "icon": null,
       "hero": null,
       "gadgetIcon": "r6_images/gadgets/r6-tubar-o.png",
       "weapons": [
@@ -2640,7 +2714,7 @@
       "speed": 3,
       "icon": "r6_images/operators/icons/r6-vigil.png",
       "hero": "r6_images/operators/heroes/r6-vigil.png",
-      "gadgetIcon": "r6_images/gadgets/r6-vigil.png",
+      "gadgetIcon": null,
       "weapons": [
         {
           "slot": "gadget",

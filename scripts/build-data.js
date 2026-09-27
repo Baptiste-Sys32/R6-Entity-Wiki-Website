@@ -69,7 +69,7 @@ function validateSeasons(seasons, operatorNames) {
   });
 }
 
-function validateImagePaths(operators, maps) {
+function validateImagePaths(operators, maps, seasons) {
   const missing = [];
   const check = (rel, owner) => {
     if (!rel) return;
@@ -90,6 +90,7 @@ function validateImagePaths(operators, maps) {
       else check(l.image, `map ${m.id} layout ${l.label}`);
     });
   });
+  (seasons || []).forEach((s) => check(s.cover, `season ${s.id} cover`));
   if (missing.length) {
     console.error(`build-data: ${missing.length} image issues:\n- ${missing.slice(0, 20).join('\n- ')}${missing.length > 20 ? `\n... and ${missing.length - 20} more` : ''}`);
     process.exit(1);
@@ -191,7 +192,7 @@ function main() {
   validateLore(lore.entries || {}, operatorIds);
   validateWeapons(weapons, new Set(operators.flatMap((op) => (op.weapons || []).filter((w) => w.slot !== 'gadget').map((w) => w.name))));
   validateAttachments(attachments);
-  validateImagePaths(operators, maps);
+  validateImagePaths(operators, maps, seasons);
   const payload = { operators, maps, seasons };
   const output = `var R6_DATABASE = ${JSON.stringify(payload)};\n`;
   const loreOutput = `var R6_LORE = ${JSON.stringify(lore.entries || {})};\n`;

@@ -96,11 +96,17 @@ function parseWeapon(title, wt) {
     }
   }
   const pros = (siege.match(/====Pros====([\s\S]*?)====Cons====/) || [])[1] || '';
-  const cons = (siege.match(/====Cons====([\s\S]*?)(?===Weapon Attachments===|\{\{WeaponAttachments|\{\{Weapons\/Siege)/) || [])[1] || '';
+  const cons = (siege.match(/====Cons====([\s\S]*?)(?====(?:Weapon Attachments|Attachments|Situations)===|\{\{WeaponAttachments|\{\{Weapons\/Siege)/) || [])[1] || '';
   const bullets = (t) => t.split('\n').map((l) => strip(l.replace(/^\*\s*/, ''))).filter((l) => l.length > 3).slice(0, 8);
-  const users = d('users').split(/,|<br/i).map((u) => strip(u)).filter(Boolean).slice(0, 6);
+  const usersRaw = field(siege, 'users');
+  const users = [...new Set(
+    usersRaw.split(/<br[^>]*>|\n|,/)
+      .flatMap((part) => part.split(/(?<=\w)\s*\/\s*(?=\w)/))
+      .map((u) => strip(u).replace(/\s*\(.*?\)\s*/g, '').trim())
+      .filter((u) => u && !/recruit/i.test(u))
+  )].slice(0, 8);
   return {
-    name: d('name') || title,
+    name: (() => { const n = d('name'); return n && !/[{}]/.test(n) && n.length <= 60 ? n : title; })(),
     type: d('type'),
     fire: d('fire'),
     damage: damage && damage.base !== undefined ? damage.base : (damage ? damage.close.dmg : null),
