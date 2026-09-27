@@ -94,7 +94,12 @@ Worldle (L) → Build Lab (L) → Community hub (M).
 sync → `build-data --check` → `build-sitemap --check` → smoke scenarios →
 screenshot pairs vs DBD rhythm → push. CC-BY-SA + non-affiliation footer.
 
-## 5. Risks
+## 5. Deploy (DEFERRED)
+
+Cloudflare Pages deploy happens only when the wiki is actually done.
+Do not propose it as a next step before then.
+
+## 6. Risks
 
 - Fandom patch-day staleness → patch-history cross-checks + `lastSynced`.
 - Recoil numerics need testing, not scraping.
