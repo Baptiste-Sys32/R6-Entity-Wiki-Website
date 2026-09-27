@@ -99,7 +99,19 @@ screenshot pairs vs DBD rhythm → push. CC-BY-SA + non-affiliation footer.
 Cloudflare Pages deploy happens only when the wiki is actually done.
 Do not propose it as a next step before then.
 
-## 6. Risks
+## 6. Icon follow-ups (revisit later)
+
+- **No icon file exists upstream** (honest SVG fallback today): Deimos,
+  Skopós, Tubarão. Recheck the wiki periodically — if portrait/icon
+  files appear, the name-anchored picker + staleness detector will pick
+  them up on the next sync with no code changes.
+- **Stuck on legacy icons** (no `IconN`/`NewestIcon` variant exists upstream,
+  verified 2026-09-27): Buck (`Buck Icon.png`), Frost (`Frost Icon.png`),
+  Tachanka. Same deal — recheck on resync; adopt automatically if added.
+- Do NOT paper over these with gadget faces or currency icons — null beats
+  wrong (enforced by picker denylist + `gadget != icon` assertion).
+
+## 7. Risks
 
 - Fandom patch-day staleness → patch-history cross-checks + `lastSynced`.
 - Recoil numerics need testing, not scraping.
