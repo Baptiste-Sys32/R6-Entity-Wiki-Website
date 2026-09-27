@@ -2608,6 +2608,86 @@
     "r6_images/seasons/r6-year-eleven-season-four.png": {
       "file": "R6logo.jpeg",
       "width": 800
+    },
+    "r6_images/gadgets/claymore.png": {
+      "file": "R6S Claymore.png",
+      "width": 320
+    },
+    "r6_images/gadgets/claymore-hud.png": {
+      "file": "Claymore HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/gadgets/breach-charge.png": {
+      "file": "R6S Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/gadgets/hard-breach-charge.png": {
+      "file": "R6S Hard Breach Charge.png",
+      "width": 320
+    },
+    "r6_images/gadgets/smoke-grenade.png": {
+      "file": "R6S Smoke Grenade.png",
+      "width": 320
+    },
+    "r6_images/gadgets/stun-grenade.png": {
+      "file": "Stun-grenade-image.jpg",
+      "width": 320
+    },
+    "r6_images/gadgets/frag-grenade.png": {
+      "file": "R6S Frag Grenade.png",
+      "width": 320
+    },
+    "r6_images/gadgets/frag-grenade-hud.png": {
+      "file": "Frag Grenade HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/gadgets/deployable-shield.png": {
+      "file": "R6S Deployable Shield v2.png",
+      "width": 320
+    },
+    "r6_images/gadgets/deployable-shield-hud.png": {
+      "file": "DEPLOYABLE SHIELD HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/gadgets/observation-blocker.png": {
+      "file": "R6S Observation Blocker.png",
+      "width": 320
+    },
+    "r6_images/gadgets/barbed-wire.png": {
+      "file": "R6S Barbed Wire.png",
+      "width": 320
+    },
+    "r6_images/gadgets/barbed-wire-hud.png": {
+      "file": "BARBED WIRE HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/gadgets/bulletproof-camera.png": {
+      "file": "R6S Bulletproof Camera.png",
+      "width": 320
+    },
+    "r6_images/gadgets/impact-grenade.png": {
+      "file": "R6S Impact Grenade.png",
+      "width": 320
+    },
+    "r6_images/gadgets/proximity-alarm.png": {
+      "file": "Proximity Alarm 3.jpeg",
+      "width": 320
+    },
+    "r6_images/gadgets/nitro-cell.png": {
+      "file": "R6S Nitro Cell.png",
+      "width": 320
+    },
+    "r6_images/gadgets/gonne-6.png": {
+      "file": "R6S_GONNE-6.png",
+      "width": 320
+    },
+    "r6_images/gadgets/gonne-6-hud.png": {
+      "file": "GONNE-6 HUD Icon.png",
+      "width": 200
+    },
+    "r6_images/gadgets/emp-grenade.png": {
+      "file": "EMP Grenade 2.png",
+      "width": 320
     }
   }
 }

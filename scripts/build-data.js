@@ -13,9 +13,11 @@ const SEASONS_PATH = path.join(ROOT, 'content', 'seasons.json');
 const LORE_PATH = path.join(ROOT, 'content', 'lore.json');
 const WEAPONS_PATH = path.join(ROOT, 'content', 'weapons.json');
 const ATTACHMENTS_PATH = path.join(ROOT, 'content', 'attachments.json');
+const GADGETS_PATH = path.join(ROOT, 'content', 'gadgets.json');
 const DATA_PATH = path.join(ROOT, 'web', 'data.js');
 const LORE_BUNDLE_PATH = path.join(ROOT, 'web', 'lore.js');
 const WEAPONS_BUNDLE_PATH = path.join(ROOT, 'web', 'weapons.js');
+const GADGETS_BUNDLE_PATH = path.join(ROOT, 'web', 'gadgets.js');
 
 const checkOnly = new Set(process.argv.slice(2)).has('--check');
 
@@ -69,7 +71,7 @@ function validateSeasons(seasons, operatorNames) {
   });
 }
 
-function validateImagePaths(operators, maps, seasons) {
+function validateImagePaths(operators, maps, seasons, gadgets) {
   const missing = [];
   const check = (rel, owner) => {
     if (!rel) return;
@@ -95,6 +97,10 @@ function validateImagePaths(operators, maps, seasons) {
     });
   });
   (seasons || []).forEach((s) => check(s.cover, `season ${s.id} cover`));
+  (gadgets || []).forEach((g) => {
+    check(g.image, `gadget ${g.id} art`);
+    check(g.hud, `gadget ${g.id} hud`);
+  });
   if (missing.length) {
     console.error(`build-data: ${missing.length} image issues:\n- ${missing.slice(0, 20).join('\n- ')}${missing.length > 20 ? `\n... and ${missing.length - 20} more` : ''}`);
     process.exit(1);
@@ -154,6 +160,33 @@ function validateLore(entries, operatorIds) {
   console.log(`build-data: lore ok (filled=${filled}/${operatorIds.length}).`);
 }
 
+function validateGadgets(gadgets, operators, normalize) {
+  const seen = new Set();
+  gadgets.forEach((g, index) => {
+    const label = `gadget #${index + 1} (${g.id || '?'})`;
+    if (!g || typeof g !== 'object') throw new Error(`${label} is not an object`);
+    for (const key of ['id', 'name', 'page']) {
+      if (typeof g[key] !== 'string' || !g[key]) throw new Error(`${label} is missing ${key}`);
+    }
+    if (!Array.isArray(g.users)) throw new Error(`${label} users not an array`);
+    if (seen.has(g.id)) throw new Error(`duplicate gadget ${g.id}`);
+    seen.add(g.id);
+  });
+  const byId = new Set(gadgets.map((g) => g.id));
+  const unmapped = new Set();
+  operators.forEach((op) => {
+    (op.weapons || []).forEach((w) => {
+      if (w.slot !== 'gadget') return;
+      if (!normalize[w.name] || !byId.has(normalize[w.name])) unmapped.add(`${op.name}: ${w.name}`);
+    });
+  });
+  if (unmapped.size) {
+    console.error(`build-data: ${unmapped.size} loadout gadgets without canonical id:\n- ${[...unmapped].slice(0, 20).join('\n- ')}`);
+    process.exit(1);
+  }
+  console.log(`build-data: gadgets ok (${gadgets.length}).`);
+}
+
 function validateWeapons(weapons, loadoutNames) {
   const seen = new Set();
   weapons.forEach((w, index) => {
@@ -198,6 +231,9 @@ function main() {
   const weapons = weaponsDoc.weapons;
   const attachmentsDoc = readJson(ATTACHMENTS_PATH);
   const attachments = attachmentsDoc.attachments;
+  const gadgetsDoc = readJson(GADGETS_PATH);
+  const gadgets = gadgetsDoc.gadgets;
+  const gadgetNormalize = gadgetsDoc.normalize || {};
   const operatorIds = operators.map((op) => op.id);
   validateOperators(operators);
   validateMaps(maps);
@@ -205,9 +241,18 @@ function main() {
   validateLore(lore.entries || {}, operatorIds);
   validateWeapons(weapons, new Set(operators.flatMap((op) => (op.weapons || []).filter((w) => w.slot !== 'gadget').map((w) => w.name))));
   validateAttachments(attachments);
-  validateImagePaths(operators, maps, seasons);
+  validateGadgets(gadgets, operators, gadgetNormalize);
+  validateImagePaths(operators, maps, seasons, gadgets);
   const payload = { operators, maps, seasons };
-  const output = `var R6_DATABASE = ${JSON.stringify(payload)};\n`;
+  // Attach canonical gadget ids to loadout secondary entries (single source:
+  // content/gadgets.json normalize map). Raw display names stay in operators.json.
+  const emittedOperators = operators.map((op) => ({
+    ...op,
+    weapons: (op.weapons || []).map((w) => (w.slot === 'gadget' && gadgetNormalize[w.name]
+      ? { ...w, gadgetId: gadgetNormalize[w.name] } : w)),
+  }));
+  const payloadOut = { operators: emittedOperators, maps, seasons };
+  const output = `var R6_DATABASE = ${JSON.stringify(payloadOut)};\n`;
   const loreOutput = `var R6_LORE = ${JSON.stringify(lore.entries || {})};\n`;
   const norm2 = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '');
   const byNorm = {};
@@ -217,6 +262,7 @@ function main() {
   });
   if (byNorm[norm2('M1014')]) byNorm[norm2('Super 90')] = byNorm[norm2('M1014')];
   const weaponsOutput = `var R6_WEAPONS = ${JSON.stringify({ weapons, attachments, aliases: byNorm })};\n`;
+  const gadgetsOutput = `var R6_GADGETS = ${JSON.stringify({ gadgets })};\n`;
   if (checkOnly) {
     const current = fs.existsSync(DATA_PATH) ? fs.readFileSync(DATA_PATH, 'utf8') : '';
     if (current !== output) {
@@ -233,12 +279,18 @@ function main() {
       console.error('build-data: web/weapons.js is stale, run node scripts/build-data.js');
       process.exit(1);
     }
+    const currentGadgets = fs.existsSync(GADGETS_BUNDLE_PATH) ? fs.readFileSync(GADGETS_BUNDLE_PATH, 'utf8') : '';
+    if (currentGadgets !== gadgetsOutput) {
+      console.error('build-data: web/gadgets.js is stale, run node scripts/build-data.js');
+      process.exit(1);
+    }
     console.log(`build-data: data fresh (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
     return;
   }
   fs.writeFileSync(DATA_PATH, output);
   fs.writeFileSync(LORE_BUNDLE_PATH, loreOutput);
   fs.writeFileSync(WEAPONS_BUNDLE_PATH, weaponsOutput);
+  fs.writeFileSync(GADGETS_BUNDLE_PATH, gadgetsOutput);
   console.log(`build-data: wrote web/data.js (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
   console.log(`build-data: wrote web/lore.js.`);
 }

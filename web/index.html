@@ -112,6 +112,7 @@
   <script src="data.js" onerror="window.__r6DataScriptError('data.js')"></script>
   <script src="lore.js" onerror="window.__r6DataScriptError('lore.js')"></script>
   <script src="weapons.js" onerror="window.__r6DataScriptError('weapons.js')"></script>
+  <script src="gadgets.js" onerror="window.__r6DataScriptError('gadgets.js')"></script>
   <script>
     (() => {
       const LAUNCH_TIPS = [
@@ -172,6 +173,9 @@
     const ATTACHMENTS = WEAPON_STORE.attachments || [];
     const WEAPON_ALIASES = WEAPON_STORE.aliases || {};
     const weaponsByName = new Map(WEAPONS.map((w) => [w.name, w]));
+    const GADGET_STORE = (typeof R6_GADGETS !== 'undefined' && R6_GADGETS) || { gadgets: [] };
+    const GADGETS = GADGET_STORE.gadgets || [];
+    const gadgetsById = new Map(GADGETS.map((g) => [g.id, g]));
     const normWeaponKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const resolveWeapon = (name) => {
       if (!name) return null;
@@ -459,9 +463,15 @@
                     <h3 className="cx-sub">{label}</h3>
                     {items.map((w, i) => (
                       <div key={`${w.name}-${i}`} className="flex items-center gap-3 rounded-2xl p-2.5 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                        {slot === 'gadget' ? null : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={w.image ? `./${w.image}` : null} /></span>}
+                        {slot === 'gadget' ? (
+                          w.gadgetId && gadgetsById.get(w.gadgetId) && gadgetsById.get(w.gadgetId).image ? (
+                            <span className="sq-img"><AssetFrame type="Gadget" imageUrl={`./${gadgetsById.get(w.gadgetId).image}`} /></span>
+                          ) : null
+                        ) : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={w.image ? `./${w.image}` : null} /></span>}
                         <span className="min-w-0 flex-1">
-                          {slot === 'gadget' || !resolveWeapon(w.name) ? (
+                          {slot === 'gadget' && w.gadgetId && gadgetsById.get(w.gadgetId) ? (
+                            <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('gadget', { id: w.gadgetId })}>{w.name}</button>
+                          ) : slot === 'gadget' || !resolveWeapon(w.name) ? (
                             <span className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{w.name}</span>
                           ) : (
                             <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('weapon', { id: resolveWeapon(w.name).name })}>{w.name}</button>
@@ -539,10 +549,53 @@
           </WikiHeaderSearchPortal>
           <Group title="Attacker gadgets" items={attackers} color={SIDE_COLOR.Attacker} />
           <Group title="Defender gadgets" items={defenders} color={SIDE_COLOR.Defender} />
+          <h2 className="cx-h2">Secondary gadgets</h2>
+          <table className="cx-wikitable"><thead><tr><th></th><th>Gadget</th><th>Ammo</th></tr></thead>
+            <tbody>{GADGETS.filter((g) => !query || (g.name + ' ' + (g.type || '')).toLowerCase().includes(query)).map((g) => (
+              <tr key={g.id}><td><span className="sq-img"><AssetFrame type="Gadget" imageUrl={g.image ? `./${g.image}` : null} /></span></td>
+                <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('gadget', { id: g.id })}>{g.name}</button></td>
+                <td>{g.maxammo || '—'}</td></tr>
+            ))}</tbody></table>
         </div>
       );
     };
 
+    const GadgetArticle = ({ id, setView }) => {
+      const gadget = gadgetsById.get(id);
+      if (!gadget) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown gadget.</p></div>;
+      const users = (gadget.users || []).map((name) => OPERATORS.find((o) => o.name === name)
+        || OPERATORS.find((o) => normOpName(o.name) === normOpName(name))).filter(Boolean);
+      return (
+        <ArticleShell
+          crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Gadgets', onClick: () => setView('gadgets') }, { label: gadget.name }]}
+          title={gadget.name}
+          lead={<p>{(gadget.text || '').split('\n\n')[0]}</p>}
+          toc={[{ id: 'details', label: 'Details' }, ...(users.length ? [{ id: 'users', label: 'Used by' }] : [])]}
+          categories={['Gadgets']}
+          infobox={{
+            title: gadget.name, sub: 'Gadget',
+            image: gadget.image ? `./${gadget.image}` : null, imageAlt: gadget.name, imageType: 'Gadget',
+            rows: [
+              ...(gadget.maxammo ? [{ label: 'Ammo', value: gadget.maxammo }] : []),
+              { label: 'Users', value: users.length ? `${users.length} operators` : '—' },
+            ],
+          }}
+        >
+          <CxSection id="details" title="Details">
+            {(gadget.text || '').split('\n\n').slice(1).map((para, i) => <p key={i}>{para}</p>)}
+          </CxSection>
+          {users.length ? (
+            <CxSection id="users" title="Used by">
+              <div className="flex flex-wrap gap-2">
+                {users.map((op) => (
+                  <button key={op.id} type="button" onClick={() => setView('operator', { id: op.id })} className="cx-chip">{op.name}</button>
+                ))}
+              </div>
+            </CxSection>
+          ) : null}
+        </ArticleShell>
+      );
+    };
     const WeaponArticle = ({ id, setView }) => {
       const weapon = weaponsByName.get(id) || resolveWeapon(id);
       if (!weapon) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown weapon.</p></div>;
@@ -1301,6 +1354,10 @@
               const w = weaponsByName.get(id) || resolveWeapon(id);
               if (w && w.name) entry = w;
             }
+            if (!entry && currentView === 'gadget' && id) {
+              const g = gadgetsById.get(id);
+              if (g && g.name) entry = g;
+            }
             if (entry && entry.name) title = `${entry.name}${suffix}`;
             else if (viewLabels[currentView]) title = `${viewLabels[currentView]}${suffix}`;
           } else if (viewLabels[currentView]) {
@@ -1392,6 +1449,7 @@
           case 'operators': return <OperatorsView setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} />;
           case 'operator': return <OperatorArticle id={id} setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} note={getEntityNote('operator', id)} onNoteChange={(v) => setEntityNote('operator', id, v)} />;
           case 'gadgets': return <GadgetsView setView={setView} />;
+          case 'gadget': return <GadgetArticle id={id} setView={setView} />;
           case 'weapon': return <WeaponArticle id={id} setView={setView} />;
           case 'attachments': return <AttachmentsView setView={setView} />;
           case 'maps': return <MapsView setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} />;

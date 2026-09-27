@@ -87,13 +87,13 @@
     const getRarityOrder = (r) => 0;
     const getRarityColor = (rarity) => 'var(--rar-common)';
     const formatRarity = (rarity) => String(rarity || '');
-    const ARTICLE_VIEWS = ['operator', 'map', 'season', 'weapon', 'attachments'];
+    const ARTICLE_VIEWS = ['operator', 'map', 'season', 'weapon', 'attachments', 'gadget'];
     const resolveCharacterView = (entity) => 'operator';
     const SEO_SUFFIX = " - R6 Wiki";
     const SEO_DEFAULT_TITLE = "R6 Wiki - Rainbow Six Siege Database";
     const SEO_SITE_BASE = 'https://r6-siege-wiki.pages.dev';
     const SEO_VIEW_LABELS = {
-      operators: 'Operators', operator: 'Operators', gadgets: 'Gadgets', maps: 'Maps', map: 'Maps',
+      operators: 'Operators', operator: 'Operators', gadgets: 'Gadgets', gadget: 'Gadgets', maps: 'Maps', map: 'Maps',
       seasons: 'Seasons', season: 'Seasons', weapon: 'Weapons', attachments: 'Attachments', settings: 'Settings', favorites: 'Favorites'
     };
     const DEFAULT_IMAGES = {

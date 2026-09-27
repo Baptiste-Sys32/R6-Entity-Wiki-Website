@@ -66,7 +66,8 @@ function revisionOf(url, file) {
 
 async function main() {
   const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')).images;
-  const state = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, 'utf8')) : {};
+  const stateFile = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, 'utf8')) : {};
+  const state = stateFile.files || {};
   const entries = Object.entries(manifest);
   console.log(`sync-r6-images: ${entries.length} files`);
   let done = 0, skipped = 0, refreshed = 0, bytes = 0;
