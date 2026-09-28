@@ -140,9 +140,10 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   Knock-ons fixed in the same pass: `{{WeaponTTK}}`/single-range damage
   format (Tacit .45), shared-page alias merging (M249 SAW, AUG A3, Luison,
   9x19VSN), shield exclusions from the stats warning. Weapons 63→106.
+- **Weapon TTK (computed locally, 2026-09-28)**: wiki rows (13/62) are
   kept as reference; `ttkComputed` precomputed locally (100/110/125 HP,
-  close-range, full-auto ROF; pellet shotguns excluded) — 36/39 wiki rows
-  match within 100ms, 3 armor3 drifts logged (5.7 USG, PRB92, PMM).
+  close-range, full-auto ROF; pellet shotguns excluded) — 54 wiki rows
+  cross-checked, 4 armor drifts logged (5.7 USG, PRB92, PMM, 1911 TACOPS).
   Static JSON ships; zero client-side math.
 - **Weapon alias poisoning (fixed 2026-09-28)**: search fallback adopted
   unrelated pages (GONNE-6 merged as POF-9 alias — Amaru showed POF-9
@@ -160,10 +161,11 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   (name-token + `<year>.<season>` version rule); roster cross-check clean
   (diffs are Recruit variants + Warden naming).
 
-Stale-meta hygiene (fix when touching nearby code, not urgent):
+Stale-meta hygiene (all resolved — section kept for history):
 
-- `README` still says 72 operators (actual 76); `META.gameVersion: Y8S4`
-  vs Y11 content; `PROGRESSION_TABS=[]`.
+- ~~`README` still says 72 operators~~ → fixed 2026-09-28 (76 + full counts).
+- ~~`META.gameVersion: Y8S4`~~ → fixed 2026-09-28 (`Y11S3`, live season).
+- `PROGRESSION_TABS=[]` — still empty; feeds the deferred Progression hub (§3).
 
 ## 8. Risks
 
