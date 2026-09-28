@@ -630,8 +630,10 @@
       const users = (weapon.users || []).map((name) => OPERATORS.find((o) => o.name === name)
         || OPERATORS.find((o) => normOpName(o.name) === normOpName(name))).filter(Boolean);
       const attachNames = Object.keys(weapon.attachments || {}).filter((k) => weapon.attachments[k]);
+      const weaponKeys = new Set([weapon.name, ...((weapon.aliases || []))].map((n) => normWeaponKey(n)));
+      const compatAttach = ATTACHMENTS.filter((a) => (a.compat || []).some((c) => weaponKeys.has(normWeaponKey(c))));
       const toc = [{ id: 'stats', label: 'Stats' }];
-      if (attachNames.length) toc.push({ id: 'attachments', label: 'Attachments' });
+      if (attachNames.length || compatAttach.length) toc.push({ id: 'attachments', label: 'Attachments' });
       if ((weapon.pros || []).length) toc.push({ id: 'notes', label: 'Notes' });
       return (
         <ArticleShell
@@ -664,13 +666,23 @@
                 </tbody></table>
             ) : null}
           </CxSection>
-          {attachNames.length ? (
+          {attachNames.length || compatAttach.length ? (
             <CxSection id="attachments" title="Attachments">
-              <div className="flex flex-wrap gap-2">
-                {attachNames.map((key) => (
-                  <button key={key} type="button" onClick={() => setView('attachments')} className="cx-chip">{key.replace(/_/g, ' ')}</button>
-                ))}
-              </div>
+              {compatAttach.length ? (
+                <table className="cx-wikitable"><thead><tr><th></th><th>Attachment</th><th>Type</th></tr></thead>
+                  <tbody>{compatAttach.map((a) => (
+                    <tr key={a.id}><td><span className="sq-img"><AssetFrame type="Gadget" imageUrl={a.image ? `./${a.image}` : null} /></span></td>
+                      <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('attachments')}>{a.name}</button></td>
+                      <td>{a.type || '—'}</td></tr>
+                  ))}</tbody></table>
+              ) : null}
+              {attachNames.length ? (
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {attachNames.map((key) => (
+                    <button key={key} type="button" onClick={() => setView('attachments')} className="cx-chip">{key.replace(/_/g, ' ')}</button>
+                  ))}
+                </div>
+              ) : null}
             </CxSection>
           ) : null}
           {(weapon.pros || []).length || (weapon.cons || []).length ? (

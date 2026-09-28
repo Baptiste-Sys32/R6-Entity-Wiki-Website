@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T08:35:33.721Z",
+  "generatedAt": "2026-09-28T09:08:13.636Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
@@ -53,7 +53,7 @@
     },
     {
       "name": "Angled Grip",
-      "type": "Grip}}",
+      "type": "Grip",
       "effect": "The Angled Grip is a weapon attachment featured in Tom Clancy's Rainbow Six Siege.\n\nThe Angled Grip decreases (by 32%) the time to change from hip fire into ADS (Aiming Down the Sight), especially during the sprint animation. It is extremely useful for players that engage enemies in close-quarter firefights. However, it doesn't improve recoil control, unlike its vertical counterpart.",
       "compat": [
         "AR33",
@@ -99,7 +99,7 @@
     },
     {
       "name": "Compensator",
-      "type": "Barrel}}",
+      "type": "Barrel",
       "effect": "The Compensator is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It reduces the horizontal recoil by 35%.\n\nThe Recoil Diamond is the individual points of a recoil pattern when aiming down sight, reducing the randomization of bullet patterns during muzzle climb. The shape of the muzzle climb differs between guns, some being taller, others wider, therefore a reduction of the diamond makes the climb straighter and more predictable.\n\nThis attachment is best used for weapons with inherently low vertical recoil, and are used for close to medium range combat.",
       "compat": [
         "AR33",
@@ -154,7 +154,7 @@
     },
     {
       "name": "Extended Barrel",
-      "type": "Barrel}}",
+      "type": "Barrel",
       "effect": "The Extended Barrel is a weapon attachment featured in Tom Clancy's Rainbow Six Siege.\n\n===Overview=== Contrary to the in-game description, the damage drop-off for any weapon that has the Extended Barrel attached starts at the exact same distance. This means that the Extended Barrel does not provide full power over a greater distance. Instead, damage drop-off is reduced by 15-20%.\n\nWhile the Extended Barrel has no discernable effect on recoil, equipping it does involve missing out on other potentially recoil-reducing attachments. Because most gunfights occur in short-to-medium range, the usefulness of the Extended Barrel is rather questionable in most situations. In addition, the attachment increases the physical length of the weapon considerably, making it easier for enemies to spot the operator when peeking around a corner.",
       "compat": [
         "Bearing 9",
@@ -167,7 +167,7 @@
     },
     {
       "name": "Flash Hider",
-      "type": "Barrel}}",
+      "type": "Barrel",
       "effect": "The Flash Hider is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It hides the muzzle flash of weapons so the enemy may take longer to notice where the shot come from. Every time the weapon starts firing, it slightly reduces the vertical recoil and greatly reduces the horizontal recoil for the first 3 shots. Internally, the Flash Hider reduces first shot vertical recoil by approximately 13% and overall vertical recoil by approximately 15%.\n\nUnlike the Muzzle Brake which only reduces first shot vertical recoil, the Flash Hider's effects will last throughout the entire spray, much like the Vertical Grip. This means that the Flash Hider is most effective when used on fully-automatic weapons.",
       "compat": [
         "L85",
@@ -231,7 +231,7 @@
     },
     {
       "name": "Flashlight",
-      "type": "Under Barrel}}",
+      "type": "Under Barrel",
       "effect": "Barrel The Flashlight is a weapon attachment in Tom Clancy's Rainbow Six Siege that was featured in the Outbreak event.\n\nThe attachment was available by default on all available weapons in the event. It allowed players the option to turn it on or off. This gave players increased visibility or discretion against enemies.\n\nSiege Flashlight 1.jpeg Siege Flashlight 2.jpeg Siege Flashlight 3.jpeg Siege Flashlight 4.jpeg Siege Flashlight 5.jpeg",
       "compat": [],
       "id": "r6-attach-flashlight",
@@ -247,7 +247,7 @@
     },
     {
       "name": "Laser",
-      "type": "Under Barrel}}",
+      "type": "Under Barrel",
       "effect": "Barrel The Laser is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It tightens a weapon's hip fire accuracy and a shotgun pellet's spread by 25%, though it can also reveal a player's position if the red dot emitted from the light is noticed by the opposing team.\n\nThe laser originally created a faint but visible red laser beam, making it relatively easy to deduce the player's location once a laser is spotted. However, the laser was changed to only leave a red laser dot at the surface it is aiming at instead, which made spotting the dot and deducing the player's location more difficult.\n\nWhen aiming down sight, the laser dot disappears from the user's perspective. However, it will remain visible to other players.",
       "compat": [],
       "id": "r6-attach-laser-sight",
@@ -255,7 +255,7 @@
     },
     {
       "name": "Muzzle Brake",
-      "type": "Barrel}}",
+      "type": "Barrel",
       "effect": "The Muzzle Brake is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It greatly reduces the vertical recoil and does not change a weapons horizontal recoil similar to the Compensator and Flash Hider.\n\nThe Muzzle Brake reduces the recoil of the first shot by 45%, along with a 45% reduction for the re-centering time after shots.\n\nRe-centering time refers to the time it takes for the crosshair to returned to the point at which the player was initially aiming, after the weapon has kicked up due to recoil. Regardless of how far up the recoil has kicked the gun, be it one bullet or ten, this duration is fixed. Thus, the Muzzle Break reduces this time by 45%. Re-centering only takes place after the weapon has stopped firing.",
       "compat": [
         "AR33",
@@ -340,7 +340,7 @@
     },
     {
       "name": "Suppressor",
-      "type": "Barrel}}",
+      "type": "Barrel",
       "effect": "The Suppressor is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It greatly reduces the sound emitted from a weapon when fired. Due to the importance of listening to one's surroundings to determine the location of the enemy, the suppressor is extremely valuable in masking the player's location as a result. This can be useful in dispatching lone enemies in Training Grounds or multiplayer as well as destroying surveillance cameras.\n\nMissed bullets fired from a suppressed weapon do not trigger a white threat indicator, nor will they create smoke trails. If a shot lands on a target they will experience no indicators telling them where the shot came from. While a normal weapon can be heard from across the map in the open, a suppressed weapon can only be heard from 30 meters away. The Suppressor hides the muzzle flash of weapons better than a Flash Hider does, but cannot bring any recoil benefits.\n\nAlmost every in-game weapon can be equipped with a suppressor. However, there are exceptions.",
       "compat": [],
       "id": "r6-attach-suppressor",
@@ -348,7 +348,7 @@
     },
     {
       "name": "Vertical Grip",
-      "type": "Grip}}",
+      "type": "Grip",
       "effect": "The Vertical Grip is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It greatly increases the control a player has on a weapon's recoil as well as adding increased hip-fire accuracy. As such, it is extremely useful in allowing players to safely engage enemies more accurately from a distance.\n\nThe M762, BOSG.12.2, ALDA 5.56, M4, AR-15.50, SC3000K, UZK50GI have their unique variants of the vertical grip available. However, they are only visually different and posess the same properties. The G8A1 and the ALDA 5.56 have the vertical grip mounted on the side instead of the bottom.\n\n===Weapon Incompatibility=== {|class=\"mw-collapsible mw-collapsed article-table\" !colspan=\"2\"|Incompatibility List |- !Assault Rifles | *F2 *AUG A2 *C8-SFW |- !Submachine Guns | *FMG-9 *MP5K *P90 *MP7 |- !Shotguns | *M590A1 *M1014 *M870 *Super 90 *SPAS-12 *SPAS-15 *SuperNova *ITA12L *ITA12S *SIX12 *Super Shorty |- !Marksman Rifles | *OTs-03 *CSRX-300 |- !Light Machine Guns | *DP27 |- !Handguns | *All |- !Machine Pistols | *Bearing 9 *C75 Auto *SPSMG9 |}",
       "compat": [],
       "id": "r6-attach-vertical-grip",

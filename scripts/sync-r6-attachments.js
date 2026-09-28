@@ -65,7 +65,7 @@ function parseAttachment(title, wt) {
   const compat = [...compatRaw.matchAll(/\*\[\[([^#|\]]+)/g)].map((m) => m[1].replace(/_/g, ' ').trim()).filter(Boolean).slice(0, 60);
   return {
     name: strip(field('name')) || title,
-    type: strip(field('type')),
+    type: strip(field('type')).replace(/\}+$/g, '').trim(),
     imageFile,
     effect,
     compat,

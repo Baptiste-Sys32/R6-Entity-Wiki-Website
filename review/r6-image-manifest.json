@@ -2962,6 +2962,58 @@
     "r6_images/weapons/w-spas12.png": {
       "file": "R6S SPAS-12.png",
       "width": 400
+    },
+    "r6_images/attachments/r6-attach-acog.png": {
+      "file": "ACOG Sight NATO HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-angled-grip.png": {
+      "file": "R6S Angled Grip.jpeg",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-compensator.png": {
+      "file": "R6S Compensator.jpeg",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-extended-barrel.png": {
+      "file": "R6S Extended Barrel.jpeg",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-flash-hider.png": {
+      "file": "R6S Flash Hider.jpeg",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-flashlight.png": {
+      "file": "Siege Flashlight.jpeg",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-holographic-sight.png": {
+      "file": "Holographic Sight MH1 HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-laser-sight.png": {
+      "file": "Laser sight.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-muzzle-brake.png": {
+      "file": "R6S Muzzle Brake.jpeg",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-red-dot-sight.png": {
+      "file": "Red Dot Sight M4S HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-reflex-sight.png": {
+      "file": "Reflex Sight NATO HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-suppressor.png": {
+      "file": "R6S Suppressor.jpeg",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-vertical-grip.png": {
+      "file": "Vertical Grip Standard.png",
+      "width": 200
     }
   }
 }
