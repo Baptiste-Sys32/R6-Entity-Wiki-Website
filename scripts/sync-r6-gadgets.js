@@ -95,7 +95,7 @@ function siegeContent(wt) {
 }
 
 function stripTemplate(wt, name) {
-  const start = String(wt).indexOf('{{' + name);
+  const start = name ? String(wt).indexOf('{{' + name) : String(wt).indexOf('{{');
   if (start < 0) return String(wt);
   let depth = 0, end = -1;
   for (let i = start; i < wt.length - 1; i++) {
@@ -108,6 +108,43 @@ function stripTemplate(wt, name) {
   return end > 0 ? wt.slice(0, start) + wt.slice(end) : wt;
 }
 
+function stripAllTemplates(wt) {
+  let out = String(wt);
+  for (let i = 0; i < 40 && out.includes('{{'); i++) {
+    const next = stripTemplate(out, '');
+    if (next === out || !next.includes('{{')) { out = next; break; }
+    out = next;
+  }
+  return out;
+}
+
+// Extracts clean article prose: drops every template copy (navboxes,
+// infobox duplicates on single-game pages, quotes, hatnotes), section
+// headings, stray bracket remnants, and leading `key = value` param runs
+// that leak from tabber/tab params. Ends on a sentence boundary.
+function cleanProse(siege) {
+  const noTemplates = stripAllTemplates(siege).split(/===?(?:Patch Changes|Gallery|Trivia)/)[0];
+  const deheaded = noTemplates.replace(/\n={2,}\s*[^=\n]+?\s*={2,}[ \t]*/g, '\n');
+  const paras = deheaded.split(/\n{2,}/).map((chunk) => {
+    let t = strip(chunk);
+    t = t.replace(/[\[\]]+/g, '');
+    for (let i = 0; i < 8; i++) {
+      const next = t.replace(/^\s*(?:[A-Za-z_][\w ]*=\s*(?:\([^)]*\)|\S+)\s*|\([^)]*\)\s*)+/, '');
+      if (next === t) break;
+      t = next;
+    }
+    return t.replace(/\s+/g, ' ').trim();
+  }).filter((p) => p.length > 60
+    && !/^[a-z_][\w ]*=/i.test(p)
+    && !/\|\s*[a-z]+\s*=/i.test(p)
+    && !/^[A-Z][a-z]+(?:[A-Z][a-z]+|\s+[A-Z][a-z]+){3,}\s+[A-Z]/.test(p));
+  let body = paras.slice(0, 4).join('\n\n');
+  if (body.length > 1400) {
+    const cut = body.lastIndexOf('. ', 1400);
+    body = (cut > 800 ? body.slice(0, cut + 1) : body.slice(0, 1400));
+  }
+  return body;
+}
 function firstInfobox(wt) {
   const start = String(wt).indexOf('{{Infobox/weapon');
   if (start < 0) return '';
@@ -141,8 +178,7 @@ function parseGadget(id, title, wt) {
       .map((u) => strip(u).replace(/\s*\(.*?\)\s*/g, '').trim())
       .filter((u) => u && !/recruit/i.test(u))
   )].slice(0, 24);
-  const prose = stripTemplate(siege, 'Infobox/weapon').split(/===?(?:Patch Changes|Gallery|Trivia)/)[0];
-  const paras = prose.split(/\n{2,}/).map((p) => strip(p)).filter((p) => p.length > 60 && !/^\s*[a-z_][a-z_ ]*=\s*\S+\s*$/i.test(p)).slice(0, 4).join('\n\n').slice(0, 1500);
+  const text = cleanProse(siege);
   const imageFile = fileOf(field(siege, 'image'));
   const hudFile = fileOf(field(siege, 'hudicon'));
   return {
@@ -152,7 +188,7 @@ function parseGadget(id, title, wt) {
     imageFile, hudFile,
     maxammo: strip(field(siege, 'maxammo')).slice(0, 40) || null,
     users,
-    text: paras,
+    text,
   };
 }
 

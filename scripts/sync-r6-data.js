@@ -26,7 +26,7 @@ const SLEEP_MS = 350;
 const GADGET_ICON_OVERRIDES = {
   'r6-ace': { file: 'SELMA_AQUA_BREACHER.png' },
   'r6-kali': { file: 'LV_Explosive_Lance.png', invert: true },
-  'r6-ram': { file: 'RAM_BU-GI_Auto-Breacher_Blueprint_01.png', width: 400 },
+  'r6-ram': { file: 'R6S_BU-GI_Auto_Breacher.webp', width: 400 },
   'r6-aruni': { file: 'Surya_Gate.png', width: 400 },
   'r6-goyo': { file: 'Volcán_Shield.png' },
   'r6-lesion': { file: 'Gu.png' },
