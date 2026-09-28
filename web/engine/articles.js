@@ -1,4 +1,29 @@
 /* Wiki Engine - article kit: infobox/meta/toc/table primitives, lightbox, narrow-tier hook, notes editor. Game-agnostic; shares globals. */
+    // Deterministic in-page navigation: the article scrolls inside a nested
+    // container, so native fragment jumps are unreliable (late image loads,
+    // sticky headers, reload-with-hash). Every TOC link scrolls explicitly.
+    const scrollToAnchor = (id) => {
+      if (!id) return false;
+      const el = document.getElementById(id);
+      if (!el) return false;
+      try {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch {
+        el.scrollIntoView();
+      }
+      try {
+        history.replaceState(null, '', `#${id}`);
+      } catch { /* file:// or sandboxed iframe */ }
+      return true;
+    };
+    const tocGo = (e, id) => {
+      if (e && e.preventDefault) e.preventDefault();
+      // Retry briefly: sections render synchronously, but images above the
+      // target can shift layout mid-scroll on slow networks.
+      if (scrollToAnchor(id)) {
+        setTimeout(() => scrollToAnchor(id), 350);
+      }
+    };
     const InfoCallout = () => null;
     const NotesEditor = ({ title = 'Personal Notes', value = '', onChange, placeholder = 'Write anything useful here...' }) => (
       <div className="mt-4 pt-4 border-t border-white/10">
@@ -131,12 +156,12 @@
           <ol>
             {items.map((item) => (
               <li key={item.id}>
-                <a href={"#" + item.id}>{item.label}</a>
+                <a href={"#" + item.id} onClick={(e) => tocGo(e, item.id)}>{item.label}</a>
                 {item.children && item.children.length > 0 ? (
                   <ol>
                     {item.children.map((child) => (
                       <li key={child.id} className="cx-l2">
-                        <a href={"#" + child.id}>{child.label}</a>
+                        <a href={"#" + child.id} onClick={(e) => tocGo(e, child.id)}>{child.label}</a>
                       </li>
                     ))}
                   </ol>

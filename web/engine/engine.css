@@ -1660,8 +1660,7 @@
     .cx-toc ol ol li::before {
       content: none;
     }
-    .cx-toc li.cx-l2 {
-      padding-left: 22px;
+    .cx-toc li.cx-l2 {      padding-left: 22px;
       font-size: 12.5px;
     }
     .cx-toc a {
@@ -1701,6 +1700,9 @@
     }
     .cx-article section {
       margin-top: 34px;
+      /* Sticky top bars overlap fragment targets — keep section titles
+         clear of them on every scroll (native jumps and JS scrolls). */
+      scroll-margin-top: 76px;
     }
     .cx-article section > p {
       margin-top: 12px;
