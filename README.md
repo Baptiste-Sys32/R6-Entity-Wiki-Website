@@ -13,7 +13,7 @@ node scripts/build-sitemap.js  # web/data.js -> web/sitemap.xml
 npm run check:data              # freshness gates for data + sitemap
 ```
 
-Current content: 72 operators, 27 maps, 44 seasons (Year 1 – Year 11).
+Current content: 76 operators, 27 maps, 44 seasons (Year 1 – Year 11), 62 weapons, 13 attachments, 15 gadgets.
 
 ## Preview
 

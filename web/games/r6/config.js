@@ -3,7 +3,7 @@
    after engine/, before the game bundle. */
     const META = {
       siteVersion: "0.1.0",
-      gameVersion: "Y8S4",
+      gameVersion: "Y11S3",
       lastSynced: "September 2026",
       contact: {
         email: "",
