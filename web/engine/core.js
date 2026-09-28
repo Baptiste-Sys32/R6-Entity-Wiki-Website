@@ -1,10 +1,20 @@
 /* Wiki Engine - app core: haptics gate, launch-context router input, entity note keys. Game-agnostic; shares globals. */
     const triggerHaptic = async (style = 'Medium') => {
       try {
-        const stored = localStorage.getItem('dbd_settings_v1');
-        if (stored) {
-          const s = JSON.parse(stored);
-          if (s.hapticEnabled === false) return;
+        // Adapter storage key first (R6), legacy DBD key as fallback —
+        // never hardcode one game's key in shared engine code.
+        const keys = [];
+        try {
+          if (typeof R6_STORAGE_KEYS !== 'undefined' && R6_STORAGE_KEYS.settings) keys.push(R6_STORAGE_KEYS.settings);
+        } catch { /* adapter without storage keys */ }
+        keys.push('dbd_settings_v1');
+        for (const key of keys) {
+          const stored = localStorage.getItem(key);
+          if (stored) {
+            const s = JSON.parse(stored);
+            if (s.hapticEnabled === false) return;
+            break;
+          }
         }
         if (window.Capacitor?.Plugins?.Haptics) {
           await window.Capacitor.Plugins.Haptics.impact({ style });

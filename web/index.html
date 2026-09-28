@@ -1180,6 +1180,17 @@
             </select>
           </td></tr>
         </tbody></table>
+        <h2 className="cx-sec">Features</h2>
+        <table className="cx-wikitable"><tbody>
+          <tr><th scope="row">Haptics</th><td>
+            <button type="button" onClick={() => updateSetting('hapticEnabled', !(settings.hapticEnabled !== false))} className="cx-toolbtn" aria-pressed={settings.hapticEnabled !== false}>
+              {settings.hapticEnabled !== false ? 'On' : 'Off'}
+            </button> <span className="text-sm" style={{ color: 'var(--muted)' }}>Vibration on taps (mobile).</span>
+          </td></tr>
+          <tr><th scope="row">Favorites</th><td>
+            <button type="button" onClick={() => { try { saveToStorage(R6_STORAGE_KEYS.favorites, { favoriteOperators: [], favoriteMaps: [], favoriteSeasons: [] }); } catch (e) { } window.location.reload(); }} className="cx-toolbtn cx-toolbtn--quiet">Clear all favorites</button>
+          </td></tr>
+        </tbody></table>
         <h2 className="cx-sec">Backup</h2>
         <table className="cx-wikitable"><tbody>
           <tr><th scope="row">Export</th><td>
