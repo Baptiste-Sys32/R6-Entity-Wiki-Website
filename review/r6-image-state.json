@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:50:29.806Z",
+  "generatedAt": "2026-09-28T08:57:01.594Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -5128,12 +5128,12 @@
       "file": "Breach_round.png"
     },
     "r6_images/weapons/r6-ash-1.png": {
-      "revision": "cb:20220525145137",
-      "file": "R6S Breach Charge.png"
+      "revision": "cb:20171126075451",
+      "file": "Ash - G36C.png"
     },
     "r6_images/weapons/r6-ash-2.png": {
-      "revision": "cb:20220525145152",
-      "file": "R6S Claymore.png"
+      "revision": "cb:20171126075454",
+      "file": "Ash - R4-C.png"
     },
     "r6_images/operators/icons/r6-blackbeard.png": {
       "revision": "cb:20240712042222",
@@ -5456,8 +5456,8 @@
       "file": "Sledge - M590A1.png"
     },
     "r6_images/weapons/r6-sledge-2.png": {
-      "revision": "cb:20220525145604",
-      "file": "R6S Stun Grenade.png"
+      "revision": "cb:20171126074338",
+      "file": "Sledge - L85A2.png"
     },
     "r6_images/operators/icons/r6-solid-snake.png": {
       "revision": "cb:20260224202112",
@@ -5484,12 +5484,12 @@
       "file": "EMP_Grenade.png"
     },
     "r6_images/weapons/r6-thatcher-1.png": {
-      "revision": "cb:20220525145152",
-      "file": "R6S Claymore.png"
+      "revision": "cb:20171126074228",
+      "file": "Thatcher - AR33.png"
     },
     "r6_images/weapons/r6-thatcher-2.png": {
-      "revision": "cb:20220525145137",
-      "file": "R6S Breach Charge.png"
+      "revision": "cb:20171126074238",
+      "file": "Thatcher - L85A2.png"
     },
     "r6_images/operators/icons/r6-thermite.png": {
       "revision": "cb:20240706085020",
@@ -5800,12 +5800,12 @@
       "file": "Wifi.png"
     },
     "r6_images/weapons/r6-mute-1.png": {
-      "revision": "cb:20220525145259",
-      "file": "R6S Nitro Cell.png"
+      "revision": "cb:20171126074109",
+      "file": "Mute - MP5K.png"
     },
     "r6_images/weapons/r6-mute-2.png": {
-      "revision": "cb:20220525145143",
-      "file": "R6S Bulletproof Camera.png"
+      "revision": "cb:20171126074120",
+      "file": "Mute - M590A1.png"
     },
     "r6_images/operators/icons/r6-noor.png": {
       "revision": "cb:20260818111136",
@@ -5876,12 +5876,12 @@
       "file": "Smoke_grenade.png"
     },
     "r6_images/weapons/r6-smoke-1.png": {
-      "revision": "cb:20220525145131",
-      "file": "R6S Barbed Wire.png"
+      "revision": "cb:20171126074007",
+      "file": "Smoke - FMG-9.png"
     },
     "r6_images/weapons/r6-smoke-2.png": {
-      "revision": "cb:20220525145530",
-      "file": "R6S Proximity Alarm.png"
+      "revision": "cb:20171126073947",
+      "file": "Smoke - M590A1.png"
     },
     "r6_images/operators/icons/r6-solis.png": {
       "revision": "cb:20221123113816",
@@ -7810,6 +7810,258 @@
     "r6_images/operators/icons/r6-tubar-o.png": {
       "revision": "local:ca46cda60445",
       "file": "review/local-assets/tubarao-icon.webp"
+    },
+    "r6_images/weapons/w-r4c.png": {
+      "revision": "cb:20220525145532",
+      "file": "R6S R4-C.png"
+    },
+    "r6_images/weapons/w-m45meusoc.png": {
+      "revision": "cb:20220525145241",
+      "file": "R6S M45 MEUSOC.png"
+    },
+    "r6_images/weapons/w-c8sfw.png": {
+      "revision": "cb:20220525145859",
+      "file": "R6S C8-SFW.png"
+    },
+    "r6_images/weapons/w-camrs.png": {
+      "revision": "cb:20220525145900",
+      "file": "R6S CAMRS.png"
+    },
+    "r6_images/weapons/w-para308.png": {
+      "revision": "cb:20220525145524",
+      "file": "R6S PARA-308.png"
+    },
+    "r6_images/weapons/w-pmr90a2.png": {
+      "revision": "cb:20260304080418",
+      "file": "R6S PMR90A2.webp"
+    },
+    "r6_images/weapons/w-pof9.png": {
+      "revision": "cb:20220614234217",
+      "file": "POF-9 Preview.png"
+    },
+    "r6_images/weapons/w-ak74m.png": {
+      "revision": "cb:20220525145116",
+      "file": "R6S AK-74M.png"
+    },
+    "r6_images/weapons/w-44vendetta.png": {
+      "revision": "cb:20260304065648",
+      "file": "R6S .44 Vendetta.webp"
+    },
+    "r6_images/weapons/w-ots03.png": {
+      "revision": "cb:20220525145515",
+      "file": "R6S OTs-03.png"
+    },
+    "r6_images/weapons/w-pmm.png": {
+      "revision": "cb:20151122213423",
+      "file": "Makarov PMM.jpg"
+    },
+    "r6_images/weapons/w-bearing9.png": {
+      "revision": "cb:20220525145133",
+      "file": "R6S Bearing 9.png"
+    },
+    "r6_images/weapons/w-type89.png": {
+      "revision": "cb:20220525145614",
+      "file": "R6S Type-89.png"
+    },
+    "r6_images/weapons/w-p229.png": {
+      "revision": "cb:20220226153145",
+      "file": "SIG P229 IRL.jpeg"
+    },
+    "r6_images/weapons/w-v308.png": {
+      "revision": "cb:20220525145618",
+      "file": "R6S V308.png"
+    },
+    "r6_images/weapons/w-417.png": {
+      "revision": "cb:20220525145105",
+      "file": "R6S 417.png"
+    },
+    "r6_images/weapons/w-sgcqb.png": {
+      "revision": "cb:20220525145543",
+      "file": "R6S SG-CQB.png"
+    },
+    "r6_images/weapons/w-lfp586.png": {
+      "revision": "cb:20220525145232",
+      "file": "R6S LFP586.png"
+    },
+    "r6_images/weapons/w-l85a2.png": {
+      "revision": "cb:20220525145230",
+      "file": "R6S L85A2.png"
+    },
+    "r6_images/weapons/w-p226mk25.png": {
+      "revision": "cb:20220525145522",
+      "file": "R6S P226 Mk 25.png"
+    },
+    "r6_images/weapons/w-reapermk2.png": {
+      "revision": "cb:20260304082718",
+      "file": "R6S Reaper MK2.webp"
+    },
+    "r6_images/weapons/w-ar33.png": {
+      "revision": "cb:20220525145120",
+      "file": "R6S AR33.png"
+    },
+    "r6_images/weapons/w-556xi.png": {
+      "revision": "cb:20220525145108",
+      "file": "R6S 556xi.png"
+    },
+    "r6_images/weapons/w-ita12s.png": {
+      "revision": "cb:20220525145225",
+      "file": "R6S ITA12S.png"
+    },
+    "r6_images/weapons/w-f2.png": {
+      "revision": "cb:20220525145208",
+      "file": "R6S F2.png"
+    },
+    "r6_images/weapons/w-t95lsw.png": {
+      "revision": "cb:20220525145610",
+      "file": "R6S T-95 LSW.png"
+    },
+    "r6_images/weapons/w-q929.png": {
+      "revision": "cb:20220525145531",
+      "file": "R6S Q-929.png"
+    },
+    "r6_images/weapons/w-m870.png": {
+      "revision": "cb:20220525145246",
+      "file": "R6S M870.png"
+    },
+    "r6_images/weapons/w-ump45.png": {
+      "revision": "cb:20220525145615",
+      "file": "R6S UMP45.png"
+    },
+    "r6_images/weapons/w-supershorty.png": {
+      "revision": "cb:20220525145607",
+      "file": "R6S Super Shorty.png"
+    },
+    "r6_images/weapons/w-m12.png": {
+      "revision": "cb:20220525145239",
+      "file": "R6S M12.png"
+    },
+    "r6_images/weapons/w-spas15.png": {
+      "revision": "cb:20220525145558",
+      "file": "R6S SPAS-15.png"
+    },
+    "r6_images/weapons/w-xk23.png": {
+      "revision": "cb:20260518013553",
+      "file": "R6S XK23 Preview.webp"
+    },
+    "r6_images/weapons/w-9mmc1.png": {
+      "revision": "cb:20220525145102",
+      "file": "R6S 9mm C1.png"
+    },
+    "r6_images/weapons/w-416ccarbine.png": {
+      "revision": "cb:20220525145104",
+      "file": "R6S 416-C Carbine.png"
+    },
+    "r6_images/weapons/w-919vsn.png": {
+      "revision": "cb:20220525145103",
+      "file": "R6S 9x19VSN.png"
+    },
+    "r6_images/weapons/w-sasg12.png": {
+      "revision": "cb:20220525145538",
+      "file": "R6S SASG-12.png"
+    },
+    "r6_images/weapons/w-gsh18.png": {
+      "revision": "cb:20220525145219",
+      "file": "R6S GSH-18.png"
+    },
+    "r6_images/weapons/w-alda556.png": {
+      "revision": "cb:20220525145117",
+      "file": "R6S ALDA 5.56.png"
+    },
+    "r6_images/weapons/w-acs12.png": {
+      "revision": "cb:20220525145111",
+      "file": "R6S ACS12.png"
+    },
+    "r6_images/weapons/w-ita12l.png": {
+      "revision": "cb:20220525145224",
+      "file": "R6S ITA12L.png"
+    },
+    "r6_images/weapons/w-d50.png": {
+      "revision": "cb:20220525145157",
+      "file": "R6S D-50.png"
+    },
+    "r6_images/weapons/w-g36c.png": {
+      "revision": "cb:20220525145215",
+      "file": "R6S G36C.png"
+    },
+    "r6_images/weapons/w-p9.png": {
+      "revision": "cb:20220525145516",
+      "file": "R6S P9.png"
+    },
+    "r6_images/weapons/w-mp7.png": {
+      "revision": "cb:20220525145256",
+      "file": "R6S MP7.png"
+    },
+    "r6_images/weapons/w-57usg.png": {
+      "revision": "cb:20220525145058",
+      "file": "R6S 5.7 USG.png"
+    },
+    "r6_images/weapons/w-mk19mm.png": {
+      "revision": "cb:20220525145901",
+      "file": "R6S Mk1 9mm.png"
+    },
+    "r6_images/weapons/w-m249.png": {
+      "revision": "cb:20220525145243",
+      "file": "R6S M249.png"
+    },
+    "r6_images/weapons/w-prb92.png": {
+      "revision": "cb:20220525145528",
+      "file": "R6S PRB92.png"
+    },
+    "r6_images/weapons/w-m590a1.png": {
+      "revision": "cb:20220525145244",
+      "file": "R6S M590A1.png"
+    },
+    "r6_images/weapons/w-supernova.png": {
+      "revision": "cb:20220525145608",
+      "file": "R6S SuperNova.png"
+    },
+    "r6_images/weapons/w-m1014.png": {
+      "revision": "cb:20220525145248",
+      "file": "R6S M1014.png"
+    },
+    "r6_images/weapons/w-six12.png": {
+      "revision": "cb:20220525145551",
+      "file": "R6S SIX12.png"
+    },
+    "r6_images/weapons/w-keratos357.png": {
+      "revision": "cb:20220525145227",
+      "file": "R6S Keratos .357.png"
+    },
+    "r6_images/weapons/w-p12.png": {
+      "revision": "cb:20220525145519",
+      "file": "R6S P12.png"
+    },
+    "r6_images/weapons/w-p10c.png": {
+      "revision": "cb:20220525145518",
+      "file": "R6S P-10C.png"
+    },
+    "r6_images/weapons/w-bailiff410.png": {
+      "revision": "cb:20220525145127",
+      "file": "R6S Bailiff 410.png"
+    },
+    "r6_images/weapons/w-vector45acp.png": {
+      "revision": "cb:20220525145619",
+      "file": "R6S Vector .45 ACP.png"
+    },
+    "r6_images/weapons/w-mp5k.png": {
+      "revision": "cb:20220525145253",
+      "file": "R6S MP5K.png"
+    },
+    "r6_images/weapons/w-smg11.png": {
+      "revision": "cb:20220525145553",
+      "file": "R6S SMG-11.png"
+    },
+    "r6_images/weapons/w-fmg9.png": {
+      "revision": "cb:20220525145211",
+      "file": "R6S FMG-9.png"
+    },
+    "r6_images/weapons/w-mpx.png": {
+      "revision": "cb:20220525145257",
+      "file": "R6S MPX.png"
+    },
+    "r6_images/weapons/w-spas12.png": {
+      "revision": "cb:20220525145556",
+      "file": "R6S SPAS-12.png"
     }
   }
 }

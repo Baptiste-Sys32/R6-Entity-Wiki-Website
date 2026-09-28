@@ -51,6 +51,15 @@ function field(section, name) {
   const m = section.match(new RegExp(`\\|${name}\\s*=([\\s\\S]*?)(?=\\n\\|[a-zA-Z0-9 /]+\\s*=|\\n\\}\\})`));
   return m ? m[1].trim() : '';
 }
+function fileOf(markup) {
+  const m = String(markup).match(/\[\[File:([^\]|]+)/i) || String(markup).match(/^([^|\n]+\.(png|jpg|jpeg|webp))/i);
+  if (m) return m[1].trim();
+  // Gallery-form image fields: "|image = <gallery>\nR6S G36C.png|Default\n..."
+  // (spaces allowed — filenames like "R6S SPAS-12.png" must not truncate).
+  const g = String(markup).match(/([^\n|\[\]{}<>]+\.(png|jpg|jpeg|webp))/i);
+  return g ? g[1].trim() : null;
+}
+const slugOf = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '') || 'weapon';
 
 function num(text, re) {
   const m = String(text).match(re);
@@ -105,6 +114,7 @@ function parseWeapon(title, wt) {
       .map((u) => strip(u).replace(/\s*\(.*?\)\s*/g, '').trim())
       .filter((u) => u && !/recruit/i.test(u))
   )].slice(0, 8);
+  const imageFile = fileOf(field(siege, 'image'));
   return {
     name: (() => { const n = d('name'); return n && !/[{}]/.test(n) && n.length <= 60 ? n : title; })(),
     type: d('type'),
@@ -124,6 +134,7 @@ function parseWeapon(title, wt) {
     reload: strip(field(siege, 'reloadtime')).slice(0, 80),
     users, attachments,
     pros: bullets(pros), cons: bullets(cons),
+    imageFile,
   };
 }
 
@@ -160,7 +171,14 @@ async function main() {
   console.log(`sync-weapons: ${names.length} firearms`);
   const weapons = [];
   const seenPages = new Set();
-  const manifest = {};
+  // Merge into the shared manifest (other syncs own their entries).
+  const manifestPath = path.join(ROOT, 'review', 'r6-image-manifest.json');
+  let manifest = { images: {} };
+  try {
+    manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+    manifest.images = manifest.images || {};
+  } catch { /* first run */ }
+  const usedSlugs = new Set();
   let n = 0;
   for (const name of names) {
     n += 1;
@@ -182,6 +200,18 @@ async function main() {
       seenPages.add(resolved.title);
       parsed.page = resolved.title;
       parsed.aliases = [name];
+      // Canonical render from the weapon page infobox (clean gun pic —
+      // per-operator files are often operator-holding-gun promos).
+      let slug = slugOf(parsed.name);
+      for (let i = 2; usedSlugs.has(slug); i++) slug = `${slugOf(parsed.name)}-${i}`;
+      usedSlugs.add(slug);
+      parsed.art = null;
+      if (parsed.imageFile) {
+        const rel = `r6_images/weapons/w-${slug}.png`;
+        manifest.images[rel] = { file: parsed.imageFile, width: 400 };
+        parsed.art = rel;
+      }
+      delete parsed.imageFile;
       const existing = weapons.find((w) => w.name === parsed.name && w.name !== name);
       if (existing) existing.aliases = [...(existing.aliases || [existing.name]), name];
       weapons.push(parsed);
@@ -197,6 +227,8 @@ async function main() {
     metadata: { sources: { wiki: 'https://rainbowsix.fandom.com/api.php (CC-BY-SA)' }, count: weapons.length },
     weapons,
   }, null, 2) + '\n');
+  manifest.generatedAt = generatedAt;
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
   console.log(`sync-weapons: wrote content/weapons.json (${weapons.length}/${names.length})`);
 }
 

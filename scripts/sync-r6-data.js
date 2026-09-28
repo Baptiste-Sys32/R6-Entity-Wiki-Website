@@ -568,7 +568,9 @@ async function main() {
   operators.forEach((op) => {
     const baseName = op.name;
     op.weapons.forEach((weapon) => {
-      if (weapon.image) return;
+      // Gadget slots render via canonical gadget art (gadgetId) — they must
+      // never claim indexed weapon paths (that clobbers primary art).
+      if (weapon.image || weapon.slot === 'gadget') return;
       const files = weaponImages[weaponTitleByName.get(weapon.name)] || [];
       const opToken = baseName.toLowerCase().replace(/[^a-z0-9]+/g, '');
       const specific = files.find((f) => /R6S /i.test(f) && f.toLowerCase().replace(/[^a-z0-9]+/g, '').includes(opToken) && /\.(png|webp|jpg|jpeg)$/i.test(f) && !/\(/.test(f));

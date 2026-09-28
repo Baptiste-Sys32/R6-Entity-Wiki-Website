@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:47:49.650Z",
+  "generatedAt": "2026-09-28T08:11:18.295Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -28,12 +28,12 @@
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-ace-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-ace-2.png"
+          "image": null
         }
       ]
     },
@@ -57,7 +57,7 @@
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-amaru-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -86,12 +86,12 @@
         {
           "slot": "gadget",
           "name": "Breach Charge",
-          "image": "r6_images/weapons/r6-ash-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-ash-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -140,7 +140,7 @@
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-blackbeard-2.png"
+          "image": null
         }
       ]
     },
@@ -164,12 +164,12 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-blitz-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-blitz-2.png"
+          "image": null
         }
       ]
     },
@@ -193,12 +193,12 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-brava-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-brava-2.png"
+          "image": null
         }
       ]
     },
@@ -222,12 +222,12 @@
         {
           "slot": "gadget",
           "name": "Stun Grenade",
-          "image": "r6_images/weapons/r6-buck-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-buck-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -266,12 +266,12 @@
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-capit-o-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-capit-o-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -330,7 +330,7 @@
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-deimos-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -369,7 +369,7 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-dokkaebi-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -398,7 +398,7 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-finka-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -408,7 +408,7 @@
         {
           "slot": "gadget",
           "name": "M67/Siege",
-          "image": "r6_images/weapons/r6-finka-3.png"
+          "image": null
         }
       ]
     },
@@ -432,12 +432,12 @@
         {
           "slot": "gadget",
           "name": "Stun Grenade",
-          "image": "r6_images/weapons/r6-flores-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-flores-2.png"
+          "image": null
         }
       ]
     },
@@ -461,17 +461,17 @@
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-fuze-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-fuze-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-fuze-3.png"
+          "image": null
         }
       ]
     },
@@ -495,7 +495,7 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-glaz-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -505,7 +505,7 @@
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-glaz-3.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -549,7 +549,7 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-gridlock-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -559,7 +559,7 @@
         {
           "slot": "gadget",
           "name": "M67/Siege",
-          "image": "r6_images/weapons/r6-gridlock-3.png"
+          "image": null
         }
       ]
     },
@@ -588,12 +588,12 @@
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-grim-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-grim-3.png"
+          "image": null
         }
       ]
     },
@@ -617,12 +617,12 @@
         {
           "slot": "gadget",
           "name": "Stun Grenade",
-          "image": "r6_images/weapons/r6-hibana-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Breach Charge",
-          "image": "r6_images/weapons/r6-hibana-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -676,7 +676,7 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade/Siege",
-          "image": "r6_images/weapons/r6-iana-2.png"
+          "image": null
         }
       ]
     },
@@ -700,17 +700,17 @@
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-iq-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-iq-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "M67/Siege",
-          "image": "r6_images/weapons/r6-iq-3.png"
+          "image": null
         }
       ]
     },
@@ -734,12 +734,12 @@
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-jackal-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-jackal-2.png"
+          "image": null
         }
       ]
     },
@@ -763,12 +763,12 @@
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-kali-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-kali-2.png"
+          "image": null
         }
       ]
     },
@@ -792,12 +792,12 @@
         {
           "slot": "gadget",
           "name": "Stun Grenade",
-          "image": "r6_images/weapons/r6-lion-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-lion-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -851,7 +851,7 @@
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-maverick-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -861,7 +861,7 @@
         {
           "slot": "gadget",
           "name": "M67/Siege",
-          "image": "r6_images/weapons/r6-maverick-3.png"
+          "image": null
         }
       ]
     },
@@ -885,12 +885,12 @@
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-montagne-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-montagne-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -919,7 +919,7 @@
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-nomad-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -948,12 +948,12 @@
         {
           "slot": "gadget",
           "name": "M67/Siege",
-          "image": "r6_images/weapons/r6-n-kk-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-n-kk-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -982,12 +982,12 @@
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-osa-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "M67/Siege",
-          "image": "r6_images/weapons/r6-osa-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -1021,7 +1021,7 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-ram-2.png"
+          "image": null
         }
       ]
     },
@@ -1045,12 +1045,12 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-rauora-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-rauora-2.png"
+          "image": null
         }
       ]
     },
@@ -1074,12 +1074,12 @@
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-sens-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-sens-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -1113,7 +1113,7 @@
         {
           "slot": "gadget",
           "name": "Stun Grenade",
-          "image": "r6_images/weapons/r6-sledge-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -1163,12 +1163,12 @@
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-solid-snake-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-solid-snake-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
@@ -1183,7 +1183,7 @@
         {
           "slot": "gadget",
           "name": "M67/Siege",
-          "image": "r6_images/weapons/r6-solid-snake-5.png"
+          "image": null
         }
       ]
     },
@@ -1207,12 +1207,12 @@
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-thatcher-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Breach Charge",
-          "image": "r6_images/weapons/r6-thatcher-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -1256,12 +1256,12 @@
         {
           "slot": "gadget",
           "name": "Stun Grenade",
-          "image": "r6_images/weapons/r6-thermite-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-thermite-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -1310,12 +1310,12 @@
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-twitch-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-twitch-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -1364,12 +1364,12 @@
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-ying-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Smoke Grenade",
-          "image": "r6_images/weapons/r6-ying-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -1413,12 +1413,12 @@
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-zero-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Hard Breach Charge",
-          "image": "r6_images/weapons/r6-zero-2.png"
+          "image": null
         }
       ]
     },
@@ -1442,12 +1442,12 @@
         {
           "slot": "gadget",
           "name": "Breach Charge/Siege",
-          "image": "r6_images/weapons/r6-zofia-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Claymore",
-          "image": "r6_images/weapons/r6-zofia-2.png"
+          "image": null
         }
       ]
     },
@@ -1471,12 +1471,12 @@
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-alibi-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-alibi-2.png"
+          "image": null
         }
       ]
     },
@@ -1500,12 +1500,12 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-aruni-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-aruni-2.png"
+          "image": null
         }
       ]
     },
@@ -1529,12 +1529,12 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-azami-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-azami-2.png"
+          "image": null
         }
       ]
     },
@@ -1558,12 +1558,12 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-bandit-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Nitro Cell",
-          "image": "r6_images/weapons/r6-bandit-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -1607,12 +1607,12 @@
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-castle-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-castle-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -1656,17 +1656,17 @@
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-caveira-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-caveira-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-caveira-3.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -1705,12 +1705,12 @@
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-clash-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-clash-2.png"
+          "image": null
         }
       ]
     },
@@ -1734,12 +1734,12 @@
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-denari-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-denari-2.png"
+          "image": null
         }
       ]
     },
@@ -1763,12 +1763,12 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-doc-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-doc-2.png"
+          "image": null
         }
       ]
     },
@@ -1792,12 +1792,12 @@
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-echo-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-echo-2.png"
+          "image": null
         }
       ]
     },
@@ -1821,17 +1821,17 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-ela-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-ela-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-ela-3.png"
+          "image": null
         }
       ]
     },
@@ -1855,12 +1855,12 @@
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-fenrir-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-fenrir-2.png"
+          "image": null
         }
       ]
     },
@@ -1884,12 +1884,12 @@
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-frost-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-frost-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -1933,17 +1933,17 @@
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-goyo-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-goyo-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-goyo-3.png"
+          "image": null
         }
       ]
     },
@@ -1967,12 +1967,12 @@
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-j-ger-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-j-ger-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -2016,17 +2016,17 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-kaid-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "C4",
-          "image": "r6_images/weapons/r6-kaid-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-kaid-3.png"
+          "image": null
         }
       ]
     },
@@ -2050,12 +2050,12 @@
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-kapkan-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-kapkan-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -2099,12 +2099,12 @@
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-lesion-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-lesion-2.png"
+          "image": null
         }
       ]
     },
@@ -2128,17 +2128,17 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-maestro-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-maestro-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-maestro-3.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -2182,12 +2182,12 @@
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-melusi-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-melusi-2.png"
+          "image": null
         }
       ]
     },
@@ -2211,12 +2211,12 @@
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-mira-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Nitro Cell",
-          "image": "r6_images/weapons/r6-mira-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -2260,17 +2260,17 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-mozzie-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-mozzie-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "C4",
-          "image": "r6_images/weapons/r6-mozzie-3.png"
+          "image": null
         }
       ]
     },
@@ -2294,12 +2294,12 @@
         {
           "slot": "gadget",
           "name": "Nitro Cell",
-          "image": "r6_images/weapons/r6-mute-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-mute-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -2343,12 +2343,12 @@
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-noor-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-noor-2.png"
+          "image": null
         }
       ]
     },
@@ -2372,12 +2372,12 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-oryx-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-oryx-2.png"
+          "image": null
         }
       ]
     },
@@ -2401,17 +2401,17 @@
         {
           "slot": "gadget",
           "name": "C4",
-          "image": "r6_images/weapons/r6-pulse-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-pulse-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-pulse-3.png"
+          "image": null
         }
       ]
     },
@@ -2453,12 +2453,12 @@
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-skop-s-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-skop-s-2.png"
+          "image": null
         }
       ]
     },
@@ -2482,12 +2482,12 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-smoke-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-smoke-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -2549,17 +2549,17 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-tachanka-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-tachanka-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-tachanka-3.png"
+          "image": null
         }
       ]
     },
@@ -2583,12 +2583,12 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-thorn-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-thorn-2.png"
+          "image": null
         }
       ]
     },
@@ -2612,17 +2612,17 @@
         {
           "slot": "gadget",
           "name": "Barbed Wire",
-          "image": "r6_images/weapons/r6-thunderbird-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-thunderbird-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-thunderbird-3.png"
+          "image": null
         }
       ]
     },
@@ -2646,12 +2646,12 @@
         {
           "slot": "gadget",
           "name": "C4",
-          "image": "r6_images/weapons/r6-tubar-o-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-tubar-o-2.png"
+          "image": null
         }
       ]
     },
@@ -2675,12 +2675,12 @@
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-valkyrie-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Nitro Cell",
-          "image": "r6_images/weapons/r6-valkyrie-2.png"
+          "image": null
         },
         {
           "slot": "primary",
@@ -2719,12 +2719,12 @@
         {
           "slot": "gadget",
           "name": "Bulletproof Camera",
-          "image": "r6_images/weapons/r6-vigil-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Impact Grenade",
-          "image": "r6_images/weapons/r6-vigil-2.png"
+          "image": null
         }
       ]
     },
@@ -2748,17 +2748,17 @@
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-wamai-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Proximity Alarm",
-          "image": "r6_images/weapons/r6-wamai-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "C4",
-          "image": "r6_images/weapons/r6-wamai-3.png"
+          "image": null
         }
       ]
     },
@@ -2782,17 +2782,17 @@
         {
           "slot": "gadget",
           "name": "C4",
-          "image": "r6_images/weapons/r6-warden-1.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Deployable Shield",
-          "image": "r6_images/weapons/r6-warden-2.png"
+          "image": null
         },
         {
           "slot": "gadget",
           "name": "Observation Blocker",
-          "image": "r6_images/weapons/r6-warden-3.png"
+          "image": null
         }
       ]
     }

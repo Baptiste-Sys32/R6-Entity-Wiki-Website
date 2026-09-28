@@ -642,6 +642,7 @@
           categories={['Weapons', weapon.type]}
           infobox={{
             title: weapon.name, sub: weapon.type,
+            image: weapon.image ? `./${weapon.image}` : null, imageAlt: weapon.name, imageType: 'Weapon',
             rows: [
               ...(weapon.damage ? [{ label: 'Damage', value: weapon.damage }] : []),
               ...(weapon.rof ? [{ label: 'Fire rate', value: `${weapon.rof} RPM` }] : []),

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-27T16:11:02.148Z",
+  "generatedAt": "2026-09-28T08:53:28.212Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
     },
-    "count": 62
+    "count": 63
   },
   "weapons": [
     {
@@ -55,7 +55,8 @@
       "page": "G36C",
       "aliases": [
         "G36C"
-      ]
+      ],
+      "art": "r6_images/weapons/w-g36c.png"
     },
     {
       "name": "R4-C",
@@ -106,7 +107,8 @@
       "page": "R4-C",
       "aliases": [
         "R4-C"
-      ]
+      ],
+      "art": "r6_images/weapons/w-r4c.png"
     },
     {
       "name": "M45 MEUSOC",
@@ -179,7 +181,8 @@
       "page": "M45 MEUSOC",
       "aliases": [
         "M45 MEUSOC"
-      ]
+      ],
+      "art": "r6_images/weapons/w-m45meusoc.png"
     },
     {
       "name": "5.7 USG",
@@ -248,7 +251,8 @@
       "page": "Five-seven",
       "aliases": [
         "5.7 USG"
-      ]
+      ],
+      "art": "r6_images/weapons/w-57usg.png"
     },
     {
       "name": "C8-SFW",
@@ -291,7 +295,8 @@
       "page": "C8-SFW",
       "aliases": [
         "C8-SFW"
-      ]
+      ],
+      "art": "r6_images/weapons/w-c8sfw.png"
     },
     {
       "name": "CAMRS",
@@ -344,7 +349,8 @@
       "page": "L1A1",
       "aliases": [
         "CAMRS"
-      ]
+      ],
+      "art": "r6_images/weapons/w-camrs.png"
     },
     {
       "name": "Mk1 9mm",
@@ -409,7 +415,8 @@
       "page": "Mk1 9mm",
       "aliases": [
         "Mk1 9mm"
-      ]
+      ],
+      "art": "r6_images/weapons/w-mk19mm.png"
     },
     {
       "name": "PARA-308",
@@ -460,7 +467,8 @@
       "page": "PARA-308",
       "aliases": [
         "PARA-308"
-      ]
+      ],
+      "art": "r6_images/weapons/w-para308.png"
     },
     {
       "name": "M249",
@@ -511,7 +519,8 @@
       "page": "M249",
       "aliases": [
         "M249"
-      ]
+      ],
+      "art": "r6_images/weapons/w-m249.png"
     },
     {
       "name": "PMR90A2",
@@ -563,7 +572,8 @@
       "page": "PMR90A2",
       "aliases": [
         "PMR90A2"
-      ]
+      ],
+      "art": "r6_images/weapons/w-pmr90a2.png"
     },
     {
       "name": "PRB92",
@@ -633,7 +643,8 @@
       "page": "PRB92",
       "aliases": [
         "PRB92"
-      ]
+      ],
+      "art": "r6_images/weapons/w-prb92.png"
     },
     {
       "name": "POF-9",
@@ -684,7 +695,8 @@
       "page": "POF-9",
       "aliases": [
         "GONNE-6"
-      ]
+      ],
+      "art": "r6_images/weapons/w-pof9.png"
     },
     {
       "name": "AK-74M",
@@ -735,7 +747,8 @@
       "page": "AK-74",
       "aliases": [
         "AK-74M"
-      ]
+      ],
+      "art": "r6_images/weapons/w-ak74m.png"
     },
     {
       "name": "M590A1",
@@ -784,7 +797,8 @@
       "page": "M500",
       "aliases": [
         "M590A1"
-      ]
+      ],
+      "art": "r6_images/weapons/w-m590a1.png"
     },
     {
       "name": ".44 Vendetta",
@@ -829,7 +843,8 @@
       "page": ".44 Vendetta",
       "aliases": [
         ".44 Vendetta"
-      ]
+      ],
+      "art": "r6_images/weapons/w-44vendetta.png"
     },
     {
       "name": "OTs-03",
@@ -880,7 +895,8 @@
       "page": "OTs-03",
       "aliases": [
         "OTs-03"
-      ]
+      ],
+      "art": "r6_images/weapons/w-ots03.png"
     },
     {
       "name": "PMM",
@@ -947,7 +963,8 @@
       "page": "PMM",
       "aliases": [
         "PMM"
-      ]
+      ],
+      "art": "r6_images/weapons/w-pmm.png"
     },
     {
       "name": "Bearing 9",
@@ -1002,7 +1019,8 @@
       "page": "Bearing 9",
       "aliases": [
         "Bearing 9"
-      ]
+      ],
+      "art": "r6_images/weapons/w-bearing9.png"
     },
     {
       "name": "Type-89",
@@ -1054,7 +1072,8 @@
       "page": "Type 89-F",
       "aliases": [
         "Type-89"
-      ]
+      ],
+      "art": "r6_images/weapons/w-type89.png"
     },
     {
       "name": "SuperNova",
@@ -1109,7 +1128,8 @@
       "page": "SuperNova",
       "aliases": [
         "SuperNova"
-      ]
+      ],
+      "art": "r6_images/weapons/w-supernova.png"
     },
     {
       "name": "P229",
@@ -1175,7 +1195,8 @@
       "page": "P229",
       "aliases": [
         "P229"
-      ]
+      ],
+      "art": "r6_images/weapons/w-p229.png"
     },
     {
       "name": "V308",
@@ -1226,7 +1247,8 @@
       "page": "V308",
       "aliases": [
         "V308"
-      ]
+      ],
+      "art": "r6_images/weapons/w-v308.png"
     },
     {
       "name": "417",
@@ -1277,7 +1299,8 @@
       "page": "417",
       "aliases": [
         "417"
-      ]
+      ],
+      "art": "r6_images/weapons/w-417.png"
     },
     {
       "name": "SG-CQB",
@@ -1324,7 +1347,8 @@
       "page": "SG-CQB",
       "aliases": [
         "SG-CQB"
-      ]
+      ],
+      "art": "r6_images/weapons/w-sgcqb.png"
     },
     {
       "name": "P9",
@@ -1391,7 +1415,8 @@
       "page": "P9",
       "aliases": [
         "P9"
-      ]
+      ],
+      "art": "r6_images/weapons/w-p9.png"
     },
     {
       "name": "LFP586",
@@ -1444,7 +1469,8 @@
       "page": "LFP586",
       "aliases": [
         "LFP586"
-      ]
+      ],
+      "art": "r6_images/weapons/w-lfp586.png"
     },
     {
       "name": "L85A2",
@@ -1496,7 +1522,8 @@
       "page": "L85",
       "aliases": [
         "L85A2"
-      ]
+      ],
+      "art": "r6_images/weapons/w-l85a2.png"
     },
     {
       "name": "P226 Mk 25",
@@ -1564,7 +1591,8 @@
       "page": "P226",
       "aliases": [
         "P226 Mk 25"
-      ]
+      ],
+      "art": "r6_images/weapons/w-p226mk25.png"
     },
     {
       "name": "Reaper Mk2",
@@ -1616,7 +1644,8 @@
       "page": "Glock",
       "aliases": [
         "Reaper Mk2"
-      ]
+      ],
+      "art": "r6_images/weapons/w-reapermk2.png"
     },
     {
       "name": "AR33",
@@ -1668,7 +1697,8 @@
       "page": "AR33",
       "aliases": [
         "AR33"
-      ]
+      ],
+      "art": "r6_images/weapons/w-ar33.png"
     },
     {
       "name": "M1014",
@@ -1716,7 +1746,8 @@
       "page": "M1014",
       "aliases": [
         "M1014"
-      ]
+      ],
+      "art": "r6_images/weapons/w-m1014.png"
     },
     {
       "name": "556xi",
@@ -1767,7 +1798,8 @@
       "page": "556xi",
       "aliases": [
         "556xi"
-      ]
+      ],
+      "art": "r6_images/weapons/w-556xi.png"
     },
     {
       "name": "ITA12S",
@@ -1820,7 +1852,8 @@
       "page": "ITA12S",
       "aliases": [
         "ITA12S"
-      ]
+      ],
+      "art": "r6_images/weapons/w-ita12s.png"
     },
     {
       "name": "F2",
@@ -1874,7 +1907,8 @@
       "page": "FAMAS",
       "aliases": [
         "F2"
-      ]
+      ],
+      "art": "r6_images/weapons/w-f2.png"
     },
     {
       "name": "T-95 LSW",
@@ -1926,7 +1960,8 @@
       "page": "T-95 LSW",
       "aliases": [
         "T-95 LSW"
-      ]
+      ],
+      "art": "r6_images/weapons/w-t95lsw.png"
     },
     {
       "name": "SIX12",
@@ -1975,7 +2010,8 @@
       "page": "SIX12",
       "aliases": [
         "SIX12"
-      ]
+      ],
+      "art": "r6_images/weapons/w-six12.png"
     },
     {
       "name": "Q-929",
@@ -2039,7 +2075,8 @@
       "page": "Q-929",
       "aliases": [
         "Q-929"
-      ]
+      ],
+      "art": "r6_images/weapons/w-q929.png"
     },
     {
       "name": "MP7",
@@ -2090,7 +2127,8 @@
       "page": "MP7",
       "aliases": [
         "MP7"
-      ]
+      ],
+      "art": "r6_images/weapons/w-mp7.png"
     },
     {
       "name": "M870",
@@ -2147,7 +2185,8 @@
       "page": "M870",
       "aliases": [
         "M870"
-      ]
+      ],
+      "art": "r6_images/weapons/w-m870.png"
     },
     {
       "name": "Keratos .357",
@@ -2197,7 +2236,8 @@
       "page": "Keratos",
       "aliases": [
         "Keratos .357"
-      ]
+      ],
+      "art": "r6_images/weapons/w-keratos357.png"
     },
     {
       "name": "P12",
@@ -2263,7 +2303,8 @@
       "page": "P12",
       "aliases": [
         "P12"
-      ]
+      ],
+      "art": "r6_images/weapons/w-p12.png"
     },
     {
       "name": "UMP45",
@@ -2319,7 +2360,8 @@
       "page": "UMP",
       "aliases": [
         "UMP45"
-      ]
+      ],
+      "art": "r6_images/weapons/w-ump45.png"
     },
     {
       "name": "Super Shorty",
@@ -2379,7 +2421,8 @@
       "page": "Super Shorty",
       "aliases": [
         "Super Shorty"
-      ]
+      ],
+      "art": "r6_images/weapons/w-supershorty.png"
     },
     {
       "name": "M12",
@@ -2419,7 +2462,8 @@
       "page": "M12",
       "aliases": [
         "M12"
-      ]
+      ],
+      "art": "r6_images/weapons/w-m12.png"
     },
     {
       "name": "SPAS-15",
@@ -2475,7 +2519,65 @@
       "page": "SPAS-15",
       "aliases": [
         "SPAS-15"
-      ]
+      ],
+      "art": "r6_images/weapons/w-spas15.png"
+    },
+    {
+      "name": "XK23",
+      "type": "Assault Rifle |appearances. = *Tom Clancy's Rainbow Six Siege",
+      "fire": "Automatic",
+      "damage": 49,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 49,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "rof": 675,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "35+1",
+      "maxammo": "",
+      "reload": "3.35",
+      "users": [
+        "Dokkaebi",
+        "Sens",
+        "Rauora",
+        "|affiliation. = 707th SMB",
+        "SFG",
+        "NZSAS"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Good damage output",
+        "Highly customizable",
+        "High magazine size"
+      ],
+      "cons": [
+        "Slow rate of fire",
+        "Moderate recoil"
+      ],
+      "page": "XK23",
+      "aliases": [
+        "Luison"
+      ],
+      "art": "r6_images/weapons/w-xk23.png"
     },
     {
       "name": "9mm C1",
@@ -2518,7 +2620,8 @@
       "page": "9mm C1",
       "aliases": [
         "9mm C1"
-      ]
+      ],
+      "art": "r6_images/weapons/w-9mmc1.png"
     },
     {
       "name": "416-C Carbine",
@@ -2570,7 +2673,8 @@
       "page": "416-C Carbine",
       "aliases": [
         "416-C Carbine"
-      ]
+      ],
+      "art": "r6_images/weapons/w-416ccarbine.png"
     },
     {
       "name": "P-10C",
@@ -2636,7 +2740,8 @@
       "page": "P-10C",
       "aliases": [
         "P-10C"
-      ]
+      ],
+      "art": "r6_images/weapons/w-p10c.png"
     },
     {
       "name": "9×19VSN",
@@ -2687,7 +2792,8 @@
       "page": "9×19VSN",
       "aliases": [
         "9x19VSN"
-      ]
+      ],
+      "art": "r6_images/weapons/w-919vsn.png"
     },
     {
       "name": "SASG-12",
@@ -2759,7 +2865,8 @@
       "page": "SASG-12",
       "aliases": [
         "SASG-12"
-      ]
+      ],
+      "art": "r6_images/weapons/w-sasg12.png"
     },
     {
       "name": "GSh-18",
@@ -2832,7 +2939,8 @@
       "page": "GSh-18",
       "aliases": [
         "GSh-18"
-      ]
+      ],
+      "art": "r6_images/weapons/w-gsh18.png"
     },
     {
       "name": "ALDA 5.56",
@@ -2881,7 +2989,8 @@
       "page": "ALDA 5.56",
       "aliases": [
         "ALDA 5.56"
-      ]
+      ],
+      "art": "r6_images/weapons/w-alda556.png"
     },
     {
       "name": "ACS12",
@@ -2928,7 +3037,8 @@
       "page": "ACS12",
       "aliases": [
         "ACS12"
-      ]
+      ],
+      "art": "r6_images/weapons/w-acs12.png"
     },
     {
       "name": "Bailiff 410",
@@ -2979,7 +3089,8 @@
       "page": "Bailiff 410",
       "aliases": [
         "Bailiff 410"
-      ]
+      ],
+      "art": "r6_images/weapons/w-bailiff410.png"
     },
     {
       "name": "Vector .45 ACP",
@@ -3031,7 +3142,8 @@
       "page": "Vector .45 ACP",
       "aliases": [
         "Vector .45 ACP"
-      ]
+      ],
+      "art": "r6_images/weapons/w-vector45acp.png"
     },
     {
       "name": "ITA12L",
@@ -3080,7 +3192,8 @@
       "page": "ITA12L",
       "aliases": [
         "ITA12L"
-      ]
+      ],
+      "art": "r6_images/weapons/w-ita12l.png"
     },
     {
       "name": "MP5K",
@@ -3130,7 +3243,8 @@
       "page": "MP5K",
       "aliases": [
         "MP5K"
-      ]
+      ],
+      "art": "r6_images/weapons/w-mp5k.png"
     },
     {
       "name": "SMG-11",
@@ -3183,7 +3297,8 @@
       "page": "MAC-11",
       "aliases": [
         "SMG-11"
-      ]
+      ],
+      "art": "r6_images/weapons/w-smg11.png"
     },
     {
       "name": "FMG-9",
@@ -3235,7 +3350,8 @@
       "page": "FMG-9",
       "aliases": [
         "FMG-9"
-      ]
+      ],
+      "art": "r6_images/weapons/w-fmg9.png"
     },
     {
       "name": "MPX",
@@ -3285,7 +3401,8 @@
       "page": "MPX",
       "aliases": [
         "MPX"
-      ]
+      ],
+      "art": "r6_images/weapons/w-mpx.png"
     },
     {
       "name": "SPAS-12",
@@ -3340,7 +3457,8 @@
       "page": "SPAS-12",
       "aliases": [
         "SPAS-12"
-      ]
+      ],
+      "art": "r6_images/weapons/w-spas12.png"
     },
     {
       "name": "D-50",
@@ -3397,7 +3515,8 @@
       "page": "Desert Eagle",
       "aliases": [
         "D-50"
-      ]
+      ],
+      "art": "r6_images/weapons/w-d50.png"
     }
   ]
 }

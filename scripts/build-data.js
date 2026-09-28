@@ -261,7 +261,25 @@ function main() {
     (w.aliases || []).forEach((a) => { byNorm[norm2(a)] = w.name; });
   });
   if (byNorm[norm2('M1014')]) byNorm[norm2('Super 90')] = byNorm[norm2('M1014')];
-  const weaponsOutput = `var R6_WEAPONS = ${JSON.stringify({ weapons, attachments, aliases: byNorm })};\n`;
+  // Canonical render per weapon: first non-null operator loadout render
+  // (no new scrape — reuses operators.json weapon images).
+  const renderByWeapon = {};
+  operators.forEach((op) => {
+    (op.weapons || []).forEach((w) => {
+      if (!w.image || w.slot === 'gadget') return;
+      const canon = byNorm[norm2(w.name)];
+      if (canon && !renderByWeapon[canon]) renderByWeapon[canon] = w.image;
+    });
+  });
+  const weaponsWithImages = weapons.map((w) => ({ ...w, image: w.art || renderByWeapon[w.name] || null }));
+  const missingRenders = [];
+  weaponsWithImages.forEach((w) => {
+    if (!w.image) return;
+    if (!/^r6_images\//.test(w.image) || !fs.existsSync(path.join(ROOT, 'web', w.image))) missingRenders.push(`${w.name}: ${w.image}`);
+  });
+  if (missingRenders.length) throw new Error(`weapon renders missing:\n- ${missingRenders.join('\n- ')}`);
+  console.log(`build-data: weapon renders ok (${Object.keys(renderByWeapon).length}/${weapons.length}).`);
+  const weaponsOutput = `var R6_WEAPONS = ${JSON.stringify({ weapons: weaponsWithImages, attachments, aliases: byNorm })};\n`;
   const gadgetsOutput = `var R6_GADGETS = ${JSON.stringify({ gadgets })};\n`;
   if (checkOnly) {
     const current = fs.existsSync(DATA_PATH) ? fs.readFileSync(DATA_PATH, 'utf8') : '';
