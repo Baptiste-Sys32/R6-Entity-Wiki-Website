@@ -38,6 +38,12 @@ function validateOperators(operators) {
     if (!['Attacker', 'Defender'].includes(op.side)) throw new Error(`${label} has invalid side ${op.side}`);
     if (seen.has(op.id)) throw new Error(`duplicate operator id ${op.id}`);
     seen.add(op.id);
+    // Every operator ships firearms — except Clash (ballistic shield only).
+    // Loud failure beats silent empty Loadout sections.
+    if (op.id !== 'r6-clash') {
+      const guns = (op.weapons || []).filter((w) => w.slot === 'primary' || w.slot === 'secondary');
+      if (!guns.length) throw new Error(`${label} (${op.name}) has no primary/secondary weapons`);
+    }
   });
 }
 
@@ -163,6 +169,15 @@ function validateLore(entries, operatorIds) {
 }
 
 function validateGadgets(gadgets, operators, normalize) {
+  // Tolerant lookup: upstream varies case and appends " x N" ammo suffixes
+  // ("Frag grenade", "Frag Grenade x 2"). Exact first, then loose.
+  const loose = (name) => {
+    if (normalize[name]) return normalize[name];
+    const key = String(name).replace(/\s*x\s*\d+\s*$/i, '').trim().toLowerCase();
+    const hit = Object.keys(normalize).find((k) => k.toLowerCase() === key
+      || k.replace(/\s*x\s*\d+\s*$/i, '').trim().toLowerCase() === key);
+    return hit ? normalize[hit] : null;
+  };
   const seen = new Set();
   gadgets.forEach((g, index) => {
     const label = `gadget #${index + 1} (${g.id || '?'})`;
@@ -179,7 +194,8 @@ function validateGadgets(gadgets, operators, normalize) {
   operators.forEach((op) => {
     (op.weapons || []).forEach((w) => {
       if (w.slot !== 'gadget') return;
-      if (!normalize[w.name] || !byId.has(normalize[w.name])) unmapped.add(`${op.name}: ${w.name}`);
+      const id = loose(w.name);
+      if (!id || !byId.has(id)) unmapped.add(`${op.name}: ${w.name}`);
     });
   });
   if (unmapped.size) {
@@ -197,6 +213,7 @@ function validateWeapons(weapons, loadoutNames) {
     for (const key of ['name', 'type']) {
       if (typeof w[key] !== 'string' || !w[key]) throw new Error(`${label} is missing ${key}`);
     }
+    if (/[|{}[\]]/.test(w.type)) throw new Error(`${label} has markup leak in type: ${w.type.slice(0, 60)}`);
     if (w.damage !== null && w.damage !== undefined && !(Number.isFinite(w.damage) && w.damage > 0)) throw new Error(`${label} has invalid damage`);
     if (w.rof !== null && w.rof !== undefined && !(Number.isFinite(w.rof) && w.rof > 0)) throw new Error(`${label} has invalid rof`);
     if (w.ttkComputed !== null && w.ttkComputed !== undefined) {
@@ -215,7 +232,9 @@ function validateWeapons(weapons, loadoutNames) {
     known.add(norm(w.name));
     (w.aliases || []).forEach((a) => known.add(norm(a)));
   });
-  const missing = [...loadoutNames].filter((n) => !known.has(norm(n)) && n !== 'Super 90');
+  // Shields ride primary slots but are not firearms (no stat pages exist).
+  const NON_FIREARM = new Set(['super90', 'ballisticshield', 'hulladaptableshield', 'g52tacticalshield', 'extendableshield', 'cceshield'].map(norm));
+  const missing = [...loadoutNames].filter((n) => !known.has(norm(n)) && !NON_FIREARM.has(norm(n)));
   if (missing.length) console.warn(`build-data: ${missing.length} loadout firearms without stats: ${missing.join(', ')}`);
   console.log(`build-data: weapons ok (${weapons.length}).`);
 }
@@ -270,11 +289,19 @@ function main() {
   validateImagePaths(operators, maps, seasons, gadgets);
   const payload = { operators, maps, seasons };
   // Attach canonical gadget ids to loadout secondary entries (single source:
-  // content/gadgets.json normalize map). Raw display names stay in operators.json.
+  // content/gadgets.json normalize map, same tolerant lookup as validation).
+  // Raw display names stay in operators.json.
+  const looseGadget = (name) => {
+    if (gadgetNormalize[name]) return gadgetNormalize[name];
+    const key = String(name).replace(/\s*x\s*\d+\s*$/i, '').trim().toLowerCase();
+    const hit = Object.keys(gadgetNormalize).find((k) => k.toLowerCase() === key
+      || k.replace(/\s*x\s*\d+\s*$/i, '').trim().toLowerCase() === key);
+    return hit ? gadgetNormalize[hit] : null;
+  };
   const emittedOperators = operators.map((op) => ({
     ...op,
-    weapons: (op.weapons || []).map((w) => (w.slot === 'gadget' && gadgetNormalize[w.name]
-      ? { ...w, gadgetId: gadgetNormalize[w.name] } : w)),
+    weapons: (op.weapons || []).map((w) => (w.slot === 'gadget' && looseGadget(w.name)
+      ? { ...w, gadgetId: looseGadget(w.name) } : w)),
   }));
   const payloadOut = { operators: emittedOperators, maps, seasons };
   const output = `var R6_DATABASE = ${JSON.stringify(payloadOut)};\n`;

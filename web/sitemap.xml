@@ -19,6 +19,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapons</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://r6-siege-wiki.pages.dev/?view=maps</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -919,6 +925,54 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=AK-12</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=M1014</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P9</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=G8A1</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SuperNova</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=ITA12S</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=POF-9</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SMG-11</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=G36C</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -943,7 +997,25 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=C8-SFW</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Mk17%20CQB</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SR-25</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P12</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=PARA-308</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -955,13 +1027,25 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Mk1%209mm</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=D-50</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=PARA-308</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Super%20Shorty</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=C8-SFW</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Mk1%209mm</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -985,12 +1069,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=POF-9</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=AK-74M</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -1009,7 +1087,49 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=OTs-03</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Mk%2014%20EBR</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=BOSG.12.2</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=XK23</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=C75%20Auto</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SMG-12</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Spear%20.308</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=6P41</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SASG-12</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1021,7 +1141,67 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=GSh-18</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=AR33</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=T-95%20LSW</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=DP-27</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=OTs-03</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Bearing%209</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=F90</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SDP%209mm</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SG-CQB</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=552%20Commando</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P229</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1033,13 +1213,49 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SuperNova</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=ARX200</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P229</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=AUG%20A2</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=C7E</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=PDW9</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=ITA12L</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P226%20Mk%2025</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=CSRX%20300</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SPSMG9</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1057,31 +1273,25 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SG-CQB</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P9</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=LFP586</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=L85A2</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=AR-15.50</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P226%20Mk%2025</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=M4</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=1911%20TACOPS</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1093,13 +1303,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=AR33</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=.44%20Mag%20Semi-Auto</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=M1014</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=FMG-9</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SPAS-12</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1111,7 +1327,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=ITA12S</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=LMG-E</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=L85A2</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1123,7 +1345,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=T-95%20LSW</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Tacit%20.45</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1141,13 +1363,37 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SC3000K</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=MP7</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=M870</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=M762</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=RG15</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Mx4%20Storm</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=ACS12</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1159,19 +1405,31 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P12</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Bailiff%20410</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P10%20RONI</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=9%C3%9719VSN</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=M870</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=UMP45</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Super%20Shorty</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1189,7 +1447,43 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=XK23</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P-10C</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Scorpion%20EVO%203%20A1</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Glaive-12</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=MP5</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P90</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=MP5SD</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=FO-12</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1201,31 +1495,25 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Vector%20.45%20ACP</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=TCSG12</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=416-C%20Carbine</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=P-10C</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=9%C3%9719VSN</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SASG-12</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=GSh-18</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=T-5%20SMG</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1237,25 +1525,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=ACS12</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Bailiff%20410</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Vector%20.45%20ACP</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=ITA12L</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=Commando%209</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1267,13 +1537,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SMG-11</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=PCX-33</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=FMG-9</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=UZK50GI</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1285,13 +1555,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=SPAS-12</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=D-50</loc>
+    <loc>https://r6-siege-wiki.pages.dev/?view=weapon&amp;id=K1A</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

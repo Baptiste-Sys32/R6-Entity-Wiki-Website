@@ -1,12 +1,520 @@
 {
-  "generatedAt": "2026-09-28T09:14:36.553Z",
+  "generatedAt": "2026-09-28T16:58:02.996Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
     },
-    "count": 63
+    "count": 106
   },
   "weapons": [
+    {
+      "name": "AK-12",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 40,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 40,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 141,
+        "armor2Ms": 141,
+        "armor3Ms": 212
+      },
+      "rof": 850,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+210 (PVP) / 31+240 (Training Grounds)",
+      "reload": "3.4s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Fuze",
+        "Ace"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High rate of fire",
+        "Moderate recoil"
+      ],
+      "cons": [
+        "Subpar damage per shot",
+        "Steep damage dropoff"
+      ],
+      "page": "AK-12",
+      "aliases": [
+        "AK-12"
+      ],
+      "art": "r6_images/weapons/w-ak12.png"
+    },
+    {
+      "name": "M1014",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 28,
+      "damageModel": {
+        "mode": "class",
+        "class": "SG",
+        "base": 28,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 4,
+          "armor2": 4,
+          "armor3": 5
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 900,
+        "armor2Ms": 900,
+        "armor3Ms": 1200
+      },
+      "rof": 200,
+      "adsMs": 250,
+      "adsClass": "S",
+      "mobility": 50,
+      "magazine": "7+1",
+      "maxammo": "8+25 (PVP) / 8+73 (Training Grounds)",
+      "reload": "",
+      "users": [
+        "Thermite",
+        "Castle",
+        "Pulse",
+        "Ace",
+        "Keres Striker",
+        "Keres Sentry"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "laser": true
+      },
+      "pros": [
+        "Good damage dropoff",
+        "Average damage per pellet"
+      ],
+      "cons": [
+        "Low ammo reserve",
+        "High recoil kick per shot"
+      ],
+      "page": "M1014",
+      "aliases": [
+        "M1014",
+        "Super 90"
+      ],
+      "art": "r6_images/weapons/w-m1014.png"
+    },
+    {
+      "name": "P9",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 45,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 45,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 27,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": {
+          "close": {
+            "dmg": 38,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 23,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": "267ms (0-18m) / 400ms (18+m)",
+        "armor2": "267ms (0-15m) / 400ms (16-21m) / 533ms (22+m)",
+        "armor3": "267ms (0-12m) / 400ms (12-19m) / 533ms (20+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 218,
+        "armor2Ms": 218,
+        "armor3Ms": 218
+      },
+      "rof": 550,
+      "adsMs": 200,
+      "adsClass": "H",
+      "mobility": 45,
+      "magazine": "16+1",
+      "maxammo": "17+64 (PVP) / 17+128 (PVE)",
+      "reload": "2.1s (Empty) / 1.8s (Tactical)",
+      "users": [
+        "Twitch",
+        "Montagne",
+        "Doc",
+        "Rook",
+        "Lion",
+        "Ace"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "P9",
+      "aliases": [
+        "P9"
+      ],
+      "art": "r6_images/weapons/w-p9.png"
+    },
+    {
+      "name": "G8A1",
+      "type": "Light Machine Gun",
+      "fire": "Automatic",
+      "damage": 37,
+      "damageModel": {
+        "mode": "class",
+        "class": "LMG",
+        "base": 37,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 141,
+        "armor2Ms": 141,
+        "armor3Ms": 212
+      },
+      "rof": 850,
+      "adsMs": 450,
+      "adsClass": "LMG",
+      "mobility": 50,
+      "magazine": "50+1",
+      "maxammo": "51+250 (PVP) / 51+350 (Terrorist Hunt)",
+      "reload": "3.9s (Empty) / 3.0s (Tactical)",
+      "users": [
+        "IQ",
+        "Amaru"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High overall damage",
+        "High rate of fire",
+        "Quick reload",
+        "High magazine capacity",
+        "High reserve ammo amount"
+      ],
+      "cons": [
+        "Slow ADS time compared to similar weapons in the Assault Rifle class"
+      ],
+      "page": "HK21",
+      "aliases": [
+        "G8A1"
+      ],
+      "art": "r6_images/weapons/w-g8a1.png"
+    },
+    {
+      "name": "SuperNova",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 48,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": 8,
+        "close": {
+          "dmg": 48,
+          "range": [
+            0,
+            8
+          ]
+        },
+        "far": {
+          "dmg": 20,
+          "range": [
+            13,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": null,
+      "rof": 75,
+      "adsMs": 250,
+      "adsClass": "S",
+      "mobility": 50,
+      "magazine": "6+1",
+      "maxammo": "7+48 (PVP) / 7+49 (Training Grounds)",
+      "reload": "",
+      "users": [
+        "Hibana",
+        "Echo",
+        "Amaru"
+      ],
+      "attachments": {},
+      "pros": [
+        "High damage per pellet",
+        "Mild damage drop-off",
+        "Can be equipped with a suppressor with zero downside"
+      ],
+      "cons": [
+        "Slowest pump cycle of all pump action shotguns"
+      ],
+      "page": "SuperNova",
+      "aliases": [
+        "SuperNova"
+      ],
+      "art": "r6_images/weapons/w-supernova.png"
+    },
+    {
+      "name": "ITA12S",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 70,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": 8,
+        "close": {
+          "dmg": 70,
+          "range": [
+            0,
+            1
+          ]
+        },
+        "far": {
+          "dmg": 15,
+          "range": [
+            12,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": null,
+      "rof": 85,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "4+1",
+      "maxammo": "5+21 (PVP) / 5+26 (Training Grounds)",
+      "reload": "",
+      "users": [
+        "Jackal",
+        "Mira",
+        "Frost",
+        "Amaru",
+        "Striker",
+        "Thunderbird",
+        "Thermite"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "ITA12S",
+      "aliases": [
+        "ITA12S"
+      ],
+      "art": "r6_images/weapons/w-ita12s.png"
+    },
+    {
+      "name": "POF-9",
+      "type": "Assault Rifle",
+      "fire": "Automatic",
+      "damage": 37,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 37,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 162,
+        "armor2Ms": 162,
+        "armor3Ms": 243
+      },
+      "rof": 740,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "50+1",
+      "maxammo": "",
+      "reload": "",
+      "users": [
+        "Sens"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High magazine capacity",
+        "Highly customizable",
+        "Ok damage"
+      ],
+      "cons": [
+        "Low destruction",
+        "Mediocre recoil"
+      ],
+      "page": "POF-9",
+      "aliases": [
+        "GONNE-6",
+        "POF-9"
+      ],
+      "art": "r6_images/weapons/w-pof9.png"
+    },
+    {
+      "name": "SMG-11",
+      "type": "Machine Pistol",
+      "fire": "Automatic",
+      "damage": 32,
+      "damageModel": {
+        "mode": "class",
+        "class": "MP",
+        "base": 32,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 4,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 142,
+        "armor2Ms": 142,
+        "armor3Ms": 142
+      },
+      "rof": 1270,
+      "adsMs": 275,
+      "adsClass": "MP",
+      "mobility": 50,
+      "magazine": "16+1",
+      "maxammo": "17+80 (PVP) / 17+224 (Terrorist Hunt) / 17+128 (Outbreak)",
+      "reload": "2.9s (Empty) / 2.0s (Tactical)",
+      "users": [
+        "Smoke",
+        "Mute",
+        "Amaru",
+        "Solis"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Very high rate of fire",
+        "Very high damage output"
+      ],
+      "cons": [
+        "High vertical recoil",
+        "Low magazine capacity",
+        "Low reserve ammo"
+      ],
+      "page": "MAC-11",
+      "aliases": [
+        "SMG11",
+        "SMG-11"
+      ],
+      "art": "r6_images/weapons/w-smg11.png"
+    },
     {
       "name": "G36C",
       "type": "Assault Rifle",
@@ -294,19 +802,20 @@
       "cons": [],
       "page": "Five-seven",
       "aliases": [
-        "5.7 USG"
+        "5.7 USG",
+        "GSH-18"
       ],
       "art": "r6_images/weapons/w-57usg.png"
     },
     {
-      "name": "C8-SFW",
+      "name": "Mk17 CQB",
       "type": "Assault Rifle",
       "fire": "Automatic / Semi-automatic",
-      "damage": 40,
+      "damage": 44,
       "damageModel": {
         "mode": "class",
         "class": "AR",
-        "base": 40,
+        "base": 44,
         "extended": true
       },
       "ttk": {
@@ -318,22 +827,22 @@
         "shots": {
           "armor1": 3,
           "armor2": 3,
-          "armor3": 4
+          "armor3": 3
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 143,
-        "armor2Ms": 143,
-        "armor3Ms": 215
+        "armor1Ms": 205,
+        "armor2Ms": 205,
+        "armor3Ms": 205
       },
-      "rof": 837,
+      "rof": 585,
       "adsMs": 400,
       "adsClass": "AR",
       "mobility": 50,
-      "magazine": "30+1 / 5+1 (Skeleton Key)",
-      "maxammo": "C8-SFW / 31+210 (PVP) / 31+270 (Training Grounds) / 31+330 (",
-      "reload": "2.9s (Empty) / 2.4s (Tactical) / 2.089s (Empty)(MASS) / 3.109s (Tactical)(MASS)",
+      "magazine": "20+1",
+      "maxammo": "21+160 (PVP) / 21+200 (Training Grounds)",
+      "reload": "3.1s (Empty) / 2.4s (Tactical)",
       "users": [
-        "Buck"
+        "Blackbeard"
       ],
       "attachments": {
         "sight_1x": true,
@@ -343,15 +852,223 @@
         "flash_hider": true,
         "suppressor": true,
         "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Moderate recoil",
+        "Relatively fast reload speed"
+      ],
+      "cons": [
+        "Slow rate of fire",
+        "Low damage per shot and overall damage",
+        "Slow ADS time with Rifle Shield equipped",
+        "Harsh damage dropoff",
+        "Small magazine capacity"
+      ],
+      "page": "SCAR-H CQC",
+      "aliases": [
+        "Mk17 CQB"
+      ],
+      "art": "r6_images/weapons/w-mk17cqb.png"
+    },
+    {
+      "name": "SR-25",
+      "type": "Marksman Rifle",
+      "fire": "Semi-automatic",
+      "damage": 61,
+      "damageModel": {
+        "mode": "class",
+        "class": "DMR",
+        "base": 61,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 133,
+        "armor2Ms": 133,
+        "armor3Ms": 267
+      },
+      "rof": 450,
+      "adsMs": 400,
+      "adsClass": "DMR",
+      "mobility": null,
+      "magazine": "20+1",
+      "maxammo": "21+80 (PVP)",
+      "reload": "3.5s (Empty) / 2.9s (Tactical)",
+      "users": [
+        "Blackbeard",
+        "Flores",
+        "Striker"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "sight_telescopic": true,
+        "muzzle_brake": true,
+        "suppressor": true,
+        "grips_all": true,
         "laser": true
       },
       "pros": [],
       "cons": [],
-      "page": "C8-SFW",
+      "page": "SR-25",
       "aliases": [
-        "C8-SFW"
+        "SR-25",
+        "Extendable Shield"
       ],
-      "art": "r6_images/weapons/w-c8sfw.png"
+      "art": "r6_images/weapons/w-sr25.png"
+    },
+    {
+      "name": "P12",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 44,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 44,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 24,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": {
+          "close": {
+            "dmg": 37,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 20,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": "267ms (0-16m) / 400ms (17-21m) / 533ms (22+m)",
+        "armor2": "267ms (0-14m) / 400ms (15-19m) / 533ms (20+m)",
+        "armor3": "267ms (0-11m) / 400ms (12-18m) / 533ms (19-21m) / 667ms (22+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 218,
+        "armor2Ms": 218,
+        "armor3Ms": 218
+      },
+      "rof": 550,
+      "adsMs": 200,
+      "adsClass": "H",
+      "mobility": 50,
+      "magazine": "15+1",
+      "maxammo": "16+60 (PVP) / 16+120 (Terrorist Hunt)",
+      "reload": "2.4s (Empty) / 1.9s (Tactical)",
+      "users": [
+        "Blitz",
+        "IQ",
+        "Jäger",
+        "Bandit",
+        "Wamai"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "P12",
+      "aliases": [
+        "P12"
+      ],
+      "art": "r6_images/weapons/w-p12.png"
+    },
+    {
+      "name": "PARA-308",
+      "type": "Assault Rifle",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 47,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 47,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 185,
+        "armor2Ms": 185,
+        "armor3Ms": 185
+      },
+      "rof": 650,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+210 (PVP) / 31+240 (Training Grounds)",
+      "reload": "3.3s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Capitão",
+        "Brava"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Low recoil per shot",
+        "High damage per shot",
+        "Versatile attachments"
+      ],
+      "cons": [
+        "Low rate of fire"
+      ],
+      "page": "PARA-308",
+      "aliases": [
+        "PARA-308"
+      ],
+      "art": "r6_images/weapons/w-para308.png"
     },
     {
       "name": "CAMRS",
@@ -417,6 +1134,194 @@
         "CAMRS"
       ],
       "art": "r6_images/weapons/w-camrs.png"
+    },
+    {
+      "name": "D-50",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 71,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 71,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 35,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": "133ms (0-17m) / 267ms (18+m)",
+        "armor2": "133ms (0-15m) / 267ms (16-21m) / 400ms (22+m)",
+        "armor3": "133ms (0-13m) / 267ms (14-19m) / 400ms (20+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 2
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 109,
+        "armor2Ms": 109,
+        "armor3Ms": 109
+      },
+      "rof": 550,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "7+1",
+      "maxammo": "8+35 (PVP) / 8+56 (Terrorist Hunt) / 1+39 (Golden Gun)",
+      "reload": "2.5s (Empty) / 2.0s (Tactical) / 2.0s (Golden Gun)",
+      "users": [
+        "Blackbeard",
+        "Valkyrie",
+        "Nøkk",
+        "Azami"
+      ],
+      "attachments": {},
+      "pros": [
+        "High single shot damage",
+        "High destruction/penetration"
+      ],
+      "cons": [
+        "High recoil kick per shot",
+        "Low magazine capacity",
+        "Low reserve ammo"
+      ],
+      "page": "Desert Eagle",
+      "aliases": [
+        "USP 40",
+        "D-50",
+        "D50"
+      ],
+      "art": "r6_images/weapons/w-d50.png"
+    },
+    {
+      "name": "Super Shorty",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 35,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": 8,
+        "close": {
+          "dmg": 35,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 15,
+          "range": [
+            12,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": null,
+      "rof": 85,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "2+1",
+      "maxammo": "3+42 (PVP) / 3+57 (Training Grounds)",
+      "reload": "",
+      "users": [
+        "Castle",
+        "Clash",
+        "Gridlock",
+        "Mozzie",
+        "Wamai",
+        "Brava",
+        "Sentry"
+      ],
+      "attachments": {},
+      "pros": [
+        "Relatively quick pump cycle",
+        "Utility use"
+      ],
+      "cons": [
+        "Low damage per pellet",
+        "Steep damage dropoff",
+        "Tiny magazine capacity"
+      ],
+      "page": "Super Shorty",
+      "aliases": [
+        "Super Shorty"
+      ],
+      "art": "r6_images/weapons/w-supershorty.png"
+    },
+    {
+      "name": "C8-SFW",
+      "type": "Assault Rifle",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 40,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 40,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 143,
+        "armor2Ms": 143,
+        "armor3Ms": 215
+      },
+      "rof": 837,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1 / 5+1 (Skeleton Key)",
+      "maxammo": "C8-SFW / 31+210 (PVP) / 31+270 (Training Grounds) / 31+330 (",
+      "reload": "2.9s (Empty) / 2.4s (Tactical) / 2.089s (Empty)(MASS) / 3.109s (Tactical)(MASS)",
+      "users": [
+        "Buck"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "laser": true
+      },
+      "pros": [],
+      "cons": [],
+      "page": "C8-SFW",
+      "aliases": [
+        "C8-SFW"
+      ],
+      "art": "r6_images/weapons/w-c8sfw.png"
     },
     {
       "name": "Mk1 9mm",
@@ -496,69 +1401,6 @@
       "art": "r6_images/weapons/w-mk19mm.png"
     },
     {
-      "name": "PARA-308",
-      "type": "Assault Rifle",
-      "fire": "Automatic / Semi-automatic",
-      "damage": 47,
-      "damageModel": {
-        "mode": "class",
-        "class": "AR",
-        "base": 47,
-        "extended": true
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 185,
-        "armor2Ms": 185,
-        "armor3Ms": 185
-      },
-      "rof": 650,
-      "adsMs": 400,
-      "adsClass": "AR",
-      "mobility": 50,
-      "magazine": "30+1",
-      "maxammo": "31+210 (PVP) / 31+240 (Training Grounds)",
-      "reload": "3.3s (Empty) / 2.6s (Tactical)",
-      "users": [
-        "Capitão",
-        "Brava"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "sight_magnified": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "extended_barrel": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "Low recoil per shot",
-        "High damage per shot",
-        "Versatile attachments"
-      ],
-      "cons": [
-        "Low rate of fire"
-      ],
-      "page": "PARA-308",
-      "aliases": [
-        "PARA-308"
-      ],
-      "art": "r6_images/weapons/w-para308.png"
-    },
-    {
       "name": "M249",
       "type": "Light Machine Gun",
       "fire": "Automatic",
@@ -617,7 +1459,8 @@
       ],
       "page": "M249",
       "aliases": [
-        "M249"
+        "M249",
+        "M249 SAW"
       ],
       "art": "r6_images/weapons/w-m249.png"
     },
@@ -766,69 +1609,6 @@
         "PRB92"
       ],
       "art": "r6_images/weapons/w-prb92.png"
-    },
-    {
-      "name": "POF-9",
-      "type": "Assault Rifle",
-      "fire": "Automatic",
-      "damage": 37,
-      "damageModel": {
-        "mode": "class",
-        "class": "AR",
-        "base": 37,
-        "extended": true
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 4
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 162,
-        "armor2Ms": 162,
-        "armor3Ms": 243
-      },
-      "rof": 740,
-      "adsMs": 400,
-      "adsClass": "AR",
-      "mobility": 50,
-      "magazine": "50+1",
-      "maxammo": "",
-      "reload": "",
-      "users": [
-        "Sens"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "sight_magnified": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "extended_barrel": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "High magazine capacity",
-        "Highly customizable",
-        "Ok damage"
-      ],
-      "cons": [
-        "Low destruction",
-        "Mediocre recoil"
-      ],
-      "page": "POF-9",
-      "aliases": [
-        "GONNE-6"
-      ],
-      "art": "r6_images/weapons/w-pof9.png"
     },
     {
       "name": "AK-74M",
@@ -1012,14 +1792,14 @@
       "art": "r6_images/weapons/w-44vendetta.png"
     },
     {
-      "name": "OTs-03",
+      "name": "Mk 14 EBR",
       "type": "Marksman Rifle",
       "fire": "Semi-automatic",
-      "damage": 71,
+      "damage": 56,
       "damageModel": {
         "mode": "class",
-        "class": "SR",
-        "base": 71,
+        "class": "DMR",
+        "base": 56,
         "extended": false
       },
       "ttk": {
@@ -1031,48 +1811,493 @@
         "shots": {
           "armor1": 2,
           "armor2": 2,
-          "armor3": 2
+          "armor3": 3
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 158,
-        "armor2Ms": 158,
-        "armor3Ms": 158
+        "armor1Ms": 133,
+        "armor2Ms": 133,
+        "armor3Ms": 267
       },
-      "rof": 380,
+      "rof": 450,
       "adsMs": 400,
       "adsClass": "AR",
-      "mobility": 36,
-      "magazine": "15+1",
-      "maxammo": "16+60 (PVP) / 11+80 ( Terrorist Hunt) / 11+110 (Outbreak)",
-      "reload": "3.4s (Empty) / 2.7s (Tactical)",
+      "mobility": 50,
+      "magazine": "20+1",
+      "maxammo": "21+80 (PVP) / 21+120 (Terrorist Hunt)",
+      "reload": "3.4s (Empty) / 3.1s (Tactical)",
       "users": [
-        "Glaz"
+        "Dokkaebi",
+        "Aruni"
       ],
       "attachments": {
         "sight_1x": true,
+        "sight_magnified": true,
+        "sight_telescopic_dokk": true,
+        "muzzle_brake_dokk": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High magazine capacity"
+      ],
+      "cons": [
+        "Limited short range capabilities",
+        "High recoil per shot",
+        "Low damage per shot"
+      ],
+      "page": "Mk 14 EBR",
+      "aliases": [
+        "Mk 14 EBR"
+      ],
+      "art": "r6_images/weapons/w-mk14ebr.png"
+    },
+    {
+      "name": "BOSG.12.2",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 125,
+      "damageModel": {
+        "mode": "class",
+        "class": "SS",
+        "base": 125,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 1,
+          "armor2": 1,
+          "armor3": 1
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 0,
+        "armor2Ms": 0,
+        "armor3Ms": 0
+      },
+      "rof": 500,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "2",
+      "maxammo": "2+59 (PVP) / 2+78 (Training Grounds)",
+      "reload": "3.0s (Empty) / 2.4s (Tactical)",
+      "users": [
+        "Dokkaebi",
+        "Vigil"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Very high damage per shot",
+        "Quick rate of fire",
+        "High ammo reserve",
+        "High destruction capabilities"
+      ],
+      "cons": [
+        "Tiny magazine capacity",
+        "High recoil kick per shot"
+      ],
+      "page": "BOSG.12.2",
+      "aliases": [
+        "BOSG.12.2"
+      ],
+      "art": "r6_images/weapons/w-bosg122.png"
+    },
+    {
+      "name": "XK23",
+      "type": "Assault Rifle",
+      "fire": "Automatic",
+      "damage": 49,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 49,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 178,
+        "armor2Ms": 178,
+        "armor3Ms": 178
+      },
+      "rof": 675,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "35+1",
+      "maxammo": "",
+      "reload": "3.35",
+      "users": [
+        "Dokkaebi",
+        "Sens",
+        "Rauora"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
         "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Good damage output",
+        "Highly customizable",
+        "High magazine size"
+      ],
+      "cons": [
+        "Slow rate of fire",
+        "Moderate recoil"
+      ],
+      "page": "XK23",
+      "aliases": [
+        "XK23",
+        "Luison"
+      ],
+      "art": "r6_images/weapons/w-xk23.png"
+    },
+    {
+      "name": "C75 Auto",
+      "type": "Machine Pistol",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 35,
+      "damageModel": {
+        "mode": "class",
+        "class": "MP",
+        "base": 35,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 120,
+        "armor2Ms": 180,
+        "armor3Ms": 180
+      },
+      "rof": 1000,
+      "adsMs": 275,
+      "adsClass": "MP",
+      "mobility": 50,
+      "magazine": "26+1",
+      "maxammo": "27+78 (PVP) / 27+129 (Terrorist Hunt)",
+      "reload": "2.7s (Empty) / 1.9s (Tactical)",
+      "users": [
+        "Dokkaebi",
+        "Vigil",
+        "Kali",
+        "Thorn",
+        "Sentry"
+      ],
+      "attachments": {
+        "suppressor": true,
+        "laser": true
+      },
+      "pros": [
+        "High rate of fire",
+        "Moderate damage output",
+        "Manageable recoil"
+      ],
+      "cons": [
+        "Limited attachments",
+        "Iron sight obstructs vision",
+        "Low reserve ammo"
+      ],
+      "page": "C75 Auto",
+      "aliases": [
+        "C75 Auto"
+      ],
+      "art": "r6_images/weapons/w-c75auto.png"
+    },
+    {
+      "name": "SMG-12",
+      "type": "Machine Pistol",
+      "fire": "Automatic",
+      "damage": 16,
+      "damageModel": {
+        "mode": "class",
+        "class": "MP",
+        "base": 16,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 7,
+          "armor2": 7,
+          "armor3": 8
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 283,
+        "armor2Ms": 283,
+        "armor3Ms": 331
+      },
+      "rof": 1270,
+      "adsMs": 275,
+      "adsClass": "MP",
+      "mobility": null,
+      "magazine": "22+1",
+      "maxammo": "?",
+      "reload": "3.0s (Empty) / 2.0s (Tactical) 2.40s (Empty /w Angled Grip) / 1.5s (Tactical /w ",
+      "users": [
+        "Dokkaebi",
+        "Vigil",
+        "Warden"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Very high rate of fire",
+        "Integral suppressor"
+      ],
+      "cons": [
+        "High vertical and horizontal recoil",
+        "Lacks barrel attachments",
+        "Very low damage per shot"
+      ],
+      "page": "SMG-12",
+      "aliases": [
+        "SMG-12"
+      ],
+      "art": "r6_images/weapons/w-smg12.png"
+    },
+    {
+      "name": "Spear .308",
+      "type": "Assault Rifle",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 42,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 42,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 171,
+        "armor2Ms": 171,
+        "armor3Ms": 171
+      },
+      "rof": 700,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+210 / 31+330 (Outbreak)",
+      "reload": "3.3s (Empty) / 2.4s (Tactical)",
+      "users": [
+        "Finka",
+        "Thunderbird"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "2.5x Scope"
+      ],
+      "cons": [
+        "Slow rate of fire",
+        "Subpar damage output",
+        "Medium Recoil"
+      ],
+      "page": "Spear .308",
+      "aliases": [
+        "Spear .308"
+      ],
+      "art": "r6_images/weapons/w-spear308.png"
+    },
+    {
+      "name": "6P41",
+      "type": "Light Machine Gun",
+      "fire": "Automatic",
+      "damage": 46,
+      "damageModel": {
+        "mode": "class",
+        "class": "LMG",
+        "base": 46,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 176,
+        "armor2Ms": 176,
+        "armor3Ms": 176
+      },
+      "rof": 680,
+      "adsMs": 450,
+      "adsClass": "LMG",
+      "mobility": 50,
+      "magazine": "100",
+      "maxammo": "100+201 (PVP) / 100+300 (Terrorist Hunt) / 100+701 (Outbreak",
+      "reload": "8.5s",
+      "users": [
+        "Fuze",
+        "Finka"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
         "suppressor": true,
         "grips_all": true,
         "laser": true
       },
       "pros": [
         "High damage per shot",
-        "High destructive power/penetration",
-        "Flip Sight gadget",
-        "*Thermal vision capabilities",
-        "*Selectable 1x or 4x zoom levels",
-        "Can penetrate the Bulletproof Windows on the Presidential Plane map"
+        "Negligible suppressor damage penalty",
+        "High magazine capacity"
       ],
       "cons": [
-        "Low rate of fire",
-        "Little reserve ammo",
-        "Noticeable recoil without proper attachments"
+        "Slow rate of fire",
+        "Slow ADS time",
+        "Slow reload time"
       ],
-      "page": "OTs-03",
+      "page": "6P41",
       "aliases": [
-        "OTs-03"
+        "6P41"
       ],
-      "art": "r6_images/weapons/w-ots03.png"
+      "art": "r6_images/weapons/w-6p41.png"
+    },
+    {
+      "name": "SASG-12",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 50,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": 8,
+        "close": {
+          "dmg": 50,
+          "range": [
+            0,
+            2
+          ]
+        },
+        "far": {
+          "dmg": 14,
+          "range": [
+            15,
+            null
+          ]
+        },
+        "suppressed": {
+          "close": {
+            "dmg": 42,
+            "range": [
+              0,
+              2
+            ]
+          },
+          "far": {
+            "dmg": 10,
+            "range": [
+              15,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": null,
+      "rof": 330,
+      "adsMs": 250,
+      "adsClass": "S",
+      "mobility": 50,
+      "magazine": "10+1",
+      "maxammo": "11+40 (PVP) / 11+70 (Training Grounds) / 11+110 (Outbreak)",
+      "reload": "2.808s (Tactical) / 3.376s (Empty)}} The SASG-12 is a weapon featured in Tom Cla",
+      "users": [
+        "Kapkan",
+        "Finka",
+        "Fenrir"
+      ],
+      "attachments": {},
+      "pros": [
+        "High damage per pellet",
+        "Quick ADS time",
+        "Fast rate of fire",
+        "High magazine capacity"
+      ],
+      "cons": [
+        "Moderate recoil kick per shot",
+        "High damage dropoff"
+      ],
+      "page": "SASG-12",
+      "aliases": [
+        "SASG-12"
+      ],
+      "art": "r6_images/weapons/w-sasg12.png"
     },
     {
       "name": "PMM",
@@ -1154,6 +2379,343 @@
       "art": "r6_images/weapons/w-pmm.png"
     },
     {
+      "name": "GSh-18",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 44,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 44,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 24,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": {
+          "close": {
+            "dmg": 37,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 20,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": "267ms (0-16m) / 400ms (17-21m) / 533ms (22+m)",
+        "armor2": "267ms (0-14m) / 400ms (15-19m) / 533ms (20+m)",
+        "armor3": "267ms (0-11m) / 400ms (12-18m) / 533ms (19-21m) / 667ms (22+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 218,
+        "armor2Ms": 218,
+        "armor3Ms": 218
+      },
+      "rof": 550,
+      "adsMs": 200,
+      "adsClass": "H",
+      "mobility": 50,
+      "magazine": "18+1",
+      "maxammo": "19+54 (PVP) / 19+126 (PVE)",
+      "reload": "2.3s (Empty) / 2.1s (Tactical)",
+      "users": [
+        "Fuze",
+        "Kapkan",
+        "Tachanka",
+        "Finka",
+        "Flores",
+        "Rauora"
+      ],
+      "attachments": {},
+      "pros": [
+        "Low recoil per shot",
+        "High magazine capacity"
+      ],
+      "cons": [
+        "Slightly subpar damage per shot",
+        "Steep damage dropoff"
+      ],
+      "page": "GSh-18",
+      "aliases": [
+        "GSh-18"
+      ],
+      "art": "r6_images/weapons/w-gsh18.png"
+    },
+    {
+      "name": "AR33",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 2-round burst / Semi-automatic",
+      "damage": 41,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 41,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 160,
+        "armor2Ms": 160,
+        "armor3Ms": 240
+      },
+      "rof": 749,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "25+1",
+      "maxammo": "26+175",
+      "reload": "3.3s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Thatcher",
+        "Flores"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Moderate fire rate",
+        "Manageable recoil",
+        "Versatile attachments",
+        "Somewhat fast reload"
+      ],
+      "cons": [
+        "Low magazine size",
+        "Average damage"
+      ],
+      "page": "AR33",
+      "aliases": [
+        "AR33"
+      ],
+      "art": "r6_images/weapons/w-ar33.png"
+    },
+    {
+      "name": "T-95 LSW",
+      "type": "Light Machine Gun",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 46,
+      "damageModel": {
+        "mode": "class",
+        "class": "LMG",
+        "base": 46,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 185,
+        "armor2Ms": 185,
+        "armor3Ms": 185
+      },
+      "rof": 650,
+      "adsMs": 450,
+      "adsClass": "LMG",
+      "mobility": 50,
+      "magazine": "80+1",
+      "maxammo": "81+160 / 81+720 (Outbreak)",
+      "reload": "3.0s (Empty) / 2.0s (Tactical)",
+      "users": [
+        "Ying",
+        "Flores"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High damage per shot",
+        "Low recoil",
+        "Fast reload speed",
+        "High magazine capacity",
+        "Versatile attachments"
+      ],
+      "cons": [
+        "Low rate of fire"
+      ],
+      "page": "T-95 LSW",
+      "aliases": [
+        "T-95 LSW"
+      ],
+      "art": "r6_images/weapons/w-t95lsw.png"
+    },
+    {
+      "name": "DP-27",
+      "type": "Light Machine Gun",
+      "fire": "Automatic",
+      "damage": 60,
+      "damageModel": {
+        "mode": "class",
+        "class": "LMG",
+        "base": 60,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 109,
+        "armor2Ms": 109,
+        "armor3Ms": 218
+      },
+      "rof": 550,
+      "adsMs": 450,
+      "adsClass": "LMG",
+      "mobility": 50,
+      "magazine": "70",
+      "maxammo": "70+141",
+      "reload": "4.6s (Empty) / 4.0s (Tactical)",
+      "users": [
+        "Tachanka"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_dp27": true
+      },
+      "pros": [
+        "High destruction/penetration",
+        "Capable of creating rotation holes",
+        "High magazine capacity",
+        "High damage per shot",
+        "Relatively low vertical recoil"
+      ],
+      "cons": [
+        "Low rate of fire",
+        "Subpar horizontal recoil",
+        "Lacks attachments",
+        "Bulky pan magazine (reduces vision)"
+      ],
+      "page": "DP27",
+      "aliases": [
+        "Ballistic Shield",
+        "DP27"
+      ],
+      "art": "r6_images/weapons/w-dp27.png"
+    },
+    {
+      "name": "OTs-03",
+      "type": "Marksman Rifle",
+      "fire": "Semi-automatic",
+      "damage": 71,
+      "damageModel": {
+        "mode": "class",
+        "class": "SR",
+        "base": 71,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 2
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 158,
+        "armor2Ms": 158,
+        "armor3Ms": 158
+      },
+      "rof": 380,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 36,
+      "magazine": "15+1",
+      "maxammo": "16+60 (PVP) / 11+80 ( Terrorist Hunt) / 11+110 (Outbreak)",
+      "reload": "3.4s (Empty) / 2.7s (Tactical)",
+      "users": [
+        "Glaz"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High damage per shot",
+        "High destructive power/penetration",
+        "Flip Sight gadget",
+        "*Thermal vision capabilities",
+        "*Selectable 1x or 4x zoom levels",
+        "Can penetrate the Bulletproof Windows on the Presidential Plane map"
+      ],
+      "cons": [
+        "Low rate of fire",
+        "Little reserve ammo",
+        "Noticeable recoil without proper attachments"
+      ],
+      "page": "OTs-03",
+      "aliases": [
+        "OTs-03"
+      ],
+      "art": "r6_images/weapons/w-ots03.png"
+    },
+    {
       "name": "Bearing 9",
       "type": "Machine Pistol",
       "fire": "Automatic / Semi-automatic",
@@ -1221,15 +2783,15 @@
       "art": "r6_images/weapons/w-bearing9.png"
     },
     {
-      "name": "Type-89",
+      "name": "F90",
       "type": "Assault Rifle",
       "fire": "Automatic / 3-round burst / Semi-automatic",
-      "damage": 40,
+      "damage": 38,
       "damageModel": {
         "mode": "class",
         "class": "AR",
-        "base": 40,
-        "extended": false
+        "base": 38,
+        "extended": true
       },
       "ttk": {
         "armor1": null,
@@ -1243,19 +2805,19 @@
           "armor3": 4
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 141,
-        "armor2Ms": 141,
-        "armor3Ms": 212
+        "armor1Ms": 154,
+        "armor2Ms": 154,
+        "armor3Ms": 231
       },
-      "rof": 850,
+      "rof": 780,
       "adsMs": 400,
       "adsClass": "AR",
       "mobility": 50,
-      "magazine": "20+1",
-      "maxammo": "21+160",
-      "reload": "3.3s (Empty) / 2.6s (Tactical)",
+      "magazine": "30+1",
+      "maxammo": "31+180 (PVP) / 31+240 (Training Grounds)",
+      "reload": "3.1s (Empty) / 2.2s (Tactical)",
       "users": [
-        "Hibana"
+        "Gridlock"
       ],
       "attachments": {
         "sight_1x": true,
@@ -1264,82 +2826,222 @@
         "compensator": true,
         "flash_hider": true,
         "suppressor": true,
+        "extended_barrel": true,
         "grips_all": true,
         "laser": true
       },
       "pros": [
-        "High rate of fire",
-        "High overall damage",
-        "Low vertical and horizontal recoil",
-        "Versatile attachments",
-        "Mild damage dropoff",
-        "High damage output"
+        "Low recoil",
+        "Above-average rate of fire",
+        "Quick reload"
       ],
       "cons": [
-        "Low magazine size"
+        "Average damage output"
       ],
-      "page": "Type 89-F",
+      "page": "F90",
       "aliases": [
-        "Type-89"
+        "F90"
       ],
-      "art": "r6_images/weapons/w-type89.png"
+      "art": "r6_images/weapons/w-f90.png"
     },
     {
-      "name": "SuperNova",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 48,
+      "name": "SDP 9mm",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 47,
       "damageModel": {
         "mode": "ranged",
-        "pellets": 8,
+        "pellets": null,
         "close": {
-          "dmg": 48,
+          "dmg": 47,
           "range": [
             0,
-            8
+            12
           ]
         },
         "far": {
-          "dmg": 20,
+          "dmg": 25,
           "range": [
-            13,
+            22,
             null
           ]
         },
-        "suppressed": null
+        "suppressed": {
+          "close": {
+            "dmg": 39,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 21,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": "267ms (0-17m) / 400ms (18+m)",
+        "armor2": "267ms (0-15m) / 400ms (16-20m) / 533ms (21+m)",
+        "armor3": "267ms (0-13m) / 400ms (14-18m) / 533ms (19+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 267,
+        "armor2Ms": 267,
+        "armor3Ms": 267
+      },
+      "rof": 450,
+      "adsMs": 200,
+      "adsClass": "H",
+      "mobility": 45,
+      "magazine": "16+1",
+      "maxammo": "17+64 (PVP) / 17+128 (Terrorist Hunt)",
+      "reload": "2.2s (Empty) / 1.4s (Tactical)",
+      "users": [
+        "Gridlock",
+        "Mozzie",
+        "Sens"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "SDP 9mm",
+      "aliases": [
+        "SDP 9mm"
+      ],
+      "art": "r6_images/weapons/w-sdp9mm.png"
+    },
+    {
+      "name": "SG-CQB",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 44,
+      "damageModel": {
+        "mode": "class",
+        "class": "SG",
+        "base": 44,
+        "extended": false
       },
       "ttk": {
         "armor1": null,
         "armor2": null,
         "armor3": null
       },
-      "ttkComputed": null,
-      "rof": 75,
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 1412,
+        "armor2Ms": 1412,
+        "armor3Ms": 1412
+      },
+      "rof": 85,
       "adsMs": 250,
       "adsClass": "S",
       "mobility": 50,
       "magazine": "6+1",
-      "maxammo": "7+48 (PVP) / 7+49 (Training Grounds)",
+      "maxammo": "7+29 (PVP) / 7+78 (Training Grounds) / 7+84 (Outbreak)",
       "reload": "",
       "users": [
-        "Hibana",
-        "Echo",
-        "Amaru"
+        "Twitch",
+        "Lion",
+        "Doc",
+        "Rook",
+        "Grim"
       ],
-      "attachments": {},
+      "attachments": {
+        "sight_1x": true,
+        "grips_no_angled": true,
+        "laser": true
+      },
       "pros": [
         "High damage per pellet",
-        "Mild damage drop-off",
-        "Can be equipped with a suppressor with zero downside"
+        "Relatively quick pump cycle"
       ],
       "cons": [
-        "Slowest pump cycle of all pump action shotguns"
+        "Small reserve ammo"
       ],
-      "page": "SuperNova",
+      "page": "SG-CQB",
       "aliases": [
-        "SuperNova"
+        "SG-CQB"
       ],
-      "art": "r6_images/weapons/w-supernova.png"
+      "art": "r6_images/weapons/w-sgcqb.png"
+    },
+    {
+      "name": "552 Commando",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 43,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 43,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 174,
+        "armor2Ms": 174,
+        "armor3Ms": 174
+      },
+      "rof": 690,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+210 (PVP) / 31+240 (Training Grounds)",
+      "reload": "3.1s (Empty) / 2.4s (Tactical)",
+      "users": [
+        "IQ",
+        "Grim"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Fast reload time",
+        "High single-shot damage"
+      ],
+      "cons": [
+        "Recoil is noticeable - especially without proper attachments",
+        "Slow rate of fire",
+        "Under performing suppressor damage"
+      ],
+      "page": "552 Commando",
+      "aliases": [
+        "552 Commando"
+      ],
+      "art": "r6_images/weapons/w-552commando.png"
     },
     {
       "name": "P229",
@@ -1418,6 +3120,548 @@
         "P229"
       ],
       "art": "r6_images/weapons/w-p229.png"
+    },
+    {
+      "name": "Type-89",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 40,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 40,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 141,
+        "armor2Ms": 141,
+        "armor3Ms": 212
+      },
+      "rof": 850,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "20+1",
+      "maxammo": "21+160",
+      "reload": "3.3s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Hibana"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High rate of fire",
+        "High overall damage",
+        "Low vertical and horizontal recoil",
+        "Versatile attachments",
+        "Mild damage dropoff",
+        "High damage output"
+      ],
+      "cons": [
+        "Low magazine size"
+      ],
+      "page": "Type 89-F",
+      "aliases": [
+        "Type-89"
+      ],
+      "art": "r6_images/weapons/w-type89.png"
+    },
+    {
+      "name": "ARX200",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 47,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 47,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 171,
+        "armor2Ms": 171,
+        "armor3Ms": 171
+      },
+      "rof": 700,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "20+1",
+      "maxammo": "21+160 (PVP) / 21+220 (Training Grounds)",
+      "reload": "3.4s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Nomad",
+        "Iana"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High damage output",
+        "Low recoil per shot",
+        "Relatively good reload speed",
+        "Tight hipfire spread"
+      ],
+      "cons": [
+        "Low magazine capacity",
+        "Slow fire rate"
+      ],
+      "page": "ARX200",
+      "aliases": [
+        "ARX200"
+      ],
+      "art": "r6_images/weapons/w-arx200.png"
+    },
+    {
+      "name": "AUG A2",
+      "type": "Assault Rifle",
+      "fire": "Automatic",
+      "damage": 42,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 42,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 167,
+        "armor2Ms": 167,
+        "armor3Ms": 167
+      },
+      "rof": 720,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+210 (PVP) / 31+240 (Training Grounds)",
+      "reload": "3.3s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "IQ",
+        "Wamai"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "laser": true
+      },
+      "pros": [
+        "Low recoil",
+        "Moderate fire rate"
+      ],
+      "cons": [
+        "Low damage",
+        "Lacks grips"
+      ],
+      "page": "AUG",
+      "aliases": [
+        "AUG A2",
+        "AUG A3"
+      ],
+      "art": "r6_images/weapons/w-auga2.png"
+    },
+    {
+      "name": "C7E",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 42,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 42,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 150,
+        "armor2Ms": 150,
+        "armor3Ms": 150
+      },
+      "rof": 800,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+150 (PVP) / 31+270 (Training Grounds)",
+      "reload": "2.7s (Empty) / 2.0s (Tactical)",
+      "users": [
+        "Jackal"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [],
+      "cons": [],
+      "page": "C7E",
+      "aliases": [
+        "C7E"
+      ],
+      "art": "r6_images/weapons/w-c7e.png"
+    },
+    {
+      "name": "PDW9",
+      "type": "Submachine Gun",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 34,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 34,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 150,
+        "armor2Ms": 225,
+        "armor3Ms": 225
+      },
+      "rof": 800,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "50+1",
+      "maxammo": "51+250 (PVP) / 51+300 (Training Grounds)",
+      "reload": "3.4s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Jackal",
+        "Osa"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [],
+      "cons": [],
+      "page": "PDW9",
+      "aliases": [
+        "PDW9"
+      ],
+      "art": "r6_images/weapons/w-pdw9.png"
+    },
+    {
+      "name": "ITA12L",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 50,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": 8,
+        "close": {
+          "dmg": 50,
+          "range": [
+            0,
+            2
+          ]
+        },
+        "far": {
+          "dmg": 30,
+          "range": [
+            12,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": null,
+      "rof": 85,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "7+1",
+      "maxammo": "8+33 (PVP) / 8+57 (Training Grounds)",
+      "reload": "",
+      "users": [
+        "Jackal",
+        "Mira",
+        "Solis"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "ITA12L",
+      "aliases": [
+        "ITA12L"
+      ],
+      "art": "r6_images/weapons/w-ita12l.png"
+    },
+    {
+      "name": "P226 Mk 25",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 50,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 50,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 30,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": {
+          "close": {
+            "dmg": 42,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 25,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": "133ms (0-11m) / 267ms (12-20m) / 400ms (21+m)",
+        "armor2": "267ms (0-17m) / 400ms (18+m)",
+        "armor3": "267ms (0-15m) / 400ms (16-21m) / 533ms (22+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 109,
+        "armor2Ms": 218,
+        "armor3Ms": 218
+      },
+      "rof": 550,
+      "adsMs": 200,
+      "adsClass": "H",
+      "mobility": 50,
+      "magazine": "15+1",
+      "maxammo": "16+45 (PVP) / 16+120 (Terrorist Hunt) / 16+150 (Outbreak)",
+      "reload": "2.1s (Empty) / 1.8s (Tactical)",
+      "users": [
+        "Sledge",
+        "Thatcher",
+        "Smoke",
+        "Mute",
+        "Kali",
+        "Tubarão",
+        "Denari"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "P226",
+      "aliases": [
+        "USP40",
+        "P226 Mk 25",
+        "P226 Mk25"
+      ],
+      "art": "r6_images/weapons/w-p226mk25.png"
+    },
+    {
+      "name": "CSRX 300",
+      "type": "Marksman Rifle",
+      "fire": "",
+      "damage": 135,
+      "damageModel": {
+        "mode": "class",
+        "class": "SR",
+        "base": 135,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 1,
+          "armor2": 1,
+          "armor3": 1
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 0,
+        "armor2Ms": 0,
+        "armor3Ms": 0
+      },
+      "rof": 50,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "5+1",
+      "maxammo": "6+30 (PVP) / 6+35 (Terrorist Hunt)",
+      "reload": "3.1s (Empty) / 2.5s (Tactical)",
+      "users": [
+        "Kali"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "CSRX 300",
+      "aliases": [
+        "CSRX 300"
+      ],
+      "art": "r6_images/weapons/w-csrx300.png"
+    },
+    {
+      "name": "SPSMG9",
+      "type": "Machine Pistol",
+      "fire": "Automatic",
+      "damage": 35,
+      "damageModel": {
+        "mode": "class",
+        "class": "MP",
+        "base": 35,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 122,
+        "armor2Ms": 184,
+        "armor3Ms": 184
+      },
+      "rof": 980,
+      "adsMs": 275,
+      "adsClass": "MP",
+      "mobility": 50,
+      "magazine": "20+1",
+      "maxammo": "21+140",
+      "reload": "2.7s (Empty) 2.2s (Tactical)",
+      "users": [
+        "Clash",
+        "Kali"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "laser": true
+      },
+      "pros": [
+        "Manageable recoil",
+        "High rate of fire"
+      ],
+      "cons": [
+        "Lack of attachments",
+        "Small magazine capacity"
+      ],
+      "page": "MP9",
+      "aliases": [
+        "SPSMG9"
+      ],
+      "art": "r6_images/weapons/w-spsmg9.png"
     },
     {
       "name": "V308",
@@ -1546,144 +3790,6 @@
       "art": "r6_images/weapons/w-417.png"
     },
     {
-      "name": "SG-CQB",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 44,
-      "damageModel": {
-        "mode": "class",
-        "class": "SG",
-        "base": 44,
-        "extended": false
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 1412,
-        "armor2Ms": 1412,
-        "armor3Ms": 1412
-      },
-      "rof": 85,
-      "adsMs": 250,
-      "adsClass": "S",
-      "mobility": 50,
-      "magazine": "6+1",
-      "maxammo": "7+29 (PVP) / 7+78 (Training Grounds) / 7+84 (Outbreak)",
-      "reload": "",
-      "users": [
-        "Twitch",
-        "Lion",
-        "Doc",
-        "Rook",
-        "Grim"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "grips_no_angled": true,
-        "laser": true
-      },
-      "pros": [
-        "High damage per pellet",
-        "Relatively quick pump cycle"
-      ],
-      "cons": [
-        "Small reserve ammo"
-      ],
-      "page": "SG-CQB",
-      "aliases": [
-        "SG-CQB"
-      ],
-      "art": "r6_images/weapons/w-sgcqb.png"
-    },
-    {
-      "name": "P9",
-      "type": "Handgun",
-      "fire": "Semi-automatic",
-      "damage": 45,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": null,
-        "close": {
-          "dmg": 45,
-          "range": [
-            0,
-            12
-          ]
-        },
-        "far": {
-          "dmg": 27,
-          "range": [
-            22,
-            null
-          ]
-        },
-        "suppressed": {
-          "close": {
-            "dmg": 38,
-            "range": [
-              0,
-              12
-            ]
-          },
-          "far": {
-            "dmg": 23,
-            "range": [
-              22,
-              null
-            ]
-          }
-        }
-      },
-      "ttk": {
-        "armor1": "267ms (0-18m) / 400ms (18+m)",
-        "armor2": "267ms (0-15m) / 400ms (16-21m) / 533ms (22+m)",
-        "armor3": "267ms (0-12m) / 400ms (12-19m) / 533ms (20+m)"
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 218,
-        "armor2Ms": 218,
-        "armor3Ms": 218
-      },
-      "rof": 550,
-      "adsMs": 200,
-      "adsClass": "H",
-      "mobility": 45,
-      "magazine": "16+1",
-      "maxammo": "17+64 (PVP) / 17+128 (PVE)",
-      "reload": "2.1s (Empty) / 1.8s (Tactical)",
-      "users": [
-        "Twitch",
-        "Montagne",
-        "Doc",
-        "Rook",
-        "Lion",
-        "Ace"
-      ],
-      "attachments": {},
-      "pros": [],
-      "cons": [],
-      "page": "P9",
-      "aliases": [
-        "P9"
-      ],
-      "art": "r6_images/weapons/w-p9.png"
-    },
-    {
       "name": "LFP586",
       "type": "Handgun",
       "fire": "",
@@ -1749,6 +3855,581 @@
       "art": "r6_images/weapons/w-lfp586.png"
     },
     {
+      "name": "AR-15.50",
+      "type": "Marksman Rifle",
+      "fire": "Semi-automatic",
+      "damage": 59,
+      "damageModel": {
+        "mode": "class",
+        "class": "DMR",
+        "base": 59,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 133,
+        "armor2Ms": 133,
+        "armor3Ms": 267
+      },
+      "rof": 450,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "10+1",
+      "maxammo": "11+60 (PVP)",
+      "reload": "3.1s (Empty) / 2.2s (Tactical)",
+      "users": [
+        "Maverick",
+        "Tubarão"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "sight_telescopic_mav": true,
+        "muzzle_brake_mav": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [],
+      "cons": [],
+      "page": "AR-15.50",
+      "aliases": [
+        "AR-15.50"
+      ],
+      "art": "r6_images/weapons/w-ar1550.png"
+    },
+    {
+      "name": "M4",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 44,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 44,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 160,
+        "armor2Ms": 160,
+        "armor3Ms": 160
+      },
+      "rof": 750,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+150 (PVP) / 31+210 (Training Grounds)",
+      "reload": "3.4s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Maverick",
+        "Striker"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Above-average damage output",
+        "Good rate of fire",
+        "Versatile attachments"
+      ],
+      "cons": [
+        "Subpar vertical recoil",
+        "Harsh damage dropoff"
+      ],
+      "page": "M4",
+      "aliases": [
+        "M4"
+      ],
+      "art": "r6_images/weapons/w-m4.png"
+    },
+    {
+      "name": "1911 TACOPS",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 55,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 55,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 48,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": {
+          "close": {
+            "dmg": 46,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 41,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": "133ms (0-18m) / 267ms (19+m)",
+        "armor2": "267ms (0+m)",
+        "armor3": "267ms (0+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 133,
+        "armor2Ms": 133,
+        "armor3Ms": 267
+      },
+      "rof": 450,
+      "adsMs": 200,
+      "adsClass": "H",
+      "mobility": 45,
+      "magazine": "8+1",
+      "maxammo": "9+32 (PVP) / 9+56 (Terrorist Hunt)",
+      "reload": "2.2s (Empty) / 1.9s (Tactical)",
+      "users": [
+        "Maverick",
+        "Thorn",
+        "Noor"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "1911 TACOPS",
+      "aliases": [
+        "1911 TACOPS"
+      ],
+      "art": "r6_images/weapons/w-1911tacops.png"
+    },
+    {
+      "name": "Reaper Mk2",
+      "type": "Machine Pistol",
+      "fire": "Automatic",
+      "damage": 31,
+      "damageModel": {
+        "mode": "class",
+        "class": "MP",
+        "base": 31,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 4,
+          "armor2": 4,
+          "armor3": 5
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 235,
+        "armor2Ms": 235,
+        "armor3Ms": 314
+      },
+      "rof": 765,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "33+1",
+      "maxammo": "34+133",
+      "reload": "2.85s (Empty) / 0.34s (Tactical)",
+      "users": [
+        "Sledge",
+        "Pulse",
+        "Rook",
+        "Ying",
+        "Maverick",
+        "Oryx",
+        "Rauora"
+      ],
+      "attachments": {
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "laser": true
+      },
+      "pros": [
+        "High magazine capacity"
+      ],
+      "cons": [
+        "Low rate of fire",
+        "High vertical and horizontal recoil",
+        "Low damage"
+      ],
+      "page": "Glock",
+      "aliases": [
+        "Reaper Mk2",
+        "Reaper MK2"
+      ],
+      "art": "r6_images/weapons/w-reapermk2.png"
+    },
+    {
+      "name": ".44 Mag Semi-Auto",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 54,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 54,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 48,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": "133ms (0-18m) / 267ms (19+m)",
+        "armor2": "267ms (0+m)",
+        "armor3": "267ms (0+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 133,
+        "armor2Ms": 267,
+        "armor3Ms": 267
+      },
+      "rof": 450,
+      "adsMs": 200,
+      "adsClass": "H",
+      "mobility": 45,
+      "magazine": "7+1",
+      "maxammo": "8+42 (PVP) / 8+55 (Terrorist Hunt)",
+      "reload": "2.1s (Empty) / 1.8s (Tactical)",
+      "users": [
+        "Nomad",
+        "Kaid"
+      ],
+      "attachments": {},
+      "pros": [
+        "Above-average damage per shot",
+        "Mild damage drop-off"
+      ],
+      "cons": [
+        "High magnification, unsuitable at close-range",
+        "High recoil kick per shot"
+      ],
+      "page": ".44 Mag Semi-Auto",
+      "aliases": [
+        ".44 Mag Semi-Auto"
+      ],
+      "art": "r6_images/weapons/w-44magsemiauto.png"
+    },
+    {
+      "name": "FMG-9",
+      "type": "Submachine Gun",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 34,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 34,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 150,
+        "armor2Ms": 225,
+        "armor3Ms": 225
+      },
+      "rof": 800,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+150 (PVP) / 31+180 (Training Grounds) / 31+420 (Outbreak)",
+      "reload": "3.0s (Empty) / 2.2s (Tactical)",
+      "users": [
+        "Smoke",
+        "Nøkk",
+        "Denari"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified_nokk": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "laser": true
+      },
+      "pros": [
+        "Above average damage per shot",
+        "Moderate recoil",
+        "Good rate of fire"
+      ],
+      "cons": [
+        "Lacks grips",
+        "Weak damage dropoff"
+      ],
+      "page": "FMG-9",
+      "aliases": [
+        "FMG-9"
+      ],
+      "art": "r6_images/weapons/w-fmg9.png"
+    },
+    {
+      "name": "SPAS-12",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 35,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": 8,
+        "close": {
+          "dmg": 35,
+          "range": [
+            0,
+            4
+          ]
+        },
+        "far": {
+          "dmg": 20,
+          "range": [
+            20,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": null,
+      "rof": 200,
+      "adsMs": 250,
+      "adsClass": "S",
+      "mobility": 50,
+      "magazine": "6+1",
+      "maxammo": "7+29 (PVP) / 7+50 (Training Grounds)",
+      "reload": "",
+      "users": [
+        "Valkyrie",
+        "Oryx"
+      ],
+      "attachments": {},
+      "pros": [
+        "Average damage per pellet",
+        "Minimal damage dropoff",
+        "Very fast reload time",
+        "Controllable recoil"
+      ],
+      "cons": [
+        "Subpar rate of fire"
+      ],
+      "page": "SPAS-12",
+      "aliases": [
+        "SIX12 SD",
+        "SPAS-12"
+      ],
+      "art": "r6_images/weapons/w-spas12.png"
+    },
+    {
+      "name": "556xi",
+      "type": "Assault Rifle",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 47,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 47,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 174,
+        "armor2Ms": 174,
+        "armor3Ms": 174
+      },
+      "rof": 690,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+210 (PVP) / 31+180 (Training Grounds)",
+      "reload": "3.7s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Thermite",
+        "Osa"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High damage per shot",
+        "Low recoil overall"
+      ],
+      "cons": [
+        "Slow rate of fire",
+        "Slow empty reload",
+        "Steep damage dropoff"
+      ],
+      "page": "556xi",
+      "aliases": [
+        "556XI",
+        "556xi"
+      ],
+      "art": "r6_images/weapons/w-556xi.png"
+    },
+    {
+      "name": "LMG-E",
+      "type": "Light Machine Gun",
+      "fire": "Automatic",
+      "damage": 41,
+      "damageModel": {
+        "mode": "class",
+        "class": "LMG",
+        "base": 41,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 167,
+        "armor2Ms": 167,
+        "armor3Ms": 250
+      },
+      "rof": 720,
+      "adsMs": 450,
+      "adsClass": "LMG",
+      "mobility": 50,
+      "magazine": "150",
+      "maxammo": "150+150 (PVP) / 150+300 (Terrorist Hunt)",
+      "reload": "6.5s (Empty) / 7.1s (Tactical)",
+      "users": [
+        "Zofia",
+        "Ram"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Average rate of fire",
+        "Very high ammo capacity",
+        "Low recoil"
+      ],
+      "cons": [
+        "Subpar damage per shot",
+        "Steep damage dropoff"
+      ],
+      "page": "LMG-E",
+      "aliases": [
+        "LMG-E"
+      ],
+      "art": "r6_images/weapons/w-lmge.png"
+    },
+    {
       "name": "L85A2",
       "type": "Assault Rifle",
       "fire": "Automatic / Semi-automatic",
@@ -1811,392 +4492,6 @@
         "L85A2"
       ],
       "art": "r6_images/weapons/w-l85a2.png"
-    },
-    {
-      "name": "P226 Mk 25",
-      "type": "Handgun",
-      "fire": "Semi-automatic",
-      "damage": 50,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": null,
-        "close": {
-          "dmg": 50,
-          "range": [
-            0,
-            12
-          ]
-        },
-        "far": {
-          "dmg": 30,
-          "range": [
-            22,
-            null
-          ]
-        },
-        "suppressed": {
-          "close": {
-            "dmg": 42,
-            "range": [
-              0,
-              12
-            ]
-          },
-          "far": {
-            "dmg": 25,
-            "range": [
-              22,
-              null
-            ]
-          }
-        }
-      },
-      "ttk": {
-        "armor1": "133ms (0-11m) / 267ms (12-20m) / 400ms (21+m)",
-        "armor2": "267ms (0-17m) / 400ms (18+m)",
-        "armor3": "267ms (0-15m) / 400ms (16-21m) / 533ms (22+m)"
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 2,
-          "armor2": 3,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 109,
-        "armor2Ms": 218,
-        "armor3Ms": 218
-      },
-      "rof": 550,
-      "adsMs": 200,
-      "adsClass": "H",
-      "mobility": 50,
-      "magazine": "15+1",
-      "maxammo": "16+45 (PVP) / 16+120 (Terrorist Hunt) / 16+150 (Outbreak)",
-      "reload": "2.1s (Empty) / 1.8s (Tactical)",
-      "users": [
-        "Sledge",
-        "Thatcher",
-        "Smoke",
-        "Mute",
-        "Kali",
-        "Tubarão",
-        "Denari"
-      ],
-      "attachments": {},
-      "pros": [],
-      "cons": [],
-      "page": "P226",
-      "aliases": [
-        "P226 Mk 25"
-      ],
-      "art": "r6_images/weapons/w-p226mk25.png"
-    },
-    {
-      "name": "Reaper Mk2",
-      "type": "Machine Pistol",
-      "fire": "Automatic",
-      "damage": 31,
-      "damageModel": {
-        "mode": "class",
-        "class": "MP",
-        "base": 31,
-        "extended": false
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 4,
-          "armor2": 4,
-          "armor3": 5
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 235,
-        "armor2Ms": 235,
-        "armor3Ms": 314
-      },
-      "rof": 765,
-      "adsMs": null,
-      "adsClass": null,
-      "mobility": 50,
-      "magazine": "33+1",
-      "maxammo": "34+133",
-      "reload": "2.85s (Empty) / 0.34s (Tactical)",
-      "users": [
-        "Sledge",
-        "Pulse",
-        "Rook",
-        "Ying",
-        "Maverick",
-        "Oryx",
-        "Rauora"
-      ],
-      "attachments": {
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "laser": true
-      },
-      "pros": [
-        "High magazine capacity"
-      ],
-      "cons": [
-        "Low rate of fire",
-        "High vertical and horizontal recoil",
-        "Low damage"
-      ],
-      "page": "Glock",
-      "aliases": [
-        "Reaper Mk2"
-      ],
-      "art": "r6_images/weapons/w-reapermk2.png"
-    },
-    {
-      "name": "AR33",
-      "type": "Assault Rifle",
-      "fire": "Automatic / 2-round burst / Semi-automatic",
-      "damage": 41,
-      "damageModel": {
-        "mode": "class",
-        "class": "AR",
-        "base": 41,
-        "extended": false
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 4
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 160,
-        "armor2Ms": 160,
-        "armor3Ms": 240
-      },
-      "rof": 749,
-      "adsMs": 400,
-      "adsClass": "AR",
-      "mobility": 50,
-      "magazine": "25+1",
-      "maxammo": "26+175",
-      "reload": "3.3s (Empty) / 2.6s (Tactical)",
-      "users": [
-        "Thatcher",
-        "Flores"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "sight_magnified": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "Moderate fire rate",
-        "Manageable recoil",
-        "Versatile attachments",
-        "Somewhat fast reload"
-      ],
-      "cons": [
-        "Low magazine size",
-        "Average damage"
-      ],
-      "page": "AR33",
-      "aliases": [
-        "AR33"
-      ],
-      "art": "r6_images/weapons/w-ar33.png"
-    },
-    {
-      "name": "M1014",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 28,
-      "damageModel": {
-        "mode": "class",
-        "class": "SG",
-        "base": 28,
-        "extended": false
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 4,
-          "armor2": 4,
-          "armor3": 5
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 900,
-        "armor2Ms": 900,
-        "armor3Ms": 1200
-      },
-      "rof": 200,
-      "adsMs": 250,
-      "adsClass": "S",
-      "mobility": 50,
-      "magazine": "7+1",
-      "maxammo": "8+25 (PVP) / 8+73 (Training Grounds)",
-      "reload": "",
-      "users": [
-        "Thermite",
-        "Castle",
-        "Pulse",
-        "Ace",
-        "Keres Striker",
-        "Keres Sentry"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "laser": true
-      },
-      "pros": [
-        "Good damage dropoff",
-        "Average damage per pellet"
-      ],
-      "cons": [
-        "Low ammo reserve",
-        "High recoil kick per shot"
-      ],
-      "page": "M1014",
-      "aliases": [
-        "M1014"
-      ],
-      "art": "r6_images/weapons/w-m1014.png"
-    },
-    {
-      "name": "556xi",
-      "type": "Assault Rifle",
-      "fire": "Automatic / Semi-automatic",
-      "damage": 47,
-      "damageModel": {
-        "mode": "class",
-        "class": "AR",
-        "base": 47,
-        "extended": false
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 174,
-        "armor2Ms": 174,
-        "armor3Ms": 174
-      },
-      "rof": 690,
-      "adsMs": 400,
-      "adsClass": "AR",
-      "mobility": 50,
-      "magazine": "30+1",
-      "maxammo": "31+210 (PVP) / 31+180 (Training Grounds)",
-      "reload": "3.7s (Empty) / 2.6s (Tactical)",
-      "users": [
-        "Thermite",
-        "Osa"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "sight_magnified": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "High damage per shot",
-        "Low recoil overall"
-      ],
-      "cons": [
-        "Slow rate of fire",
-        "Slow empty reload",
-        "Steep damage dropoff"
-      ],
-      "page": "556xi",
-      "aliases": [
-        "556xi"
-      ],
-      "art": "r6_images/weapons/w-556xi.png"
-    },
-    {
-      "name": "ITA12S",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 70,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": 8,
-        "close": {
-          "dmg": 70,
-          "range": [
-            0,
-            1
-          ]
-        },
-        "far": {
-          "dmg": 15,
-          "range": [
-            12,
-            null
-          ]
-        },
-        "suppressed": null
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": null,
-      "rof": 85,
-      "adsMs": null,
-      "adsClass": null,
-      "mobility": 50,
-      "magazine": "4+1",
-      "maxammo": "5+21 (PVP) / 5+26 (Training Grounds)",
-      "reload": "",
-      "users": [
-        "Jackal",
-        "Mira",
-        "Frost",
-        "Amaru",
-        "Striker",
-        "Thunderbird",
-        "Thermite"
-      ],
-      "attachments": {},
-      "pros": [],
-      "cons": [],
-      "page": "ITA12S",
-      "aliases": [
-        "ITA12S"
-      ],
-      "art": "r6_images/weapons/w-ita12s.png"
     },
     {
       "name": "F2",
@@ -2265,15 +4560,28 @@
       "art": "r6_images/weapons/w-f2.png"
     },
     {
-      "name": "T-95 LSW",
-      "type": "Light Machine Gun",
-      "fire": "Automatic / 3-round burst / Semi-automatic",
-      "damage": 46,
+      "name": "Tacit .45",
+      "type": "Pistol",
+      "fire": "Semi-automatic",
+      "damage": 52,
       "damageModel": {
-        "mode": "class",
-        "class": "LMG",
-        "base": 46,
-        "extended": false
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 52,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 31,
+          "range": [
+            20,
+            null
+          ]
+        },
+        "suppressed": null
       },
       "ttk": {
         "armor1": null,
@@ -2282,51 +4590,41 @@
       },
       "ttkComputed": {
         "shots": {
-          "armor1": 3,
+          "armor1": 2,
           "armor2": 3,
           "armor3": 3
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 185,
-        "armor2Ms": 185,
-        "armor3Ms": 185
+        "armor1Ms": 133,
+        "armor2Ms": 267,
+        "armor3Ms": 267
       },
-      "rof": 650,
-      "adsMs": 450,
-      "adsClass": "LMG",
+      "rof": 450,
+      "adsMs": null,
+      "adsClass": null,
       "mobility": 50,
-      "magazine": "80+1",
-      "maxammo": "81+160 / 81+720 (Outbreak)",
-      "reload": "3.0s (Empty) / 2.0s (Tactical)",
+      "magazine": "8+1",
+      "maxammo": "",
+      "reload": "2.1s",
       "users": [
-        "Ying",
-        "Flores"
+        "Solid Snake"
       ],
       "attachments": {
-        "sight_1x": true,
-        "sight_magnified": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "grips_all": true,
         "laser": true
       },
       "pros": [
-        "High damage per shot",
-        "Low recoil",
-        "Fast reload speed",
-        "High magazine capacity",
-        "Versatile attachments"
+        "Integrated reflex sight",
+        "Integrated suppressor"
       ],
       "cons": [
-        "Low rate of fire"
+        "Low magazine size",
+        "Low damage compared to pistols with similar magazine sizes"
       ],
-      "page": "T-95 LSW",
+      "page": "Tacit .45",
       "aliases": [
-        "T-95 LSW"
+        "Tacit .45"
       ],
-      "art": "r6_images/weapons/w-t95lsw.png"
+      "art": "r6_images/weapons/w-tacit45.png"
     },
     {
       "name": "SIX12",
@@ -2456,6 +4754,62 @@
       "art": "r6_images/weapons/w-q929.png"
     },
     {
+      "name": "SC3000K",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 45,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 45,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 150,
+        "armor2Ms": 150,
+        "armor3Ms": 150
+      },
+      "rof": 800,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "25+1",
+      "maxammo": "",
+      "reload": "3.4s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Zero"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [],
+      "cons": [],
+      "page": "SC3000K",
+      "aliases": [
+        "SC3000K"
+      ],
+      "art": "r6_images/weapons/w-sc3000k.png"
+    },
+    {
       "name": "MP7",
       "type": "Submachine Gun",
       "fire": "Automatic / Semi-automatic",
@@ -2519,63 +4873,270 @@
       "art": "r6_images/weapons/w-mp7.png"
     },
     {
-      "name": "M870",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 60,
+      "name": "M762",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 45,
       "damageModel": {
-        "mode": "ranged",
-        "pellets": 8,
-        "close": {
-          "dmg": 60,
-          "range": [
-            0,
-            3
-          ]
-        },
-        "far": {
-          "dmg": 20,
-          "range": [
-            12,
-            null
-          ]
-        },
-        "suppressed": null
+        "mode": "class",
+        "class": "AR",
+        "base": 45,
+        "extended": false
       },
       "ttk": {
         "armor1": null,
         "armor2": null,
         "armor3": null
       },
-      "ttkComputed": null,
-      "rof": 100,
-      "adsMs": 250,
-      "adsClass": "S",
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 164,
+        "armor2Ms": 164,
+        "armor3Ms": 164
+      },
+      "rof": 730,
+      "adsMs": 400,
+      "adsClass": "AR",
       "mobility": 50,
-      "magazine": "6+1",
-      "maxammo": "7+29 (PVP) / 7+78 (Training Grounds)",
-      "reload": "",
+      "magazine": "30+1",
+      "maxammo": "31+210 (PVP) / 31+270 (Training Grounds)",
+      "reload": "3.3s (Empty) / 2.6s (Tactical)",
       "users": [
-        "Jäger",
-        "Bandit",
-        "Thorn",
-        "Sentry"
+        "Zofia"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Average rate of fire",
+        "High damage per shot",
+        "Versatile attachments"
+      ],
+      "cons": [
+        "Slow reload speed",
+        "Steep damage dropoff",
+        "High vertical and horizontal recoil"
+      ],
+      "page": "M762",
+      "aliases": [
+        "M762"
+      ],
+      "art": "r6_images/weapons/w-m762.png"
+    },
+    {
+      "name": "RG15",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 38,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 38,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 22,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": {
+          "close": {
+            "dmg": 32,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 20,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": "267ms (0-14m) / 400ms (15-19m) / 533ms (20+m)",
+        "armor2": "267ms (0-11m) / 400ms (12-18m) / 533ms (19-21m) / 667ms (22+m)",
+        "armor3": "400ms (0-15m) / 533ms (16-19m) / 667ms (17+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 218,
+        "armor2Ms": 218,
+        "armor3Ms": 327
+      },
+      "rof": 550,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 45,
+      "magazine": "15+1",
+      "maxammo": "16+45 (PVP) / 16+75 (Terrorist Hunt)",
+      "reload": "2.4s (Empty) / 1.9s (Tactical)",
+      "users": [
+        "Zofia",
+        "Ela",
+        "Melusi"
       ],
       "attachments": {},
       "pros": [
-        "High rate of fire",
-        "High damage per pellet",
-        "Fast pump cycle",
-        "Decent damage dropoff"
+        "Integrated red dot sight",
+        "High ammo capacity"
       ],
       "cons": [
-        "None"
+        "Low damage per shot",
+        "Low reserve ammo"
       ],
-      "page": "M870",
+      "page": "RG15",
       "aliases": [
-        "M870"
+        "RG15"
       ],
-      "art": "r6_images/weapons/w-m870.png"
+      "art": "r6_images/weapons/w-rg15.png"
+    },
+    {
+      "name": "Mx4 Storm",
+      "type": "Submachine Gun",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 26,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 26,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 4,
+          "armor2": 5,
+          "armor3": 5
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 189,
+        "armor2Ms": 253,
+        "armor3Ms": 253
+      },
+      "rof": 950,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+150",
+      "reload": "3.1s (Empty) / 2.8s (Tactical)",
+      "users": [
+        "Alibi"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High rate of fire",
+        "Low recoil per shot",
+        "Versatile attachments"
+      ],
+      "cons": [
+        "Slow reload speed",
+        "Low damage per shot"
+      ],
+      "page": "Mx4 Storm",
+      "aliases": [
+        "Mx4 Storm"
+      ],
+      "art": "r6_images/weapons/w-mx4storm.png"
+    },
+    {
+      "name": "ACS12",
+      "type": "Shotgun",
+      "fire": "Automatic",
+      "damage": 69,
+      "damageModel": {
+        "mode": "class",
+        "class": "SS",
+        "base": 69,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 2
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 200,
+        "armor2Ms": 200,
+        "armor3Ms": 200
+      },
+      "rof": 300,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+60 (PVP) / 31+150 (Training Grounds)",
+      "reload": "2.7s (Empty) / 2.0s (Tactical)",
+      "users": [
+        "Maestro",
+        "Alibi",
+        "Azami"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High single shot damage",
+        "High destruction capabilities",
+        "Relatively low recoil"
+      ],
+      "cons": [
+        "Very low rate of fire"
+      ],
+      "page": "ACS12",
+      "aliases": [
+        "ACS12"
+      ],
+      "art": "r6_images/weapons/w-acs12.png"
     },
     {
       "name": "Keratos .357",
@@ -2640,82 +5201,246 @@
       "art": "r6_images/weapons/w-keratos357.png"
     },
     {
-      "name": "P12",
+      "name": "Bailiff 410",
       "type": "Handgun",
-      "fire": "Semi-automatic",
-      "damage": 44,
+      "fire": "",
+      "damage": 30,
       "damageModel": {
-        "mode": "ranged",
-        "pellets": null,
-        "close": {
-          "dmg": 44,
-          "range": [
-            0,
-            12
-          ]
-        },
-        "far": {
-          "dmg": 24,
-          "range": [
-            22,
-            null
-          ]
-        },
-        "suppressed": {
-          "close": {
-            "dmg": 37,
-            "range": [
-              0,
-              12
-            ]
-          },
-          "far": {
-            "dmg": 20,
-            "range": [
-              22,
-              null
-            ]
-          }
-        }
+        "mode": "class",
+        "class": "SG_BAILIFF",
+        "base": 30,
+        "extended": false
       },
       "ttk": {
-        "armor1": "267ms (0-16m) / 400ms (17-21m) / 533ms (22+m)",
-        "armor2": "267ms (0-14m) / 400ms (15-19m) / 533ms (20+m)",
-        "armor3": "267ms (0-11m) / 400ms (12-18m) / 533ms (19-21m) / 667ms (22+m)"
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 4,
+          "armor2": 4,
+          "armor3": 5
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 371,
+        "armor2Ms": 371,
+        "armor3Ms": 495
+      },
+      "rof": 485,
+      "adsMs": 250,
+      "adsClass": "S",
+      "mobility": 50,
+      "magazine": "5",
+      "maxammo": "5+30",
+      "reload": "3.6s (Empty) / 3.4s (Tactical)",
+      "users": [
+        "Maestro",
+        "Alibi",
+        "Oryx",
+        "Doc",
+        "Grim",
+        "Noor"
+      ],
+      "attachments": {
+        "sight_pistol": true,
+        "laser": true
+      },
+      "pros": [
+        "Utility use",
+        "Integrated red dot sight",
+        "Tight hipfire spread",
+        "Fast firing speed"
+      ],
+      "cons": [
+        "Low damage per pellet",
+        "Slow reload time",
+        "Low magazine capacity"
+      ],
+      "page": "Bailiff 410",
+      "aliases": [
+        "Bailiff 410"
+      ],
+      "art": "r6_images/weapons/w-bailiff410.png"
+    },
+    {
+      "name": "P10 RONI",
+      "type": "Submachine Gun",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 26,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 26,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 4,
+          "armor2": 5,
+          "armor3": 5
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 184,
+        "armor2Ms": 245,
+        "armor3Ms": 245
+      },
+      "rof": 980,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "15+1",
+      "maxammo": "16+181 (PVP) / 16+196 (Training Grounds) / 16+121 Hardcore",
+      "reload": "2.7s (Empty) / 1.7s (Tactical)",
+      "users": [
+        "Mozzie",
+        "Aruni"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [],
+      "cons": [],
+      "page": "P10 RONI",
+      "aliases": [
+        "P10 RONI"
+      ],
+      "art": "r6_images/weapons/w-p10roni.png"
+    },
+    {
+      "name": "9×19VSN",
+      "type": "Submachine Gun",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 34,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 34,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
       },
       "ttkComputed": {
         "shots": {
           "armor1": 3,
-          "armor2": 3,
-          "armor3": 3
+          "armor2": 4,
+          "armor3": 4
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 218,
-        "armor2Ms": 218,
-        "armor3Ms": 218
+        "armor1Ms": 160,
+        "armor2Ms": 240,
+        "armor3Ms": 240
       },
-      "rof": 550,
-      "adsMs": 200,
-      "adsClass": "H",
+      "rof": 750,
+      "adsMs": 300,
+      "adsClass": "SMG",
       "mobility": 50,
-      "magazine": "15+1",
-      "maxammo": "16+60 (PVP) / 16+120 (Terrorist Hunt)",
-      "reload": "2.4s (Empty) / 1.9s (Tactical)",
+      "magazine": "30+1",
+      "maxammo": "31+150 (PVP) / 31+180 (Training Grounds) / 31+420 (Outbreak)",
+      "reload": "3.2s (Empty) / 2.3s (Tactical)",
       "users": [
-        "Blitz",
-        "IQ",
+        "Kapkan",
+        "Tachanka",
+        "Azami"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Decent damage output",
+        "Low recoil"
+      ],
+      "cons": [
+        "Subpar rate of fire",
+        "Weak damage dropoff"
+      ],
+      "page": "9×19VSN",
+      "aliases": [
+        "9×19VSN",
+        "9x19VSN"
+      ],
+      "art": "r6_images/weapons/w-919vsn.png"
+    },
+    {
+      "name": "M870",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 60,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": 8,
+        "close": {
+          "dmg": 60,
+          "range": [
+            0,
+            3
+          ]
+        },
+        "far": {
+          "dmg": 20,
+          "range": [
+            12,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": null,
+      "rof": 100,
+      "adsMs": 250,
+      "adsClass": "S",
+      "mobility": 50,
+      "magazine": "6+1",
+      "maxammo": "7+29 (PVP) / 7+78 (Training Grounds)",
+      "reload": "",
+      "users": [
         "Jäger",
         "Bandit",
-        "Wamai"
+        "Thorn",
+        "Sentry"
       ],
       "attachments": {},
-      "pros": [],
-      "cons": [],
-      "page": "P12",
-      "aliases": [
-        "P12"
+      "pros": [
+        "High rate of fire",
+        "High damage per pellet",
+        "Fast pump cycle",
+        "Decent damage dropoff"
       ],
-      "art": "r6_images/weapons/w-p12.png"
+      "cons": [
+        "None"
+      ],
+      "page": "M870",
+      "aliases": [
+        "M870"
+      ],
+      "art": "r6_images/weapons/w-m870.png"
     },
     {
       "name": "UMP45",
@@ -2784,68 +5509,6 @@
         "UMP45"
       ],
       "art": "r6_images/weapons/w-ump45.png"
-    },
-    {
-      "name": "Super Shorty",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 35,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": 8,
-        "close": {
-          "dmg": 35,
-          "range": [
-            0,
-            12
-          ]
-        },
-        "far": {
-          "dmg": 15,
-          "range": [
-            12,
-            null
-          ]
-        },
-        "suppressed": null
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": null,
-      "rof": 85,
-      "adsMs": null,
-      "adsClass": null,
-      "mobility": 50,
-      "magazine": "2+1",
-      "maxammo": "3+42 (PVP) / 3+57 (Training Grounds)",
-      "reload": "",
-      "users": [
-        "Castle",
-        "Clash",
-        "Gridlock",
-        "Mozzie",
-        "Wamai",
-        "Brava",
-        "Sentry"
-      ],
-      "attachments": {},
-      "pros": [
-        "Relatively quick pump cycle",
-        "Utility use"
-      ],
-      "cons": [
-        "Low damage per pellet",
-        "Steep damage dropoff",
-        "Tiny magazine capacity"
-      ],
-      "page": "Super Shorty",
-      "aliases": [
-        "Super Shorty"
-      ],
-      "art": "r6_images/weapons/w-supershorty.png"
     },
     {
       "name": "M12",
@@ -2958,193 +5621,6 @@
       "art": "r6_images/weapons/w-spas15.png"
     },
     {
-      "name": "XK23",
-      "type": "Assault Rifle |appearances. = *Tom Clancy's Rainbow Six Siege",
-      "fire": "Automatic",
-      "damage": 49,
-      "damageModel": {
-        "mode": "class",
-        "class": "AR",
-        "base": 49,
-        "extended": true
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 178,
-        "armor2Ms": 178,
-        "armor3Ms": 178
-      },
-      "rof": 675,
-      "adsMs": null,
-      "adsClass": null,
-      "mobility": 50,
-      "magazine": "35+1",
-      "maxammo": "",
-      "reload": "3.35",
-      "users": [
-        "Dokkaebi",
-        "Sens",
-        "Rauora",
-        "|affiliation. = 707th SMB",
-        "SFG",
-        "NZSAS"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "sight_magnified": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "extended_barrel": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "Good damage output",
-        "Highly customizable",
-        "High magazine size"
-      ],
-      "cons": [
-        "Slow rate of fire",
-        "Moderate recoil"
-      ],
-      "page": "XK23",
-      "aliases": [
-        "Luison"
-      ],
-      "art": "r6_images/weapons/w-xk23.png"
-    },
-    {
-      "name": "9mm C1",
-      "type": "Submachine Gun",
-      "fire": "Automatic",
-      "damage": 36,
-      "damageModel": {
-        "mode": "class",
-        "class": "SMG",
-        "base": 36,
-        "extended": true
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 4,
-          "armor3": 4
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 209,
-        "armor2Ms": 313,
-        "armor3Ms": 313
-      },
-      "rof": 575,
-      "adsMs": 300,
-      "adsClass": "SMG",
-      "mobility": 50,
-      "magazine": "34+1",
-      "maxammo": "35+170 (PVP) / 35+272 (Training Grounds)",
-      "reload": "2.6s (Empty) / 1.9s (Tactical)",
-      "users": [
-        "Frost"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "extended_barrel": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [],
-      "cons": [],
-      "page": "9mm C1",
-      "aliases": [
-        "9mm C1"
-      ],
-      "art": "r6_images/weapons/w-9mmc1.png"
-    },
-    {
-      "name": "416-C Carbine",
-      "type": "Assault Rifle",
-      "fire": "Automatic / Semi-automatic",
-      "damage": 38,
-      "damageModel": {
-        "mode": "class",
-        "class": "AR",
-        "base": 38,
-        "extended": true
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 4
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 162,
-        "armor2Ms": 162,
-        "armor3Ms": 243
-      },
-      "rof": 740,
-      "adsMs": 400,
-      "adsClass": "AR",
-      "mobility": 50,
-      "magazine": "25+1",
-      "maxammo": "26+175 (PVP) / 26+225 (Training Grounds)",
-      "reload": "3.4s (Empty) / 2.4s (Tactical)",
-      "users": [
-        "Jäger"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "extended_barrel": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "Good damage per shot",
-        "Decent overall damage",
-        "Full barrel attachment options"
-      ],
-      "cons": [
-        "Low magazine capacity",
-        "High vertical recoil",
-        "Poor damage dropoff",
-        "Subpar rate of fire"
-      ],
-      "page": "416-C Carbine",
-      "aliases": [
-        "416-C Carbine"
-      ],
-      "art": "r6_images/weapons/w-416ccarbine.png"
-    },
-    {
       "name": "P-10C",
       "type": "Handgun",
       "fire": "Semi-automatic",
@@ -3223,236 +5699,14 @@
       "art": "r6_images/weapons/w-p10c.png"
     },
     {
-      "name": "9×19VSN",
+      "name": "Scorpion EVO 3 A1",
       "type": "Submachine Gun",
-      "fire": "Automatic / Semi-automatic",
-      "damage": 34,
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 23,
       "damageModel": {
         "mode": "class",
         "class": "SMG",
-        "base": 34,
-        "extended": true
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 4,
-          "armor3": 4
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 160,
-        "armor2Ms": 240,
-        "armor3Ms": 240
-      },
-      "rof": 750,
-      "adsMs": 300,
-      "adsClass": "SMG",
-      "mobility": 50,
-      "magazine": "30+1",
-      "maxammo": "31+150 (PVP) / 31+180 (Training Grounds) / 31+420 (Outbreak)",
-      "reload": "3.2s (Empty) / 2.3s (Tactical)",
-      "users": [
-        "Kapkan",
-        "Tachanka",
-        "Azami"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "extended_barrel": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "Decent damage output",
-        "Low recoil"
-      ],
-      "cons": [
-        "Subpar rate of fire",
-        "Weak damage dropoff"
-      ],
-      "page": "9×19VSN",
-      "aliases": [
-        "9x19VSN"
-      ],
-      "art": "r6_images/weapons/w-919vsn.png"
-    },
-    {
-      "name": "SASG-12",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 50,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": 8,
-        "close": {
-          "dmg": 50,
-          "range": [
-            0,
-            2
-          ]
-        },
-        "far": {
-          "dmg": 14,
-          "range": [
-            15,
-            null
-          ]
-        },
-        "suppressed": {
-          "close": {
-            "dmg": 42,
-            "range": [
-              0,
-              2
-            ]
-          },
-          "far": {
-            "dmg": 10,
-            "range": [
-              15,
-              null
-            ]
-          }
-        }
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": null,
-      "rof": 330,
-      "adsMs": 250,
-      "adsClass": "S",
-      "mobility": 50,
-      "magazine": "10+1",
-      "maxammo": "11+40 (PVP) / 11+70 (Training Grounds) / 11+110 (Outbreak)",
-      "reload": "2.808s (Tactical) / 3.376s (Empty)}} The SASG-12 is a weapon featured in Tom Cla",
-      "users": [
-        "Kapkan",
-        "Finka",
-        "Fenrir"
-      ],
-      "attachments": {},
-      "pros": [
-        "High damage per pellet",
-        "Quick ADS time",
-        "Fast rate of fire",
-        "High magazine capacity"
-      ],
-      "cons": [
-        "Moderate recoil kick per shot",
-        "High damage dropoff"
-      ],
-      "page": "SASG-12",
-      "aliases": [
-        "SASG-12"
-      ],
-      "art": "r6_images/weapons/w-sasg12.png"
-    },
-    {
-      "name": "GSh-18",
-      "type": "Handgun",
-      "fire": "Semi-automatic",
-      "damage": 44,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": null,
-        "close": {
-          "dmg": 44,
-          "range": [
-            0,
-            12
-          ]
-        },
-        "far": {
-          "dmg": 24,
-          "range": [
-            22,
-            null
-          ]
-        },
-        "suppressed": {
-          "close": {
-            "dmg": 37,
-            "range": [
-              0,
-              12
-            ]
-          },
-          "far": {
-            "dmg": 20,
-            "range": [
-              22,
-              null
-            ]
-          }
-        }
-      },
-      "ttk": {
-        "armor1": "267ms (0-16m) / 400ms (17-21m) / 533ms (22+m)",
-        "armor2": "267ms (0-14m) / 400ms (15-19m) / 533ms (20+m)",
-        "armor3": "267ms (0-11m) / 400ms (12-18m) / 533ms (19-21m) / 667ms (22+m)"
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 218,
-        "armor2Ms": 218,
-        "armor3Ms": 218
-      },
-      "rof": 550,
-      "adsMs": 200,
-      "adsClass": "H",
-      "mobility": 50,
-      "magazine": "18+1",
-      "maxammo": "19+54 (PVP) / 19+126 (PVE)",
-      "reload": "2.3s (Empty) / 2.1s (Tactical)",
-      "users": [
-        "Fuze",
-        "Kapkan",
-        "Tachanka",
-        "Finka",
-        "Flores",
-        "Rauora"
-      ],
-      "attachments": {},
-      "pros": [
-        "Low recoil per shot",
-        "High magazine capacity"
-      ],
-      "cons": [
-        "Slightly subpar damage per shot",
-        "Steep damage dropoff"
-      ],
-      "page": "GSh-18",
-      "aliases": [
-        "GSh-18"
-      ],
-      "art": "r6_images/weapons/w-gsh18.png"
-    },
-    {
-      "name": "ALDA 5.56",
-      "type": "Light Machine Gun",
-      "fire": "Automatic",
-      "damage": 35,
-      "damageModel": {
-        "mode": "class",
-        "class": "LMG",
-        "base": 35,
+        "base": 23,
         "extended": false
       },
       "ttk": {
@@ -3462,25 +5716,25 @@
       },
       "ttkComputed": {
         "shots": {
-          "armor1": 3,
-          "armor2": 4,
-          "armor3": 4
+          "armor1": 5,
+          "armor2": 5,
+          "armor3": 6
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 133,
-        "armor2Ms": 200,
-        "armor3Ms": 200
+        "armor1Ms": 222,
+        "armor2Ms": 222,
+        "armor3Ms": 278
       },
-      "rof": 900,
-      "adsMs": 450,
-      "adsClass": "LMG",
+      "rof": 1080,
+      "adsMs": 300,
+      "adsClass": "SMG",
       "mobility": 50,
-      "magazine": "80",
-      "maxammo": "80+160",
-      "reload": "5.7s (Empty) / 6.2s (Tactical)",
+      "magazine": "40+1",
+      "maxammo": "41+210 (PVP) / 41+260 (Training Grounds)",
+      "reload": "3.0s (Empty) / 2.1s (Tactical)",
       "users": [
-        "Maestro",
-        "Noor"
+        "Ela",
+        "Denari"
       ],
       "attachments": {
         "sight_1x": true,
@@ -3488,7 +5742,7 @@
         "compensator": true,
         "flash_hider": true,
         "suppressor": true,
-        "grips_no_angled": true,
+        "grips_all": true,
         "laser": true
       },
       "pros": [
@@ -3497,23 +5751,26 @@
         "High damage output"
       ],
       "cons": [
-        "Low damage per shot"
+        "Unpredictable horizontal recoil",
+        "High vertical recoil",
+        "Low damage per shot",
+        "Weak damage dropoff"
       ],
-      "page": "ALDA 5.56",
+      "page": "Scorpion EVO 3 A1",
       "aliases": [
-        "ALDA 5.56"
+        "Scorpion EVO 3 A1"
       ],
-      "art": "r6_images/weapons/w-alda556.png"
+      "art": "r6_images/weapons/w-scorpionevo3a1.png"
     },
     {
-      "name": "ACS12",
+      "name": "Glaive-12",
       "type": "Shotgun",
-      "fire": "Automatic",
-      "damage": 69,
+      "fire": "Semi-automatic",
+      "damage": 67,
       "damageModel": {
         "mode": "class",
         "class": "SS",
-        "base": 69,
+        "base": 67,
         "extended": false
       },
       "ttk": {
@@ -3528,50 +5785,174 @@
           "armor3": 2
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 200,
-        "armor2Ms": 200,
-        "armor3Ms": 200
+        "armor1Ms": 133,
+        "armor2Ms": 133,
+        "armor3Ms": 133
       },
-      "rof": 300,
-      "adsMs": 400,
-      "adsClass": "AR",
+      "rof": 450,
+      "adsMs": null,
+      "adsClass": null,
       "mobility": 50,
-      "magazine": "30+1",
-      "maxammo": "31+60 (PVP) / 31+150 (Training Grounds)",
-      "reload": "2.7s (Empty) / 2.0s (Tactical)",
+      "magazine": "4",
+      "maxammo": "4+29",
+      "reload": "3.3s",
       "users": [
-        "Maestro",
-        "Alibi",
-        "Azami"
+        "Denari|affiliation=NIGHTHAVEN"
       ],
       "attachments": {
         "sight_1x": true,
-        "sight_magnified": true,
         "grips_all": true,
         "laser": true
       },
       "pros": [
-        "High single shot damage",
-        "High destruction capabilities",
-        "Relatively low recoil"
+        "High destruction",
+        "Highly customizable",
+        "High damage per shot",
+        "Decent damage drop-off"
       ],
       "cons": [
-        "Very low rate of fire"
+        "Mediocre recoil",
+        "Low magazine capacity"
       ],
-      "page": "ACS12",
+      "page": "Glaive-12",
       "aliases": [
-        "ACS12"
+        "Glaive-12"
       ],
-      "art": "r6_images/weapons/w-acs12.png"
+      "art": "r6_images/weapons/w-glaive12.png"
     },
     {
-      "name": "Bailiff 410",
-      "type": "Handgun",
-      "fire": "",
+      "name": "MP5",
+      "type": "Submachine Gun",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 27,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 27,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 4,
+          "armor2": 5,
+          "armor3": 5
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 225,
+        "armor2Ms": 300,
+        "armor3Ms": 300
+      },
+      "rof": 800,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+150 (PVP) / 31+330 (Training Grounds) / 31+420 (Outbreak)",
+      "reload": "2.9s (Empty) / 2.2s (Tactical)",
+      "users": [
+        "Doc",
+        "Rook",
+        "Melusi"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Low recoil",
+        "Average rate of fire"
+      ],
+      "cons": [
+        "Low damage output",
+        "Low single shot damage"
+      ],
+      "page": "MP5",
+      "aliases": [
+        "MP5"
+      ],
+      "art": "r6_images/weapons/w-mp5.png"
+    },
+    {
+      "name": "P90",
+      "type": "Submachine Gun",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 22,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 22,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 5,
+          "armor2": 5,
+          "armor3": 6
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 247,
+        "armor2Ms": 247,
+        "armor3Ms": 309
+      },
+      "rof": 970,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "50+1",
+      "maxammo": "51+200 / 51+550 (Outbreak)",
+      "reload": "2.9s (Empty) / 2.4s (Tactical)",
+      "users": [
+        "Doc",
+        "Rook",
+        "Solis"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "laser": true
+      },
+      "pros": [
+        "High rate of fire",
+        "High magazine capacity"
+      ],
+      "cons": [
+        "Subpar horizontal recoil",
+        "Low damage per shot"
+      ],
+      "page": "P90",
+      "aliases": [
+        "P90"
+      ],
+      "art": "r6_images/weapons/w-p90.png"
+    },
+    {
+      "name": "MP5SD",
+      "type": "Submachine Gun",
+      "fire": "Automatic / Semi-automatic",
       "damage": 30,
       "damageModel": {
         "mode": "class",
-        "class": "SG_BAILIFF",
+        "class": "SMG",
         "base": 30,
         "extended": false
       },
@@ -3587,45 +5968,155 @@
           "armor3": 5
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 371,
-        "armor2Ms": 371,
-        "armor3Ms": 495
+        "armor1Ms": 225,
+        "armor2Ms": 225,
+        "armor3Ms": 300
       },
-      "rof": 485,
-      "adsMs": 250,
-      "adsClass": "S",
+      "rof": 800,
+      "adsMs": 300,
+      "adsClass": "SMG",
       "mobility": 50,
-      "magazine": "5",
-      "maxammo": "5+30",
-      "reload": "3.6s (Empty) / 3.4s (Tactical)",
+      "magazine": "30+1",
+      "maxammo": "31+150 (PVP) / 31+240 (Training Grounds)",
+      "reload": "2.9s (Empty) / 2.2s (Tactical)",
       "users": [
-        "Maestro",
-        "Alibi",
-        "Oryx",
-        "Doc",
-        "Grim",
-        "Noor"
+        "Echo"
       ],
       "attachments": {
-        "sight_pistol": true,
+        "sight_1x": true,
+        "grips_all": true,
         "laser": true
       },
       "pros": [
-        "Utility use",
-        "Integrated red dot sight",
-        "Tight hipfire spread",
-        "Fast firing speed"
+        "Good rate of fire",
+        "Average damage per shot",
+        "Integral suppressor",
+        "Low recoil"
       ],
       "cons": [
-        "Low damage per pellet",
-        "Slow reload time",
-        "Low magazine capacity"
+        "Lacks muzzle attachments",
+        "Harsh damage dropoff"
       ],
-      "page": "Bailiff 410",
+      "page": "MP5SD",
       "aliases": [
-        "Bailiff 410"
+        "MP5SD"
       ],
-      "art": "r6_images/weapons/w-bailiff410.png"
+      "art": "r6_images/weapons/w-mp5sd.png"
+    },
+    {
+      "name": "FO-12",
+      "type": "Shotgun",
+      "fire": "Semi-automatic",
+      "damage": 22,
+      "damageModel": {
+        "mode": "class",
+        "class": "SG",
+        "base": 22,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 5,
+          "armor2": 5,
+          "armor3": 6
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 600,
+        "armor2Ms": 600,
+        "armor3Ms": 750
+      },
+      "rof": 400,
+      "adsMs": 250,
+      "adsClass": "S",
+      "mobility": 50,
+      "magazine": "10+1",
+      "maxammo": "11+40",
+      "reload": "2.34s (Tactical) / 3.293s (Empty)}} The FO-12 is a shotgun featured in Tom Clanc",
+      "users": [
+        "Ela"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "grips_all": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "laser": true
+      },
+      "pros": [
+        "Fast rate of fire",
+        "High damage per pellet",
+        "Low damage dropoff",
+        "Versatile attachments",
+        "High magazine capacity"
+      ],
+      "cons": [
+        "High vertical kick per shot"
+      ],
+      "page": "FO-12",
+      "aliases": [
+        "FO-12"
+      ],
+      "art": "r6_images/weapons/w-fo12.png"
+    },
+    {
+      "name": "9mm C1",
+      "type": "Submachine Gun",
+      "fire": "Automatic",
+      "damage": 36,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 36,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 209,
+        "armor2Ms": 313,
+        "armor3Ms": 313
+      },
+      "rof": 575,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "34+1",
+      "maxammo": "35+170 (PVP) / 35+272 (Training Grounds)",
+      "reload": "2.6s (Empty) / 1.9s (Tactical)",
+      "users": [
+        "Frost"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [],
+      "cons": [],
+      "page": "9mm C1",
+      "aliases": [
+        "9mm C1"
+      ],
+      "art": "r6_images/weapons/w-9mmc1.png"
     },
     {
       "name": "Vector .45 ACP",
@@ -3692,55 +6183,310 @@
       "art": "r6_images/weapons/w-vector45acp.png"
     },
     {
-      "name": "ITA12L",
+      "name": "TCSG12",
       "type": "Shotgun",
-      "fire": "",
-      "damage": 50,
+      "fire": "Semi-automatic",
+      "damage": 75,
       "damageModel": {
-        "mode": "ranged",
-        "pellets": 8,
-        "close": {
-          "dmg": 50,
-          "range": [
-            0,
-            2
-          ]
-        },
-        "far": {
-          "dmg": 30,
-          "range": [
-            12,
-            null
-          ]
-        },
-        "suppressed": null
+        "mode": "class",
+        "class": "SS",
+        "base": 75,
+        "extended": false
       },
       "ttk": {
         "armor1": null,
         "armor2": null,
         "armor3": null
       },
-      "ttkComputed": null,
-      "rof": 85,
-      "adsMs": null,
-      "adsClass": null,
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 2
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 133,
+        "armor2Ms": 133,
+        "armor3Ms": 133
+      },
+      "rof": 450,
+      "adsMs": 400,
+      "adsClass": "AR",
       "mobility": 50,
-      "magazine": "7+1",
-      "maxammo": "8+33 (PVP) / 8+57 (Training Grounds)",
-      "reload": "",
+      "magazine": "10+1",
+      "maxammo": "11+50 (PVP) / 11+70 (Training Grounds)",
+      "reload": "3.2s (Empty) / 2.5s (Tactical)",
       "users": [
-        "Jackal",
-        "Mira",
-        "Solis"
+        "Kaid",
+        "Goyo",
+        "Sentry"
       ],
-      "attachments": {},
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "suppressor": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High damage per shot",
+        "High destruction/penetration"
+      ],
+      "cons": [
+        "High vertical recoil kick per shot",
+        "Low magazine capacity"
+      ],
+      "page": "TCSG12",
+      "aliases": [
+        "TCSG12"
+      ],
+      "art": "r6_images/weapons/w-tcsg12.png"
+    },
+    {
+      "name": "416-C Carbine",
+      "type": "Assault Rifle",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 38,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 38,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 162,
+        "armor2Ms": 162,
+        "armor3Ms": 243
+      },
+      "rof": 740,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "25+1",
+      "maxammo": "26+175 (PVP) / 26+225 (Training Grounds)",
+      "reload": "3.4s (Empty) / 2.4s (Tactical)",
+      "users": [
+        "Jäger"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Good damage per shot",
+        "Decent overall damage",
+        "Full barrel attachment options"
+      ],
+      "cons": [
+        "Low magazine capacity",
+        "High vertical recoil",
+        "Poor damage dropoff",
+        "Subpar rate of fire"
+      ],
+      "page": "416-C Carbine",
+      "aliases": [
+        "416-C Carbine"
+      ],
+      "art": "r6_images/weapons/w-416ccarbine.png"
+    },
+    {
+      "name": "T-5 SMG",
+      "type": "Submachine Gun",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 28,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 28,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 4,
+          "armor2": 4,
+          "armor3": 5
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 200,
+        "armor2Ms": 200,
+        "armor3Ms": 267
+      },
+      "rof": 900,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "30+1",
+      "maxammo": "31+210",
+      "reload": "3.0s (Empty) / 2.4s (Tactical)",
+      "users": [
+        "Lesion",
+        "Oryx"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
       "pros": [],
       "cons": [],
-      "page": "ITA12L",
+      "page": "T-5 SMG",
       "aliases": [
-        "ITA12L"
+        "T-5 SMG"
       ],
-      "art": "r6_images/weapons/w-ita12l.png"
+      "art": "r6_images/weapons/w-t5smg.png"
+    },
+    {
+      "name": "ALDA 5.56",
+      "type": "Light Machine Gun",
+      "fire": "Automatic",
+      "damage": 35,
+      "damageModel": {
+        "mode": "class",
+        "class": "LMG",
+        "base": 35,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 133,
+        "armor2Ms": 200,
+        "armor3Ms": 200
+      },
+      "rof": 900,
+      "adsMs": 450,
+      "adsClass": "LMG",
+      "mobility": 50,
+      "magazine": "80",
+      "maxammo": "80+160",
+      "reload": "5.7s (Empty) / 6.2s (Tactical)",
+      "users": [
+        "Maestro",
+        "Noor"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "grips_no_angled": true,
+        "laser": true
+      },
+      "pros": [
+        "High rate of fire",
+        "High magazine capacity",
+        "High damage output"
+      ],
+      "cons": [
+        "Low damage per shot"
+      ],
+      "page": "ALDA 5.56",
+      "aliases": [
+        "ALDA 5.56"
+      ],
+      "art": "r6_images/weapons/w-alda556.png"
+    },
+    {
+      "name": "Commando 9",
+      "type": "Assault Rifle",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 36,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 36,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 154,
+        "armor2Ms": 231,
+        "armor3Ms": 231
+      },
+      "rof": 780,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "25+1",
+      "maxammo": "26+150 (PVP) / 26+200 (Training Grounds)",
+      "reload": "2.5s (Empty) / 2.0s (Tactical)",
+      "users": [
+        "Mozzie",
+        "Sentry",
+        "Noor"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High damage output",
+        "Low recoil",
+        "Quick reload time",
+        "Quick ADS time compared to other Assault Rifles",
+        "Mild damage dropoff"
+      ],
+      "cons": [
+        "Low magazine capacity"
+      ],
+      "page": "Commando 9",
+      "aliases": [
+        "Commando 9"
+      ],
+      "art": "r6_images/weapons/w-commando9.png"
     },
     {
       "name": "MP5K",
@@ -3805,79 +6551,14 @@
       "art": "r6_images/weapons/w-mp5k.png"
     },
     {
-      "name": "SMG-11",
-      "type": "Machine Pistol",
+      "name": "PCX-33",
+      "type": "Assault Rifle",
       "fire": "Automatic",
-      "damage": 32,
+      "damage": 36,
       "damageModel": {
         "mode": "class",
-        "class": "MP",
-        "base": 32,
-        "extended": false
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 4,
-          "armor2": 4,
-          "armor3": 4
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 142,
-        "armor2Ms": 142,
-        "armor3Ms": 142
-      },
-      "rof": 1270,
-      "adsMs": 275,
-      "adsClass": "MP",
-      "mobility": 50,
-      "magazine": "16+1",
-      "maxammo": "17+80 (PVP) / 17+224 (Terrorist Hunt) / 17+128 (Outbreak)",
-      "reload": "2.9s (Empty) / 2.0s (Tactical)",
-      "users": [
-        "Smoke",
-        "Mute",
-        "Amaru",
-        "Solis"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "extended_barrel": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "Very high rate of fire",
-        "Very high damage output"
-      ],
-      "cons": [
-        "High vertical recoil",
-        "Low magazine capacity",
-        "Low reserve ammo"
-      ],
-      "page": "MAC-11",
-      "aliases": [
-        "SMG-11"
-      ],
-      "art": "r6_images/weapons/w-smg11.png"
-    },
-    {
-      "name": "FMG-9",
-      "type": "Submachine Gun",
-      "fire": "Automatic / Semi-automatic",
-      "damage": 34,
-      "damageModel": {
-        "mode": "class",
-        "class": "SMG",
-        "base": 34,
+        "class": "AR",
+        "base": 36,
         "extended": true
       },
       "ttk": {
@@ -3892,46 +6573,107 @@
           "armor3": 4
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 150,
-        "armor2Ms": 225,
-        "armor3Ms": 225
+        "armor1Ms": 161,
+        "armor2Ms": 242,
+        "armor3Ms": 242
       },
-      "rof": 800,
-      "adsMs": 300,
-      "adsClass": "SMG",
+      "rof": 745,
+      "adsMs": null,
+      "adsClass": null,
       "mobility": 50,
-      "magazine": "30+1",
-      "maxammo": "31+150 (PVP) / 31+180 (Training Grounds) / 31+420 (Outbreak)",
-      "reload": "3.0s (Empty) / 2.2s (Tactical)",
+      "magazine": "31+1",
+      "maxammo": "",
+      "reload": "3.3s",
       "users": [
-        "Smoke",
-        "Nøkk",
-        "Denari"
+        "Skopós"
       ],
       "attachments": {
         "sight_1x": true,
-        "sight_magnified_nokk": true,
         "muzzle_brake": true,
         "compensator": true,
         "flash_hider": true,
         "suppressor": true,
         "extended_barrel": true,
+        "grips_all": true,
         "laser": true
       },
       "pros": [
-        "Above average damage per shot",
-        "Moderate recoil",
-        "Good rate of fire"
+        "Low recoil",
+        "Good damage output",
+        "Highly customizable"
       ],
       "cons": [
-        "Lacks grips",
-        "Weak damage dropoff"
+        "Moderate rate of fire",
+        "Slow ADS time"
       ],
-      "page": "FMG-9",
+      "page": "PCX-33",
       "aliases": [
-        "FMG-9"
+        "PCX-33"
       ],
-      "art": "r6_images/weapons/w-fmg9.png"
+      "art": "r6_images/weapons/w-pcx33.png"
+    },
+    {
+      "name": "UZK50GI",
+      "type": "Submachine Gun",
+      "fire": "Automatic / Semi-automatic",
+      "damage": 36,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 36,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 171,
+        "armor2Ms": 257,
+        "armor3Ms": 257
+      },
+      "rof": 700,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "22+1",
+      "maxammo": "23+154",
+      "reload": "",
+      "users": [
+        "Thorn"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High damage per shot",
+        "High damage output",
+        "High destruction"
+      ],
+      "cons": [
+        "Low magazine capacity",
+        "Low rate of fire",
+        "Mediocre vertical and horizontal recoil"
+      ],
+      "page": "Uzi",
+      "aliases": [
+        "UZK50GI"
+      ],
+      "art": "r6_images/weapons/w-uzk50gi.png"
     },
     {
       "name": "MPX",
@@ -3996,130 +6738,65 @@
       "art": "r6_images/weapons/w-mpx.png"
     },
     {
-      "name": "SPAS-12",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 35,
+      "name": "K1A",
+      "type": "Submachine Gun",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 36,
       "damageModel": {
-        "mode": "ranged",
-        "pellets": 8,
-        "close": {
-          "dmg": 35,
-          "range": [
-            0,
-            4
-          ]
-        },
-        "far": {
-          "dmg": 20,
-          "range": [
-            20,
-            null
-          ]
-        },
-        "suppressed": null
+        "mode": "class",
+        "class": "SMG",
+        "base": 36,
+        "extended": true
       },
       "ttk": {
         "armor1": null,
         "armor2": null,
         "armor3": null
       },
-      "ttkComputed": null,
-      "rof": 200,
-      "adsMs": 250,
-      "adsClass": "S",
-      "mobility": 50,
-      "magazine": "6+1",
-      "maxammo": "7+29 (PVP) / 7+50 (Training Grounds)",
-      "reload": "",
-      "users": [
-        "Valkyrie",
-        "Oryx"
-      ],
-      "attachments": {},
-      "pros": [
-        "Average damage per pellet",
-        "Minimal damage dropoff",
-        "Very fast reload time",
-        "Controllable recoil"
-      ],
-      "cons": [
-        "Subpar rate of fire"
-      ],
-      "page": "SPAS-12",
-      "aliases": [
-        "SPAS-12"
-      ],
-      "art": "r6_images/weapons/w-spas12.png"
-    },
-    {
-      "name": "D-50",
-      "type": "Handgun",
-      "fire": "Semi-automatic",
-      "damage": 71,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": null,
-        "close": {
-          "dmg": 71,
-          "range": [
-            0,
-            12
-          ]
-        },
-        "far": {
-          "dmg": 35,
-          "range": [
-            22,
-            null
-          ]
-        },
-        "suppressed": null
-      },
-      "ttk": {
-        "armor1": "133ms (0-17m) / 267ms (18+m)",
-        "armor2": "133ms (0-15m) / 267ms (16-21m) / 400ms (22+m)",
-        "armor3": "133ms (0-13m) / 267ms (14-19m) / 400ms (20+m)"
-      },
       "ttkComputed": {
         "shots": {
-          "armor1": 2,
-          "armor2": 2,
-          "armor3": 2
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 109,
-        "armor2Ms": 109,
-        "armor3Ms": 109
+        "armor1Ms": 167,
+        "armor2Ms": 250,
+        "armor3Ms": 250
       },
-      "rof": 550,
-      "adsMs": null,
-      "adsClass": null,
+      "rof": 720,
+      "adsMs": 300,
+      "adsClass": "SMG",
       "mobility": 50,
-      "magazine": "7+1",
-      "maxammo": "8+35 (PVP) / 8+56 (Terrorist Hunt) / 1+39 (Golden Gun)",
-      "reload": "2.5s (Empty) / 2.0s (Tactical) / 2.0s (Golden Gun)",
+      "magazine": "30+1",
+      "maxammo": "31+210 (PVP) / 31+270 (Training Grounds)",
+      "reload": "3.0s (Empty) / 2.7s (Tactical)",
       "users": [
-        "Blackbeard",
-        "Valkyrie",
-        "Nøkk",
-        "Azami"
+        "Vigil"
       ],
-      "attachments": {},
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
       "pros": [
-        "High single shot damage",
-        "High destruction/penetration"
+        "Above-average damage per shot"
       ],
       "cons": [
-        "High recoil kick per shot",
-        "Low magazine capacity",
-        "Low reserve ammo"
+        "Mediocre rate of fire",
+        "Low suppressor damage",
+        "Mediocre vertical recoil"
       ],
-      "page": "Desert Eagle",
+      "page": "K1A",
       "aliases": [
-        "D-50"
+        "K1A"
       ],
-      "art": "r6_images/weapons/w-d50.png"
+      "art": "r6_images/weapons/w-k1a.png"
     }
   ]
 }

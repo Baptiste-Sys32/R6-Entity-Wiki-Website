@@ -278,12 +278,14 @@
       const browseLinks = [
         { id: 'operators', label: 'Operators', count: counts.operators },
         { id: 'gadgets', label: 'Gadgets', count: counts.operators },
+        { id: 'weapons', label: 'Weapons', count: counts.weapons },
         { id: 'maps', label: 'Maps', count: counts.maps },
         { id: 'seasons', label: 'Seasons', count: counts.seasons },
       ];
       const tools = [
         { id: 'operators', tool: 'Operators', purpose: 'Browse all operators' },
         { id: 'gadgets', tool: 'Gadgets', purpose: 'Browse all gadgets' },
+        { id: 'weapons', tool: 'Weapons', purpose: 'Browse all weapons' },
         { id: 'maps', tool: 'Maps', purpose: 'Browse all maps' },
         { id: 'seasons', tool: 'Seasons', purpose: 'Browse all seasons' },
         { id: 'favorites', tool: 'Favorites', purpose: 'Your saved operators, maps and seasons' },
@@ -602,6 +604,37 @@
       );
     };
 
+    const WeaponsView = ({ setView }) => {
+      const [q, setQ] = useState('');
+      const [type, setType] = useState('all');
+      const query = q.trim().toLowerCase();
+      const types = useMemo(() => [...new Set(WEAPONS.map((w) => w.type).filter(Boolean))].sort(), []);
+      const list = WEAPONS.filter((w) => (type === 'all' || w.type === type)
+        && (!query || `${w.name} ${w.type || ''} ${(w.aliases || []).join(' ')}`.toLowerCase().includes(query)));
+      return (
+        <div className="cx-article">
+          <h1 className="cx-title">Weapons</h1>
+          <p className="cx-lead">{WEAPONS.length} firearms across every operator loadout.</p>
+          <WikiHeaderSearchPortal>
+            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter weapons..." aria-label="Filter weapons"
+              className="w-full rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+          </WikiHeaderSearchPortal>
+          <div className="flex flex-wrap gap-2 mt-4 mb-6" role="tablist" aria-label="Filter by type">
+            {[{ id: 'all', label: 'All' }, ...types.map((t) => ({ id: t, label: t }))].map((t) => (
+              <button key={t.id} type="button" role="tab" aria-selected={type === t.id} onClick={() => setType(t.id)} className="cx-chip"
+                style={type === t.id ? { borderColor: 'var(--accent)', color: 'var(--text)', fontWeight: 700 } : null}>{t.label}</button>
+            ))}
+          </div>
+          <table className="cx-wikitable"><thead><tr><th></th><th>Weapon</th><th>Type</th><th>Damage</th><th>Fire rate</th></tr></thead>
+            <tbody>{list.map((w) => (
+              <tr key={w.name}><td><span className="sq-img"><AssetFrame type="Weapon" imageUrl={w.image ? `./${w.image}` : null} /></span></td>
+                <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('weapon', { id: w.name })}>{w.name}</button></td>
+                <td>{w.type || '—'}</td><td>{w.damage || '—'}</td><td>{w.rof ? `${w.rof} RPM` : '—'}</td></tr>
+            ))}</tbody></table>
+          {list.length === 0 ? <p style={{ color: 'var(--muted)' }}>No weapons match.</p> : null}
+        </div>
+      );
+    };
     const GadgetArticle = ({ id, setView }) => {
       const gadget = gadgetsById.get(id);
       if (!gadget) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown gadget.</p></div>;
@@ -651,7 +684,7 @@
       if ((weapon.pros || []).length) toc.push({ id: 'notes', label: 'Notes' });
       return (
         <ArticleShell
-          crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Weapons', onClick: () => setView('gadgets') }, { label: weapon.name }]}
+          crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Weapons', onClick: () => setView('weapons') }, { label: weapon.name }]}
           title={weapon.name}
           lead={<p>{weapon.type}{weapon.fire ? ` · ${weapon.fire}` : ''}</p>}
           toc={toc}
@@ -1290,6 +1323,7 @@
         return {
           operators: OPERATORS.length,
           gadgets: OPERATORS.length,
+          weapons: WEAPONS.length,
           maps: MAPS.length,
           seasons: SEASONS.length,
           favorites: favCount(),
@@ -1531,6 +1565,7 @@
           case 'gadgets': return <GadgetsView setView={setView} />;
           case 'gadget': return <GadgetArticle id={id} setView={setView} />;
           case 'weapon': return <WeaponArticle id={id} setView={setView} />;
+          case 'weapons': return <WeaponsView setView={setView} />;
           case 'attachments': return <AttachmentsView setView={setView} />;
           case 'maps': return <MapsView setView={setView} favorites={favorites} onToggleFavorite={toggleFavorite} />;
           case 'map': return <MapArticle id={id} setView={setView} note={getEntityNote('map', id)} onNoteChange={(v) => setEntityNote('map', id, v)} onOpenLayout={(index) => setFloorModal({ mapId: id, index })} />;
@@ -1538,7 +1573,7 @@
           case 'season': return <SeasonArticle id={id} setView={setView} note={getEntityNote('season', id)} onNoteChange={(v) => setEntityNote('season', id, v)} />;
           case 'favorites': return <FavoritesView favorites={favorites} setView={setView} onToggleFavorite={toggleFavorite} />;
           case 'settings': return <SettingsView settings={settings} setSettings={setSettings} onBack={() => setView('home')} />;
-          default: return <HomeView setView={setView} counts={{ operators: OPERATORS.length, maps: MAPS.length, seasons: SEASONS.length }} />;
+          default: return <HomeView setView={setView} counts={{ operators: OPERATORS.length, maps: MAPS.length, seasons: SEASONS.length, weapons: WEAPONS.length }} />;
         }
       };
 

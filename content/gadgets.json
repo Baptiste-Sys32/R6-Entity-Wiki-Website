@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:12:08.361Z",
+  "generatedAt": "2026-09-28T17:17:42.473Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
@@ -19,6 +19,9 @@
     "Stun Grenade/Siege": "stun-grenade",
     "Frag Grenade": "frag-grenade",
     "M67/Siege": "frag-grenade",
+    "Frag Grenade x 2": "frag-grenade",
+    "Frag grenade": "frag-grenade",
+    "Frag Grenades": "frag-grenade",
     "Deployable Shield": "deployable-shield",
     "Observation Blocker": "observation-blocker",
     "Barbed Wire": "barbed-wire",

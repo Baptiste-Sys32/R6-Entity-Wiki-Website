@@ -200,7 +200,8 @@ function pickFile(files, patterns) {
 
 function parseLoadout(wt) {
   const row = (name) => {
-    const match = wt.match(new RegExp(`\\|${name}=((?:(?!(?:\\s*/)?\\s*\\|(?:primary|secondary|gadget|ability)\\s*=)[\\s\\S])*)`, 'i'));
+    // Upstream uses "|primary = " (spaced) on newer pages.
+    const match = wt.match(new RegExp(`\\|${name}\\s*=((?:(?!(?:\\s*/)?\\s*\\|(?:primary|secondary|gadget|ability)\\s*=)[\\s\\S])*)`, 'i'));
     const scope = match ? match[1] : '';
     const names = [];
     for (const m of scope.matchAll(/\*\[\[([^\]]+)\]\]/g)) {
@@ -210,16 +211,27 @@ function parseLoadout(wt) {
     }
     return names;
   };
-  const tableFallback = (name) => {
+  const tableFallback = (isGadget, name) => {
     const table = wt.match(/\{\|[^\n]*\n!colspan="2"\|Loadout([\s\S]*?)\|\}/);
     if (!table) return [];
-    const match = table[1].match(new RegExp(`\\|\\s*${name}\\s*\\n([\\s\\S]*?)(?=\\n\\s*\\|-\\n\\s*\\||$)`));
+    // Row headers are capitalized ("|Primary", "|Gadget x 2"); rows end at
+    // the next "|-" divider or the table capture end.
+    const header = isGadget ? '[^|\\n]*Gadget[^|\\n]*' : name;
+    const match = table[1].match(new RegExp(`\\|\\s*${header}\\s*\\n([\\s\\S]*?)(?=\\n\\s*\\|-\\s*\\n|$)`, 'i'));
     if (!match) return [];
-    return [...match[1].matchAll(/\*\[\[([^#|\]]+)/g)].map((m) => m[1].replace(/_/g, ' ').trim()).filter(Boolean);
+    // Prefer display text: [[MAC-11#Sieg|SMG-11]] is the SMG-11.
+    const names = [];
+    for (const m of match[1].matchAll(/\*\[\[([^\]]+)\]\]/g)) {
+      const parts = m[1].split('|');
+      const display = (parts[1] || parts[0]).split('#')[0].replace(/_/g, ' ').trim();
+      if (display && !names.includes(display)) names.push(display);
+    }
+    return names;
   };
   const pick = (name) => {
     const direct = row(name);
-    return direct.length ? direct : tableFallback(name === 'gadget' ? 'Generic Gadget|Gadget' : name);
+    if (direct.length) return direct;
+    return tableFallback(name === 'gadget', name === 'gadget' ? '' : name);
   };
   return { primaries: pick('primary'), secondaries: pick('secondary'), gadgets: pick('gadget') };
 }

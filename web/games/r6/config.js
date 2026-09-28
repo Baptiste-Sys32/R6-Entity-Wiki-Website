@@ -19,6 +19,7 @@
     const ALL_NAV_OPTIONS = [
       { id: 'operators', label: 'Operators' },
       { id: 'gadgets', label: 'Gadgets' },
+      { id: 'weapons', label: 'Weapons' },
       { id: 'maps', label: 'Maps' },
       { id: 'seasons', label: 'Seasons' },
       { id: 'favorites', label: 'Favorites' },
@@ -28,6 +29,7 @@
       home: 'Search',
       operators: 'User',
       gadgets: 'Zap',
+      weapons: 'Target',
       maps: 'Map',
       seasons: 'Clock',
       favorites: 'Star',
@@ -36,11 +38,12 @@
     const MAIN_PAGE_TOOLS = {
       operators: 'Browse all operators',
       gadgets: 'Browse all gadgets',
+      weapons: 'Browse all weapons',
       maps: 'Browse all maps',
       seasons: 'Browse all seasons',
     };
     const WEBSITE_NAV_SECTIONS = [
-      { label: 'Database', ids: ['operators', 'gadgets', 'maps', 'seasons'] },
+      { label: 'Database', ids: ['operators', 'gadgets', 'weapons', 'maps', 'seasons'] },
       { label: 'Personal', ids: ['favorites', 'settings'] },
     ];
     const NAV_EXTRA_LABELS = {};
@@ -54,6 +57,7 @@
       { id: 'home', label: 'Search' },
       { id: 'operators', label: 'Operators' },
       { id: 'gadgets', label: 'Gadgets' },
+      { id: 'weapons', label: 'Weapons' },
       { id: 'maps', label: 'Maps' },
       { id: 'seasons', label: 'Seasons' },
       { id: 'favorites', label: 'Favorites' },
@@ -93,7 +97,7 @@
     const SEO_DEFAULT_TITLE = "R6 Wiki - Rainbow Six Siege Database";
     const SEO_SITE_BASE = 'https://r6-siege-wiki.pages.dev';
     const SEO_VIEW_LABELS = {
-      operators: 'Operators', operator: 'Operators', gadgets: 'Gadgets', gadget: 'Gadgets', maps: 'Maps', map: 'Maps',
+      operators: 'Operators', operator: 'Operators', gadgets: 'Gadgets', gadget: 'Gadgets', weapons: 'Weapons', weapon: 'Weapons', maps: 'Maps', map: 'Maps',
       seasons: 'Seasons', season: 'Seasons', weapon: 'Weapons', attachments: 'Attachments', settings: 'Settings', favorites: 'Favorites'
     };
     const DEFAULT_IMAGES = {

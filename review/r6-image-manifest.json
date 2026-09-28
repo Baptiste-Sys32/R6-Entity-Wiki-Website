@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T09:14:36.553Z",
+  "generatedAt": "2026-09-28T16:58:02.996Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -3054,6 +3054,954 @@
     "r6_images/tips/r6-rook-1.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6YPJok4eqE7BtviRbb02Mt/dcb4f467de54f2b01b93e2fa9d363916/roo.jpg",
       "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rook"
+    },
+    "r6_images/weapons/r6-ace-3.png": {
+      "file": "R6S AK-12 Ace.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ace-4.png": {
+      "file": "R6S M1014 Ace.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ace-5.png": {
+      "file": "R6S P9 Ace.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-amaru-3.png": {
+      "file": "R6S G8A1 Amaru.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-amaru-4.png": {
+      "file": "R6S SuperNova Amaru.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-amaru-5.png": {
+      "file": "R6S ITA12S.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-amaru-6.png": {
+      "file": "R6S GONNE-6.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-blackbeard-4.png": {
+      "file": "R6S Mk17 CQB.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-blackbeard-5.png": {
+      "file": "R6S SR-25.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-blitz-4.png": {
+      "file": "R6S P12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-brava-3.png": {
+      "file": "R6S PARA-308.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-brava-4.png": {
+      "file": "R6S CAMRS.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-brava-6.png": {
+      "file": "R6S Super Shorty.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-dokkaebi-3.png": {
+      "file": "R6S Mk 14 EBR.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-dokkaebi-4.png": {
+      "file": "R6S BOSG.12.2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-dokkaebi-5.png": {
+      "file": "R6S XK23 Preview.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-dokkaebi-6.png": {
+      "file": "R6S C75 Auto.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-dokkaebi-7.png": {
+      "file": "R6S GONNE-6.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-dokkaebi-8.png": {
+      "file": "R6S SMG-12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-finka-4.png": {
+      "file": "R6S Spear .308.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-finka-5.png": {
+      "file": "R6S 6P41.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-finka-6.png": {
+      "file": "R6S SASG-12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-finka-7.png": {
+      "file": "R6S PMM.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-finka-8.png": {
+      "file": "R6S GSH-18.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-flores-3.png": {
+      "file": "R6S AR33.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-flores-4.png": {
+      "file": "R6S SR-25.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-flores-5.png": {
+      "file": "R6S T-95 LSW.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-flores-6.png": {
+      "file": "R6S GSH-18.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fuze-4.png": {
+      "file": "R6S Ballistic Shield.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fuze-5.png": {
+      "file": "R6S 6P41.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fuze-6.png": {
+      "file": "R6S AK-12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fuze-7.png": {
+      "file": "R6S PMM.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fuze-8.png": {
+      "file": "R6S GSH-18.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-gridlock-4.png": {
+      "file": "R6S F90.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-gridlock-5.png": {
+      "file": "R6S M249.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-gridlock-6.png": {
+      "file": "R6S SDP 9mm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-gridlock-7.png": {
+      "file": "R6S Super Shorty.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-grim-4.png": {
+      "file": "R6S SG-CQB.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-grim-5.png": {
+      "file": "R6S 552 Commando.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-grim-6.png": {
+      "file": "R6S P229.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iana-3.png": {
+      "file": "R6S ARX200 Iana.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iana-4.png": {
+      "file": "R6S G36C Iana.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iana-5.png": {
+      "file": "R6S Mk1 9mm Iana.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iana-6.png": {
+      "file": "R6S GONNE-6.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iq-4.png": {
+      "file": "R6S AUG A2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iq-5.png": {
+      "file": "R6S 552 Commando.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iq-6.png": {
+      "file": "R6S G8A1.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-iq-7.png": {
+      "file": "R6S P12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-jackal-3.png": {
+      "file": "R6S C7E.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-jackal-4.png": {
+      "file": "R6S PDW9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-jackal-5.png": {
+      "file": "R6S ITA12L.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-jackal-6.png": {
+      "file": "R6S ITA12S.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-jackal-7.png": {
+      "file": "R6S USP40.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kali-3.png": {
+      "file": "R6S CSRX 300.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kali-4.png": {
+      "file": "R6S C75 Auto Kali.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kali-5.png": {
+      "file": "R6S SPSMG9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kali-6.png": {
+      "file": "R6S P226 Mk 25.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maverick-4.png": {
+      "file": "R6S AR-15.50.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maverick-5.png": {
+      "file": "R6S M4.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-maverick-6.png": {
+      "file": "R6S 1911 TACOPS.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-montagne-5.png": {
+      "file": "R6S P9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-montagne-6.png": {
+      "file": "R6S LFP586.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-nomad-3.png": {
+      "file": "R6S AK-74M.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-nomad-4.png": {
+      "file": "R6S ARX200.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-nomad-5.png": {
+      "file": "R6S .44 Mag Semi-Auto.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-nomad-6.png": {
+      "file": "R6S Luison.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-n-kk-4.png": {
+      "file": "R6S FMG-9 Nøkk.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-n-kk-5.png": {
+      "file": "R6S SIX12 SD Nøkk.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-n-kk-6.png": {
+      "file": "R6S PMR90A2.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-n-kk-7.png": {
+      "file": "R6S 5.7 USG.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-n-kk-8.png": {
+      "file": "R6S D-50.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-osa-4.png": {
+      "file": "R6S 556xi.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-osa-5.png": {
+      "file": "R6S PDW9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-osa-6.png": {
+      "file": "R6S PMM.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ram-3.png": {
+      "file": "R6S R4-C.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ram-4.png": {
+      "file": "R6S LMG-E.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ram-5.png": {
+      "file": "R6S Mk1 9mm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rauora-3.png": {
+      "file": "R6S 417.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rauora-4.png": {
+      "file": "R6S M249.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rauora-5.png": {
+      "file": "R6S XK23 Preview.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rauora-7.png": {
+      "file": "R6S GSH-18.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-sens-5.png": {
+      "file": "R6S 417.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-sens-6.png": {
+      "file": "R6S XK23 Preview.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-sens-7.png": {
+      "file": "R6S SDP 9mm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solid-snake-6.png": {
+      "file": "R6S F2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solid-snake-7.png": {
+      "file": "R6S PMR90A2.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solid-snake-8.png": {
+      "file": "R6S Tacit .45.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zero-3.png": {
+      "file": "R6S SC3000K.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zero-4.png": {
+      "file": "R6S MP7 Zero.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zero-5.png": {
+      "file": "R6S 5.7 USG Zero.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zero-6.png": {
+      "file": "R6S GONNE-6.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zofia-3.png": {
+      "file": "R6S LMG-E.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zofia-4.png": {
+      "file": "R6S M762.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-zofia-5.png": {
+      "file": "R6S RG15.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-alibi-3.png": {
+      "file": "R6S Mx4 Storm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-alibi-4.png": {
+      "file": "R6S ACS12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-alibi-5.png": {
+      "file": "R6S Keratos .357.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-alibi-6.png": {
+      "file": "R6S Bailiff 410.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-aruni-3.png": {
+      "file": "R6S P10 RONI Aruni.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-aruni-4.png": {
+      "file": "R6S Mk 14 EBR Aruni.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-aruni-5.png": {
+      "file": "R6S PRB92 Aruni.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-azami-3.png": {
+      "file": "R6S 9x19VSN.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-azami-4.png": {
+      "file": "R6S ACS12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-azami-5.png": {
+      "file": "R6S D-50.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-clash-4.png": {
+      "file": "R6S P-10C.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-clash-5.png": {
+      "file": "R6S Super Shorty.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-clash-6.png": {
+      "file": "R6S SPSMG9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-denari-3.png": {
+      "file": "R6S Scorpion EVO 3 A1.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-denari-4.png": {
+      "file": "R6S FMG-9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-denari-5.png": {
+      "file": "R6S Glaive-12.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-doc-3.png": {
+      "file": "R6S SG-CQB.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-doc-4.png": {
+      "file": "R6S MP5 .png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-doc-5.png": {
+      "file": "R6S P90.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-doc-6.png": {
+      "file": "R6S P9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-doc-7.png": {
+      "file": "R6S LFP586.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-doc-8.png": {
+      "file": "R6S Bailiff 410.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-echo-3.png": {
+      "file": "R6S SuperNova.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-echo-4.png": {
+      "file": "R6S MP5SD.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-echo-5.png": {
+      "file": "R6S P229.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-echo-6.png": {
+      "file": "R6S Bearing 9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ela-4.png": {
+      "file": "R6S Scorpion EVO 3 A1.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ela-5.png": {
+      "file": "R6S FO-12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-ela-6.png": {
+      "file": "R6S RG15.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fenrir-3.png": {
+      "file": "R6S MP7.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fenrir-4.png": {
+      "file": "R6S SASG-12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-fenrir-5.png": {
+      "file": "R6S 5.7 USG.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-goyo-4.png": {
+      "file": "R6S Vector .45 ACP Goyo.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-goyo-5.png": {
+      "file": "R6S TCSG12 Goyo.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-goyo-6.png": {
+      "file": "R6S P229 Goyo.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kaid-4.png": {
+      "file": "R6S AUG A3.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kaid-5.png": {
+      "file": "R6S TCSG12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kaid-6.png": {
+      "file": "R6S .44 Mag Semi-Auto.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-kaid-7.png": {
+      "file": "R6S LFP586.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lesion-3.png": {
+      "file": "R6S SIX12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lesion-4.png": {
+      "file": "R6S T-5 SMG.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-lesion-5.png": {
+      "file": "R6S Q-929.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-melusi-3.png": {
+      "file": "R6S MP5 .png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-melusi-5.png": {
+      "file": "R6S RG15 Melusi.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-melusi-6.png": {
+      "file": "R6S ITA12S.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mozzie-4.png": {
+      "file": "R6S Commando 9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mozzie-5.png": {
+      "file": "R6S P10 RONI.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mozzie-6.png": {
+      "file": "R6S SDP 9mm.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-mozzie-7.png": {
+      "file": "R6S Super Shorty.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-noor-3.png": {
+      "file": "R6S Commando 9 Noor.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-noor-4.png": {
+      "file": "R6S ALDA 5.56.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-noor-5.png": {
+      "file": "R6S 1911 TACOPS.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-noor-6.png": {
+      "file": "R6S Bailiff 410.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-oryx-3.png": {
+      "file": "R6S T-5 SMG.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-oryx-4.png": {
+      "file": "R6S SPAS-12 Oryx.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-oryx-5.png": {
+      "file": "R6S Bailiff 410 Oryx.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-oryx-6.png": {
+      "file": "R6S USP40 Oryx.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-pulse-4.png": {
+      "file": "R6S M1014.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-pulse-5.png": {
+      "file": "R6S UMP45.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-pulse-6.png": {
+      "file": "R6S M45 MEUSOC.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-pulse-7.png": {
+      "file": "R6S 5.7 USG.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rook-4.png": {
+      "file": "R6S P90.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rook-5.png": {
+      "file": "R6S MP5 .png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rook-6.png": {
+      "file": "R6S SG-CQB.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rook-7.png": {
+      "file": "R6S LFP586.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-rook-8.png": {
+      "file": "R6S P9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-skop-s-3.png": {
+      "file": "R6S PCX-33 Preview.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-skop-s-4.png": {
+      "file": "R6S P229.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solis-3.png": {
+      "file": "R6S P90.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solis-4.png": {
+      "file": "R6S ITA12L.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-solis-5.png": {
+      "file": "R6S SMG-11.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tachanka-4.png": {
+      "file": "R6S DP27.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tachanka-5.png": {
+      "file": "R6S 9x19VSN.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tachanka-6.png": {
+      "file": "R6S GSH-18.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tachanka-7.png": {
+      "file": "R6S PMM.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tachanka-8.png": {
+      "file": "R6S Bearing 9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thorn-3.png": {
+      "file": "R6S UZK50GI.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thorn-4.png": {
+      "file": "R6S M870.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thorn-5.png": {
+      "file": "R6S 1911 TACOPS.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thorn-6.png": {
+      "file": "R6S C75 Auto.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thunderbird-4.png": {
+      "file": "R6S Spear .308.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thunderbird-5.png": {
+      "file": "R6S SPAS-15.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thunderbird-6.png": {
+      "file": "R6S Bearing 9.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thunderbird-7.png": {
+      "file": "R6S Q-929.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-thunderbird-8.png": {
+      "file": "R6S ITA12S.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tubar-o-3.png": {
+      "file": "R6S MPX.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-tubar-o-4.png": {
+      "file": "R6S AR-15.50.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-vigil-3.png": {
+      "file": "R6S K1A.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-vigil-4.png": {
+      "file": "R6S BOSG.12.2.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-vigil-5.png": {
+      "file": "R6S C75 Auto.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-vigil-6.png": {
+      "file": "R6S SMG-12.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-wamai-4.png": {
+      "file": "R6S AUG A2 Wamai.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-wamai-5.png": {
+      "file": "R6S MP5K Wamai.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-wamai-6.png": {
+      "file": "R6S Keratos .357 Wamai.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-wamai-7.png": {
+      "file": "R6S P12 Wamai.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-wamai-8.png": {
+      "file": "R6S Super Shorty.png",
+      "width": 320
+    },
+    "r6_images/weapons/r6-warden-4.png": {
+      "file": "R6S M590A1 Warden.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-warden-5.png": {
+      "file": "R6S Warden MPX.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-warden-6.png": {
+      "file": "R6S P-10C Warden.webp",
+      "width": 320
+    },
+    "r6_images/weapons/r6-warden-7.png": {
+      "file": "R6S SMG-12 Warden.webp",
+      "width": 320
+    },
+    "r6_images/weapons/w-ak12.png": {
+      "file": "R6S AK-12.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-g8a1.png": {
+      "file": "R6S G8A1.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-mk17cqb.png": {
+      "file": "R6S Mk17 CQB.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-sr25.png": {
+      "file": "R6S SR-25.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-mk14ebr.png": {
+      "file": "R6S Mk 14 EBR.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-bosg122.png": {
+      "file": "R6S BOSG.12.2.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-c75auto.png": {
+      "file": "R6S C75 Auto.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-smg12.png": {
+      "file": "R6S SMG-12.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-spear308.png": {
+      "file": "R6S Spear .308.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-6p41.png": {
+      "file": "R6S 6P41.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-dp27.png": {
+      "file": "R6S DP27.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-f90.png": {
+      "file": "R6S F90.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-sdp9mm.png": {
+      "file": "R6S SDP 9mm.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-552commando.png": {
+      "file": "R6S 552 Commando.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-arx200.png": {
+      "file": "R6S ARX200.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-auga2.png": {
+      "file": "R6S AUG A2.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-c7e.png": {
+      "file": "R6S C7E.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-pdw9.png": {
+      "file": "R6S PDW9.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-csrx300.png": {
+      "file": "R6S CSRX 300.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-spsmg9.png": {
+      "file": "R6S SPSMG9.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-ar1550.png": {
+      "file": "R6S AR-15.50.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-m4.png": {
+      "file": "R6S M4.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-1911tacops.png": {
+      "file": "R6S 1911 TACOPS.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-44magsemiauto.png": {
+      "file": "R6S .44 Mag Semi-Auto.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-lmge.png": {
+      "file": "R6S LMG-E.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-sc3000k.png": {
+      "file": "R6S SC3000K.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-m762.png": {
+      "file": "R6S M762.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-rg15.png": {
+      "file": "R6S RG15.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-mx4storm.png": {
+      "file": "R6S Mx4 Storm.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-p10roni.png": {
+      "file": "R6S P10 RONI.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-scorpionevo3a1.png": {
+      "file": "R6S Scorpion EVO 3 A1.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-glaive12.png": {
+      "file": "R6S Glaive-12.webp",
+      "width": 400
+    },
+    "r6_images/weapons/w-mp5.png": {
+      "file": "R6S MP5 .png",
+      "width": 400
+    },
+    "r6_images/weapons/w-p90.png": {
+      "file": "R6S P90.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-mp5sd.png": {
+      "file": "R6S MP5SD.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-fo12.png": {
+      "file": "R6S FO-12.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-tcsg12.png": {
+      "file": "R6S TCSG12.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-t5smg.png": {
+      "file": "R6S T-5 SMG.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-commando9.png": {
+      "file": "R6S Commando 9.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-pcx33.png": {
+      "file": "R6S PCX-33 Preview.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-uzk50gi.png": {
+      "file": "R6S UZK50GI.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-k1a.png": {
+      "file": "R6S K1A.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-tacit45.png": {
+      "file": "R6S Tacit .45.webp",
+      "width": 400
     }
   }
 }

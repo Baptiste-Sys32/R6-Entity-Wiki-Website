@@ -131,7 +131,15 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
 - **Trivia (1)**: Solid Snake. **How-to (1)**: Rook.
 - **Attachments 13/15**: Horizontal Grip and Scope/Siege are wiki stubs
   (no infobox) — unwinnable until upstream fills them.
-- **Weapon TTK 13/62 wiki tables + local compute (2026-09-28)**: wiki rows
+- **Loadout coverage (fixed 2026-09-28)**: 52/76 ops had zero firearms —
+  three parser bugs in `parseLoadout`: case-sensitive table headers
+  (`|Primary`), a `$` in the row terminator that never matched mid-table,
+  `|primary =` (spaced) params missed, target-instead-of-display bullets
+  (`MAC-11#Sieg|SMG-11`), `|Gadget x 2` headers. All 76 ops now parse
+  (Clash shield-only by design); build-data throws on firearm-less ops.
+  Knock-ons fixed in the same pass: `{{WeaponTTK}}`/single-range damage
+  format (Tacit .45), shared-page alias merging (M249 SAW, AUG A3, Luison,
+  9x19VSN), shield exclusions from the stats warning. Weapons 63→106.
   kept as reference; `ttkComputed` precomputed locally (100/110/125 HP,
   close-range, full-auto ROF; pellet shotguns excluded) — 36/39 wiki rows
   match within 100ms, 3 armor3 drifts logged (5.7 USG, PRB92, PMM).

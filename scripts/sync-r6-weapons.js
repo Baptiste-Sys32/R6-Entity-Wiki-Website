@@ -48,7 +48,9 @@ function siegeSection(wt) {
 }
 
 function field(section, name) {
-  const m = section.match(new RegExp(`\\|${name}\\s*=([\\s\\S]*?)(?=\\n\\|[a-zA-Z0-9 /]+\\s*=|\\n\\}\\})`));
+  // Param names may carry upstream typos (e.g. "|appearances. ="), so the
+  // terminator charset includes "." — otherwise values swallow the next line.
+  const m = section.match(new RegExp(`\\|${name}\\s*=([\\s\\S]*?)(?=\\n\\|[a-zA-Z0-9 /.]+\\s*=|\\n\\}\\})`));
   return m ? m[1].trim() : '';
 }
 function fileOf(markup) {
@@ -100,6 +102,10 @@ function parseWeapon(title, wt) {
   const dmgMatch = dmgRaw.match(/\{\{WeaponDamage\|([A-Z_]+)\|(\d+)/);
   const rangeRe = /(\d+)\s*(?:\(x(\d+)\)\s*)?<small>\((\d+)-(\d+)m\)<\/small>[\s\S]*?(\d+)\s*(?:\(x\d+\)\s*)?<small>\((\d+)\+m\)<\/small>/;
   const rangeMatch = dmgRaw.match(rangeRe);
+  // Single-far format: "52 <small>(0-12m)</small><br />31 <small>(20m+)</small>"
+  // (newer pages like Tacit .45, no WeaponDamage template).
+  const rangeRe2 = /(\d+)\s*(?:\(x(\d+)\)\s*)?<small>\((\d+)-(\d+)m\)<\/small>[\s\S]{0,300}?(\d+)\s*<small>\((\d+)m\+\)<\/small>/;
+  const rangeMatch2 = rangeMatch ? null : dmgRaw.match(rangeRe2);
   const suppSection = (dmgRaw.split(/Suppressed/i)[1] || '');
   const suppMatch = suppSection.match(rangeRe);
   const damage = dmgMatch ? { mode: 'class', class: dmgMatch[1], base: Number(dmgMatch[2]), extended: /extended/i.test(dmgRaw) }
@@ -112,6 +118,12 @@ function parseWeapon(title, wt) {
         close: { dmg: Number(suppMatch[1]), range: [Number(suppMatch[3]), Number(suppMatch[4])] },
         far: { dmg: Number(suppMatch[5]), range: [Number(suppMatch[6]), null] },
       } : null,
+    } : rangeMatch2 ? {
+      mode: 'ranged',
+      pellets: rangeMatch2[2] ? Number(rangeMatch2[2]) : null,
+      close: { dmg: Number(rangeMatch2[1]), range: [Number(rangeMatch2[3]), Number(rangeMatch2[4])] },
+      far: { dmg: Number(rangeMatch2[5]), range: [Number(rangeMatch2[6]), null] },
+      suppressed: null,
     } : null;
   const rof = num(field(siege, 'rate of fire'), /(\d+)\s*RPM/i);
   const adsMatch = field(siege, 'adstime').match(/\{\{ADS\|([A-Z]+)/);
@@ -135,7 +147,7 @@ function parseWeapon(title, wt) {
   const imageFile = fileOf(field(siege, 'image'));
   return {
     name: (() => { const n = d('name'); return n && !/[{}]/.test(n) && n.length <= 60 ? n : title; })(),
-    type: d('type'),
+    type: d('type').split('|')[0].trim().slice(0, 40) || 'Unknown',
     fire: d('fire'),
     damage: damage && damage.base !== undefined ? damage.base : (damage ? damage.close.dmg : null),
     damageModel: damage,
@@ -193,6 +205,7 @@ async function main() {
   console.log(`sync-weapons: ${names.length} firearms`);
   const weapons = [];
   const seenPages = new Set();
+  const pageOwner = new Map();
   // Merge into the shared manifest (other syncs own their entries).
   const manifestPath = path.join(ROOT, 'review', 'r6-image-manifest.json');
   let manifest = { images: {} };
@@ -216,12 +229,17 @@ async function main() {
         continue;
       }
       if (seenPages.has(resolved.title)) {
-        console.warn(`sync-weapons: "${name}" shares page ${resolved.title}, skipping duplicate`);
+        // Same page, different loadout name (M249 SAW→M249, Luison→PRB92):
+        // merge as alias so operator rows link to the sheet.
+        const owner = pageOwner.get(resolved.title);
+        if (owner && !owner.aliases.includes(name)) owner.aliases.push(name);
+        else console.warn(`sync-weapons: "${name}" shares page ${resolved.title}, skipping duplicate`);
         continue;
       }
       seenPages.add(resolved.title);
       parsed.page = resolved.title;
       parsed.aliases = [name];
+      pageOwner.set(resolved.title, parsed);
       // Canonical render from the weapon page infobox (clean gun pic —
       // per-operator files are often operator-holding-gun promos).
       let slug = slugOf(parsed.name);

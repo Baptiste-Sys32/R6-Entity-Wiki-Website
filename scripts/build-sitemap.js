@@ -36,7 +36,7 @@ function main() {
   const urls = [];
   const add = (loc, changefreq, priority) => urls.push({ loc, changefreq, priority });
   add(`${BASE}/`, 'weekly', '1.0');
-  ['operators', 'gadgets', 'maps', 'seasons', 'attachments'].forEach((view) => add(`${BASE}/?view=${view}`, 'weekly', '0.8'));
+  ['operators', 'gadgets', 'weapons', 'maps', 'seasons', 'attachments'].forEach((view) => add(`${BASE}/?view=${view}`, 'weekly', '0.8'));
   (db.operators || []).forEach((e) => { if (e.id) add(`${BASE}/?view=operator&id=${e.id}`, 'monthly', '0.6'); });
   (db.maps || []).forEach((e) => { if (e.id) add(`${BASE}/?view=map&id=${e.id}`, 'monthly', '0.6'); });
   (db.seasons || []).forEach((e) => { if (e.id) add(`${BASE}/?view=season&id=${e.id}`, 'monthly', '0.6'); });

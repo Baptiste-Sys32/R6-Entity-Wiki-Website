@@ -43,6 +43,7 @@ const NORMALIZE = {
   'Smoke Grenade': 'smoke-grenade', 'Smoke Grenade/Siege': 'smoke-grenade',
   'Stun Grenade': 'stun-grenade', 'Stun Grenade/Siege': 'stun-grenade',
   'Frag Grenade': 'frag-grenade', 'M67/Siege': 'frag-grenade',
+  'Frag Grenade x 2': 'frag-grenade', 'Frag grenade': 'frag-grenade', 'Frag Grenades': 'frag-grenade',
   'Deployable Shield': 'deployable-shield',
   'Observation Blocker': 'observation-blocker',
   'Barbed Wire': 'barbed-wire',
