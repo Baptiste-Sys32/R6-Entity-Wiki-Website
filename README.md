@@ -8,6 +8,7 @@ Fan-made Rainbow Six Siege wiki website. Built on the shared wiki engine
 
 ```
 node scripts/sync-r6-data.js   # Rainbow Six wiki (Fandom API) -> content/*.json
+node scripts/sync-r6-liquipedia.js  # Liquipedia (free API, CC BY-SA 3.0) -> content/patches.json
 node scripts/build-data.js     # content/*.json -> web/data.js (validated)
 node scripts/build-sitemap.js  # web/data.js -> web/sitemap.xml
 npm run check:data              # freshness gates for data + sitemap

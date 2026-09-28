@@ -113,6 +113,7 @@
   <script src="lore.js" onerror="window.__r6DataScriptError('lore.js')"></script>
   <script src="weapons.js" onerror="window.__r6DataScriptError('weapons.js')"></script>
   <script src="gadgets.js" onerror="window.__r6DataScriptError('gadgets.js')"></script>
+  <script src="patches.js" onerror="window.__r6DataScriptError('patches.js')"></script>
   <script>
     (() => {
       const LAUNCH_TIPS = [
@@ -176,6 +177,19 @@
     const GADGET_STORE = (typeof R6_GADGETS !== 'undefined' && R6_GADGETS) || { gadgets: [] };
     const GADGETS = GADGET_STORE.gadgets || [];
     const gadgetsById = new Map(GADGETS.map((g) => [g.id, g]));
+    const PATCHES = ((typeof R6_PATCHES !== 'undefined' && R6_PATCHES) || { patches: [] }).patches || [];
+    const normPatchKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const patchesForSeason = (season) => {
+      if (!season) return [];
+      const key = normPatchKey(String(season.name || '').replace(/^operation\s+/i, ''));
+      const code = String(season.code || '').match(/Y(\d+)S(\d+)/i);
+      // Numbered patches follow <year>.<season>.<n> (10.4.1 → Y10S4).
+      const versionRe = code ? new RegExp(`^${Number(code[1])}\\.${Number(code[2])}(?:\\.|\\b)`) : null;
+      return PATCHES.filter((p) => {
+        if (versionRe && versionRe.test(String(p.version || '').trim())) return true;
+        return key && normPatchKey(`${p.version || ''} ${p.highlights || ''}`).includes(key);
+      });
+    };
     const normOpName = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[øØ]/g, 'o').toLowerCase();
     const normWeaponKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const resolveWeapon = (name) => {
@@ -966,12 +980,13 @@
       const s = seasonsById.get(id);
       if (!s) return <div className="cx-article"><h1 className="cx-title">Not found</h1></div>;
       const seasonMap = MAPS.find((m) => m.name === s.map);
+      const seasonPatches = patchesForSeason(s);
       return (
         <ArticleShell
           crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Seasons', onClick: () => setView('seasons') }, { label: s.name }]}
           title={s.name}
           lead={<p>{s.blurb}</p>}
-          toc={(s.operators || []).length > 0 ? [{ id: 'operators', label: 'Operators' }] : null}
+          toc={[...((s.operators || []).length > 0 ? [{ id: 'operators', label: 'Operators' }] : []), ...(seasonPatches.length ? [{ id: 'patches', label: 'Patches' }] : [])]}
           categories={['Seasons', s.code]}
           infobox={{ title: s.code, sub: 'Season', image: s.cover ? `./${s.cover}` : (seasonMap && seasonMap.thumb ? `./${seasonMap.thumb}` : null), imageAlt: s.name, imageType: 'Map', rows: [{ label: 'Released', value: s.released || '—' }, ...(s.patch ? [{ label: 'Patch', value: s.patch }] : []), { label: 'Map', value: (s.maps && s.maps.length ? s.maps.join(', ') : (s.map || '—')) }, { label: 'Operators', value: (s.operators || []).join(', ') || '—' }] }}
         >
@@ -987,6 +1002,16 @@
                   ) : <span key={name} className="text-sm" style={{ color: 'var(--muted)' }}>{name}</span>;
                 })}
               </div>
+            </CxSection>
+          ) : null}
+          {seasonPatches.length ? (
+            <CxSection id="patches" title="Patches">
+              <table className="cx-wikitable"><thead><tr><th>Patch</th><th>Date</th><th>Highlights</th></tr></thead>
+                <tbody>{seasonPatches.map((p, i) => (
+                  <tr key={i}><td className="font-semibold">{p.url ? <a className="cx-alink" href={p.url} target="_blank" rel="noreferrer">{p.version}{p.latest ? ' (latest)' : ''}</a> : <span>{p.version}{p.latest ? ' (latest)' : ''}</span>}</td>
+                    <td>{p.date}</td><td>{p.highlights || '—'}</td></tr>
+                ))}</tbody></table>
+              <p className="text-xs mt-1" style={{ color: 'var(--muted)' }}>Patch history via Liquipedia contributors (CC BY-SA 3.0).</p>
             </CxSection>
           ) : null}
           <NotesEditor title="Season Notes" value={note || ''} onChange={onNoteChange} placeholder="Meta reads, bans, strats..." />

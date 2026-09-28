@@ -14,10 +14,12 @@ const LORE_PATH = path.join(ROOT, 'content', 'lore.json');
 const WEAPONS_PATH = path.join(ROOT, 'content', 'weapons.json');
 const ATTACHMENTS_PATH = path.join(ROOT, 'content', 'attachments.json');
 const GADGETS_PATH = path.join(ROOT, 'content', 'gadgets.json');
+const PATCHES_PATH = path.join(ROOT, 'content', 'patches.json');
 const DATA_PATH = path.join(ROOT, 'web', 'data.js');
 const LORE_BUNDLE_PATH = path.join(ROOT, 'web', 'lore.js');
 const WEAPONS_BUNDLE_PATH = path.join(ROOT, 'web', 'weapons.js');
 const GADGETS_BUNDLE_PATH = path.join(ROOT, 'web', 'gadgets.js');
+const PATCHES_BUNDLE_PATH = path.join(ROOT, 'web', 'patches.js');
 
 const checkOnly = new Set(process.argv.slice(2)).has('--check');
 
@@ -229,6 +231,19 @@ function validateAttachments(attachments) {
   console.log(`build-data: attachments ok (${attachments.length}).`);
 }
 
+function validatePatches(patches) {
+  if (!Array.isArray(patches)) throw new Error('patches is not an array');
+  patches.forEach((p, index) => {
+    const label = `patch #${index + 1} (${p.version || '?'})`;
+    if (!p || typeof p !== 'object') throw new Error(`${label} is not an object`);
+    for (const key of ['version', 'date']) {
+      if (typeof p[key] !== 'string' || !p[key]) throw new Error(`${label} is missing ${key}`);
+    }
+    if (p.url !== null && p.url !== undefined && typeof p.url !== 'string') throw new Error(`${label} has invalid url`);
+  });
+  console.log(`build-data: patches ok (${patches.length}).`);
+}
+
 function main() {
   const operators = readJson(OPERATORS_PATH).operators;
   const maps = readJson(MAPS_PATH).maps;
@@ -241,6 +256,8 @@ function main() {
   const gadgetsDoc = readJson(GADGETS_PATH);
   const gadgets = gadgetsDoc.gadgets;
   const gadgetNormalize = gadgetsDoc.normalize || {};
+  const patchesDoc = fs.existsSync(PATCHES_PATH) ? readJson(PATCHES_PATH) : { patches: [] };
+  const patches = patchesDoc.patches || [];
   const operatorIds = operators.map((op) => op.id);
   validateOperators(operators);
   validateMaps(maps);
@@ -249,6 +266,7 @@ function main() {
   validateWeapons(weapons, new Set(operators.flatMap((op) => (op.weapons || []).filter((w) => w.slot !== 'gadget').map((w) => w.name))));
   validateAttachments(attachments);
   validateGadgets(gadgets, operators, gadgetNormalize);
+  validatePatches(patches);
   validateImagePaths(operators, maps, seasons, gadgets);
   const payload = { operators, maps, seasons };
   // Attach canonical gadget ids to loadout secondary entries (single source:
@@ -288,6 +306,7 @@ function main() {
   console.log(`build-data: weapon renders ok (${Object.keys(renderByWeapon).length}/${weapons.length}).`);
   const weaponsOutput = `var R6_WEAPONS = ${JSON.stringify({ weapons: weaponsWithImages, attachments, aliases: byNorm })};\n`;
   const gadgetsOutput = `var R6_GADGETS = ${JSON.stringify({ gadgets })};\n`;
+  const patchesOutput = `var R6_PATCHES = ${JSON.stringify({ patches })};\n`;
   if (checkOnly) {
     const current = fs.existsSync(DATA_PATH) ? fs.readFileSync(DATA_PATH, 'utf8') : '';
     if (current !== output) {
@@ -309,6 +328,11 @@ function main() {
       console.error('build-data: web/gadgets.js is stale, run node scripts/build-data.js');
       process.exit(1);
     }
+    const currentPatches = fs.existsSync(PATCHES_BUNDLE_PATH) ? fs.readFileSync(PATCHES_BUNDLE_PATH, 'utf8') : '';
+    if (currentPatches !== patchesOutput) {
+      console.error('build-data: web/patches.js is stale, run node scripts/build-data.js');
+      process.exit(1);
+    }
     console.log(`build-data: data fresh (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
     return;
   }
@@ -316,6 +340,7 @@ function main() {
   fs.writeFileSync(LORE_BUNDLE_PATH, loreOutput);
   fs.writeFileSync(WEAPONS_BUNDLE_PATH, weaponsOutput);
   fs.writeFileSync(GADGETS_BUNDLE_PATH, gadgetsOutput);
+  fs.writeFileSync(PATCHES_BUNDLE_PATH, patchesOutput);
   console.log(`build-data: wrote web/data.js (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
   console.log(`build-data: wrote web/lore.js.`);
 }

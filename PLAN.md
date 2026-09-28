@@ -127,8 +127,16 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
 - **Trivia (1)**: Solid Snake. **How-to (1)**: Rook.
 - **Attachments 13/15**: Horizontal Grip and Scope/Siege are wiki stubs
   (no infobox) — unwinnable until upstream fills them.
-- **Weapon TTK 13/62**: only arms with wiki TTK tables show the table;
-  section hides otherwise. No computed TTK — never derive stats.
+- **Weapon TTK 13/62 wiki tables + local compute (2026-09-28)**: wiki rows
+  kept as reference; `ttkComputed` precomputed locally (100/110/125 HP,
+  close-range, full-auto ROF; pellet shotguns excluded) — 36/39 wiki rows
+  match within 100ms, 3 armor3 drifts logged (5.7 USG, PRB92, PMM).
+  Static JSON ships; zero client-side math.
+- **Patch history (2026-09-28)**: `content/patches.json` (170 rows) via
+  `sync-r6-liquipedia.js` (free no-key MediaWiki API, gzip, CC BY-SA 3.0,
+  warn-only failures). Season sheets show matched Patches sections
+  (name-token + `<year>.<season>` version rule); roster cross-check clean
+  (diffs are Recruit variants + Warden naming).
 
 Stale-meta hygiene (fix when touching nearby code, not urgent):
 

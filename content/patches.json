@@ -1,0 +1,1201 @@
+{
+  "generatedAt": "2026-09-28T09:26:12.230Z",
+  "metadata": {
+    "sources": {
+      "liquipedia": "https://liquipedia.net/rainbowsix/ (CC BY-SA 3.0)"
+    },
+    "count": 170
+  },
+  "patches": [
+    {
+      "version": "11.1.3 Patch",
+      "latest": true,
+      "date": "May 5, 2026",
+      "highlights": "Operator Balancing Weapon Balancing Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/11.1.3_Patch"
+    },
+    {
+      "version": "11.1.2 Patch",
+      "latest": false,
+      "date": "April 14, 2026",
+      "highlights": "Rauora Rework Jackal & Smoke Buffs Refinement Changes Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/11.1.2_Patch"
+    },
+    {
+      "version": "11.1.1 Patch",
+      "latest": false,
+      "date": "March 24, 2026",
+      "highlights": "Operator Balancing Weapon Buffs Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/11.1.1_Patch"
+    },
+    {
+      "version": "Operation Silent Hunt",
+      "latest": false,
+      "date": "March 4, 2026",
+      "highlights": "New Operator: Solid Snake New Operator: Denari Modernized Maps Dual Front: Final Season Balancing Updates",
+      "url": "https://liquipedia.net/rainbowsix/11.1.0_Patch"
+    },
+    {
+      "version": "10.4.2 Patch",
+      "latest": false,
+      "date": "January 20, 2026",
+      "highlights": "Thorn Rework Operator Balancing Refinement Changes Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.4.2_Patch"
+    },
+    {
+      "version": "10.4.1 patch",
+      "latest": false,
+      "date": "December 11, 2025",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.4.1_Patch"
+    },
+    {
+      "version": "Operation Tenfold Pursuit",
+      "latest": false,
+      "date": "December 2, 2025",
+      "highlights": "Thatcher Rework New Weapon: PMR90A2 Map Rework: Fortress Modernized Maps Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.4.0_Patch"
+    },
+    {
+      "version": "10.3.3 Patch",
+      "latest": false,
+      "date": "October 14, 2025",
+      "highlights": "Solis Buff Denari Reverts & Buffs Loadout Updates Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.3.3_Patch"
+    },
+    {
+      "version": "10.3.2 Patch",
+      "latest": false,
+      "date": "September 30, 2025",
+      "highlights": "Denari Balancing Dual Front Map Fixes Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.3.2_Patch"
+    },
+    {
+      "version": "10.3.1 Patch",
+      "latest": false,
+      "date": "September 16, 2025",
+      "highlights": "Dual Front Update Reputation System Update Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.3.1_Patch"
+    },
+    {
+      "version": "Operation High Stakes",
+      "latest": false,
+      "date": "September 2, 2025",
+      "highlights": "New Operator: Denari Dual Front: Keres Safe Room Modernized Maps Player Protection Updates Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.3.0_Patch"
+    },
+    {
+      "version": "10.2.2 Patch",
+      "latest": false,
+      "date": "July 2, 2025",
+      "highlights": "Dual Front Updates Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.2.2_Patch"
+    },
+    {
+      "version": "10.2.1 Patch",
+      "latest": false,
+      "date": "June 12, 2025",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.2.1_Patch"
+    },
+    {
+      "version": "Operation Daybreak",
+      "latest": false,
+      "date": "June 10, 2025",
+      "highlights": "Siege X & Dual Front New Map: District Clash Rework Gameplay Overhaul Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.2.0_Patch"
+    },
+    {
+      "version": "10.1.3 Patch",
+      "latest": false,
+      "date": "April 15, 2025",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.1.3_Patch"
+    },
+    {
+      "version": "10.1.2 Patch",
+      "latest": false,
+      "date": "April 1, 2025",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.1.2_Patch"
+    },
+    {
+      "version": "10.1.1 patch",
+      "latest": false,
+      "date": "March 25, 2025",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/10.1.1_Patch"
+    },
+    {
+      "version": "Operation Prep Phase",
+      "latest": false,
+      "date": "March 4, 2025",
+      "highlights": "New Operation New Operator Dynamic Matchmaking Reputation System",
+      "url": "https://liquipedia.net/rainbowsix/10.1.0_Patch"
+    },
+    {
+      "version": "9.4.3 Patch",
+      "latest": false,
+      "date": "February 5, 2025",
+      "highlights": "Boot time improvement Map pool changes",
+      "url": "https://liquipedia.net/rainbowsix/9.4.3_Patch"
+    },
+    {
+      "version": "9.4.2 Patch",
+      "latest": false,
+      "date": "January 21, 2025",
+      "highlights": "Operator Balancing Weapon Balancing Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.4.2_Patch"
+    },
+    {
+      "version": "9.4.1 Patch",
+      "latest": false,
+      "date": "December 12, 2024",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.4.1_Patch"
+    },
+    {
+      "version": "Operation Collision Point",
+      "latest": false,
+      "date": "December 3, 2024",
+      "highlights": "New Operation Operator Remaster Console to PC Crossplay Player Protection Balancing: Shields",
+      "url": "https://liquipedia.net/rainbowsix/9.4.0_Patch"
+    },
+    {
+      "version": "9.3.3 Patch",
+      "latest": false,
+      "date": "October 22, 2024",
+      "highlights": "Operator Balancing Weapon Balancing Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.3.3_Patch"
+    },
+    {
+      "version": "9.3.2 Patch",
+      "latest": false,
+      "date": "October 8, 2024",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.3.2_Patch"
+    },
+    {
+      "version": "9.3.1 Patch",
+      "latest": false,
+      "date": "September 24, 2024",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.3.1_Patch"
+    },
+    {
+      "version": "Operation Twin Shells",
+      "latest": false,
+      "date": "September 10, 2024",
+      "highlights": "New Operation New Operator Siege Cup Player Protection Playlist updates",
+      "url": "https://liquipedia.net/rainbowsix/9.3.0_Patch"
+    },
+    {
+      "version": "9.2.3 Patch",
+      "latest": false,
+      "date": "July 25, 2024",
+      "highlights": "Player Protection PlayStation® Tournament Operator Balancing Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.2.3_Patch"
+    },
+    {
+      "version": "9.2.2 Patch",
+      "latest": false,
+      "date": "July 9, 2024",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.2.2_Patch"
+    },
+    {
+      "version": "9.2.1 Patch",
+      "latest": false,
+      "date": "June 20, 2024",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.2.1_Patch"
+    },
+    {
+      "version": "Operation New Blood",
+      "latest": false,
+      "date": "June 11, 2024",
+      "highlights": "New Operation Playlist updates Operator Rework Player Protection Balancing",
+      "url": "https://liquipedia.net/rainbowsix/9.2.0_Patch"
+    },
+    {
+      "version": "9.1.3 Patch",
+      "latest": false,
+      "date": "May 2, 2024",
+      "highlights": "Operator Balancing Gadget Balancing",
+      "url": "https://liquipedia.net/rainbowsix/9.1.3_Patch"
+    },
+    {
+      "version": "9.1.2 Patch",
+      "latest": false,
+      "date": "April 9, 2024",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.1.2_Patch"
+    },
+    {
+      "version": "9.1.1 Patch",
+      "latest": false,
+      "date": "March 26, 2024",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/9.1.1_Patch"
+    },
+    {
+      "version": "Operation Deadly Omen",
+      "latest": false,
+      "date": "March 12, 2024",
+      "highlights": "New Operation Deimos Console to PC Crossplay Player Protection Balancing: Shields",
+      "url": "https://liquipedia.net/rainbowsix/9.1.0_Patch"
+    },
+    {
+      "version": "8.4.3 Patch",
+      "latest": false,
+      "date": "February 15, 2024",
+      "highlights": "Game Health Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.4.3_Patch"
+    },
+    {
+      "version": "8.4.2 Patch",
+      "latest": false,
+      "date": "January 23, 2024",
+      "highlights": "Operator Balancing Weapon Balancing Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.4.2_Patch"
+    },
+    {
+      "version": "8.4.1 Patch",
+      "latest": false,
+      "date": "December 12, 2023",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.4.1_Patch"
+    },
+    {
+      "version": "Operation Deep Freeze",
+      "latest": false,
+      "date": "December 6, 2023",
+      "highlights": "New Operation New Operator Player Protection Playlist Updates Balancing",
+      "url": "https://liquipedia.net/rainbowsix/8.4.0_Patch"
+    },
+    {
+      "version": "8.3.3 Patch",
+      "latest": false,
+      "date": "October 10, 2023",
+      "highlights": "Operator Balancing Tweaks and Improvements Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.3.3_Patch"
+    },
+    {
+      "version": "8.3.2 Patch",
+      "latest": false,
+      "date": "September 26, 2023",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.3.2_Patch"
+    },
+    {
+      "version": "8.3.1 Patch",
+      "latest": false,
+      "date": "September 12, 2023",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.3.1_Patch"
+    },
+    {
+      "version": "Operation Heavy Mettle",
+      "latest": false,
+      "date": "August 29, 2023",
+      "highlights": "New Operation New Operator Player Protection Playlist Updates Balancing",
+      "url": "https://liquipedia.net/rainbowsix/8.3.0_Patch"
+    },
+    {
+      "version": "8.2.3 Patch",
+      "latest": false,
+      "date": "July 11, 2023",
+      "highlights": "Operator Balancing Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.2.3_Patch"
+    },
+    {
+      "version": "8.2.2 Patch",
+      "latest": false,
+      "date": "June 26, 2023",
+      "highlights": "Features Tweaks and Updates Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.2.2_Patch"
+    },
+    {
+      "version": "8.2.1 Patch",
+      "latest": false,
+      "date": "June 13, 2023",
+      "highlights": "Feature Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.2.1_Patch"
+    },
+    {
+      "version": "Operation Dread Factor",
+      "latest": false,
+      "date": "May 30, 2023",
+      "highlights": "New Operation New Operator Map Rework Shooting Range Permanent Arcade Playlist",
+      "url": "https://liquipedia.net/rainbowsix/8.2.0_Patch"
+    },
+    {
+      "version": "8.1.2 Patch",
+      "latest": false,
+      "date": "April 11, 2023",
+      "highlights": "Mousetrap Release Balance Changes Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.1.2_Patch"
+    },
+    {
+      "version": "8.1.1 Patch",
+      "latest": false,
+      "date": "March 21, 2023",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/8.1.1_Patch"
+    },
+    {
+      "version": "Operation Commanding Force",
+      "latest": false,
+      "date": "March 7, 2023",
+      "highlights": "New operation New Operator Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/8.1.0_Patch"
+    },
+    {
+      "version": "7.4.2 Patch&#160;",
+      "latest": false,
+      "date": "January 24, 2023",
+      "highlights": "Bug fixes Weapon Balancing",
+      "url": "https://liquipedia.net/rainbowsix/7.4.2_Patch"
+    },
+    {
+      "version": "7.4.1 Patch",
+      "latest": false,
+      "date": "December 13, 2022",
+      "highlights": "Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/7.4.1_Patch"
+    },
+    {
+      "version": "Operation Solar Raid",
+      "latest": false,
+      "date": "November 21, 2022",
+      "highlights": "New operation Crossplay & Cross-progession Reputation Score display Ranked rework Battle Pass rework Misc Changes Balance Changes Bug Fixes",
+      "url": "https://liquipedia.net/rainbowsix/7.4.0_Patch"
+    },
+    {
+      "version": "7.3.3 Patch",
+      "latest": false,
+      "date": "October 18, 2022",
+      "highlights": "Bug fixes Operator Balancing",
+      "url": "https://liquipedia.net/rainbowsix/7.3.3_Patch"
+    },
+    {
+      "version": "7.3.2 Patch",
+      "latest": false,
+      "date": "October 5, 2022",
+      "highlights": "Bug fixes Game Health",
+      "url": "https://liquipedia.net/rainbowsix/7.3.2_Patch"
+    },
+    {
+      "version": "7.3.1 Patch",
+      "latest": false,
+      "date": "September 19, 2022",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/7.3.1_Patch"
+    },
+    {
+      "version": "Operation Brutal Swarm",
+      "latest": false,
+      "date": "September 6, 2022",
+      "highlights": "New operation Balance changes Bug fixes Misc changes New secondary Gagdet",
+      "url": "https://liquipedia.net/rainbowsix/7.3.0_Patch"
+    },
+    {
+      "version": "7.2.2 Patch",
+      "latest": false,
+      "date": "July 21, 2022",
+      "highlights": "Game Health Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/7.2.2_Patch"
+    },
+    {
+      "version": "7.2.1 Patch",
+      "latest": false,
+      "date": "June 27, 2022",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/7.2.1_Patch"
+    },
+    {
+      "version": "Operation Vector Glare",
+      "latest": false,
+      "date": "June 14, 2022",
+      "highlights": "New operation Balance changes Bug fixes Misc changes New map (Deathmatch)",
+      "url": "https://liquipedia.net/rainbowsix/7.2.0_Patch"
+    },
+    {
+      "version": "7.1.3 Patch",
+      "latest": false,
+      "date": "May 5, 2022",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/7.1.3_Patch"
+    },
+    {
+      "version": "7.1.2 Patch",
+      "latest": false,
+      "date": "April 19, 2022",
+      "highlights": "New map Emerald Plains Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/7.1.2_Patch"
+    },
+    {
+      "version": "7.1.1 Patch",
+      "latest": false,
+      "date": "April 1, 2022",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/7.1.1_Patch"
+    },
+    {
+      "version": "Operation Demon Veil",
+      "latest": false,
+      "date": "March 15, 2022",
+      "highlights": "New operation Balance changes Bug fixes Misc changes Operator rework",
+      "url": "https://liquipedia.net/rainbowsix/7.1.0_Patch"
+    },
+    {
+      "version": "6.4.2 Patch",
+      "latest": false,
+      "date": "January 25, 2022",
+      "highlights": "Xbox Audio Issues Balancing Changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/6.4.2_Patch"
+    },
+    {
+      "version": "6.4.1 Patch",
+      "latest": false,
+      "date": "December 14, 2021",
+      "highlights": "Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/6.4.1_Patch"
+    },
+    {
+      "version": "Operation High Calibre",
+      "latest": false,
+      "date": "November 30, 2021",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/6.4.0_Patch"
+    },
+    {
+      "version": "6.3.3 Patch",
+      "latest": false,
+      "date": "October 18, 2021",
+      "highlights": "Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/6.3.3_Patch"
+    },
+    {
+      "version": "6.3.2 Patch",
+      "latest": false,
+      "date": "October 5, 2021",
+      "highlights": "Misc changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/6.3.2_Patch"
+    },
+    {
+      "version": "6.3.1 Patch",
+      "latest": false,
+      "date": "September 21, 2021",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/6.3.1_Patch"
+    },
+    {
+      "version": "Operation Crystal Guard",
+      "latest": false,
+      "date": "September 7, 2021",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/6.3.0_Patch"
+    },
+    {
+      "version": "6.2.2 Patch",
+      "latest": false,
+      "date": "July 26, 2021",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/6.2.2_Patch"
+    },
+    {
+      "version": "6.2.1 Patch",
+      "latest": false,
+      "date": "June 29, 2021",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/6.2.1_Patch"
+    },
+    {
+      "version": "Operation North Star",
+      "latest": false,
+      "date": "June 14, 2021",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/6.2.0_Patch"
+    },
+    {
+      "version": "6.1.3 Patch",
+      "latest": false,
+      "date": "May 3, 2021",
+      "highlights": "Balances Changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/6.1.3_Patch"
+    },
+    {
+      "version": "6.1.2 Patch",
+      "latest": false,
+      "date": "April 13, 2021",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/6.1.2_Patch"
+    },
+    {
+      "version": "6.1.1 Patch",
+      "latest": false,
+      "date": "March 25, 2021",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/6.1.1_Patch"
+    },
+    {
+      "version": "Operation Crimson Heist",
+      "latest": false,
+      "date": "March 16, 2021",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/6.1.0_Patch"
+    },
+    {
+      "version": "5.4.3 Patch",
+      "latest": false,
+      "date": "January 28, 2021",
+      "highlights": "Balances Changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.4.3_Patch"
+    },
+    {
+      "version": "5.4.2 Patch",
+      "latest": false,
+      "date": "January 19, 2021",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.4.2_Patch"
+    },
+    {
+      "version": "5.4.1 Patch",
+      "latest": false,
+      "date": "December 15, 2020",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.4.1_Patch"
+    },
+    {
+      "version": "Operation Neon Dawn",
+      "latest": false,
+      "date": "December 1, 2020",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/5.4.0_Patch"
+    },
+    {
+      "version": "5.3.3.1 Patch",
+      "latest": false,
+      "date": "November 17, 2020",
+      "highlights": "Operator Rework Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.3.3.1_Patch"
+    },
+    {
+      "version": "5.3.3 Patch",
+      "latest": false,
+      "date": "October 20, 2020",
+      "highlights": "Balances Changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.3.3_Patch"
+    },
+    {
+      "version": "5.3.2 Patch",
+      "latest": false,
+      "date": "October 6, 2020",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.3.2_Patch"
+    },
+    {
+      "version": "5.3.1 Patch",
+      "latest": false,
+      "date": "September 22, 2020",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.3.1_Patch"
+    },
+    {
+      "version": "Operation Shadow Legacy",
+      "latest": false,
+      "date": "September 10, 2020",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/5.3.0_Patch"
+    },
+    {
+      "version": "5.2.3 Patch",
+      "latest": false,
+      "date": "July 29, 2020",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.2.3_Patch"
+    },
+    {
+      "version": "5.2.2 Patch",
+      "latest": false,
+      "date": "July 14, 2020",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.2.2_Patch"
+    },
+    {
+      "version": "5.2.1 Patch",
+      "latest": false,
+      "date": "June 30, 2020",
+      "highlights": "Match Cancellation Melusi Balancing Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.2.1_Patch"
+    },
+    {
+      "version": "Operation Steel Wave",
+      "latest": false,
+      "date": "June 16, 2020",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/5.2.0_Patch"
+    },
+    {
+      "version": "5.1.2 Patch",
+      "latest": false,
+      "date": "April 21, 2020",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.1.2_Patch"
+    },
+    {
+      "version": "5.1.1 Patch",
+      "latest": false,
+      "date": "March 23, 2020",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/5.1.1_Patch"
+    },
+    {
+      "version": "Operation Void Edge",
+      "latest": false,
+      "date": "March 10, 2020",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/5.1.0_Patch"
+    },
+    {
+      "version": "4.4.3 Patch",
+      "latest": false,
+      "date": "January 28, 2020",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.4.3_Patch"
+    },
+    {
+      "version": "4.4.2 Patch",
+      "latest": false,
+      "date": "January 13, 2020",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.4.2_Patch"
+    },
+    {
+      "version": "4.4.1 Patch",
+      "latest": false,
+      "date": "December 11, 2019",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.4.1_Patch"
+    },
+    {
+      "version": "Operation Shifting Tides",
+      "latest": false,
+      "date": "December 3, 2019",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/4.4.0_Patch"
+    },
+    {
+      "version": "4.3.3 Patch",
+      "latest": false,
+      "date": "October 22, 2019",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.3.3_Patch"
+    },
+    {
+      "version": "4.3.2 Patch",
+      "latest": false,
+      "date": "October 8, 2019",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.3.2_Patch"
+    },
+    {
+      "version": "4.3.1 Patch",
+      "latest": false,
+      "date": "September 19, 2019",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.3.1_Patch"
+    },
+    {
+      "version": "Operation Ember Rise",
+      "latest": false,
+      "date": "September 11, 2019",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/4.3.0_Patch"
+    },
+    {
+      "version": "4.2.3 Patch",
+      "latest": false,
+      "date": "July 22, 2019",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.2.3_Patch"
+    },
+    {
+      "version": "4.2.2 Patch",
+      "latest": false,
+      "date": "July 9, 2019",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.2.2_Patch"
+    },
+    {
+      "version": "4.2.1 Patch",
+      "latest": false,
+      "date": "June 21, 2019",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.2.1_Patch"
+    },
+    {
+      "version": "Operation Phantom Sight",
+      "latest": false,
+      "date": "June 11, 2019",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/4.2.0_Patch"
+    },
+    {
+      "version": "4.1.3 Patch",
+      "latest": false,
+      "date": "April 16, 2019",
+      "highlights": "Balance changes",
+      "url": "https://liquipedia.net/rainbowsix/4.1.3_Patch"
+    },
+    {
+      "version": "4.1.2 Patch",
+      "latest": false,
+      "date": "April 4, 2019",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.1.2_Patch"
+    },
+    {
+      "version": "4.1.1 Patch",
+      "latest": false,
+      "date": "March 19, 2019",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.1.1_Patch"
+    },
+    {
+      "version": "4.1.0.2 Patch",
+      "latest": false,
+      "date": "March 14, 2019",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.1.0.2_Patch"
+    },
+    {
+      "version": "4.1.0.1 Patch",
+      "latest": false,
+      "date": "March 11, 2019",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/4.1.0.1_Patch"
+    },
+    {
+      "version": "Operation Burnt Horizon",
+      "latest": false,
+      "date": "March 6, 2019",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/4.1.0_Patch"
+    },
+    {
+      "version": "3.4.2 Patch",
+      "latest": false,
+      "date": "February 5, 2019",
+      "highlights": "Balancing changes",
+      "url": "https://liquipedia.net/rainbowsix/3.4.2_Patch"
+    },
+    {
+      "version": "3.4.1 Patch",
+      "latest": false,
+      "date": "December 17, 2018",
+      "highlights": "Bug fixes Balancing changes",
+      "url": "https://liquipedia.net/rainbowsix/3.4.1_Patch"
+    },
+    {
+      "version": "3.4.0.1 Patch",
+      "latest": false,
+      "date": "December 11, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.4.0.1_Patch"
+    },
+    {
+      "version": "Operation Wind Bastion",
+      "latest": false,
+      "date": "December 4, 2018",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.4.0_Patch"
+    },
+    {
+      "version": "3.3.2 Patch",
+      "latest": false,
+      "date": "October 29, 2018",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.3.2_Patch"
+    },
+    {
+      "version": "3.3.1.2 Patch",
+      "latest": false,
+      "date": "October 18, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.3.1.2_Patch"
+    },
+    {
+      "version": "3.3.1 Patch",
+      "latest": false,
+      "date": "September 18, 2018",
+      "highlights": "Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.3.1_Patch"
+    },
+    {
+      "version": "Operation Grim Sky",
+      "latest": false,
+      "date": "September 4, 2018",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.3.0_Patch"
+    },
+    {
+      "version": "3.2.2.1 Patch",
+      "latest": false,
+      "date": "July 30, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.2.2.1_Patch"
+    },
+    {
+      "version": "3.2.2 Patch",
+      "latest": false,
+      "date": "July 23, 2018",
+      "highlights": "Gameplay changes Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.2.2_Patch"
+    },
+    {
+      "version": "3.2.1.1 Patch",
+      "latest": false,
+      "date": "June 21, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.2.1.1_Patch"
+    },
+    {
+      "version": "3.2.1 Patch",
+      "latest": false,
+      "date": "June 20, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.2.1_Patch"
+    },
+    {
+      "version": "Operation Para Bellum",
+      "latest": false,
+      "date": "June 7, 2018",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.2.0_Patch"
+    },
+    {
+      "version": "3.1.2 Patch",
+      "latest": false,
+      "date": "May 1, 2018",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.1.2_Patch"
+    },
+    {
+      "version": "3.1.1.0.2 Patch",
+      "latest": false,
+      "date": "April 10, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.1.1.0.2_Patch"
+    },
+    {
+      "version": "3.1.1 Patch",
+      "latest": false,
+      "date": "March 20, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.1.1_Patch"
+    },
+    {
+      "version": "Operation Chimera",
+      "latest": false,
+      "date": "March 6, 2018",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.1.0_Patch"
+    },
+    {
+      "version": "White Noise Mid-Season Reinforcements",
+      "latest": false,
+      "date": "January 23, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.4.2_Patch"
+    },
+    {
+      "version": "2.4.1.1 Patch",
+      "latest": false,
+      "date": "January 9, 2018",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.4.1.1_Patch"
+    },
+    {
+      "version": "2.4.1 Patch",
+      "latest": false,
+      "date": "December 14, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.4.1_Patch"
+    },
+    {
+      "version": "Operation White Noise",
+      "latest": false,
+      "date": "December 5, 2017",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/2.4.0_Patch"
+    },
+    {
+      "version": "Blood Orchid Mid-Season Reinforcements",
+      "latest": false,
+      "date": "October 26, 2017",
+      "highlights": "Mid-Season Reinforcements Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/2.3.2_Patch"
+    },
+    {
+      "version": "2.3.1.1 Patch",
+      "latest": false,
+      "date": "September 28, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.3.1.1_Patch"
+    },
+    {
+      "version": "2.3.1 Patch",
+      "latest": false,
+      "date": "September 19, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.3.1_Patch"
+    },
+    {
+      "version": "2.3.0.2 Patch",
+      "latest": false,
+      "date": "September 12, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.3.0.2_Patch"
+    },
+    {
+      "version": "2.3.0.1 Patch",
+      "latest": false,
+      "date": "September 7, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.3.0.1_Patch"
+    },
+    {
+      "version": "Operation Blood Orchid",
+      "latest": false,
+      "date": "September 5, 2017",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/2.3.0_Patch"
+    },
+    {
+      "version": "2.2.2.1 Patch",
+      "latest": false,
+      "date": "August 11, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.2.2.1_Patch"
+    },
+    {
+      "version": "2.2.2 Patch",
+      "latest": false,
+      "date": "August 9, 2017",
+      "highlights": "Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/2.2.2_Patch"
+    },
+    {
+      "version": "2.2.1.2 Patch",
+      "latest": false,
+      "date": "July 20, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.2.1.2_Patch"
+    },
+    {
+      "version": "2.2.1.1 Patch",
+      "latest": false,
+      "date": "July 11, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.2.1.1_Patch"
+    },
+    {
+      "version": "Operation Health",
+      "latest": false,
+      "date": "June 7, 2017",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/2.2.1_Patch_(Year_2)"
+    },
+    {
+      "version": "2.1.3.2 Patch",
+      "latest": false,
+      "date": "April 26, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.1.3.2_Patch"
+    },
+    {
+      "version": "2.1.3.1 Patch",
+      "latest": false,
+      "date": "April 21, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.1.3.1_Patch"
+    },
+    {
+      "version": "2.1.3 Patch",
+      "latest": false,
+      "date": "April 19, 2017",
+      "highlights": "Balance changes Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.1.3_Patch"
+    },
+    {
+      "version": "Velvet Shell Mid-Season Reinforcements",
+      "latest": false,
+      "date": "March 15, 2017",
+      "highlights": "Mid-Season Reinforcements Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/2.1.2_Patch"
+    },
+    {
+      "version": "2.1.1 Patch",
+      "latest": false,
+      "date": "February 21, 2017",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.1.1_Patch"
+    },
+    {
+      "version": "Operation Velvet Shell",
+      "latest": false,
+      "date": "February 7, 2017",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/2.1.0_Patch"
+    },
+    {
+      "version": "5.3 Patch",
+      "latest": false,
+      "date": "January 11, 2017",
+      "highlights": "Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/5.3_Patch"
+    },
+    {
+      "version": "Red Crow Mid-Season Reinforcements",
+      "latest": false,
+      "date": "December 15, 2016",
+      "highlights": "Mid-Season Reinforcements Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/5.2_Patch"
+    },
+    {
+      "version": "5.1 Patch",
+      "latest": false,
+      "date": "November 22, 2016",
+      "highlights": "Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/5.1_Patch"
+    },
+    {
+      "version": "Operation Red Crow",
+      "latest": false,
+      "date": "November 17, 2016",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/5.0_Patch"
+    },
+    {
+      "version": "4.3 Patch",
+      "latest": false,
+      "date": "October 12, 2016",
+      "highlights": "Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/4.3_Patch"
+    },
+    {
+      "version": "Skull Rain Mid-Season Reinforcements",
+      "latest": false,
+      "date": "September 13, 2016",
+      "highlights": "Mid-Season Reinforcements Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/4.2_Patch"
+    },
+    {
+      "version": "4.1 Patch",
+      "latest": false,
+      "date": "August 25, 2016",
+      "highlights": "Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/4.1_Patch"
+    },
+    {
+      "version": "Operation Skull Rain",
+      "latest": false,
+      "date": "August 2, 2016",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/4.0_Patch"
+    },
+    {
+      "version": "3.4 Patch",
+      "latest": false,
+      "date": "July 13, 2016",
+      "highlights": "Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.4_Patch"
+    },
+    {
+      "version": "3.3 Patch",
+      "latest": false,
+      "date": "June 21, 2016",
+      "highlights": "Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.3_Patch"
+    },
+    {
+      "version": "3.2 Patch",
+      "latest": false,
+      "date": "May 31, 2016",
+      "highlights": "New features Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.2_Patch"
+    },
+    {
+      "version": "3.1 Patch",
+      "latest": false,
+      "date": "May 10, 2016",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/3.1_Patch"
+    },
+    {
+      "version": "Operation Dust Line",
+      "latest": false,
+      "date": "May 10, 2016",
+      "highlights": "New operation Balance changes Bug fixes Misc changes",
+      "url": "https://liquipedia.net/rainbowsix/3.0_Patch"
+    },
+    {
+      "version": "2.3 Patch",
+      "latest": false,
+      "date": "March 30, 2016",
+      "highlights": "Bug fixes Balance changes",
+      "url": "https://liquipedia.net/rainbowsix/2.3_Patch"
+    },
+    {
+      "version": "2.2.1 Patch",
+      "latest": false,
+      "date": "March 16, 2016",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/2.2.1_Patch"
+    },
+    {
+      "version": "2.2 Patch",
+      "latest": false,
+      "date": "March 1, 2016",
+      "highlights": "Bug fixes Balance changes New features",
+      "url": "https://liquipedia.net/rainbowsix/2.2_Patch"
+    },
+    {
+      "version": "2.1 Patch",
+      "latest": false,
+      "date": "February 11, 2016",
+      "highlights": "Bug fixes Balance changes New features",
+      "url": "https://liquipedia.net/rainbowsix/2.1_Patch"
+    },
+    {
+      "version": "Operation Black Ice",
+      "latest": false,
+      "date": "February 2, 2016",
+      "highlights": "New operation Bug fixes Misc changes Buck added Frost added New map: Yacht",
+      "url": "https://liquipedia.net/rainbowsix/2.0_Patch"
+    },
+    {
+      "version": "1.3 Patch",
+      "latest": false,
+      "date": "January 13, 2016",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/1.3_Patch"
+    },
+    {
+      "version": "1.2 Patch",
+      "latest": false,
+      "date": "January 7, 2016",
+      "highlights": "Bug fixes",
+      "url": "https://liquipedia.net/rainbowsix/1.2_Patch"
+    },
+    {
+      "version": "1.1 Patch",
+      "latest": false,
+      "date": "December 16, 2015",
+      "highlights": "Gameplay changes Bug fixes Balance changes",
+      "url": "https://liquipedia.net/rainbowsix/1.1_Patch"
+    }
+  ]
+}
