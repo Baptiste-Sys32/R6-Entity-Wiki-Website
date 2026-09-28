@@ -9,6 +9,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const WEB_ROOT = path.join(ROOT, 'web');
@@ -64,6 +65,30 @@ function revisionOf(url, file) {
   return `file:${file || url}`;
 }
 
+// Negates black-on-transparent art to white for dark UI (manifest entries
+// with `invert: true`). Runs only right after a (re)download, so fresh
+// skips never double-invert. Warns and keeps the original when PIL is
+// unavailable.
+function negatePng(dest) {
+  try {
+    execFileSync('python3', ['-c', [
+      'import sys',
+      'from PIL import Image, ImageOps',
+      'p = sys.argv[1]',
+      'im = Image.open(p)',
+      'a = im.getchannel("A") if "A" in im.getbands() else None',
+      'rgb = im.convert("RGB")',
+      'neg = ImageOps.invert(rgb)',
+      'neg.putalpha(a) if a else None',
+      'neg.save(p)',
+    ].join('; '), dest], { stdio: 'pipe' });
+    return true;
+  } catch (error) {
+    console.warn(`sync-r6-images: invert skipped for ${dest} (${error.message.split('\n')[0]})`);
+    return false;
+  }
+}
+
 async function main() {
   const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')).images;
   const stateFile = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, 'utf8')) : {};
@@ -85,6 +110,7 @@ async function main() {
       }
       const hadFile = fs.existsSync(dest) && fs.statSync(dest).size > 0;
       bytes += await download(url, dest, spec.referer);
+      if (spec.invert) negatePng(dest);
       state[local] = { revision, file: spec.file || spec.url };
       done += 1;
       if (hadFile) refreshed += 1;

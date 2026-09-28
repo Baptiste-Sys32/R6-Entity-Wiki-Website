@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T17:32:59.127Z",
+  "generatedAt": "2026-09-28T06:58:40.671Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -5104,8 +5104,8 @@
       "file": "Ace - Full Body.png"
     },
     "r6_images/gadgets/r6-ace.png": {
-      "revision": "cb:20250915191821",
-      "file": "R6S S.E.L.M.A Aqua Breacher.webp"
+      "revision": "cb:20200519185847",
+      "file": "SELMA_AQUA_BREACHER.png"
     },
     "r6_images/operators/icons/r6-amaru.png": {
       "revision": "cb:20240821102712",
@@ -5412,8 +5412,8 @@
       "file": "Ram In-game Fullbody.webp"
     },
     "r6_images/gadgets/r6-ram.png": {
-      "revision": "cb:20231114145633",
-      "file": "BU-GI Auto-Breacher Activing.png"
+      "revision": "cb:20231114145741",
+      "file": "RAM_BU-GI_Auto-Breacher_Blueprint_01.png"
     },
     "r6_images/operators/icons/r6-rauora.png": {
       "revision": "cb:20250305122833",
@@ -7782,6 +7782,22 @@
     "r6_images/gadgets/emp-grenade.png": {
       "revision": "cb:20220319234047",
       "file": "EMP Grenade 2.png"
+    },
+    "r6_images/gadgets/r6-aruni.png": {
+      "revision": "cb:20201111190040",
+      "file": "Surya_Gate.png"
+    },
+    "r6_images/gadgets/r6-goyo.png": {
+      "revision": "cb:20200302161845",
+      "file": "Volcán_Shield.png"
+    },
+    "r6_images/gadgets/r6-lesion.png": {
+      "revision": "cb:20200302144957",
+      "file": "Gu.png"
+    },
+    "r6_images/gadgets/r6-vigil.png": {
+      "revision": "cb:20220221041259",
+      "file": "ERC-7.png"
     }
   }
 }

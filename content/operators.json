@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T16:53:20.779Z",
+  "generatedAt": "2026-09-28T06:44:16.869Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -1495,7 +1495,7 @@
       "speed": 1,
       "icon": "r6_images/operators/icons/r6-aruni.png",
       "hero": "r6_images/operators/heroes/r6-aruni.png",
-      "gadgetIcon": null,
+      "gadgetIcon": "r6_images/gadgets/r6-aruni.png",
       "weapons": [
         {
           "slot": "gadget",
@@ -1928,7 +1928,7 @@
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-goyo.png",
       "hero": null,
-      "gadgetIcon": null,
+      "gadgetIcon": "r6_images/gadgets/r6-goyo.png",
       "weapons": [
         {
           "slot": "gadget",
@@ -2094,7 +2094,7 @@
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-lesion.png",
       "hero": "r6_images/operators/heroes/r6-lesion.png",
-      "gadgetIcon": null,
+      "gadgetIcon": "r6_images/gadgets/r6-lesion.png",
       "weapons": [
         {
           "slot": "gadget",
@@ -2714,7 +2714,7 @@
       "speed": 3,
       "icon": "r6_images/operators/icons/r6-vigil.png",
       "hero": "r6_images/operators/heroes/r6-vigil.png",
-      "gadgetIcon": null,
+      "gadgetIcon": "r6_images/gadgets/r6-vigil.png",
       "weapons": [
         {
           "slot": "gadget",

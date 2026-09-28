@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T16:53:20.779Z",
+  "generatedAt": "2026-09-28T06:44:16.869Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -10,7 +10,7 @@
       "width": 400
     },
     "r6_images/gadgets/r6-ace.png": {
-      "file": "R6S S.E.L.M.A Aqua Breacher.webp",
+      "file": "SELMA_AQUA_BREACHER.png",
       "width": null
     },
     "r6_images/operators/icons/r6-amaru.png": {
@@ -239,7 +239,8 @@
     },
     "r6_images/gadgets/r6-kali.png": {
       "file": "LV_Explosive_Lance.png",
-      "width": null
+      "width": null,
+      "invert": true
     },
     "r6_images/operators/icons/r6-lion.png": {
       "file": "LionIconN.png",
@@ -318,8 +319,8 @@
       "width": 400
     },
     "r6_images/gadgets/r6-ram.png": {
-      "file": "BU-GI Auto-Breacher Activing.png",
-      "width": null
+      "file": "RAM_BU-GI_Auto-Breacher_Blueprint_01.png",
+      "width": 400
     },
     "r6_images/operators/icons/r6-rauora.png": {
       "file": "RAUORA ICON HIGH RES.png",
@@ -477,6 +478,10 @@
       "file": "Aruni Fullbody cropped resized truecolor.png",
       "width": 400
     },
+    "r6_images/gadgets/r6-aruni.png": {
+      "file": "Surya_Gate.png",
+      "width": 400
+    },
     "r6_images/operators/icons/r6-azami.png": {
       "file": "Azami Icon.png",
       "width": 256
@@ -609,6 +614,10 @@
       "file": "GoyoIconN.png",
       "width": 256
     },
+    "r6_images/gadgets/r6-goyo.png": {
+      "file": "Volcán_Shield.png",
+      "width": null
+    },
     "r6_images/operators/icons/r6-j-ger.png": {
       "file": "JagerIconN.png",
       "width": 256
@@ -648,6 +657,10 @@
     "r6_images/operators/heroes/r6-lesion.png": {
       "file": "Lesion Portrait.png",
       "width": 400
+    },
+    "r6_images/gadgets/r6-lesion.png": {
+      "file": "Gu.png",
+      "width": null
     },
     "r6_images/operators/icons/r6-maestro.png": {
       "file": "MaestroIconN.png",
@@ -856,6 +869,10 @@
     "r6_images/operators/heroes/r6-vigil.png": {
       "file": "Vigil - Full Body.png",
       "width": 400
+    },
+    "r6_images/gadgets/r6-vigil.png": {
+      "file": "ERC-7.png",
+      "width": null
     },
     "r6_images/operators/icons/r6-wamai.png": {
       "file": "WamaiIconN.png",

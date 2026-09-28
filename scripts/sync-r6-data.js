@@ -18,6 +18,21 @@ const API = 'https://rainbowsix.fandom.com/api.php';
 const UA = 'R6-Siege-Wiki-Sync/0.1 (fan wiki content sync; contact via repo issues)';
 const SLEEP_MS = 350;
 
+// Canonical unique-gadget art: exact wiki File: names for operators whose
+// page-first match is a color render/action shot instead of the white
+// schematic icon, or whose gadget has no match at all (short display names
+// like "Gu"/"ERC-7", missing page files). `invert` negates
+// black-on-transparent art for dark UI. `width` caps download size.
+const GADGET_ICON_OVERRIDES = {
+  'r6-ace': { file: 'SELMA_AQUA_BREACHER.png' },
+  'r6-kali': { file: 'LV_Explosive_Lance.png', invert: true },
+  'r6-ram': { file: 'RAM_BU-GI_Auto-Breacher_Blueprint_01.png', width: 400 },
+  'r6-aruni': { file: 'Surya_Gate.png', width: 400 },
+  'r6-goyo': { file: 'Volcán_Shield.png' },
+  'r6-lesion': { file: 'Gu.png' },
+  'r6-vigil': { file: 'ERC-7.png' },
+};
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function apiGet(params) {
@@ -408,6 +423,12 @@ async function main() {
   const opImages = await pageImages(opTitles.map((o) => o.title));
   const opTitleById = new Map(operators.map((op) => [op.id, opTitles.find((o) => o.name === op.name)?.title || op.name]));
   const manifest = {};
+  try {
+    // Merge over the existing manifest: other syncs (gadgets, lore) own
+    // their entries and must survive a data resync — never overwrite blank.
+    const existing = JSON.parse(fs.readFileSync(path.join(ROOT, 'review', 'r6-image-manifest.json'), 'utf8')).images || {};
+    Object.assign(manifest, existing);
+  } catch { /* first run: no manifest yet */ }
   const local = (rel, file, width) => {
     if (!file) return null;
     manifest[rel] = { file, width };
@@ -475,7 +496,15 @@ async function main() {
       console.warn(`sync-r6: gadget==icon for ${baseName}, dropping gadget icon`);
       gadgetFile = null;
     }
-    op.gadgetIcon = local(`r6_images/gadgets/${op.id}.png`, gadgetFile, null);
+    let gadgetWidth = null, gadgetInvert = false;
+    const gadgetOverride = GADGET_ICON_OVERRIDES[op.id];
+    if (gadgetOverride) {
+      gadgetFile = gadgetOverride.file;
+      gadgetWidth = gadgetOverride.width || null;
+      gadgetInvert = !!gadgetOverride.invert;
+    }
+    op.gadgetIcon = local(`r6_images/gadgets/${op.id}.png`, gadgetFile, gadgetWidth);
+    if (op.gadgetIcon && gadgetInvert) manifest[`r6_images/gadgets/${op.id}.png`].invert = true;
     op.weapons = [];
     let weaponIndex = 0;
     for (const gadgetName of op.loadout.gadgets || []) {

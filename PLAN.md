@@ -117,8 +117,10 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
 
 - **Hero portraits (11)**: Amaru, Capitão, Gridlock, Jackal, Nomad, Bandit,
   Goyo, Kaid, Mozzie, Thorn, Tubarão. Article infoboxes fall back cleanly.
-- **Gadget icons (4)**: Aruni, Goyo, Lesion, Vigil (Vigil's gadget art may
-  exist under a non-obvious filename — worth one manual check).
+- **Gadget icons (0, resolved 2026-09-28)**: Aruni (`Surya_Gate.png`),
+  Goyo (`Volcán_Shield.png`), Lesion (`Gu.png`), Vigil (`ERC-7.png`) via
+  `GADGET_ICON_OVERRIDES`; Ace/Kali/Ram switched to schematic art
+  (Kali negated for dark UI via manifest `invert`).
 - **Map layouts (3 maps)**: Calypso Casino, Fortress, Hereford Base (Rework).
   Articles show the "no floor plans" panel; modal never mounts empty.
 - **Quotes (9 ops)**: Kali, Ram, Rauora, Sens, Solid Snake, Denari, Noor,

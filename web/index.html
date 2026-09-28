@@ -176,6 +176,7 @@
     const GADGET_STORE = (typeof R6_GADGETS !== 'undefined' && R6_GADGETS) || { gadgets: [] };
     const GADGETS = GADGET_STORE.gadgets || [];
     const gadgetsById = new Map(GADGETS.map((g) => [g.id, g]));
+    const normOpName = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[øØ]/g, 'o').toLowerCase();
     const normWeaponKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const resolveWeapon = (name) => {
       if (!name) return null;
@@ -525,13 +526,24 @@
 
     const GadgetsView = ({ setView }) => {
       const [q, setQ] = useState('');
+      const [side, setSide] = useState('all');
       const query = q.trim().toLowerCase();
       const matches = (op) => !query || (op.gadget + ' ' + op.name).toLowerCase().includes(query);
       const attackers = OPERATORS.filter((op) => op.side === 'Attacker' && matches(op));
       const defenders = OPERATORS.filter((op) => op.side === 'Defender' && matches(op));
-      const Group = ({ title, items, color }) => (
+      const secondaries = GADGETS.filter((g) => !query || (g.name + ' ' + (g.type || '')).toLowerCase().includes(query));
+      const opByName = useMemo(() => {
+        const map = new Map();
+        OPERATORS.forEach((op) => {
+          map.set(op.name, op);
+          map.set(normOpName(op.name), op);
+        });
+        return map;
+      }, []);
+      const gadgetUsers = (g) => (g.users || []).map((name) => opByName.get(name) || opByName.get(normOpName(name))).filter(Boolean);
+      const Group = ({ title, items }) => (
         <div className="mb-6">
-          <h2 className="cx-h2" style={{ color }}>{title}</h2>
+          <h2 className="cx-h2">{title}</h2>
           <table className="cx-wikitable"><thead><tr><th></th><th>Gadget</th><th>Operator</th></tr></thead>
             <tbody>{items.map((op) => (
               <tr key={op.id}><td><span className="sq-img"><AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} /></span></td><td>{op.gadget}</td>
@@ -539,23 +551,39 @@
             ))}</tbody></table>
         </div>
       );
+      const SIDES = [{ id: 'all', label: 'All' }, { id: 'Attacker', label: 'Attack' }, { id: 'Defender', label: 'Defense' }, { id: 'global', label: 'Global' }];
       return (
         <div className="cx-article">
           <h1 className="cx-title">Gadgets</h1>
-          <p className="cx-lead">Every operator's unique gadget.</p>
+          <p className="cx-lead">Unique gadgets by operator, plus global secondaries.</p>
           <WikiHeaderSearchPortal>
             <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter gadgets..." aria-label="Filter gadgets"
               className="w-full rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
           </WikiHeaderSearchPortal>
-          <Group title="Attacker gadgets" items={attackers} color={SIDE_COLOR.Attacker} />
-          <Group title="Defender gadgets" items={defenders} color={SIDE_COLOR.Defender} />
-          <h2 className="cx-h2">Secondary gadgets</h2>
-          <table className="cx-wikitable"><thead><tr><th></th><th>Gadget</th><th>Ammo</th></tr></thead>
-            <tbody>{GADGETS.filter((g) => !query || (g.name + ' ' + (g.type || '')).toLowerCase().includes(query)).map((g) => (
+          <div className="flex flex-wrap gap-2 mt-4 mb-6" role="tablist" aria-label="Filter by side">
+            {SIDES.map((s) => (
+              <button key={s.id} type="button" role="tab" aria-selected={side === s.id} onClick={() => setSide(s.id)} className="cx-chip"
+                style={side === s.id ? { borderColor: 'var(--accent)', color: 'var(--text)', fontWeight: 700 } : null}>{s.label}</button>
+            ))}
+          </div>
+          {(side === 'all' || side === 'Attacker') && <Group title="Attacker gadgets" items={attackers} />}
+          {(side === 'all' || side === 'Defender') && <Group title="Defender gadgets" items={defenders} />}
+          {(side === 'all' || side === 'global') && (
+          <div>
+          <h2 className="cx-h2">Global gadgets</h2>
+          <table className="cx-wikitable"><thead><tr><th></th><th>Gadget</th><th>Operators</th></tr></thead>
+            <tbody>{secondaries.map((g) => {
+              const users = gadgetUsers(g);
+              return (
               <tr key={g.id}><td><span className="sq-img"><AssetFrame type="Gadget" imageUrl={g.image ? `./${g.image}` : null} /></span></td>
                 <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('gadget', { id: g.id })}>{g.name}</button></td>
-                <td>{g.maxammo || '—'}</td></tr>
-            ))}</tbody></table>
+                <td>{users.length ? users.map((op, i) => (
+                  <span key={op.id}>{i > 0 ? ', ' : null}<button type="button" className="cx-alink" onClick={() => setView('operator', { id: op.id })}>{op.name}</button></span>
+                )) : '—'}</td></tr>
+              );
+            })}</tbody></table>
+          </div>
+          )}
         </div>
       );
     };
@@ -599,7 +627,6 @@
     const WeaponArticle = ({ id, setView }) => {
       const weapon = weaponsByName.get(id) || resolveWeapon(id);
       if (!weapon) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown weapon.</p></div>;
-            const normOpName = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[øØ]/g, 'o').toLowerCase();
       const users = (weapon.users || []).map((name) => OPERATORS.find((o) => o.name === name)
         || OPERATORS.find((o) => normOpName(o.name) === normOpName(name))).filter(Boolean);
       const attachNames = Object.keys(weapon.attachments || {}).filter((k) => weapon.attachments[k]);
@@ -1437,7 +1464,8 @@
 
       const headerTitle = useMemo(() => {
         if (viewContext.id) {
-          const entry = operatorsById.get(viewContext.id) || mapsById.get(viewContext.id) || seasonsById.get(viewContext.id);
+          const entry = operatorsById.get(viewContext.id) || mapsById.get(viewContext.id) || seasonsById.get(viewContext.id)
+            || gadgetsById.get(viewContext.id) || weaponsByName.get(viewContext.id) || resolveWeapon(viewContext.id);
           if (entry) return entry.name;
         }
         return getNavDisplayLabel(currentView);
