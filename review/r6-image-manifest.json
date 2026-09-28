@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:14:09.812Z",
+  "generatedAt": "2026-09-28T07:28:59.644Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -319,8 +319,7 @@
       "width": 400
     },
     "r6_images/gadgets/r6-ram.png": {
-      "file": "R6S_BU-GI_Auto_Breacher.webp",
-      "width": 400
+      "local": "review/local-assets/r6s-operator-ability-ram.png"
     },
     "r6_images/operators/icons/r6-rauora.png": {
       "file": "RAUORA ICON HIGH RES.png",

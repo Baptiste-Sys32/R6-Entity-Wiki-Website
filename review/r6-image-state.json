@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:16:56.061Z",
+  "generatedAt": "2026-09-28T07:31:42.641Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -5412,8 +5412,8 @@
       "file": "Ram In-game Fullbody.webp"
     },
     "r6_images/gadgets/r6-ram.png": {
-      "revision": "cb:20260304073906",
-      "file": "R6S_BU-GI_Auto_Breacher.webp"
+      "revision": "local:2ef6c9f3bbc5",
+      "file": "review/local-assets/r6s-operator-ability-ram.png"
     },
     "r6_images/operators/icons/r6-rauora.png": {
       "revision": "cb:20250305122833",

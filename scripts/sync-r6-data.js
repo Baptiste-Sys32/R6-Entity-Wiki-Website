@@ -26,7 +26,7 @@ const SLEEP_MS = 350;
 const GADGET_ICON_OVERRIDES = {
   'r6-ace': { file: 'SELMA_AQUA_BREACHER.png' },
   'r6-kali': { file: 'LV_Explosive_Lance.png', invert: true },
-  'r6-ram': { file: 'R6S_BU-GI_Auto_Breacher.webp', width: 400 },
+  'r6-ram': { local: 'review/local-assets/r6s-operator-ability-ram.png' },
   'r6-aruni': { file: 'Surya_Gate.png', width: 400 },
   'r6-goyo': { file: 'Volcán_Shield.png' },
   'r6-lesion': { file: 'Gu.png' },
@@ -499,12 +499,20 @@ async function main() {
     let gadgetWidth = null, gadgetInvert = false;
     const gadgetOverride = GADGET_ICON_OVERRIDES[op.id];
     if (gadgetOverride) {
-      gadgetFile = gadgetOverride.file;
-      gadgetWidth = gadgetOverride.width || null;
-      gadgetInvert = !!gadgetOverride.invert;
+      if (gadgetOverride.local) {
+        // Pinned repo-vendored art (user-supplied): wiki can never clobber it.
+        manifest[`r6_images/gadgets/${op.id}.png`] = { local: gadgetOverride.local };
+        op.gadgetIcon = `r6_images/gadgets/${op.id}.png`;
+      } else {
+        gadgetFile = gadgetOverride.file;
+        gadgetWidth = gadgetOverride.width || null;
+        gadgetInvert = !!gadgetOverride.invert;
+      }
     }
-    op.gadgetIcon = local(`r6_images/gadgets/${op.id}.png`, gadgetFile, gadgetWidth);
-    if (op.gadgetIcon && gadgetInvert) manifest[`r6_images/gadgets/${op.id}.png`].invert = true;
+    if (!op.gadgetIcon) {
+      op.gadgetIcon = local(`r6_images/gadgets/${op.id}.png`, gadgetFile, gadgetWidth);
+      if (op.gadgetIcon && gadgetInvert) manifest[`r6_images/gadgets/${op.id}.png`].invert = true;
+    }
     op.weapons = [];
     let weaponIndex = 0;
     for (const gadgetName of op.loadout.gadgets || []) {

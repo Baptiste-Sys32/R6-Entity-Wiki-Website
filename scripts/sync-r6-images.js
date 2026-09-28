@@ -9,6 +9,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -100,23 +101,38 @@ async function main() {
   for (const [local, spec] of entries) {
     const dest = path.join(WEB_ROOT, local);
     try {
-      const url = spec.url || await resolveUrl(spec.file, spec.width);
-      const revision = revisionOf(url, spec.file);
+      // `local` entries pin a repo-vendored file (e.g. user-supplied art):
+      // copied as-is, revisioned by content hash, never re-downloaded.
+      let remoteUrl = null, payload = null, revision;
+      if (spec.local) {
+        payload = fs.readFileSync(path.join(ROOT, spec.local));
+        revision = 'local:' + crypto.createHash('sha1').update(payload).digest('hex').slice(0, 12);
+      } else {
+        remoteUrl = spec.url || await resolveUrl(spec.file, spec.width);
+        revision = revisionOf(remoteUrl, spec.file);
+      }
+      const fileKey = spec.local || spec.file || spec.url;
       const fresh = fs.existsSync(dest) && fs.statSync(dest).size > 0
-        && state[local] && state[local].revision === revision && state[local].file === (spec.file || spec.url);
+        && state[local] && state[local].revision === revision && state[local].file === fileKey;
       if (!force && fresh) {
         skipped += 1;
         continue;
       }
       const hadFile = fs.existsSync(dest) && fs.statSync(dest).size > 0;
-      bytes += await download(url, dest, spec.referer);
+      if (payload) {
+        fs.mkdirSync(path.dirname(dest), { recursive: true });
+        fs.writeFileSync(dest, payload);
+        bytes += payload.length;
+      } else {
+        bytes += await download(remoteUrl, dest, spec.referer);
+      }
       if (spec.invert) negatePng(dest);
-      state[local] = { revision, file: spec.file || spec.url };
+      state[local] = { revision, file: fileKey };
       done += 1;
       if (hadFile) refreshed += 1;
       if (done % 25 === 0) console.log(`sync-r6-images: ${done} downloaded...`);
     } catch (error) {
-      failures.push(`${local} (${spec.file || spec.url}): ${error.message}`);
+      failures.push(`${local} (${spec.local || spec.file || spec.url}): ${error.message}`);
     }
     await sleep(SLEEP_MS);
   }
