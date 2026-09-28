@@ -1704,6 +1704,24 @@
          clear of them on every scroll (native jumps and JS scrolls). */
       scroll-margin-top: 76px;
     }
+    /* Article section subtitles: display-serif with rule (DBD Plus pattern).
+       Collapsible headers carry the toggle affordance. */
+    .cx-sec {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text);
+      border-bottom: 1px solid var(--stroke);
+      padding-bottom: 6px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .cx-sec--toggle { cursor: pointer; }
+    .cx-sec--toggle .cx-sec-title { flex: 1; min-width: 0; }
+    .cx-sec--toggle .cx-sec-ind { font-size: 15px; color: var(--link); flex-shrink: 0; }
+    .cx-sec--toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
     .cx-article section > p {
       margin-top: 12px;
       color: var(--text-soft);

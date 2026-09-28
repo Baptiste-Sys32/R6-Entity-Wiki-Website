@@ -18,8 +18,11 @@
     };
     const tocGo = (e, id) => {
       if (e && e.preventDefault) e.preventDefault();
-      // Retry briefly: sections render synchronously, but images above the
-      // target can shift layout mid-scroll on slow networks.
+      // Expand the target first (sections may be collapsed), then scroll
+      // with a post-settle retry for late image layout shifts.
+      try {
+        window.dispatchEvent(new CustomEvent('cx-expand-section', { detail: id }));
+      } catch { /* non-DOM */ }
       if (scrollToAnchor(id)) {
         setTimeout(() => scrollToAnchor(id), 350);
       }

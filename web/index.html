@@ -533,12 +533,56 @@
       );
     };
 
-    const CxSection = ({ id, title, children }) => (
-      <section id={id} className="mt-6">
-        <h2 className="cx-h2">{title}</h2>
-        <div className="cx-section-body">{children}</div>
-      </section>
-    );
+    // Article sections: DBD-style display-serif subtitles, collapsible on
+    // all tiers, open state persisted per view+section. TOC navigation
+    // expands the target first (cx-expand-section event).
+    const cxViewKey = () => {
+      try {
+        return new URLSearchParams(window.location.search).get('view') || 'home';
+      } catch { return 'home'; }
+    };
+    const CxSection = ({ id, title, children, collapsible = true }) => {
+      const [open, setOpen] = useState(true);
+      useEffect(() => {
+        // Re-key persisted state per view (same section id across article
+        // types keeps its own preference).
+        try {
+          const saved = window.localStorage.getItem(`cx-sec:r6:${cxViewKey()}:${id}`);
+          setOpen(saved === null ? true : saved === '1');
+        } catch { /* private mode */ }
+      }, [id]);
+      useEffect(() => {
+        const expand = (e) => { if (e && e.detail === id) setOpen(true); };
+        window.addEventListener('cx-expand-section', expand);
+        return () => window.removeEventListener('cx-expand-section', expand);
+      }, [id]);
+      const toggle = () => setOpen((prev) => {
+        const next = !prev;
+        try {
+          window.localStorage.setItem(`cx-sec:r6:${cxViewKey()}:${id}`, next ? '1' : '0');
+        } catch { /* private mode */ }
+        return next;
+      });
+      if (!collapsible) {
+        return (<section id={id} className="mt-6"><h2 className="cx-sec">{title}</h2><div className="cx-section-body">{children}</div></section>);
+      }
+      return (
+        <section id={id} className="mt-6">
+          <h2
+            className="cx-sec cx-sec--toggle"
+            role="button"
+            tabIndex={0}
+            aria-expanded={open}
+            onClick={toggle}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } }}
+          >
+            <span className="cx-sec-title">{title}</span>
+            <span className="cx-sec-ind" aria-hidden="true">{open ? '▾' : '▸'}</span>
+          </h2>
+          {open ? <div className="cx-section-body">{children}</div> : null}
+        </section>
+      );
+    };
 
     const GadgetsView = ({ setView }) => {
       const [q, setQ] = useState('');
