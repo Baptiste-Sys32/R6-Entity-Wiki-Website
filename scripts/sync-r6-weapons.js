@@ -18,13 +18,37 @@ const SLEEP_MS = 350;
 
 const ADS_MS = { AR: 400, DMR: 400, SMG: 300, H: 200, MP: 275, LMG: 450, S: 250, SR: 400, SG: 350 };
 
+// Loadout display names that are NOT the wiki page title (in-game renames,
+// descriptor suffixes, spelling variants). Search fallback may only adopt a
+// page listed here or related by name — never an unrelated hit (that once
+// merged GONNE-6 as a POF-9 alias).
+const KNOWN_ALIASES = {
+  'Super 90': 'M1014',
+  'Reaper MK2': 'Glock',
+  'USP40': 'P226',
+  'Luison': 'PRB92',
+  'AUG A3': 'AUG',
+  'M249 SAW': 'M249',
+  '9x19VSN': '9×19VSN',
+  'USP 40': 'P226',
+  'SMG11': 'SMG-11',
+};
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function apiGet(params) {
+async function apiGet(params, retries = 3) {
   const url = `${API}?${new URLSearchParams({ format: 'json', ...params })}`;
-  const response = await fetch(url, { headers: { 'User-Agent': UA } });
-  if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  return response.json();
+  for (let attempt = 1; attempt <= retries; attempt += 1) {
+    try {
+      const response = await fetch(url, { headers: { 'User-Agent': UA } });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return await response.json();
+    } catch (error) {
+      if (attempt === retries) throw error;
+      await sleep(1500 * attempt);
+    }
+  }
+  throw new Error('unreachable');
 }
 
 function strip(text) {
@@ -50,7 +74,9 @@ function siegeSection(wt) {
 function field(section, name) {
   // Param names may carry upstream typos (e.g. "|appearances. ="), so the
   // terminator charset includes "." — otherwise values swallow the next line.
-  const m = section.match(new RegExp(`\\|${name}\\s*=([\\s\\S]*?)(?=\\n\\|[a-zA-Z0-9 /.]+\\s*=|\\n\\}\\})`));
+  // Same-line params ("|damage per hit=10|affiliation=") also terminate;
+  // the charset is param-name-only so template pipes never split early.
+  const m = section.match(new RegExp(`\\|${name}\\s*=([\\s\\S]*?)(?=\\n\\|[a-zA-Z0-9 /.]+\\s*=|\\|[a-zA-Z0-9 /.]+\\s*=|\\n\\}\\})`));
   return m ? m[1].trim() : '';
 }
 function fileOf(markup) {
@@ -108,6 +134,8 @@ function parseWeapon(title, wt) {
   const rangeMatch2 = rangeMatch ? null : dmgRaw.match(rangeRe2);
   const suppSection = (dmgRaw.split(/Suppressed/i)[1] || '');
   const suppMatch = suppSection.match(rangeRe);
+  // Bare number (single-shot specials like GONNE-6: "|damage per hit=10").
+  const flatMatch = dmgRaw.match(/^\s*(\d+)\s*$/);
   const damage = dmgMatch ? { mode: 'class', class: dmgMatch[1], base: Number(dmgMatch[2]), extended: /extended/i.test(dmgRaw) }
     : rangeMatch ? {
       mode: 'ranged',
@@ -124,6 +152,9 @@ function parseWeapon(title, wt) {
       close: { dmg: Number(rangeMatch2[1]), range: [Number(rangeMatch2[3]), Number(rangeMatch2[4])] },
       far: { dmg: Number(rangeMatch2[5]), range: [Number(rangeMatch2[6]), null] },
       suppressed: null,
+    } : flatMatch ? {
+      mode: 'flat',
+      base: Number(flatMatch[1]),
     } : null;
   const rof = num(field(siege, 'rate of fire'), /(\d+)\s*RPM/i);
   const adsMatch = field(siege, 'adstime').match(/\{\{ADS\|([A-Z]+)/);
@@ -174,11 +205,17 @@ function parseWeapon(title, wt) {
 
 async function tryParse(title) {
   try {
-    const data = await apiGet({ action: 'parse', page: title, prop: 'wikitext' });
+    // Follow redirects so the resolved (canonical) title is tracked —
+    // otherwise SMG11 and SMG-11 adopt the same page under two titles.
+    const data = await apiGet({ action: 'parse', page: title, prop: 'wikitext', redirects: 1 });
     if (data.error) return null;
     const wt = data.parse.wikitext['*'];
-    const parsed = parseWeapon(title, wt);
-    return parsed && (parsed.damage !== null || parsed.damageModel) ? { title, wt } : null;
+    const to = (data.parse.redirects || []).map((r) => r.to).find(Boolean) || title;
+    const parsed = parseWeapon(to, wt);
+    // viaRedirect marks explicit upstream alias statements (G8A1→HK21):
+    // the audit trusts these pages.
+    const viaRedirect = to !== title;
+    return parsed && (parsed.damage !== null || parsed.damageModel) ? { title: to, wt, viaRedirect } : null;
   } catch { return null; }
 }
 
@@ -186,11 +223,42 @@ async function resolveTitle(name) {
   const direct = await tryParse(name);
   if (direct) return direct;
   await sleep(SLEEP_MS);
+  // Redirects are explicit upstream alias statements (G8A1→HK21): adopt
+  // the target with the loadout name merged as alias.
+  try {
+    const redir = await apiGet({ action: 'query', titles: name, redirects: 1 });
+    const pages = Object.values(redir.query?.pages || {});
+    const r = (redir.query?.redirects || [])[0];
+    if (r && pages.length && !pages[0].missing) {
+      const data = await apiGet({ action: 'parse', page: r.to, prop: 'wikitext' });
+      await sleep(SLEEP_MS);
+      if (!data.error) {
+        const parsed = parseWeapon(r.to, data.parse.wikitext['*']);
+        if (parsed && (parsed.damage !== null || parsed.damageModel)) {
+          return { title: r.to, wt: data.parse.wikitext['*'], viaRedirect: true };
+        }
+      }
+    }
+  } catch { /* fall through to curated + search */ }
+  if (KNOWN_ALIASES[name]) {
+    const data = await apiGet({ action: 'parse', page: KNOWN_ALIASES[name], prop: 'wikitext', redirects: 1 });
+    await sleep(SLEEP_MS);
+    if (!data.error) {
+      const to = (data.parse.redirects || []).map((r) => r.to).find(Boolean) || KNOWN_ALIASES[name];
+      const parsed = parseWeapon(to, data.parse.wikitext['*']);
+      if (parsed && (parsed.damage !== null || parsed.damageModel)) return { title: to, wt: data.parse.wikitext['*'], viaRedirect: to !== KNOWN_ALIASES[name] };
+    }
+  }
+  const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const wanted = norm(name);
   const search = await apiGet({ action: 'query', list: 'search', srsearch: name, srnamespace: 0, srlimit: 10 });
   const hits = search.query?.search || [];
-  const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '');
-  hits.sort((a, b) => (norm(a.title) === norm(name) ? -1 : 0) - (norm(b.title) === norm(name) ? -1 : 0));
+  hits.sort((a, b) => (norm(a.title) === wanted ? -1 : 0) - (norm(b.title) === wanted ? -1 : 0));
   for (const hit of hits) {
+    // Only adopt related pages (exact or substring); unrelated hits are
+    // search noise and must never become aliases.
+    const candidate = norm(hit.title);
+    if (candidate !== wanted && !candidate.includes(wanted) && !wanted.includes(candidate)) continue;
     const parsed = await tryParse(hit.title);
     await sleep(SLEEP_MS);
     if (parsed) return parsed;
@@ -206,6 +274,15 @@ async function main() {
   const weapons = [];
   const seenPages = new Set();
   const pageOwner = new Map();
+  const redirectPages = new Set();
+  // Merge-guard: a flaky run must never shrink the dataset. Names that fail
+  // this run keep their previous entry (warned as stale).
+  let previous = [];
+  try {
+    previous = JSON.parse(fs.readFileSync(WEAPONS_PATH, 'utf8')).weapons || [];
+  } catch { /* first run */ }
+  const prevByName = new Map(previous.map((w) => [w.name, w]));
+  const stale = [];
   // Merge into the shared manifest (other syncs own their entries).
   const manifestPath = path.join(ROOT, 'review', 'r6-image-manifest.json');
   let manifest = { images: {} };
@@ -214,18 +291,42 @@ async function main() {
     manifest.images = manifest.images || {};
   } catch { /* first run */ }
   const usedSlugs = new Set();
+  const carried = new Set();
+  const aliasOk = (alias, name) => {
+    const a = alias.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const n = String(name).toLowerCase().replace(/[^a-z0-9]+/g, '');
+    return (a === n || a.includes(n) || n.includes(a)) || KNOWN_ALIASES[alias] !== undefined;
+  };
+  const carryStale = (name) => {
+    const prev = previous.find((w) => w.name === name || (w.aliases || []).includes(name));
+    if (prev && !carried.has(prev.name) && !weapons.some((w) => w.name === prev.name)) {
+      carried.add(prev.name);
+      stale.push(name);
+      // Scrub bogus aliases from stale entries (old fuzzy merges) — keep
+      // only aliases related to the entry name or curated.
+      const clean = [...new Set((prev.aliases || []).filter((a) => aliasOk(a, prev.name)))];
+      if (clean.length !== (prev.aliases || []).length) {
+        console.warn(`sync-weapons: scrubbed stale aliases on ${prev.name}: ${(prev.aliases || []).filter((a) => !aliasOk(a, prev.name)).join(', ')}`);
+      }
+      weapons.push({ ...prev, aliases: clean.length ? clean : [prev.name] });
+      return true;
+    }
+    return false;
+  };
   let n = 0;
   for (const name of names) {
     n += 1;
     try {
       const resolved = await resolveTitle(name);
       if (!resolved) {
-        console.warn(`sync-weapons: no siege page for "${name}"`);
+        if (!carryStale(name)) console.warn(`sync-weapons: no siege page for "${name}"`);
+        else console.warn(`sync-weapons: no siege page for "${name}", kept previous entry (stale)`);
         continue;
       }
       const parsed = parseWeapon(resolved.title, resolved.wt);
       if (!parsed || (parsed.damage === null && !parsed.damageModel)) {
-        console.warn(`sync-weapons: no stats for "${name}" (page ${resolved.title})`);
+        if (!carryStale(name)) console.warn(`sync-weapons: no stats for "${name}" (page ${resolved.title})`);
+        else console.warn(`sync-weapons: no stats for "${name}" (page ${resolved.title}), kept previous entry (stale)`);
         continue;
       }
       if (seenPages.has(resolved.title)) {
@@ -239,6 +340,7 @@ async function main() {
       seenPages.add(resolved.title);
       parsed.page = resolved.title;
       parsed.aliases = [name];
+      if (resolved.viaRedirect) redirectPages.add(resolved.title);
       pageOwner.set(resolved.title, parsed);
       // Canonical render from the weapon page infobox (clean gun pic —
       // per-operator files are often operator-holding-gun promos).
@@ -262,6 +364,48 @@ async function main() {
     await sleep(SLEEP_MS);
   }
   const generatedAt = new Date().toISOString();
+  // Consolidate same-page duplicates (fresh parse + stale carry of one
+  // page, e.g. SMG-11): keep the entry whose name is a real loadout name,
+  // merge aliases.
+  const loadoutNames = new Set(names.map((x) => x.toLowerCase()));
+  const byPage = new Map();
+  for (const w of weapons) {
+    if (!byPage.has(w.page)) byPage.set(w.page, []);
+    byPage.get(w.page).push(w);
+  }
+  const consolidated = [];
+  for (const [page, group] of byPage) {
+    if (group.length === 1) { consolidated.push(group[0]); continue; }
+    group.sort((a, b) => ((loadoutNames.has(String(b.name).toLowerCase()) ? 1 : 0) - (loadoutNames.has(String(a.name).toLowerCase()) ? 1 : 0)));
+    const keep = group[0];
+    const merged = [...new Set(group.flatMap((g) => [g.name, ...(g.aliases || [])]))];
+    if (group.length > 1) console.log(`sync-weapons: consolidated ${group.length} entries on page ${page} -> ${keep.name} (aliases ${merged.join('/')})`);
+    keep.aliases = merged;
+    consolidated.push(keep);
+  }
+  weapons.length = 0;
+  weapons.push(...consolidated);
+  // Triple-check: every weapon's page must relate to its name or aliases
+  // (exact or substring, normalized), be a curated KNOWN_ALIASES target,
+  // or be reached through an explicit upstream redirect — AND every alias
+  // must relate to the entry name or be curated. Unrelated adoption is
+  // alias poisoning — fail loudly, never ship.
+  const wnorm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const related = (a, b) => a && b && (a === b || a.includes(b) || b.includes(a));
+  const bad = [];
+  for (const w of weapons) {
+    const page = wnorm(w.page);
+    const names = [w.name, ...(w.aliases || [])].map(wnorm);
+    const pageOk = redirectPages.has(w.page) || names.some((n) => related(n, page))
+      || (w.aliases || []).some((a) => KNOWN_ALIASES[a] && wnorm(KNOWN_ALIASES[a]) === page);
+    if (!pageOk) bad.push(`${w.name} (page ${w.page}, aliases ${(w.aliases || []).join('/')})`);
+    for (const a of w.aliases || []) {
+      const rel = related(wnorm(a), wnorm(w.name)) || KNOWN_ALIASES[a] !== undefined;
+      if (!rel) bad.push(`${w.name} has unrelated alias "${a}"`);
+    }
+  }
+  if (bad.length) throw new Error(`unrelated weapon pages (alias poisoning):\n- ${bad.join('\n- ')}`);
+  console.log(`sync-weapons: page audit ok (${weapons.length} related).`);
   // Cross-check computed close-range TTK against wiki first-segment ms
   // (review signal only — wiki strings always ship untouched).
   let crossChecked = 0, crossDrift = 0;
@@ -287,6 +431,7 @@ async function main() {
   manifest.generatedAt = generatedAt;
   fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
   console.log(`sync-weapons: wrote content/weapons.json (${weapons.length}/${names.length})`);
+  if (stale.length) console.log(`sync-weapons: stale carried (${stale.length}): ${stale.join(', ')}`);
 }
 
 main().catch((error) => { console.error(`sync-weapons: ${error.message}`); process.exit(1); });

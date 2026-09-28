@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T16:58:02.996Z",
+  "generatedAt": "2026-09-28T19:10:05.780Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -4001,6 +4001,18 @@
     },
     "r6_images/weapons/w-tacit45.png": {
       "file": "R6S Tacit .45.webp",
+      "width": 400
+    },
+    "r6_images/weapons/w-gonne6.png": {
+      "file": "R6S_GONNE-6.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-usp40.png": {
+      "file": "R6S USP40.png",
+      "width": 400
+    },
+    "r6_images/weapons/w-auga3.png": {
+      "file": "R6S AUG A3.png",
       "width": 400
     }
   }

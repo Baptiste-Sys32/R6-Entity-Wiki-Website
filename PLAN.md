@@ -144,6 +144,15 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   close-range, full-auto ROF; pellet shotguns excluded) — 36/39 wiki rows
   match within 100ms, 3 armor3 drifts logged (5.7 USG, PRB92, PMM).
   Static JSON ships; zero client-side math.
+- **Weapon alias poisoning (fixed 2026-09-28)**: search fallback adopted
+  unrelated pages (GONNE-6 merged as POF-9 alias — Amaru showed POF-9
+  stats/link). Resolution is now direct → upstream redirect → curated
+  KNOWN_ALIASES → related-only search; page+alias audit throws on
+  unrelated adoption; same-page entries consolidate; stale entries carry
+  forward (scrubbed) so flaky runs never shrink the dataset. Weapons
+  106→109 (GONNE-6, Tacit .45 + single-range damage format). Independent
+  triple-check: 0 errors (self/alias resolution, all 76 loadouts, stat
+  sanity, art existence).
 - **Patch history (2026-09-28)**: `content/patches.json` (170 rows) via
   `sync-r6-liquipedia.js` (free no-key MediaWiki API, gzip, CC BY-SA 3.0,
   warn-only failures). Season sheets show matched Patches sections

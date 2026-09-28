@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T17:03:24.186Z",
+  "generatedAt": "2026-09-28T19:16:07.325Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -9102,6 +9102,18 @@
     "r6_images/weapons/w-tacit45.png": {
       "revision": "cb:20260304071636",
       "file": "R6S Tacit .45.webp"
+    },
+    "r6_images/weapons/w-gonne6.png": {
+      "revision": "cb:20220525145217",
+      "file": "R6S_GONNE-6.png"
+    },
+    "r6_images/weapons/w-usp40.png": {
+      "revision": "cb:20220525145616",
+      "file": "R6S USP40.png"
+    },
+    "r6_images/weapons/w-auga3.png": {
+      "revision": "cb:20220525145126",
+      "file": "R6S AUG A3.png"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-28T16:58:02.996Z",
+  "generatedAt": "2026-09-28T19:10:05.780Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
     },
-    "count": 106
+    "count": 109
   },
   "weapons": [
     {
@@ -361,8 +361,8 @@
       },
       "ttkComputed": null,
       "rof": 85,
-      "adsMs": null,
-      "adsClass": null,
+      "adsMs": 250,
+      "adsClass": "S",
       "mobility": 50,
       "magazine": "4+1",
       "maxammo": "5+21 (PVP) / 5+26 (Training Grounds)",
@@ -386,68 +386,45 @@
       "art": "r6_images/weapons/w-ita12s.png"
     },
     {
-      "name": "POF-9",
-      "type": "Assault Rifle",
-      "fire": "Automatic",
-      "damage": 37,
+      "name": "GONNE-6",
+      "type": "Hand Cannon",
+      "fire": "",
+      "damage": 10,
       "damageModel": {
-        "mode": "class",
-        "class": "AR",
-        "base": 37,
-        "extended": true
+        "mode": "flat",
+        "base": 10
       },
       "ttk": {
         "armor1": null,
         "armor2": null,
         "armor3": null
       },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 4
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 162,
-        "armor2Ms": 162,
-        "armor3Ms": 243
-      },
-      "rof": 740,
-      "adsMs": 400,
-      "adsClass": "AR",
+      "ttkComputed": null,
+      "rof": null,
+      "adsMs": null,
+      "adsClass": null,
       "mobility": 50,
-      "magazine": "50+1",
-      "maxammo": "",
+      "magazine": "1",
+      "maxammo": "1",
       "reload": "",
       "users": [
-        "Sens"
+        "Glaz",
+        "Capitão",
+        "Dokkaebi",
+        "Amaru",
+        "Iana",
+        "Zero",
+        "Keres Striker",
+        "Keres Sentry"
       ],
-      "attachments": {
-        "sight_1x": true,
-        "sight_magnified": true,
-        "muzzle_brake": true,
-        "compensator": true,
-        "flash_hider": true,
-        "suppressor": true,
-        "extended_barrel": true,
-        "grips_all": true,
-        "laser": true
-      },
-      "pros": [
-        "High magazine capacity",
-        "Highly customizable",
-        "Ok damage"
-      ],
-      "cons": [
-        "Low destruction",
-        "Mediocre recoil"
-      ],
-      "page": "POF-9",
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "GONNE-6",
       "aliases": [
-        "GONNE-6",
-        "POF-9"
+        "GONNE-6"
       ],
-      "art": "r6_images/weapons/w-pof9.png"
+      "art": "r6_images/weapons/w-gonne6.png"
     },
     {
       "name": "SMG-11",
@@ -802,8 +779,7 @@
       "cons": [],
       "page": "Five-seven",
       "aliases": [
-        "5.7 USG",
-        "GSH-18"
+        "5.7 USG"
       ],
       "art": "r6_images/weapons/w-57usg.png"
     },
@@ -924,8 +900,7 @@
       "cons": [],
       "page": "SR-25",
       "aliases": [
-        "SR-25",
-        "Extendable Shield"
+        "SR-25"
       ],
       "art": "r6_images/weapons/w-sr25.png"
     },
@@ -1136,75 +1111,86 @@
       "art": "r6_images/weapons/w-camrs.png"
     },
     {
-      "name": "D-50",
+      "name": "P226 Mk 25",
       "type": "Handgun",
       "fire": "Semi-automatic",
-      "damage": 71,
+      "damage": 50,
       "damageModel": {
         "mode": "ranged",
         "pellets": null,
         "close": {
-          "dmg": 71,
+          "dmg": 50,
           "range": [
             0,
             12
           ]
         },
         "far": {
-          "dmg": 35,
+          "dmg": 30,
           "range": [
             22,
             null
           ]
         },
-        "suppressed": null
+        "suppressed": {
+          "close": {
+            "dmg": 42,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 25,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
       },
       "ttk": {
-        "armor1": "133ms (0-17m) / 267ms (18+m)",
-        "armor2": "133ms (0-15m) / 267ms (16-21m) / 400ms (22+m)",
-        "armor3": "133ms (0-13m) / 267ms (14-19m) / 400ms (20+m)"
+        "armor1": "133ms (0-11m) / 267ms (12-20m) / 400ms (21+m)",
+        "armor2": "267ms (0-17m) / 400ms (18+m)",
+        "armor3": "267ms (0-15m) / 400ms (16-21m) / 533ms (22+m)"
       },
       "ttkComputed": {
         "shots": {
           "armor1": 2,
-          "armor2": 2,
-          "armor3": 2
+          "armor2": 3,
+          "armor3": 3
         },
         "basis": "close-range base damage, full-auto ROF",
         "armor1Ms": 109,
-        "armor2Ms": 109,
-        "armor3Ms": 109
+        "armor2Ms": 218,
+        "armor3Ms": 218
       },
       "rof": 550,
-      "adsMs": null,
-      "adsClass": null,
+      "adsMs": 200,
+      "adsClass": "H",
       "mobility": 50,
-      "magazine": "7+1",
-      "maxammo": "8+35 (PVP) / 8+56 (Terrorist Hunt) / 1+39 (Golden Gun)",
-      "reload": "2.5s (Empty) / 2.0s (Tactical) / 2.0s (Golden Gun)",
+      "magazine": "15+1",
+      "maxammo": "16+45 (PVP) / 16+120 (Terrorist Hunt) / 16+150 (Outbreak)",
+      "reload": "2.1s (Empty) / 1.8s (Tactical)",
       "users": [
-        "Blackbeard",
-        "Valkyrie",
-        "Nøkk",
-        "Azami"
+        "Sledge",
+        "Thatcher",
+        "Smoke",
+        "Mute",
+        "Kali",
+        "Tubarão",
+        "Denari"
       ],
       "attachments": {},
-      "pros": [
-        "High single shot damage",
-        "High destruction/penetration"
-      ],
-      "cons": [
-        "High recoil kick per shot",
-        "Low magazine capacity",
-        "Low reserve ammo"
-      ],
-      "page": "Desert Eagle",
+      "pros": [],
+      "cons": [],
+      "page": "P226",
       "aliases": [
         "USP 40",
-        "D-50",
-        "D50"
+        "P226 Mk 25",
+        "P226 Mk25"
       ],
-      "art": "r6_images/weapons/w-d50.png"
+      "art": "r6_images/weapons/w-p226mk25.png"
     },
     {
       "name": "Super Shorty",
@@ -1237,8 +1223,8 @@
       },
       "ttkComputed": null,
       "rof": 85,
-      "adsMs": null,
-      "adsClass": null,
+      "adsMs": 250,
+      "adsClass": "S",
       "mobility": 50,
       "magazine": "2+1",
       "maxammo": "3+42 (PVP) / 3+57 (Training Grounds)",
@@ -1606,7 +1592,8 @@
       ],
       "page": "PRB92",
       "aliases": [
-        "PRB92"
+        "PRB92",
+        "Luison"
       ],
       "art": "r6_images/weapons/w-prb92.png"
     },
@@ -1973,8 +1960,7 @@
       ],
       "page": "XK23",
       "aliases": [
-        "XK23",
-        "Luison"
+        "XK23"
       ],
       "art": "r6_images/weapons/w-xk23.png"
     },
@@ -2459,7 +2445,8 @@
       ],
       "page": "GSh-18",
       "aliases": [
-        "GSh-18"
+        "GSh-18",
+        "GSH-18"
       ],
       "art": "r6_images/weapons/w-gsh18.png"
     },
@@ -2590,67 +2577,6 @@
         "T-95 LSW"
       ],
       "art": "r6_images/weapons/w-t95lsw.png"
-    },
-    {
-      "name": "DP-27",
-      "type": "Light Machine Gun",
-      "fire": "Automatic",
-      "damage": 60,
-      "damageModel": {
-        "mode": "class",
-        "class": "LMG",
-        "base": 60,
-        "extended": false
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 2,
-          "armor2": 2,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 109,
-        "armor2Ms": 109,
-        "armor3Ms": 218
-      },
-      "rof": 550,
-      "adsMs": 450,
-      "adsClass": "LMG",
-      "mobility": 50,
-      "magazine": "70",
-      "maxammo": "70+141",
-      "reload": "4.6s (Empty) / 4.0s (Tactical)",
-      "users": [
-        "Tachanka"
-      ],
-      "attachments": {
-        "sight_1x": true,
-        "sight_dp27": true
-      },
-      "pros": [
-        "High destruction/penetration",
-        "Capable of creating rotation holes",
-        "High magazine capacity",
-        "High damage per shot",
-        "Relatively low vertical recoil"
-      ],
-      "cons": [
-        "Low rate of fire",
-        "Subpar horizontal recoil",
-        "Lacks attachments",
-        "Bulky pan magazine (reduces vision)"
-      ],
-      "page": "DP27",
-      "aliases": [
-        "Ballistic Shield",
-        "DP27"
-      ],
-      "art": "r6_images/weapons/w-dp27.png"
     },
     {
       "name": "OTs-03",
@@ -3306,8 +3232,7 @@
       ],
       "page": "AUG",
       "aliases": [
-        "AUG A2",
-        "AUG A3"
+        "AUG A2"
       ],
       "art": "r6_images/weapons/w-auga2.png"
     },
@@ -3454,8 +3379,8 @@
       },
       "ttkComputed": null,
       "rof": 85,
-      "adsMs": null,
-      "adsClass": null,
+      "adsMs": 250,
+      "adsClass": "S",
       "mobility": 50,
       "magazine": "7+1",
       "maxammo": "8+33 (PVP) / 8+57 (Training Grounds)",
@@ -3475,22 +3400,22 @@
       "art": "r6_images/weapons/w-ita12l.png"
     },
     {
-      "name": "P226 Mk 25",
+      "name": "USP40",
       "type": "Handgun",
       "fire": "Semi-automatic",
-      "damage": 50,
+      "damage": 48,
       "damageModel": {
         "mode": "ranged",
         "pellets": null,
         "close": {
-          "dmg": 50,
+          "dmg": 48,
           "range": [
             0,
             12
           ]
         },
         "far": {
-          "dmg": 30,
+          "dmg": 25,
           "range": [
             22,
             null
@@ -3498,14 +3423,14 @@
         },
         "suppressed": {
           "close": {
-            "dmg": 42,
+            "dmg": 41,
             "range": [
               0,
               12
             ]
           },
           "far": {
-            "dmg": 25,
+            "dmg": 21,
             "range": [
               22,
               null
@@ -3514,18 +3439,18 @@
         }
       },
       "ttk": {
-        "armor1": "133ms (0-11m) / 267ms (12-20m) / 400ms (21+m)",
-        "armor2": "267ms (0-17m) / 400ms (18+m)",
-        "armor3": "267ms (0-15m) / 400ms (16-21m) / 533ms (22+m)"
+        "armor1": "267ms (0-18m) / 400ms (19+m)",
+        "armor2": "267ms (0-15m) / 400ms (16-20m) / 533ms (21+m)",
+        "armor3": "267ms (0-13m) / 400ms (14-19m) / 533ms (20+m)"
       },
       "ttkComputed": {
         "shots": {
-          "armor1": 2,
+          "armor1": 3,
           "armor2": 3,
           "armor3": 3
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 109,
+        "armor1Ms": 218,
         "armor2Ms": 218,
         "armor3Ms": 218
       },
@@ -3533,28 +3458,23 @@
       "adsMs": 200,
       "adsClass": "H",
       "mobility": 50,
-      "magazine": "15+1",
-      "maxammo": "16+45 (PVP) / 16+120 (Terrorist Hunt) / 16+150 (Outbreak)",
+      "magazine": "12+1",
+      "maxammo": "13+48 (PVP) / 13+60 (Terrorist Hunt)",
       "reload": "2.1s (Empty) / 1.8s (Tactical)",
       "users": [
-        "Sledge",
-        "Thatcher",
-        "Smoke",
-        "Mute",
-        "Kali",
-        "Tubarão",
-        "Denari"
+        "Jackal",
+        "Mira",
+        "Oryx",
+        "Brava"
       ],
       "attachments": {},
       "pros": [],
       "cons": [],
-      "page": "P226",
+      "page": "USP",
       "aliases": [
-        "USP40",
-        "P226 Mk 25",
-        "P226 Mk25"
+        "USP40"
       ],
-      "art": "r6_images/weapons/w-p226mk25.png"
+      "art": "r6_images/weapons/w-usp40.png"
     },
     {
       "name": "CSRX 300",
@@ -4245,7 +4165,7 @@
       "art": "r6_images/weapons/w-fmg9.png"
     },
     {
-      "name": "SPAS-12",
+      "name": "SIX12",
       "type": "Shotgun",
       "fire": "",
       "damage": 35,
@@ -4256,13 +4176,13 @@
           "dmg": 35,
           "range": [
             0,
-            4
+            6
           ]
         },
         "far": {
-          "dmg": 20,
+          "dmg": 24,
           "range": [
-            20,
+            11,
             null
           ]
         },
@@ -4278,29 +4198,93 @@
       "adsMs": 250,
       "adsClass": "S",
       "mobility": 50,
-      "magazine": "6+1",
-      "maxammo": "7+29 (PVP) / 7+50 (Training Grounds)",
-      "reload": "",
+      "magazine": "6",
+      "maxammo": "6+30 (PVP) / 6+36 (Training Grounds) / 6+114 (Outbreak)",
+      "reload": "2.608s (Tactical) (SIX12 SD) / 2.611s (Empty) (SIX12 SD) / 2.691s (SIX12)}} |-",
       "users": [
+        "Ying",
+        "Lesion",
+        "Nøkk"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "SIX12",
+      "aliases": [
+        "SIX12 SD",
+        "SIX12"
+      ],
+      "art": "r6_images/weapons/w-six12.png"
+    },
+    {
+      "name": "D-50",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 71,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 71,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 35,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": "133ms (0-17m) / 267ms (18+m)",
+        "armor2": "133ms (0-15m) / 267ms (16-21m) / 400ms (22+m)",
+        "armor3": "133ms (0-13m) / 267ms (14-19m) / 400ms (20+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 2
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 109,
+        "armor2Ms": 109,
+        "armor3Ms": 109
+      },
+      "rof": 550,
+      "adsMs": null,
+      "adsClass": null,
+      "mobility": 50,
+      "magazine": "7+1",
+      "maxammo": "8+35 (PVP) / 8+56 (Terrorist Hunt) / 1+39 (Golden Gun)",
+      "reload": "2.5s (Empty) / 2.0s (Tactical) / 2.0s (Golden Gun)",
+      "users": [
+        "Blackbeard",
         "Valkyrie",
-        "Oryx"
+        "Nøkk",
+        "Azami"
       ],
       "attachments": {},
       "pros": [
-        "Average damage per pellet",
-        "Minimal damage dropoff",
-        "Very fast reload time",
-        "Controllable recoil"
+        "High single shot damage",
+        "High destruction/penetration"
       ],
       "cons": [
-        "Subpar rate of fire"
+        "High recoil kick per shot",
+        "Low magazine capacity",
+        "Low reserve ammo"
       ],
-      "page": "SPAS-12",
+      "page": "Desert Eagle",
       "aliases": [
-        "SIX12 SD",
-        "SPAS-12"
+        "D-50",
+        "D50"
       ],
-      "art": "r6_images/weapons/w-spas12.png"
+      "art": "r6_images/weapons/w-d50.png"
     },
     {
       "name": "556xi",
@@ -4428,6 +4412,69 @@
         "LMG-E"
       ],
       "art": "r6_images/weapons/w-lmge.png"
+    },
+    {
+      "name": "POF-9",
+      "type": "Assault Rifle",
+      "fire": "Automatic",
+      "damage": 37,
+      "damageModel": {
+        "mode": "class",
+        "class": "AR",
+        "base": 37,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 162,
+        "armor2Ms": 162,
+        "armor3Ms": 243
+      },
+      "rof": 740,
+      "adsMs": 400,
+      "adsClass": "AR",
+      "mobility": 50,
+      "magazine": "50+1",
+      "maxammo": "",
+      "reload": "",
+      "users": [
+        "Sens"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High magazine capacity",
+        "Highly customizable",
+        "Ok damage"
+      ],
+      "cons": [
+        "Low destruction",
+        "Mediocre recoil"
+      ],
+      "page": "POF-9",
+      "aliases": [
+        "POF-9"
+      ],
+      "art": "r6_images/weapons/w-pof9.png"
     },
     {
       "name": "L85A2",
@@ -4625,57 +4672,6 @@
         "Tacit .45"
       ],
       "art": "r6_images/weapons/w-tacit45.png"
-    },
-    {
-      "name": "SIX12",
-      "type": "Shotgun",
-      "fire": "",
-      "damage": 35,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": 8,
-        "close": {
-          "dmg": 35,
-          "range": [
-            0,
-            6
-          ]
-        },
-        "far": {
-          "dmg": 24,
-          "range": [
-            11,
-            null
-          ]
-        },
-        "suppressed": null
-      },
-      "ttk": {
-        "armor1": null,
-        "armor2": null,
-        "armor3": null
-      },
-      "ttkComputed": null,
-      "rof": 200,
-      "adsMs": null,
-      "adsClass": null,
-      "mobility": 50,
-      "magazine": "6",
-      "maxammo": "6+30 (PVP) / 6+36 (Training Grounds) / 6+114 (Outbreak)",
-      "reload": "",
-      "users": [
-        "Ying",
-        "Lesion",
-        "Nøkk"
-      ],
-      "attachments": {},
-      "pros": [],
-      "cons": [],
-      "page": "SIX12",
-      "aliases": [
-        "SIX12"
-      ],
-      "art": "r6_images/weapons/w-six12.png"
     },
     {
       "name": "Q-929",
@@ -5797,7 +5793,7 @@
       "maxammo": "4+29",
       "reload": "3.3s",
       "users": [
-        "Denari|affiliation=NIGHTHAVEN"
+        "Denari"
       ],
       "attachments": {
         "sight_1x": true,
@@ -6307,6 +6303,68 @@
       "art": "r6_images/weapons/w-416ccarbine.png"
     },
     {
+      "name": "AUG A3",
+      "type": "Submachine Gun",
+      "fire": "Automatic / 3-round burst / Semi-automatic",
+      "damage": 36,
+      "damageModel": {
+        "mode": "class",
+        "class": "SMG",
+        "base": 36,
+        "extended": true
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 4,
+          "armor3": 4
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 171,
+        "armor2Ms": 257,
+        "armor3Ms": 257
+      },
+      "rof": 700,
+      "adsMs": 300,
+      "adsClass": "SMG",
+      "mobility": 50,
+      "magazine": "31+1",
+      "maxammo": "32+186 (PVP) / 32+248 (Training Grounds)",
+      "reload": "3.3s (Empty) / 2.6s (Tactical)",
+      "users": [
+        "Kaid"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "muzzle_brake": true,
+        "compensator": true,
+        "flash_hider": true,
+        "suppressor": true,
+        "extended_barrel": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "Above-average damage per shot allowing for a 3 hit kill",
+        "Low recoil even with Angled Grip",
+        "Slightly larger magazine"
+      ],
+      "cons": [
+        "Below-average rate of fire",
+        "Subpar reload speed"
+      ],
+      "page": "AUG Para",
+      "aliases": [
+        "AUG A3"
+      ],
+      "art": "r6_images/weapons/w-auga3.png"
+    },
+    {
       "name": "T-5 SMG",
       "type": "Submachine Gun",
       "fire": "Automatic / 3-round burst / Semi-automatic",
@@ -6551,6 +6609,63 @@
       "art": "r6_images/weapons/w-mp5k.png"
     },
     {
+      "name": "SPAS-12",
+      "type": "Shotgun",
+      "fire": "",
+      "damage": 35,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": 8,
+        "close": {
+          "dmg": 35,
+          "range": [
+            0,
+            4
+          ]
+        },
+        "far": {
+          "dmg": 20,
+          "range": [
+            20,
+            null
+          ]
+        },
+        "suppressed": null
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": null,
+      "rof": 200,
+      "adsMs": 250,
+      "adsClass": "S",
+      "mobility": 50,
+      "magazine": "6+1",
+      "maxammo": "7+29 (PVP) / 7+50 (Training Grounds)",
+      "reload": "",
+      "users": [
+        "Valkyrie",
+        "Oryx"
+      ],
+      "attachments": {},
+      "pros": [
+        "Average damage per pellet",
+        "Minimal damage dropoff",
+        "Very fast reload time",
+        "Controllable recoil"
+      ],
+      "cons": [
+        "Subpar rate of fire"
+      ],
+      "page": "SPAS-12",
+      "aliases": [
+        "SPAS-12"
+      ],
+      "art": "r6_images/weapons/w-spas12.png"
+    },
+    {
       "name": "PCX-33",
       "type": "Assault Rifle",
       "fire": "Automatic",
@@ -6611,6 +6726,66 @@
         "PCX-33"
       ],
       "art": "r6_images/weapons/w-pcx33.png"
+    },
+    {
+      "name": "DP-27",
+      "type": "Light Machine Gun",
+      "fire": "Automatic",
+      "damage": 60,
+      "damageModel": {
+        "mode": "class",
+        "class": "LMG",
+        "base": 60,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 2,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 109,
+        "armor2Ms": 109,
+        "armor3Ms": 218
+      },
+      "rof": 550,
+      "adsMs": 450,
+      "adsClass": "LMG",
+      "mobility": 50,
+      "magazine": "70",
+      "maxammo": "70+141",
+      "reload": "4.6s (Empty) / 4.0s (Tactical)",
+      "users": [
+        "Tachanka"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_dp27": true
+      },
+      "pros": [
+        "High destruction/penetration",
+        "Capable of creating rotation holes",
+        "High magazine capacity",
+        "High damage per shot",
+        "Relatively low vertical recoil"
+      ],
+      "cons": [
+        "Low rate of fire",
+        "Subpar horizontal recoil",
+        "Lacks attachments",
+        "Bulky pan magazine (reduces vision)"
+      ],
+      "page": "DP27",
+      "aliases": [
+        "DP27"
+      ],
+      "art": "r6_images/weapons/w-dp27.png"
     },
     {
       "name": "UZK50GI",
