@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:31:42.641Z",
+  "generatedAt": "2026-09-28T07:50:29.806Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -5172,8 +5172,8 @@
       "file": "Kludge Drone.png"
     },
     "r6_images/operators/icons/r6-buck.png": {
-      "revision": "cb:20171020123929",
-      "file": "Buck Icon.png"
+      "revision": "local:edd1664d3b25",
+      "file": "review/local-assets/buck-badge.webp"
     },
     "r6_images/operators/heroes/r6-buck.png": {
       "revision": "cb:20180208034939",
@@ -5688,8 +5688,8 @@
       "file": "F-NATT_DREAD_MINE.png"
     },
     "r6_images/operators/icons/r6-frost.png": {
-      "revision": "cb:20171020123632",
-      "file": "Frost Icon.png"
+      "revision": "local:898324981707",
+      "file": "review/local-assets/frost-badge.webp"
     },
     "r6_images/operators/heroes/r6-frost.png": {
       "revision": "cb:20240706090205",
@@ -5896,8 +5896,8 @@
       "file": "SPEC-IO.png"
     },
     "r6_images/operators/icons/r6-tachanka.png": {
-      "revision": "cb:20151202041538",
-      "file": "Tachanka Badge New.png"
+      "revision": "local:c550d2042a74",
+      "file": "review/local-assets/tachanka-badge.webp"
     },
     "r6_images/operators/heroes/r6-tachanka.png": {
       "revision": "cb:20201008181024",
@@ -7798,6 +7798,18 @@
     "r6_images/gadgets/r6-vigil.png": {
       "revision": "cb:20220221041259",
       "file": "ERC-7.png"
+    },
+    "r6_images/operators/icons/r6-deimos.png": {
+      "revision": "local:a3fbc1cc3362",
+      "file": "review/local-assets/deimos-icon.webp"
+    },
+    "r6_images/operators/icons/r6-skop-s.png": {
+      "revision": "local:e34f3bc5e0d3",
+      "file": "review/local-assets/skopos-icon.webp"
+    },
+    "r6_images/operators/icons/r6-tubar-o.png": {
+      "revision": "local:ca46cda60445",
+      "file": "review/local-assets/tubarao-icon.webp"
     }
   }
 }

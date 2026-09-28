@@ -99,17 +99,16 @@ screenshot pairs vs DBD rhythm → push. CC-BY-SA + non-affiliation footer.
 Cloudflare Pages deploy happens only when the wiki is actually done.
 Do not propose it as a next step before then.
 
-## 6. Icon follow-ups (revisit later)
+## 6. Icon follow-ups (resolved 2026-09-28 — user-supplied, pinned)
 
-- **No icon file exists upstream** (honest SVG fallback today): Deimos,
-  Skopós, Tubarão. Recheck the wiki periodically — if portrait/icon
-  files appear, the name-anchored picker + staleness detector will pick
-  them up on the next sync with no code changes.
-- **Stuck on legacy icons** (no `IconN`/`NewestIcon` variant exists upstream,
-  verified 2026-09-27): Buck (`Buck Icon.png`), Frost (`Frost Icon.png`),
-  Tachanka. Same deal — recheck on resync; adopt automatically if added.
-- Do NOT paper over these with gadget faces or currency icons — null beats
-  wrong (enforced by picker denylist + `gadget != icon` assertion).
+- **No icon file upstream**: Deimos, Skopós, Tubarão → pinned
+  `review/local-assets/{deimos,skopos,tubarao}-icon.webp` (256px, transparent).
+- **Legacy upstream**: Buck, Frost, Tachanka → pinned
+  `review/local-assets/{buck,frost,tachanka}-badge.webp`.
+- Mechanism: `ICON_OVERRIDES` in `sync-r6-data.js` + `{ local: }` manifest
+  entries (content-hash revision, never re-downloaded). Resyncs converge.
+- Do NOT paper over anything else with gadget faces or currency icons —
+  null beats wrong (picker denylist + `gadget != icon` assertion still hold).
 
 ## 7. Missing data tracker (audit 2026-09-27, recheck on every resync)
 

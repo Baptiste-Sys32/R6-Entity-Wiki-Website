@@ -33,6 +33,19 @@ const GADGET_ICON_OVERRIDES = {
   'r6-vigil': { file: 'ERC-7.png' },
 };
 
+// Pinned operator portraits (user-supplied, vendored 256px under
+// review/local-assets/): Deimos/Skopós/Tubarão have no upstream icon file;
+// Buck/Frost/Tachanka are stuck on legacy icons upstream. Wiki can never
+// clobber these; resyncs converge to the same manifest entries.
+const ICON_OVERRIDES = {
+  'r6-deimos': { local: 'review/local-assets/deimos-icon.webp' },
+  'r6-skop-s': { local: 'review/local-assets/skopos-icon.webp' },
+  'r6-tubar-o': { local: 'review/local-assets/tubarao-icon.webp' },
+  'r6-buck': { local: 'review/local-assets/buck-badge.webp' },
+  'r6-frost': { local: 'review/local-assets/frost-badge.webp' },
+  'r6-tachanka': { local: 'review/local-assets/tachanka-badge.webp' },
+};
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function apiGet(params) {
@@ -475,11 +488,17 @@ async function main() {
     const title = opTitleById.get(op.id);
     const files = opImages[title] || [];
     const baseName = title.replace(/ \(Siege\)$/, '');
-    const iconFile = pickIcon(files, baseName);
-    if (!iconFile) console.warn(`sync-r6: no anchored icon for ${baseName}`);
+    const iconOverride = ICON_OVERRIDES[op.id];
+    const iconFile = iconOverride?.local ? null : pickIcon(files, baseName);
+    if (!iconFile && !iconOverride?.local) console.warn(`sync-r6: no anchored icon for ${baseName}`);
     const heroFile = pickHero(files, baseName);
     if (!heroFile) console.warn(`sync-r6: no hero for ${baseName}`);
-    op.icon = local(`r6_images/operators/icons/${op.id}.png`, iconFile, 256);
+    if (iconOverride?.local) {
+      manifest[`r6_images/operators/icons/${op.id}.png`] = { local: iconOverride.local };
+      op.icon = `r6_images/operators/icons/${op.id}.png`;
+    } else {
+      op.icon = local(`r6_images/operators/icons/${op.id}.png`, iconFile, 256);
+    }
     op.hero = local(`r6_images/operators/heroes/${op.id}.png`, heroFile, 400);
     let gadgetFile = op.gadgetFile;
     if (!gadgetFile && op.gadget) {

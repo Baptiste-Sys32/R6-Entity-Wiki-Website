@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:28:59.644Z",
+  "generatedAt": "2026-09-28T07:47:49.648Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -78,8 +78,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-buck.png": {
-      "file": "Buck Icon.png",
-      "width": 256
+      "local": "review/local-assets/buck-badge.webp"
     },
     "r6_images/operators/heroes/r6-buck.png": {
       "file": "Buck - Full Body.png",
@@ -598,8 +597,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-frost.png": {
-      "file": "Frost Icon.png",
-      "width": 256
+      "local": "review/local-assets/frost-badge.webp"
     },
     "r6_images/operators/heroes/r6-frost.png": {
       "file": "Frost Fullbody.png",
@@ -814,8 +812,7 @@
       "width": null
     },
     "r6_images/operators/icons/r6-tachanka.png": {
-      "file": "Tachanka Badge New.png",
-      "width": 256
+      "local": "review/local-assets/tachanka-badge.webp"
     },
     "r6_images/operators/heroes/r6-tachanka.png": {
       "file": "Tachanka - Full Body.png",
@@ -2704,6 +2701,15 @@
     "r6_images/gadgets/emp-grenade.png": {
       "file": "EMP Grenade 2.png",
       "width": 320
+    },
+    "r6_images/operators/icons/r6-deimos.png": {
+      "local": "review/local-assets/deimos-icon.webp"
+    },
+    "r6_images/operators/icons/r6-skop-s.png": {
+      "local": "review/local-assets/skopos-icon.webp"
+    },
+    "r6_images/operators/icons/r6-tubar-o.png": {
+      "local": "review/local-assets/tubarao-icon.webp"
     }
   }
 }
