@@ -3014,6 +3014,46 @@
     "r6_images/attachments/r6-attach-vertical-grip.png": {
       "file": "Vertical Grip Standard.png",
       "width": 200
+    },
+    "r6_images/tips/r6-ash-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75t7NR33Wx6QqE6GSjX4Bl/0415cdad52a25604ee9eec90a849b5d0/mqdefault.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+    },
+    "r6_images/tips/r6-fuze-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/OdYWP0rJu7LHHY9RIvcXY/8f7a3ca62aa0ad6bf633402e4a817d40/mqdefault.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fuze"
+    },
+    "r6_images/tips/r6-glaz-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1tQKn2Vv1UGyx7OXM2V6rD/86277da8e5c911b6026b79483d138cc3/mqdefault.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/glaz"
+    },
+    "r6_images/tips/r6-thermite-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4XynU2pg9WrWW4TDyenIyE/3198e44b42838af0af06c9783d1a2a6e/mqdefault.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thermite"
+    },
+    "r6_images/tips/r6-twitch-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/fDEvw6KEXiJX4Xl6YdjWK/999706dc4158da0949c36190bf189f15/operator-video-ability-twitch.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/twitch"
+    },
+    "r6_images/tips/r6-bandit-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4y2Uuj6PTMBmVdswfPQ6jO/84bcca8848c16acac702d0349ece44fc/operator-video-ability-bandit.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/bandit"
+    },
+    "r6_images/tips/r6-j-ger-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ZrIpMSqjYindpCtks1Byf/0b8997540cddfcb9b9d05578479d3eaa/mqdefault.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jager"
+    },
+    "r6_images/tips/r6-kapkan-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2hqxPlfmtJ7MFOFAq14Ysc/fa9156de16258c412fc41be58b6e6a05/r6-kapkan-ability-thumbnail.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kapkan"
+    },
+    "r6_images/tips/r6-pulse-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4a3EtFa0ynXGK05wkZH62r/e3e8d6c52ee02280de1c8d7d7b66e81a/mqdefault.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/pulse"
+    },
+    "r6_images/tips/r6-rook-1.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6YPJok4eqE7BtviRbb02Mt/dcb4f467de54f2b01b93e2fa9d363916/roo.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rook"
     }
   }
 }

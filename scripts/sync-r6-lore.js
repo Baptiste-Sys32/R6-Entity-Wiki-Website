@@ -134,11 +134,15 @@ async function scrapeFandomOp(op, fandomTitle) {
   const report = await get(['psychological report']);
   out.psychReport = paras(report, 8).join('\n\n').slice(0, 3000);
   const quotes = await get(['quotes']);
+  // Banter sections list `* '''[[Op]]'''` headers (no quoted speech) above
+  // `** Speaker: "..."` lines. Keep only lines with real quoted speech
+  // AFTER markup is stripped (headers reduce to bare names and drop out);
+  // nested `**` banter lines carry the speaker prefix with them.
   out.quotes = quotes.split('\n')
     .map((l) => l.trim())
-    .filter((l) => l.startsWith('*') && !l.startsWith('**'))
-    .map((l) => stripMarkup(l.replace(/^\*\s*/, '').replace(/^\|-\|[^=\n]+?=\s*/, '')).replace(/\s+/g, ' ').trim())
-    .filter((l) => l.length > 4 && l.length < 300)
+    .filter((l) => l.startsWith('*'))
+    .map((l) => stripMarkup(l.replace(/^\*{1,2}\s*/, '').replace(/^\|-\|[^=\n]+?=\s*/, '')).replace(/\s+/g, ' ').trim())
+    .filter((l) => l.includes('"') && l.length > 8 && l.length < 400)
     .slice(0, 10);
   const gameplay = await get(['gameplay description']);
   const noLoadout = (() => {

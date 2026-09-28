@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T08:57:01.594Z",
+  "generatedAt": "2026-09-28T11:59:55.095Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -8062,6 +8062,98 @@
     "r6_images/weapons/w-spas12.png": {
       "revision": "cb:20220525145556",
       "file": "R6S SPAS-12.png"
+    },
+    "r6_images/attachments/r6-attach-acog.png": {
+      "revision": "cb:20201011103120",
+      "file": "ACOG Sight NATO HUD Icon R6S.png"
+    },
+    "r6_images/attachments/r6-attach-angled-grip.png": {
+      "revision": "cb:20230706060114",
+      "file": "R6S Angled Grip.jpeg"
+    },
+    "r6_images/attachments/r6-attach-compensator.png": {
+      "revision": "cb:20230706055514",
+      "file": "R6S Compensator.jpeg"
+    },
+    "r6_images/attachments/r6-attach-extended-barrel.png": {
+      "revision": "cb:20230706053545",
+      "file": "R6S Extended Barrel.jpeg"
+    },
+    "r6_images/attachments/r6-attach-flash-hider.png": {
+      "revision": "cb:20230706055101",
+      "file": "R6S Flash Hider.jpeg"
+    },
+    "r6_images/attachments/r6-attach-flashlight.png": {
+      "revision": "cb:20200917033709",
+      "file": "Siege Flashlight.jpeg"
+    },
+    "r6_images/attachments/r6-attach-holographic-sight.png": {
+      "revision": "cb:20200823032234",
+      "file": "Holographic Sight MH1 HUD Icon R6S.png"
+    },
+    "r6_images/attachments/r6-attach-laser-sight.png": {
+      "revision": "cb:20160312174212",
+      "file": "Laser sight.png"
+    },
+    "r6_images/attachments/r6-attach-muzzle-brake.png": {
+      "revision": "cb:20230706061055",
+      "file": "R6S Muzzle Brake.jpeg"
+    },
+    "r6_images/attachments/r6-attach-red-dot-sight.png": {
+      "revision": "cb:20200823031531",
+      "file": "Red Dot Sight M4S HUD Icon R6S.png"
+    },
+    "r6_images/attachments/r6-attach-reflex-sight.png": {
+      "revision": "cb:20201011101345",
+      "file": "Reflex Sight NATO HUD Icon R6S.png"
+    },
+    "r6_images/attachments/r6-attach-suppressor.png": {
+      "revision": "cb:20230706062939",
+      "file": "R6S Suppressor.jpeg"
+    },
+    "r6_images/attachments/r6-attach-vertical-grip.png": {
+      "revision": "cb:20210119235537",
+      "file": "Vertical Grip Standard.png"
+    },
+    "r6_images/tips/r6-ash-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75t7NR33Wx6QqE6GSjX4Bl/0415cdad52a25604ee9eec90a849b5d0/mqdefault.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75t7NR33Wx6QqE6GSjX4Bl/0415cdad52a25604ee9eec90a849b5d0/mqdefault.jpg"
+    },
+    "r6_images/tips/r6-fuze-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/OdYWP0rJu7LHHY9RIvcXY/8f7a3ca62aa0ad6bf633402e4a817d40/mqdefault.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/OdYWP0rJu7LHHY9RIvcXY/8f7a3ca62aa0ad6bf633402e4a817d40/mqdefault.jpg"
+    },
+    "r6_images/tips/r6-glaz-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1tQKn2Vv1UGyx7OXM2V6rD/86277da8e5c911b6026b79483d138cc3/mqdefault.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1tQKn2Vv1UGyx7OXM2V6rD/86277da8e5c911b6026b79483d138cc3/mqdefault.jpg"
+    },
+    "r6_images/tips/r6-thermite-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4XynU2pg9WrWW4TDyenIyE/3198e44b42838af0af06c9783d1a2a6e/mqdefault.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4XynU2pg9WrWW4TDyenIyE/3198e44b42838af0af06c9783d1a2a6e/mqdefault.jpg"
+    },
+    "r6_images/tips/r6-twitch-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/fDEvw6KEXiJX4Xl6YdjWK/999706dc4158da0949c36190bf189f15/operator-video-ability-twitch.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/fDEvw6KEXiJX4Xl6YdjWK/999706dc4158da0949c36190bf189f15/operator-video-ability-twitch.jpg"
+    },
+    "r6_images/tips/r6-bandit-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4y2Uuj6PTMBmVdswfPQ6jO/84bcca8848c16acac702d0349ece44fc/operator-video-ability-bandit.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4y2Uuj6PTMBmVdswfPQ6jO/84bcca8848c16acac702d0349ece44fc/operator-video-ability-bandit.jpg"
+    },
+    "r6_images/tips/r6-j-ger-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ZrIpMSqjYindpCtks1Byf/0b8997540cddfcb9b9d05578479d3eaa/mqdefault.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ZrIpMSqjYindpCtks1Byf/0b8997540cddfcb9b9d05578479d3eaa/mqdefault.jpg"
+    },
+    "r6_images/tips/r6-kapkan-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2hqxPlfmtJ7MFOFAq14Ysc/fa9156de16258c412fc41be58b6e6a05/r6-kapkan-ability-thumbnail.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2hqxPlfmtJ7MFOFAq14Ysc/fa9156de16258c412fc41be58b6e6a05/r6-kapkan-ability-thumbnail.jpg"
+    },
+    "r6_images/tips/r6-pulse-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4a3EtFa0ynXGK05wkZH62r/e3e8d6c52ee02280de1c8d7d7b66e81a/mqdefault.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4a3EtFa0ynXGK05wkZH62r/e3e8d6c52ee02280de1c8d7d7b66e81a/mqdefault.jpg"
+    },
+    "r6_images/tips/r6-rook-1.jpg": {
+      "revision": "file:https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6YPJok4eqE7BtviRbb02Mt/dcb4f467de54f2b01b93e2fa9d363916/roo.jpg",
+      "file": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6YPJok4eqE7BtviRbb02Mt/dcb4f467de54f2b01b93e2fa9d363916/roo.jpg"
     }
   }
 }

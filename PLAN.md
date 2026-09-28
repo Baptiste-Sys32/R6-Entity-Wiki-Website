@@ -122,8 +122,12 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   (Kali negated for dark UI via manifest `invert`).
 - **Map layouts (3 maps)**: Calypso Casino, Fortress, Hereford Base (Rework).
   Articles show the "no floor plans" panel; modal never mounts empty.
-- **Quotes (9 ops)**: Kali, Ram, Rauora, Sens, Solid Snake, Denari, Noor,
-  Oryx, Tubarão. Quotes section hides when empty (no placeholder).
+- **Quotes (fixed 2026-09-28)**: banter-section `* OpName` headers leaked as
+  fake quotes on 5 ops (Ace, Thatcher, Frost, Jäger + Blitz "(Laughs)").
+  Parser now keeps only lines with quoted speech and includes nested `**`
+  banter lines with speaker prefix. Remaining gaps are genuine upstream
+  absences: Ram, Rauora, Sens, Solid Snake, Denari, Noor, Oryx, Tubarão
+  (section hides when empty).
 - **Trivia (1)**: Solid Snake. **How-to (1)**: Rook.
 - **Attachments 13/15**: Horizontal Grip and Scope/Siege are wiki stubs
   (no infobox) — unwinnable until upstream fills them.
