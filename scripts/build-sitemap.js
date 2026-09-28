@@ -8,6 +8,8 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'web', 'data.js');
+const WEAPONS_PATH = path.join(ROOT, 'web', 'weapons.js');
+const GADGETS_PATH = path.join(ROOT, 'web', 'gadgets.js');
 const SITEMAP_PATH = path.join(ROOT, 'web', 'sitemap.xml');
 
 const rawArgs = process.argv.slice(2);
@@ -28,14 +30,18 @@ function main() {
   require('vm').createContext(sandbox);
   require('vm').runInContext(`${code}\nthis.DB = R6_DATABASE;`, sandbox);
   const db = sandbox.DB;
+  require('vm').runInContext(`${fs.readFileSync(WEAPONS_PATH, 'utf8')}\nthis.W = R6_WEAPONS;`, sandbox);
+  require('vm').runInContext(`${fs.readFileSync(GADGETS_PATH, 'utf8')}\nthis.G = R6_GADGETS;`, sandbox);
   const lastmod = new Date().toISOString().slice(0, 10);
   const urls = [];
   const add = (loc, changefreq, priority) => urls.push({ loc, changefreq, priority });
   add(`${BASE}/`, 'weekly', '1.0');
-  ['operators', 'gadgets', 'maps', 'seasons'].forEach((view) => add(`${BASE}/?view=${view}`, 'weekly', '0.8'));
+  ['operators', 'gadgets', 'maps', 'seasons', 'attachments'].forEach((view) => add(`${BASE}/?view=${view}`, 'weekly', '0.8'));
   (db.operators || []).forEach((e) => { if (e.id) add(`${BASE}/?view=operator&id=${e.id}`, 'monthly', '0.6'); });
   (db.maps || []).forEach((e) => { if (e.id) add(`${BASE}/?view=map&id=${e.id}`, 'monthly', '0.6'); });
   (db.seasons || []).forEach((e) => { if (e.id) add(`${BASE}/?view=season&id=${e.id}`, 'monthly', '0.6'); });
+  ((sandbox.W && sandbox.W.weapons) || []).forEach((w) => { if (w.name) add(`${BASE}/?view=weapon&id=${encodeURIComponent(w.name)}`, 'monthly', '0.5'); });
+  ((sandbox.G && sandbox.G.gadgets) || []).forEach((g) => { if (g.id) add(`${BASE}/?view=gadget&id=${g.id}`, 'monthly', '0.5'); });
   const lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'];
   urls.forEach(({ loc, changefreq, priority }) => {
     lines.push('  <url>', `    <loc>${esc(loc)}</loc>`, `    <lastmod>${lastmod}</lastmod>`, `    <changefreq>${changefreq}</changefreq>`, `    <priority>${priority}</priority>`, '  </url>');
