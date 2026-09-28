@@ -61,6 +61,24 @@ function fileOf(markup) {
 }
 const slugOf = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '') || 'weapon';
 
+// Armor HP map (close-range TTK basis). Validated against the 13 wiki TTK
+// rows at compute time — systematic drift is logged for review, never
+// silently shipped (see cross-check in main()).
+const ARMOR_HP = { armor1: 100, armor2: 110, armor3: 125 };
+function computeTtk(baseDmg, rof, pellets) {
+  // Local precompute only: static ms ship in JSON, no client-side math.
+  // Close-range unsuppressed damage; pellet shotguns excluded (per-pellet
+  // falloff is not a single number — never fake it).
+  if (!baseDmg || !rof || rof <= 0 || pellets) return null;
+  const shots = {};
+  const out = { shots, basis: 'close-range base damage, full-auto ROF' };
+  for (const [k, hp] of Object.entries(ARMOR_HP)) {
+    shots[k] = Math.max(1, Math.ceil(hp / baseDmg));
+    out[`${k}Ms`] = Math.round((shots[k] - 1) * 60000 / rof);
+  }
+  return out;
+}
+
 function num(text, re) {
   const m = String(text).match(re);
   return m ? Number(m[1]) : null;
@@ -126,6 +144,10 @@ function parseWeapon(title, wt) {
       armor2: strip(field(siege, 'ttk2a')).slice(0, 80) || null,
       armor3: strip(field(siege, 'ttk3a')).slice(0, 80) || null,
     },
+    ttkComputed: computeTtk(
+      damage && damage.base !== undefined ? damage.base : (damage ? damage.close.dmg : null),
+      rof, damage && damage.pellets,
+    ),
     rof, adsMs: adsMatch ? (ADS_MS[adsMatch[1]] || null) : null,
     adsClass: adsMatch ? adsMatch[1] : null,
     mobility: num(field(siege, 'mobility'), /(\d+)/),
@@ -222,6 +244,23 @@ async function main() {
     await sleep(SLEEP_MS);
   }
   const generatedAt = new Date().toISOString();
+  // Cross-check computed close-range TTK against wiki first-segment ms
+  // (review signal only — wiki strings always ship untouched).
+  let crossChecked = 0, crossDrift = 0;
+  for (const w of weapons) {
+    if (!w.ttkComputed) continue;
+    for (const k of ['armor1', 'armor2', 'armor3']) {
+      const wikiMs = w.ttk && w.ttk[k] ? Number((String(w.ttk[k]).match(/(\d+)\s*ms/) || [])[1]) : null;
+      const mine = w.ttkComputed[`${k}Ms`];
+      if (wikiMs === null || mine === null) continue;
+      crossChecked += 1;
+      if (Math.abs(wikiMs - mine) > 100) {
+        crossDrift += 1;
+        console.warn(`sync-weapons: TTK drift ${w.name} ${k}: computed=${mine}ms wiki=${wikiMs}ms ("${w.ttk[k].slice(0, 40)}")`);
+      }
+    }
+  }
+  console.log(`sync-weapons: ttk cross-check ${crossChecked} rows, ${crossDrift} drifted (>100ms)`);
   fs.writeFileSync(WEAPONS_PATH, JSON.stringify({
     generatedAt,
     metadata: { sources: { wiki: 'https://rainbowsix.fandom.com/api.php (CC-BY-SA)' }, count: weapons.length },

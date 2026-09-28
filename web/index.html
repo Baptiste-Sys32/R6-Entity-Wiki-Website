@@ -657,13 +657,27 @@
         >
           <CxSection id="stats" title="Damage dropoff">
             <DropoffChart weapon={weapon} />
+            {weapon.ttkComputed && (weapon.ttkComputed.armor1Ms !== null && weapon.ttkComputed.armor1Ms !== undefined) ? (
+              <div>
+                <table className="cx-wikitable"><thead><tr><th>Armor</th><th>Time to kill (calculated)</th></tr></thead>
+                  <tbody>
+                    <tr><td>1</td><td>{weapon.ttkComputed.armor1Ms}ms ({weapon.ttkComputed.shots ? `${weapon.ttkComputed.shots.armor1} shots` : ''})</td></tr>
+                    <tr><td>2</td><td>{weapon.ttkComputed.armor2Ms}ms ({weapon.ttkComputed.shots ? `${weapon.ttkComputed.shots.armor2} shots` : ''})</td></tr>
+                    <tr><td>3</td><td>{weapon.ttkComputed.armor3Ms}ms ({weapon.ttkComputed.shots ? `${weapon.ttkComputed.shots.armor3} shots` : ''})</td></tr>
+                  </tbody></table>
+                <p className="text-xs mt-1" style={{ color: 'var(--muted)' }}>Calculated close-range ({weapon.ttkComputed.basis || 'base damage'}). Static values — no live math on this page.</p>
+              </div>
+            ) : null}
             {weapon.ttk && (weapon.ttk.armor1 || weapon.ttk.armor2 || weapon.ttk.armor3) ? (
-              <table className="cx-wikitable"><thead><tr><th>Armor</th><th>Time to kill</th></tr></thead>
+              <div>
+                <p className="text-xs mt-2 mb-1" style={{ color: 'var(--muted)' }}>Wiki tables (with range dropoff):</p>
+                <table className="cx-wikitable"><thead><tr><th>Armor</th><th>Time to kill</th></tr></thead>
                 <tbody>
                   {weapon.ttk.armor1 ? <tr><td>1</td><td>{weapon.ttk.armor1}</td></tr> : null}
                   {weapon.ttk.armor2 ? <tr><td>2</td><td>{weapon.ttk.armor2}</td></tr> : null}
                   {weapon.ttk.armor3 ? <tr><td>3</td><td>{weapon.ttk.armor3}</td></tr> : null}
                 </tbody></table>
+              </div>
             ) : null}
           </CxSection>
           {attachNames.length || compatAttach.length ? (

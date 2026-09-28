@@ -197,6 +197,13 @@ function validateWeapons(weapons, loadoutNames) {
     }
     if (w.damage !== null && w.damage !== undefined && !(Number.isFinite(w.damage) && w.damage > 0)) throw new Error(`${label} has invalid damage`);
     if (w.rof !== null && w.rof !== undefined && !(Number.isFinite(w.rof) && w.rof > 0)) throw new Error(`${label} has invalid rof`);
+    if (w.ttkComputed !== null && w.ttkComputed !== undefined) {
+      if (typeof w.ttkComputed !== 'object') throw new Error(`${label} has invalid ttkComputed`);
+      for (const k of ['armor1Ms', 'armor2Ms', 'armor3Ms']) {
+        const v = w.ttkComputed[k];
+        if (v !== null && !(Number.isFinite(v) && v >= 0)) throw new Error(`${label} has invalid ttkComputed.${k}`);
+      }
+    }
     if (seen.has(w.name)) throw new Error(`duplicate weapon ${w.name}`);
     seen.add(w.name);
   });
