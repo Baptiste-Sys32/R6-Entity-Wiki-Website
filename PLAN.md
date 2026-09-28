@@ -149,8 +149,9 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   stats/link). Resolution is now direct → upstream redirect → curated
   KNOWN_ALIASES → related-only search; page+alias audit throws on
   unrelated adoption; same-page entries consolidate; stale entries carry
-  forward (scrubbed) so flaky runs never shrink the dataset. Weapons
-  106→109 (GONNE-6, Tacit .45 + single-range damage format). Independent
+  forward (scrubbed) so flaky runs never shrink the dataset. Multi-variant
+  pages split into own entries with sliced mag/ammo/reload (M249 SAW).
+  Weapons 106→110 (GONNE-6, Tacit .45 + single-range damage format). Independent
   triple-check: 0 errors (self/alias resolution, all 76 loadouts, stat
   sanity, art existence).
 - **Patch history (2026-09-28)**: `content/patches.json` (170 rows) via

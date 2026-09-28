@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-28T19:10:05.780Z",
+  "generatedAt": "2026-09-28T19:38:34.481Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
     },
-    "count": 109
+    "count": 110
   },
   "weapons": [
     {
@@ -487,8 +487,8 @@
       ],
       "page": "MAC-11",
       "aliases": [
-        "SMG11",
-        "SMG-11"
+        "SMG-11",
+        "SMG11"
       ],
       "art": "r6_images/weapons/w-smg11.png"
     },
@@ -1076,8 +1076,8 @@
       "adsMs": 400,
       "adsClass": "AR",
       "mobility": 50,
-      "magazine": "20+1<",
-      "maxammo": "CAMRS / 21+140 (PVP) / 21+180 (Terrorist Hunt) / 21+220 (Out",
+      "magazine": "20+1",
+      "maxammo": "21+140 (PVP) / 21+180 (Terrorist Hunt) / 21+220 (Outbreak)",
       "reload": "3.4s (Empty) / 2.6s (Tactical)",
       "users": [
         "Buck",
@@ -1111,22 +1111,22 @@
       "art": "r6_images/weapons/w-camrs.png"
     },
     {
-      "name": "P226 Mk 25",
+      "name": "USP40",
       "type": "Handgun",
       "fire": "Semi-automatic",
-      "damage": 50,
+      "damage": 48,
       "damageModel": {
         "mode": "ranged",
         "pellets": null,
         "close": {
-          "dmg": 50,
+          "dmg": 48,
           "range": [
             0,
             12
           ]
         },
         "far": {
-          "dmg": 30,
+          "dmg": 25,
           "range": [
             22,
             null
@@ -1134,14 +1134,14 @@
         },
         "suppressed": {
           "close": {
-            "dmg": 42,
+            "dmg": 41,
             "range": [
               0,
               12
             ]
           },
           "far": {
-            "dmg": 25,
+            "dmg": 21,
             "range": [
               22,
               null
@@ -1150,18 +1150,18 @@
         }
       },
       "ttk": {
-        "armor1": "133ms (0-11m) / 267ms (12-20m) / 400ms (21+m)",
-        "armor2": "267ms (0-17m) / 400ms (18+m)",
-        "armor3": "267ms (0-15m) / 400ms (16-21m) / 533ms (22+m)"
+        "armor1": "267ms (0-18m) / 400ms (19+m)",
+        "armor2": "267ms (0-15m) / 400ms (16-20m) / 533ms (21+m)",
+        "armor3": "267ms (0-13m) / 400ms (14-19m) / 533ms (20+m)"
       },
       "ttkComputed": {
         "shots": {
-          "armor1": 2,
+          "armor1": 3,
           "armor2": 3,
           "armor3": 3
         },
         "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 109,
+        "armor1Ms": 218,
         "armor2Ms": 218,
         "armor3Ms": 218
       },
@@ -1169,28 +1169,24 @@
       "adsMs": 200,
       "adsClass": "H",
       "mobility": 50,
-      "magazine": "15+1",
-      "maxammo": "16+45 (PVP) / 16+120 (Terrorist Hunt) / 16+150 (Outbreak)",
+      "magazine": "12+1",
+      "maxammo": "13+48 (PVP) / 13+60 (Terrorist Hunt)",
       "reload": "2.1s (Empty) / 1.8s (Tactical)",
       "users": [
-        "Sledge",
-        "Thatcher",
-        "Smoke",
-        "Mute",
-        "Kali",
-        "Tubarão",
-        "Denari"
+        "Jackal",
+        "Mira",
+        "Oryx",
+        "Brava"
       ],
       "attachments": {},
       "pros": [],
       "cons": [],
-      "page": "P226",
+      "page": "USP",
       "aliases": [
         "USP 40",
-        "P226 Mk 25",
-        "P226 Mk25"
+        "USP40"
       ],
-      "art": "r6_images/weapons/w-p226mk25.png"
+      "art": "r6_images/weapons/w-usp40.png"
     },
     {
       "name": "Super Shorty",
@@ -1285,8 +1281,8 @@
       "adsMs": 400,
       "adsClass": "AR",
       "mobility": 50,
-      "magazine": "30+1 / 5+1 (Skeleton Key)",
-      "maxammo": "C8-SFW / 31+210 (PVP) / 31+270 (Training Grounds) / 31+330 (",
+      "magazine": "30+1 / 5+1 (Skeleton Key",
+      "maxammo": "31+210 (PVP) / 31+270 (Training Grounds) / 31+330 (Outbreak)",
       "reload": "2.9s (Empty) / 2.4s (Tactical) / 2.089s (Empty)(MASS) / 3.109s (Tactical)(MASS)",
       "users": [
         "Buck"
@@ -1417,9 +1413,9 @@
       "adsMs": 450,
       "adsClass": "LMG",
       "mobility": 50,
-      "magazine": "100 (M249) / 60+1 (M249 SAW)",
-      "maxammo": "M249 / 100+301 (PVP) / 100+200 (Terrorist Hunt) / M249 SAW /",
-      "reload": "M249 / 7.6s / M249 SAW / 4.5s (Empty) / 3.3s (Tactical)",
+      "magazine": "100",
+      "maxammo": "100+301 (PVP) / 100+200 (Terrorist Hunt)",
+      "reload": "7.6s",
       "users": [
         "Capitão",
         "Gridlock",
@@ -1445,7 +1441,69 @@
       ],
       "page": "M249",
       "aliases": [
-        "M249",
+        "M249"
+      ],
+      "art": "r6_images/weapons/w-m249.png"
+    },
+    {
+      "name": "M249 SAW",
+      "type": "Light Machine Gun",
+      "fire": "Automatic",
+      "damage": 48,
+      "damageModel": {
+        "mode": "class",
+        "class": "LMG",
+        "base": 48,
+        "extended": false
+      },
+      "ttk": {
+        "armor1": null,
+        "armor2": null,
+        "armor3": null
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 3,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 185,
+        "armor2Ms": 185,
+        "armor3Ms": 185
+      },
+      "rof": 650,
+      "adsMs": 450,
+      "adsClass": "LMG",
+      "mobility": 50,
+      "magazine": "60+1",
+      "maxammo": "60+180 (PVP) / 60+240 (Terrorist Hunt)",
+      "reload": "4.5s (Empty) / 3.3s (Tactical)",
+      "users": [
+        "Capitão",
+        "Gridlock",
+        "Striker",
+        "Rauora"
+      ],
+      "attachments": {
+        "sight_1x": true,
+        "sight_magnified": true,
+        "compensator": true,
+        "flash_hider": true,
+        "grips_all": true,
+        "laser": true
+      },
+      "pros": [
+        "High damage per shot",
+        "High magazine capacity",
+        "Low vertical recoil"
+      ],
+      "cons": [
+        "Low rate of fire",
+        "Slow reload time (M249 only)"
+      ],
+      "page": "M249",
+      "aliases": [
         "M249 SAW"
       ],
       "art": "r6_images/weapons/w-m249.png"
@@ -2058,7 +2116,7 @@
       "mobility": null,
       "magazine": "22+1",
       "maxammo": "?",
-      "reload": "3.0s (Empty) / 2.0s (Tactical) 2.40s (Empty /w Angled Grip) / 1.5s (Tactical /w ",
+      "reload": "3.0s (Empty) / 2.0s (Tactical) 2.40s (Empty /w Angled Grip) / 1.5s (Tactical /w Angled Grip)",
       "users": [
         "Dokkaebi",
         "Vigil",
@@ -2179,7 +2237,7 @@
       "adsClass": "LMG",
       "mobility": 50,
       "magazine": "100",
-      "maxammo": "100+201 (PVP) / 100+300 (Terrorist Hunt) / 100+701 (Outbreak",
+      "maxammo": "100+201 (PVP) / 100+300 (Terrorist Hunt) / 100+701 (Outbreak)",
       "reload": "8.5s",
       "users": [
         "Fuze",
@@ -2262,7 +2320,7 @@
       "mobility": 50,
       "magazine": "10+1",
       "maxammo": "11+40 (PVP) / 11+70 (Training Grounds) / 11+110 (Outbreak)",
-      "reload": "2.808s (Tactical) / 3.376s (Empty)}} The SASG-12 is a weapon featured in Tom Cla",
+      "reload": "2.808s (Tactical) / 3.376s (Empty)}} The SASG-12 is a weapon featured in Tom Clancy's Rainbow Six Siege. It is available",
       "users": [
         "Kapkan",
         "Finka",
@@ -3400,83 +3458,6 @@
       "art": "r6_images/weapons/w-ita12l.png"
     },
     {
-      "name": "USP40",
-      "type": "Handgun",
-      "fire": "Semi-automatic",
-      "damage": 48,
-      "damageModel": {
-        "mode": "ranged",
-        "pellets": null,
-        "close": {
-          "dmg": 48,
-          "range": [
-            0,
-            12
-          ]
-        },
-        "far": {
-          "dmg": 25,
-          "range": [
-            22,
-            null
-          ]
-        },
-        "suppressed": {
-          "close": {
-            "dmg": 41,
-            "range": [
-              0,
-              12
-            ]
-          },
-          "far": {
-            "dmg": 21,
-            "range": [
-              22,
-              null
-            ]
-          }
-        }
-      },
-      "ttk": {
-        "armor1": "267ms (0-18m) / 400ms (19+m)",
-        "armor2": "267ms (0-15m) / 400ms (16-20m) / 533ms (21+m)",
-        "armor3": "267ms (0-13m) / 400ms (14-19m) / 533ms (20+m)"
-      },
-      "ttkComputed": {
-        "shots": {
-          "armor1": 3,
-          "armor2": 3,
-          "armor3": 3
-        },
-        "basis": "close-range base damage, full-auto ROF",
-        "armor1Ms": 218,
-        "armor2Ms": 218,
-        "armor3Ms": 218
-      },
-      "rof": 550,
-      "adsMs": 200,
-      "adsClass": "H",
-      "mobility": 50,
-      "magazine": "12+1",
-      "maxammo": "13+48 (PVP) / 13+60 (Terrorist Hunt)",
-      "reload": "2.1s (Empty) / 1.8s (Tactical)",
-      "users": [
-        "Jackal",
-        "Mira",
-        "Oryx",
-        "Brava"
-      ],
-      "attachments": {},
-      "pros": [],
-      "cons": [],
-      "page": "USP",
-      "aliases": [
-        "USP40"
-      ],
-      "art": "r6_images/weapons/w-usp40.png"
-    },
-    {
       "name": "CSRX 300",
       "type": "Marksman Rifle",
       "fire": "",
@@ -3582,6 +3563,87 @@
         "SPSMG9"
       ],
       "art": "r6_images/weapons/w-spsmg9.png"
+    },
+    {
+      "name": "P226 Mk 25",
+      "type": "Handgun",
+      "fire": "Semi-automatic",
+      "damage": 50,
+      "damageModel": {
+        "mode": "ranged",
+        "pellets": null,
+        "close": {
+          "dmg": 50,
+          "range": [
+            0,
+            12
+          ]
+        },
+        "far": {
+          "dmg": 30,
+          "range": [
+            22,
+            null
+          ]
+        },
+        "suppressed": {
+          "close": {
+            "dmg": 42,
+            "range": [
+              0,
+              12
+            ]
+          },
+          "far": {
+            "dmg": 25,
+            "range": [
+              22,
+              null
+            ]
+          }
+        }
+      },
+      "ttk": {
+        "armor1": "133ms (0-11m) / 267ms (12-20m) / 400ms (21+m)",
+        "armor2": "267ms (0-17m) / 400ms (18+m)",
+        "armor3": "267ms (0-15m) / 400ms (16-21m) / 533ms (22+m)"
+      },
+      "ttkComputed": {
+        "shots": {
+          "armor1": 2,
+          "armor2": 3,
+          "armor3": 3
+        },
+        "basis": "close-range base damage, full-auto ROF",
+        "armor1Ms": 109,
+        "armor2Ms": 218,
+        "armor3Ms": 218
+      },
+      "rof": 550,
+      "adsMs": 200,
+      "adsClass": "H",
+      "mobility": 50,
+      "magazine": "15+1",
+      "maxammo": "16+45 (PVP) / 16+120 (Terrorist Hunt) / 16+150 (Outbreak)",
+      "reload": "2.1s (Empty) / 1.8s (Tactical)",
+      "users": [
+        "Sledge",
+        "Thatcher",
+        "Smoke",
+        "Mute",
+        "Kali",
+        "Tubarão",
+        "Denari"
+      ],
+      "attachments": {},
+      "pros": [],
+      "cons": [],
+      "page": "P226",
+      "aliases": [
+        "P226 Mk 25",
+        "P226 Mk25"
+      ],
+      "art": "r6_images/weapons/w-p226mk25.png"
     },
     {
       "name": "V308",
@@ -5594,7 +5656,7 @@
       "mobility": 50,
       "magazine": "6+1",
       "maxammo": "7+30 (PVP) / 7+65 (Training Grounds)",
-      "reload": "3.193s (Tactical) / 2.089s (Empty)}} The SPAS-15 is a shotgun featured in Tom Cl",
+      "reload": "3.193s (Tactical) / 2.089s (Empty)}} The SPAS-15 is a shotgun featured in Tom Clancy's Rainbow Six Siege, introduced in ",
       "users": [
         "Caveira",
         "Thunderbird"
@@ -6032,7 +6094,7 @@
       "mobility": 50,
       "magazine": "10+1",
       "maxammo": "11+40",
-      "reload": "2.34s (Tactical) / 3.293s (Empty)}} The FO-12 is a shotgun featured in Tom Clanc",
+      "reload": "2.34s (Tactical) / 3.293s (Empty)}} The FO-12 is a shotgun featured in Tom Clancy's Rainbow Six Siege, introduced in the",
       "users": [
         "Ela"
       ],

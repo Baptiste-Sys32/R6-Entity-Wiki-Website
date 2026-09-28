@@ -30,8 +30,7 @@ const KNOWN_ALIASES = {
   'AUG A3': 'AUG',
   'M249 SAW': 'M249',
   '9x19VSN': '9×19VSN',
-  'USP 40': 'P226',
-  'SMG11': 'SMG-11',
+  'USP 40': 'USP',
 };
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -112,7 +111,7 @@ function num(text, re) {
   return m ? Number(m[1]) : null;
 }
 
-function parseWeapon(title, wt) {
+function parseWeapon(title, wt, want) {
   let siege = siegeSection(wt);
   if (!siege) {
     const tab = String(wt).match(/\|-\|\s*Siege\s*=([\s\S]*?)(?=\|-\||<\/tabber>)/i);
@@ -157,6 +156,47 @@ function parseWeapon(title, wt) {
       base: Number(flatMatch[1]),
     } : null;
   const rof = num(field(siege, 'rate of fire'), /(\d+)\s*RPM/i);
+  // Multi-variant infoboxes (M249 / M249 SAW on one page): header markers
+  // '''<u>VARIANT</u>''' or <small>(VARIANT)</small> suffixes. Values are
+  // sliced per requested loadout name so each entry carries its own stats.
+  const wnorm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const variantHeaders = [...new Set(
+    [...siege.matchAll(/'''<u>([^<]+)<\/u>'''/gi)].map((m) => strip(m[1]).trim()).filter(Boolean)
+  )].slice(0, 4);
+  const variantKey = [want, d('name'), title].map(wnorm).find((k) => variantHeaders.some((h) => wnorm(h) === k)) || null;
+  const cleanSeg = (s) => strip(s).replace(/[<>]/g, '').replace(/\s+/g, ' ').trim();
+  const variantSlice = (raw) => {
+    // Split BEFORE stripping: markers live in raw markup.
+    const segs = String(raw || '').split(/<br[^>]*>/i).map((s) => s.trim()).filter(Boolean);
+    if (!segs.length) return '';
+    // Explicit per-segment (VARIANT) suffix markers win when present —
+    // either bare "(VAR)" or "<small>(VAR)</small>" wrapped.
+    const markerOf = (s) => {
+      const m = s.match(/<small>\s*\(([^()<>]{1,40})\)\s*<\/small>\s*$/i)
+        || s.match(/\(\s*([^()<>]{1,40})\s*\)\s*$/);
+      return m ? m[1] : null;
+    };
+    const stripMarker = (s) => s.replace(/<small>\s*\([^()<>]{1,40}\)\s*<\/small>\s*$/i, '').replace(/\(\s*[^()<>]{1,40}\s*\)\s*$/, '');
+    if (variantKey) {
+      const marked = segs.filter((s) => {
+        const m = markerOf(s);
+        return m && wnorm(m) === variantKey;
+      });
+      if (marked.length) return marked.map((s) => cleanSeg(stripMarker(s))).filter(Boolean).join(' / ');
+    }
+    if (!variantHeaders.length || !variantKey) {
+      return segs.map(cleanSeg).filter(Boolean).join(' / ');
+    }
+    let current = null;
+    const kept = [];
+    for (const s of segs) {
+      const h = s.match(/<u>\s*([^<>]+?)\s*<\/u>/i);
+      const rest = s.replace(/'''<u>.*?<\/u>'''/gi, '').replace(/<u>.*?<\/u>/gi, '').trim();
+      if (h && !rest.replace(/'''/g, '').trim()) { current = wnorm(strip(h[1])); continue; }
+      if (!current || current === variantKey) kept.push(s);
+    }
+    return kept.map(cleanSeg).filter(Boolean).join(' / ');
+  };
   const adsMatch = field(siege, 'adstime').match(/\{\{ADS\|([A-Z]+)/);
   const attachRaw = siege.match(/\{\{WeaponAttachments([\s\S]*?)\}\}/);
   const attachments = {};
@@ -179,6 +219,7 @@ function parseWeapon(title, wt) {
   return {
     name: (() => { const n = d('name'); return n && !/[{}]/.test(n) && n.length <= 60 ? n : title; })(),
     type: d('type').split('|')[0].trim().slice(0, 40) || 'Unknown',
+    variantHeaders,
     fire: d('fire'),
     damage: damage && damage.base !== undefined ? damage.base : (damage ? damage.close.dmg : null),
     damageModel: damage,
@@ -194,9 +235,9 @@ function parseWeapon(title, wt) {
     rof, adsMs: adsMatch ? (ADS_MS[adsMatch[1]] || null) : null,
     adsClass: adsMatch ? adsMatch[1] : null,
     mobility: num(field(siege, 'mobility'), /(\d+)/),
-    magazine: d('magazine'),
-    maxammo: strip(field(siege, 'maxammo')).slice(0, 60),
-    reload: strip(field(siege, 'reloadtime')).slice(0, 80),
+    magazine: variantSlice(field(siege, 'magazine')).slice(0, 24),
+    maxammo: variantSlice(field(siege, 'maxammo')).slice(0, 120),
+    reload: variantSlice(field(siege, 'reloadtime')).slice(0, 120),
     users, attachments,
     pros: bullets(pros), cons: bullets(cons),
     imageFile,
@@ -275,6 +316,7 @@ async function main() {
   const seenPages = new Set();
   const pageOwner = new Map();
   const redirectPages = new Set();
+  const variantEntries = new Set();
   // Merge-guard: a flaky run must never shrink the dataset. Names that fail
   // this run keep their previous entry (warned as stale).
   let previous = [];
@@ -323,22 +365,48 @@ async function main() {
         else console.warn(`sync-weapons: no siege page for "${name}", kept previous entry (stale)`);
         continue;
       }
-      const parsed = parseWeapon(resolved.title, resolved.wt);
+      const parsed = parseWeapon(resolved.title, resolved.wt, name);
       if (!parsed || (parsed.damage === null && !parsed.damageModel)) {
         if (!carryStale(name)) console.warn(`sync-weapons: no stats for "${name}" (page ${resolved.title})`);
         else console.warn(`sync-weapons: no stats for "${name}" (page ${resolved.title}), kept previous entry (stale)`);
         continue;
       }
       if (seenPages.has(resolved.title)) {
-        // Same page, different loadout name (M249 SAW→M249, Luison→PRB92):
-        // merge as alias so operator rows link to the sheet.
+        // Same page, different loadout name: merge as alias — UNLESS the
+        // page serves a distinct variant for this name (M249 SAW vs M249),
+        // which gets its own entry with variant-sliced values.
         const owner = pageOwner.get(resolved.title);
+        const wnorm2 = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+        const ownerNames = owner ? [owner.name, ...(owner.aliases || [])].map(wnorm2) : [];
+        const wantVariant = (parsed.variantHeaders || []).find((h) => wnorm2(h) === wnorm2(name));
+        if (parsed && owner && wantVariant && !ownerNames.includes(wnorm2(name))) {
+          parsed.page = resolved.title;
+          parsed.name = name;
+          parsed.aliases = [name];
+          // Share the owner's render (one clean pic per page).
+          parsed.art = owner.art || null;
+          delete parsed.imageFile;
+          delete parsed.variantHeaders;
+          weapons.push(parsed);
+          variantEntries.add(parsed);
+          pageOwner.set(`${resolved.title}#${wnorm2(name)}`, parsed);
+          console.log(`sync-weapons: variant entry ${parsed.name} on page ${resolved.title}`);
+          continue;
+        }
         if (owner && !owner.aliases.includes(name)) owner.aliases.push(name);
         else console.warn(`sync-weapons: "${name}" shares page ${resolved.title}, skipping duplicate`);
         continue;
       }
       seenPages.add(resolved.title);
       parsed.page = resolved.title;
+      // Name the entry after the matching page variant when the loadout
+      // name is one (M249 SAW first-seen still yields an SAW entry).
+      const wnorm3 = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+      const firstVariant = (parsed.variantHeaders || []).find((h) => wnorm3(h) === wnorm3(name));
+      if (firstVariant) {
+        parsed.name = name;
+        variantEntries.add(parsed);
+      }
       parsed.aliases = [name];
       if (resolved.viaRedirect) redirectPages.add(resolved.title);
       pageOwner.set(resolved.title, parsed);
@@ -354,6 +422,7 @@ async function main() {
         parsed.art = rel;
       }
       delete parsed.imageFile;
+      delete parsed.variantHeaders;
       const existing = weapons.find((w) => w.name === parsed.name && w.name !== name);
       if (existing) existing.aliases = [...(existing.aliases || [existing.name]), name];
       weapons.push(parsed);
@@ -375,11 +444,18 @@ async function main() {
   }
   const consolidated = [];
   for (const [page, group] of byPage) {
-    if (group.length === 1) { consolidated.push(group[0]); continue; }
-    group.sort((a, b) => ((loadoutNames.has(String(b.name).toLowerCase()) ? 1 : 0) - (loadoutNames.has(String(a.name).toLowerCase()) ? 1 : 0)));
-    const keep = group[0];
-    const merged = [...new Set(group.flatMap((g) => [g.name, ...(g.aliases || [])]))];
-    if (group.length > 1) console.log(`sync-weapons: consolidated ${group.length} entries on page ${page} -> ${keep.name} (aliases ${merged.join('/')})`);
+    // Variant entries (M249 SAW beside M249) are distinct sheets — never
+    // re-merge them; consolidate only the non-variant remainder.
+    for (const g of group) {
+      if (variantEntries.has(g)) consolidated.push(g);
+    }
+    const rest = group.filter((g) => !variantEntries.has(g));
+    if (rest.length <= 1) { consolidated.push(...rest); continue; }
+    const group2 = rest;
+    group2.sort((a, b) => ((loadoutNames.has(String(b.name).toLowerCase()) ? 1 : 0) - (loadoutNames.has(String(a.name).toLowerCase()) ? 1 : 0)));
+    const keep = group2[0];
+    const merged = [...new Set(group2.flatMap((g) => [g.name, ...(g.aliases || [])]))];
+    console.log(`sync-weapons: consolidated ${group2.length} entries on page ${page} -> ${keep.name} (aliases ${merged.join('/')})`);
     keep.aliases = merged;
     consolidated.push(keep);
   }
