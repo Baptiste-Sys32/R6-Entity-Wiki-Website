@@ -1,0 +1,730 @@
+{
+  "generatedAt": "2026-09-28T22:12:01.090Z",
+  "metadata": {
+    "sources": {
+      "ubisoft": "operator pages (video IDs only)",
+      "fandom": "EmbedVideo tags (CC-BY-SA)"
+    },
+    "operators": 64
+  },
+  "entries": {
+    "r6-ace": [
+      {
+        "youtubeId": "c41qhi9Pi5A",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4rCaW9Bh3xffQFRNwWRijz/f79d047cdc318ca8e00dff181dd4d7da/r6s-operators-ability-ace.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-amaru": [
+      {
+        "youtubeId": "4UhbBRklPBQ",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Z41RQJD8qwY6GrmL6RNih/909d458f36762e921090b8901ab323b9/operator-video-ability-amaru.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-ash": [
+      {
+        "youtubeId": "SNWqmPCJyBw",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/ER5JyE5KirFa0lpTYxRmv/e7b626f35790d4c2b7c6efd1aa754e28/r6s_ash_watch_out_traps.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-blackbeard": [
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4vqZbu81Gncpt5GQPxy3So/93a4e532ee86cb543fe2df8a1763041d/r6s-blackbeard-hull-gadget-video.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-blitz": [
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4kdZUaHnwqRC6TqdmklGrn/cd99884bba8c0c5bff5f4a4236a7d803/operator-video-small-blitz.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-brava": [
+      {
+        "youtubeId": "JZsdGXuIsbw",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2NPnWceJXOniZoNibJLmo4/6cb46cd3df362c459ec6854d59791b4f/Brava-gameplay.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-buck": [
+      {
+        "youtubeId": "EekYZeaUrx8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-deimos": [
+      {
+        "youtubeId": "P5OKSXTiBXg",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3uWi5g48EZGIcBPgLbWvPJ/ffb9907a65950f02a36a7af06d5c00b5/R6S_DeadlyOmen_OperatorGameplay_h264-100-.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-dokkaebi": [
+      {
+        "youtubeId": "FcrrAm4dlGQ",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3M4hl7azUfgAzfRFrkKkst/b4435b76f64ce6c8c970df7533a9a334/Y11s2_Broll_Dokkaebi.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-flores": [
+      {
+        "youtubeId": "xHuz2Q3NIEE",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/51iAUL6UbOJ9jRY2lp5NT2/9f8330de5e4ca7245e5596bb8bfc21d5/r6s-operators-ability-flores.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-fuze": [
+      {
+        "youtubeId": "isc7ixUnzCc",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7mlmwgoGhY1tBvwn0NoUdB/2f7c8b18e7eea5a8f69f79ca25b0eaac/r6s_fuze_clear_room.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-glaz": [
+      {
+        "youtubeId": "HbwhAi0l3KQ",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6TGw9lN2Dzb5EJ1Buvrq3T/1d7eeaed78abd59f9016142ebae1ffb9/r6s_glaz_easy_targets.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-gridlock": [
+      {
+        "youtubeId": "y94HzpWgXus",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/I21KRxTDcUVU6v8z7SnkT/b3bd59da3e019869b54cad30fe67d3df/operator-video-ability-gridlock.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-grim": [
+      {
+        "youtubeId": "ZbKu0aASDK8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/ygOFh2ul9jAjYOw8GMh1b/48ebb1e9eea40c5b0d9c7ecdfb277537/r6s-y7s3-gadget-grim.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-hibana": [
+      {
+        "youtubeId": "4gNbU1Eie8A",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-iana": [
+      {
+        "youtubeId": "3FKq0Ep6RI8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dwRdYmg4M9CWvpV0aBZKe/88eb494cbbb74a9fd974131703d7e5a9/r6s-operator-video-ability-iana.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-iq": [
+      {
+        "youtubeId": "E8l2Yx2Nbuc",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5tVtlDf6EkUi6QmuQsivzV/6810dd2fd334fe55b0a46160622f8af8/operator-video-small-iq.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-kali": [
+      {
+        "youtubeId": "6bVjjm1XbDM",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/eo8MVlM46BQTvyHHg5i62/bfe03605a103a85da72fb1d8fe0050fe/operator-video-ability-kali.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-maverick": [
+      {
+        "youtubeId": "azBGjLrWwSs",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7jsUU7z2wTQ6bAG6ofjFlX/b0a6810ed67fad70484893afa5aa2cf9/operator-video-small-maverick.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-montagne": [
+      {
+        "youtubeId": "uSr2c6UpXWM",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-nomad": [
+      {
+        "youtubeId": "GRss1JtrX8g",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1kcMQ6vWHj3oqVSCHTAhkF/9a7b1bd271c4d1130165e7e0157370f3/operator-video-ability-nomad.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-n-kk": [
+      {
+        "youtubeId": "zoRWqiIjUR0",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3NddXWdwEF6sYub9Pt63Gq/f69772f14b6f8dc24f9a45e8fad2e0a6/operator-video-ability-nokk.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-osa": [
+      {
+        "youtubeId": "6ubP14b_yDE",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5cGk3DSckaCIiUx6kBuyJV/9fdd5a3528c4691ecc4a75529e6286a1/Y6S3-Reveal-Osa.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-ram": [
+      {
+        "youtubeId": "VqPQJL_tIio",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3FEecjJZa4Sa0wR4aW76PO/fa3f6b707bcf40f792c7e53567dd8a48/ram-gameplay.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-rauora": [
+      {
+        "youtubeId": "JwV8C1703s8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5WIsDpdl4JwnQeYlo3VhZB/e5cb9fbaac4beff461d08fca8bdeef6d/r6s-rauora-gadget.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-sens": [
+      {
+        "youtubeId": "SIJplrr8Xgc",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3CoJVFW7BwPxkkFcB5P3Fe/5f6b34ba03367d6e68fdb4691c6d103b/r6s-y7s2-gadget-sens.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-sledge": [
+      {
+        "youtubeId": "ybhzh5F7rzU",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/42IbZVibE8aAimevbRMUQ6/f7dd5be1c2112c6dff65b425bcf0d3bb/r6s_sledge_not_only_for.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-solid-snake": [
+      {
+        "youtubeId": "AAbyOXDwRXM",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5xiVkjMOQN2hYG9fftvR4T/b1bf901f19631a36a590a0d1004f5f53/r6s-solid-snake-gadget.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-thatcher": [
+      {
+        "youtubeId": "hHx9VvaM4iQ",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7H8wNxJYs5bhhjFafrwiNq/418b87f0ec1f4137053e765d5099df01/R6S-thatcher-unique-ability.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-thermite": [
+      {
+        "youtubeId": "94QF3hEJq04",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1YiGxi4Ww00oKMzUfxbjjG/b7c7ad0655ac26f1e01608d63dc44efd/r6s_thermite_watch_out.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-twitch": [
+      {
+        "youtubeId": "xEuaxniVNV4",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4outxBi6kzlaCqL5ZePzjq/0af9d55742197df7be6b51e143228751/r6s_twitch_be_careful.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-zero": [
+      {
+        "youtubeId": "I6hswz4rIrU",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2iRHKIAC76x299OxwRGklm/dc7decd84f5ae80e454acb1792253518/r6s-operators-ability-zero.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-alibi": [
+      {
+        "youtubeId": "HFDpxnXfMHc",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2q6eWD2lvlPIOMz16uIxRD/a5ad8e11efe6816541506e826b0546ca/operator-video-small-alibi.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-aruni": [
+      {
+        "youtubeId": "7LLwRc0EUp8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2jVFWfAqjBIOyWUkivMP6t/bd593174c2ba4f6ab5e80f349ddab8e7/r6s-operators-ability-aruni.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-azami": [
+      {
+        "youtubeId": "ou1HLpJXTb8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1epRQrJs3dYg9LB4re6PfU/a2f986c1a831cd838009d1b8d8dae8e2/AzamiLoadout.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-bandit": [
+      {
+        "youtubeId": "KHV_mpFnfcU",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7oNJ1wpqeQ7LPceCiyl4Gz/4bd79793aeb9988df1ccf344729629ed/r6s_bandit_protect_your_batteries.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-castle": [
+      {
+        "youtubeId": "4Ng1Zg8WlMc",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-clash": [
+      {
+        "youtubeId": "j2Xu_0t6Cpc",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2ZvHC2WSBtJr0vbkqmDgMe/404cda1f079851b01bd761f4377cfcdb/r6s-ops-clash-gameplay.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-denari": [
+      {
+        "youtubeId": "FPo3A1TwHOk",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5WnjlMwCCC6FhgmqFIcBeW/ff95ec4eca3b5360f07af43c69e230ef/r6s-ops-denari-gameplay.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-doc": [
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6xDPUNLR00b0Gylx34vrwA/c58c6a0781dccd422fe965b3ab2830fc/operator-video-small-doc.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-fenrir": [
+      {
+        "youtubeId": "QmFQRLoL2kA",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/333z0i5WIXJFueKR80lGKm/51d38bebefa77cc1ce3a3cb82fcdd331/fenrir-gameplay.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-frost": [
+      {
+        "youtubeId": "GAQEsRmoJvk",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-goyo": [
+      {
+        "youtubeId": "4UhbBRklPBQ",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/61IYCzL0OtdtXYbf8aPx4Z/5372fb68d509cb090e283a2b4ff6115f/operator-video-ability-goyo.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-j-ger": [
+      {
+        "youtubeId": "v5JSiwSi6g8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ZTAhQyKCmscsWGM3CEH4y/2e0f28cf17ae573f0722725882e889b3/r6s_jager_see_without_being_seen.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-kaid": [
+      {
+        "youtubeId": "B8brHA-qSy0",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3x2xgD4LJBv0Axols1G5Rt/422c564586a55d900495264f3f2eca1f/operator-video-ability-kaid.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-kapkan": [
+      {
+        "youtubeId": "xx1tSUC9Ig4",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4mVAh5FxWRnIs0X0bmBMzd/43eb1d106a48d9705e1f8b86c199fa7c/r6s_kapkan_beware_friendly_gadgets.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-maestro": [
+      {
+        "youtubeId": "L2is383hoHY",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3XJ5xwPsx1Y4as985VxbWY/9f13e6f58a1083acbdffaa6828b46b2e/operator-video-small-maestro.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-melusi": [
+      {
+        "youtubeId": "c41qhi9Pi5A",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2I6t9t924hZKZvhlbEGb85/b16aa9f3d097a8060c4eea797a4a4583/r6s-operators-ability-melusi.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-mozzie": [
+      {
+        "youtubeId": "Nymp-HB4kgU",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2DulpZTbf5wwXoMgT3IH35/82b4a6f074ede5233675a73c0c230164/operator-video-ability-mozzie.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-mute": [
+      {
+        "youtubeId": "JAljvCbVM1g",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/zNSlr11cDmcIgdPpyYE7n/443e191556ce708e3e3c491e929b86c1/r6s_castle_mute_castle_combo.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-noor": [
+      {
+        "youtubeId": "CFDgjIh4BOs",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3nz5x0b5Lr7QWw60wToujg/5ed96cc860b14502df77b548a1e26716/Noor_7_Seconds_Option1__1_.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-oryx": [
+      {
+        "youtubeId": "3FKq0Ep6RI8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7Lv7Hm84Cv2zAATm0qxKl6/6666f80f6b9240291d9257de0f831c47/r6s-operator-video-ability-oryx.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-pulse": [
+      {
+        "youtubeId": "s_j-K3gSFdM",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/9NIEp9XnRzHFUTH2DFVng/aa9bd30764dcca7c81ee5ddae704b67f/r6s_pulse_scanner_runs_on_batteries.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-rook": [
+      {
+        "youtubeId": "-q2ZfpRCwh4",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/GvnPsPrEFDBLkoLlrFoH2/86f2a9b0b8cd18155ccd5336f1d1179f/r6s_rook_protection_against_bullets.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-skop-s": [
+      {
+        "youtubeId": "_MAD2DiS1qU",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2ElqEbqVNV8hhF8G50t6vB/4a59561d80b93f2bb531b916005c3978/r6s-y9s3-gadget-skopos.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-smoke": [
+      {
+        "youtubeId": "3B1wIBrjmPM",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dWBrmTjwwipSugmn8zvj1/074ac9ad21c160b5a0b110a95f5fdcc6/operator-video-small-smoke.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-solis": [
+      {
+        "youtubeId": "KdmUOcr7sN8",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4uPZqzQtxhCYLFf51YTbnO/270df78e1943f95331db952363bd8539/SOLIS_GAMEPLAY.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-tachanka": [
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/617gxI7a5kE70CN7h60Cmp/199e23b2062d1b6dc0151ecd88e6f61d/R6s_Tachankarework_Ubinews_Vfinal.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-thorn": [
+      {
+        "youtubeId": "5Y10o3fJNqc",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2es2rXTTKTEHm1810hp5fG/f468ee4a95045374b65c211fadadbdd5/r6s-y6s4-gadget-thorn.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-thunderbird": [
+      {
+        "youtubeId": "DDJI2VcyL-g",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6F0f7WolcXU6DCogAT1Oi0/171b86a6523863b4aefc984d3e772176/r6s-operators-ability-thunderbird.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-tubar-o": [
+      {
+        "youtubeId": "vxNifljKK5o",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/76d6XlMAYXGfHUfH6LpLHA/f2d9763ba3824289cde0eac356ea73c7/tubarao-gameplay.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-valkyrie": [
+      {
+        "youtubeId": "VTqJ0g5u3Tw",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-wamai": [
+      {
+        "youtubeId": "6bVjjm1XbDM",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6izim9nsDTt9T4gQWdAnwi/c8e87851ff8f80119f46aa8adb1069f9/operator-video-ability-wamai.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ],
+    "r6-warden": [
+      {
+        "youtubeId": "qpZBD30L7fo",
+        "label": "Operator guide",
+        "source": "ubisoft"
+      },
+      {
+        "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4l4VWMVzRV2BNl6RZiw3np/b4dd3baeddef41ef4ba00978cf6c51c2/operator-video-ability-warden.mp4",
+        "label": "Ability preview",
+        "source": "ubisoft"
+      }
+    ]
+  }
+}
