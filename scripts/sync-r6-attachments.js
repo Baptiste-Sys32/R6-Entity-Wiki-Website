@@ -15,6 +15,25 @@ const API = 'https://rainbowsix.fandom.com/api.php';
 const UA = 'R6-Siege-Wiki-Sync/0.1 (fan wiki content sync; contact via repo issues)';
 const SLEEP_MS = 350;
 
+// Pinned user-supplied schematics (vendored under review/local-assets/):
+// the wiki hosts no white icons for grips/barrels, and the user's NATO
+// variants are canonical. Wiki can never clobber these; resyncs converge.
+const ATTACH_ART_OVERRIDES = {
+  'r6-attach-scope-1-5x': { local: 'review/local-assets/attach-scope-1-5x.webp' },
+  'r6-attach-scope-2-5x': { local: 'review/local-assets/attach-scope-2-5x.webp' },
+  'r6-attach-telescopic-a': { local: 'review/local-assets/attach-telescopic-a.webp' },
+  'r6-attach-scope-3-0x': { local: 'review/local-assets/attach-scope-3-0x.webp' },
+  'r6-attach-holographic-sight': { local: 'review/local-assets/attach-holographic.webp' },
+  'r6-attach-red-dot-sight': { local: 'review/local-assets/attach-red-dot.webp' },
+  'r6-attach-reflex-sight': { local: 'review/local-assets/attach-reflex.webp' },
+  'r6-attach-muzzle-brake': { local: 'review/local-assets/attach-muzzle-brake.webp' },
+  'r6-attach-flash-hider': { local: 'review/local-assets/attach-flash-hider.webp' },
+  'r6-attach-compensator': { local: 'review/local-assets/attach-compensator.webp' },
+  'r6-attach-suppressor': { local: 'review/local-assets/attach-suppressor.webp' },
+  'r6-attach-vertical-grip': { local: 'review/local-assets/attach-vertical-grip.webp' },
+  'r6-attach-angled-grip': { local: 'review/local-assets/attach-angled-grip.webp' },
+};
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function apiGet(params) {
@@ -77,8 +96,14 @@ function blockField(block, n) {
 }
 
 function hudFileOf(markup) {
-  const m = String(markup).match(/\[\[(?:File:)?([^\]|]+\.(png|jpg|jpeg|webp))/i);
-  return m ? m[1].trim() : null;
+  const text = String(markup || '');
+  // [[File:X.ext|...]] form.
+  const linked = text.match(/\[\[(?:File:)?([^\]|]+\.(png|jpg|jpeg|webp))/i);
+  if (linked) return linked[1].trim();
+  // Bare filename ("R6S Compensator.jpeg") or first file line inside a
+  // <gallery> block. Skips markup-only lines.
+  const bare = text.match(/^([^|\s][^|\n]*\.(png|jpg|jpeg|webp))/im);
+  return bare ? bare[1].trim() : null;
 }
 
 function parseAttachment(title, wt) {
@@ -172,10 +197,20 @@ async function main() {
       }
       for (const entry of parsed) {
         entry.id = `r6-attach-${entry.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+        const file = entry.image;
         entry.image = null;
+        const pinned = ATTACH_ART_OVERRIDES[entry.id];
+        if (pinned?.local) {
+          manifest[`r6_images/attachments/${entry.id}.png`] = { local: pinned.local };
+          entry.image = `r6_images/attachments/${entry.id}.png`;
+          delete entry.hud;
+          delete entry.picked;
+          attachments.push(entry);
+          continue;
+        }
         // Infobox HUD icon first (white schematic), then page-wide HUD
         // icon, then infobox image. Gallery/IRL junk is never art.
-        const picked = entry.hud || iconByTitle[title] || entry.image;
+        const picked = entry.hud || iconByTitle[title] || file;
         if (picked && (/^<gallery/i.test(picked) || /IRL\.(jpeg|jpg|png)$/i.test(picked))) {
           entry.picked = null;
         } else {

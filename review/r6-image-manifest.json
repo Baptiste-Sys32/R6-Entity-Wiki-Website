@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T08:29:58.491Z",
+  "generatedAt": "2026-09-29T13:18:00.090Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -2968,52 +2968,43 @@
       "width": 200
     },
     "r6_images/attachments/r6-attach-angled-grip.png": {
-      "file": "R6S Angled Grip.jpeg",
-      "width": 200
+      "local": "review/local-assets/attach-angled-grip.webp"
     },
     "r6_images/attachments/r6-attach-compensator.png": {
-      "file": "R6S Compensator.jpeg",
-      "width": 200
+      "local": "review/local-assets/attach-compensator.webp"
     },
     "r6_images/attachments/r6-attach-extended-barrel.png": {
       "file": "R6S Extended Barrel.jpeg",
       "width": 200
     },
     "r6_images/attachments/r6-attach-flash-hider.png": {
-      "file": "R6S Flash Hider.jpeg",
-      "width": 200
+      "local": "review/local-assets/attach-flash-hider.webp"
     },
     "r6_images/attachments/r6-attach-flashlight.png": {
       "file": "Siege Flashlight.jpeg",
       "width": 200
     },
     "r6_images/attachments/r6-attach-holographic-sight.png": {
-      "file": "Holographic Sight MH1 HUD Icon R6S.png",
-      "width": 200
+      "local": "review/local-assets/attach-holographic.webp"
     },
     "r6_images/attachments/r6-attach-laser-sight.png": {
       "file": "Laser sight.png",
       "width": 200
     },
     "r6_images/attachments/r6-attach-muzzle-brake.png": {
-      "file": "R6S Muzzle Brake.jpeg",
-      "width": 200
+      "local": "review/local-assets/attach-muzzle-brake.webp"
     },
     "r6_images/attachments/r6-attach-red-dot-sight.png": {
-      "file": "Red Dot Sight M4S HUD Icon R6S.png",
-      "width": 200
+      "local": "review/local-assets/attach-red-dot.webp"
     },
     "r6_images/attachments/r6-attach-reflex-sight.png": {
-      "file": "Reflex Sight NATO HUD Icon R6S.png",
-      "width": 200
+      "local": "review/local-assets/attach-reflex.webp"
     },
     "r6_images/attachments/r6-attach-suppressor.png": {
-      "file": "R6S Suppressor.jpeg",
-      "width": 200
+      "local": "review/local-assets/attach-suppressor.webp"
     },
     "r6_images/attachments/r6-attach-vertical-grip.png": {
-      "file": "Vertical Grip Standard.png",
-      "width": 200
+      "local": "review/local-assets/attach-vertical-grip.webp"
     },
     "r6_images/tips/r6-ash-1.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75t7NR33Wx6QqE6GSjX4Bl/0415cdad52a25604ee9eec90a849b5d0/mqdefault.jpg",
@@ -8796,23 +8787,23 @@
       "width": 400
     },
     "r6_images/attachments/r6-attach-scope-1-5x.png": {
-      "file": "Scope 1.5x HUD Icon R6S.png",
-      "width": 200
+      "local": "review/local-assets/attach-scope-1-5x.webp"
     },
     "r6_images/attachments/r6-attach-acog-sight.png": {
       "file": "ACOG Sight NATO HUD Icon R6S.png",
       "width": 200
     },
     "r6_images/attachments/r6-attach-telescopic-a.png": {
-      "file": "Scope 2.0x HUD Icon R6S.png",
-      "width": 200
+      "local": "review/local-assets/attach-telescopic-a.webp"
     },
     "r6_images/attachments/r6-attach-scope-3-0x.png": {
-      "file": "Scope 3.0x HUD Icon R6S.png",
-      "width": 200
+      "local": "review/local-assets/attach-scope-3-0x.webp"
     },
     "r6_images/attachments/r6-attach-scope-2-5x.png": {
-      "file": "ACOG Sight NATO HUD Icon R6S.png",
+      "local": "review/local-assets/attach-scope-2-5x.webp"
+    },
+    "r6_images/attachments/r6-attach-laser.png": {
+      "file": "Laser sight.png",
       "width": 200
     }
   }
