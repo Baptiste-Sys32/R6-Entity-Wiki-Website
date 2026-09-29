@@ -138,6 +138,10 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   Scope 3.0x, ACOG tab yields Scope 2.5x (all HUD-icon schematics);
   Horizontal Grip stub parses thin. Attachments page grouped into
   Sights & Scopes / Grips / Under Barrel / Barrel tables.
+- **Op attachment tables (2026-09-29)**: every operator sheet shows
+  Barrel / Scopes / Side tables (union of compat across its firearms;
+  Side is laser-only, sourced from weapon-side laser flags since no
+  attachment-side Laser compat list exists upstream).
 - **Attachment art sources (2026-09-29)**: sights/scopes all have white
   HUD-icon schematics upstream; grips/barrel/underbarrel have NO
   schematic files anywhere on the wiki (File-namespace search
