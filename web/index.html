@@ -81,6 +81,16 @@
     .sq-img, .sq-img > div { border-radius: 0 !important; }
     .sq-img img { border-radius: 0 !important; }
     .cx-infobox .cx-ib-media, .cx-infobox .cx-ib-media * { border-radius: 0 !important; }
+    /* R6: schematic/diagram thumbs in tables — no box, bigger art that
+       fills the cell. Loadout cards use size="fill" (already borderless). */
+    table.cx-wikitable .sq-img div { background: none !important; border: none !important; box-shadow: none !important; }
+    table.cx-wikitable .sq-img > div { width: 112px !important; height: 84px !important; max-width: 112px !important; margin: 0 !important; }
+    table.cx-wikitable .sq-img img { width: 100% !important; height: 100% !important; object-fit: contain !important; }
+    table.cx-wikitable td:first-child { width: 128px; }
+    @media (max-width: 640px) {
+      table.cx-wikitable .sq-img > div { width: 84px !important; height: 64px !important; max-width: 84px !important; }
+      table.cx-wikitable td:first-child { width: 96px; }
+    }
   </style>
 </head>
 
@@ -192,6 +202,10 @@
       if (hit && hit.file) return `./${hit.file}`;
       return null;
     };
+    // Ubisoft ships dark-on-transparent art (made for light backgrounds);
+    // on our dark theme it renders as white line-art like in-game.
+    // Fandom full-color fallback renders must never invert.
+    const ubiInvert = (url) => (url && /r6_images\/ubi/.test(url) ? 'invert(1)' : undefined);
     const normPatchKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const patchesForSeason = (season) => {
       if (!season) return [];
@@ -522,7 +536,7 @@
           <button type="button" className="cx-alink font-semibold" onClick={() => setView('weapon', { id: fit.canon.name })}>{fit.weapon.name}</button>
         ) : fit.weapon.name;
         return (
-          <div className="mb-5">
+          <div className="mb-5" id={gunAnchorId(fit.weapon.name)}>
             <h3 className="cx-sub">{title}</h3>
             {fit.items.length ? <AttachTable items={fit.items} /> : <p className="text-sm" style={{ color: 'var(--muted)' }}>No attachable slots.</p>}
           </div>
@@ -586,43 +600,81 @@
           </div>
         </CxSection>
       );
+      const gunAnchorId = (name) => `attach-gun-${normWeaponKey(name)}`;
+      // Gun art click: expand Attachments and smooth-scroll to that gun's
+      // own block (same expand+scroll+retry pattern as TOC navigation).
+      const scrollToGun = (name) => {
+        const target = gunAnchorId(name);
+        try { window.dispatchEvent(new CustomEvent('cx-expand-section', { detail: 'attachments' })); } catch { /* private mode */ }
+        const go = () => {
+          if (typeof scrollToAnchor === 'function') { scrollToAnchor(target); return; }
+          const el = document.getElementById(target);
+          if (el) { try { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch { el.scrollIntoView(); } }
+        };
+        go();
+        setTimeout(go, 350);
+      };
       const loadoutNode = (op.weapons || []).length ? (
         <CxSection id="loadout" title="Loadout">
           {[['primary', 'Primaries'], ['secondary', 'Secondaries'], ['gadget', 'Gadgets']].map(([slot, label]) => {
             const items = (op.weapons || []).filter((w) => w.slot === slot);
             if (!items.length) return null;
             return (
-              <div key={slot} className="mb-4">
+              <div key={slot} className="mb-5">
                 <h3 className="cx-sub">{label}</h3>
-                {items.map((w, i) => (
-                  <div key={`${w.name}-${i}`} className="flex items-center gap-3 rounded-2xl p-2.5 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                    {slot === 'gadget' ? (
-                      (() => {
+                <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
+                  {items.map((w, i) => {
+                    const canon = slot === 'gadget' ? null : resolveWeapon(w.name);
+                    const img = slot === 'gadget'
+                      ? (() => {
                         const ubiIcon = ubiGadgetIcons.get(String(w.name).toLowerCase());
                         const gid = w.gadgetId && gadgetsById.get(w.gadgetId);
-                        const img = ubiIcon ? `./${ubiIcon}` : (gid && gid.image ? `./${gid.image}` : null);
-                        return img ? <span className="sq-img"><AssetFrame type="Gadget" imageUrl={img} /></span> : null;
+                        return ubiIcon ? `./${ubiIcon}` : (gid && gid.image ? `./${gid.image}` : null);
                       })()
-                    ) : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={(ubiGunImage(w.name) || ((slot !== 'gadget' && resolveWeapon(w.name) && resolveWeapon(w.name).image) ? `./${resolveWeapon(w.name).image}` : (w.image ? `./${w.image}` : null)))} /></span>}
-                    <span className="min-w-0 flex-1">
-                      {slot === 'gadget' && w.gadgetId && gadgetsById.get(w.gadgetId) ? (
-                        <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('gadget', { id: w.gadgetId })}>{w.name}</button>
-                      ) : slot === 'gadget' || !resolveWeapon(w.name) ? (
-                        <span className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{w.name}</span>
-                      ) : (
-                        <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('weapon', { id: resolveWeapon(w.name).name })}>{w.name}</button>
-                      )}
-                      {slot !== 'gadget' && resolveWeapon(w.name) ? (
-                        <span className="block text-xs" style={{ color: 'var(--muted)' }}>
-                          {[resolveWeapon(w.name).damage ? `${resolveWeapon(w.name).damage} DMG` : null, resolveWeapon(w.name).rof ? `${resolveWeapon(w.name).rof} RPM` : null, resolveWeapon(w.name).magazine || null].filter(Boolean).join(' · ')}
-                        </span>
-                      ) : null}
-                    </span>
-                  </div>
-                ))}
+                      : (ubiGunImage(w.name) || (canon && canon.image ? `./${canon.image}` : (w.image ? `./${w.image}` : null)));
+                    const nameNode = slot === 'gadget' && w.gadgetId && gadgetsById.get(w.gadgetId) ? (
+                      <button type="button" className="cx-alink font-semibold text-sm" onClick={() => setView('gadget', { id: w.gadgetId })}>{w.name}</button>
+                    ) : slot !== 'gadget' && canon ? (
+                      <button type="button" className="cx-alink font-semibold text-sm" onClick={() => setView('weapon', { id: canon.name })}>{w.name}</button>
+                    ) : (
+                      <span className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{w.name}</span>
+                    );
+                    const sub = slot === 'gadget' ? null : canon ? (
+                      <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>
+                        {[canon.type, canon.damage ? `${canon.damage} DMG` : null, canon.rof ? `${canon.rof} RPM` : null].filter(Boolean).join(' · ')}
+                      </span>
+                    ) : null;
+                    return (
+                      <div key={`${w.name}-${i}`} className="rounded-2xl p-3 text-center" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+                        <div className="font-semibold text-sm mb-2">{nameNode}</div>
+                        {slot === 'gadget' || !canon ? (
+                          img ? <span className="sq-img block w-full mx-auto" style={{ height: '140px', filter: ubiInvert(img) }}><AssetFrame type="Gadget" size="fill" imageUrl={img} /></span> : null
+                        ) : (
+                          <button type="button" onClick={() => scrollToGun(w.name)} title={`${w.name} attachments`} aria-label={`Jump to ${w.name} attachments`} className="sq-img block w-full mx-auto" style={{ height: '140px', cursor: 'pointer', filter: ubiInvert(img) }}>
+                            <AssetFrame type="Weapon" size="fill" imageUrl={img} />
+                          </button>
+                        )}
+                        {sub}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             );
           })}
+          <div className="mb-5">
+            <h3 className="cx-sub">Unique Ability</h3>
+            <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
+              <div className="rounded-2xl p-3 text-center" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+                <div className="font-semibold text-sm mb-2"><span style={{ color: 'var(--text)' }}>{powerName}</span></div>
+                {(ubi && ubi.power && ubi.power.icon) || op.gadgetIcon ? (
+                  <span className="sq-img block w-full mx-auto" style={{ height: '140px', filter: ubiInvert((ubi && ubi.power && ubi.power.icon) ? `./${ubi.power.icon}` : `./${op.gadgetIcon}`) }}>
+                    <AssetFrame type="Gadget" size="fill" imageUrl={(ubi && ubi.power && ubi.power.icon) ? `./${ubi.power.icon}` : `./${op.gadgetIcon}`} />
+                  </span>
+                ) : null}
+              </div>
+            </div>
+          </div>
         </CxSection>
       ) : null;
       return (
@@ -825,7 +877,7 @@
           <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{list.length} weapons</p>
           <table className="cx-wikitable"><thead><tr><th></th><th>Weapon</th><th>Type</th><th>Damage</th><th>Fire rate</th></tr></thead>
             <tbody>{list.map((w) => (
-              <tr key={w.name}><td><span className="sq-img"><AssetFrame type="Weapon" imageUrl={ubiGunImage(w.name) || (w.image ? `./${w.image}` : null)} /></span></td>
+              <tr key={w.name}><td><span className="sq-img" style={{ filter: ubiInvert(ubiGunImage(w.name) || (w.image ? `./${w.image}` : null)) }}><AssetFrame type="Weapon" imageUrl={ubiGunImage(w.name) || (w.image ? `./${w.image}` : null)} /></span></td>
                 <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('weapon', { id: w.name })}>{w.name}</button></td>
                 <td>{w.type || '—'}</td><td>{w.damage || '—'}</td><td>{w.rof ? `${w.rof} RPM` : '—'}</td></tr>
             ))}</tbody></table>
