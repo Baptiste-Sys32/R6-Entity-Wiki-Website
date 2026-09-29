@@ -23,6 +23,8 @@ const PATCHES_BUNDLE_PATH = path.join(ROOT, 'web', 'patches.js');
 const SKINS_PATH = path.join(ROOT, 'content', 'skins.json');
 const VIDEOS_PATH = path.join(ROOT, 'content', 'videos.json');
 const VIDEOS_BUNDLE_PATH = path.join(ROOT, 'web', 'videos.js');
+const UBI_GUNS_PATH = path.join(ROOT, 'content', 'ubi-guns.json');
+const UBI_GUNS_BUNDLE_PATH = path.join(ROOT, 'web', 'ubi-guns.js');
 
 const checkOnly = new Set(process.argv.slice(2)).has('--check');
 
@@ -320,7 +322,19 @@ function validateSkins(doc, operatorIds) {
   console.log(`build-data: skins ok (${n} items, data-only).`);
 }
 
-// Videos: YouTube IDs embed in How to Play; mp4s are outbound links only.
+// Ubisoft gun PNGs: every file must live under r6_images/ubi/ (downloaded,
+// never hotlinked). Abilities recorded alongside for the later upgrade.
+function validateUbiGuns(doc) {
+  if (!doc || typeof doc !== 'object' || !doc.guns) throw new Error('ubi-guns doc invalid');
+  let n = 0;
+  for (const [key, g] of Object.entries(doc.guns)) {
+    if (!g || typeof g.file !== 'string' || !g.file.startsWith('r6_images/ubi/')) {
+      throw new Error(`ubi-guns.${key} bad file (${g && g.file})`);
+    }
+    n += 1;
+  }
+  console.log(`build-data: ubi-guns ok (${n} aliases).`);
+}
 function validateVideos(entries, operatorIds) {
   if (!entries || typeof entries !== 'object') throw new Error('videos entries invalid');
   const ids = new Set(operatorIds);
@@ -374,6 +388,7 @@ function main() {
   const skinsDoc = fs.existsSync(SKINS_PATH) ? readJson(SKINS_PATH) : null;
   const videosDoc = fs.existsSync(VIDEOS_PATH) ? readJson(VIDEOS_PATH) : { entries: {} };
   const videos = videosDoc.entries || {};
+  const ubiGunsDoc = fs.existsSync(UBI_GUNS_PATH) ? readJson(UBI_GUNS_PATH) : null;
   const operatorIds = operators.map((op) => op.id);
   validateOperators(operators);
   validateMaps(maps);
@@ -386,6 +401,7 @@ function main() {
   validatePatches(patches);
   if (skinsDoc) validateSkins(skinsDoc, operatorIds);
   validateVideos(videos, operatorIds);
+  if (ubiGunsDoc) validateUbiGuns(ubiGunsDoc);
   validateImagePaths(operators, maps, seasons, gadgets);
   const payload = { operators, maps, seasons };
   // Attach canonical gadget ids to loadout secondary entries (single source:
@@ -435,6 +451,7 @@ function main() {
   const gadgetsOutput = `var R6_GADGETS = ${JSON.stringify({ gadgets })};\n`;
   const patchesOutput = `var R6_PATCHES = ${JSON.stringify({ patches })};\n`;
   const videosOutput = `var R6_VIDEOS = ${JSON.stringify({ entries: videos })};\n`;
+  const ubiGunsOutput = `var R6_UBI_GUNS = ${JSON.stringify({ guns: (ubiGunsDoc && ubiGunsDoc.guns) || {} })};\n`;
   if (checkOnly) {
     const current = fs.existsSync(DATA_PATH) ? fs.readFileSync(DATA_PATH, 'utf8') : '';
     if (current !== output) {
@@ -466,6 +483,11 @@ function main() {
       console.error('build-data: web/videos.js is stale, run node scripts/build-data.js');
       process.exit(1);
     }
+    const currentUbiGuns = fs.existsSync(UBI_GUNS_BUNDLE_PATH) ? fs.readFileSync(UBI_GUNS_BUNDLE_PATH, 'utf8') : '';
+    if (currentUbiGuns !== ubiGunsOutput) {
+      console.error('build-data: web/ubi-guns.js is stale, run node scripts/build-data.js');
+      process.exit(1);
+    }
     console.log(`build-data: data fresh (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
     return;
   }
@@ -475,6 +497,7 @@ function main() {
   fs.writeFileSync(GADGETS_BUNDLE_PATH, gadgetsOutput);
   fs.writeFileSync(PATCHES_BUNDLE_PATH, patchesOutput);
   fs.writeFileSync(VIDEOS_BUNDLE_PATH, videosOutput);
+  fs.writeFileSync(UBI_GUNS_BUNDLE_PATH, ubiGunsOutput);
   console.log(`build-data: wrote web/data.js (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
   console.log(`build-data: wrote web/lore.js.`);
 }

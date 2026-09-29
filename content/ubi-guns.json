@@ -1,0 +1,918 @@
+{
+  "generatedAt": "2026-09-29T18:10:56.118Z",
+  "metadata": {
+    "sources": {
+      "ubisoft": "operator loadout blocks (downloaded, not hotlinked)"
+    },
+    "operators": 76,
+    "guns": 121
+  },
+  "guns": {
+    "417": {
+      "file": "r6_images/ubi/417.png",
+      "label": "417"
+    },
+    "ak12": {
+      "file": "r6_images/ubi/ak-12.png",
+      "label": "AK-12"
+    },
+    "m1014": {
+      "file": "r6_images/ubi/m1014.png",
+      "label": "M1014"
+    },
+    "p9": {
+      "file": "r6_images/ubi/p9.png",
+      "label": "P9"
+    },
+    "g8a1": {
+      "file": "r6_images/ubi/g8a1.png",
+      "label": "G8A1"
+    },
+    "supernova": {
+      "file": "r6_images/ubi/supernova.png",
+      "label": "SuperNova"
+    },
+    "gonne6": {
+      "file": "r6_images/ubi/gonne-6-hud-icon-1-.png",
+      "label": "Gonne-6"
+    },
+    "smg11": {
+      "file": "r6_images/ubi/smg-11.png",
+      "label": "SMG-11"
+    },
+    "ita12s": {
+      "file": "r6_images/ubi/ita12s.png",
+      "label": "ITA12S"
+    },
+    "g36c": {
+      "file": "r6_images/ubi/g36c.png",
+      "label": "G36C"
+    },
+    "r4c": {
+      "file": "r6_images/ubi/r4-c.png",
+      "label": "R4-C"
+    },
+    "57usg": {
+      "file": "r6_images/ubi/5.7-usg.png",
+      "label": "5.7 USG"
+    },
+    "m45meusoc": {
+      "file": "r6_images/ubi/m45-meusoc.png",
+      "label": "M45 MEUSOC"
+    },
+    "mk17cqb": {
+      "file": "r6_images/ubi/mk17-cqb.png",
+      "label": "Mk17 CQB"
+    },
+    "sr25": {
+      "file": "r6_images/ubi/sr-25.png",
+      "label": "SR-25"
+    },
+    "g52tacticalshield": {
+      "file": "r6_images/ubi/g52-tactical-shield.png",
+      "label": "G52-Tactical Shield"
+    },
+    "p12": {
+      "file": "r6_images/ubi/p12.png",
+      "label": "P12"
+    },
+    "para308": {
+      "file": "r6_images/ubi/para-308.png",
+      "label": "PARA-308"
+    },
+    "camrs": {
+      "file": "r6_images/ubi/camrs.png",
+      "label": "CAMRS"
+    },
+    "usp40": {
+      "file": "r6_images/ubi/usp40.png",
+      "label": "USP40"
+    },
+    "supershorty": {
+      "file": "r6_images/ubi/r6-operator-weapon-sa-supershorty.png",
+      "label": "Super Shorty"
+    },
+    "c8sfw": {
+      "file": "r6_images/ubi/c8-sfw.png",
+      "label": "C8-SFW"
+    },
+    "mk19mm": {
+      "file": "r6_images/ubi/mk1-9mm-bi.png",
+      "label": "Mk1 9mm"
+    },
+    "m249": {
+      "file": "r6_images/ubi/m249.png",
+      "label": "M249"
+    },
+    "pmr90a2": {
+      "file": "r6_images/ubi/pmr90a2.png",
+      "label": "PMR90A2"
+    },
+    "prb92": {
+      "file": "r6_images/ubi/prb92.png",
+      "label": "PRB92"
+    },
+    "ak74m": {
+      "file": "r6_images/ubi/ak-74m.png",
+      "label": "AK-74M"
+    },
+    "m590a1": {
+      "file": "r6_images/ubi/m590a1.png",
+      "label": "M590A1"
+    },
+    "44vendetta": {
+      "file": "r6_images/ubi/44vendetta.png",
+      "label": ".44 VENDETTA"
+    },
+    "bosg122": {
+      "file": "r6_images/ubi/bosg.12.2.png",
+      "label": "BOSG.12.2"
+    },
+    "mk14ebr": {
+      "file": "r6_images/ubi/mk-14-ebr.png",
+      "label": "Mk 14 EBR"
+    },
+    "xk23": {
+      "file": "r6_images/ubi/xk23.png",
+      "label": "XK23"
+    },
+    "c75auto": {
+      "file": "r6_images/ubi/c75-auto.png",
+      "label": "C75 Auto"
+    },
+    "smg12": {
+      "file": "r6_images/ubi/smg-12.png",
+      "label": "SMG-12"
+    },
+    "6p41": {
+      "file": "r6_images/ubi/6p41.png",
+      "label": "6P41"
+    },
+    "sasg12": {
+      "file": "r6_images/ubi/sasg-12.png",
+      "label": "SASG-12"
+    },
+    "spear308": {
+      "file": "r6_images/ubi/spear-.308.png",
+      "label": "Spear .308"
+    },
+    "gsh18": {
+      "file": "r6_images/ubi/gsh-18.png",
+      "label": "GSh-18"
+    },
+    "pmm": {
+      "file": "r6_images/ubi/pmm.png",
+      "label": "PMM"
+    },
+    "ar33": {
+      "file": "r6_images/ubi/ar33.png",
+      "label": "AR33"
+    },
+    "t95lsw": {
+      "file": "r6_images/ubi/t-95-lsw.png",
+      "label": "T-95 LSW"
+    },
+    "ballisticshield": {
+      "file": "r6_images/ubi/ballistic-shield.png",
+      "label": "Ballistic Shield"
+    },
+    "ots03": {
+      "file": "r6_images/ubi/ots-03.png",
+      "label": "OTs-03"
+    },
+    "bearing9": {
+      "file": "r6_images/ubi/bearing-9.png",
+      "label": "Bearing 9"
+    },
+    "f90": {
+      "file": "r6_images/ubi/r6-operator-weapon-ar-f90.png",
+      "label": "F90"
+    },
+    "m249saw": {
+      "file": "r6_images/ubi/m249-saw.png",
+      "label": "M249 SAW"
+    },
+    "sdp9mm": {
+      "file": "r6_images/ubi/sdp-9mm.png",
+      "label": "SDP 9mm"
+    },
+    "552commando": {
+      "file": "r6_images/ubi/552-commando.png",
+      "label": "552 Commando"
+    },
+    "sgcqb": {
+      "file": "r6_images/ubi/sg-cqb.png",
+      "label": "SG-CQB"
+    },
+    "bailiff410": {
+      "file": "r6_images/ubi/bailiff-410.png",
+      "label": "Bailiff 410"
+    },
+    "p229": {
+      "file": "r6_images/ubi/p229.png",
+      "label": "P229"
+    },
+    "type89": {
+      "file": "r6_images/ubi/type-89.png",
+      "label": "Type-89"
+    },
+    "arx200": {
+      "file": "r6_images/ubi/arx200.png",
+      "label": "ARX200"
+    },
+    "auga2": {
+      "file": "r6_images/ubi/aug-a2.png",
+      "label": "AUG A2"
+    },
+    "c7e": {
+      "file": "r6_images/ubi/c7e.png",
+      "label": "C7E"
+    },
+    "pdw9": {
+      "file": "r6_images/ubi/pdw9.png",
+      "label": "PDW9"
+    },
+    "ita12l": {
+      "file": "r6_images/ubi/ita12l.png",
+      "label": "ITA12L"
+    },
+    "csrx300": {
+      "file": "r6_images/ubi/csrx-300.png",
+      "label": "CSRX 300"
+    },
+    "spsmg9": {
+      "file": "r6_images/ubi/spsmg9.png",
+      "label": "SPSMG9"
+    },
+    "p226mk25": {
+      "file": "r6_images/ubi/p226-mk-25.png",
+      "label": "P226 Mk 25"
+    },
+    "v308": {
+      "file": "r6_images/ubi/v308.png",
+      "label": "V308"
+    },
+    "lfp586": {
+      "file": "r6_images/ubi/lfp586.png",
+      "label": "LFP586"
+    },
+    "ar1550": {
+      "file": "r6_images/ubi/ar-15.50.png",
+      "label": "AR-15.50"
+    },
+    "m4": {
+      "file": "r6_images/ubi/m4.png",
+      "label": "M4"
+    },
+    "1911tacops": {
+      "file": "r6_images/ubi/1911-tacops.png",
+      "label": "1911 TACOPS"
+    },
+    "reapermk2": {
+      "file": "r6_images/ubi/reaper-mk2.png",
+      "label": "Reaper MK2"
+    },
+    "lerocshield": {
+      "file": "r6_images/ubi/extendable-shield.png",
+      "label": "LE ROC SHIELD"
+    },
+    "extendableshield": {
+      "file": "r6_images/ubi/extendable-shield.png",
+      "label": "Extendable Shield"
+    },
+    "44magsemiauto": {
+      "file": "r6_images/ubi/.44-mag-semi-auto.png",
+      "label": ".44 MAG SEMI-AUTO"
+    },
+    "fmg9": {
+      "file": "r6_images/ubi/fmg-9.png",
+      "label": "FMG-9"
+    },
+    "six12sd": {
+      "file": "r6_images/ubi/six12-sd.png",
+      "label": "SIX12 SD"
+    },
+    "d50": {
+      "file": "r6_images/ubi/d-50.png",
+      "label": "D-50"
+    },
+    "556xi": {
+      "file": "r6_images/ubi/556xi.png",
+      "label": "556xi"
+    },
+    "lmge": {
+      "file": "r6_images/ubi/lmg-e.png",
+      "label": "LMG-E"
+    },
+    "pof9": {
+      "file": "r6_images/ubi/pof9.png",
+      "label": "POF9"
+    },
+    "l85a2": {
+      "file": "r6_images/ubi/l85a2.png",
+      "label": "L85A2"
+    },
+    "f2": {
+      "file": "r6_images/ubi/f2.png",
+      "label": "F2"
+    },
+    "tacit45": {
+      "file": "r6_images/ubi/tacit-45.png",
+      "label": "TACIT .45"
+    },
+    "six12": {
+      "file": "r6_images/ubi/six12.png",
+      "label": "SIX12"
+    },
+    "q929": {
+      "file": "r6_images/ubi/q-929.png",
+      "label": "Q-929"
+    },
+    "mp7": {
+      "file": "r6_images/ubi/mp7.png",
+      "label": "MP7"
+    },
+    "sc3000k": {
+      "file": "r6_images/ubi/f2000.png",
+      "label": "SC3000K"
+    },
+    "m762": {
+      "file": "r6_images/ubi/m762.png",
+      "label": "M762"
+    },
+    "rg15": {
+      "file": "r6_images/ubi/rg15.png",
+      "label": "RG15"
+    },
+    "mx4storm": {
+      "file": "r6_images/ubi/mx4-storm.png",
+      "label": "Mx4 Storm"
+    },
+    "acs12": {
+      "file": "r6_images/ubi/acs12-pb.png",
+      "label": "ACS12"
+    },
+    "keratos357": {
+      "file": "r6_images/ubi/keratos-.357.png",
+      "label": "Keratos .357"
+    },
+    "p10roni": {
+      "file": "r6_images/ubi/r6-operator-weapon-smg-p10roni.png",
+      "label": "P10 RONI"
+    },
+    "9x19svn": {
+      "file": "r6_images/ubi/9x19svn.png",
+      "label": "9X19SVN"
+    },
+    "919vsn": {
+      "file": "r6_images/ubi/9x19svn.png",
+      "label": "9×19VSN"
+    },
+    "m870": {
+      "file": "r6_images/ubi/m870.png",
+      "label": "M870"
+    },
+    "ump45": {
+      "file": "r6_images/ubi/ump45.png",
+      "label": "UMP45"
+    },
+    "m12": {
+      "file": "r6_images/ubi/m12.png",
+      "label": "M12"
+    },
+    "spas15": {
+      "file": "r6_images/ubi/spas-15.png",
+      "label": "SPAS-15"
+    },
+    "luison": {
+      "file": "r6_images/ubi/luison.png",
+      "label": "Luison"
+    },
+    "cceshieldmk2": {
+      "file": "r6_images/ubi/cce-shield.avif",
+      "label": "CCE SHIELD MK2"
+    },
+    "cceshield": {
+      "file": "r6_images/ubi/cce-shield.avif",
+      "label": "CCE Shield"
+    },
+    "p10c": {
+      "file": "r6_images/ubi/p-10c.png",
+      "label": "P-10C"
+    },
+    "scorpionevo3a1": {
+      "file": "r6_images/ubi/scorpion-evo-3-a1.png",
+      "label": "Scorpion EVO 3 A1"
+    },
+    "glaive12": {
+      "file": "r6_images/ubi/glaive-12.png",
+      "label": "Glaive-12"
+    },
+    "mp5": {
+      "file": "r6_images/ubi/mp5.png",
+      "label": "MP5"
+    },
+    "p90": {
+      "file": "r6_images/ubi/p90.png",
+      "label": "P90"
+    },
+    "mp5sd": {
+      "file": "r6_images/ubi/mp5sd.png",
+      "label": "MP5SD"
+    },
+    "fo12": {
+      "file": "r6_images/ubi/fo-12.png",
+      "label": "FO-12"
+    },
+    "super90": {
+      "file": "r6_images/ubi/super-90.png",
+      "label": "Super 90"
+    },
+    "9mmc1": {
+      "file": "r6_images/ubi/9mm-c1.png",
+      "label": "9mm C1"
+    },
+    "vector45acp": {
+      "file": "r6_images/ubi/vector-.45-acp.png",
+      "label": "Vector .45 ACP"
+    },
+    "tcsg12": {
+      "file": "r6_images/ubi/tcsg12.png",
+      "label": "TCSG12"
+    },
+    "416ccarbine": {
+      "file": "r6_images/ubi/416-c-carbine.png",
+      "label": "416-C Carbine"
+    },
+    "auga3": {
+      "file": "r6_images/ubi/aug-a3.png",
+      "label": "AUG A3"
+    },
+    "9x19vsn": {
+      "file": "r6_images/ubi/9x19vsn.png",
+      "label": "9x19VSN"
+    },
+    "t5smg": {
+      "file": "r6_images/ubi/t-5-smg.png",
+      "label": "T-5 SMG"
+    },
+    "alda556": {
+      "file": "r6_images/ubi/alda-5.56.png",
+      "label": "ALDA 5.56"
+    },
+    "commando9": {
+      "file": "r6_images/ubi/commando-9.png",
+      "label": "Commando 9"
+    },
+    "mp5k": {
+      "file": "r6_images/ubi/mp5k.png",
+      "label": "MP5K"
+    },
+    "spas12": {
+      "file": "r6_images/ubi/spas-12.png",
+      "label": "SPAS-12"
+    },
+    "pcx33": {
+      "file": "r6_images/ubi/pcx-33.png",
+      "label": "PCX-33"
+    },
+    "dp27": {
+      "file": "r6_images/ubi/primary-gun-dp27.png",
+      "label": "DP27"
+    },
+    "uzk50gi": {
+      "file": "r6_images/ubi/uzk50gi.png",
+      "label": "UZK50Gi"
+    },
+    "mpx": {
+      "file": "r6_images/ubi/mpx.png",
+      "label": "MPX"
+    },
+    "k1a": {
+      "file": "r6_images/ubi/k1a.png",
+      "label": "K1A"
+    }
+  },
+  "abilities": {
+    "selmaaquabreacher": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2sjKOnwHeOX2xn3iIpja2A/e265f675c905ac25c23ed11fc85589bb/r6s-operator-ability-ace.png",
+      "label": "S.E.L.M.A. AQUA BREACHER",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace"
+    },
+    "garrahook": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3WejtMAtiITfpjDMuq6j4t/b52e58da6b2625839aa23f940c8e6639/Garra-Hook.png",
+      "label": "Garra Hook",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru"
+    },
+    "breachinground": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0114WqhzsMsnvaKc4FypkN/5ebb9b86e216a2d9e6b2ea01eb3346e8/Breaching-Rounds.png",
+      "label": "BREACHING ROUND",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+    },
+    "hulladaptableshield": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7hk4QZge2W9nWQzzGorbu8/914085068bf97e6b1d0b83a40a354b9a/r6s-operator-ability-blackbeard__1_.png",
+      "label": "H.U.L.L. ADAPTABLE SHIELD",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blackbeard"
+    },
+    "g52tacticalshield": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7EXDIOjPFMhPKZWY5OcEQC/f2df48ebe5673dca7773d81efd940b66/Flash-Shield.png",
+      "label": "G52-TACTICAL SHIELD",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blitz"
+    },
+    "kludgedrone": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7CeEFqxBVGt3yXGCrE8TZq/5e3eb1477ba8eb9c71f0ed6955408b28/r6s-operator-ability-brava.png",
+      "label": "Kludge Drone",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava"
+    },
+    "skeletonkey": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2w8EQtN4FFtEMa9lBYyWGg/36bbc6d819761c11418c868d2e483991/Skeleton-Key.png",
+      "label": "Skeleton Key",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck"
+    },
+    "tacticalcrossbow": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ur3NZUGos3i2HR8f0HIzj/46cf23c97453ebfedeaa42a1088ff32f/Tactical-Crossbow.png",
+      "label": "Tactical Crossbow",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao"
+    },
+    "deathmarktracker": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/vfUd3exyKBnSVj7Uj0rD3/c109abe7787520f3e0a3150a343cc4d6/r6s-operator-ability-deimos.png",
+      "label": "DEATHMARK TRACKER",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos"
+    },
+    "jegeopayload": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ej2g1iCMHdfjn8h8qgfmU/75841101d497c601f99375e5f9068308/r6s-operator-ability-dokkaebi.png",
+      "label": "Jegeo Payload",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi"
+    },
+    "rceraterocharge": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1z7eSI5D8IRIOHi0PJu4yq/3c4a273098a840957a248583f73fa8ff/r6s-operator-ability-flores.png",
+      "label": "RCE-RATERO CHARGE",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/flores"
+    },
+    "traxstingers": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/QGVvmZeZ91FC2X4mvMzgn/601fa45e635872aea31f15ffebb9c366/Trax-Stingers.png",
+      "label": "Trax Stingers",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock"
+    },
+    "kawanhivelauncher": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Ws6ae13XPN5rcsw0WVt3d/dfacf2c29837553c667d77ca83ee3d0d/r6s-operator-ability-grim.png",
+      "label": "Kawan Hive Launcher",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim"
+    },
+    "xkairos": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1QSzVxpGhswXix3vn8XGKj/c4f64fa0895bdaf164448e3ae49950a0/X-Kairos.png",
+      "label": "X-Kairos",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/hibana"
+    },
+    "geminireplicator": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/K8E4EHWbD8wTjVqro6wVl/62339b2fbe1d3a2319dcd320f7a0b070/r6s-operator-ability-iana.png",
+      "label": "GEMINI REPLICATOR",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iana"
+    },
+    "electronicsdetector": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/23Nk2ie06rb3DcZnStryIY/e06226196dd582c905c33fad87dfdd63/Electronics-Detector.png",
+      "label": "Electronics Detector",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iq"
+    },
+    "eyenoxmodeliii": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2gexf5zLDsa74J7urCoDxk/50da09626395cbe1bf2a58e00a57a514/Eyenox-Model-III.png",
+      "label": "Eyenox Model III",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal"
+    },
+    "lvexplosivelance": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75eebt48ELO4eGGdIMVMpY/9533c7dc8f36651f5b5ad50c8ccb6c5a/LV_Explosive_Lance.png",
+      "label": "LV Explosive Lance",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali"
+    },
+    "eeoned": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7fRknnWl2K2qjKle1t79j/0506d25798aeb0691c8a576665050f7d/EE-ONE-D.png",
+      "label": "EE-ONE-D",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion"
+    },
+    "breachingtorch": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4rPBvxDKsKiQCMjt7GxJMw/09e45c68bbc41c1721acbbe0257e2465/Breaching-Torch.png",
+      "label": "Breaching Torch",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick"
+    },
+    "lerocshield": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1bmXJOakdA6SOrGxBKA70T/1e489e366d6db287f475963df2040d3d/Extendable-Shield.png",
+      "label": "LE ROC SHIELD",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/montagne"
+    },
+    "airjablauncher": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6d0LN1QWzviEkcYu3mTn6v/e49511a479756f71224f14225ad9cbd8/Airjab-Launcher.png",
+      "label": "Airjab Launcher",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nomad"
+    },
+    "helpresencereduction": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/57miqbOn8xWBh7ne7za3CV/35364108d49380a0ed33998f970e104f/HEL-Presence-Reduction.png",
+      "label": "HEL Presence Reduction",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk"
+    },
+    "talon8clearshield": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/71VBmyDtBAx788WnNJfEgo/1e6d78a81f8dc381bf4244b87970038f/r6s-operator-ability-osa.png",
+      "label": "TALON-8 CLEAR SHIELD",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/osa"
+    },
+    "bugiautobreacher": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7qkMmMKIA8rGhDceraZSvl/36e0500d846245551923f9cf3ecce5c3/r6s-operator-ability-ram.png",
+      "label": "BU-GI AUTO BREACHER",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ram"
+    },
+    "dompanellauncher": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/16gy72yx3AMn6pNE6HJm11/096d33d454536a2da6e5f26bae01d9ff/r6s-operator-ability-rauora.png",
+      "label": "D.O.M. Panel Launcher",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rauora"
+    },
+    "rouprojectorsystem": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4iEpghBKHF6bcQxAxRKsYU/fa6b27beb730b9f82b79572e479ca658/r6s-operator-ability-sens.png",
+      "label": "R.O.U. Projector System",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sens"
+    },
+    "breachinghammer": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Vyo9CrQ1J7IZe43XpT4pV/4bc02e829d1b1745b9a527ff34f8fafb/Tactical-Breaching-Hammer.png",
+      "label": "BREACHING HAMMER",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sledge"
+    },
+    "solitonradarmkiii": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Dut9dv8W04uBNgd4oxtw8/ebd70ddec63fd5477385d23431a74add/r6s-operator-ability-solidsnake.png",
+      "label": "SOLITON RADAR MK III",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake"
+    },
+    "exothermiccharge": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/R5giHT90R2XOMMuUENZeK/840a5a391ed57a0c62208e72258407a7/Exothermic-Charge.png",
+      "label": "Exothermic Charge",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thermite"
+    },
+    "shockdrone": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dZ9kaUfUSF3piuFIUKf2t/7ebfc51caee42a776492b56251d45d92/Shock-Drones.png",
+      "label": "SHOCK DRONE",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/twitch"
+    },
+    "candela": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4vpN9vu5wD9dyb2knMosTy/430796de3c0c2a5c2eb2ac6f4217eba0/Candela.png",
+      "label": "Candela",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ying"
+    },
+    "arguslauncher": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6h4hyVSzG8IwAmEl1Objrd/6e51e64eeffcc68746b8ff59445fb103/r6s-operator-ability-zero.png",
+      "label": "ARGUS LAUNCHER",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zero"
+    },
+    "ks79lifeline": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1elqIEWJ6XsXKAbMNd0Cai/0b4c0591bad284d957e652cdae0b706b/KS79-Lifeline.png",
+      "label": "KS79 Lifeline",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zofia"
+    },
+    "prisma": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7sJYir66zAPq2omSvYeT2u/8fbe3370d32fb5433fb6d3a86d46a1b9/Prisma.png",
+      "label": "Prisma",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi"
+    },
+    "suryagate": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4hLJAAVKrf50wosG0471od/cde1867daf863c03754969f159ac00de/r6s-operator-ability-aruni.png",
+      "label": "Surya Gate",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/aruni"
+    },
+    "kibabarrier": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1UDhKrAXnm0thdHhsTTAyo/b7771794aea3f00da46c21670af5f5d5/r6s-operator-ability-azami.png",
+      "label": "KIBA BARRIER",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/azami"
+    },
+    "shockwire": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/129HTNU2A5kIcMj0KZ5UjU/858b60dd0e9b8692e2dc693eded50e14/Shock-Wire.png",
+      "label": "Shock Wire",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/bandit"
+    },
+    "armorpanel": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/29N9nMqB8ZZxGCPz128ccD/439cb1fcb2f6d5385378cf073a5fbc30/Armor-Panel.png",
+      "label": "Armor Panel",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/castle"
+    },
+    "silentstep": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6PTsBBBGTT5oixxzvYv1Y4/18e31c74ba1ca73ed2694134acd9c078/Silent-Step.png",
+      "label": "Silent Step",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira"
+    },
+    "cceshieldmk2": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5KSWTzQrMUrG3jMEO1zX9f/e103cb858cbb3b66f29340e2baa48fb5/CCE-Shield.png",
+      "label": "CCE SHIELD MK2",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/clash"
+    },
+    "tripconnector": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3vsaJrxndhmGGbRTzuEdaE/cbaa155ed784189c81b538bb787fe0f4/r6s-operator-ability-denari.png",
+      "label": "T.R.I.P. Connector",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari"
+    },
+    "stimpistol": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7njaeUjJj27iYH27HnH6jn/c5533d2d7191b879c313013f278f5f59/Stim-Pistol.png",
+      "label": "Stim Pistol",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/doc"
+    },
+    "yokai": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/TdDZyrKpjt9EQo8tHpIJk/d987db4da22046a0663be8be82dcda88/Yokai.png",
+      "label": "Yokai",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/echo"
+    },
+    "grzmotmine": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/10Md7ccaUO0pE0nCWimeoZ/35dddc67a4141e844d7904051a0314dc/Grzmot-Mine.png",
+      "label": "Grzmot Mine",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ela"
+    },
+    "fnattdreadmine": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5JTPi6uZt58wD0GVQJJf2c/a2c782c562393081faf5501f4a41b3cc/r6s-operator-ability-fenrir-v1.png",
+      "label": "F-Natt Dread Mine",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fenrir"
+    },
+    "welcomemat": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/xsIzH7XCAqvn7F3tEfAPe/c41e59a9d7f2ed7ee38b16ed0a882351/Welcome-Mate.png",
+      "label": "Welcome Mat",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/frost"
+    },
+    "volcncanister": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1JqlRdbaVA73jDq8y46vX4/82e89f39c479526ace294ba246d0b085/Volcan-Shield.png",
+      "label": "Volcán Canister",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/goyo"
+    },
+    "activedefense": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1YCujceutAcJ7F10yhHC41/c5f870e7789b6396c9997ed45ccd3beb/Active-Defense-System.png",
+      "label": "ACTIVE DEFENSE",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jager"
+    },
+    "quotrtilaquotelectroclaw": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7rUOk2LhYIUjvYLot7GT8Y/94b72bfbbfdf50c2c807cdbf9f5b276e/Rtila-Electroclaw.png",
+      "label": "&quot;Rtila&quot; Electroclaw",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kaid"
+    },
+    "gu": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6PJv86R8CtQCWA7a24sJE2/24f3751b2ed941ce80a4c1ef394ab7d5/Gu-mines.png",
+      "label": "GU",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lesion"
+    },
+    "evileye": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/n2rfPidCv630jQEfnEWwb/42d454d0771218eb8f27f6d17d8a073e/Evil-Eye.png",
+      "label": "Evil Eye",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maestro"
+    },
+    "bansheesonicdefense": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/49ixqWhGgjvHu0Ay8JzeSH/c6a3fe584847850186e15c7fb4244385/r6s-operator-ability-melusi.png",
+      "label": "BANSHEE SONIC DEFENSE",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/melusi"
+    },
+    "blackmirror": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1a1w8epOhWE8VtzvvCJG9d/b20cbb221f7d45e5838f839ce042f409/Black-mirror.png",
+      "label": "Black mirror",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mira"
+    },
+    "pestlauncher": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5L0fFKVOwozKMcmJoenfef/56e4efdf77363556b35a76fd4e0e60f6/Pest-Launcher.png",
+      "label": "Pest Launcher",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mozzie"
+    },
+    "signaldisruptor": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1M5fsUELbaAzImzMte2ESa/9de588693ec317c87ef1a2021bd43b86/Signal-Disruptor.png",
+      "label": "Signal Disruptor",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mute"
+    },
+    "horuslancelauncher": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/21hoh2eaTzyLTinbMPi3MY/8a567039b4858d0c88f0227785282eef/r6s-operator-ability-noor.png",
+      "label": "Horus Lance Launcher",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/noor"
+    },
+    "remahdash": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3dM2B3qCdU0woydIbiy2xn/55aa99443002ad794d3f78dada26d035/r6s-operator-ability-oryx.png",
+      "label": "REMAH DASH",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/oryx"
+    },
+    "cardiacsensor": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7dPXIadD3D2a3uEqrCPvj2/103ad9d0d3b71adee3b92a5db96fe24d/Heartbeat-Sensor.png",
+      "label": "Cardiac Sensor",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/pulse"
+    },
+    "armorpack": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/MeoKw7iPY6EFYvjS07CRg/b2d7eba623f3c63d6b7097a8f2253954/Armor-Pack.png",
+      "label": "Armor Pack",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rook"
+    },
+    "v10pantheonshells": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/56v8dxuabTfIHtPSmQX7AJ/9079454089effc91c685d7e759728797/r6s-operator-ability-skopos.png",
+      "label": "V10 Pantheon Shells",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos"
+    },
+    "remotegasgrenade": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3ZbADU6FxBqdvcA8vCpYhn/6c69d61202364fa420e2a319d817c6f3/Remote-Gas-Grenade.png",
+      "label": "Remote Gas Grenade",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/smoke"
+    },
+    "specioelectrosensor": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6yJdnB2YJGY5lMh9mmKIQT/e41be5242462d00e9343acf8377f90a9/r6s-operator-ability-solis.png",
+      "label": "Spec-IO Electro-Sensor",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solis"
+    },
+    "razorbloomshell": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/38hUQdWTb1vgs0Yg8eQHFC/0d7f05420068a41392342a1b38c57c2e/r6s-operator-ability-thorn.png",
+      "label": "RAZORBLOOM SHELL",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thorn"
+    },
+    "knastation": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/67J9QnmuA4TMI3rBxoA3Jz/4ec42d8c1bb61dadc5f36893f93142e8/r6s-operator-ability-thunderbird.png",
+      "label": "KÓNA STATION",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thunderbird"
+    },
+    "zotocanister": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2HBwr95RPJmDlx29Sg5noC/0d0f7d6f78f0a88b684899f1177773d8/r6s-operator-ability-tubarao-v1.png",
+      "label": "Zoto Canister",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tubarao"
+    },
+    "blackeye": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1EPfd4xeuMpt5nItOYm2Eb/b59223248a508d205264ece3c3553d36/Black-Eye.png",
+      "label": "Black Eye",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/valkyrie"
+    },
+    "erc7": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6WbhiNk0evsKWChPneCES6/af08476e2f917878e0326727d2d5fb8a/ERC-7.png",
+      "label": "ERC-7",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/vigil"
+    },
+    "magnetsystem": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1IKNZzLv63AJd9vlbXj3Bo/883371432ffb22e5bf35bc82dd706384/Mag-net_System.png",
+      "label": "Mag-net System",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/wamai"
+    },
+    "glancesmartglasses": {
+      "file": null,
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/40RkJUEmmBCf7bmfTL8ao1/1d973adfe4d002c94655d9818776fb41/Glance-Smart-Glasses.png",
+      "label": "Glance Smart Glasses",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/warden"
+    }
+  }
+}

@@ -115,6 +115,7 @@
   <script src="gadgets.js" onerror="window.__r6DataScriptError('gadgets.js')"></script>
   <script src="patches.js" onerror="window.__r6DataScriptError('patches.js')"></script>
   <script src="videos.js" onerror="window.__r6DataScriptError('videos.js')"></script>
+  <script src="ubi-guns.js" onerror="window.__r6DataScriptError('ubi-guns.js')"></script>
   <script>
     (() => {
       const LAUNCH_TIPS = [
@@ -180,6 +181,14 @@
     const gadgetsById = new Map(GADGETS.map((g) => [g.id, g]));
     const PATCHES = ((typeof R6_PATCHES !== 'undefined' && R6_PATCHES) || { patches: [] }).patches || [];
     const VIDEOS = ((typeof R6_VIDEOS !== 'undefined' && R6_VIDEOS) || { entries: {} }).entries || {};
+    const UBI_GUNS = ((typeof R6_UBI_GUNS !== 'undefined' && R6_UBI_GUNS) || { guns: {} }).guns || {};
+    const normGunKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+    // Official Ubisoft PNG for list/table thumbs (sheets keep full renders).
+    const ubiGunImage = (name) => {
+      const hit = UBI_GUNS[normGunKey(name)];
+      if (hit && hit.file) return `./${hit.file}`;
+      return null;
+    };
     const normPatchKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const patchesForSeason = (season) => {
       if (!season) return [];
@@ -525,7 +534,7 @@
                       w.gadgetId && gadgetsById.get(w.gadgetId) && gadgetsById.get(w.gadgetId).image ? (
                         <span className="sq-img"><AssetFrame type="Gadget" imageUrl={`./${gadgetsById.get(w.gadgetId).image}`} /></span>
                       ) : null
-                    ) : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={((slot !== 'gadget' && resolveWeapon(w.name) && resolveWeapon(w.name).image) ? `./${resolveWeapon(w.name).image}` : (w.image ? `./${w.image}` : null))} /></span>}
+                    ) : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={(ubiGunImage(w.name) || ((slot !== 'gadget' && resolveWeapon(w.name) && resolveWeapon(w.name).image) ? `./${resolveWeapon(w.name).image}` : (w.image ? `./${w.image}` : null)))} /></span>}
                     <span className="min-w-0 flex-1">
                       {slot === 'gadget' && w.gadgetId && gadgetsById.get(w.gadgetId) ? (
                         <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('gadget', { id: w.gadgetId })}>{w.name}</button>
@@ -745,7 +754,7 @@
           </div>
           <table className="cx-wikitable"><thead><tr><th></th><th>Weapon</th><th>Type</th><th>Damage</th><th>Fire rate</th></tr></thead>
             <tbody>{list.map((w) => (
-              <tr key={w.name}><td><span className="sq-img"><AssetFrame type="Weapon" imageUrl={w.image ? `./${w.image}` : null} /></span></td>
+              <tr key={w.name}><td><span className="sq-img"><AssetFrame type="Weapon" imageUrl={ubiGunImage(w.name) || (w.image ? `./${w.image}` : null)} /></span></td>
                 <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('weapon', { id: w.name })}>{w.name}</button></td>
                 <td>{w.type || '—'}</td><td>{w.damage || '—'}</td><td>{w.rof ? `${w.rof} RPM` : '—'}</td></tr>
             ))}</tbody></table>
