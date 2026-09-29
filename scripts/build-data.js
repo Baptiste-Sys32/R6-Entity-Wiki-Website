@@ -25,6 +25,8 @@ const VIDEOS_PATH = path.join(ROOT, 'content', 'videos.json');
 const VIDEOS_BUNDLE_PATH = path.join(ROOT, 'web', 'videos.js');
 const UBI_GUNS_PATH = path.join(ROOT, 'content', 'ubi-guns.json');
 const UBI_GUNS_BUNDLE_PATH = path.join(ROOT, 'web', 'ubi-guns.js');
+const UBI_OPS_PATH = path.join(ROOT, 'content', 'ubi-operators.json');
+const UBI_OPS_BUNDLE_PATH = path.join(ROOT, 'web', 'ubi-operators.js');
 
 const checkOnly = new Set(process.argv.slice(2)).has('--check');
 
@@ -89,7 +91,7 @@ function validateSeasons(seasons, operatorNames) {
   });
 }
 
-function validateImagePaths(operators, maps, seasons, gadgets) {
+function validateImagePaths(operators, maps, seasons, gadgets, ubiOps) {
   const missing = [];
   const check = (rel, owner) => {
     if (!rel) return;
@@ -118,6 +120,12 @@ function validateImagePaths(operators, maps, seasons, gadgets) {
   (gadgets || []).forEach((g) => {
     check(g.image, `gadget ${g.id} art`);
     check(g.hud, `gadget ${g.id} hud`);
+  });
+  (ubiOps || []).forEach((o) => {
+    [...(o.primaries || []), ...(o.secondaries || []), ...(o.gadgets || [])].forEach((it) => check(it.icon, `ubi-op ${o.slug} ${it.name}`));
+    check(o.power && o.power.icon, `ubi-op ${o.slug} power icon`);
+    check(o.power && o.power.mp4Poster, `ubi-op ${o.slug} power poster`);
+    check(o.reveal && o.reveal.poster, `ubi-op ${o.slug} reveal poster`);
   });
   if (missing.length) {
     console.error(`build-data: ${missing.length} image issues:\n- ${missing.slice(0, 20).join('\n- ')}${missing.length > 20 ? `\n... and ${missing.length - 20} more` : ''}`);
@@ -335,6 +343,40 @@ function validateUbiGuns(doc) {
   }
   console.log(`build-data: ubi-guns ok (${n} aliases).`);
 }
+// Ubisoft operator truth (en-us): per-op primaries/secondaries/gadgets +
+// power (name/icon/mp4+poster) + reveal trailer (youtubeId/poster).
+// Icons/posters are downloaded files under r6_images/ubi*/ — mp4s stay
+// hotlinked by policy (Cloudflare size), posters keep pages intact.
+function validateUbiOperators(doc, operatorIds) {
+  if (!doc || typeof doc !== 'object' || !Array.isArray(doc.operators)) throw new Error('ubi-operators doc invalid');
+  const ids = new Set(operatorIds);
+  let n = 0, unmatched = [];
+  for (const o of doc.operators) {
+    if (!o || typeof o.slug !== 'string' || !o.slug) throw new Error('ubi-operators entry missing slug');
+    if (!Array.isArray(o.primaries) || !Array.isArray(o.secondaries) || !Array.isArray(o.gadgets)) {
+      throw new Error(`ubi-operators ${o.slug} missing loadout arrays`);
+    }
+    for (const it of [...o.primaries, ...o.secondaries, ...o.gadgets]) {
+      if (!it || typeof it.name !== 'string' || !it.name) throw new Error(`ubi-operators ${o.slug} bad loadout item`);
+      if (typeof it.icon !== 'string' || !it.icon.startsWith('r6_images/ubi')) throw new Error(`ubi-operators ${o.slug}:${it.name} bad icon path`);
+    }
+    if (o.power) {
+      if (typeof o.power.name !== 'string' || !o.power.name) throw new Error(`ubi-operators ${o.slug} bad power name`);
+      if (o.power.mp4 !== null && o.power.mp4 !== undefined && !/^https:\/\/staticctf\.ubisoft\.com\/\S+\.mp4$/i.test(o.power.mp4)) {
+        throw new Error(`ubi-operators ${o.slug} bad power mp4 host (hotlink guard)`);
+      }
+    }
+    if (o.reveal && o.reveal.youtubeId !== null && o.reveal.youtubeId !== undefined && !/^[A-Za-z0-9_-]{6,15}$/.test(o.reveal.youtubeId)) {
+      throw new Error(`ubi-operators ${o.slug} bad reveal youtubeId`);
+    }
+    if (o.opId && !ids.has(o.opId)) throw new Error(`ubi-operators ${o.slug} unknown opId ${o.opId}`);
+    if (!o.opId) unmatched.push(o.slug);
+    n += 1;
+  }
+  if (n < 76) throw new Error(`ubi-operators too few entries (${n})`);
+  if (unmatched.length) console.warn(`build-data: ubi-operators unmatched slugs (no local op): ${unmatched.join(', ')}`);
+  console.log(`build-data: ubi-operators ok (${n} entries).`);
+}
 function validateVideos(entries, operatorIds) {
   if (!entries || typeof entries !== 'object') throw new Error('videos entries invalid');
   const ids = new Set(operatorIds);
@@ -389,6 +431,7 @@ function main() {
   const videosDoc = fs.existsSync(VIDEOS_PATH) ? readJson(VIDEOS_PATH) : { entries: {} };
   const videos = videosDoc.entries || {};
   const ubiGunsDoc = fs.existsSync(UBI_GUNS_PATH) ? readJson(UBI_GUNS_PATH) : null;
+  const ubiOpsDoc = fs.existsSync(UBI_OPS_PATH) ? readJson(UBI_OPS_PATH) : null;
   const operatorIds = operators.map((op) => op.id);
   validateOperators(operators);
   validateMaps(maps);
@@ -402,7 +445,8 @@ function main() {
   if (skinsDoc) validateSkins(skinsDoc, operatorIds);
   validateVideos(videos, operatorIds);
   if (ubiGunsDoc) validateUbiGuns(ubiGunsDoc);
-  validateImagePaths(operators, maps, seasons, gadgets);
+  if (ubiOpsDoc) validateUbiOperators(ubiOpsDoc, operatorIds);
+  validateImagePaths(operators, maps, seasons, gadgets, ubiOpsDoc ? ubiOpsDoc.operators : []);
   const payload = { operators, maps, seasons };
   // Attach canonical gadget ids to loadout secondary entries (single source:
   // content/gadgets.json normalize map, same tolerant lookup as validation).
@@ -452,6 +496,7 @@ function main() {
   const patchesOutput = `var R6_PATCHES = ${JSON.stringify({ patches })};\n`;
   const videosOutput = `var R6_VIDEOS = ${JSON.stringify({ entries: videos })};\n`;
   const ubiGunsOutput = `var R6_UBI_GUNS = ${JSON.stringify({ guns: (ubiGunsDoc && ubiGunsDoc.guns) || {} })};\n`;
+  const ubiOpsOutput = `var R6_UBI_OPS = ${JSON.stringify({ operators: (ubiOpsDoc && ubiOpsDoc.operators) || [] })};\n`;
   if (checkOnly) {
     const current = fs.existsSync(DATA_PATH) ? fs.readFileSync(DATA_PATH, 'utf8') : '';
     if (current !== output) {
@@ -488,6 +533,11 @@ function main() {
       console.error('build-data: web/ubi-guns.js is stale, run node scripts/build-data.js');
       process.exit(1);
     }
+    const currentUbiOps = fs.existsSync(UBI_OPS_BUNDLE_PATH) ? fs.readFileSync(UBI_OPS_BUNDLE_PATH, 'utf8') : '';
+    if (currentUbiOps !== ubiOpsOutput) {
+      console.error('build-data: web/ubi-operators.js is stale, run node scripts/build-data.js');
+      process.exit(1);
+    }
     console.log(`build-data: data fresh (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
     return;
   }
@@ -498,6 +548,7 @@ function main() {
   fs.writeFileSync(PATCHES_BUNDLE_PATH, patchesOutput);
   fs.writeFileSync(VIDEOS_BUNDLE_PATH, videosOutput);
   fs.writeFileSync(UBI_GUNS_BUNDLE_PATH, ubiGunsOutput);
+  fs.writeFileSync(UBI_OPS_BUNDLE_PATH, ubiOpsOutput);
   console.log(`build-data: wrote web/data.js (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
   console.log(`build-data: wrote web/lore.js.`);
 }

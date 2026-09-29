@@ -3127,6 +3127,17 @@
         "Warden is one of the operators who are deployed during the War in Afghanistan along with Maverick, Frost, Alibi and Blackbeard."
       ],
       "howto": "A Medium Health Operator, Warden's unique gadget is a pair of Glance Smart Glasses, special glasses that nullify the effects of Stun Grenades, Smoke Grenades, and other related gadgets.\n\nThe Smart Glasses have an infinite number of uses and run on a charge.\n\nThe effects of the Smart Glasses last for a maximum of 20 seconds."
+    },
+    "r6-sentry": {
+      "biography": "Sentry is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, A remaster of the Recruit, he was introduced in the Operation New Blood expansion alongside Striker.",
+      "quotes": [
+        "We eat, sleep and dream Rainbow during training. And one day, it’ll pay off."
+      ]
+    },
+    "r6-striker": {
+      "quotes": [
+        "We earned the right to be here. Now we just have to earn the right to stay."
+      ]
     }
   }
 }

@@ -33,7 +33,9 @@
     "C4": "nitro-cell",
     "GONNE-6": "gonne-6",
     "EMP Grenade": "emp-grenade",
-    "Impact EMP Grenade": "emp-grenade"
+    "Impact EMP Grenade": "emp-grenade",
+    "Nitro": "nitro-cell",
+    "Proximity alarm": "proximity-alarm"
   },
   "gadgets": [
     {

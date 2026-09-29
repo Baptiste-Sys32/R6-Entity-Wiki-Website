@@ -116,6 +116,7 @@
   <script src="patches.js" onerror="window.__r6DataScriptError('patches.js')"></script>
   <script src="videos.js" onerror="window.__r6DataScriptError('videos.js')"></script>
   <script src="ubi-guns.js" onerror="window.__r6DataScriptError('ubi-guns.js')"></script>
+  <script src="ubi-operators.js" onerror="window.__r6DataScriptError('ubi-operators.js')"></script>
   <script>
     (() => {
       const LAUNCH_TIPS = [
@@ -182,6 +183,8 @@
     const PATCHES = ((typeof R6_PATCHES !== 'undefined' && R6_PATCHES) || { patches: [] }).patches || [];
     const VIDEOS = ((typeof R6_VIDEOS !== 'undefined' && R6_VIDEOS) || { entries: {} }).entries || {};
     const UBI_GUNS = ((typeof R6_UBI_GUNS !== 'undefined' && R6_UBI_GUNS) || { guns: {} }).guns || {};
+    const UBI_OPS_LIST = ((typeof R6_UBI_OPS !== 'undefined' && R6_UBI_OPS) || { operators: [] }).operators || [];
+    const UBI_OPS = new Map(UBI_OPS_LIST.map((o) => [o.opId, o]));
     const normGunKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     // Official Ubisoft PNG for list/table thumbs (sheets keep full renders).
     const ubiGunImage = (name) => {
@@ -269,6 +272,21 @@
     );
 
     /* ------------------------------ views --------------------------------- */
+
+    // Uniform list-toolbar pattern (all five list views): WikiHeaderSearchPortal
+    // search row first, filter chips row below it, live count, results.
+    // R6-scoped pill style — the shared .cx-chip base (DBD verbatim) is untouched.
+    const filterChipStyle = (active) => active
+      ? { background: 'var(--text)', color: 'var(--bg-01)', border: '1px solid var(--stroke)' }
+      : { background: 'transparent', color: 'var(--muted)', border: '1px solid var(--stroke)' };
+    const FilterChips = ({ options, value, onChange, label }) => (
+      <div className="flex flex-wrap gap-2 mt-4 mb-6 r6-filter-row" role="tablist" aria-label={label}>
+        {options.map((s) => (
+          <button key={s.id} type="button" role="tab" aria-selected={value === s.id} onClick={() => onChange(s.id)}
+            className="rounded-full px-4 py-1.5 text-sm font-semibold" style={filterChipStyle(value === s.id)}>{s.label}</button>
+        ))}
+      </div>
+    );
 
     const HomeView = ({ setView, counts }) => {
       const [searchTerm, setSearchTerm] = useState('');
@@ -389,11 +407,6 @@
         <div className="cx-article">
           <h1 className="cx-title">Operators</h1>
           <p className="cx-lead">{OPERATORS.length} operators · {OPERATORS.filter((o) => o.side === 'Attacker').length} attackers · {OPERATORS.filter((o) => o.side === 'Defender').length} defenders</p>
-          <div className="flex gap-2 my-3">
-            {['All', 'Attacker', 'Defender'].map((s) => (
-              <button key={s} type="button" onClick={() => setSide(s)} className="rounded-full px-4 py-1.5 text-sm font-semibold" style={{ background: side === s ? 'var(--text)' : 'transparent', color: side === s ? 'var(--bg-01)' : 'var(--muted)', border: '1px solid var(--stroke)' }}>{s}</button>
-            ))}
-          </div>
           <WikiHeaderSearchPortal>
             <div className="flex gap-2">
               <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter operators..." aria-label="Filter operators"
@@ -405,6 +418,7 @@
               </select>
             </div>
           </WikiHeaderSearchPortal>
+          <FilterChips options={[{ id: 'All', label: 'All' }, { id: 'Attacker', label: 'Attacker' }, { id: 'Defender', label: 'Defender' }]} value={side} onChange={setSide} label="Filter by side" />
           <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{list.length} operators</p>
           {list.map((op) => (
             <div key={op.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
@@ -422,8 +436,19 @@
     };
 
     // Click-to-load YouTube player (no tracking until play; nocookie
-    // domain) with local poster art, plus outbound mp4 links (never
-    // hotlinked). Videos come from Ubisoft first, community as backup.
+    // domain) with local poster art. Reveal trailers embed from YouTube;
+    // ability-preview mp4s embed via <video> hotlinking Ubisoft's own CDN
+    // (explicit size-policy exception — mp4s are never stored locally).
+    // Posters are always local files, so a dead CDN degrades to a poster.
+    const UbiVideo = ({ mp4, poster, label }) => {
+      if (!mp4) return null;
+      return (
+        <div className="w-full overflow-hidden rounded-2xl mb-2" style={{ background: '#000' }}>
+          <video controls preload="none" playsInline poster={poster ? `./${poster}` : undefined} src={mp4} className="w-full" style={{ aspectRatio: '16 / 9' }} aria-label={label || 'Gadget preview'} />
+          <p className="text-xs px-3 py-1.5" style={{ color: 'var(--muted)' }}>{label || 'Gadget preview'} · Ubisoft video</p>
+        </div>
+      );
+    };
     const VideoEmbed = ({ youtubeId, label, source, poster }) => {
       const [play, setPlay] = useState(false);
       if (!youtubeId) return null;
@@ -449,11 +474,21 @@
       if (!op) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown operator.</p></div>;
       const season = SEASONS.find((s) => s.name === op.season || s.name === `Operation ${op.season}` || op.season === s.name);
       const lore = LORE[id] || {};
+      const ubi = UBI_OPS.get(id) || null;
+      const ubiGadgetIcons = new Map((ubi && ubi.gadgets ? ubi.gadgets : []).map((g) => [String(g.name).toLowerCase(), g.icon]));
+      // Reveal trailer: Ubisoft truth first, legacy video entries as backup.
+      const legacyVids = VIDEOS[id] || [];
+      const revealEntry = (ubi && ubi.reveal && (ubi.reveal.youtubeId || ubi.reveal.poster)) ? { youtubeId: ubi.reveal.youtubeId, poster: ubi.reveal.poster, label: 'Reveal Trailer', source: 'ubisoft' }
+        : (() => { const v = legacyVids.find((x) => x.youtubeId); return v ? { youtubeId: v.youtubeId, poster: (lore.tips || [])[0] && lore.tips[0].poster, label: 'Reveal Trailer', source: v.source } : null; })();
+      const abilityEntry = (ubi && ubi.power && ubi.power.mp4) ? { mp4: ubi.power.mp4, poster: ubi.power.mp4Poster, label: `${ubi.power.name} preview` }
+        : (() => { const v = legacyVids.find((x) => x.mp4); return v ? { mp4: v.mp4, poster: null, label: v.label } : null; })();
       // Sections in article order; the first two present ones render beside
       // the infobox rail (leadExtra) to fill the dead space, the rest below.
       // TOC derives from the same list, so it always mirrors visual order.
       const sections = [
-        ...(((lore.tips || []).length || (VIDEOS[id] || []).length) ? [{ id: 'howtoplay', label: 'How to play' }] : []),
+        ...(revealEntry ? [{ id: 'reveal', label: 'Reveal Trailer' }] : []),
+        ...(abilityEntry ? [{ id: 'gadget-preview', label: 'Gadget Preview' }] : []),
+        ...((lore.tips || []).length ? [{ id: 'howtoplay', label: 'How to play' }] : []),
         { id: 'gadget', label: 'Gadget' },
         ...((op.weapons || []).length ? [{ id: 'loadout', label: 'Loadout' }] : []),
         ...((lore.biography || lore.ubiBio) ? [{ id: 'biography', label: 'Biography' }] : []),
@@ -463,23 +498,17 @@
       ];
       const railIds = new Set(sections.slice(0, 2).map((s) => s.id));
       const toc = sections;
-      // Operator-wide attachment fit: union of the scraped per-weapon
-      // expansions across the operator's firearms (never the stale compat
-      // tables), split into Barrel / Scopes / Side (laser only).
-      const opFitNames = [];
-      (op.weapons || []).filter((w) => w.slot !== 'gadget').forEach((w) => {
-        const canon = weaponsByName.get(w.name) || resolveWeapon(w.name);
-        ((canon && canon.attachmentsList) || []).forEach((n) => {
-          if (!opFitNames.includes(n)) opFitNames.push(n);
-        });
-      });
+      // Per-gun attachment fits: every firearm lists its own full table from
+      // the scraped per-weapon expansions (never the stale compat tables,
+      // never an operator-wide union — an SMG must not inherit a DMR's
+      // magnified scopes). Empty-fit guns render an explicit row.
       const attachByName = new Map(ATTACHMENTS.map((a) => [a.name, a]));
-      const opFit = opFitNames.map((n) => attachByName.get(n)).filter(Boolean);
-      const opBarrel = opFit.filter((a) => a.type === 'Barrel');
-      const opScopes = opFit.filter((a) => /sight|scope|telescopic/i.test(`${a.name} ${a.type}`));
-      const opSide = opFit.filter((a) => a.name === 'Laser');
-      const hasOpAttach = opBarrel.length + opScopes.length + opSide.length > 0;
-      if (hasOpAttach) toc.push({ id: 'attachments', label: 'Attachments' });
+      const gunFits = (op.weapons || []).filter((w) => w.slot !== 'gadget').map((w) => {
+        const canon = weaponsByName.get(w.name) || resolveWeapon(w.name);
+        const items = ((canon && canon.attachmentsList) || []).map((n) => attachByName.get(n)).filter(Boolean);
+        return { weapon: w, canon, items };
+      });
+      if (gunFits.length) toc.push({ id: 'attachments', label: 'Attachments' });
       const AttachTable = ({ items }) => (
         <table className="cx-wikitable"><thead><tr><th></th><th>Attachment</th><th>Type</th></tr></thead>
           <tbody>{items.map((a) => (
@@ -488,18 +517,44 @@
               <td>{a.type || '—'}</td></tr>
           ))}</tbody></table>
       );
-      const attachNode = hasOpAttach ? (
+      const GunAttachBlock = ({ fit }) => {
+        const title = fit.canon ? (
+          <button type="button" className="cx-alink font-semibold" onClick={() => setView('weapon', { id: fit.canon.name })}>{fit.weapon.name}</button>
+        ) : fit.weapon.name;
+        return (
+          <div className="mb-5">
+            <h3 className="cx-sub">{title}</h3>
+            {fit.items.length ? <AttachTable items={fit.items} /> : <p className="text-sm" style={{ color: 'var(--muted)' }}>No attachable slots.</p>}
+          </div>
+        );
+      };
+      const attachNode = gunFits.length ? (
         <CxSection id="attachments" title="Attachments">
-          {opBarrel.length ? (<div className="mb-6"><h3 className="cx-sub">Barrel</h3><AttachTable items={opBarrel} /></div>) : null}
-          {opScopes.length ? (<div className="mb-6"><h3 className="cx-sub">Scopes</h3><AttachTable items={opScopes} /></div>) : null}
-          {opSide.length ? (<div className="mb-6"><h3 className="cx-sub">Side</h3><AttachTable items={opSide} /></div>) : null}
+          {['primary', 'secondary'].map((slot) => {
+            const fits = gunFits.filter((g) => g.weapon.slot === slot);
+            if (!fits.length) return null;
+            return (
+              <div key={slot} className="mb-6">
+                <h3 className="cx-sub">{slot === 'primary' ? 'Primaries' : 'Secondaries'}</h3>
+                {fits.map((f, i) => <GunAttachBlock key={`${f.weapon.name}-${i}`} fit={f} />)}
+              </div>
+            );
+          })}
         </CxSection>
       ) : null;
-      const howtoNode = (lore.tips || []).length || (VIDEOS[id] || []).length ? (
+      const revealNode = revealEntry ? (
+        <CxSection id="reveal" title="Reveal Trailer">
+          {revealEntry.youtubeId ? <VideoEmbed youtubeId={revealEntry.youtubeId} label={revealEntry.label} source={revealEntry.source} poster={revealEntry.poster} />
+            : revealEntry.poster ? <span className="sq-img block w-full overflow-hidden rounded-2xl mb-2" style={{ aspectRatio: '16 / 9' }}><AssetFrame type="Gadget" size="fill" imageUrl={`./${revealEntry.poster}`} /></span> : null}
+        </CxSection>
+      ) : null;
+      const gadgetPreviewNode = abilityEntry ? (
+        <CxSection id="gadget-preview" title="Gadget Preview">
+          <UbiVideo mp4={abilityEntry.mp4} poster={abilityEntry.poster} label={abilityEntry.label} />
+        </CxSection>
+      ) : null;
+      const howtoNode = (lore.tips || []).length ? (
         <CxSection id="howtoplay" title="How to play">
-          {(VIDEOS[id] || []).filter((v) => v.youtubeId).slice(0, 1).map((v, i) => (
-            <VideoEmbed key={'v' + i} youtubeId={v.youtubeId} label={v.label} source={v.source} poster={(lore.tips || [])[0] && (lore.tips || [])[0].poster} />
-          ))}
           {(lore.tips || []).map((tip, i) => (
             <div key={i} className="flex items-start gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
               {tip.poster ? <span className="sq-img shrink-0" style={{ width: '120px' }}><AssetFrame type="Gadget" imageUrl={`./${tip.poster}`} /></span> : null}
@@ -507,16 +562,27 @@
                 <span className="block text-sm" style={{ color: 'var(--text)' }}>{tip.text}</span></span>
             </div>
           ))}
-          {(VIDEOS[id] || []).filter((v) => v.mp4).slice(0, 1).map((v, i) => (
-            <p key={'m' + i} className="text-sm mt-1"><a className="cx-alink" href={v.mp4} target="_blank" rel="noreferrer">▶ {v.label || 'Ability preview'} (Ubisoft video)</a></p>
-          ))}
         </CxSection>
       ) : null;
+      // Power prose: Fandom primary when both describe the same thing
+      // (shared vocabulary), Ubisoft wins when they grossly differ.
+      const grosslySame = (() => {
+        const f = String(op.ability || '').toLowerCase();
+        const u = String((ubi && ubi.power && ubi.power.text) || '').toLowerCase();
+        if (!f || !u) return true;
+        const words = (s) => new Set(s.split(/[^a-z0-9]+/).filter((w) => w.length > 4));
+        const fw = words(f), uw = words(u);
+        let shared = 0;
+        fw.forEach((w) => { if (uw.has(w)) shared += 1; });
+        return shared >= 3;
+      })();
+      const powerText = (!grosslySame && ubi && ubi.power && ubi.power.text) ? ubi.power.text : op.ability;
+      const powerName = (ubi && ubi.power && ubi.power.name) || op.gadget;
       const gadgetNode = (
         <CxSection id="gadget" title="Gadget">
           <div className="flex items-center gap-3">
-            <span className="sq-img"><AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} /></span>
-            <p><strong>{op.gadget}.</strong> {op.ability}</p>
+            <span className="sq-img"><AssetFrame type="Gadget" imageUrl={(ubi && ubi.power && ubi.power.icon) ? `./${ubi.power.icon}` : (op.gadgetIcon ? `./${op.gadgetIcon}` : null)} /></span>
+            <p><strong>{powerName}.</strong> {powerText}</p>
           </div>
         </CxSection>
       );
@@ -531,9 +597,12 @@
                 {items.map((w, i) => (
                   <div key={`${w.name}-${i}`} className="flex items-center gap-3 rounded-2xl p-2.5 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
                     {slot === 'gadget' ? (
-                      w.gadgetId && gadgetsById.get(w.gadgetId) && gadgetsById.get(w.gadgetId).image ? (
-                        <span className="sq-img"><AssetFrame type="Gadget" imageUrl={`./${gadgetsById.get(w.gadgetId).image}`} /></span>
-                      ) : null
+                      (() => {
+                        const ubiIcon = ubiGadgetIcons.get(String(w.name).toLowerCase());
+                        const gid = w.gadgetId && gadgetsById.get(w.gadgetId);
+                        const img = ubiIcon ? `./${ubiIcon}` : (gid && gid.image ? `./${gid.image}` : null);
+                        return img ? <span className="sq-img"><AssetFrame type="Gadget" imageUrl={img} /></span> : null;
+                      })()
                     ) : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={(ubiGunImage(w.name) || ((slot !== 'gadget' && resolveWeapon(w.name) && resolveWeapon(w.name).image) ? `./${resolveWeapon(w.name).image}` : (w.image ? `./${w.image}` : null)))} /></span>}
                     <span className="min-w-0 flex-1">
                       {slot === 'gadget' && w.gadgetId && gadgetsById.get(w.gadgetId) ? (
@@ -565,10 +634,13 @@
             const src = lore.howto || ((lore.tips || [])[0] && lore.tips[0].text) || lore.ubiBio || op.ability;
             const sentences = String(src).match(/[^.!?]+[.!?]+/g) || [src];
             const short = (sentences[0] || '') + (sentences[1] || '');
-            return short.length > 320 ? short.slice(0, 317).trimEnd() + '…' : short;
+            if (short.length <= 320) return short;
+            const cut = short.slice(0, 317);
+            const sp = cut.lastIndexOf(' ');
+            return (sp > 200 ? cut.slice(0, sp) : cut).trimEnd() + '…';
           })()}</p>}
           toc={toc}
-          leadExtra={<>{railIds.has('howtoplay') && howtoNode}{railIds.has('gadget') && gadgetNode}{railIds.has('loadout') && loadoutNode}</>}
+          leadExtra={<>{railIds.has('reveal') && revealNode}{railIds.has('gadget-preview') && gadgetPreviewNode}{railIds.has('howtoplay') && howtoNode}{railIds.has('gadget') && gadgetNode}{railIds.has('loadout') && loadoutNode}</>}
           categories={[op.side + 's', op.squad]}
           infobox={{
             title: op.name, sub: `${op.side} · ${op.squad}`,
@@ -585,6 +657,8 @@
             ],
           }}
         >
+          {!railIds.has('reveal') && revealNode}
+          {!railIds.has('gadget-preview') && gadgetPreviewNode}
           {!railIds.has('howtoplay') && howtoNode}
           {!railIds.has('gadget') && gadgetNode}
           {!railIds.has('loadout') && loadoutNode}
@@ -694,21 +768,19 @@
             ))}</tbody></table>
         </div>
       );
-      const SIDES = [{ id: 'all', label: 'All' }, { id: 'Attacker', label: 'Attack' }, { id: 'Defender', label: 'Defense' }, { id: 'global', label: 'Global' }];
+      const SIDES = [{ id: 'all', label: 'All' }, { id: 'Attacker', label: 'Attacker' }, { id: 'Defender', label: 'Defender' }, { id: 'global', label: 'Global' }];
       return (
         <div className="cx-article">
           <h1 className="cx-title">Gadgets</h1>
-          <p className="cx-lead">Unique gadgets by operator, plus global secondaries.</p>
+          <p className="cx-lead">{OPERATORS.length} unique gadgets by operator, plus {GADGETS.length} global secondaries.</p>
           <WikiHeaderSearchPortal>
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter gadgets..." aria-label="Filter gadgets"
-              className="w-full rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+            <div className="flex gap-2">
+              <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter gadgets..." aria-label="Filter gadgets"
+                className="flex-1 rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+            </div>
           </WikiHeaderSearchPortal>
-          <div className="flex flex-wrap gap-2 mt-4 mb-6" role="tablist" aria-label="Filter by side">
-            {SIDES.map((s) => (
-              <button key={s.id} type="button" role="tab" aria-selected={side === s.id} onClick={() => setSide(s.id)} className="cx-chip"
-                style={side === s.id ? { borderColor: 'var(--accent)', color: 'var(--text)', fontWeight: 700 } : null}>{s.label}</button>
-            ))}
-          </div>
+          <FilterChips options={SIDES} value={side} onChange={setSide} label="Filter by side" />
+          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{attackers.length + defenders.length + secondaries.length} gadgets</p>
           {(side === 'all' || side === 'Attacker') && <Group title="Attacker gadgets" items={attackers} />}
           {(side === 'all' || side === 'Defender') && <Group title="Defender gadgets" items={defenders} />}
           {(side === 'all' || side === 'global') && (
@@ -727,6 +799,7 @@
             })}</tbody></table>
           </div>
           )}
+          {attackers.length + defenders.length + secondaries.length === 0 ? <p style={{ color: 'var(--muted)' }}>No gadgets match.</p> : null}
         </div>
       );
     };
@@ -743,15 +816,13 @@
           <h1 className="cx-title">Weapons</h1>
           <p className="cx-lead">{WEAPONS.length} firearms across every operator loadout.</p>
           <WikiHeaderSearchPortal>
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter weapons..." aria-label="Filter weapons"
-              className="w-full rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+            <div className="flex gap-2">
+              <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter weapons..." aria-label="Filter weapons"
+                className="flex-1 rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+            </div>
           </WikiHeaderSearchPortal>
-          <div className="flex flex-wrap gap-2 mt-4 mb-6" role="tablist" aria-label="Filter by type">
-            {[{ id: 'all', label: 'All' }, ...types.map((t) => ({ id: t, label: t }))].map((t) => (
-              <button key={t.id} type="button" role="tab" aria-selected={type === t.id} onClick={() => setType(t.id)} className="cx-chip"
-                style={type === t.id ? { borderColor: 'var(--accent)', color: 'var(--text)', fontWeight: 700 } : null}>{t.label}</button>
-            ))}
-          </div>
+          <FilterChips options={[{ id: 'all', label: 'All' }, ...types.map((t) => ({ id: t, label: t }))]} value={type} onChange={setType} label="Filter by type" />
+          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{list.length} weapons</p>
           <table className="cx-wikitable"><thead><tr><th></th><th>Weapon</th><th>Type</th><th>Damage</th><th>Fire rate</th></tr></thead>
             <tbody>{list.map((w) => (
               <tr key={w.name}><td><span className="sq-img"><AssetFrame type="Weapon" imageUrl={ubiGunImage(w.name) || (w.image ? `./${w.image}` : null)} /></span></td>
@@ -913,9 +984,12 @@
           <h1 className="cx-title">Attachments</h1>
           <p className="cx-lead">{ATTACHMENTS.length} sights, grips, barrels and gadgets.</p>
           <WikiHeaderSearchPortal>
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter attachments..." aria-label="Filter attachments"
-              className="w-full rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+            <div className="flex gap-2">
+              <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter attachments..." aria-label="Filter attachments"
+                className="flex-1 rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+            </div>
           </WikiHeaderSearchPortal>
+          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{grouped.reduce((n, g) => n + g.items.length, 0) + rest.length} attachments</p>
           {grouped.map((g) => (g.items.length ? (
             <div key={g.id} className="mb-6">
               <h2 className="cx-h2">{g.title}</h2>
@@ -1116,8 +1190,11 @@
 
     const SeasonsView = ({ setView, favorites, onToggleFavorite }) => {
       const [q, setQ] = useState('');
+      const [year, setYear] = useState('all');
       const query = q.trim().toLowerCase();
-      const filtered = SEASONS.filter((s) => !query || (s.name + ' ' + s.code + ' ' + (s.operators || []).join(' ')).toLowerCase().includes(query));
+      const years = useMemo(() => [...new Set(SEASONS.map((s) => s.year))].sort((a, b) => b - a), []);
+      const filtered = SEASONS.filter((s) => (year === 'all' || s.year === year)
+        && (!query || (s.name + ' ' + s.code + ' ' + (s.operators || []).join(' ')).toLowerCase().includes(query)));
       const byYear = (() => {
         const groups = {};
         filtered.forEach((s) => { (groups[s.year] = groups[s.year] || []).push(s); });
@@ -1128,9 +1205,13 @@
           <h1 className="cx-title">Seasons</h1>
           <p className="cx-lead">{SEASONS.length} seasons from Year 1 to Year {Math.max(...SEASONS.map((s) => s.year))}.</p>
           <WikiHeaderSearchPortal>
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter seasons..." aria-label="Filter seasons"
-              className="w-full rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+            <div className="flex gap-2">
+              <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter seasons..." aria-label="Filter seasons"
+                className="flex-1 rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
+            </div>
           </WikiHeaderSearchPortal>
+          <FilterChips options={[{ id: 'all', label: 'All' }, ...years.map((y) => ({ id: y, label: `Year ${y}` }))]} value={year} onChange={setYear} label="Filter by year" />
+          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{filtered.length} seasons</p>
           {byYear.map((g) => (
             <div key={g.year} className="mb-6">
               <h2 className="cx-h2">Year {g.year}</h2>
@@ -1145,6 +1226,7 @@
               ))}
             </div>
           ))}
+          {filtered.length === 0 ? <p style={{ color: 'var(--muted)' }}>No seasons match.</p> : null}
         </div>
       );
     };
@@ -1751,14 +1833,27 @@
       };
 
       return (
-        <div data-smoke-ready="true" data-smoke-view={currentView} data-smoke-profile={viewContext.id || ''} className="site-shell website-shell flex flex-col h-screen w-full text-slate-100 overflow-hidden relative" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-          {!device.isMobile && <WikiHeader currentView={currentView} setView={setView} />}
+        <div data-smoke-ready="true" data-smoke-view={currentView} data-smoke-profile={viewContext.id || ''} className="site-shell website-shell r6-shell flex flex-col h-screen w-full text-slate-100 overflow-hidden relative" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+          {device.isMobile ? (
+          <React.Fragment>
           <SiteFooter currentView={currentView} />
-          {device.isMobile && <WebsiteHeader currentView={currentView} setView={setView} onOpenDrawer={() => setDrawerOpen(true)} titleOverride={headerTitle !== getNavDisplayLabel(currentView) ? headerTitle : null} />}
+          <WebsiteHeader currentView={currentView} setView={setView} onOpenDrawer={() => setDrawerOpen(true)} titleOverride={headerTitle !== getNavDisplayLabel(currentView) ? headerTitle : null} />
           <div className="website-workspace relative z-10 flex-1 min-h-0 flex">
-            {!device.isMobile && <Navigation currentView={currentView} setView={setView} theme={theme} isMobile={false} customNavItems={DEFAULT_SETTINGS.navItems} />}
             <main ref={mainRef} className="website-main relative flex-1 min-w-0 overflow-hidden"><div key={currentView + (viewContext.id || '')} className="view-transition h-full overflow-y-auto" style={{ padding: '20px 16px 120px' }}>{renderContent()}</div></main>
           </div>
+          </React.Fragment>
+          ) : (
+          <div className="r6-desktop-row flex flex-1 min-h-0">
+            <Navigation currentView={currentView} setView={setView} theme={theme} isMobile={false} customNavItems={DEFAULT_SETTINGS.navItems} />
+            <div className="flex flex-col flex-1 min-w-0 min-h-0">
+              <WikiHeader currentView={currentView} setView={setView} />
+              <SiteFooter currentView={currentView} />
+              <div className="website-workspace relative z-10 flex-1 min-h-0 flex">
+                <main ref={mainRef} className="website-main relative flex-1 min-w-0 overflow-hidden"><div key={currentView + (viewContext.id || '')} className="view-transition h-full overflow-y-auto" style={{ padding: '20px 16px 120px' }}>{renderContent()}</div></main>
+              </div>
+            </div>
+          </div>
+          )}
           {device.isMobile && <SectionDrawer open={drawerOpen} currentView={currentView} onBrowse={(vid) => setView(vid)} onClose={() => setDrawerOpen(false)} />}
           {floorModal && mapsById.get(floorModal.mapId) ? (
             <MapFloorModal map={mapsById.get(floorModal.mapId)} initialIndex={floorModal.index} onClose={() => setFloorModal(null)}
