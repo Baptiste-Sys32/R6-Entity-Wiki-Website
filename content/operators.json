@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:31:18.310Z",
+  "generatedAt": "2026-09-29T20:40:27.046Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -66,7 +66,7 @@
       "armor": 2,
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-amaru.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-amaru.png",
       "gadgetIcon": "r6_images/gadgets/r6-amaru.png",
       "weapons": [
         {
@@ -345,7 +345,7 @@
       "armor": 1,
       "speed": 3,
       "icon": "r6_images/operators/icons/r6-capit-o.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-capit-o.png",
       "gadgetIcon": "r6_images/gadgets/r6-capit-o.png",
       "weapons": [
         {
@@ -728,7 +728,7 @@
       "armor": 3,
       "speed": 1,
       "icon": "r6_images/operators/icons/r6-gridlock.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-gridlock.png",
       "gadgetIcon": "r6_images/gadgets/r6-gridlock.png",
       "weapons": [
         {
@@ -993,7 +993,7 @@
       "armor": 2,
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-jackal.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-jackal.png",
       "gadgetIcon": "r6_images/gadgets/r6-jackal.png",
       "weapons": [
         {
@@ -1268,7 +1268,7 @@
       "armor": 2,
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-nomad.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-nomad.png",
       "gadgetIcon": "r6_images/gadgets/r6-nomad.png",
       "weapons": [
         {
@@ -2127,7 +2127,7 @@
       "armor": 1,
       "speed": 3,
       "icon": "r6_images/operators/icons/r6-bandit.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-bandit.png",
       "gadgetIcon": "r6_images/gadgets/r6-bandit.png",
       "weapons": [
         {
@@ -2622,7 +2622,7 @@
       "armor": 2,
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-goyo.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-goyo.png",
       "gadgetIcon": "r6_images/gadgets/r6-goyo.png",
       "weapons": [
         {
@@ -2720,7 +2720,7 @@
       "armor": 3,
       "speed": 1,
       "icon": "r6_images/operators/icons/r6-kaid.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-kaid.png",
       "gadgetIcon": "r6_images/gadgets/r6-kaid.png",
       "weapons": [
         {
@@ -3019,7 +3019,7 @@
       "armor": 2,
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-mozzie.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-mozzie.png",
       "gadgetIcon": "r6_images/gadgets/r6-mozzie.png",
       "weapons": [
         {
@@ -3544,7 +3544,7 @@
       "armor": 2,
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-thorn.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-thorn.png",
       "gadgetIcon": "r6_images/gadgets/r6-thorn.png",
       "weapons": [
         {
@@ -3652,7 +3652,7 @@
       "armor": 2,
       "speed": 2,
       "icon": "r6_images/operators/icons/r6-tubar-o.png",
-      "hero": null,
+      "hero": "r6_images/operators/heroes/r6-tubar-o.png",
       "gadgetIcon": "r6_images/gadgets/r6-tubar-o.png",
       "weapons": [
         {

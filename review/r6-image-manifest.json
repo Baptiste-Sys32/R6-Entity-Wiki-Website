@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:29:57.734Z",
+  "generatedAt": "2026-09-29T20:40:27.046Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -10079,6 +10079,50 @@
     "r6_images/ubi/r6s-fuze-clear-room.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/63C0UjdjZE0Y2tuKDB71NS/4d329e1eb071b1a75da8cb3fbe992eb0/r6s_fuze_clear_room.jpg",
       "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fuze"
+    },
+    "r6_images/operators/heroes/r6-thorn.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3erk7Ub0asfBDZEKsdL8j9/5019698958b0834e806d01cd7bf36286/r6s-operator-thorn.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thorn"
+    },
+    "r6_images/operators/heroes/r6-tubar-o.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6RHlZJniCer89285ocTyPY/103b3da47a3978f5b6fbbd77a02b53c9/r6s-operator-tubarao.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tubarao"
+    },
+    "r6_images/operators/heroes/r6-amaru.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1w0TmOriiVzmeIBYodZ6wK/81da7f64732b1dbf5ccf984f2aea1d94/R6-operator-amaru.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru"
+    },
+    "r6_images/operators/heroes/r6-capit-o.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5OxEmlChYi0U3d4URLaC4C/e348f7b3b77d2d8dec65ec6afbe171f9/R6-operator-capitao.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao"
+    },
+    "r6_images/operators/heroes/r6-gridlock.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/221q2yd28L3IAkjUGEFCke/51f431695fe53b30f7b384141b5e63ee/R6-operator-gridlock.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock"
+    },
+    "r6_images/operators/heroes/r6-jackal.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2YoFmkuQL4r8odEWB7K60w/b5fd30cf9c7f407753bd921dfe6a1d28/R6-operator-jackal.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal"
+    },
+    "r6_images/operators/heroes/r6-nomad.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Fue2SumRQEs8Geb2CpWsX/913fbcda744ab9dc719a1440047e4585/R6-operator-nomad.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nomad"
+    },
+    "r6_images/operators/heroes/r6-bandit.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7uF3w5MYCFA1zikIkECPi9/f03570fd8c7739361619726638561c7a/R6-operator-bandit.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/bandit"
+    },
+    "r6_images/operators/heroes/r6-goyo.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Hz6j8A8mmpN0zsxoQWXgC/1d29dff2a852f5fe25c5c4640dfe2d12/R6-operator-goyo.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/goyo"
+    },
+    "r6_images/operators/heroes/r6-kaid.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4WdfMUlABk6Pr9FjV3kV4x/42ffacc4a2cd75ff9539dcb00e1e28ee/R6-operator-kaid.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kaid"
+    },
+    "r6_images/operators/heroes/r6-mozzie.png": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/22Gyn0Z317IfLRGwHPBlmL/1e9e9f041403e8846824337cb53600b8/r6-operator-mozzie_343388.png",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mozzie"
     }
   },
   "r6_images/attachments/r6-attach-scope-1-5x.png": {
