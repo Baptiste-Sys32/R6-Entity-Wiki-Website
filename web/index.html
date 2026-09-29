@@ -761,11 +761,40 @@
       if (!weapon) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown weapon.</p></div>;
       const users = (weapon.users || []).map((name) => OPERATORS.find((o) => o.name === name)
         || OPERATORS.find((o) => normOpName(o.name) === normOpName(name))).filter(Boolean);
-      const attachNames = Object.keys(weapon.attachments || {}).filter((k) => weapon.attachments[k]);
       const weaponKeys = new Set([weapon.name, ...((weapon.aliases || []))].map((n) => normWeaponKey(n)));
       const compatAttach = ATTACHMENTS.filter((a) => (a.compat || []).some((c) => weaponKeys.has(normWeaponKey(c))));
+      const compatNames = new Set(compatAttach.map((a) => a.name));
+      // Raw loadout flags (sight_1x, grips_all, ...) are coarse in-game
+      // categories, not attachment names. Resolve each true flag to the
+      // named attachments it covers; anything already in the compat table
+      // is dropped, anything left over becomes one honest summary line.
+      const FLAG_COVERS = {
+        sight_1x: { label: '1× sights', names: ['Holographic Sight', 'Red Dot Sight', 'Reflex Sight'] },
+        sight_pistol: { label: '1× sights', names: ['Holographic Sight', 'Red Dot Sight', 'Reflex Sight'] },
+        sight_magnified: { label: 'magnified scopes', names: ['Scope 1.5x', 'Scope 2.5x', 'Telescopic A', 'Scope 3.0x'] },
+        sight_magnified_nokk: { label: 'magnified scopes', names: ['Scope 1.5x', 'Scope 2.5x', 'Telescopic A', 'Scope 3.0x'] },
+        sight_magnified_zero: { label: 'magnified scopes', names: ['Scope 1.5x', 'Scope 2.5x', 'Telescopic A', 'Scope 3.0x'] },
+        sight_telescopic: { label: 'magnified scopes', names: ['Scope 1.5x', 'Scope 2.5x', 'Telescopic A', 'Scope 3.0x'] },
+        sight_telescopic_dokk: { label: 'magnified scopes', names: ['Scope 1.5x', 'Scope 2.5x', 'Telescopic A', 'Scope 3.0x'] },
+        sight_telescopic_mav: { label: 'magnified scopes', names: ['Scope 1.5x', 'Scope 2.5x', 'Telescopic A', 'Scope 3.0x'] },
+        sight_dp27: { label: 'magnified scopes', names: ['Scope 1.5x', 'Scope 2.5x', 'Telescopic A', 'Scope 3.0x'] },
+        muzzle_brake: { label: 'muzzle brakes', names: ['Muzzle Brake'] },
+        muzzle_brake_dokk: { label: 'muzzle brakes', names: ['Muzzle Brake'] },
+        muzzle_brake_mav: { label: 'muzzle brakes', names: ['Muzzle Brake'] },
+        compensator: { label: 'compensators', names: ['Compensator'] },
+        flash_hider: { label: 'flash hiders', names: ['Flash Hider'] },
+        suppressor: { label: 'suppressors', names: ['Suppressor'] },
+        extended_barrel: { label: 'extended barrels', names: ['Extended Barrel'] },
+        grips_all: { label: 'grips', names: ['Angled Grip', 'Vertical Grip', 'Horizontal Grip'] },
+        grips_no_angled: { label: 'grips', names: ['Vertical Grip', 'Horizontal Grip'] },
+        grips_brava_camrs: { label: 'grips', names: ['Angled Grip', 'Vertical Grip', 'Horizontal Grip'] },
+        laser: { label: 'lasers', names: ['Laser'] },
+      };
+      const alsoFits = [...new Set(Object.entries(FLAG_COVERS)
+        .filter(([key, cov]) => (weapon.attachments || {})[key] && cov.names.every((n) => !compatNames.has(n)))
+        .map(([, cov]) => cov.label))];
       const toc = [{ id: 'stats', label: 'Stats' }];
-      if (attachNames.length || compatAttach.length) toc.push({ id: 'attachments', label: 'Attachments' });
+      if (compatAttach.length || alsoFits.length) toc.push({ id: 'attachments', label: 'Attachments' });
       if ((weapon.pros || []).length) toc.push({ id: 'notes', label: 'Notes' });
       return (
         <ArticleShell
@@ -812,7 +841,7 @@
               </div>
             ) : null}
           </CxSection>
-          {attachNames.length || compatAttach.length ? (
+          {compatAttach.length || alsoFits.length ? (
             <CxSection id="attachments" title="Attachments">
               {compatAttach.length ? (
                 <table className="cx-wikitable"><thead><tr><th></th><th>Attachment</th><th>Type</th></tr></thead>
@@ -822,12 +851,8 @@
                       <td>{a.type || '—'}</td></tr>
                   ))}</tbody></table>
               ) : null}
-              {attachNames.length ? (
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {attachNames.map((key) => (
-                    <button key={key} type="button" onClick={() => setView('attachments')} className="cx-chip">{key.replace(/_/g, ' ')}</button>
-                  ))}
-                </div>
+              {alsoFits.length ? (
+                <p className="text-sm mt-2" style={{ color: 'var(--muted)' }}>Loadout options also include {alsoFits.join(', ')}.</p>
               ) : null}
             </CxSection>
           ) : null}
