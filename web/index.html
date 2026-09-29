@@ -454,6 +454,48 @@
       ];
       const railIds = new Set(sections.slice(0, 2).map((s) => s.id));
       const toc = sections;
+      // Operator-wide attachment fit: union of compat matches across the
+      // operator's firearms, split into Barrel / Scopes / Side (laser only).
+      const opGunKeys = new Set();
+      (op.weapons || []).filter((w) => w.slot !== 'gadget').forEach((w) => {
+        opGunKeys.add(normWeaponKey(w.name));
+        const canon = weaponsByName.get(w.name) || resolveWeapon(w.name);
+        if (canon) {
+          opGunKeys.add(normWeaponKey(canon.name));
+          (canon.aliases || []).forEach((a) => opGunKeys.add(normWeaponKey(a)));
+        }
+      });
+      const opAttach = ATTACHMENTS.filter((a) => (a.compat || []).some((c) => opGunKeys.has(normWeaponKey(c))));
+      const opBarrel = opAttach.filter((a) => a.type === 'Barrel');
+      const opScopes = opAttach.filter((a) => /sight|scope|telescopic/i.test(`${a.name} ${a.type}`));
+      // No attachment-side compat list exists for the Laser upstream — the
+      // weapon-side laser flag (79 arms) is the source of truth instead.
+      const opSide = (() => {
+        const laser = ATTACHMENTS.find((a) => a.name === 'Laser');
+        if (!laser) return [];
+        const anySlot = (op.weapons || []).filter((w) => w.slot !== 'gadget').some((w) => {
+          const canon = weaponsByName.get(w.name) || resolveWeapon(w.name);
+          return canon && canon.attachments && canon.attachments.laser;
+        });
+        return anySlot ? [laser] : [];
+      })();
+      const hasOpAttach = opBarrel.length + opScopes.length + opSide.length > 0;
+      if (hasOpAttach) toc.push({ id: 'attachments', label: 'Attachments' });
+      const AttachTable = ({ items }) => (
+        <table className="cx-wikitable"><thead><tr><th></th><th>Attachment</th><th>Type</th></tr></thead>
+          <tbody>{items.map((a) => (
+            <tr key={a.id}><td><span className="sq-img"><AssetFrame type="Gadget" imageUrl={a.image ? `./${a.image}` : null} /></span></td>
+              <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('attachments')}>{a.name}</button></td>
+              <td>{a.type || '—'}</td></tr>
+          ))}</tbody></table>
+      );
+      const attachNode = hasOpAttach ? (
+        <CxSection id="attachments" title="Attachments">
+          {opBarrel.length ? (<div className="mb-6"><h3 className="cx-sub">Barrel</h3><AttachTable items={opBarrel} /></div>) : null}
+          {opScopes.length ? (<div className="mb-6"><h3 className="cx-sub">Scopes</h3><AttachTable items={opScopes} /></div>) : null}
+          {opSide.length ? (<div className="mb-6"><h3 className="cx-sub">Side</h3><AttachTable items={opSide} /></div>) : null}
+        </CxSection>
+      ) : null;
       const howtoNode = (lore.tips || []).length || (VIDEOS[id] || []).length ? (
         <CxSection id="howtoplay" title="How to play">
           {(VIDEOS[id] || []).filter((v) => v.youtubeId).slice(0, 1).map((v, i) => (
@@ -547,6 +589,7 @@
           {!railIds.has('howtoplay') && howtoNode}
           {!railIds.has('gadget') && gadgetNode}
           {!railIds.has('loadout') && loadoutNode}
+          {attachNode}
           {lore.biography || lore.ubiBio ? (
             <CxSection id="biography" title="Biography">
               {loreParas(lore.biography).map((para, i) => <p key={i}>{para}</p>)}

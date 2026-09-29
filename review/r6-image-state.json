@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T13:37:20.076Z",
+  "generatedAt": "2026-09-29T14:46:53.202Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -8076,8 +8076,8 @@
       "file": "review/local-assets/attach-compensator.webp"
     },
     "r6_images/attachments/r6-attach-extended-barrel.png": {
-      "revision": "cb:20230706053545",
-      "file": "R6S Extended Barrel.jpeg"
+      "revision": "local:884ba642794a",
+      "file": "review/local-assets/attach-extended-barrel.png"
     },
     "r6_images/attachments/r6-attach-flash-hider.png": {
       "revision": "local:377f0cd7e0bf",
@@ -13916,8 +13916,8 @@
       "file": "review/local-assets/attach-scope-2-5x.webp"
     },
     "r6_images/attachments/r6-attach-laser.png": {
-      "revision": "cb:20160312174212",
-      "file": "Laser sight.png"
+      "revision": "local:41b3f3fd5ff8",
+      "file": "review/local-assets/attach-laser.png"
     }
   }
 }

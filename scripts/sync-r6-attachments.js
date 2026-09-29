@@ -32,6 +32,8 @@ const ATTACH_ART_OVERRIDES = {
   'r6-attach-suppressor': { local: 'review/local-assets/attach-suppressor.webp' },
   'r6-attach-vertical-grip': { local: 'review/local-assets/attach-vertical-grip.webp' },
   'r6-attach-angled-grip': { local: 'review/local-assets/attach-angled-grip.webp' },
+  'r6-attach-extended-barrel': { local: 'review/local-assets/attach-extended-barrel.png' },
+  'r6-attach-laser': { local: 'review/local-assets/attach-laser.png' },
 };
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
