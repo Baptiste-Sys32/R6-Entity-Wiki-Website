@@ -134,8 +134,10 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   absences: Ram, Rauora, Sens, Solid Snake, Denari, Noor, Oryx, Tubarão
   (section hides when empty).
 - **Trivia (1)**: Solid Snake. **How-to (1)**: Rook.
-- **Attachments 13/15**: Horizontal Grip and Scope/Siege are wiki stubs
-  (no infobox) — unwinnable until upstream fills them.
+- **Attachments 17 (2026-09-29)**: Scope/Siege hub yields Telescopic A +
+  Scope 3.0x, ACOG tab yields Scope 2.5x (all HUD-icon schematics);
+  Horizontal Grip stub parses thin. Attachments page grouped into
+  Sights & Scopes / Grips / Under Barrel / Barrel tables.
 - **Loadout coverage (fixed 2026-09-28)**: 52/76 ops had zero firearms —
   three parser bugs in `parseLoadout`: case-sensitive table headers
   (`|Primary`), a `$` in the row terminator that never matched mid-table,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T09:10:48.986Z",
+  "generatedAt": "2026-09-29T11:55:09.731Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -295,7 +295,7 @@
         },
         "r6_images/operators/heroes/r6-n-kk.png": {
           "revision": "cb:20190612000127",
-          "file": "N\u00f8kk - Full Body.png"
+          "file": "Nøkk - Full Body.png"
         },
         "r6_images/gadgets/r6-n-kk.png": {
           "revision": "cb:20200302160957",
@@ -739,7 +739,7 @@
         },
         "r6_images/gadgets/r6-oryx.png": {
           "revision": "cb:20200302160000",
-          "file": "Remah Dash\u200b.png"
+          "file": "Remah Dash​.png"
         },
         "r6_images/operators/icons/r6-pulse.png": {
           "revision": "cb:20240706091122",
@@ -767,7 +767,7 @@
         },
         "r6_images/operators/heroes/r6-skop-s.png": {
           "revision": "cb:20260304082847",
-          "file": "Skop\u00f3s In-game Fullbody.webp"
+          "file": "Skopós In-game Fullbody.webp"
         },
         "r6_images/gadgets/r6-skop-s.png": {
           "revision": "cb:20240913223827",
@@ -839,7 +839,7 @@
         },
         "r6_images/gadgets/r6-tubar-o.png": {
           "revision": "cb:20231120173142",
-          "file": "R6S Tubar\u00e3o Zoto Icon.png"
+          "file": "R6S Tubarão Zoto Icon.png"
         },
         "r6_images/operators/icons/r6-valkyrie.png": {
           "revision": "cb:20240712042218",
@@ -2776,7 +2776,7 @@
       },
       "r6_images/operators/heroes/r6-n-kk.png": {
         "revision": "cb:20190612000127",
-        "file": "N\u00f8kk - Full Body.png"
+        "file": "Nøkk - Full Body.png"
       },
       "r6_images/gadgets/r6-n-kk.png": {
         "revision": "cb:20200302160957",
@@ -3220,7 +3220,7 @@
       },
       "r6_images/gadgets/r6-oryx.png": {
         "revision": "cb:20200302160000",
-        "file": "Remah Dash\u200b.png"
+        "file": "Remah Dash​.png"
       },
       "r6_images/operators/icons/r6-pulse.png": {
         "revision": "cb:20240706091122",
@@ -3248,7 +3248,7 @@
       },
       "r6_images/operators/heroes/r6-skop-s.png": {
         "revision": "cb:20260304082847",
-        "file": "Skop\u00f3s In-game Fullbody.webp"
+        "file": "Skopós In-game Fullbody.webp"
       },
       "r6_images/gadgets/r6-skop-s.png": {
         "revision": "cb:20240913223827",
@@ -3320,7 +3320,7 @@
       },
       "r6_images/gadgets/r6-tubar-o.png": {
         "revision": "cb:20231120173142",
-        "file": "R6S Tubar\u00e3o Zoto Icon.png"
+        "file": "R6S Tubarão Zoto Icon.png"
       },
       "r6_images/operators/icons/r6-valkyrie.png": {
         "revision": "cb:20240712042218",
@@ -5385,7 +5385,7 @@
     },
     "r6_images/operators/heroes/r6-n-kk.png": {
       "revision": "cb:20190612000127",
-      "file": "N\u00f8kk - Full Body.png"
+      "file": "Nøkk - Full Body.png"
     },
     "r6_images/gadgets/r6-n-kk.png": {
       "revision": "cb:20200302160957",
@@ -5829,7 +5829,7 @@
     },
     "r6_images/gadgets/r6-oryx.png": {
       "revision": "cb:20200302160000",
-      "file": "Remah Dash\u200b.png"
+      "file": "Remah Dash​.png"
     },
     "r6_images/operators/icons/r6-pulse.png": {
       "revision": "cb:20240706091122",
@@ -5857,7 +5857,7 @@
     },
     "r6_images/operators/heroes/r6-skop-s.png": {
       "revision": "cb:20260304082847",
-      "file": "Skop\u00f3s In-game Fullbody.webp"
+      "file": "Skopós In-game Fullbody.webp"
     },
     "r6_images/gadgets/r6-skop-s.png": {
       "revision": "cb:20240913223827",
@@ -5929,7 +5929,7 @@
     },
     "r6_images/gadgets/r6-tubar-o.png": {
       "revision": "cb:20231120173142",
-      "file": "R6S Tubar\u00e3o Zoto Icon.png"
+      "file": "R6S Tubarão Zoto Icon.png"
     },
     "r6_images/operators/icons/r6-valkyrie.png": {
       "revision": "cb:20240712042218",
@@ -7789,7 +7789,7 @@
     },
     "r6_images/gadgets/r6-goyo.png": {
       "revision": "cb:20200302161845",
-      "file": "Volc\u00e1n_Shield.png"
+      "file": "Volcán_Shield.png"
     },
     "r6_images/gadgets/r6-lesion.png": {
       "revision": "cb:20200302144957",
@@ -8421,11 +8421,11 @@
     },
     "r6_images/weapons/r6-n-kk-4.png": {
       "revision": "cb:20250907161546",
-      "file": "R6S FMG-9 N\u00f8kk.webp"
+      "file": "R6S FMG-9 Nøkk.webp"
     },
     "r6_images/weapons/r6-n-kk-5.png": {
       "revision": "cb:20250907161645",
-      "file": "R6S SIX12 SD N\u00f8kk.webp"
+      "file": "R6S SIX12 SD Nøkk.webp"
     },
     "r6_images/weapons/r6-n-kk-6.png": {
       "revision": "cb:20260304080418",
@@ -12613,7 +12613,7 @@
     },
     "r6_images/skins/attachments-tom-clancy-s-rainbow-six-siege-high-calibre-m762.png": {
       "revision": "cb:20220227235810",
-      "file": "Aethereal Flux Att\u0430chm\u1eb9nt Skin.png"
+      "file": "Aethereal Flux Attаchmẹnt Skin.png"
     },
     "r6_images/skins/attachments-demon-veil-universal.png": {
       "revision": "cb:20220405045252",
@@ -13425,7 +13425,7 @@
     },
     "r6_images/skins/r6-mira-elite-inspiracion-gadget.png": {
       "revision": "cb:20260330195138",
-      "file": "Mira - Inspiraci\u00f3n Gadget Skin.webp"
+      "file": "Mira - Inspiración Gadget Skin.webp"
     },
     "r6_images/skins/r6-ying-elite-augmented-reality.png": {
       "revision": "cb:20250909191117",
@@ -13837,15 +13837,15 @@
     },
     "r6_images/skins/r6-tubar-o-elite-hope-carnations.png": {
       "revision": "cb:20260304072227",
-      "file": "Tubar\u00e3o - Hope Carnations in-game.webp"
+      "file": "Tubarão - Hope Carnations in-game.webp"
     },
     "r6_images/skins/r6-tubar-o-elite-hope-carnations-contents.png": {
       "revision": "cb:20260224211335",
-      "file": "Tubar\u00e3o - Hope Carnations Content.webp"
+      "file": "Tubarão - Hope Carnations Content.webp"
     },
     "r6_images/skins/r6-tubar-o-elite-hope-carnations-gadget.png": {
       "revision": "cb:20260304072152",
-      "file": "Tubar\u00e3o - Hope Carnations Gadget Skin.webp"
+      "file": "Tubarão - Hope Carnations Gadget Skin.webp"
     },
     "r6_images/skins/r6-solid-snake-elite-old-snake.png": {
       "revision": "cb:20260520085717",
@@ -13894,6 +13894,26 @@
     "r6_images/skins/r6-ace-paragon-heroic-legend-of-me-gadget.png": {
       "revision": "cb:20260520085212",
       "file": "Ace - Heroic Legend Of Me Gadget Skin.webp"
+    },
+    "r6_images/attachments/r6-attach-scope-1-5x.png": {
+      "revision": "cb:20200823024509",
+      "file": "Scope 1.5x HUD Icon R6S.png"
+    },
+    "r6_images/attachments/r6-attach-acog-sight.png": {
+      "revision": "cb:20201011103120",
+      "file": "ACOG Sight NATO HUD Icon R6S.png"
+    },
+    "r6_images/attachments/r6-attach-telescopic-a.png": {
+      "revision": "cb:20200823030429",
+      "file": "Scope 2.0x HUD Icon R6S.png"
+    },
+    "r6_images/attachments/r6-attach-scope-3-0x.png": {
+      "revision": "cb:20210110072027",
+      "file": "Scope 3.0x HUD Icon R6S.png"
+    },
+    "r6_images/attachments/r6-attach-scope-2-5x.png": {
+      "revision": "cb:20201011103120",
+      "file": "ACOG Sight NATO HUD Icon R6S.png"
     }
   }
 }

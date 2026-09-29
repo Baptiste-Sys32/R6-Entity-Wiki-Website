@@ -852,28 +852,51 @@
     const AttachmentsView = ({ setView }) => {
       const [q, setQ] = useState('');
       const query = q.trim().toLowerCase();
-      const list = ATTACHMENTS.filter((a) => !query || (a.name + ' ' + (a.type || '')).toLowerCase().includes(query));
+      const match = (a) => !query || `${a.name} ${a.type || ''}`.toLowerCase().includes(query);
+      const GROUPS = [
+        { id: 'sights', title: 'Sights & Scopes', test: (a) => /sight|scope|telescopic/i.test(`${a.name} ${a.type}`) },
+        { id: 'grips', title: 'Grips', test: (a) => /grip/i.test(`${a.name} ${a.type}`) },
+        { id: 'under', title: 'Under Barrel', test: (a) => /under barrel|flashlight|laser/i.test(`${a.name} ${a.type}`) },
+        { id: 'barrel', title: 'Barrel', test: (a) => /barrel|muzzle|brake|compensator|suppressor|extended/i.test(`${a.name} ${a.type}`) },
+      ];
+      const grouped = GROUPS.map((g) => ({ ...g, items: [] }));
+      const rest = [];
+      for (const a of ATTACHMENTS) {
+        if (!match(a)) continue;
+        const g = grouped.find((gg) => gg.test(a));
+        if (g) g.items.push(a);
+        else rest.push(a);
+      }
+      const blurb = (a) => (((a.effect || '').split('\n\n')[0] || '').slice(0, 160) || '').trim();
+      const Table = ({ items }) => (
+        <table className="cx-wikitable"><thead><tr><th></th><th>Attachment</th><th>Type</th><th>Effect</th></tr></thead>
+          <tbody>{items.map((a) => (
+            <tr key={a.id}><td><span className="sq-img"><AssetFrame type="Gadget" imageUrl={a.image ? `./${a.image}` : null} /></span></td>
+              <td className="font-semibold" style={{ color: 'var(--text)' }}>{a.name}</td>
+              <td>{a.type || '—'}</td><td>{blurb(a) || '—'}</td></tr>
+          ))}</tbody></table>
+      );
       return (
         <div className="cx-article">
           <h1 className="cx-title">Attachments</h1>
-          <p className="cx-lead">{ATTACHMENTS.length} muzzle devices, grips, sights and gadgets.</p>
+          <p className="cx-lead">{ATTACHMENTS.length} sights, grips, barrels and gadgets.</p>
           <WikiHeaderSearchPortal>
             <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter attachments..." aria-label="Filter attachments"
               className="w-full rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
           </WikiHeaderSearchPortal>
-          <div className="grid gap-3 sm:grid-cols-2 mt-3">
-            {list.map((a) => (
-              <div key={a.id} className="rounded-2xl p-4" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="sq-img"><AssetFrame type="Gadget" imageUrl={a.image ? `./${a.image}` : null} /></span>
-                  <span><span className="block font-bold" style={{ color: 'var(--text)', fontFamily: 'var(--font-display)' }}>{a.name}</span>
-                    <span className="block text-xs uppercase" style={{ color: 'var(--muted)' }}>{a.type}</span></span>
-                </div>
-                <p className="text-sm" style={{ color: 'var(--text)' }}>{(a.effect || '').split('\n\n')[0]}</p>
-              </div>
-            ))}
-          </div>
-          {list.length === 0 ? <p style={{ color: 'var(--muted)' }}>No attachments match.</p> : null}
+          {grouped.map((g) => (g.items.length ? (
+            <div key={g.id} className="mb-6">
+              <h2 className="cx-h2">{g.title}</h2>
+              <Table items={g.items} />
+            </div>
+          ) : null))}
+          {rest.length ? (
+            <div className="mb-6">
+              <h2 className="cx-h2">Other</h2>
+              <Table items={rest} />
+            </div>
+          ) : null}
+          {grouped.every((g) => !g.items.length) && !rest.length ? <p style={{ color: 'var(--muted)' }}>No attachments match.</p> : null}
         </div>
       );
     };

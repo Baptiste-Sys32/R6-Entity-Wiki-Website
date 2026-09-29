@@ -8794,6 +8794,26 @@
     "r6_images/skins/r6-ace-paragon-heroic-legend-of-me-gadget.png": {
       "file": "Ace - Heroic Legend Of Me Gadget Skin.webp",
       "width": 400
+    },
+    "r6_images/attachments/r6-attach-scope-1-5x.png": {
+      "file": "Scope 1.5x HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-acog-sight.png": {
+      "file": "ACOG Sight NATO HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-telescopic-a.png": {
+      "file": "Scope 2.0x HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-scope-3-0x.png": {
+      "file": "Scope 3.0x HUD Icon R6S.png",
+      "width": 200
+    },
+    "r6_images/attachments/r6-attach-scope-2-5x.png": {
+      "file": "ACOG Sight NATO HUD Icon R6S.png",
+      "width": 200
     }
   }
 }

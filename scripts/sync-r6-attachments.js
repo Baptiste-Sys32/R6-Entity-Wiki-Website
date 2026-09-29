@@ -45,12 +45,50 @@ function siegeSection(wt) {
   return m ? m[1] : '';
 }
 
+function balancedTemplate(wt, start) {
+  let depth = 0, end = -1;
+  for (let i = start; i < wt.length - 1; i++) {
+    if (wt[i] === '{' && wt[i + 1] === '{') { depth += 1; i += 1; }
+    else if (wt[i] === '}' && wt[i + 1] === '}') {
+      depth -= 1; i += 1;
+      if (depth === 0) { end = i + 1; break; }
+    }
+  }
+  return end > 0 ? wt.slice(start, end) : '';
+}
+
+function infoboxBlocks(wt) {
+  const out = [];
+  let from = 0;
+  for (;;) {
+    const start = wt.indexOf('{{Infobox/attachment', from);
+    if (start < 0) break;
+    const block = balancedTemplate(wt, start);
+    if (!block) break;
+    out.push({ block, index: start });
+    from = start + block.length;
+  }
+  return out;
+}
+
+function blockField(block, n) {
+  const m = block.match(new RegExp(`\\|${n}\\s*=([^\\n|][^\\n]*)`));
+  return m ? m[1].trim() : '';
+}
+
+function hudFileOf(markup) {
+  const m = String(markup).match(/\[\[(?:File:)?([^\]|]+\.(png|jpg|jpeg|webp))/i);
+  return m ? m[1].trim() : null;
+}
+
 function parseAttachment(title, wt) {
   let siege = siegeSection(wt);
   if (!siege) {
     const tab = String(wt).match(/Siege=\s*([\s\S]*?)(?=\|-\||<\/tabber>)/i);
     if (tab) siege = tab[1];
   }
+  // Scope/Siege style hub: no ==Siege== section, bare infobox blocks.
+  if ((!siege || !/\{\{Infobox\/attachment/.test(siege)) && /\{\{Infobox\/attachment/.test(wt)) siege = wt;
   if (!siege || !/\{\{Infobox\/attachment/.test(siege)) return null;
   const field = (n) => {
     const m = siege.match(new RegExp(`\\|${n}\\s*=([^\\n|][^\\n]*)`));
@@ -58,18 +96,45 @@ function parseAttachment(title, wt) {
   };
   const imageRaw = (field('image').match(/^(.*?)(?:\||$)/) || [])[1] || '';
   const imageFile = imageRaw.replace(/^\[\[(File:)?/i, '').replace(/\]\]$/, '').trim() || null;
-  const prose = siege.split('===Weapon Compatibility===')[0];
+  // Prose without infobox markup: strip every infobox block first (their
+  // raw params otherwise leak in as fake paragraphs), then drop stray
+  // section headings and param fragments.
+  let noBoxes = siege;
+  for (const { block } of infoboxBlocks(siege)) noBoxes = noBoxes.split(block).join('\n');
+  const prose = noBoxes.split(/===+.*?Weapon Compatibility===+/)[0];
   const effect = prose.split(/\n{2,}/).map((p) => strip(p).replace(/\}\}/g, '').replace(/^[a-z_][a-z_ ]*=\s*\S+\s+/i, '').trim())
-    .filter((p) => p.length > 60 && !/^\s*[a-z_][a-z_ ]*=\s*\S+\s*$/i.test(p)).slice(0, 3).join('\n\n').slice(0, 1200);
-  const compatRaw = (siege.split('===Weapon Compatibility===')[1] || '').split('==')[0];
+    .map((p) => p.replace(/^=+[^=\n]+?=+\s*/, ''))
+    .filter((p) => p.length > 60 && !/^\s*[a-z_][a-z_ ]*=\s*\S+\s*$/i.test(p) && !/=/.test(p)).slice(0, 3).join('\n\n').slice(0, 1200);
+  // Compatibility heading may carry a prefix ("Primary Weapon ...").
+  const compatRaw = (siege.split(/===+.*?Weapon Compatibility===+/)[1] || '').split(/==[^=]/)[0];
   const compat = [...compatRaw.matchAll(/\*\[\[([^#|\]]+)/g)].map((m) => m[1].replace(/_/g, ' ').trim()).filter(Boolean).slice(0, 60);
-  return {
+  // Multi-infobox pages (Scope/Siege: Telescopic A + Scope 3.0x; ACOG
+  // tab: Scope 1.5x + Scope 2.5x) yield one entry per block, each with its
+  // own name/type/HUD-icon art. Display name prefers a scope-ish section
+  // heading (the "ACOG Sight" block lives under "===Scope 2.5x===").
+  const blocks = infoboxBlocks(siege);
+  const headingFor = (index) => {
+    const heads = [...siege.slice(0, index).matchAll(/\n={2,}\s*([^\n=]+?)\s*={2,}[ \t]*\n/g)];
+    if (!heads.length) return '';
+    return (heads[heads.length - 1][1] || '').trim();
+  };
+  const entries = blocks.length > 1 ? blocks.map(({ block, index }) => {
+    const boxName = strip(blockField(block, 'name')) || title;
+    const heading = headingFor(index);
+    const name = /scope|telescopic/i.test(heading) ? heading : boxName;
+    return {
+      name,
+      type: strip(blockField(block, 'type')).replace(/\}+$/g, '').trim(),
+      hud: hudFileOf(blockField(block, 'hudicon')),
+      image: hudFileOf(blockField(block, 'image')),
+    };
+  }) : [{
     name: strip(field('name')) || title,
     type: strip(field('type')).replace(/\}+$/g, '').trim(),
-    imageFile,
-    effect,
-    compat,
-  };
+    hud: null,
+    image: imageFile,
+  }];
+  return entries.map((e) => ({ ...e, effect, compat }));
 }
 
 async function main() {
@@ -89,6 +154,7 @@ async function main() {
     await sleep(SLEEP_MS);
   }
   const attachments = [];
+  const seenArt = new Set();
   const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'review', 'r6-image-manifest.json'), 'utf8'));
   let n = 0;
   for (const title of titles) {
@@ -100,21 +166,37 @@ async function main() {
         continue;
       }
       const parsed = parseAttachment(title, data.parse.wikitext['*']);
-      if (!parsed) {
+      if (!parsed || !parsed.length) {
         console.warn(`sync-attachments: no siege infobox for "${title}"`);
         continue;
       }
-      parsed.id = `r6-attach-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-      parsed.image = null;
-      if (iconByTitle[title]) parsed.imageFile = iconByTitle[title];
-      if (parsed.imageFile && (/^<gallery/i.test(parsed.imageFile) || /IRL\.(jpeg|jpg|png)$/i.test(parsed.imageFile))) parsed.imageFile = null;
-      if (parsed.imageFile) {
-        const rel = `r6_images/attachments/${parsed.id}.png`;
-        manifest.images[rel] = { file: parsed.imageFile, width: 200 };
-        parsed.image = rel;
+      for (const entry of parsed) {
+        entry.id = `r6-attach-${entry.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+        entry.image = null;
+        // Infobox HUD icon first (white schematic), then page-wide HUD
+        // icon, then infobox image. Gallery/IRL junk is never art.
+        const picked = entry.hud || iconByTitle[title] || entry.image;
+        if (picked && (/^<gallery/i.test(picked) || /IRL\.(jpeg|jpg|png)$/i.test(picked))) {
+          entry.picked = null;
+        } else {
+          entry.picked = picked;
+        }
+        // Same-page duplicate infoboxes (ACOG tab variants) share art —
+        // keep the first, drop the rest. Distinct art stays distinct.
+        if (entry.picked && seenArt.has(`${title}|${entry.picked}`)) {
+          console.log(`sync-attachments: deduped "${entry.name}" on "${title}" (same art)`);
+          continue;
+        }
+        seenArt.add(`${title}|${entry.picked}`);
+        if (entry.picked) {
+          const rel = `r6_images/attachments/${entry.id}.png`;
+          manifest.images[rel] = { file: entry.picked, width: 200 };
+          entry.image = rel;
+        }
+        delete entry.hud;
+        delete entry.picked;
+        attachments.push(entry);
       }
-      delete parsed.imageFile;
-      attachments.push(parsed);
     } catch (error) {
       console.warn(`sync-attachments: failed "${title}": ${error.message}`);
     }
