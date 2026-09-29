@@ -161,6 +161,15 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   close-range, full-auto ROF; pellet shotguns excluded) — 54 wiki rows
   cross-checked, 4 armor drifts logged (5.7 USG, PRB92, PMM, 1911 TACOPS).
   Static JSON ships; zero client-side math.
+- **Weapon attachment fits (2026-09-29)**: compat tables are stale for
+  new guns (PMR90A2 had zero hits) and partial for old ones (AK-12 in
+  neither Scope list despite the flag). Fits now expand from the
+  template's own flag docs, scraped into a flagMap at sync time
+  (`attachmentsList` per weapon, validated against attachments.json);
+  Magnified B/2.0x dropped (no live entry upstream). Sheets show the
+  full named+schematic table, no summary line, no Notes section;
+  Used-by is operator-list rows without the star. Op unions use the
+  same expansion.
 - **Weapon alias poisoning (fixed 2026-09-28)**: search fallback adopted
   unrelated pages (GONNE-6 merged as POF-9 alias — Amaru showed POF-9
   stats/link). Resolution is now direct → upstream redirect → curated
