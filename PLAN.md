@@ -71,17 +71,22 @@ manifest → `sync-r6-images.js` → `build-data.js` validation → views.
 - Fandom gadget pages (Claymore verified: image, ammo, damage-by-armor).
 - Gadget detail sheets; operator pages link secondaries with icons.
 
-### 2D. Skins + cosmetics
-- Elite sets + per-op galleries, Ubisoft elite carousel, weapon-skin
-  category, seasonal/event/paragon, charms, drone + gadget skins.
-- Cosmetics-style catalog view after data proves out.
+### 2D. Skins + cosmetics (SCRAPER DONE 2026-09-29, no views yet)
+- `scripts/sync-r6-skins.js` → `content/skins.json` (4721 items: 407
+  uniforms, 516 headgear, 2893 weapon skins, 75 elite/paragon sets,
+  747 charms, 83 attachment skins; drone hub is an upstream stub).
+  Validated by build-data (structure, per-op linkage, path conventions).
+- Remaining: catalog UI (separate approval).
 
 ### 2E. Maps
 - Ubisoft: thumbs + blueprint ZIPs. Fandom: layouts, floors, spawns,
   objectives, cameras → `MapLayoutModal` + callout tables.
 
-### 2F. Videos (embeds only)
-- YouTube IDs + posters from Ubisoft/Fandom; embed in articles. No downloads.
+### 2F. Videos (DONE 2026-09-29, embeds only)
+- `scripts/sync-r6-videos.js` → `content/videos.json` (64/76 ops):
+  Ubisoft SSR first (biography YouTube ID, ability mp4), Fandom
+  `{{#ev:youtube}}` backup. YouTube renders as click-to-load lite-embed
+  (nocookie) in How to Play; mp4s are outbound links only. No downloads.
 
 ## 3. Tool ports (after style + data)
 
@@ -155,6 +160,16 @@ Upstream gaps (wiki has nothing to scrape — fallbacks cover, do not fake):
   Weapons 106→110 (GONNE-6, Tacit .45 + single-range damage format). Independent
   triple-check: 0 errors (self/alias resolution, all 76 loadouts, stat
   sanity, art existence).
+- **Operator touch-ups (done 2026-09-29)**: fav/season row under the
+  lead removed; infobox Season links to the season sheet; first two
+  present sections render beside the infobox rail via additive
+  `ArticleShell.leadExtra` (TOC derives from the same order, always in
+  sync; mobile single-column unchanged).
+- **Role/ability leaks (fixed 2026-09-29)**: same-line `|imagecaption=`
+  and `}}` closes bled prose into 13 roles + 2 abilities. Fix is
+  post-process (`cleanRole` head-split, `cleanAbility` junk-strip),
+  NOT terminator surgery (which broke 25 gadgets). Roster guard refuses
+  degraded writes (<90% of candidates).
 - **Patch history (2026-09-28)**: `content/patches.json` (170 rows) via
   `sync-r6-liquipedia.js` (free no-key MediaWiki API, gzip, CC BY-SA 3.0,
   warn-only failures). Season sheets show matched Patches sections

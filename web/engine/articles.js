@@ -44,7 +44,7 @@
         <p className="text-[10px] text-zinc-600 mt-1">Stored locally only. Not included when sharing builds.</p>
       </div>
     );
-    const ArticleShell = ({ crumbs, title, hatnote, meta, lead, toc, infobox, categories, children }) => {
+    const ArticleShell = ({ crumbs, title, hatnote, meta, lead, toc, leadExtra, infobox, categories, children }) => {
       return (
         <article className="cx-article w-full min-w-0">
           {crumbs && crumbs.length > 0 ? (
@@ -70,6 +70,7 @@
             <div className="cx-leadmain">
               {lead}
               {toc && toc.length > 0 ? <Toc items={toc} /> : null}
+              {leadExtra || null}
             </div>
             {infobox ? (
               <Infobox title={infobox.title} sub={infobox.sub} image={infobox.image} imageAlt={infobox.imageAlt} imageType={infobox.imageType} rows={infobox.rows} note={infobox.note} />

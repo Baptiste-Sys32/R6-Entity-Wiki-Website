@@ -114,6 +114,7 @@
   <script src="weapons.js" onerror="window.__r6DataScriptError('weapons.js')"></script>
   <script src="gadgets.js" onerror="window.__r6DataScriptError('gadgets.js')"></script>
   <script src="patches.js" onerror="window.__r6DataScriptError('patches.js')"></script>
+  <script src="videos.js" onerror="window.__r6DataScriptError('videos.js')"></script>
   <script>
     (() => {
       const LAUNCH_TIPS = [
@@ -178,6 +179,7 @@
     const GADGETS = GADGET_STORE.gadgets || [];
     const gadgetsById = new Map(GADGETS.map((g) => [g.id, g]));
     const PATCHES = ((typeof R6_PATCHES !== 'undefined' && R6_PATCHES) || { patches: [] }).patches || [];
+    const VIDEOS = ((typeof R6_VIDEOS !== 'undefined' && R6_VIDEOS) || { entries: {} }).entries || {};
     const normPatchKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const patchesForSeason = (season) => {
       if (!season) return [];
@@ -410,17 +412,109 @@
       );
     };
 
+    // Click-to-load YouTube player (no tracking until play; nocookie
+    // domain) with local poster art, plus outbound mp4 links (never
+    // hotlinked). Videos come from Ubisoft first, community as backup.
+    const VideoEmbed = ({ youtubeId, label, source, poster }) => {
+      const [play, setPlay] = useState(false);
+      if (!youtubeId) return null;
+      if (!play) {
+        return (
+          <button type="button" onClick={() => setPlay(true)} className="relative w-full overflow-hidden rounded-2xl mb-2 text-left" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', aspectRatio: '16 / 9' }} aria-label={`Play ${label || 'operator guide'} video`}>
+            {poster ? <img src={`./${poster}`} alt="" className="absolute inset-0 w-full h-full" style={{ objectFit: 'cover' }} loading="lazy" /> : null}
+            <span className="absolute inset-0 flex items-center justify-center" aria-hidden="true">
+              <span className="flex items-center justify-center rounded-full" style={{ width: '64px', height: '64px', background: 'rgba(0,0,0,0.65)', border: '2px solid var(--text)', color: 'var(--text)', fontSize: '22px' }}>▶</span>
+            </span>
+            <span className="absolute bottom-2 left-3 text-xs font-semibold" style={{ color: '#fff', textShadow: '0 1px 4px #000' }}>{label || 'Operator guide'}{source ? ` · ${source}` : ''}</span>
+          </button>
+        );
+      }
+      return (
+        <div className="w-full overflow-hidden rounded-2xl mb-2" style={{ aspectRatio: '16 / 9', background: '#000' }}>
+          <iframe width="100%" height="100%" src={`https://www.youtube-nocookie.com/embed/${youtubeId}?rel=0`} title={label || 'Operator guide'} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy" />
+        </div>
+      );
+    };
     const OperatorArticle = ({ id, setView, favorites, onToggleFavorite, note, onNoteChange }) => {
       const op = operatorsById.get(id);
       if (!op) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown operator.</p></div>;
       const season = SEASONS.find((s) => s.name === op.season || s.name === `Operation ${op.season}` || op.season === s.name);
       const lore = LORE[id] || {};
-      const toc = [{ id: 'gadget', label: 'Gadget' }, { id: 'loadout', label: 'Loadout' }];
-      if ((lore.tips || []).length) toc.push({ id: 'howtoplay', label: 'How to play' });
-      if (lore.biography || lore.ubiBio) toc.push({ id: 'biography', label: 'Biography' });
-      if (lore.psychReport || lore.psychProfile) toc.push({ id: 'psych', label: 'Psychological Report' });
-      if ((lore.quotes || []).length) toc.push({ id: 'quotes', label: 'Quotes' });
-      if ((lore.trivia || []).length) toc.push({ id: 'trivia', label: 'Trivia' });
+      // Sections in article order; the first two present ones render beside
+      // the infobox rail (leadExtra) to fill the dead space, the rest below.
+      // TOC derives from the same list, so it always mirrors visual order.
+      const sections = [
+        ...(((lore.tips || []).length || (VIDEOS[id] || []).length) ? [{ id: 'howtoplay', label: 'How to play' }] : []),
+        { id: 'gadget', label: 'Gadget' },
+        ...((op.weapons || []).length ? [{ id: 'loadout', label: 'Loadout' }] : []),
+        ...((lore.biography || lore.ubiBio) ? [{ id: 'biography', label: 'Biography' }] : []),
+        ...((lore.psychReport || lore.psychProfile) ? [{ id: 'psych', label: 'Psychological Report' }] : []),
+        ...((lore.quotes || []).length ? [{ id: 'quotes', label: 'Quotes' }] : []),
+        ...((lore.trivia || []).length ? [{ id: 'trivia', label: 'Trivia' }] : []),
+      ];
+      const railIds = new Set(sections.slice(0, 2).map((s) => s.id));
+      const toc = sections;
+      const howtoNode = (lore.tips || []).length || (VIDEOS[id] || []).length ? (
+        <CxSection id="howtoplay" title="How to play">
+          {(VIDEOS[id] || []).filter((v) => v.youtubeId).slice(0, 1).map((v, i) => (
+            <VideoEmbed key={'v' + i} youtubeId={v.youtubeId} label={v.label} source={v.source} poster={(lore.tips || [])[0] && (lore.tips || [])[0].poster} />
+          ))}
+          {(lore.tips || []).map((tip, i) => (
+            <div key={i} className="flex items-start gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+              {tip.poster ? <span className="sq-img shrink-0" style={{ width: '120px' }}><AssetFrame type="Gadget" imageUrl={`./${tip.poster}`} /></span> : null}
+              <span><span className="block font-bold text-sm" style={{ color: 'var(--text)' }}>{tip.title}</span>
+                <span className="block text-sm" style={{ color: 'var(--text)' }}>{tip.text}</span></span>
+            </div>
+          ))}
+          {(VIDEOS[id] || []).filter((v) => v.mp4).slice(0, 1).map((v, i) => (
+            <p key={'m' + i} className="text-sm mt-1"><a className="cx-alink" href={v.mp4} target="_blank" rel="noreferrer">▶ {v.label || 'Ability preview'} (Ubisoft video)</a></p>
+          ))}
+        </CxSection>
+      ) : null;
+      const gadgetNode = (
+        <CxSection id="gadget" title="Gadget">
+          <div className="flex items-center gap-3">
+            <span className="sq-img"><AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} /></span>
+            <p><strong>{op.gadget}.</strong> {op.ability}</p>
+          </div>
+        </CxSection>
+      );
+      const loadoutNode = (op.weapons || []).length ? (
+        <CxSection id="loadout" title="Loadout">
+          {[['primary', 'Primaries'], ['secondary', 'Secondaries'], ['gadget', 'Gadgets']].map(([slot, label]) => {
+            const items = (op.weapons || []).filter((w) => w.slot === slot);
+            if (!items.length) return null;
+            return (
+              <div key={slot} className="mb-4">
+                <h3 className="cx-sub">{label}</h3>
+                {items.map((w, i) => (
+                  <div key={`${w.name}-${i}`} className="flex items-center gap-3 rounded-2xl p-2.5 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+                    {slot === 'gadget' ? (
+                      w.gadgetId && gadgetsById.get(w.gadgetId) && gadgetsById.get(w.gadgetId).image ? (
+                        <span className="sq-img"><AssetFrame type="Gadget" imageUrl={`./${gadgetsById.get(w.gadgetId).image}`} /></span>
+                      ) : null
+                    ) : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={((slot !== 'gadget' && resolveWeapon(w.name) && resolveWeapon(w.name).image) ? `./${resolveWeapon(w.name).image}` : (w.image ? `./${w.image}` : null))} /></span>}
+                    <span className="min-w-0 flex-1">
+                      {slot === 'gadget' && w.gadgetId && gadgetsById.get(w.gadgetId) ? (
+                        <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('gadget', { id: w.gadgetId })}>{w.name}</button>
+                      ) : slot === 'gadget' || !resolveWeapon(w.name) ? (
+                        <span className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{w.name}</span>
+                      ) : (
+                        <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('weapon', { id: resolveWeapon(w.name).name })}>{w.name}</button>
+                      )}
+                      {slot !== 'gadget' && resolveWeapon(w.name) ? (
+                        <span className="block text-xs" style={{ color: 'var(--muted)' }}>
+                          {[resolveWeapon(w.name).damage ? `${resolveWeapon(w.name).damage} DMG` : null, resolveWeapon(w.name).rof ? `${resolveWeapon(w.name).rof} RPM` : null, resolveWeapon(w.name).magazine || null].filter(Boolean).join(' · ')}
+                        </span>
+                      ) : null}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            );
+          })}
+        </CxSection>
+      ) : null;
       return (
         <ArticleShell
           crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Operators', onClick: () => setView('operators') }, { label: op.name }]}
@@ -433,6 +527,7 @@
             return short.length > 320 ? short.slice(0, 317).trimEnd() + '…' : short;
           })()}</p>}
           toc={toc}
+          leadExtra={<>{railIds.has('howtoplay') && howtoNode}{railIds.has('gadget') && gadgetNode}{railIds.has('loadout') && loadoutNode}</>}
           categories={[op.side + 's', op.squad]}
           infobox={{
             title: op.name, sub: `${op.side} · ${op.squad}`,
@@ -442,70 +537,16 @@
               { label: 'Role', value: op.role || '—' },
               ...(lore.specialties && lore.specialties.length ? [{ label: 'Specialties', value: lore.specialties.join(', ') }] : []),
               { label: 'Squad', value: op.squad },
-              { label: 'Season', value: op.season },
+              { label: 'Season', value: season ? (<button type="button" className="cx-alink" onClick={() => setView('season', { id: season.id })}>{op.season}</button>) : op.season },
               { label: 'Armor / Speed', value: `${'●'.repeat(op.armor)}${'○'.repeat(Math.max(0, 3 - op.armor))} / ${'●'.repeat(op.speed)}${'○'.repeat(Math.max(0, 3 - op.speed))}` },
               ...(op.realname || lore.realName ? [{ label: 'Real name', value: op.realname || lore.realName }] : []),
               ...((lore.dob || lore.birthplace) ? [{ label: 'Born', value: [lore.birthplace, lore.dob].filter(Boolean).join(' · ') }] : []),
             ],
           }}
         >
-          <div className="flex gap-2 mt-2">
-            <FavButton active={(favorites.operators || []).includes(op.id)} onToggle={() => onToggleFavorite('Operator', op.id)} label={`Favorite ${op.name}`} />
-            {season ? <button type="button" onClick={() => setView('season', { id: season.id })} className="cx-alink text-sm">{season.name} →</button> : null}
-          </div>
-          {(lore.tips || []).length ? (
-            <CxSection id="howtoplay" title="How to play">
-              {(lore.tips || []).map((tip, i) => (
-                <div key={i} className="flex items-start gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                  {tip.poster ? <span className="sq-img shrink-0" style={{ width: '120px' }}><AssetFrame type="Gadget" imageUrl={`./${tip.poster}`} /></span> : null}
-                  <span><span className="block font-bold text-sm" style={{ color: 'var(--text)' }}>{tip.title}</span>
-                    <span className="block text-sm" style={{ color: 'var(--text)' }}>{tip.text}</span></span>
-                </div>
-              ))}
-            </CxSection>
-          ) : null}
-          <CxSection id="gadget" title="Gadget">
-            <div className="flex items-center gap-3">
-              <span className="sq-img"><AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} /></span>
-              <p><strong>{op.gadget}.</strong> {op.ability}</p>
-            </div>
-          </CxSection>
-          {(op.weapons || []).length > 0 ? (
-            <CxSection id="loadout" title="Loadout">
-              {[['primary', 'Primaries'], ['secondary', 'Secondaries'], ['gadget', 'Gadgets']].map(([slot, label]) => {
-                const items = (op.weapons || []).filter((w) => w.slot === slot);
-                if (!items.length) return null;
-                return (
-                  <div key={slot} className="mb-4">
-                    <h3 className="cx-sub">{label}</h3>
-                    {items.map((w, i) => (
-                      <div key={`${w.name}-${i}`} className="flex items-center gap-3 rounded-2xl p-2.5 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                        {slot === 'gadget' ? (
-                          w.gadgetId && gadgetsById.get(w.gadgetId) && gadgetsById.get(w.gadgetId).image ? (
-                            <span className="sq-img"><AssetFrame type="Gadget" imageUrl={`./${gadgetsById.get(w.gadgetId).image}`} /></span>
-                          ) : null
-                        ) : <span className="sq-img"><AssetFrame type="Weapon" imageUrl={((slot !== 'gadget' && resolveWeapon(w.name) && resolveWeapon(w.name).image) ? `./${resolveWeapon(w.name).image}` : (w.image ? `./${w.image}` : null))} /></span>}
-                        <span className="min-w-0 flex-1">
-                          {slot === 'gadget' && w.gadgetId && gadgetsById.get(w.gadgetId) ? (
-                            <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('gadget', { id: w.gadgetId })}>{w.name}</button>
-                          ) : slot === 'gadget' || !resolveWeapon(w.name) ? (
-                            <span className="font-semibold text-sm" style={{ color: 'var(--text)' }}>{w.name}</span>
-                          ) : (
-                            <button type="button" className="cx-alink font-semibold text-sm text-left" onClick={() => setView('weapon', { id: resolveWeapon(w.name).name })}>{w.name}</button>
-                          )}
-                          {slot !== 'gadget' && resolveWeapon(w.name) ? (
-                            <span className="block text-xs" style={{ color: 'var(--muted)' }}>
-                              {[resolveWeapon(w.name).damage ? `${resolveWeapon(w.name).damage} DMG` : null, resolveWeapon(w.name).rof ? `${resolveWeapon(w.name).rof} RPM` : null, resolveWeapon(w.name).magazine || null].filter(Boolean).join(' · ')}
-                            </span>
-                          ) : null}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                );
-              })}
-            </CxSection>
-          ) : null}
+          {!railIds.has('howtoplay') && howtoNode}
+          {!railIds.has('gadget') && gadgetNode}
+          {!railIds.has('loadout') && loadoutNode}
           {lore.biography || lore.ubiBio ? (
             <CxSection id="biography" title="Biography">
               {loreParas(lore.biography).map((para, i) => <p key={i}>{para}</p>)}

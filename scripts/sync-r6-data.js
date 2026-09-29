@@ -155,6 +155,30 @@ function dotCount(markup) {
   return (String(markup).match(/&#9679;/g) || []).length;
 }
 
+// Roles are single-line CSV ("Front-line, Hard-Breach") but upstream
+// appends same-line params ("|imagecaption=") or closes the infobox
+// mid-line ("}}"), bleeding prose into the value. Take the clean head.
+function cleanRole(raw) {
+  return stripMarkup(String(raw || '')).split(/\n|\}\}|\|/)[0].trim().slice(0, 120);
+}
+
+// Ability prose comes from fragile fallbacks (post-table capture,
+// intro-sentence regex) that can start inside link/template residue
+// ("|Tubarão}}Isaac ...", "]] Aleksandr ..."). Strip leading junk.
+// Strict mode (post-table capture) additionally requires operator prose;
+// the intro path is already scoped by its own sentence regex.
+function cleanAbility(raw, strict) {
+  let text = stripMarkup(String(raw || '')).replace(/\s+/g, ' ').trim();
+  for (let i = 0; i < 3; i += 1) {
+    const next = text.replace(/^(\|?[^\s|]*\}\}|\]\]|"{0,2}\s*[\]|}]+)+/, '').trim();
+    if (next === text) break;
+    text = next;
+  }
+  if (!/^[A-Z"'(]/.test(text)) return '';
+  if (strict && !/Operator/i.test(text.slice(0, 400))) return '';
+  return text.slice(0, 600);
+}
+
 function introParagraph(wt) {
   const clean = wt.replace(/<ref[^>]*>[\s\S]*?<\/ref>/gi, '').replace(/\[(?:https?:)?\/\/[^\]]*\]/gi, '');
   const sentence = clean.match(/([^.\n]{20,400}?is an? (?:Attacking|Defending)[^.\n]*\.)/);
@@ -296,15 +320,15 @@ function parseOperator(title, wt, seasonCat) {
     season: seasonCat ? seasonCat.replace(/^Category:Tom Clancy's Rainbow Six Siege:\s*/, '')
       : (/introduced in (?:the )?'{0,2}\[\[([^|\]]+)(?:\|[^\]]+)?\]\]/.test(wt)
         ? RegExp.$1.replace(/^Tom Clancy's Rainbow Six Siege:\s*/, '') : 'Launch'),
-    role: stripMarkup(infoboxField(wt, 'role')).slice(0, 120),
+    role: cleanRole(infoboxField(wt, 'role')),
     gadget,
     ability: (() => {
       const afterTable = wt.match(/\|\}[ \n\/]*([A-Z][^\n\{]{60,500})/);
       if (afterTable) {
-        const cleaned = stripMarkup(afterTable[1]);
-        if (/Operator/i.test(cleaned)) return cleaned.slice(0, 600);
+        const cleaned = cleanAbility(afterTable[1], true);
+        if (cleaned) return cleaned;
       }
-      return introParagraph(wt).slice(0, 600);
+      return cleanAbility(introParagraph(wt), false);
     })(),
     realname: stripMarkup(infoboxField(wt, 'realname')).slice(0, 80),
     quote: quoteMatch ? stripMarkup(quoteMatch[1]).slice(0, 200) : '',
@@ -706,6 +730,11 @@ async function main() {
   console.log(`sync-r6: seasons=${seasons.length}`);
 
   const generatedAt = new Date().toISOString();
+  // Never overwrite good data with a degraded parse: the roster must
+  // converge near the candidate count (parse failures are loud, not silent).
+  if (operators.length < opTitles.length * 0.9) {
+    throw new Error(`roster degraded: ${operators.length}/${opTitles.length} parsed, refusing to write`);
+  }
   const sources = { wiki: 'https://rainbowsix.fandom.com/api.php', license: 'CC-BY-SA (Fandom contributors)' };
   fs.mkdirSync(path.join(ROOT, 'review'), { recursive: true });
   fs.writeFileSync(path.join(ROOT, 'review', 'r6-image-manifest.json'), JSON.stringify({ generatedAt, images: manifest }, null, 2) + '\n');

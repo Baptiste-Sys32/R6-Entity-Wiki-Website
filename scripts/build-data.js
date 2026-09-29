@@ -20,6 +20,9 @@ const LORE_BUNDLE_PATH = path.join(ROOT, 'web', 'lore.js');
 const WEAPONS_BUNDLE_PATH = path.join(ROOT, 'web', 'weapons.js');
 const GADGETS_BUNDLE_PATH = path.join(ROOT, 'web', 'gadgets.js');
 const PATCHES_BUNDLE_PATH = path.join(ROOT, 'web', 'patches.js');
+const SKINS_PATH = path.join(ROOT, 'content', 'skins.json');
+const VIDEOS_PATH = path.join(ROOT, 'content', 'videos.json');
+const VIDEOS_BUNDLE_PATH = path.join(ROOT, 'web', 'videos.js');
 
 const checkOnly = new Set(process.argv.slice(2)).has('--check');
 
@@ -38,6 +41,11 @@ function validateOperators(operators) {
     if (!['Attacker', 'Defender'].includes(op.side)) throw new Error(`${label} has invalid side ${op.side}`);
     if (seen.has(op.id)) throw new Error(`duplicate operator id ${op.id}`);
     seen.add(op.id);
+    for (const key of ['role', 'gadget', 'ability']) {
+      const v = op[key];
+      if (typeof v === 'string' && v && /[|{}[\]]/.test(v)) throw new Error(`${label} has markup leak in ${key}: ${v.slice(0, 60)}`);
+    }
+    if (typeof op.role === 'string' && op.role.length > 80) throw new Error(`${label} has overlong role (leak?): ${op.role.slice(0, 60)}`);
     // Every operator ships firearms — except Clash (ballistic shield only).
     // Loud failure beats silent empty Loadout sections.
     if (op.id !== 'r6-clash') {
@@ -250,6 +258,75 @@ function validateAttachments(attachments) {
   console.log(`build-data: attachments ok (${attachments.length}).`);
 }
 
+// Skins are data-only for now (no views consume them): validate structure
+// + path conventions. File existence is enforced when the catalog UI lands.
+function validateSkins(doc, operatorIds) {
+  if (!doc || typeof doc !== 'object' || !doc.skins) throw new Error('skins doc invalid');
+  const { skins } = doc;
+  const ids = new Set(operatorIds);
+  const checkImage = (rel, owner) => {
+    if (rel === null || rel === undefined) return;
+    if (typeof rel !== 'string' || !rel.startsWith('r6_images/skins/')) throw new Error(`${owner}: bad skin image path (${rel})`);
+  };
+  let n = 0;
+  for (const [bucket, byOp] of [['uniforms', true], ['headgear', true], ['weapons', false]]) {
+    const group = skins[bucket] || {};
+    for (const [key, items] of Object.entries(group)) {
+      if (byOp && !ids.has(key)) throw new Error(`skins.${bucket} unknown operator ${key}`);
+      if (!Array.isArray(items)) throw new Error(`skins.${bucket}.${key} not an array`);
+      for (const it of items) {
+        if (!it || typeof it.name !== 'string' || !it.name) throw new Error(`skins.${bucket}.${key} bad item`);
+        checkImage(it.image, `skins.${bucket}.${key}:${it.name}`);
+        n += 1;
+      }
+    }
+  }
+  for (const [opId, sets] of Object.entries(skins.elite || {})) {
+    if (!ids.has(opId)) throw new Error(`skins.elite unknown operator ${opId}`);
+    if (!Array.isArray(sets)) throw new Error(`skins.elite.${opId} not an array`);
+    for (const s of sets) {
+      if (!s || !['elite', 'paragon'].includes(s.kind) || typeof s.set !== 'string' || !s.set) throw new Error(`skins.elite.${opId} bad set`);
+      checkImage(s.image, `skins.elite.${opId}:${s.set}`);
+      checkImage(s.contents, `skins.elite.${opId}:${s.set}#contents`);
+      checkImage(s.gadget, `skins.elite.${opId}:${s.set}#gadget`);
+      n += 1;
+    }
+  }
+  for (const bucket of ['charms', 'drone', 'attachments']) {
+    if (!Array.isArray(skins[bucket])) throw new Error(`skins.${bucket} not an array`);
+    for (const it of skins[bucket]) {
+      if (!it || typeof it.name !== 'string' || !it.name) throw new Error(`skins.${bucket} bad item`);
+      checkImage(it.image, `skins.${bucket}:${it.name}`);
+      n += 1;
+    }
+  }
+  console.log(`build-data: skins ok (${n} items, data-only).`);
+}
+
+// Videos: YouTube IDs embed in How to Play; mp4s are outbound links only.
+function validateVideos(entries, operatorIds) {
+  if (!entries || typeof entries !== 'object') throw new Error('videos entries invalid');
+  const ids = new Set(operatorIds);
+  let n = 0, yt = 0;
+  for (const [opId, vids] of Object.entries(entries)) {
+    if (!ids.has(opId)) throw new Error(`videos unknown operator ${opId}`);
+    if (!Array.isArray(vids)) throw new Error(`videos.${opId} not an array`);
+    for (const v of vids) {
+      if (!v || typeof v !== 'object') throw new Error(`videos.${opId} bad entry`);
+      if (v.youtubeId !== undefined && v.youtubeId !== null && !/^[A-Za-z0-9_-]{6,15}$/.test(v.youtubeId)) {
+        throw new Error(`videos.${opId} bad youtubeId ${v.youtubeId}`);
+      }
+      if (v.mp4 !== undefined && v.mp4 !== null && !/^https:\/\/staticctf\.ubisoft\.com\/\S+\.mp4$/i.test(v.mp4)) {
+        throw new Error(`videos.${opId} bad mp4 host (hotlink guard)`);
+      }
+      if (typeof v.label !== 'string' || !['ubisoft', 'fandom'].includes(v.source)) throw new Error(`videos.${opId} bad label/source`);
+      n += 1;
+      if (v.youtubeId) yt += 1;
+    }
+  }
+  console.log(`build-data: videos ok (${n} entries, ${yt} youtube, ${Object.keys(entries).length} operators).`);
+}
+
 function validatePatches(patches) {
   if (!Array.isArray(patches)) throw new Error('patches is not an array');
   patches.forEach((p, index) => {
@@ -277,6 +354,9 @@ function main() {
   const gadgetNormalize = gadgetsDoc.normalize || {};
   const patchesDoc = fs.existsSync(PATCHES_PATH) ? readJson(PATCHES_PATH) : { patches: [] };
   const patches = patchesDoc.patches || [];
+  const skinsDoc = fs.existsSync(SKINS_PATH) ? readJson(SKINS_PATH) : null;
+  const videosDoc = fs.existsSync(VIDEOS_PATH) ? readJson(VIDEOS_PATH) : { entries: {} };
+  const videos = videosDoc.entries || {};
   const operatorIds = operators.map((op) => op.id);
   validateOperators(operators);
   validateMaps(maps);
@@ -286,6 +366,8 @@ function main() {
   validateAttachments(attachments);
   validateGadgets(gadgets, operators, gadgetNormalize);
   validatePatches(patches);
+  if (skinsDoc) validateSkins(skinsDoc, operatorIds);
+  validateVideos(videos, operatorIds);
   validateImagePaths(operators, maps, seasons, gadgets);
   const payload = { operators, maps, seasons };
   // Attach canonical gadget ids to loadout secondary entries (single source:
@@ -334,6 +416,7 @@ function main() {
   const weaponsOutput = `var R6_WEAPONS = ${JSON.stringify({ weapons: weaponsWithImages, attachments, aliases: byNorm })};\n`;
   const gadgetsOutput = `var R6_GADGETS = ${JSON.stringify({ gadgets })};\n`;
   const patchesOutput = `var R6_PATCHES = ${JSON.stringify({ patches })};\n`;
+  const videosOutput = `var R6_VIDEOS = ${JSON.stringify({ entries: videos })};\n`;
   if (checkOnly) {
     const current = fs.existsSync(DATA_PATH) ? fs.readFileSync(DATA_PATH, 'utf8') : '';
     if (current !== output) {
@@ -360,6 +443,11 @@ function main() {
       console.error('build-data: web/patches.js is stale, run node scripts/build-data.js');
       process.exit(1);
     }
+    const currentVideos = fs.existsSync(VIDEOS_BUNDLE_PATH) ? fs.readFileSync(VIDEOS_BUNDLE_PATH, 'utf8') : '';
+    if (currentVideos !== videosOutput) {
+      console.error('build-data: web/videos.js is stale, run node scripts/build-data.js');
+      process.exit(1);
+    }
     console.log(`build-data: data fresh (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
     return;
   }
@@ -368,6 +456,7 @@ function main() {
   fs.writeFileSync(WEAPONS_BUNDLE_PATH, weaponsOutput);
   fs.writeFileSync(GADGETS_BUNDLE_PATH, gadgetsOutput);
   fs.writeFileSync(PATCHES_BUNDLE_PATH, patchesOutput);
+  fs.writeFileSync(VIDEOS_BUNDLE_PATH, videosOutput);
   console.log(`build-data: wrote web/data.js (operators=${operators.length} maps=${maps.length} seasons=${seasons.length}).`);
   console.log(`build-data: wrote web/lore.js.`);
 }
