@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T19:38:34.481Z",
+  "generatedAt": "2026-09-29T16:52:37.581Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
@@ -67,7 +67,22 @@
       "aliases": [
         "AK-12"
       ],
-      "art": "r6_images/weapons/w-ak12.png"
+      "art": "r6_images/weapons/w-ak12.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "M1014",
@@ -128,7 +143,13 @@
         "M1014",
         "Super 90"
       ],
-      "art": "r6_images/weapons/w-m1014.png"
+      "art": "r6_images/weapons/w-m1014.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Laser"
+      ]
     },
     {
       "name": "P9",
@@ -207,7 +228,8 @@
       "aliases": [
         "P9"
       ],
-      "art": "r6_images/weapons/w-p9.png"
+      "art": "r6_images/weapons/w-p9.png",
+      "attachmentsList": []
     },
     {
       "name": "G8A1",
@@ -271,7 +293,22 @@
       "aliases": [
         "G8A1"
       ],
-      "art": "r6_images/weapons/w-g8a1.png"
+      "art": "r6_images/weapons/w-g8a1.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "SuperNova",
@@ -328,7 +365,8 @@
       "aliases": [
         "SuperNova"
       ],
-      "art": "r6_images/weapons/w-supernova.png"
+      "art": "r6_images/weapons/w-supernova.png",
+      "attachmentsList": []
     },
     {
       "name": "ITA12S",
@@ -383,7 +421,8 @@
       "aliases": [
         "ITA12S"
       ],
-      "art": "r6_images/weapons/w-ita12s.png"
+      "art": "r6_images/weapons/w-ita12s.png",
+      "attachmentsList": []
     },
     {
       "name": "GONNE-6",
@@ -424,7 +463,8 @@
       "aliases": [
         "GONNE-6"
       ],
-      "art": "r6_images/weapons/w-gonne6.png"
+      "art": "r6_images/weapons/w-gonne6.png",
+      "attachmentsList": []
     },
     {
       "name": "SMG-11",
@@ -490,7 +530,21 @@
         "SMG-11",
         "SMG11"
       ],
-      "art": "r6_images/weapons/w-smg11.png"
+      "art": "r6_images/weapons/w-smg11.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "G36C",
@@ -552,7 +606,23 @@
       "aliases": [
         "G36C"
       ],
-      "art": "r6_images/weapons/w-g36c.png"
+      "art": "r6_images/weapons/w-g36c.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "R4-C",
@@ -615,7 +685,23 @@
       "aliases": [
         "R4-C"
       ],
-      "art": "r6_images/weapons/w-r4c.png"
+      "art": "r6_images/weapons/w-r4c.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "M45 MEUSOC",
@@ -700,7 +786,8 @@
       "aliases": [
         "M45 MEUSOC"
       ],
-      "art": "r6_images/weapons/w-m45meusoc.png"
+      "art": "r6_images/weapons/w-m45meusoc.png",
+      "attachmentsList": []
     },
     {
       "name": "5.7 USG",
@@ -781,7 +868,8 @@
       "aliases": [
         "5.7 USG"
       ],
-      "art": "r6_images/weapons/w-57usg.png"
+      "art": "r6_images/weapons/w-57usg.png",
+      "attachmentsList": []
     },
     {
       "name": "Mk17 CQB",
@@ -846,7 +934,23 @@
       "aliases": [
         "Mk17 CQB"
       ],
-      "art": "r6_images/weapons/w-mk17cqb.png"
+      "art": "r6_images/weapons/w-mk17cqb.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "SR-25",
@@ -902,7 +1006,22 @@
       "aliases": [
         "SR-25"
       ],
-      "art": "r6_images/weapons/w-sr25.png"
+      "art": "r6_images/weapons/w-sr25.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Telescopic A",
+        "Scope 3.0x",
+        "Muzzle Brake",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "P12",
@@ -980,7 +1099,8 @@
       "aliases": [
         "P12"
       ],
-      "art": "r6_images/weapons/w-p12.png"
+      "art": "r6_images/weapons/w-p12.png",
+      "attachmentsList": []
     },
     {
       "name": "PARA-308",
@@ -1043,7 +1163,23 @@
       "aliases": [
         "PARA-308"
       ],
-      "art": "r6_images/weapons/w-para308.png"
+      "art": "r6_images/weapons/w-para308.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "CAMRS",
@@ -1108,7 +1244,19 @@
       "aliases": [
         "CAMRS"
       ],
-      "art": "r6_images/weapons/w-camrs.png"
+      "art": "r6_images/weapons/w-camrs.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Telescopic A",
+        "Scope 3.0x",
+        "Muzzle Brake",
+        "Suppressor",
+        "Laser"
+      ]
     },
     {
       "name": "USP40",
@@ -1186,7 +1334,8 @@
         "USP 40",
         "USP40"
       ],
-      "art": "r6_images/weapons/w-usp40.png"
+      "art": "r6_images/weapons/w-usp40.png",
+      "attachmentsList": []
     },
     {
       "name": "Super Shorty",
@@ -1248,7 +1397,8 @@
       "aliases": [
         "Super Shorty"
       ],
-      "art": "r6_images/weapons/w-supershorty.png"
+      "art": "r6_images/weapons/w-supershorty.png",
+      "attachmentsList": []
     },
     {
       "name": "C8-SFW",
@@ -1303,7 +1453,20 @@
       "aliases": [
         "C8-SFW"
       ],
-      "art": "r6_images/weapons/w-c8sfw.png"
+      "art": "r6_images/weapons/w-c8sfw.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Laser"
+      ]
     },
     {
       "name": "Mk1 9mm",
@@ -1380,7 +1543,8 @@
       "aliases": [
         "Mk1 9mm"
       ],
-      "art": "r6_images/weapons/w-mk19mm.png"
+      "art": "r6_images/weapons/w-mk19mm.png",
+      "attachmentsList": []
     },
     {
       "name": "M249",
@@ -1443,7 +1607,20 @@
       "aliases": [
         "M249"
       ],
-      "art": "r6_images/weapons/w-m249.png"
+      "art": "r6_images/weapons/w-m249.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Compensator",
+        "Flash Hider",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "M249 SAW",
@@ -1506,7 +1683,20 @@
       "aliases": [
         "M249 SAW"
       ],
-      "art": "r6_images/weapons/w-m249.png"
+      "art": "r6_images/weapons/w-m249.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Compensator",
+        "Flash Hider",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "PMR90A2",
@@ -1570,7 +1760,22 @@
       "aliases": [
         "PMR90A2"
       ],
-      "art": "r6_images/weapons/w-pmr90a2.png"
+      "art": "r6_images/weapons/w-pmr90a2.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Telescopic A",
+        "Scope 3.0x",
+        "Muzzle Brake",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "PRB92",
@@ -1653,7 +1858,8 @@
         "PRB92",
         "Luison"
       ],
-      "art": "r6_images/weapons/w-prb92.png"
+      "art": "r6_images/weapons/w-prb92.png",
+      "attachmentsList": []
     },
     {
       "name": "AK-74M",
@@ -1716,7 +1922,22 @@
       "aliases": [
         "AK-74M"
       ],
-      "art": "r6_images/weapons/w-ak74m.png"
+      "art": "r6_images/weapons/w-ak74m.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "M590A1",
@@ -1777,7 +1998,13 @@
       "aliases": [
         "M590A1"
       ],
-      "art": "r6_images/weapons/w-m590a1.png"
+      "art": "r6_images/weapons/w-m590a1.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Laser"
+      ]
     },
     {
       "name": ".44 Vendetta",
@@ -1834,7 +2061,10 @@
       "aliases": [
         ".44 Vendetta"
       ],
-      "art": "r6_images/weapons/w-44vendetta.png"
+      "art": "r6_images/weapons/w-44vendetta.png",
+      "attachmentsList": [
+        "Laser"
+      ]
     },
     {
       "name": "Mk 14 EBR",
@@ -1895,7 +2125,22 @@
       "aliases": [
         "Mk 14 EBR"
       ],
-      "art": "r6_images/weapons/w-mk14ebr.png"
+      "art": "r6_images/weapons/w-mk14ebr.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Telescopic A",
+        "Scope 3.0x",
+        "Muzzle Brake",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "BOSG.12.2",
@@ -1955,7 +2200,18 @@
       "aliases": [
         "BOSG.12.2"
       ],
-      "art": "r6_images/weapons/w-bosg122.png"
+      "art": "r6_images/weapons/w-bosg122.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "XK23",
@@ -2020,7 +2276,23 @@
       "aliases": [
         "XK23"
       ],
-      "art": "r6_images/weapons/w-xk23.png"
+      "art": "r6_images/weapons/w-xk23.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "C75 Auto",
@@ -2081,7 +2353,11 @@
       "aliases": [
         "C75 Auto"
       ],
-      "art": "r6_images/weapons/w-c75auto.png"
+      "art": "r6_images/weapons/w-c75auto.png",
+      "attachmentsList": [
+        "Suppressor",
+        "Laser"
+      ]
     },
     {
       "name": "SMG-12",
@@ -2140,7 +2416,16 @@
       "aliases": [
         "SMG-12"
       ],
-      "art": "r6_images/weapons/w-smg12.png"
+      "art": "r6_images/weapons/w-smg12.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "Spear .308",
@@ -2203,7 +2488,23 @@
       "aliases": [
         "Spear .308"
       ],
-      "art": "r6_images/weapons/w-spear308.png"
+      "art": "r6_images/weapons/w-spear308.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "6P41",
@@ -2267,7 +2568,22 @@
       "aliases": [
         "6P41"
       ],
-      "art": "r6_images/weapons/w-6p41.png"
+      "art": "r6_images/weapons/w-6p41.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "SASG-12",
@@ -2341,7 +2657,8 @@
       "aliases": [
         "SASG-12"
       ],
-      "art": "r6_images/weapons/w-sasg12.png"
+      "art": "r6_images/weapons/w-sasg12.png",
+      "attachmentsList": []
     },
     {
       "name": "PMM",
@@ -2420,7 +2737,8 @@
       "aliases": [
         "PMM"
       ],
-      "art": "r6_images/weapons/w-pmm.png"
+      "art": "r6_images/weapons/w-pmm.png",
+      "attachmentsList": []
     },
     {
       "name": "GSh-18",
@@ -2506,7 +2824,8 @@
         "GSh-18",
         "GSH-18"
       ],
-      "art": "r6_images/weapons/w-gsh18.png"
+      "art": "r6_images/weapons/w-gsh18.png",
+      "attachmentsList": []
     },
     {
       "name": "AR33",
@@ -2570,7 +2889,22 @@
       "aliases": [
         "AR33"
       ],
-      "art": "r6_images/weapons/w-ar33.png"
+      "art": "r6_images/weapons/w-ar33.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "T-95 LSW",
@@ -2634,7 +2968,22 @@
       "aliases": [
         "T-95 LSW"
       ],
-      "art": "r6_images/weapons/w-t95lsw.png"
+      "art": "r6_images/weapons/w-t95lsw.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "OTs-03",
@@ -2697,7 +3046,18 @@
       "aliases": [
         "OTs-03"
       ],
-      "art": "r6_images/weapons/w-ots03.png"
+      "art": "r6_images/weapons/w-ots03.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "Bearing 9",
@@ -2764,7 +3124,18 @@
       "aliases": [
         "Bearing 9"
       ],
-      "art": "r6_images/weapons/w-bearing9.png"
+      "art": "r6_images/weapons/w-bearing9.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Laser"
+      ]
     },
     {
       "name": "F90",
@@ -2826,7 +3197,23 @@
       "aliases": [
         "F90"
       ],
-      "art": "r6_images/weapons/w-f90.png"
+      "art": "r6_images/weapons/w-f90.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "SDP 9mm",
@@ -2902,7 +3289,8 @@
       "aliases": [
         "SDP 9mm"
       ],
-      "art": "r6_images/weapons/w-sdp9mm.png"
+      "art": "r6_images/weapons/w-sdp9mm.png",
+      "attachmentsList": []
     },
     {
       "name": "SG-CQB",
@@ -2961,7 +3349,15 @@
       "aliases": [
         "SG-CQB"
       ],
-      "art": "r6_images/weapons/w-sgcqb.png"
+      "art": "r6_images/weapons/w-sgcqb.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Laser"
+      ]
     },
     {
       "name": "552 Commando",
@@ -3025,7 +3421,23 @@
       "aliases": [
         "552 Commando"
       ],
-      "art": "r6_images/weapons/w-552commando.png"
+      "art": "r6_images/weapons/w-552commando.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "P229",
@@ -3103,7 +3515,8 @@
       "aliases": [
         "P229"
       ],
-      "art": "r6_images/weapons/w-p229.png"
+      "art": "r6_images/weapons/w-p229.png",
+      "attachmentsList": []
     },
     {
       "name": "Type-89",
@@ -3167,7 +3580,22 @@
       "aliases": [
         "Type-89"
       ],
-      "art": "r6_images/weapons/w-type89.png"
+      "art": "r6_images/weapons/w-type89.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "ARX200",
@@ -3231,7 +3659,22 @@
       "aliases": [
         "ARX200"
       ],
-      "art": "r6_images/weapons/w-arx200.png"
+      "art": "r6_images/weapons/w-arx200.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "AUG A2",
@@ -3292,7 +3735,19 @@
       "aliases": [
         "AUG A2"
       ],
-      "art": "r6_images/weapons/w-auga2.png"
+      "art": "r6_images/weapons/w-auga2.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Laser"
+      ]
     },
     {
       "name": "C7E",
@@ -3347,7 +3802,22 @@
       "aliases": [
         "C7E"
       ],
-      "art": "r6_images/weapons/w-c7e.png"
+      "art": "r6_images/weapons/w-c7e.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "PDW9",
@@ -3404,7 +3874,23 @@
       "aliases": [
         "PDW9"
       ],
-      "art": "r6_images/weapons/w-pdw9.png"
+      "art": "r6_images/weapons/w-pdw9.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "ITA12L",
@@ -3455,7 +3941,8 @@
       "aliases": [
         "ITA12L"
       ],
-      "art": "r6_images/weapons/w-ita12l.png"
+      "art": "r6_images/weapons/w-ita12l.png",
+      "attachmentsList": []
     },
     {
       "name": "CSRX 300",
@@ -3501,7 +3988,8 @@
       "aliases": [
         "CSRX 300"
       ],
-      "art": "r6_images/weapons/w-csrx300.png"
+      "art": "r6_images/weapons/w-csrx300.png",
+      "attachmentsList": []
     },
     {
       "name": "SPSMG9",
@@ -3562,7 +4050,18 @@
       "aliases": [
         "SPSMG9"
       ],
-      "art": "r6_images/weapons/w-spsmg9.png"
+      "art": "r6_images/weapons/w-spsmg9.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Laser"
+      ]
     },
     {
       "name": "P226 Mk 25",
@@ -3643,7 +4142,8 @@
         "P226 Mk 25",
         "P226 Mk25"
       ],
-      "art": "r6_images/weapons/w-p226mk25.png"
+      "art": "r6_images/weapons/w-p226mk25.png",
+      "attachmentsList": []
     },
     {
       "name": "V308",
@@ -3706,7 +4206,22 @@
       "aliases": [
         "V308"
       ],
-      "art": "r6_images/weapons/w-v308.png"
+      "art": "r6_images/weapons/w-v308.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "417",
@@ -3769,7 +4284,22 @@
       "aliases": [
         "417"
       ],
-      "art": "r6_images/weapons/w-417.png"
+      "art": "r6_images/weapons/w-417.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Telescopic A",
+        "Scope 3.0x",
+        "Muzzle Brake",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "LFP586",
@@ -3834,7 +4364,10 @@
       "aliases": [
         "LFP586"
       ],
-      "art": "r6_images/weapons/w-lfp586.png"
+      "art": "r6_images/weapons/w-lfp586.png",
+      "attachmentsList": [
+        "Laser"
+      ]
     },
     {
       "name": "AR-15.50",
@@ -3889,7 +4422,22 @@
       "aliases": [
         "AR-15.50"
       ],
-      "art": "r6_images/weapons/w-ar1550.png"
+      "art": "r6_images/weapons/w-ar1550.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Telescopic A",
+        "Scope 3.0x",
+        "Muzzle Brake",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "M4",
@@ -3953,7 +4501,23 @@
       "aliases": [
         "M4"
       ],
-      "art": "r6_images/weapons/w-m4.png"
+      "art": "r6_images/weapons/w-m4.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "1911 TACOPS",
@@ -4029,7 +4593,8 @@
       "aliases": [
         "1911 TACOPS"
       ],
-      "art": "r6_images/weapons/w-1911tacops.png"
+      "art": "r6_images/weapons/w-1911tacops.png",
+      "attachmentsList": []
     },
     {
       "name": "Reaper Mk2",
@@ -4094,7 +4659,14 @@
         "Reaper Mk2",
         "Reaper MK2"
       ],
-      "art": "r6_images/weapons/w-reapermk2.png"
+      "art": "r6_images/weapons/w-reapermk2.png",
+      "attachmentsList": [
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Laser"
+      ]
     },
     {
       "name": ".44 Mag Semi-Auto",
@@ -4160,7 +4732,8 @@
       "aliases": [
         ".44 Mag Semi-Auto"
       ],
-      "art": "r6_images/weapons/w-44magsemiauto.png"
+      "art": "r6_images/weapons/w-44magsemiauto.png",
+      "attachmentsList": []
     },
     {
       "name": "FMG-9",
@@ -4224,7 +4797,20 @@
       "aliases": [
         "FMG-9"
       ],
-      "art": "r6_images/weapons/w-fmg9.png"
+      "art": "r6_images/weapons/w-fmg9.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Laser"
+      ]
     },
     {
       "name": "SIX12",
@@ -4276,7 +4862,8 @@
         "SIX12 SD",
         "SIX12"
       ],
-      "art": "r6_images/weapons/w-six12.png"
+      "art": "r6_images/weapons/w-six12.png",
+      "attachmentsList": []
     },
     {
       "name": "D-50",
@@ -4346,7 +4933,8 @@
         "D-50",
         "D50"
       ],
-      "art": "r6_images/weapons/w-d50.png"
+      "art": "r6_images/weapons/w-d50.png",
+      "attachmentsList": []
     },
     {
       "name": "556xi",
@@ -4410,7 +4998,22 @@
         "556XI",
         "556xi"
       ],
-      "art": "r6_images/weapons/w-556xi.png"
+      "art": "r6_images/weapons/w-556xi.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "LMG-E",
@@ -4473,7 +5076,22 @@
       "aliases": [
         "LMG-E"
       ],
-      "art": "r6_images/weapons/w-lmge.png"
+      "art": "r6_images/weapons/w-lmge.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "POF-9",
@@ -4536,7 +5154,23 @@
       "aliases": [
         "POF-9"
       ],
-      "art": "r6_images/weapons/w-pof9.png"
+      "art": "r6_images/weapons/w-pof9.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "L85A2",
@@ -4600,7 +5234,22 @@
       "aliases": [
         "L85A2"
       ],
-      "art": "r6_images/weapons/w-l85a2.png"
+      "art": "r6_images/weapons/w-l85a2.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "F2",
@@ -4666,7 +5315,23 @@
       "aliases": [
         "F2"
       ],
-      "art": "r6_images/weapons/w-f2.png"
+      "art": "r6_images/weapons/w-f2.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "Tacit .45",
@@ -4733,7 +5398,10 @@
       "aliases": [
         "Tacit .45"
       ],
-      "art": "r6_images/weapons/w-tacit45.png"
+      "art": "r6_images/weapons/w-tacit45.png",
+      "attachmentsList": [
+        "Laser"
+      ]
     },
     {
       "name": "Q-929",
@@ -4809,7 +5477,8 @@
       "aliases": [
         "Q-929"
       ],
-      "art": "r6_images/weapons/w-q929.png"
+      "art": "r6_images/weapons/w-q929.png",
+      "attachmentsList": []
     },
     {
       "name": "SC3000K",
@@ -4865,7 +5534,23 @@
       "aliases": [
         "SC3000K"
       ],
-      "art": "r6_images/weapons/w-sc3000k.png"
+      "art": "r6_images/weapons/w-sc3000k.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "MP7",
@@ -4928,7 +5613,20 @@
       "aliases": [
         "MP7"
       ],
-      "art": "r6_images/weapons/w-mp7.png"
+      "art": "r6_images/weapons/w-mp7.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Laser"
+      ]
     },
     {
       "name": "M762",
@@ -4991,7 +5689,22 @@
       "aliases": [
         "M762"
       ],
-      "art": "r6_images/weapons/w-m762.png"
+      "art": "r6_images/weapons/w-m762.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "RG15",
@@ -5073,7 +5786,8 @@
       "aliases": [
         "RG15"
       ],
-      "art": "r6_images/weapons/w-rg15.png"
+      "art": "r6_images/weapons/w-rg15.png",
+      "attachmentsList": []
     },
     {
       "name": "Mx4 Storm",
@@ -5135,7 +5849,21 @@
       "aliases": [
         "Mx4 Storm"
       ],
-      "art": "r6_images/weapons/w-mx4storm.png"
+      "art": "r6_images/weapons/w-mx4storm.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "ACS12",
@@ -5194,7 +5922,18 @@
       "aliases": [
         "ACS12"
       ],
-      "art": "r6_images/weapons/w-acs12.png"
+      "art": "r6_images/weapons/w-acs12.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "Keratos .357",
@@ -5256,7 +5995,12 @@
       "aliases": [
         "Keratos .357"
       ],
-      "art": "r6_images/weapons/w-keratos357.png"
+      "art": "r6_images/weapons/w-keratos357.png",
+      "attachmentsList": [
+        "Muzzle Brake",
+        "Suppressor",
+        "Laser"
+      ]
     },
     {
       "name": "Bailiff 410",
@@ -5319,7 +6063,11 @@
       "aliases": [
         "Bailiff 410"
       ],
-      "art": "r6_images/weapons/w-bailiff410.png"
+      "art": "r6_images/weapons/w-bailiff410.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Laser"
+      ]
     },
     {
       "name": "P10 RONI",
@@ -5375,7 +6123,21 @@
       "aliases": [
         "P10 RONI"
       ],
-      "art": "r6_images/weapons/w-p10roni.png"
+      "art": "r6_images/weapons/w-p10roni.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "9×19VSN",
@@ -5439,7 +6201,21 @@
         "9×19VSN",
         "9x19VSN"
       ],
-      "art": "r6_images/weapons/w-919vsn.png"
+      "art": "r6_images/weapons/w-919vsn.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "M870",
@@ -5498,7 +6274,8 @@
       "aliases": [
         "M870"
       ],
-      "art": "r6_images/weapons/w-m870.png"
+      "art": "r6_images/weapons/w-m870.png",
+      "attachmentsList": []
     },
     {
       "name": "UMP45",
@@ -5566,7 +6343,21 @@
       "aliases": [
         "UMP45"
       ],
-      "art": "r6_images/weapons/w-ump45.png"
+      "art": "r6_images/weapons/w-ump45.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "M12",
@@ -5618,7 +6409,8 @@
       "aliases": [
         "M12"
       ],
-      "art": "r6_images/weapons/w-m12.png"
+      "art": "r6_images/weapons/w-m12.png",
+      "attachmentsList": []
     },
     {
       "name": "SPAS-15",
@@ -5676,7 +6468,8 @@
       "aliases": [
         "SPAS-15"
       ],
-      "art": "r6_images/weapons/w-spas15.png"
+      "art": "r6_images/weapons/w-spas15.png",
+      "attachmentsList": []
     },
     {
       "name": "P-10C",
@@ -5754,7 +6547,8 @@
       "aliases": [
         "P-10C"
       ],
-      "art": "r6_images/weapons/w-p10c.png"
+      "art": "r6_images/weapons/w-p10c.png",
+      "attachmentsList": []
     },
     {
       "name": "Scorpion EVO 3 A1",
@@ -5818,7 +6612,20 @@
       "aliases": [
         "Scorpion EVO 3 A1"
       ],
-      "art": "r6_images/weapons/w-scorpionevo3a1.png"
+      "art": "r6_images/weapons/w-scorpionevo3a1.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "Glaive-12",
@@ -5876,7 +6683,16 @@
       "aliases": [
         "Glaive-12"
       ],
-      "art": "r6_images/weapons/w-glaive12.png"
+      "art": "r6_images/weapons/w-glaive12.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "MP5",
@@ -5939,7 +6755,21 @@
       "aliases": [
         "MP5"
       ],
-      "art": "r6_images/weapons/w-mp5.png"
+      "art": "r6_images/weapons/w-mp5.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "P90",
@@ -6001,7 +6831,18 @@
       "aliases": [
         "P90"
       ],
-      "art": "r6_images/weapons/w-p90.png"
+      "art": "r6_images/weapons/w-p90.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Laser"
+      ]
     },
     {
       "name": "MP5SD",
@@ -6059,7 +6900,16 @@
       "aliases": [
         "MP5SD"
       ],
-      "art": "r6_images/weapons/w-mp5sd.png"
+      "art": "r6_images/weapons/w-mp5sd.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "FO-12",
@@ -6119,7 +6969,18 @@
       "aliases": [
         "FO-12"
       ],
-      "art": "r6_images/weapons/w-fo12.png"
+      "art": "r6_images/weapons/w-fo12.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Suppressor",
+        "Extended Barrel",
+        "Laser"
+      ]
     },
     {
       "name": "9mm C1",
@@ -6174,7 +7035,21 @@
       "aliases": [
         "9mm C1"
       ],
-      "art": "r6_images/weapons/w-9mmc1.png"
+      "art": "r6_images/weapons/w-9mmc1.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "Vector .45 ACP",
@@ -6238,7 +7113,21 @@
       "aliases": [
         "Vector .45 ACP"
       ],
-      "art": "r6_images/weapons/w-vector45acp.png"
+      "art": "r6_images/weapons/w-vector45acp.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "TCSG12",
@@ -6298,7 +7187,19 @@
       "aliases": [
         "TCSG12"
       ],
-      "art": "r6_images/weapons/w-tcsg12.png"
+      "art": "r6_images/weapons/w-tcsg12.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Scope 1.5x",
+        "Scope 2.5x",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "416-C Carbine",
@@ -6362,7 +7263,21 @@
       "aliases": [
         "416-C Carbine"
       ],
-      "art": "r6_images/weapons/w-416ccarbine.png"
+      "art": "r6_images/weapons/w-416ccarbine.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "AUG A3",
@@ -6424,7 +7339,21 @@
       "aliases": [
         "AUG A3"
       ],
-      "art": "r6_images/weapons/w-auga3.png"
+      "art": "r6_images/weapons/w-auga3.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "T-5 SMG",
@@ -6480,7 +7409,21 @@
       "aliases": [
         "T-5 SMG"
       ],
-      "art": "r6_images/weapons/w-t5smg.png"
+      "art": "r6_images/weapons/w-t5smg.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "ALDA 5.56",
@@ -6541,7 +7484,19 @@
       "aliases": [
         "ALDA 5.56"
       ],
-      "art": "r6_images/weapons/w-alda556.png"
+      "art": "r6_images/weapons/w-alda556.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Laser"
+      ]
     },
     {
       "name": "Commando 9",
@@ -6606,7 +7561,21 @@
       "aliases": [
         "Commando 9"
       ],
-      "art": "r6_images/weapons/w-commando9.png"
+      "art": "r6_images/weapons/w-commando9.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "MP5K",
@@ -6668,7 +7637,18 @@
       "aliases": [
         "MP5K"
       ],
-      "art": "r6_images/weapons/w-mp5k.png"
+      "art": "r6_images/weapons/w-mp5k.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Laser"
+      ]
     },
     {
       "name": "SPAS-12",
@@ -6725,7 +7705,8 @@
       "aliases": [
         "SPAS-12"
       ],
-      "art": "r6_images/weapons/w-spas12.png"
+      "art": "r6_images/weapons/w-spas12.png",
+      "attachmentsList": []
     },
     {
       "name": "PCX-33",
@@ -6787,7 +7768,21 @@
       "aliases": [
         "PCX-33"
       ],
-      "art": "r6_images/weapons/w-pcx33.png"
+      "art": "r6_images/weapons/w-pcx33.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "DP-27",
@@ -6847,7 +7842,12 @@
       "aliases": [
         "DP27"
       ],
-      "art": "r6_images/weapons/w-dp27.png"
+      "art": "r6_images/weapons/w-dp27.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight"
+      ]
     },
     {
       "name": "UZK50GI",
@@ -6910,7 +7910,21 @@
       "aliases": [
         "UZK50GI"
       ],
-      "art": "r6_images/weapons/w-uzk50gi.png"
+      "art": "r6_images/weapons/w-uzk50gi.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "MPX",
@@ -6972,7 +7986,21 @@
       "aliases": [
         "MPX"
       ],
-      "art": "r6_images/weapons/w-mpx.png"
+      "art": "r6_images/weapons/w-mpx.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     },
     {
       "name": "K1A",
@@ -7033,7 +8061,21 @@
       "aliases": [
         "K1A"
       ],
-      "art": "r6_images/weapons/w-k1a.png"
+      "art": "r6_images/weapons/w-k1a.png",
+      "attachmentsList": [
+        "Red Dot Sight",
+        "Holographic Sight",
+        "Reflex Sight",
+        "Muzzle Brake",
+        "Compensator",
+        "Flash Hider",
+        "Suppressor",
+        "Extended Barrel",
+        "Horizontal Grip",
+        "Vertical Grip",
+        "Angled Grip",
+        "Laser"
+      ]
     }
   ]
 }

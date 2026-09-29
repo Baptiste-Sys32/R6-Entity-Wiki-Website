@@ -182,8 +182,7 @@ async function main() {
   }
   const attachments = [];
   const seenArt = new Set();
-  const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'review', 'r6-image-manifest.json'), 'utf8'));
-  let n = 0;
+  const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'review', 'r6-image-manifest.json'), 'utf8'));  let n = 0;
   for (const title of titles) {
     n += 1;
     try {
@@ -199,6 +198,7 @@ async function main() {
       }
       for (const entry of parsed) {
         entry.id = `r6-attach-${entry.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+        entry.page = title;
         const file = entry.image;
         entry.image = null;
         const pinned = ATTACH_ART_OVERRIDES[entry.id];

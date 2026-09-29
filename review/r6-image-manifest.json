@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T14:37:14.826Z",
+  "generatedAt": "2026-09-29T16:52:37.581Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -8804,5 +8804,50 @@
     "r6_images/attachments/r6-attach-laser.png": {
       "local": "review/local-assets/attach-laser.png"
     }
+  },
+  "r6_images/attachments/r6-attach-scope-1-5x.png": {
+    "local": "review/local-assets/attach-scope-1-5x.webp"
+  },
+  "r6_images/attachments/r6-attach-scope-2-5x.png": {
+    "local": "review/local-assets/attach-scope-2-5x.webp"
+  },
+  "r6_images/attachments/r6-attach-angled-grip.png": {
+    "local": "review/local-assets/attach-angled-grip.webp"
+  },
+  "r6_images/attachments/r6-attach-compensator.png": {
+    "local": "review/local-assets/attach-compensator.webp"
+  },
+  "r6_images/attachments/r6-attach-extended-barrel.png": {
+    "local": "review/local-assets/attach-extended-barrel.png"
+  },
+  "r6_images/attachments/r6-attach-flash-hider.png": {
+    "local": "review/local-assets/attach-flash-hider.webp"
+  },
+  "r6_images/attachments/r6-attach-holographic-sight.png": {
+    "local": "review/local-assets/attach-holographic.webp"
+  },
+  "r6_images/attachments/r6-attach-laser.png": {
+    "local": "review/local-assets/attach-laser.png"
+  },
+  "r6_images/attachments/r6-attach-muzzle-brake.png": {
+    "local": "review/local-assets/attach-muzzle-brake.webp"
+  },
+  "r6_images/attachments/r6-attach-red-dot-sight.png": {
+    "local": "review/local-assets/attach-red-dot.webp"
+  },
+  "r6_images/attachments/r6-attach-reflex-sight.png": {
+    "local": "review/local-assets/attach-reflex.webp"
+  },
+  "r6_images/attachments/r6-attach-telescopic-a.png": {
+    "local": "review/local-assets/attach-telescopic-a.webp"
+  },
+  "r6_images/attachments/r6-attach-scope-3-0x.png": {
+    "local": "review/local-assets/attach-scope-3-0x.webp"
+  },
+  "r6_images/attachments/r6-attach-suppressor.png": {
+    "local": "review/local-assets/attach-suppressor.webp"
+  },
+  "r6_images/attachments/r6-attach-vertical-grip.png": {
+    "local": "review/local-assets/attach-vertical-grip.webp"
   }
 }

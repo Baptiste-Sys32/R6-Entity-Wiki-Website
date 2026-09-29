@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T13:03:40.913Z",
+  "generatedAt": "2026-09-29T16:36:59.058Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
@@ -49,7 +49,8 @@
         "M14",
         "AR-15.50"
       ],
-      "id": "r6-attach-scope-1-5x"
+      "id": "r6-attach-scope-1-5x",
+      "page": "ACOG"
     },
     {
       "name": "Scope 2.5x",
@@ -93,7 +94,8 @@
         "M14",
         "AR-15.50"
       ],
-      "id": "r6-attach-scope-2-5x"
+      "id": "r6-attach-scope-2-5x",
+      "page": "ACOG"
     },
     {
       "name": "Angled Grip",
@@ -139,7 +141,8 @@
         "T-95 LSW",
         "SMG-12"
       ],
-      "id": "r6-attach-angled-grip"
+      "id": "r6-attach-angled-grip",
+      "page": "Angled Grip"
     },
     {
       "name": "Compensator",
@@ -194,7 +197,8 @@
         "MAC-11",
         "Bearing 9"
       ],
-      "id": "r6-attach-compensator"
+      "id": "r6-attach-compensator",
+      "page": "Compensator"
     },
     {
       "name": "Extended Barrel",
@@ -207,7 +211,8 @@
         "MP9",
         "FO-12"
       ],
-      "id": "r6-attach-extended-barrel"
+      "id": "r6-attach-extended-barrel",
+      "page": "Extended Barrel"
     },
     {
       "name": "Flash Hider",
@@ -271,7 +276,8 @@
         "Commando 9",
         "P10 RONI"
       ],
-      "id": "r6-attach-flash-hider"
+      "id": "r6-attach-flash-hider",
+      "page": "Flash Hider"
     },
     {
       "name": "Flashlight",
@@ -279,7 +285,8 @@
       "image": "r6_images/attachments/r6-attach-flashlight.png",
       "effect": "The Flashlight is a weapon attachment in Tom Clancy's Rainbow Six Siege that was featured in the Outbreak event.\n\nThe attachment was available by default on all available weapons in the event. It allowed players the option to turn it on or off. This gave players increased visibility or discretion against enemies.\n\nSiege Flashlight 1.jpeg Siege Flashlight 2.jpeg Siege Flashlight 3.jpeg Siege Flashlight 4.jpeg Siege Flashlight 5.jpeg",
       "compat": [],
-      "id": "r6-attach-flashlight"
+      "id": "r6-attach-flashlight",
+      "page": "Flashlight"
     },
     {
       "name": "Holographic Sight",
@@ -287,7 +294,8 @@
       "image": "r6_images/attachments/r6-attach-holographic-sight.png",
       "effect": "The Holographic Sight is a non-magnifying optical attachment featured in Tom Clancy's Rainbow Six Siege.\n\nSimilar to the Red Dot Sight, it replaces the default iron sight and provides a better line of sight for players to engage enemies from afar.\n\nFour variants of the Holographic Sight are available: NATO, Russian, Razor, and the MH1. With the release of the Demon Veil expansion, all variants are available on all weapons that are capable of attaching a Holographic Sight. *The NATO Holograhpic Sight, designated in-game as the Holo A, is less obtrusive in the center but obstructs more peripheral vision in ADS compared to the Red Dot Sight. *The Russian Holograhpic Sight, designated in-game as the Holo B, shows a circular crosshair without a top bar, while the \"usual\" version shows a much smaller red dot with a circle around the target. *The Razor Holograhpic Sight, designated in-game as the Holo C, features a thinner casing and a slightly thicker reticle compared to the NATO Variant. *The MH1 Holograhpic Sight, designated in-game as the Holo D, has a similarly-sized casing compared to the NATO variant, but a completely different reticle with a dot in the middle and a horizontal line",
       "compat": [],
-      "id": "r6-attach-holographic-sight"
+      "id": "r6-attach-holographic-sight",
+      "page": "Holographic Sight"
     },
     {
       "name": "Horizontal Grip",
@@ -295,7 +303,8 @@
       "image": null,
       "effect": "The Horizontal Grip is a weapon attachment featured in Tom Clancy's Rainbow Six Siege.",
       "compat": [],
-      "id": "r6-attach-horizontal-grip"
+      "id": "r6-attach-horizontal-grip",
+      "page": "Horizontal Grip"
     },
     {
       "name": "Laser",
@@ -303,7 +312,8 @@
       "image": "r6_images/attachments/r6-attach-laser.png",
       "effect": "The Laser is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It tightens a weapon's hip fire accuracy and a shotgun pellet's spread by 25%, though it can also reveal a player's position if the red dot emitted from the light is noticed by the opposing team.\n\nThe laser originally created a faint but visible red laser beam, making it relatively easy to deduce the player's location once a laser is spotted. However, the laser was changed to only leave a red laser dot at the surface it is aiming at instead, which made spotting the dot and deducing the player's location more difficult.\n\nWhen aiming down sight, the laser dot disappears from the user's perspective. However, it will remain visible to other players.",
       "compat": [],
-      "id": "r6-attach-laser"
+      "id": "r6-attach-laser",
+      "page": "Laser Sight"
     },
     {
       "name": "Muzzle Brake",
@@ -372,7 +382,8 @@
         "P229",
         "USP"
       ],
-      "id": "r6-attach-muzzle-brake"
+      "id": "r6-attach-muzzle-brake",
+      "page": "Muzzle Brake"
     },
     {
       "name": "Red Dot Sight",
@@ -380,7 +391,8 @@
       "image": "r6_images/attachments/r6-attach-red-dot-sight.png",
       "effect": "The Red Dot Sight is a non-magnifying optical attachment featured in Tom Clancy's Rainbow Six Siege. It replaces the default iron sight and provides a better line of sight for players to engage enemies from afar.\n\nIt is available on all primary weapons except the CSRX 300 as well as a select few secondary weapons.\n\nFour variants of the RDS are available: NATO, Russian, M4S, and Handgun. With the release of the Demon Veil expansion, three of the variants are available on all weapons that are capable of attaching a Red Dot Sight. *The NATO Red Dot, designated in-game as Red Dot A, comes with a thick, somewhat obstrusive casing, and a simple reticle in the form of a dot. The dot on the NATO variant is somewhat big and can, to an extent, block line of sight on the object aimed at. The NATO variant also comes with a riser attached on specific weapons to avoid obstruction of vision when aiming down sights. *The Russian Red Dot Sight, designated in-gane as Red Dot B which is notably smaller than the NATO Red Dot Sight, and features a thin casing but a more complicated reticle. *The M4S Red Dot Sight, designated in-game as Red Dot C, was introduced in the Operation Shadow Legacy expansion.",
       "compat": [],
-      "id": "r6-attach-red-dot-sight"
+      "id": "r6-attach-red-dot-sight",
+      "page": "Red Dot Sight"
     },
     {
       "name": "Reflex Sight",
@@ -388,7 +400,8 @@
       "image": "r6_images/attachments/r6-attach-reflex-sight.png",
       "effect": "The Reflex Sight is an non-magnifying optical attachment featured in Tom Clancy's Rainbow Six Siege.\n\nIt features a triangular green reticle and replaces the default iron sights to provide a better line of sight for players to engage enemies from afar. When aiming down a Reflex Sight, the gun aims at the upper tip of the green triangle (or arrow) which is where all shots will land.\n\nFour variants of the Reflex Sight are available: NATO, Russian, MRS, and Vintage. With the release of the Demon Veil expansion, three of the variants are available on all weapons that are capable of attaching a Reflex Sight. *The NATO Reflex Sight, designated in-game as the Reflex A, is relatively unobstrusive and small casings. It allows for the most peripheral vision while in ADS in exchange for a smaller sight picture. *The Russian Reflex Sight, designated in-game as the Reflex B, features a very thin circular casing and a different reticle from the NATO. The reticle consists of an up-pointing arrow in the middle, and small horizontal lines on each side of it. *The MRS Reflex Sight, designated in-game as the Reflex C, features a thicker casing, a slightly larger reticle, and a bigger sight picture. *",
       "compat": [],
-      "id": "r6-attach-reflex-sight"
+      "id": "r6-attach-reflex-sight",
+      "page": "Reflex Sight"
     },
     {
       "name": "Telescopic A",
@@ -433,7 +446,8 @@
         "M14",
         "AR-15.50"
       ],
-      "id": "r6-attach-telescopic-a"
+      "id": "r6-attach-telescopic-a",
+      "page": "Scope/Siege"
     },
     {
       "name": "Scope 3.0x",
@@ -478,7 +492,8 @@
         "M14",
         "AR-15.50"
       ],
-      "id": "r6-attach-scope-3-0x"
+      "id": "r6-attach-scope-3-0x",
+      "page": "Scope/Siege"
     },
     {
       "name": "Suppressor",
@@ -486,7 +501,8 @@
       "image": "r6_images/attachments/r6-attach-suppressor.png",
       "effect": "The Suppressor is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It greatly reduces the sound emitted from a weapon when fired. Due to the importance of listening to one's surroundings to determine the location of the enemy, the suppressor is extremely valuable in masking the player's location as a result. This can be useful in dispatching lone enemies in Training Grounds or multiplayer as well as destroying surveillance cameras.\n\nMissed bullets fired from a suppressed weapon do not trigger a white threat indicator, nor will they create smoke trails. If a shot lands on a target they will experience no indicators telling them where the shot came from. While a normal weapon can be heard from across the map in the open, a suppressed weapon can only be heard from 30 meters away. The Suppressor hides the muzzle flash of weapons better than a Flash Hider does, but cannot bring any recoil benefits.\n\nAlmost every in-game weapon can be equipped with a suppressor. However, there are exceptions.",
       "compat": [],
-      "id": "r6-attach-suppressor"
+      "id": "r6-attach-suppressor",
+      "page": "Suppressor"
     },
     {
       "name": "Vertical Grip",
@@ -494,7 +510,8 @@
       "image": "r6_images/attachments/r6-attach-vertical-grip.png",
       "effect": "The Vertical Grip is a weapon attachment featured in Tom Clancy's Rainbow Six Siege. It greatly increases the control a player has on a weapon's recoil as well as adding increased hip-fire accuracy. As such, it is extremely useful in allowing players to safely engage enemies more accurately from a distance.\n\nThe M762, BOSG.12.2, ALDA 5.56, M4, AR-15.50, SC3000K, UZK50GI have their unique variants of the vertical grip available. However, they are only visually different and posess the same properties. The G8A1 and the ALDA 5.56 have the vertical grip mounted on the side instead of the bottom.\n\nVertical Grip Standard.png|Standard Vertical Grip G8A1.png|G8A1 Vertical Grip White Noise.png|M762/BOSG.12.2/UZK50GI Vertical Grip ALDA 5.56.png|ALDA 5.56 Vertical Grip AR-15.50.png|AR-15.50 Vertical Grip M4.png|M4 Vertical Grip P10 RONI.png|P10 RONI, T-5 SMG, SMG-11 Vertical Grip SC3000K.png|SC3000K",
       "compat": [],
-      "id": "r6-attach-vertical-grip"
+      "id": "r6-attach-vertical-grip",
+      "page": "Vertical Grip"
     }
   ]
 }

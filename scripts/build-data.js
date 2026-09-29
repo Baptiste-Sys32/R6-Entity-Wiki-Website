@@ -231,6 +231,9 @@ function validateWeapons(weapons, loadoutNames) {
         if (v !== null && !(Number.isFinite(v) && v >= 0)) throw new Error(`${label} has invalid ttkComputed.${k}`);
       }
     }
+    if (w.attachmentsList !== undefined && w.attachmentsList !== null) {
+      if (!Array.isArray(w.attachmentsList)) throw new Error(`${label} has invalid attachmentsList`);
+    }
     if (seen.has(w.name)) throw new Error(`duplicate weapon ${w.name}`);
     seen.add(w.name);
   });
@@ -256,6 +259,20 @@ function validateAttachments(attachments) {
     }
   });
   console.log(`build-data: attachments ok (${attachments.length}).`);
+}
+
+// Every attachmentsList name must resolve to a real attachment entry —
+// the expansion is only as truthful as its targets.
+function validateAttachmentLists(weapons, attachments) {
+  const known = new Set(attachments.map((a) => a.name));
+  let n = 0;
+  weapons.forEach((w) => {
+    (w.attachmentsList || []).forEach((name) => {
+      if (!known.has(name)) throw new Error(`weapon ${w.name} lists unknown attachment "${name}"`);
+      n += 1;
+    });
+  });
+  console.log(`build-data: attachment lists ok (${n} fits).`);
 }
 
 // Skins are data-only for now (no views consume them): validate structure
@@ -364,6 +381,7 @@ function main() {
   validateLore(lore.entries || {}, operatorIds);
   validateWeapons(weapons, new Set(operators.flatMap((op) => (op.weapons || []).filter((w) => w.slot !== 'gadget').map((w) => w.name))));
   validateAttachments(attachments);
+  validateAttachmentLists(weapons, attachments);
   validateGadgets(gadgets, operators, gadgetNormalize);
   validatePatches(patches);
   if (skinsDoc) validateSkins(skinsDoc, operatorIds);

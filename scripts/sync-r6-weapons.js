@@ -35,6 +35,57 @@ const KNOWN_ALIASES = {
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+// Flag -> attachment pages, scraped from Template:WeaponAttachments (both
+// the Parameter doc table and the render #ifeq link targets). Variant
+// letters (A/B/C/D) resolve through page redirects to live entries;
+// letters with no live entry (Magnified B / 2.0x, removed upstream) are
+// reported and skipped, never shown as phantom fits.
+// Flag -> attachment pages, scraped from Template:WeaponAttachments render
+// #ifeq blocks (balanced-brace scan — the blocks nest inside #if rows, so
+// flat regexes over-capture into neighbors). Variant letters (A/B/C/D)
+// resolve through page redirects to live entries; letters with no live
+// entry (Magnified B / 2.0x, removed upstream) are reported and skipped,
+// never shown as phantom fits.
+async function scrapeFlagMap() {
+  const data = await apiGet({ action: 'parse', page: 'Template:WeaponAttachments', prop: 'wikitext' });
+  const wt = data.parse.wikitext['*'] || '';
+  const flagPages = {};
+  const openRe = /\{\{#ifeq:\{\{\{(\w+)\|\}\}\}\|yes\|/g;
+  let m;
+  while ((m = openRe.exec(wt))) {
+    const flag = m[1];
+    let depth = 0, end = -1;
+    for (let i = m.index; i < wt.length - 1; i++) {
+      if (wt[i] === '{' && wt[i + 1] === '{') { depth += 1; i += 1; }
+      else if (wt[i] === '}' && wt[i + 1] === '}') {
+        depth -= 1; i += 1;
+        if (depth === 0) { end = i + 1; break; }
+      }
+    }
+    if (end < 0) continue;
+    const body = wt.slice(m.index, end);
+    const pages = [...body.matchAll(/\[\[([^#|\]]+)/g)].map((x) => x[1].trim()).filter(Boolean);
+    if (pages.length) flagPages[flag] = [...new Set(pages)];
+    openRe.lastIndex = end;
+  }
+  // Fallback: Parameter doc table (flag || category || attachments).
+  if (!Object.keys(flagPages).length) {
+    for (const m of wt.matchAll(/\| *<code>(\w+)<\/code> *\|\|[^|]*\|\| *([^\n|]+)/gi)) {
+      flagPages[m[1]] = m[2].split(',').map((s) => s.trim().replace(/\s+[A-D](\s|\)|$)/g, '').replace(/\s*\(.*?\)\s*/g, '').trim()).filter(Boolean);
+    }
+  }
+  return flagPages;
+}
+
+async function resolveRedirect(title) {
+  try {
+    const data = await apiGet({ action: 'query', titles: title, redirects: 1 });
+    const r = (data.query?.redirects || [])[0];
+    if (r) return r.to;
+  } catch { /* fall through */ }
+  return title;
+}
+
 async function apiGet(params, retries = 3) {
   const url = `${API}?${new URLSearchParams({ format: 'json', ...params })}`;
   for (let attempt = 1; attempt <= retries; attempt += 1) {
@@ -312,6 +363,53 @@ async function main() {
   const operators = JSON.parse(fs.readFileSync(OPERATORS_PATH, 'utf8')).operators;
   const names = [...new Set(operators.flatMap((op) => (op.weapons || []).filter((w) => w.slot !== 'gadget').map((w) => w.name)))];
   console.log(`sync-weapons: ${names.length} firearms`);
+  // Flag -> attachment pages from the template itself (docs + render
+  // links); resolved through redirects to live attachment entries.
+  const flagPages = await scrapeFlagMap();
+  console.log(`sync-weapons: flagMap flags=${Object.keys(flagPages).length}`);
+  const attachmentsDoc = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, 'attachments.json'), 'utf8'));
+  const attachEntries = attachmentsDoc.attachments || [];
+  const normKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const pageCache = new Map();
+  const resolvePage = async (title) => {
+    if (!pageCache.has(title)) pageCache.set(title, await resolveRedirect(title));
+    return pageCache.get(title);
+  };
+  // Map each template page -> live attachment entry names on it.
+  const entriesByPage = new Map();
+  for (const a of attachEntries) {
+    const key = normKey(a.page || '');
+    if (!key) continue;
+    if (!entriesByPage.has(key)) entriesByPage.set(key, []);
+    entriesByPage.get(key).push(a.name);
+  }
+  const flagEntries = {};
+  for (const [flag, pages] of Object.entries(flagPages)) {
+    const resolved = [];
+    for (const p of pages) resolved.push(await resolvePage(p));
+    await sleep(SLEEP_MS);
+    const live = [...new Set(resolved.flatMap((r) => entriesByPage.get(normKey(r)) || []))];
+    if (!live.length) {
+      // Name fallback: token text stripped of variant letters/exclusives.
+      for (const p of pages) {
+        const base = p.replace(/\s+[A-D]$/i, '').replace(/\s*\(.*?\)\s*/g, '').trim();
+        const hit = attachEntries.find((a) => normKey(a.name) === normKey(base));
+        if (hit && !live.includes(hit.name)) live.push(hit.name);
+      }
+    }
+    if (!live.length) console.warn(`sync-weapons: flag ${flag} has no live entries (pages ${pages.join('/')})`);
+    flagEntries[flag] = live;
+  }
+  const expandAttachments = (flags) => {
+    const out = [];
+    for (const [flag, on] of Object.entries(flags || {})) {
+      if (!on || !flagEntries[flag]) continue;
+      for (const name of flagEntries[flag]) {
+        if (!out.includes(name)) out.push(name);
+      }
+    }
+    return out;
+  };
   const weapons = [];
   const seenPages = new Set();
   const pageOwner = new Map();
@@ -433,6 +531,11 @@ async function main() {
     await sleep(SLEEP_MS);
   }
   const generatedAt = new Date().toISOString();
+  // Concrete attachment fits per weapon, expanded from the scraped
+  // template flag map (no hand-written matrices).
+  for (const w of weapons) {
+    w.attachmentsList = expandAttachments(w.attachments);
+  }
   // Consolidate same-page duplicates (fresh parse + stale carry of one
   // page, e.g. SMG-11): keep the entry whose name is a real loadout name,
   // merge aliases.
