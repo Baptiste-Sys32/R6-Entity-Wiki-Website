@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T16:52:37.581Z",
+  "generatedAt": "2026-09-29T17:35:16.769Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -2752,7 +2752,7 @@
       "width": 400
     },
     "r6_images/weapons/w-pmm.png": {
-      "file": "Makarov PMM.jpg",
+      "file": "R6S_PMM.png",
       "width": 400
     },
     "r6_images/weapons/w-bearing9.png": {
@@ -2764,7 +2764,7 @@
       "width": 400
     },
     "r6_images/weapons/w-p229.png": {
-      "file": "SIG P229 IRL.jpeg",
+      "file": "R6S_P229.png",
       "width": 400
     },
     "r6_images/weapons/w-v308.png": {

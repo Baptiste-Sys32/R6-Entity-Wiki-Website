@@ -18,6 +18,13 @@ const SLEEP_MS = 350;
 
 const ADS_MS = { AR: 400, DMR: 400, SMG: 300, H: 200, MP: 275, LMG: 450, S: 250, SR: 400, SG: 350 };
 
+// Canonical art overrides: the parser takes the infobox image, but a few
+// pages lead with white-background IRL photos while transparent R6S
+// renders exist on the same page. Wiki can never clobber these pins.
+const WEAPON_ART_OVERRIDES = {
+  'PMM': 'R6S_PMM.png',
+  'P229': 'R6S_P229.png',
+};
 // Loadout display names that are NOT the wiki page title (in-game renames,
 // descriptor suffixes, spelling variants). Search fallback may only adopt a
 // page listed here or related by name — never an unrelated hit (that once
@@ -516,7 +523,9 @@ async function main() {
       parsed.art = null;
       if (parsed.imageFile) {
         const rel = `r6_images/weapons/w-${slug}.png`;
-        manifest.images[rel] = { file: parsed.imageFile, width: 400 };
+        const override = WEAPON_ART_OVERRIDES[parsed.name];
+        manifest.images[rel] = { file: override || parsed.imageFile, width: 400 };
+        if (override) console.log(`sync-weapons: art override ${parsed.name} -> ${override}`);
         parsed.art = rel;
       }
       delete parsed.imageFile;

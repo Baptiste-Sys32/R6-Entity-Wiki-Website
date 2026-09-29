@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T14:46:53.202Z",
+  "generatedAt": "2026-09-29T17:45:10.244Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -7852,8 +7852,8 @@
       "file": "R6S OTs-03.png"
     },
     "r6_images/weapons/w-pmm.png": {
-      "revision": "cb:20151122213423",
-      "file": "Makarov PMM.jpg"
+      "revision": "cb:20220525145527",
+      "file": "R6S_PMM.png"
     },
     "r6_images/weapons/w-bearing9.png": {
       "revision": "cb:20220525145133",
@@ -7864,8 +7864,8 @@
       "file": "R6S Type-89.png"
     },
     "r6_images/weapons/w-p229.png": {
-      "revision": "cb:20220226153145",
-      "file": "SIG P229 IRL.jpeg"
+      "revision": "cb:20220525145523",
+      "file": "R6S_P229.png"
     },
     "r6_images/weapons/w-v308.png": {
       "revision": "cb:20220525145618",
@@ -13916,7 +13916,7 @@
       "file": "review/local-assets/attach-scope-2-5x.webp"
     },
     "r6_images/attachments/r6-attach-laser.png": {
-      "revision": "local:41b3f3fd5ff8",
+      "revision": "local:ba85b1978e7e",
       "file": "review/local-assets/attach-laser.png"
     }
   }
