@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T19:43:38.874Z",
+  "generatedAt": "2026-09-29T09:10:48.986Z",
   "files": {
     "generatedAt": "2026-09-27T17:01:06.430Z",
     "files": {
@@ -295,7 +295,7 @@
         },
         "r6_images/operators/heroes/r6-n-kk.png": {
           "revision": "cb:20190612000127",
-          "file": "Nøkk - Full Body.png"
+          "file": "N\u00f8kk - Full Body.png"
         },
         "r6_images/gadgets/r6-n-kk.png": {
           "revision": "cb:20200302160957",
@@ -739,7 +739,7 @@
         },
         "r6_images/gadgets/r6-oryx.png": {
           "revision": "cb:20200302160000",
-          "file": "Remah Dash​.png"
+          "file": "Remah Dash\u200b.png"
         },
         "r6_images/operators/icons/r6-pulse.png": {
           "revision": "cb:20240706091122",
@@ -767,7 +767,7 @@
         },
         "r6_images/operators/heroes/r6-skop-s.png": {
           "revision": "cb:20260304082847",
-          "file": "Skopós In-game Fullbody.webp"
+          "file": "Skop\u00f3s In-game Fullbody.webp"
         },
         "r6_images/gadgets/r6-skop-s.png": {
           "revision": "cb:20240913223827",
@@ -839,7 +839,7 @@
         },
         "r6_images/gadgets/r6-tubar-o.png": {
           "revision": "cb:20231120173142",
-          "file": "R6S Tubarão Zoto Icon.png"
+          "file": "R6S Tubar\u00e3o Zoto Icon.png"
         },
         "r6_images/operators/icons/r6-valkyrie.png": {
           "revision": "cb:20240712042218",
@@ -2776,7 +2776,7 @@
       },
       "r6_images/operators/heroes/r6-n-kk.png": {
         "revision": "cb:20190612000127",
-        "file": "Nøkk - Full Body.png"
+        "file": "N\u00f8kk - Full Body.png"
       },
       "r6_images/gadgets/r6-n-kk.png": {
         "revision": "cb:20200302160957",
@@ -3220,7 +3220,7 @@
       },
       "r6_images/gadgets/r6-oryx.png": {
         "revision": "cb:20200302160000",
-        "file": "Remah Dash​.png"
+        "file": "Remah Dash\u200b.png"
       },
       "r6_images/operators/icons/r6-pulse.png": {
         "revision": "cb:20240706091122",
@@ -3248,7 +3248,7 @@
       },
       "r6_images/operators/heroes/r6-skop-s.png": {
         "revision": "cb:20260304082847",
-        "file": "Skopós In-game Fullbody.webp"
+        "file": "Skop\u00f3s In-game Fullbody.webp"
       },
       "r6_images/gadgets/r6-skop-s.png": {
         "revision": "cb:20240913223827",
@@ -3320,7 +3320,7 @@
       },
       "r6_images/gadgets/r6-tubar-o.png": {
         "revision": "cb:20231120173142",
-        "file": "R6S Tubarão Zoto Icon.png"
+        "file": "R6S Tubar\u00e3o Zoto Icon.png"
       },
       "r6_images/operators/icons/r6-valkyrie.png": {
         "revision": "cb:20240712042218",
@@ -5385,7 +5385,7 @@
     },
     "r6_images/operators/heroes/r6-n-kk.png": {
       "revision": "cb:20190612000127",
-      "file": "Nøkk - Full Body.png"
+      "file": "N\u00f8kk - Full Body.png"
     },
     "r6_images/gadgets/r6-n-kk.png": {
       "revision": "cb:20200302160957",
@@ -5829,7 +5829,7 @@
     },
     "r6_images/gadgets/r6-oryx.png": {
       "revision": "cb:20200302160000",
-      "file": "Remah Dash​.png"
+      "file": "Remah Dash\u200b.png"
     },
     "r6_images/operators/icons/r6-pulse.png": {
       "revision": "cb:20240706091122",
@@ -5857,7 +5857,7 @@
     },
     "r6_images/operators/heroes/r6-skop-s.png": {
       "revision": "cb:20260304082847",
-      "file": "Skopós In-game Fullbody.webp"
+      "file": "Skop\u00f3s In-game Fullbody.webp"
     },
     "r6_images/gadgets/r6-skop-s.png": {
       "revision": "cb:20240913223827",
@@ -5929,7 +5929,7 @@
     },
     "r6_images/gadgets/r6-tubar-o.png": {
       "revision": "cb:20231120173142",
-      "file": "R6S Tubarão Zoto Icon.png"
+      "file": "R6S Tubar\u00e3o Zoto Icon.png"
     },
     "r6_images/operators/icons/r6-valkyrie.png": {
       "revision": "cb:20240712042218",
@@ -7789,7 +7789,7 @@
     },
     "r6_images/gadgets/r6-goyo.png": {
       "revision": "cb:20200302161845",
-      "file": "Volcán_Shield.png"
+      "file": "Volc\u00e1n_Shield.png"
     },
     "r6_images/gadgets/r6-lesion.png": {
       "revision": "cb:20200302144957",
@@ -8421,11 +8421,11 @@
     },
     "r6_images/weapons/r6-n-kk-4.png": {
       "revision": "cb:20250907161546",
-      "file": "R6S FMG-9 Nøkk.webp"
+      "file": "R6S FMG-9 N\u00f8kk.webp"
     },
     "r6_images/weapons/r6-n-kk-5.png": {
       "revision": "cb:20250907161645",
-      "file": "R6S SIX12 SD Nøkk.webp"
+      "file": "R6S SIX12 SD N\u00f8kk.webp"
     },
     "r6_images/weapons/r6-n-kk-6.png": {
       "revision": "cb:20260304080418",
@@ -9114,6 +9114,4786 @@
     "r6_images/weapons/w-auga3.png": {
       "revision": "cb:20220525145126",
       "file": "R6S AUG A3.png"
+    },
+    "r6_images/skins/uniforms-mute-default.png": {
+      "revision": "cb:20190922031715",
+      "file": "Mute Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-mute-nightworks.png": {
+      "revision": "cb:20190910043946",
+      "file": "Nightworks Mute Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-mute-s-a-s-chemical-warfare.png": {
+      "revision": "cb:20190910043952",
+      "file": "SAS Chemical Warfare Mute Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-sledge-default.png": {
+      "revision": "cb:20190922033353",
+      "file": "Sledge Default Uniform.png"
+    },
+    "r6_images/skins/uniforms-sledge-nightworks.png": {
+      "revision": "cb:20190910043948",
+      "file": "Sledge Nightworks Uniform.png"
+    },
+    "r6_images/skins/uniforms-sledge-mtp-alpine.png": {
+      "revision": "cb:20190910043945",
+      "file": "Sledge MTP Alpine Uniform.png"
+    },
+    "r6_images/skins/uniforms-sledge-s-a-s-dark-woodland.png": {
+      "revision": "cb:20190910043956",
+      "file": "Sledge S.A.S. Dark Woodland Uniform.png"
+    },
+    "r6_images/skins/uniforms-smoke-default.png": {
+      "revision": "cb:20190922031719",
+      "file": "Smoke Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-smoke-nightworks.png": {
+      "revision": "cb:20190910045933",
+      "file": "Smoke Nightworks Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-smoke-s-a-s-dark-woodland.png": {
+      "revision": "cb:20190910045934",
+      "file": "Smoke SAS Dark Woodland Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-smoke-infector.png": {
+      "revision": "cb:20190910045931",
+      "file": "Smoke Infector Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-thatcher-default.png": {
+      "revision": "cb:20190922033354",
+      "file": "Thatcher Default Uniform.png"
+    },
+    "r6_images/skins/uniforms-thatcher-nightworks.png": {
+      "revision": "cb:20190910045936",
+      "file": "Thatcher Nightworks Uniform.png"
+    },
+    "r6_images/skins/uniforms-thatcher-s-a-s-dark-woodland.png": {
+      "revision": "cb:20190910045937",
+      "file": "Thatcher S.A.S. Dark Woodland Uniform.png"
+    },
+    "r6_images/skins/uniforms-thatcher-genteel.png": {
+      "revision": "cb:20190910045935",
+      "file": "Thatcher Genteel Uniform.png"
+    },
+    "r6_images/skins/uniforms-ash-default.png": {
+      "revision": "cb:20190910023019",
+      "file": "Ash Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ash-concrete-directive.png": {
+      "revision": "cb:20190910023018",
+      "file": "Ash Concrete Directive Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ash-digital-sapphire.png": {
+      "revision": "cb:20190910023020",
+      "file": "Ash Digital Sapphire Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ash-paramilitary.png": {
+      "revision": "cb:20190910023022",
+      "file": "Ash Paramilitary Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ash-fly-fishing.png": {
+      "revision": "cb:20190910023021",
+      "file": "Ash Fly Fishing Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ash-kt-highlander-camo.png": {
+      "revision": "cb:20190910023021",
+      "file": "Ash KT Highlander Camo Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-thermite-default.png": {
+      "revision": "cb:20190910023025",
+      "file": "Thermite Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-thermite-concrete-directive.png": {
+      "revision": "cb:20190910032629",
+      "file": "Thermite Concrete Directive Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-thermite-pixel-terrain.png": {
+      "revision": "cb:20190910032632",
+      "file": "Thermite Pixel Terrain Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-castle-default.png": {
+      "revision": "cb:20190910015813",
+      "file": "Castle Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-castle-concrete-directive.png": {
+      "revision": "cb:20190910032625",
+      "file": "Castle Concrete Directive Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-pulse-default.png": {
+      "revision": "cb:20190922031716",
+      "file": "Pulse Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-pulse-concrete-directive.png": {
+      "revision": "cb:20190910032628",
+      "file": "Pulse Concrete Directive Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-pulse-baron.png": {
+      "revision": "cb:20190910032627",
+      "file": "Pulse Baron Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-twitch-default.png": {
+      "revision": "cb:20190922033512",
+      "file": "Twitch Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-twitch-bitumen.png": {
+      "revision": "cb:20190922142208",
+      "file": "Twitch Bitumen Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-twitch-ce-woodland.png": {
+      "revision": "cb:20190922142209",
+      "file": "Twitch CE Woodland Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-twitch-gign-desert-clay.png": {
+      "revision": "cb:20190922142209",
+      "file": "Twitch GIGN Desert Clay Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-twitch-tech-ops.png": {
+      "revision": "cb:20190922143659",
+      "file": "Twitch Tech Ops Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-montagne-default.png": {
+      "revision": "cb:20190922033349",
+      "file": "Montagne Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-montagne-bitumen.png": {
+      "revision": "cb:20190922142203",
+      "file": "Montagne Bitumen Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-montagne-ce-woodland.png": {
+      "revision": "cb:20190922142204",
+      "file": "Montagne CE Woodland Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-montagne-reinforced.png": {
+      "revision": "cb:20190922142205",
+      "file": "Montagne Reinforced Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-doc-default.png": {
+      "revision": "cb:20190922031708",
+      "file": "Doc Default Uniform.png"
+    },
+    "r6_images/skins/uniforms-doc-bitumen.png": {
+      "revision": "cb:20190922142201",
+      "file": "Doc Bitumen Uniform.png"
+    },
+    "r6_images/skins/uniforms-doc-ce-woodland.png": {
+      "revision": "cb:20190922142201",
+      "file": "Doc CE Woodland Uniform.png"
+    },
+    "r6_images/skins/uniforms-doc-kt-banshee-camo.png": {
+      "revision": "cb:20190922142202",
+      "file": "Doc KT Banshee Camo Uniform.png"
+    },
+    "r6_images/skins/uniforms-rook-default.png": {
+      "revision": "cb:20190922031719",
+      "file": "Rook Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-rook-bitumen.png": {
+      "revision": "cb:20190922142206",
+      "file": "Rook Bitumen Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-rook-ce-woodland.png": {
+      "revision": "cb:20190922142207",
+      "file": "Rook CE Woodland Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-rook-autoroutes.png": {
+      "revision": "cb:20190922142206",
+      "file": "Rook Autoroutes Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-lion-default.png": {
+      "revision": "cb:20190922033347",
+      "file": "Lion Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-lion-marshland.png": {
+      "revision": "cb:20190910042156",
+      "file": "Lion Marshland Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-lion-orbital.png": {
+      "revision": "cb:20190910042157",
+      "file": "Lion Orbital Danger Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-glaz-default.png": {
+      "revision": "cb:20190922033341",
+      "file": "Glaz Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-glaz-hailstorm.png": {
+      "revision": "cb:20190922145024",
+      "file": "Glaz Hailstorm Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-glaz-drought.png": {
+      "revision": "cb:20190922145023",
+      "file": "Glaz Drought Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-fuze-default.png": {
+      "revision": "cb:20190922033339",
+      "file": "Fuze Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-fuze-hailstorm.png": {
+      "revision": "cb:20190922145019",
+      "file": "Fuze Hailstorm Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-fuze-morphic-slate.png": {
+      "revision": "cb:20191009034612",
+      "file": "Morphic Slate Fuze Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-fuze-quicksand.png": {
+      "revision": "cb:20191009034612",
+      "file": "Quicksand Fuze Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-kapkan-default.png": {
+      "revision": "cb:20190922031712",
+      "file": "Kapkan Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-kapkan-hailstorm.png": {
+      "revision": "cb:20190922145224",
+      "file": "Kapkan Hailstorm Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-kapkan-gorodskoy.png": {
+      "revision": "cb:20190922145025",
+      "file": "Kapkan Gorodskoy Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-kapkan-blood-orange.png": {
+      "revision": "cb:20200422043523",
+      "file": "Kapkan Blood Orange Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-tachanka-default.png": {
+      "revision": "cb:20190922031816",
+      "file": "Tachanka Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-tachanka-hailstorm.png": {
+      "revision": "cb:20190922145027",
+      "file": "Tachanka Hailstorm Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-tachanka-gorodskoy.png": {
+      "revision": "cb:20190922145027",
+      "file": "Tachanka Gorodskoy Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-tachanka-slavic-diamond.png": {
+      "revision": "cb:20190922145029",
+      "file": "Tachanka Slavic Diamond Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-finka-default.png": {
+      "revision": "cb:20190922033338",
+      "file": "Finka Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-finka-barren-blowback.png": {
+      "revision": "cb:20190910042151",
+      "file": "Finka Barren Blowback Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-finka-chemical-threat.png": {
+      "revision": "cb:20190910042152",
+      "file": "Finka Chemical Threat Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-finka-blood-orange.png": {
+      "revision": "cb:20200422042840",
+      "file": "Finka Blood Orange Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blitz-default.png": {
+      "revision": "cb:20190922033333",
+      "file": "Blitz Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blitz-shadow-brine.png": {
+      "revision": "cb:20190922152058",
+      "file": "Blitz Shadow Brine Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blitz-winter-moon.png": {
+      "revision": "cb:20190922152100",
+      "file": "Blitz Winter Moon Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blitz-federal-guard.png": {
+      "revision": "cb:20190922152057",
+      "file": "Blitz Federal Guard Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-iq-default.png": {
+      "revision": "cb:20190922033344",
+      "file": "IQ Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-iq-mica-standard.png": {
+      "revision": "cb:20190922150923",
+      "file": "IQ Mica Stnadard Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-iq-winter-moon.png": {
+      "revision": "cb:20190922150926",
+      "file": "IQ Winter Moon Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-iq-lilac-splinter.png": {
+      "revision": "cb:20190922150922",
+      "file": "IQ Lilac Splinter Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-jager-default.png": {
+      "revision": "cb:20190922031711",
+      "file": "Jager Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-jager-shadow-brine.png": {
+      "revision": "cb:20190922150928",
+      "file": "Jager Shadow Brine Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-jager-retter.png": {
+      "revision": "cb:20190922150928",
+      "file": "Jager Retter Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-jager-splittermuster.png": {
+      "revision": "cb:20190922150929",
+      "file": "Jager Splittermuster Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-bandit-default.png": {
+      "revision": "cb:20190922031707",
+      "file": "Bandit Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-bandit-shadow-brine.png": {
+      "revision": "cb:20190922152054",
+      "file": "Bandit Shadow Brine Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-bandit-splittermuster.png": {
+      "revision": "cb:20190922152055",
+      "file": "Bandit Splittermuster Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-bandit-road-hog.png": {
+      "revision": "cb:20190922152053",
+      "file": "Bandit Road Hog Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-buck-default.png": {
+      "revision": "cb:20190922033334",
+      "file": "Buck Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-buck-bold-cedar.png": {
+      "revision": "cb:20190922012906",
+      "file": "Buck Bold Cedar Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-buck-opd.png": {
+      "revision": "cb:20190922012908",
+      "file": "Buck OPD Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-buck-woodsman.png": {
+      "revision": "cb:20190922012908",
+      "file": "Buck Woodsman Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-frost-default.png": {
+      "revision": "cb:20190922031710",
+      "file": "Frost Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-frost-bold-cedar.png": {
+      "revision": "cb:20190922014359",
+      "file": "Frost Bold Cedar Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-frost-canadian-trenches.png": {
+      "revision": "cb:20190922014401",
+      "file": "Frost Canadian Trenches Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-frost-cashmere.png": {
+      "revision": "cb:20190922014401",
+      "file": "Frost Cashmere Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blackbeard-default.png": {
+      "revision": "cb:20190922033332",
+      "file": "Blackbeard Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blackbeard-kapok.png": {
+      "revision": "cb:20190922012904",
+      "file": "Blackbeard Kapok Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blackbeard-terminal.png": {
+      "revision": "cb:20190922012906",
+      "file": "Blackbeard Terminal Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blackbeard-nobleman.png": {
+      "revision": "cb:20190922012904",
+      "file": "Blackbeard Nobleman Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-blackbeard-benevolent.png": {
+      "revision": "cb:20191206064014",
+      "file": "Blackbeard Benevolent Man Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-valkyrie-default.png": {
+      "revision": "cb:20190922031816",
+      "file": "Valkyrie Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-valkyrie-amazon-jungle.png": {
+      "revision": "cb:20190922014405",
+      "file": "Valkyrie Amazon Jungle Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-valkyrie-public-servant.png": {
+      "revision": "cb:20200822073012",
+      "file": "Valkyrie Public Servant Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-valkyrie-crystal-lichen.png": {
+      "revision": "cb:20210119203251",
+      "file": "Valkyrie Crystal Lichen Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-valkyrie-lifeguard.png": {
+      "revision": "cb:20190928053738",
+      "file": "Valkyrie Lifeguard Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-capitao-default.png": {
+      "revision": "cb:20190922033336",
+      "file": "Capitao Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-capitao-gang-breaker.png": {
+      "revision": "cb:20190922012917",
+      "file": "Capitao Gang Breaker Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-capitao-bope-utility-rig.png": {
+      "revision": "cb:20190922012915",
+      "file": "Capitao BOPE Utility Rig Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-capitao-volcanic-rock.png": {
+      "revision": "cb:20190922012912",
+      "file": "Capitao Volcanic Rock Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-caveira-default.png": {
+      "revision": "cb:20190922031707",
+      "file": "Caveira Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-caveira-obscure.png": {
+      "revision": "cb:20190922014357",
+      "file": "Caveira Obscure Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-caveira-bope-jungle-fatigues.png": {
+      "revision": "cb:20190922012914",
+      "file": "Caveira BOPE Jungle Fatigues Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-caveira-bope-utility-rig.png": {
+      "revision": "cb:20190922014358",
+      "file": "Caveira BOPE Utility Rig Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-caveira-widow.png": {
+      "revision": "cb:20190922014359",
+      "file": "Caveira Widow Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-hibana-default.png": {
+      "revision": "cb:20190922033343",
+      "file": "Hibana Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-hibana-chalkboard.png": {
+      "revision": "cb:20190922014404",
+      "file": "Hibana Chalkboard Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-hibana-amber-bloom.png": {
+      "revision": "cb:20190922014403",
+      "file": "Hibana Amber Bloom Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-hibana-ancestral.png": {
+      "revision": "cb:20190922014403",
+      "file": "Hibana Ancestral Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-echo-default.png": {
+      "revision": "cb:20190922031709",
+      "file": "Echo Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-echo-chalkboard.png": {
+      "revision": "cb:20190922005827",
+      "file": "Echo Chalkboard Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-echo-infernal.png": {
+      "revision": "cb:20190922005828",
+      "file": "Echo Infernal Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-echo-voiceless-obscurity.png": {
+      "revision": "cb:20210306213846",
+      "file": "Echo Voiceless Obscurity Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-jackal-default.png": {
+      "revision": "cb:20190922033346",
+      "file": "Jackal Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-jackal-savanna.png": {
+      "revision": "cb:20190922005831",
+      "file": "Jackal Savanna Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-mira-default.png": {
+      "revision": "cb:20190922031714",
+      "file": "Mira Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-mira-tierra-yerma.png": {
+      "revision": "cb:20190922005834",
+      "file": "Mira Tierra Yerma Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ying-default.png": {
+      "revision": "cb:20190922033513",
+      "file": "Ying Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ying-scorch-mineral.png": {
+      "revision": "cb:20190922005947",
+      "file": "Ying Scorch Mineral Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ying-blossom.png": {
+      "revision": "cb:20210306213512",
+      "file": "Ying Blossom Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-lesion-default.png": {
+      "revision": "cb:20190922031713",
+      "file": "Lesion Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-lesion-scorch-mineral.png": {
+      "revision": "cb:20190922005832",
+      "file": "Lesion Scorch Mineral Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-lesion-firecracker.png": {
+      "revision": "cb:20210306213620",
+      "file": "Lesion Firecracker Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-zofia-default.png": {
+      "revision": "cb:20190922033513",
+      "file": "Zofia Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-zofia-arabian-desert.png": {
+      "revision": "cb:20190922005948",
+      "file": "Zofia Arabian Desert Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-zofia-nocturnal.png": {
+      "revision": "cb:20210306212811",
+      "file": "Zofia Nocturnal Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ela-default.png": {
+      "revision": "cb:20190922031709",
+      "file": "Ela Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ela-arabian-desert.png": {
+      "revision": "cb:20190922005829",
+      "file": "Ela Arabian Desert Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ela-wild-chase.png": {
+      "revision": "cb:20191206064014",
+      "file": "Ela Wild Chase Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-dokkaebi-default.png": {
+      "revision": "cb:20190922033337",
+      "file": "Dokkaebi Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-dokkaebi-saharan-dune.png": {
+      "revision": "cb:20190922005826",
+      "file": "Dokkaebi Saharan Dune Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-dokkaebi-black-out.png": {
+      "revision": "cb:20200122072450",
+      "file": "Dokkaebi Blackout Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-dokkaebi-mischievous-fire.png": {
+      "revision": "cb:20210306213742",
+      "file": "Dokkaebi Mischievous Fire Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-vigil-default.png": {
+      "revision": "cb:20190922031817",
+      "file": "Vigil Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-vigil-sand-shroud.png": {
+      "revision": "cb:20190922005835",
+      "file": "Vigil Sand Shroud Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-vigil-black-out.png": {
+      "revision": "cb:20200122072451",
+      "file": "Vigil Blackout Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-vigil-east-united.png": {
+      "revision": "cb:20190922005835",
+      "file": "Vigil East United Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-maestro-default.png": {
+      "revision": "cb:20190922031713",
+      "file": "Maestro Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-maestro-uncommon.png": {
+      "revision": "cb:20190910042159",
+      "file": "Maestro Concrete Jungle Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-alibi-default.png": {
+      "revision": "cb:20190922031706",
+      "file": "Alibi Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-alibi-concrete-jungle.png": {
+      "revision": "cb:20190910042149",
+      "file": "Alibi Concrete Jungle Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-alibi-modern-carabineer.png": {
+      "revision": "cb:20201026075609",
+      "file": "Alibi Modern Carabineer Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-maverick-default.png": {
+      "revision": "cb:20190922033348",
+      "file": "Maverick Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-maverick-digital-shade.png": {
+      "revision": "cb:20190930045952",
+      "file": "Maverick Digital Shade Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-clash-default.png": {
+      "revision": "cb:20190922031708",
+      "file": "Clash Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-clash-rosaceae-nettle.png": {
+      "revision": "cb:20191011043446",
+      "file": "Clash Rosaceae Nettle Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-nomad-default.png": {
+      "revision": "cb:20190922033352",
+      "file": "Nomad Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-nomad-bog-squall.png": {
+      "revision": "cb:20190910042315",
+      "file": "Nomad Bog Squall Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-kaid-default.png": {
+      "revision": "cb:20190922031711",
+      "file": "Kaid Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-kaid-bog-squall.png": {
+      "revision": "cb:20190910042155",
+      "file": "Kaid Bog Squall Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-oryx-default.png": {
+      "revision": "cb:20200504143400",
+      "file": "Oryx Default Uniform.jpeg"
+    },
+    "r6_images/skins/uniforms-gridlock-default.png": {
+      "revision": "cb:20190922033342",
+      "file": "Gridlock Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-gridlock-full-moon-road.png": {
+      "revision": "cb:20190910042154",
+      "file": "Gridlock Full Moon Road Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-mozzie-default.png": {
+      "revision": "cb:20190922031714",
+      "file": "Mozzie Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-mozzie-full-moon-road.png": {
+      "revision": "cb:20190910042313",
+      "file": "Mozzie Full Moon Road Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-kali-default.png": {
+      "revision": "cb:20191204083908",
+      "file": "Kali Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-kali-glitter-and-ink.png": {
+      "revision": "cb:20200717043400",
+      "file": "Kali Glitter And Ink Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-wamai-default.png": {
+      "revision": "cb:20191204083910",
+      "file": "Wamai Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-ace-default.png": {
+      "revision": "cb:20200617053414",
+      "file": "Ace Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-aruni-default.png": {
+      "revision": "cb:20210119185054",
+      "file": "Aruni Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-nokk-default.png": {
+      "revision": "cb:20190922033351",
+      "file": "Nokk Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-nokk-relentless-scandinavian.png": {
+      "revision": "cb:20210313144710",
+      "file": "Nokk Relentless Scandinavian Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-warden-default.png": {
+      "revision": "cb:20190922031817",
+      "file": "Warden Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-warden-dashing-lane.png": {
+      "revision": "cb:20191206064018",
+      "file": "Warden Dashing Lane Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-amaru-default.png": {
+      "revision": "cb:20190922033331",
+      "file": "Amaru Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-amaru-andes-journey.png": {
+      "revision": "cb:20200504143251",
+      "file": "Amaru Andes Journey Uniform.jpeg"
+    },
+    "r6_images/skins/uniforms-goyo-default.png": {
+      "revision": "cb:20190922031710",
+      "file": "Goyo Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-goyo-sweltering-heat.png": {
+      "revision": "cb:20210119203949",
+      "file": "Goyo Sweltering Heat Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-iana-default.png": {
+      "revision": "cb:20200504143338",
+      "file": "Iana Default Uniform.jpeg"
+    },
+    "r6_images/skins/uniforms-iana-obsolescence.png": {
+      "revision": "cb:20210306212936",
+      "file": "Iana Obsolescence Uniform.png"
+    },
+    "r6_images/skins/uniforms-melusi-default.png": {
+      "revision": "cb:20200617053311",
+      "file": "Melusi Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-zero-default.png": {
+      "revision": "cb:20200926052128",
+      "file": "Zero Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-flores-default.png": {
+      "revision": "cb:20210317194325",
+      "file": "Flores Default Uniform.PNG"
+    },
+    "r6_images/skins/uniforms-twitch-thermite.png": {
+      "revision": "cb:20190928203344",
+      "file": "Indigo Highlight Uniform.png"
+    },
+    "r6_images/skins/uniforms-twitch-mozzie.png": {
+      "revision": "cb:20200124164852",
+      "file": "Pizza Party Set Uniform.jpeg"
+    },
+    "r6_images/skins/uniforms-twitch-zofia.png": {
+      "revision": "cb:20200608062213",
+      "file": "Zofia Byte Set.png"
+    },
+    "r6_images/skins/headgear-mute-default.png": {
+      "revision": "cb:20191011030913",
+      "file": "Mute Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-mute-toxic-sandstorm.png": {
+      "revision": "cb:20191009042534",
+      "file": "Mute Toxic Sandstorm Headgear.PNG"
+    },
+    "r6_images/skins/headgear-mute-mtp-alpine.png": {
+      "revision": "cb:20191009042533",
+      "file": "Mute MTP Alpine Headgear.PNG"
+    },
+    "r6_images/skins/headgear-mute-midnight-owl.png": {
+      "revision": "cb:20191009042532",
+      "file": "Mute Midnight Owl Headgear.PNG"
+    },
+    "r6_images/skins/headgear-mute-2-0.png": {
+      "revision": "cb:20230118214310",
+      "file": "Mute 2.0 Headgear.png"
+    },
+    "r6_images/skins/headgear-mute-cephalopod.png": {
+      "revision": "cb:20230118214223",
+      "file": "Mute Cephalopod Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-default.png": {
+      "revision": "cb:20191011034317",
+      "file": "Sledge Default Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-midnight-owl.png": {
+      "revision": "cb:20191009044908",
+      "file": "Sledge Midnight Owl Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-wallace.png": {
+      "revision": "cb:20191009044911",
+      "file": "Sledge Wallace Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-arachnophobia.png": {
+      "revision": "cb:20191009044906",
+      "file": "Sledge Arachnophobia Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-mtp-alpine.png": {
+      "revision": "cb:20191009044909",
+      "file": "Sledge MTP Alpine Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-scorched.png": {
+      "revision": "cb:20191009044910",
+      "file": "Sledge Scorched Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-team-liquid-2020.png": {
+      "revision": "cb:20230118214457",
+      "file": "Sledge Team Liquid 2020 Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-gromflomite-guard.png": {
+      "revision": "cb:20230118214539",
+      "file": "Sledge Gromflomite Guard Headgear.png"
+    },
+    "r6_images/skins/headgear-smoke-default.png": {
+      "revision": "cb:20191011025656",
+      "file": "Smoke Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-smoke-kt-nomad-s-m-k.png": {
+      "revision": "cb:20191010040911",
+      "file": "Smoke KT Nomand SMK Headgear.PNG"
+    },
+    "r6_images/skins/headgear-smoke-lawn-dart-greens.png": {
+      "revision": "cb:20191010040911",
+      "file": "Smoke Lawn Dart Greens Headgear.PNG"
+    },
+    "r6_images/skins/headgear-smoke-mtp-alpine.png": {
+      "revision": "cb:20191010040912",
+      "file": "Smoke MTP Alpine Headgear.PNG"
+    },
+    "r6_images/skins/headgear-smoke-shamal.png": {
+      "revision": "cb:20191010040914",
+      "file": "Smoke Shamal Headgear.PNG"
+    },
+    "r6_images/skins/headgear-smoke-residue.png": {
+      "revision": "cb:20230118214713",
+      "file": "Smoke Residue Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-default.png": {
+      "revision": "cb:20191011034440",
+      "file": "Thatcher Default Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-solitude.png": {
+      "revision": "cb:20191010040917",
+      "file": "Thatcher Solitude Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-dirt-and-soil.png": {
+      "revision": "cb:20200130032423",
+      "file": "Thatcher Dirt And Soil Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-legacy.png": {
+      "revision": "cb:20191010040915",
+      "file": "Thatcher Legacy Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-scorched.png": {
+      "revision": "cb:20191010040917",
+      "file": "Thatcher Scorched Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-trench.png": {
+      "revision": "cb:20191010040918",
+      "file": "Thatcher Trench Headgear.png"
+    },
+    "r6_images/skins/headgear-ash-default.png": {
+      "revision": "cb:20191011034308",
+      "file": "Ash Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ash-concrete-directive.png": {
+      "revision": "cb:20191013054056",
+      "file": "Ash Concrete Directive Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ash-kt-highlander-g-t-g.png": {
+      "revision": "cb:20191013054058",
+      "file": "Ash KT Highlander GTG Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ash-pixel-navy.png": {
+      "revision": "cb:20191013054058",
+      "file": "Ash Pixel Navy Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ash-utility.png": {
+      "revision": "cb:20191013054100",
+      "file": "Ash Utility Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ash-shaldag.png": {
+      "revision": "cb:20191013054059",
+      "file": "Ash Shaldag Headgear.PNG"
+    },
+    "r6_images/skins/headgear-thermite-default.png": {
+      "revision": "cb:20191011034440",
+      "file": "Thermite Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-thermite-concrete-directive.png": {
+      "revision": "cb:20191013054327",
+      "file": "Thermite Concrete Directive Headgear.PNG"
+    },
+    "r6_images/skins/headgear-thermite-leprechaun.png": {
+      "revision": "cb:20191013054329",
+      "file": "Thermite Leprechaun Headgear.PNG"
+    },
+    "r6_images/skins/headgear-thermite-mandible.png": {
+      "revision": "cb:20191013054330",
+      "file": "Thermite Mandible Headgear.PNG"
+    },
+    "r6_images/skins/headgear-thermite-orbit.png": {
+      "revision": "cb:20191013054330",
+      "file": "Thermite Orbit Headgear.PNG"
+    },
+    "r6_images/skins/headgear-thermite-utility.png": {
+      "revision": "cb:20191013054331",
+      "file": "Thermite Utility Headgear.PNG"
+    },
+    "r6_images/skins/headgear-thermite-krombopulos-michael.png": {
+      "revision": "cb:20230118215340",
+      "file": "Thermite Krombopulos Michael Headgear.png"
+    },
+    "r6_images/skins/headgear-castle-default.png": {
+      "revision": "cb:20191011025423",
+      "file": "Castle Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-castle-concrete-directive.png": {
+      "revision": "cb:20191013054101",
+      "file": "Castle Concrete Directive Headgear.PNG"
+    },
+    "r6_images/skins/headgear-castle-hitter.png": {
+      "revision": "cb:20191013054102",
+      "file": "Castle Hitter Headgear.PNG"
+    },
+    "r6_images/skins/headgear-castle-smile.png": {
+      "revision": "cb:20191013054103",
+      "file": "Castle Smile Headgear.PNG"
+    },
+    "r6_images/skins/headgear-pulse-default.png": {
+      "revision": "cb:20191011025444",
+      "file": "Pulse Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-pulse-sunburn.png": {
+      "revision": "cb:20191013054326",
+      "file": "Pulse Sunburn Headgear.PNG"
+    },
+    "r6_images/skins/headgear-pulse-utility.png": {
+      "revision": "cb:20191013054327",
+      "file": "Pulse Utility Headgear.PNG"
+    },
+    "r6_images/skins/headgear-pulse-dapper.png": {
+      "revision": "cb:20191013054106",
+      "file": "Pulse Dapper Headgear.PNG"
+    },
+    "r6_images/skins/headgear-twitch-default.png": {
+      "revision": "cb:20191011034441",
+      "file": "Twitch Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-twitch-libre.png": {
+      "revision": "cb:20191013023231",
+      "file": "Twitch Bitumen Headgear.PNG"
+    },
+    "r6_images/skins/headgear-twitch-saharan-courage.png": {
+      "revision": "cb:20191013023235",
+      "file": "Twitch Saharan Courage Headgear.PNG"
+    },
+    "r6_images/skins/headgear-twitch-ce-woodland.png": {
+      "revision": "cb:20191013023231",
+      "file": "Twitch CE Woodland Headgear.PNG"
+    },
+    "r6_images/skins/headgear-twitch-incognito.png": {
+      "revision": "cb:20191013023232",
+      "file": "Twitch Incognito Headgear.PNG"
+    },
+    "r6_images/skins/headgear-twitch-jeanne-d-arc.png": {
+      "revision": "cb:20191013023233",
+      "file": "Twitch Jeanne D ARC Headgear.PNG"
+    },
+    "r6_images/skins/headgear-montagne-default.png": {
+      "revision": "cb:20191011034316",
+      "file": "Montagne Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-montagne-saharan-courage.png": {
+      "revision": "cb:20191013022846",
+      "file": "Montagne Saharan Courage Headgear.PNG"
+    },
+    "r6_images/skins/headgear-montagne-palewood.png": {
+      "revision": "cb:20191013022845",
+      "file": "Montagne Palewood Headgear.PNG"
+    },
+    "r6_images/skins/headgear-montagne-ce-woodland.png": {
+      "revision": "cb:20191013022843",
+      "file": "Montagne CE Woodland Headgear.PNG"
+    },
+    "r6_images/skins/headgear-montagne-void.png": {
+      "revision": "cb:20191013022846",
+      "file": "Montagne Void Headgear.PNG"
+    },
+    "r6_images/skins/headgear-montagne-oath-of-fealty.png": {
+      "revision": "cb:20210313152649",
+      "file": "Montagne Oath of Fealty Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-default.png": {
+      "revision": "cb:20191011025428",
+      "file": "Doc Default Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-bitumen.png": {
+      "revision": "cb:20191013022838",
+      "file": "Doc Bitumen Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-hypochondriac.png": {
+      "revision": "cb:20191013022840",
+      "file": "Doc Hypochondriac Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-intervention.png": {
+      "revision": "cb:20191013022841",
+      "file": "Doc Intervention Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-anatomical.png": {
+      "revision": "cb:20191013022837",
+      "file": "Doc Anatomical Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-exner.png": {
+      "revision": "cb:20191013022839",
+      "file": "Doc Exner Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-rick.png": {
+      "revision": "cb:20230118215748",
+      "file": "Doc Rick Headgear.png"
+    },
+    "r6_images/skins/headgear-rook-default.png": {
+      "revision": "cb:20191011025656",
+      "file": "Rook Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-rook-bitumen.png": {
+      "revision": "cb:20191013062130",
+      "file": "Rook Bitumen Headgear.PNG"
+    },
+    "r6_images/skins/headgear-rook-nightmare.png": {
+      "revision": "cb:20191013023230",
+      "file": "Rook Nightmare Headgear.PNG"
+    },
+    "r6_images/skins/headgear-rook-adrian.png": {
+      "revision": "cb:20191013022847",
+      "file": "Rook Adrian Headgear.PNG"
+    },
+    "r6_images/skins/headgear-rook-creneau.png": {
+      "revision": "cb:20191013023228",
+      "file": "Rook Creneau Headgear.PNG"
+    },
+    "r6_images/skins/headgear-rook-saharan-courage.png": {
+      "revision": "cb:20191013023230",
+      "file": "Rook Saharan Courage Headgear.PNG"
+    },
+    "r6_images/skins/headgear-lion-default.png": {
+      "revision": "cb:20191011034315",
+      "file": "Lion Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-lion-barren-blowback.png": {
+      "revision": "cb:20191011044751",
+      "file": "Lion Barren Blowback Headgear.PNG"
+    },
+    "r6_images/skins/headgear-lion-station-pilot.png": {
+      "revision": "cb:20191011044750",
+      "file": "Lion Station Pilot Headgear.PNG"
+    },
+    "r6_images/skins/headgear-glaz-default.png": {
+      "revision": "cb:20191011034312",
+      "file": "Glaz Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-glaz-russian-taiga.png": {
+      "revision": "cb:20191013005829",
+      "file": "Glaz Russian Taiga Headgear.PNG"
+    },
+    "r6_images/skins/headgear-glaz-twisted-harlequin.png": {
+      "revision": "cb:20191013005830",
+      "file": "Glaz Twisted Harlequin Headgear.PNG"
+    },
+    "r6_images/skins/headgear-glaz-ussr.png": {
+      "revision": "cb:20191013010230",
+      "file": "Glaz USSR Headgear.PNG"
+    },
+    "r6_images/skins/headgear-glaz-hailstorm.png": {
+      "revision": "cb:20191013005827",
+      "file": "Glaz Hailstorm Headgear.PNG"
+    },
+    "r6_images/skins/headgear-glaz-infiltrator.png": {
+      "revision": "cb:20191013005827",
+      "file": "Glaz Infiltrator Headgear.PNG"
+    },
+    "r6_images/skins/headgear-fuze-default.png": {
+      "revision": "cb:20191011034312",
+      "file": "Fuze Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-fuze-five-point.png": {
+      "revision": "cb:20191013005821",
+      "file": "Fuze Five-Point Headgear.PNG"
+    },
+    "r6_images/skins/headgear-fuze-kt-raid-t-c-o.png": {
+      "revision": "cb:20191013005823",
+      "file": "Fuze KT Raid TCO Headgear.PNG"
+    },
+    "r6_images/skins/headgear-fuze-hailstorm.png": {
+      "revision": "cb:20191013005822",
+      "file": "Fuze Hailstorm Headgear.PNG"
+    },
+    "r6_images/skins/headgear-fuze-ussr.png": {
+      "revision": "cb:20191013005825",
+      "file": "Fuze USSR Headgear.PNG"
+    },
+    "r6_images/skins/headgear-fuze-down-2-business.png": {
+      "revision": "cb:20191013005820",
+      "file": "Fuze Down 2 Business Headgear.PNG"
+    },
+    "r6_images/skins/headgear-fuze-morty.png": {
+      "revision": "cb:20230118215910",
+      "file": "Fuze Morty Headgear.png"
+    },
+    "r6_images/skins/headgear-kapkan-default.png": {
+      "revision": "cb:20191011025437",
+      "file": "Kapkan Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kapkan-canine.png": {
+      "revision": "cb:20191013010231",
+      "file": "Kapkan Canine Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kapkan-russian-taiga.png": {
+      "revision": "cb:20191013010234",
+      "file": "Kapkan Russian Taiga Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kapkan-ussr.png": {
+      "revision": "cb:20191013010234",
+      "file": "Kapkan USSR Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kapkan-gorodskoy.png": {
+      "revision": "cb:20191013010233",
+      "file": "Kapkan Gorodskoy Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kapkan-hailstorm.png": {
+      "revision": "cb:20191013010233",
+      "file": "Kapkan Hailstorm Headgear.PNG"
+    },
+    "r6_images/skins/headgear-tachanka-default.png": {
+      "revision": "cb:20191011025657",
+      "file": "Tachanka Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-tachanka-ballistic-salvation.png": {
+      "revision": "cb:20191013010235",
+      "file": "Tachanka Ballistic Salvation Headgear.PNG"
+    },
+    "r6_images/skins/headgear-tachanka-hailstorm.png": {
+      "revision": "cb:20191013010236",
+      "file": "Tachanka Hailstorm Headgear.PNG"
+    },
+    "r6_images/skins/headgear-tachanka-racer.png": {
+      "revision": "cb:20191013010238",
+      "file": "Tachanka Racer Headgear.PNG"
+    },
+    "r6_images/skins/headgear-tachanka-lion-dance.png": {
+      "revision": "cb:20191206070050",
+      "file": "Tachanka Lion Dance Headgear.PNG"
+    },
+    "r6_images/skins/headgear-tachanka-lord-boyar.png": {
+      "revision": "cb:20191013010237",
+      "file": "Tachanka Lord Boyar Headgear.PNG"
+    },
+    "r6_images/skins/headgear-finka-default.png": {
+      "revision": "cb:20191011034311",
+      "file": "Finka Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-finka-barren-blowback.png": {
+      "revision": "cb:20191011044742",
+      "file": "Finka Barren Blowback Headgear.PNG"
+    },
+    "r6_images/skins/headgear-finka-blood-orange.png": {
+      "revision": "cb:20200422043329",
+      "file": "Finka Blood Orange Headgear.PNG"
+    },
+    "r6_images/skins/headgear-finka-chemical-threat.png": {
+      "revision": "cb:20191011044742",
+      "file": "Finka Chemical Threat Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blitz-default.png": {
+      "revision": "cb:20191011034309",
+      "file": "Blitz Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blitz-breakbeat.png": {
+      "revision": "cb:20191012233858",
+      "file": "Blitz Breakbeat Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blitz-raid-ram.png": {
+      "revision": "cb:20191012233900",
+      "file": "Blitz Raid Ram Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blitz-selfie.png": {
+      "revision": "cb:20191012233901",
+      "file": "Blitz Selfie Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blitz-robin.png": {
+      "revision": "cb:20191012233901",
+      "file": "Blitz Robin Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blitz-shadow-brine.png": {
+      "revision": "cb:20191012233901",
+      "file": "Blitz Shadow Brine Headgear.PNG"
+    },
+    "r6_images/skins/headgear-iq-default.png": {
+      "revision": "cb:20191011034314",
+      "file": "IQ Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-iq-carnival.png": {
+      "revision": "cb:20230119034031",
+      "file": "IQ Carnival Headgear.png"
+    },
+    "r6_images/skins/headgear-iq-mica-standard.png": {
+      "revision": "cb:20191012234319",
+      "file": "IQ Mica Standard Headgear.PNG"
+    },
+    "r6_images/skins/headgear-iq-tumbleweed.png": {
+      "revision": "cb:20191012234322",
+      "file": "IQ Tumbleweed Headgear.PNG"
+    },
+    "r6_images/skins/headgear-iq-commander.png": {
+      "revision": "cb:20191012234317",
+      "file": "IQ Commander Headgear.PNG"
+    },
+    "r6_images/skins/headgear-iq-flak.png": {
+      "revision": "cb:20191012234318",
+      "file": "IQ Flak Headgear.PNG"
+    },
+    "r6_images/skins/headgear-iq-splittermuster.png": {
+      "revision": "cb:20191012234320",
+      "file": "IQ Splittermuster Headgear.PNG"
+    },
+    "r6_images/skins/headgear-iq-thistle.png": {
+      "revision": "cb:20191012234321",
+      "file": "IQ Thistle Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jager-default.png": {
+      "revision": "cb:20191011025434",
+      "file": "Jager Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jager-frostbitten.png": {
+      "revision": "cb:20191012234628",
+      "file": "Jager Frostbitten Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jager-kt-mandrake-a-c-h.png": {
+      "revision": "cb:20191012234629",
+      "file": "Jager KT Mandrake ACH Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jager-retter.png": {
+      "revision": "cb:20191012234630",
+      "file": "Jager Retter Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jager-splittermuster.png": {
+      "revision": "cb:20191012234632",
+      "file": "Jager Splittermuster Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jager-tumbleweed.png": {
+      "revision": "cb:20191012234633",
+      "file": "Jager Tumbleweed Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jager-waxwing.png": {
+      "revision": "cb:20191012234634",
+      "file": "Jager Waxwing Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jager-voyager.png": {
+      "revision": "cb:20191012234633",
+      "file": "Jager Voyager Headgear.PNG"
+    },
+    "r6_images/skins/headgear-bandit-default.png": {
+      "revision": "cb:20191011025421",
+      "file": "Bandit Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-bandit-ebm.png": {
+      "revision": "cb:20191012233853",
+      "file": "Bandit EBM Headgear.PNG"
+    },
+    "r6_images/skins/headgear-bandit-tumbleweed.png": {
+      "revision": "cb:20191012233857",
+      "file": "Bandit Tumbleweed Headgear.PNG"
+    },
+    "r6_images/skins/headgear-bandit-flycatcher.png": {
+      "revision": "cb:20191012233853",
+      "file": "Bandit Flycatcher Headgear.PNG"
+    },
+    "r6_images/skins/headgear-bandit-voyager.png": {
+      "revision": "cb:20191012233855",
+      "file": "Bandit Shadow Brine Headgear.PNG"
+    },
+    "r6_images/skins/headgear-bandit-stitches.png": {
+      "revision": "cb:20191012233856",
+      "file": "Bandit Stitches Headgear.PNG"
+    },
+    "r6_images/skins/headgear-buck-default.png": {
+      "revision": "cb:20191011034310",
+      "file": "Buck Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-buck-fleurdelise.png": {
+      "revision": "cb:20191012052703",
+      "file": "Buck Fleurdelise Headgear.PNG"
+    },
+    "r6_images/skins/headgear-buck-slate-grey.png": {
+      "revision": "cb:20191012052708",
+      "file": "Buck Slate Grey Headgear.PNG"
+    },
+    "r6_images/skins/headgear-buck-goalie.png": {
+      "revision": "cb:20191012052704",
+      "file": "Buck Goalie Headgear.PNG"
+    },
+    "r6_images/skins/headgear-frost-default.png": {
+      "revision": "cb:20191011025432",
+      "file": "Frost Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-frost-vacation.png": {
+      "revision": "cb:20191012060725",
+      "file": "Frost Vacation Headgear.PNG"
+    },
+    "r6_images/skins/headgear-frost-hellion.png": {
+      "revision": "cb:20191012060723",
+      "file": "Frost Hellion Headgear.PNG"
+    },
+    "r6_images/skins/headgear-frost-slate-grey.png": {
+      "revision": "cb:20191012060724",
+      "file": "Frost Slate Grey Headgear.PNG"
+    },
+    "r6_images/skins/headgear-frost-trapper.png": {
+      "revision": "cb:20191012060725",
+      "file": "Frost Trapper Headgear.PNG"
+    },
+    "r6_images/skins/headgear-frost-veteran-fusilier.png": {
+      "revision": "cb:20191012052711",
+      "file": "Frost Veteran Fusilier Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blackbeard-default.png": {
+      "revision": "cb:20191011034308",
+      "file": "Blackbeard Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blackbeard-peacock.png": {
+      "revision": "cb:20191012052333",
+      "file": "Blackbeard Peacock Spider Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blackbeard-rhino.png": {
+      "revision": "cb:20191012052334",
+      "file": "Blackbeard Rhino Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blackbeard-sandroot.png": {
+      "revision": "cb:20191012052334",
+      "file": "Blackbeard Sandroot Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blackbeard-benevolent-man.png": {
+      "revision": "cb:20191206070047",
+      "file": "Blackbeard Benevolent Man Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blackbeard-edward-teach.png": {
+      "revision": "cb:20191016011628",
+      "file": "Blackbeard Edward Teach Headgear.PNG"
+    },
+    "r6_images/skins/headgear-blackbeard-undertaker.png": {
+      "revision": "cb:20230123172010",
+      "file": "Blackbeard Undertaker Headgear.png"
+    },
+    "r6_images/skins/headgear-valkyrie-default.png": {
+      "revision": "cb:20191011025657",
+      "file": "Valkyrie Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-valkyrie-shock-rock.png": {
+      "revision": "cb:20191012052340",
+      "file": "Valkyrie Shock Rock Headgear.PNG"
+    },
+    "r6_images/skins/headgear-valkyrie-overlord.png": {
+      "revision": "cb:20191012052338",
+      "file": "Valkyrie Overlord Headgear.PNG"
+    },
+    "r6_images/skins/headgear-valkyrie-public-servant.png": {
+      "revision": "cb:20200823121103",
+      "file": "Valkyrie Public Servant Headgear.PNG"
+    },
+    "r6_images/skins/headgear-valkyrie-earhart.png": {
+      "revision": "cb:20191012052337",
+      "file": "Valkyrie Earhart Headgear.PNG"
+    },
+    "r6_images/skins/headgear-valkyrie-pop-art.png": {
+      "revision": "cb:20191012052338",
+      "file": "Valkyrie Pop Art Headgear.PNG"
+    },
+    "r6_images/skins/headgear-valkyrie-woodland-boonie.png": {
+      "revision": "cb:20191012052341",
+      "file": "Valkyrie Woodland Boonie Headgear.PNG"
+    },
+    "r6_images/skins/headgear-caveira-default.png": {
+      "revision": "cb:20191011025424",
+      "file": "Caveira Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-caveira-lucha.png": {
+      "revision": "cb:20191011045804",
+      "file": "Caveira Lucha Headgear.PNG"
+    },
+    "r6_images/skins/headgear-caveira-brasil.png": {
+      "revision": "cb:20191011045806",
+      "file": "Caveira Brasil Headgear.PNG"
+    },
+    "r6_images/skins/headgear-caveira-bloodwood.png": {
+      "revision": "cb:20191011045806",
+      "file": "Caveira Bloodwood Headgear.PNG"
+    },
+    "r6_images/skins/headgear-caveira-death.png": {
+      "revision": "cb:20191011045805",
+      "file": "Caveira Death Headgear.PNG"
+    },
+    "r6_images/skins/headgear-caveira-obscure.png": {
+      "revision": "cb:20191011045339",
+      "file": "Caveira Obscure Headgear.PNG"
+    },
+    "r6_images/skins/headgear-capitao-default.png": {
+      "revision": "cb:20191011034310",
+      "file": "Capitao Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-capitao-calico-jack.png": {
+      "revision": "cb:20191016011628",
+      "file": "Calico Jack Headgear.PNG"
+    },
+    "r6_images/skins/headgear-capitao-gang-breaker.png": {
+      "revision": "cb:20191011045808",
+      "file": "Capitao Gang Breaker Headgear.PNG"
+    },
+    "r6_images/skins/headgear-capitao-cad-ver.png": {
+      "revision": "cb:20191011045809",
+      "file": "Capitao Cadaver Headgear.PNG"
+    },
+    "r6_images/skins/headgear-hibana-default.png": {
+      "revision": "cb:20191011034313",
+      "file": "Hibana Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-hibana-chalkboard.png": {
+      "revision": "cb:20191011045331",
+      "file": "Hibana Chalkboard Headgear.PNG"
+    },
+    "r6_images/skins/headgear-hibana-clan.png": {
+      "revision": "cb:20191011045330",
+      "file": "Hibana Clan Headgear.PNG"
+    },
+    "r6_images/skins/headgear-hibana-hachigane.png": {
+      "revision": "cb:20191011045329",
+      "file": "Hibana Hachigane Headgear.PNG"
+    },
+    "r6_images/skins/headgear-hibana-yakuza-huntress.png": {
+      "revision": "cb:20230123172311",
+      "file": "Hibana Yakuza Huntress Headgear.png"
+    },
+    "r6_images/skins/headgear-echo-default.png": {
+      "revision": "cb:20191011025429",
+      "file": "Echo Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-echo-virtual-abyss.png": {
+      "revision": "cb:20191011045336",
+      "file": "Echo Virtual Abyss Headgear.PNG"
+    },
+    "r6_images/skins/headgear-echo-ricocheting-murmur.png": {
+      "revision": "cb:20210306215456",
+      "file": "Echo Ricocheting Murmur Headgear.PNG"
+    },
+    "r6_images/skins/headgear-echo-headstrong-warrior.png": {
+      "revision": "cb:20210313151752",
+      "file": "Echo Headstrong Warrior Headgear.png"
+    },
+    "r6_images/skins/headgear-jackal-default.png": {
+      "revision": "cb:20191011034314",
+      "file": "Jackal Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-jackal-masked-verdure.png": {
+      "revision": "cb:20191011045328",
+      "file": "Jackal Masked Verdure Headgear.PNG"
+    },
+    "r6_images/skins/headgear-mira-default.png": {
+      "revision": "cb:20191011025441",
+      "file": "Mira Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-mira-transit-urbana.png": {
+      "revision": "cb:20191011044748",
+      "file": "Mira Transit Urbana Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ying-default.png": {
+      "revision": "cb:20191011034441",
+      "file": "Ying Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ying-scorch-mineral.png": {
+      "revision": "cb:20191011044746",
+      "file": "Ying Scorch Mineral Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ying-peony.png": {
+      "revision": "cb:20210215145120",
+      "file": "Ying Peony Headgear.PNG"
+    },
+    "r6_images/skins/headgear-lesion-default.png": {
+      "revision": "cb:20191011025438",
+      "file": "Lesion Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-lesion-urban-charcoal.png": {
+      "revision": "cb:20191011044752",
+      "file": "Lesion Urban Charcoal Headgear.PNG"
+    },
+    "r6_images/skins/headgear-lesion-longevity.png": {
+      "revision": "cb:20210215145235",
+      "file": "Lesion Longevity Headgear.PNG"
+    },
+    "r6_images/skins/headgear-zofia-default.png": {
+      "revision": "cb:20191011034442",
+      "file": "Zofia Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-zofia-panther-93.png": {
+      "revision": "cb:20191011044744",
+      "file": "Zofia Panther 93 Headgear.PNG"
+    },
+    "r6_images/skins/headgear-zofia-night-owl.png": {
+      "revision": "cb:20210215145632",
+      "file": "Zofia Night Owl Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ela-default.png": {
+      "revision": "cb:20191011025430",
+      "file": "Ela Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ela-arctic-moss.png": {
+      "revision": "cb:20191011045334",
+      "file": "Ela Arctic Moss Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ela-panther-93.png": {
+      "revision": "cb:20191011045334",
+      "file": "Ela Panther 93 Headgear.PNG"
+    },
+    "r6_images/skins/headgear-dokkaebi-default.png": {
+      "revision": "cb:20191011034311",
+      "file": "Dokkaebi Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-dokkaebi-black-out.png": {
+      "revision": "cb:20200122072449",
+      "file": "Dokkaebi Blackout Headgear.PNG"
+    },
+    "r6_images/skins/headgear-dokkaebi-sorrowful-gleam.png": {
+      "revision": "cb:20210306215237",
+      "file": "Dokkaebi Sorrowful Gleam Headgear.PNG"
+    },
+    "r6_images/skins/headgear-dokkaebi-molten-pitch.png": {
+      "revision": "cb:20230123172809",
+      "file": "Dokkaebi Molten Pitch Headgear.png"
+    },
+    "r6_images/skins/headgear-vigil-default.png": {
+      "revision": "cb:20191011025658",
+      "file": "Vigil Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-vigil-sand-shroud.png": {
+      "revision": "cb:20191011044747",
+      "file": "Vigil Sand Shroud Headgear.PNG"
+    },
+    "r6_images/skins/headgear-vigil-black-out.png": {
+      "revision": "cb:20200122072450",
+      "file": "Vigil Blackout Headgear.PNG"
+    },
+    "r6_images/skins/headgear-vigil-molten-pitch.png": {
+      "revision": "cb:20230123172852",
+      "file": "Vigil Molten Pitch Headgear.png"
+    },
+    "r6_images/skins/headgear-maestro-default.png": {
+      "revision": "cb:20191011025439",
+      "file": "Maestro Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-maestro-enforcement.png": {
+      "revision": "cb:20191206070049",
+      "file": "Maestro Enforcement Headgear.PNG"
+    },
+    "r6_images/skins/headgear-maestro-sea-based-operation.png": {
+      "revision": "cb:20230123172942",
+      "file": "Maestro Sea-Based Operation Headgear.png"
+    },
+    "r6_images/skins/headgear-alibi-default.png": {
+      "revision": "cb:20191011025420",
+      "file": "Alibi Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-alibi-concrete-jungle.png": {
+      "revision": "cb:20191010052632",
+      "file": "Alibi Concrete Jungle Headgear.PNG"
+    },
+    "r6_images/skins/headgear-alibi-duty-scarf.png": {
+      "revision": "cb:20201026074524",
+      "file": "Alibi Duty Scarf Headgear.PNG"
+    },
+    "r6_images/skins/headgear-maverick-default.png": {
+      "revision": "cb:20191011034315",
+      "file": "Maverick Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-maverick-dark-alley.png": {
+      "revision": "cb:20191010052631",
+      "file": "Maverick Dark Alley Headgear.PNG"
+    },
+    "r6_images/skins/headgear-maverick-replicant-maverick.png": {
+      "revision": "cb:20230123173032",
+      "file": "Maverick Replicant Maverick Headgear.png"
+    },
+    "r6_images/skins/headgear-clash-default.png": {
+      "revision": "cb:20191011025425",
+      "file": "Clash Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-clash-rosaceae-nettle.png": {
+      "revision": "cb:20191011025427",
+      "file": "Clash Rosaceae Nettle Headgear.PNG"
+    },
+    "r6_images/skins/headgear-nomad-default.png": {
+      "revision": "cb:20191011034317",
+      "file": "Nomad Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-nomad-bog-squall.png": {
+      "revision": "cb:20191010052631",
+      "file": "Nomad Bog Squall Headgear.PNG"
+    },
+    "r6_images/skins/headgear-nomad-tar-brush.png": {
+      "revision": "cb:20200422043018",
+      "file": "Nomad Tar Brush Headgear.PNG"
+    },
+    "r6_images/skins/headgear-nomad-road-occultist.png": {
+      "revision": "cb:20230123173120",
+      "file": "Nomad Road Occultist Headgear.png"
+    },
+    "r6_images/skins/headgear-kaid-default.png": {
+      "revision": "cb:20191011025435",
+      "file": "Kaid Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kaid-bog-squall.png": {
+      "revision": "cb:20191010052630",
+      "file": "Kaid Bog Squall Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kaid-tar-brush.png": {
+      "revision": "cb:20200803072849",
+      "file": "Kaid Tar Brush Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kaid-willow-dusk.png": {
+      "revision": "cb:20230123173207",
+      "file": "Kaid Willow Dusk Headgear.png"
+    },
+    "r6_images/skins/headgear-oryx-default.png": {
+      "revision": "cb:20200318182419",
+      "file": "Oryxdefhg.jpg"
+    },
+    "r6_images/skins/headgear-oryx-archetypal-sweatband.png": {
+      "revision": "cb:20230123173251",
+      "file": "Oryx Archetypal Sweatband Headgear.png"
+    },
+    "r6_images/skins/headgear-gridlock-default.png": {
+      "revision": "cb:20191011034313",
+      "file": "Gridlock Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-gridlock-full-moon-road.png": {
+      "revision": "cb:20191011045332",
+      "file": "Gridlock Full Moon Road Headgear.PNG"
+    },
+    "r6_images/skins/headgear-mozzie-default.png": {
+      "revision": "cb:20191011025442",
+      "file": "Mozzie Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-mozzie-full-moon-road.png": {
+      "revision": "cb:20191010052630",
+      "file": "Mozzie Full Moon Road Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kali-default.png": {
+      "revision": "cb:20191204083908",
+      "file": "Kali Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-kali-glorious-undercut.png": {
+      "revision": "cb:20200717042451",
+      "file": "Kali Glorious Undercut Headgear.PNG"
+    },
+    "r6_images/skins/headgear-wamai-default.png": {
+      "revision": "cb:20191204083909",
+      "file": "Wamai Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-wamai-artificial-lung.png": {
+      "revision": "cb:20230123173507",
+      "file": "Wamai Artificial Lung Headgear.png"
+    },
+    "r6_images/skins/headgear-ace-default.png": {
+      "revision": "cb:20200617053746",
+      "file": "Ace Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-ace-three-bolt-helmet.png": {
+      "revision": "cb:20230123173546",
+      "file": "Ace Three-Bolt Helmet Headgear.png"
+    },
+    "r6_images/skins/headgear-aruni-default.png": {
+      "revision": "cb:20210215151406",
+      "file": "Aruni Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-nokk-default.png": {
+      "revision": "cb:20191011034316",
+      "file": "Nokk Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-nokk-cryptic-marauder.png": {
+      "revision": "cb:20210313152215",
+      "file": "Nokk Cryptic Marauder Headgear.png"
+    },
+    "r6_images/skins/headgear-warden-default.png": {
+      "revision": "cb:20191011025658",
+      "file": "Warden Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-warden-dashing-lane.png": {
+      "revision": "cb:20191206070051",
+      "file": "Warden Dashing Lane Headgear.PNG"
+    },
+    "r6_images/skins/headgear-amaru-default.png": {
+      "revision": "cb:20191011034307",
+      "file": "Amaru Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-amaru-full-moon-road.png": {
+      "revision": "cb:20200504143143",
+      "file": "Amaru Clifftop Headgear.jpeg"
+    },
+    "r6_images/skins/headgear-goyo-default.png": {
+      "revision": "cb:20191011025433",
+      "file": "Goyo Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-goyo-retro-shades.png": {
+      "revision": "cb:20210215153331",
+      "file": "Goyo Retro Shades Headgear.PNG"
+    },
+    "r6_images/skins/headgear-iana-default.png": {
+      "revision": "cb:20200318182154",
+      "file": "Ianadefhg.jpg"
+    },
+    "r6_images/skins/headgear-iana-phantasmagoria.png": {
+      "revision": "cb:20210215145502",
+      "file": "Iana Phantasmagoria Headgear.PNG"
+    },
+    "r6_images/skins/headgear-melusi-default.png": {
+      "revision": "cb:20200617053911",
+      "file": "Melusi Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-zero-default.png": {
+      "revision": "cb:20201008040915",
+      "file": "Zero Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-flores-default.png": {
+      "revision": "cb:20210317182149",
+      "file": "Flores Default Headgear.PNG"
+    },
+    "r6_images/skins/headgear-twitch-jackal.png": {
+      "revision": "cb:20190928203344",
+      "file": "Indigo Highlight Uniform.png"
+    },
+    "r6_images/skins/headgear-twitch-mozzie.png": {
+      "revision": "cb:20200124164852",
+      "file": "Pizza Party Set Uniform.jpeg"
+    },
+    "r6_images/skins/headgear-twitch-zofia.png": {
+      "revision": "cb:20200608062213",
+      "file": "Zofia Byte Set.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-cold-war-bel.png": {
+      "revision": "cb:20190821065004",
+      "file": "Cold War-BEL L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-cold-war-fra.png": {
+      "revision": "cb:20190821065004",
+      "file": "Cold War-FRA L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-cold-war-vnm.png": {
+      "revision": "cb:20190821065006",
+      "file": "Cold War-VNM L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-azurite.png": {
+      "revision": "cb:20190821065001",
+      "file": "Azurite L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-canary.png": {
+      "revision": "cb:20190821065003",
+      "file": "Canary L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-firefly.png": {
+      "revision": "cb:20200125054911",
+      "file": "Firefly L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-jungle.png": {
+      "revision": "cb:20190821065345",
+      "file": "Jungle L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-saffron.png": {
+      "revision": "cb:20190821065350",
+      "file": "Saffron L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-black.png": {
+      "revision": "cb:20190821065002",
+      "file": "Black L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-crimson.png": {
+      "revision": "cb:20190821065006",
+      "file": "Crimson L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-fin-winter-camo.png": {
+      "revision": "cb:20190821065008",
+      "file": "FIN Winter Camo L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-fra-reganomics.png": {
+      "revision": "cb:20190821065009",
+      "file": "FRA Reganomics L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-modern-usa-camo.png": {
+      "revision": "cb:20190821065347",
+      "file": "Modern USA Camo L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-rus-wwii-camo.png": {
+      "revision": "cb:20190821065349",
+      "file": "RUS WWII Camo L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-usa-desert-camo.png": {
+      "revision": "cb:20190821065353",
+      "file": "USA Desert Camo L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-universal-weapon-skins-usa-reganomics.png": {
+      "revision": "cb:20190821065354",
+      "file": "USA Reganomics L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-assault-rifles-2500.png": {
+      "revision": "cb:20190821065346",
+      "file": "Mod L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-assault-rifles-6000.png": {
+      "revision": "cb:20190821065344",
+      "file": "Gridlock L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-assault-rifles-50000.png": {
+      "revision": "cb:20200130031056",
+      "file": "Landslide L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-assault-rifles-10000.png": {
+      "revision": "cb:20190821065346",
+      "file": "Mark 1-4 L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-assault-rifles-7500.png": {
+      "revision": "cb:20190821065008",
+      "file": "Engraved L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-assault-rifles-3750.png": {
+      "revision": "cb:20190821065353",
+      "file": "Union Jack L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-assault-rifles-60000.png": {
+      "revision": "cb:20191025041250",
+      "file": "Noble Hunt L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-ar33-2500.png": {
+      "revision": "cb:20190826055106",
+      "file": "Smiths AR33 Skin.png"
+    },
+    "r6_images/skins/weapons-ar33-6000.png": {
+      "revision": "cb:20190826055101",
+      "file": "Gridlock AR33 Skin.png"
+    },
+    "r6_images/skins/weapons-ar33-3750.png": {
+      "revision": "cb:20190826055109",
+      "file": "Union Jack AR33 Skin.png"
+    },
+    "r6_images/skins/weapons-ar33-7500.png": {
+      "revision": "cb:20190826055100",
+      "file": "Engraved AR33 Skin.png"
+    },
+    "r6_images/skins/weapons-ar33-30000.png": {
+      "revision": "cb:20210327112142",
+      "file": "La Clave AR33 Skin.PNG"
+    },
+    "r6_images/skins/weapons-g36c-2500.png": {
+      "revision": "cb:20190826055105",
+      "file": "Restricted G36C Skin.PNG"
+    },
+    "r6_images/skins/weapons-g36c-7500.png": {
+      "revision": "cb:20190826055156",
+      "file": "Vaquero G36C Skin.PNG"
+    },
+    "r6_images/skins/weapons-g36c-10000.png": {
+      "revision": "cb:20190826055100",
+      "file": "Dust Cloud G36C Skin.PNG"
+    },
+    "r6_images/skins/weapons-g36c-6000.png": {
+      "revision": "cb:20190826055102",
+      "file": "Gridlock G36C Skin.PNG"
+    },
+    "r6_images/skins/weapons-g36c-3750.png": {
+      "revision": "cb:20190826055101",
+      "file": "Glory G36C Skin.PNG"
+    },
+    "r6_images/skins/weapons-g36c-12500.png": {
+      "revision": "cb:20190826055105",
+      "file": "Rod Reel G36C Skin.PNG"
+    },
+    "r6_images/skins/weapons-r4-c-2500.png": {
+      "revision": "cb:20190826015738",
+      "file": "Target R4C Skin.PNG"
+    },
+    "r6_images/skins/weapons-r4-c-6000.png": {
+      "revision": "cb:20190826015804",
+      "file": "Gridlock R4C Skin.PNG"
+    },
+    "r6_images/skins/weapons-r4-c-3750.png": {
+      "revision": "cb:20210120210438",
+      "file": "Red White and Blue R4C Skin.PNG"
+    },
+    "r6_images/skins/weapons-556xi-2500.png": {
+      "revision": "cb:20190826062415",
+      "file": "Gem 556XI Skin.PNG"
+    },
+    "r6_images/skins/weapons-556xi-7500.png": {
+      "revision": "cb:20190826062414",
+      "file": "Dust Storm 556XI Skin.PNG"
+    },
+    "r6_images/skins/weapons-556xi-6000.png": {
+      "revision": "cb:20190826062423",
+      "file": "Quincunx 556XI Skin.PNG"
+    },
+    "r6_images/skins/weapons-556xi-12500.png": {
+      "revision": "cb:20190826062418",
+      "file": "Irish Rover 556XI Skin.PNG"
+    },
+    "r6_images/skins/weapons-556xi-3750.png": {
+      "revision": "cb:20210120203133",
+      "file": "Red White and Blue 556XI Skin.PNG"
+    },
+    "r6_images/skins/weapons-f2-2500.png": {
+      "revision": "cb:20190826062417",
+      "file": "Iceman F2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-f2-3750.png": {
+      "revision": "cb:20190826062419",
+      "file": "Liberte F2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-f2-6000.png": {
+      "revision": "cb:20190826062417",
+      "file": "Gridlock F2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-f2-180.png": {
+      "revision": "cb:20190826062413",
+      "file": "Cherbourg F2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ak-12-2500.png": {
+      "revision": "cb:20190826063807",
+      "file": "Khokhloma AK12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ak-12-5000.png": {
+      "revision": "cb:20190826063808",
+      "file": "Morphic Slate AK12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ak-12-10000.png": {
+      "revision": "cb:20191009022127",
+      "file": "Clean Shot AK12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ak-12-6000.png": {
+      "revision": "cb:20190826063804",
+      "file": "Gridlock AK12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ak-12-7500.png": {
+      "revision": "cb:20190826063801",
+      "file": "Black Ops AK12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-aug-siege-2500.png": {
+      "revision": "cb:20190826063802",
+      "file": "Bundeswehr AUG A2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-aug-siege-6000.png": {
+      "revision": "cb:20190826063805",
+      "file": "Gridlock AUG A2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-aug-siege-7500.png": {
+      "revision": "cb:20190826063807",
+      "file": "Leder AUG A2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-aug-siege-10000.png": {
+      "revision": "cb:20191204061228",
+      "file": "Fallen Sun AUG A2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-552-commando-siege-2500.png": {
+      "revision": "cb:20190826070333",
+      "file": "Bundeswehr 552 Commando Skin.PNG"
+    },
+    "r6_images/skins/weapons-552-commando-siege-7500.png": {
+      "revision": "cb:20190826070338",
+      "file": "Leder 552 Commando Skin.PNG"
+    },
+    "r6_images/skins/weapons-552-commando-siege-6000.png": {
+      "revision": "cb:20190826070335",
+      "file": "Gridlock 552 Commando Skin.PNG"
+    },
+    "r6_images/skins/weapons-416-c-carbine-2500.png": {
+      "revision": "cb:20190826070332",
+      "file": "Bundeswehr 416C Skin.PNG"
+    },
+    "r6_images/skins/weapons-416-c-carbine-6000.png": {
+      "revision": "cb:20190826070440",
+      "file": "Short Circuit 416C Skin.PNG"
+    },
+    "r6_images/skins/weapons-416-c-carbine-5000.png": {
+      "revision": "cb:20190826070332",
+      "file": "Bundespolizei 416C Skin.PNG"
+    },
+    "r6_images/skins/weapons-416-c-carbine-7500.png": {
+      "revision": "cb:20190826070337",
+      "file": "Leder 416C Skin.PNG"
+    },
+    "r6_images/skins/weapons-c8-sfw-2500.png": {
+      "revision": "cb:20190826071358",
+      "file": "Invaders C8SFW Skin.PNG"
+    },
+    "r6_images/skins/weapons-c8-sfw-6000.png": {
+      "revision": "cb:20190826071357",
+      "file": "Gridlock C8SFW Skin.PNG"
+    },
+    "r6_images/skins/weapons-c8-sfw-180.png": {
+      "revision": "cb:20190826071402",
+      "file": "Victory C8SFW Skin.PNG"
+    },
+    "r6_images/skins/weapons-scar-h-cqc-siege-2500.png": {
+      "revision": "cb:20190826013732",
+      "file": "Compass MK17 Skin.PNG"
+    },
+    "r6_images/skins/weapons-scar-h-cqc-siege-7500.png": {
+      "revision": "cb:20190826013645",
+      "file": "Plating MK17 Skin.PNG"
+    },
+    "r6_images/skins/weapons-scar-h-cqc-siege-6000.png": {
+      "revision": "cb:20190826020619",
+      "file": "Gridlock MK17 Skin.PNG"
+    },
+    "r6_images/skins/weapons-scar-h-cqc-siege-3750.png": {
+      "revision": "cb:20190826020703",
+      "file": "Measured MK17 Skin.PNG"
+    },
+    "r6_images/skins/weapons-scar-h-cqc-siege-12500.png": {
+      "revision": "cb:20190826014339",
+      "file": "Woven MK17 Skin.PNG"
+    },
+    "r6_images/skins/weapons-para-308-5000.png": {
+      "revision": "cb:20190826012514",
+      "file": "Urban Scourge PARA Skin.PNG"
+    },
+    "r6_images/skins/weapons-para-308-2500.png": {
+      "revision": "cb:20190826013124",
+      "file": "Brasil PARA Skin.PNG"
+    },
+    "r6_images/skins/weapons-para-308-6000.png": {
+      "revision": "cb:20190826012503",
+      "file": "Gridlock PARA Skin.PNG"
+    },
+    "r6_images/skins/weapons-para-308-7500.png": {
+      "revision": "cb:20190826012435",
+      "file": "Elven PARA Skin.PNG"
+    },
+    "r6_images/skins/weapons-para-308-12500.png": {
+      "revision": "cb:20190826012211",
+      "file": "Figurehead PARA Skin.PNG"
+    },
+    "r6_images/skins/weapons-type-89-f-siege-6000.png": {
+      "revision": "cb:20190826005338",
+      "file": "Gridlock Type 89 Skin.PNG"
+    },
+    "r6_images/skins/weapons-type-89-f-siege-7500.png": {
+      "revision": "cb:20190826005515",
+      "file": "Sandstorm Type 89 Skin.PNG"
+    },
+    "r6_images/skins/weapons-type-89-f-siege-12500.png": {
+      "revision": "cb:20190826005457",
+      "file": "Melted Sprectrum Type 89 Skin.PNG"
+    },
+    "r6_images/skins/weapons-type-89-f-siege-1680.png": {
+      "revision": "cb:20191204061233",
+      "file": "Regal Mint Type 89 Skin.PNG"
+    },
+    "r6_images/skins/weapons-c7e-7500.png": {
+      "revision": "cb:20190826003850",
+      "file": "Salvamento Maritimo C7E Skin.PNG"
+    },
+    "r6_images/skins/weapons-m762-7500.png": {
+      "revision": "cb:20190822194721",
+      "file": "Commemoration M762 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spear-308-15000.png": {
+      "revision": "cb:20190822194723",
+      "file": "Health Hazard Spear 308 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spear-308-12500.png": {
+      "revision": "cb:20190822194720",
+      "file": "Bio Shelter Spear 308 Skin.PNG"
+    },
+    "r6_images/skins/weapons-v308-15000.png": {
+      "revision": "cb:20190822194723",
+      "file": "Health Hazard V308 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ar-15-50-7500.png": {
+      "revision": "cb:20190822194727",
+      "file": "Moss Shroud AR15.50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ar-15-50-10000.png": {
+      "revision": "cb:20190822194727",
+      "file": "Snapping Twig AR15.50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ar-15-50-50000.png": {
+      "revision": "cb:20191204061234",
+      "file": "Toolbox AR15 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m4-7500.png": {
+      "revision": "cb:20190822194729",
+      "file": "Virtual Destruction M4 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m4-10000.png": {
+      "revision": "cb:20190822194719",
+      "file": "All Terrain M4 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ak-74-siege-10000.png": {
+      "revision": "cb:20190822194726",
+      "file": "Maroon Oxide AK74M Skin.PNG"
+    },
+    "r6_images/skins/weapons-ak-74-siege-12500.png": {
+      "revision": "cb:20200422055616",
+      "file": "Hedge Blossom AK74M Skin.PNG"
+    },
+    "r6_images/skins/weapons-arx200-10000.png": {
+      "revision": "cb:20190822194724",
+      "file": "Henna Varnish ARX200 Skin.PNG"
+    },
+    "r6_images/skins/weapons-arx200-12500.png": {
+      "revision": "cb:20190822194722",
+      "file": "Ebon Bauble ARX200 Skin.PNG"
+    },
+    "r6_images/skins/weapons-f90-12500.png": {
+      "revision": "cb:20190822194721",
+      "file": "Dustup F90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-commando-9-12500.png": {
+      "revision": "cb:20190822194729",
+      "file": "Sponsor Commando 9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-commando-9-50000.png": {
+      "revision": "cb:20210327105844",
+      "file": "Rapier Hilt Commando 9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-submachine-guns-2500.png": {
+      "revision": "cb:20190824051239",
+      "file": "Tally MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-submachine-guns-3750.png": {
+      "revision": "cb:20190824051236",
+      "file": "Orb Weaver MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-submachine-guns-10000.png": {
+      "revision": "cb:20191204061231",
+      "file": "Fallen Sun MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-submachine-guns-6250.png": {
+      "revision": "cb:20190824051350",
+      "file": "Vaal MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-submachine-guns-7500.png": {
+      "revision": "cb:20190824051233",
+      "file": "Engraved MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-2500.png": {
+      "revision": "cb:20190824051351",
+      "file": "Waves FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-5000.png": {
+      "revision": "cb:20190824051236",
+      "file": "Old Commitment FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-10000.png": {
+      "revision": "cb:20190824051231",
+      "file": "Confidential FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-3750.png": {
+      "revision": "cb:20190824051349",
+      "file": "Union Jack FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-6250.png": {
+      "revision": "cb:20190824051350",
+      "file": "Vaal FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-12500.png": {
+      "revision": "cb:20190824051232",
+      "file": "Dreki FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-7500.png": {
+      "revision": "cb:20190824051232",
+      "file": "Engraved FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-50000.png": {
+      "revision": "cb:20210326182229",
+      "file": "Fray Instrument FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-ump-2500.png": {
+      "revision": "cb:20190824061520",
+      "file": "Yucca Flats UMP45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ump-12500.png": {
+      "revision": "cb:20190824061410",
+      "file": "Pitcher UMP45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ump-7500.png": {
+      "revision": "cb:20190824061412",
+      "file": "Smooth Operator UMP45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ump-6250.png": {
+      "revision": "cb:20190824061519",
+      "file": "Vaal UMP45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ump-3750.png": {
+      "revision": "cb:20210120203013",
+      "file": "Red White and Blue UMP45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp5-siege-2500.png": {
+      "revision": "cb:20190824061407",
+      "file": "Iceman MP5 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp5-siege-3750.png": {
+      "revision": "cb:20190824061408",
+      "file": "Liberte MP5 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp5-siege-6250.png": {
+      "revision": "cb:20190824061413",
+      "file": "Vaal MP5 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp5-siege-180.png": {
+      "revision": "cb:20190824061404",
+      "file": "Cherbourg 354 MP5 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p90-siege-2500.png": {
+      "revision": "cb:20190824063540",
+      "file": "Iceman P90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p90-siege-3750.png": {
+      "revision": "cb:20210120202101",
+      "file": "Crystallite P90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p90-siege-1000.png": {
+      "revision": "cb:20190824063539",
+      "file": "Gator P90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p90-siege-7500.png": {
+      "revision": "cb:20190824063815",
+      "file": "Royal P90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-9-19vsn-2500.png": {
+      "revision": "cb:20190824063821",
+      "file": "Verkh VSN Skin.PNG"
+    },
+    "r6_images/skins/weapons-9-19vsn-7500.png": {
+      "revision": "cb:20190824063818",
+      "file": "Tri-Flora VSN Skin.PNG"
+    },
+    "r6_images/skins/weapons-9-19vsn-6250.png": {
+      "revision": "cb:20190824063820",
+      "file": "Vaal VSN Skin.PNG"
+    },
+    "r6_images/skins/weapons-9-19vsn-10000.png": {
+      "revision": "cb:20190824063541",
+      "file": "Industrial MP7 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp7-siege-2500.png": {
+      "revision": "cb:20190824063535",
+      "file": "Bundeswehr MP7 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp7-siege-5000.png": {
+      "revision": "cb:20190824063816",
+      "file": "Saddlebag MP7 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp7-siege-3750.png": {
+      "revision": "cb:20190824063534",
+      "file": "Blackjack MP7 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp7-siege-6250.png": {
+      "revision": "cb:20190824063819",
+      "file": "Vaal MP7 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp7-siege-7500.png": {
+      "revision": "cb:20190824063543",
+      "file": "Leder MP7 Skin.PNG"
+    },
+    "r6_images/skins/weapons-9mm-c1-2500.png": {
+      "revision": "cb:20190824045643",
+      "file": "Pointed 9mm C1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-9mm-c1-12500.png": {
+      "revision": "cb:20190824045642",
+      "file": "Milky Way 9mm C1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-9mm-c1-7500.png": {
+      "revision": "cb:20190824045644",
+      "file": "Splatter 9mm C1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-9mm-c1-62500.png": {
+      "revision": "cb:20190824045645",
+      "file": "Vaal 9mm C1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-9mm-c1-180.png": {
+      "revision": "cb:20190824045646",
+      "file": "Victory 9mm C1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mpx-2500.png": {
+      "revision": "cb:20190824042554",
+      "file": "Compass MPX Skin.PNG"
+    },
+    "r6_images/skins/weapons-mpx-12500.png": {
+      "revision": "cb:20190824042556",
+      "file": "Flotation Device MPX Skin.PNG"
+    },
+    "r6_images/skins/weapons-mpx-7500.png": {
+      "revision": "cb:20190824042741",
+      "file": "Takka MPX Skin.PNG"
+    },
+    "r6_images/skins/weapons-mpx-10000.png": {
+      "revision": "cb:20190824042554",
+      "file": "Confidential MPX Skin.PNG"
+    },
+    "r6_images/skins/weapons-mpx-37500.png": {
+      "revision": "cb:20190824042600",
+      "file": "Measured MPX Skin.PNG"
+    },
+    "r6_images/skins/weapons-mpx-62500.png": {
+      "revision": "cb:20190824042744",
+      "file": "Vaal MPX Skin.PNG"
+    },
+    "r6_images/skins/weapons-mpx-50000.png": {
+      "revision": "cb:20200823121339",
+      "file": "Studded Metal MPX Skin.PNG"
+    },
+    "r6_images/skins/weapons-m12-siege-7500.png": {
+      "revision": "cb:20190824042553",
+      "file": "Ceifador M12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m12-siege-6000.png": {
+      "revision": "cb:20190824042551",
+      "file": "Blam M12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m12-siege-5000.png": {
+      "revision": "cb:20190824042551",
+      "file": "Bloodwood M12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m12-siege-2500.png": {
+      "revision": "cb:20190824042552",
+      "file": "Brasil M12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m12-siege-10000.png": {
+      "revision": "cb:20190824042556",
+      "file": "Foul Growth M12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m12-siege-6250.png": {
+      "revision": "cb:20190824042744",
+      "file": "Vaal M12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp5sd-siege-7500.png": {
+      "revision": "cb:20190824042743",
+      "file": "Unyielding MP5SD Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp5sd-siege-50000.png": {
+      "revision": "cb:20210327110756",
+      "file": "Wakizashi MP5SD Skin.PNG"
+    },
+    "r6_images/skins/weapons-pdw9-7500.png": {
+      "revision": "cb:20190824034812",
+      "file": "Chaquetilla PDW9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-vector-45-acp-10000.png": {
+      "revision": "cb:20190824034817",
+      "file": "Screech Vector Skin.PNG"
+    },
+    "r6_images/skins/weapons-vector-45-acp-7500.png": {
+      "revision": "cb:20190824034815",
+      "file": "Policia Local Vector Skin.PNG"
+    },
+    "r6_images/skins/weapons-vector-45-acp-12500.png": {
+      "revision": "cb:20191009022131",
+      "file": "Wild Instinct Vector .45 ACP Skin.PNG"
+    },
+    "r6_images/skins/weapons-t-5-smg-7500.png": {
+      "revision": "cb:20190824034813",
+      "file": "HK Police T5 Skin.PNG"
+    },
+    "r6_images/skins/weapons-scorpion-evo-3-a1-7500.png": {
+      "revision": "cb:20190824034810",
+      "file": "Bosak Legacy Scorpion Skin.PNG"
+    },
+    "r6_images/skins/weapons-scorpion-evo-3-a1-50000.png": {
+      "revision": "cb:20200916072708",
+      "file": "Autumn Hunt Scorpion Skin.PNG"
+    },
+    "r6_images/skins/weapons-k1a-7500.png": {
+      "revision": "cb:20190824034813",
+      "file": "Fearless K1A Skin.PNG"
+    },
+    "r6_images/skins/weapons-k1a-1680.png": {
+      "revision": "cb:20191204061232",
+      "file": "Fresh Paper K1A Skin.PNG"
+    },
+    "r6_images/skins/weapons-mx4-storm-10000.png": {
+      "revision": "cb:20190824034817",
+      "file": "Venetian Golden Age Mx4 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mx4-storm-bundle.png": {
+      "revision": "cb:20201026091103",
+      "file": "Loyal Forces Mx4 Skin.PNG"
+    },
+    "r6_images/skins/weapons-aug-para-siege-10000.png": {
+      "revision": "cb:20190825061155",
+      "file": "Henna Varnish AUG A3 Skin.PNG"
+    },
+    "r6_images/skins/weapons-aug-para-siege-12500.png": {
+      "revision": "cb:20200803073139",
+      "file": "Hedge Nylon AUG A3 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p10-roni-7500.png": {
+      "revision": "cb:20210120135235",
+      "file": "Red Ground P10 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p10-roni-10000.png": {
+      "revision": "cb:20190822200020",
+      "file": "Beadwork P10 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p10-roni-12500.png": {
+      "revision": "cb:20190822200027",
+      "file": "Southern Regiment P10 Skin.PNG"
+    },
+    "r6_images/skins/weapons-light-machine-guns-2500.png": {
+      "revision": "cb:20190821212618",
+      "file": "Triple Helix 6P41 Skin.PNG"
+    },
+    "r6_images/skins/weapons-light-machine-guns-6000.png": {
+      "revision": "cb:20190821212615",
+      "file": "Health Hazard 6P41 Skin.PNG"
+    },
+    "r6_images/skins/weapons-light-machine-guns-5000.png": {
+      "revision": "cb:20190821212617",
+      "file": "Pustoy 6P41 Skin.PNG"
+    },
+    "r6_images/skins/weapons-hk21-siege-2500.png": {
+      "revision": "cb:20190822185321",
+      "file": "Bundeswehr G8A1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-hk21-siege-7500.png": {
+      "revision": "cb:20190822185323",
+      "file": "Leder G8A1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-hk21-siege-12500.png": {
+      "revision": "cb:20200504144426",
+      "file": "Texile Drape G8A1 Skin.jpeg"
+    },
+    "r6_images/skins/weapons-m249-siege-2500.png": {
+      "revision": "cb:20190822062630",
+      "file": "Brasil M249 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m249-siege-7500.png": {
+      "revision": "cb:20190822062634",
+      "file": "Mayhem M249 Skin.PNG"
+    },
+    "r6_images/skins/weapons-t-95-lsw-7500.png": {
+      "revision": "cb:20190822062635",
+      "file": "Turbulence T95 Skin.PNG"
+    },
+    "r6_images/skins/weapons-lmg-e-7500.png": {
+      "revision": "cb:20190822062632",
+      "file": "Frosty LMG Skin.PNG"
+    },
+    "r6_images/skins/weapons-alda-5-56-12500.png": {
+      "revision": "cb:20190822062636",
+      "file": "Venetian LMG ALDA Skin.PNG"
+    },
+    "r6_images/skins/weapons-m249-siege-10000.png": {
+      "revision": "cb:20190822062633",
+      "file": "Gila M249 SAW Skin.PNG"
+    },
+    "r6_images/skins/weapons-m249-siege-12500.png": {
+      "revision": "cb:20190822062635",
+      "file": "Southern Regiment M249 SAW Skin.PNG"
+    },
+    "r6_images/skins/weapons-shotguns-2500.png": {
+      "revision": "cb:20190822020356",
+      "file": "Armor M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-shotguns-10000.png": {
+      "revision": "cb:20190822020357",
+      "file": "Confidential M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-shotguns-3750.png": {
+      "revision": "cb:20190822020400",
+      "file": "Union Jack M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-shotguns-7500.png": {
+      "revision": "cb:20190822020402",
+      "file": "Woody M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-shotguns-12500.png": {
+      "revision": "cb:20190822020358",
+      "file": "Kentucky Long M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-shotguns-6000.png": {
+      "revision": "cb:20190822020359",
+      "file": "Sharkshot M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-m1014-siege-2500.png": {
+      "revision": "cb:20190825061156",
+      "file": "Lace M1014 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m1014-siege-3750.png": {
+      "revision": "cb:20210120210308",
+      "file": "Red White and Blue M1014 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m1014-siege-6000.png": {
+      "revision": "cb:20190825061201",
+      "file": "Sharkshot M1014 Skin.PNG"
+    },
+    "r6_images/skins/weapons-sg-cqb-2500.png": {
+      "revision": "cb:20190825061152",
+      "file": "Bulldozer SGCQB Skin.PNG"
+    },
+    "r6_images/skins/weapons-sg-cqb-3750.png": {
+      "revision": "cb:20210120202359",
+      "file": "Crystallite SGCQB Skin.PNG"
+    },
+    "r6_images/skins/weapons-sg-cqb-7500.png": {
+      "revision": "cb:20190825061159",
+      "file": "Royal SGCQB Skin.PNG"
+    },
+    "r6_images/skins/weapons-sg-cqb-37500.png": {
+      "revision": "cb:20190825061157",
+      "file": "Liberte SGCQB Skin.PNG"
+    },
+    "r6_images/skins/weapons-sg-cqb-6000.png": {
+      "revision": "cb:20190825061202",
+      "file": "Sharkshot SGCQB Skin.PNG"
+    },
+    "r6_images/skins/weapons-sasg-12-siege-2500.png": {
+      "revision": "cb:20190825071035",
+      "file": "Triple Helix SASG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-sasg-12-siege-7500.png": {
+      "revision": "cb:20190825070954",
+      "file": "Khokhloma SASG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-sasg-12-siege-15000.png": {
+      "revision": "cb:20190825070952",
+      "file": "Health Hazard SASG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-sasg-12-siege-6000.png": {
+      "revision": "cb:20190825071000",
+      "file": "Sharkshot SASG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m870-siege-2500.png": {
+      "revision": "cb:20190825070950",
+      "file": "Bundeswehr M870 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m870-siege-7500.png": {
+      "revision": "cb:20190825070954",
+      "file": "Leder M870 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m870-siege-6000.png": {
+      "revision": "cb:20190825070959",
+      "file": "Sharkshot M870 Skin.PNG"
+    },
+    "r6_images/skins/weapons-super-90-2500.png": {
+      "revision": "cb:20190825073304",
+      "file": "Snow Super 90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-super-90-5400.png": {
+      "revision": "cb:20190825073257",
+      "file": "Crust Punk Super 90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-super-90-7500.png": {
+      "revision": "cb:20190825073300",
+      "file": "Ironwood Super 90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-super-90-180.png": {
+      "revision": "cb:20190825073305",
+      "file": "Victory Super 90 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spas-12-siege-2500.png": {
+      "revision": "cb:20190825073256",
+      "file": "Compass SPAS12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spas-12-siege-3750.png": {
+      "revision": "cb:20190825073301",
+      "file": "Measured SPAS12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spas-12-siege-6000.png": {
+      "revision": "cb:20190825073302",
+      "file": "Sharkshot SPAS12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spas-12-siege-7500.png": {
+      "revision": "cb:20190825073342",
+      "file": "Vintage SPAS12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spas-15-siege-2500.png": {
+      "revision": "cb:20190825075338",
+      "file": "Brasil SPAS15 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spas-15-siege-7500.png": {
+      "revision": "cb:20190825075345",
+      "file": "Toxic SPAS15 Skin.PNG"
+    },
+    "r6_images/skins/weapons-spas-15-siege-6000.png": {
+      "revision": "cb:20190825075344",
+      "file": "Sharkshot SPAS15 Skin.PNG"
+    },
+    "r6_images/skins/weapons-supernova-7500.png": {
+      "revision": "cb:20190825075345",
+      "file": "SUI Supernova Skin.PNG"
+    },
+    "r6_images/skins/weapons-supernova-12500.png": {
+      "revision": "cb:20191009022130",
+      "file": "Wild Instinct Supernova Skin.PNG"
+    },
+    "r6_images/skins/weapons-supernova-6000.png": {
+      "revision": "cb:20190825075344",
+      "file": "Sharkshot Supernova Skin.PNG"
+    },
+    "r6_images/skins/weapons-ita12l-7500.png": {
+      "revision": "cb:20190825075340",
+      "file": "Chaquetilla ITA12L Skin.PNG"
+    },
+    "r6_images/skins/weapons-ita12l-12500.png": {
+      "revision": "cb:20191009022128",
+      "file": "Wild Instinct ITA12S Skin.PNG"
+    },
+    "r6_images/skins/weapons-six12-7500.png": {
+      "revision": "cb:20190822200025",
+      "file": "HK Police SIX12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-six12-12500.png": {
+      "revision": "cb:20190825075340",
+      "file": "Chainmail SIX12 SD Skin.PNG"
+    },
+    "r6_images/skins/weapons-fo-12-7500.png": {
+      "revision": "cb:20190822200026",
+      "file": "Rebel FO12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-bosg-12-2-7500.png": {
+      "revision": "cb:20190822200023",
+      "file": "Fearless BOSG Skin.PNG"
+    },
+    "r6_images/skins/weapons-acs12-10000.png": {
+      "revision": "cb:20190822200028",
+      "file": "Venetian Gondola ACS12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-tcsg12-7500.png": {
+      "revision": "cb:20210120135557",
+      "file": "Tropical Leaves TCSG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-tcsg12-10000.png": {
+      "revision": "cb:20190822200024",
+      "file": "Henna Varnish TCSG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-tcsg12-12500.png": {
+      "revision": "cb:20191009022130",
+      "file": "Wild Instinct TCSG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-tcsg12-n-a.png": {
+      "revision": "cb:20200916075621",
+      "file": "Six Major EU 2020 TCSG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-ita12s-7500.png": {
+      "revision": "cb:20190825075340",
+      "file": "Chaquetilla ITA12L Skin.PNG"
+    },
+    "r6_images/skins/weapons-super-shorty-10000.png": {
+      "revision": "cb:20190822200023",
+      "file": "Convoy Super Shorty Skin.PNG"
+    },
+    "r6_images/skins/weapons-super-shorty-12500.png": {
+      "revision": "cb:20190822200028",
+      "file": "Southern Regiment Super Shorty Skin.PNG"
+    },
+    "r6_images/skins/weapons-marksman-rifles-2500.png": {
+      "revision": "cb:20190822001946",
+      "file": "Evolution 417 Skin.PNG"
+    },
+    "r6_images/skins/weapons-marksman-rifles-3750.png": {
+      "revision": "cb:20190822001948",
+      "file": "Liberte 417 Skin.PNG"
+    },
+    "r6_images/skins/weapons-marksman-rifles-6000.png": {
+      "revision": "cb:20190822001946",
+      "file": "Gridlock 417 Skin.PNG"
+    },
+    "r6_images/skins/weapons-marksman-rifles-7500.png": {
+      "revision": "cb:20190822001947",
+      "file": "Health Hazard 417 Skin.PNG"
+    },
+    "r6_images/skins/weapons-marksman-rifles-180.png": {
+      "revision": "cb:20190822001945",
+      "file": "Cherbourg 417 Skin.PNG"
+    },
+    "r6_images/skins/weapons-glaz-2500.png": {
+      "revision": "cb:20190822002907",
+      "file": "Khokhloma oTs Skin.PNG"
+    },
+    "r6_images/skins/weapons-glaz-10000.png": {
+      "revision": "cb:20190822002907",
+      "file": "Leaf Litter Camo oTs Skin.PNG"
+    },
+    "r6_images/skins/weapons-camrs-2500.png": {
+      "revision": "cb:20190822003835",
+      "file": "Invaders CAMRS Skin.PNG"
+    },
+    "r6_images/skins/weapons-camrs-6000.png": {
+      "revision": "cb:20190822003834",
+      "file": "Gridlock CAMRS Skin.PNG"
+    },
+    "r6_images/skins/weapons-camrs-180.png": {
+      "revision": "cb:20190822003836",
+      "file": "Victory CAMRS Skin.PNG"
+    },
+    "r6_images/skins/weapons-sr-25-siege-2500.png": {
+      "revision": "cb:20190822004803",
+      "file": "Compass SR25 Skin.PNG"
+    },
+    "r6_images/skins/weapons-sr-25-siege-7500.png": {
+      "revision": "cb:20190822004804",
+      "file": "Masked SR25 Skin.PNG"
+    },
+    "r6_images/skins/weapons-sr-25-siege-3750.png": {
+      "revision": "cb:20190822004805",
+      "file": "Measured SR25 Skin.PNG"
+    },
+    "r6_images/skins/weapons-sr-25-siege-30000.png": {
+      "revision": "cb:20210327112601",
+      "file": "La Clave SR25 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m14-siege-7500.png": {
+      "revision": "cb:20210120133524",
+      "file": "Red Ground Mk14 Skin.PNG"
+    },
+    "r6_images/skins/weapons-csrx-300-10000.png": {
+      "revision": "cb:20191204061230",
+      "file": "Fallen Sun CSRX 300 Skin.PNG"
+    },
+    "r6_images/skins/weapons-csrx-300-50000.png": {
+      "revision": "cb:20200717044114",
+      "file": "Dance Blast CSRX 300 Skin.PNG"
+    },
+    "r6_images/skins/weapons-shields-17500.png": {
+      "revision": "cb:20190821082745",
+      "file": "Steel Citadel Ballistic Shield Skin.PNG"
+    },
+    "r6_images/skins/weapons-clash-15000.png": {
+      "revision": "cb:20190821082741",
+      "file": "Houndstooth CCE Shield Skin.PNG"
+    },
+    "r6_images/skins/weapons-clash-12500.png": {
+      "revision": "cb:20190821082741",
+      "file": "Big Fuzz CCE Shield Skin.PNG"
+    },
+    "r6_images/skins/weapons-montagne-17500.png": {
+      "revision": "cb:20190821082742",
+      "file": "Mutineer Le Roc Skin.PNG"
+    },
+    "r6_images/skins/weapons-montagne-10000.png": {
+      "revision": "cb:20210120201428",
+      "file": "Mister Snowman Le Roc Skin.png"
+    },
+    "r6_images/skins/weapons-montagne-50000.png": {
+      "revision": "cb:20210327111355",
+      "file": "Rampart Le Roc Skin.png"
+    },
+    "r6_images/skins/weapons-blitz-17500.png": {
+      "revision": "cb:20190821082742",
+      "file": "Peak Current G52 Skin.PNG"
+    },
+    "r6_images/skins/weapons-blitz-12500.png": {
+      "revision": "cb:20190821082740",
+      "file": "Berlin Wall G52 Skin.PNG"
+    },
+    "r6_images/skins/weapons-blitz-7500.png": {
+      "revision": "cb:20190821082743",
+      "file": "PFENNIG G52 Skin.PNG"
+    },
+    "r6_images/skins/weapons-handguns-2500.png": {
+      "revision": "cb:20190821211302",
+      "file": "Rookie P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-handguns-10000.png": {
+      "revision": "cb:20190821211258",
+      "file": "Broadway P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-handguns-3750.png": {
+      "revision": "cb:20200131013347",
+      "file": "Union Jack P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-handguns-7500.png": {
+      "revision": "cb:20190821211300",
+      "file": "Engraved P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-handguns-5000.png": {
+      "revision": "cb:20200131025629",
+      "file": "Oil Spill P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-m45-meusoc-siege-2500.png": {
+      "revision": "cb:20190823072320",
+      "file": "Gris M45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m45-meusoc-siege-10000.png": {
+      "revision": "cb:20190823072318",
+      "file": "Art Deco M45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m45-meusoc-siege-3750.png": {
+      "revision": "cb:20210120210130",
+      "file": "Red White and Blue M45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-m45-meusoc-siege-5000.png": {
+      "revision": "cb:20190823072321",
+      "file": "Oil Spill M45 Skin.PNG"
+    },
+    "r6_images/skins/weapons-five-seven-siege-2500.png": {
+      "revision": "cb:20190823071653",
+      "file": "Zygote 57 USG Skin.PNG"
+    },
+    "r6_images/skins/weapons-five-seven-siege-10000.png": {
+      "revision": "cb:20190823071557",
+      "file": "Confidential 57 USG Skin.PNG"
+    },
+    "r6_images/skins/weapons-five-seven-siege-7500.png": {
+      "revision": "cb:20190823071558",
+      "file": "Faded 57 USG Skin.PNG"
+    },
+    "r6_images/skins/weapons-five-seven-siege-3750.png": {
+      "revision": "cb:20210120203313",
+      "file": "Red White and Blue 57 USG Skin.PNG"
+    },
+    "r6_images/skins/weapons-five-seven-siege-5000.png": {
+      "revision": "cb:20190823071603",
+      "file": "Oil Spill 57 USG Skin.PNG"
+    },
+    "r6_images/skins/weapons-p9-2500.png": {
+      "revision": "cb:20190823071600",
+      "file": "Jade P9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p9-3750.png": {
+      "revision": "cb:20190823071602",
+      "file": "Liberte P9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p9-15000.png": {
+      "revision": "cb:20190823071559",
+      "file": "Health Hazard P9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p9-7500.png": {
+      "revision": "cb:20190823071604",
+      "file": "Rickety P9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p9-180.png": {
+      "revision": "cb:20190823071557",
+      "file": "Cherbourg 354 P9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-lfp586-2500.png": {
+      "revision": "cb:20190823070212",
+      "file": "Templar LFP586 Skin.PNG"
+    },
+    "r6_images/skins/weapons-lfp586-7500.png": {
+      "revision": "cb:20190823070125",
+      "file": "Health Hazard LFP586 Skin.PNG"
+    },
+    "r6_images/skins/weapons-lfp586-3750.png": {
+      "revision": "cb:20190823070128",
+      "file": "Liberte LFP586 Skin.PNG"
+    },
+    "r6_images/skins/weapons-lfp586-180.png": {
+      "revision": "cb:20190823070123",
+      "file": "Cherbourg 354 LFP586 Skin.PNG"
+    },
+    "r6_images/skins/weapons-pmm-2500.png": {
+      "revision": "cb:20190823070212",
+      "file": "Trek PMM Skin.PNG"
+    },
+    "r6_images/skins/weapons-pmm-15000.png": {
+      "revision": "cb:20190823070125",
+      "file": "Health Hazard PMM Skin.PNG"
+    },
+    "r6_images/skins/weapons-pmm-5000.png": {
+      "revision": "cb:20190823070129",
+      "file": "Oil Spill PMM Skin.PNG"
+    },
+    "r6_images/skins/weapons-gsh-18-2500.png": {
+      "revision": "cb:20190823064612",
+      "file": "Khokhloma GSH18 Skin.PNG"
+    },
+    "r6_images/skins/weapons-gsh-18-15000.png": {
+      "revision": "cb:20190823064611",
+      "file": "Health Hazard GSH18 Skin.PNG"
+    },
+    "r6_images/skins/weapons-gsh-18-5000.png": {
+      "revision": "cb:20190823064614",
+      "file": "Oil Spill GSH18 Skin.PNG"
+    },
+    "r6_images/skins/weapons-gsh-18-7500.png": {
+      "revision": "cb:20190823064616",
+      "file": "Red 216 GSH18 Skin.PNG"
+    },
+    "r6_images/skins/weapons-gsh-18-30000.png": {
+      "revision": "cb:20210327112255",
+      "file": "La Clave GSH18 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p12-2500.png": {
+      "revision": "cb:20190823064608",
+      "file": "Bundeswehr P12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p12-7500.png": {
+      "revision": "cb:20190823064729",
+      "file": "Slate P12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p12-10000.png": {
+      "revision": "cb:20190823064728",
+      "file": "Sector Service P12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p12-5000.png": {
+      "revision": "cb:20190823064614",
+      "file": "Oil Spill P12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mk1-9mm-2500.png": {
+      "revision": "cb:20190823062901",
+      "file": "Invaders MK1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mk1-9mm-7500.png": {
+      "revision": "cb:20190823062858",
+      "file": "Canadian MP Standard Issue MK1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mk1-9mm-180.png": {
+      "revision": "cb:20190823063002",
+      "file": "Victory MK1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-desert-eagle-siege-2500.png": {
+      "revision": "cb:20190823063003",
+      "file": "Woodlands D50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-desert-eagle-siege-10000.png": {
+      "revision": "cb:20190823062903",
+      "file": "Monolithic D50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-desert-eagle-siege-3750.png": {
+      "revision": "cb:20190823062903",
+      "file": "Measured D50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-desert-eagle-siege-12500.png": {
+      "revision": "cb:20190823062902",
+      "file": "Life Regiment D50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-desert-eagle-siege-7500.png": {
+      "revision": "cb:20190823062904",
+      "file": "Observer D50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-desert-eagle-siege-5000.png": {
+      "revision": "cb:20190823062904",
+      "file": "Oil Spill D50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-desert-eagle-siege-50000.png": {
+      "revision": "cb:20210326182651",
+      "file": "Vegvisir D50 Skin.PNG"
+    },
+    "r6_images/skins/weapons-92fs-siege-2500.png": {
+      "revision": "cb:20190822190515",
+      "file": "Brasil PRB92 Skin.PNG"
+    },
+    "r6_images/skins/weapons-92fs-siege-7500.png": {
+      "revision": "cb:20190822190516",
+      "file": "Ceifador PRB92 Skin.PNG"
+    },
+    "r6_images/skins/weapons-92fs-siege-5000.png": {
+      "revision": "cb:20190822190520",
+      "file": "Oil Spill PRB92 Skin.PNG"
+    },
+    "r6_images/skins/weapons-luison-2500.png": {
+      "revision": "cb:20190822190515",
+      "file": "Brasil Luison Skin.PNG"
+    },
+    "r6_images/skins/weapons-luison-7500.png": {
+      "revision": "cb:20190822190516",
+      "file": "Ceifador Luison Skin.PNG"
+    },
+    "r6_images/skins/weapons-luison-5000.png": {
+      "revision": "cb:20190822190519",
+      "file": "Oil Spill Luison Skin.PNG"
+    },
+    "r6_images/skins/weapons-p229-7500.png": {
+      "revision": "cb:20190822190521",
+      "file": "Tentacles P229 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p229-5000.png": {
+      "revision": "cb:20190822190519",
+      "file": "Oil Spill P229 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p229-50000.png": {
+      "revision": "cb:20210327111046",
+      "file": "Bushido P229 Skin.PNG"
+    },
+    "r6_images/skins/weapons-p229-12500.png": {
+      "revision": "cb:20191009022129",
+      "file": "Wild Instinct P229 Skin.PNG"
+    },
+    "r6_images/skins/weapons-usp40-7500.png": {
+      "revision": "cb:20190822192517",
+      "file": "Spanish Coffee USP40 Skin.PNG"
+    },
+    "r6_images/skins/weapons-q-929-7500.png": {
+      "revision": "cb:20210120135736",
+      "file": "Prestigious Brigade Q929.PNG"
+    },
+    "r6_images/skins/weapons-rg15-7500.png": {
+      "revision": "cb:20190822192515",
+      "file": "Silent & Unseen RG15 Skin.PNG"
+    },
+    "r6_images/skins/weapons-keratos-357-10000.png": {
+      "revision": "cb:20190822192515",
+      "file": "Roman Underdog Keratos Skin.PNG"
+    },
+    "r6_images/skins/weapons-bailiff-410-12500.png": {
+      "revision": "cb:20190822192514",
+      "file": "Roman Scrapper Bailiff Skin.PNG"
+    },
+    "r6_images/skins/weapons-p-10c-10000.png": {
+      "revision": "cb:20191011040615",
+      "file": "Thin Blue Line P10C Skin.PNG"
+    },
+    "r6_images/skins/weapons-1911-tacops-10000.png": {
+      "revision": "cb:20190822192513",
+      "file": "Houndstooth 1911 Skin.PNG"
+    },
+    "r6_images/skins/weapons-1911-tacops-12500.png": {
+      "revision": "cb:20190822192516",
+      "file": "Smoking Stars 1911 Skin.PNG"
+    },
+    "r6_images/skins/weapons-44-mag-semi-auto-10000.png": {
+      "revision": "cb:20190822192512",
+      "file": "Henna Varnish .44 Mag Skin.PNG"
+    },
+    "r6_images/skins/weapons-44-mag-semi-auto-12500.png": {
+      "revision": "cb:20190822192517",
+      "file": "Stinger Bee .44 Mag Skin.PNG"
+    },
+    "r6_images/skins/weapons-sdp-9mm-50000.png": {
+      "revision": "cb:20210327110125",
+      "file": "Woodwork SDP Skin.png"
+    },
+    "r6_images/skins/weapons-sdp-9mm-12500.png": {
+      "revision": "cb:20190822192513",
+      "file": "Jasper Gem SDP Skin.PNG"
+    },
+    "r6_images/skins/weapons-machine-pistols-2500.png": {
+      "revision": "cb:20190821213705",
+      "file": "Trafalgar SMG-11 Skin.png"
+    },
+    "r6_images/skins/weapons-machine-pistols-3750.png": {
+      "revision": "cb:20190821213705",
+      "file": "Union Jack SMG-11 Skin.png"
+    },
+    "r6_images/skins/weapons-machine-pistols-7500.png": {
+      "revision": "cb:20190821213702",
+      "file": "Engraved SMG-11 Skin.png"
+    },
+    "r6_images/skins/weapons-machine-pistols-12500.png": {
+      "revision": "cb:20191009022130",
+      "file": "Wild Instinct SMG-11 Skin.png"
+    },
+    "r6_images/skins/weapons-bearing-9-7500.png": {
+      "revision": "cb:20190822061739",
+      "file": "Safety Orange Bearing 9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-c75-auto-7500.png": {
+      "revision": "cb:20190822061736",
+      "file": "Fearless C75 Skin.PNG"
+    },
+    "r6_images/skins/weapons-c75-auto-10000.png": {
+      "revision": "cb:20191204061229",
+      "file": "Fallen Sun C75 Auto Skin.PNG"
+    },
+    "r6_images/skins/weapons-smg-12-10000.png": {
+      "revision": "cb:20190822061735",
+      "file": "Confidential SMG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-smg-12-7500.png": {
+      "revision": "cb:20190822061736",
+      "file": "Fearless SMG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-smg-12-12500.png": {
+      "revision": "cb:20190822061737",
+      "file": "Formal Getup SMG12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-mp9-siege-10000.png": {
+      "revision": "cb:20190822061739",
+      "file": "Reflective Law SPSMG9 Skin.PNG"
+    },
+    "r6_images/skins/charms-active-charms-1.png": {
+      "revision": "cb:20190815093321",
+      "file": "1 Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-17500.png": {
+      "revision": "cb:20190817053738",
+      "file": "Vintage Anvil Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-12500.png": {
+      "revision": "cb:20190816032116",
+      "file": "Suspicious Package Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-10000.png": {
+      "revision": "cb:20190817053737",
+      "file": "Squeaky Scout Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-7500.png": {
+      "revision": "cb:20190816031758",
+      "file": "9mm Ammo Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-8000.png": {
+      "revision": "cb:20190816031758",
+      "file": "Abanico Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-2500.png": {
+      "revision": "cb:20190816031804",
+      "file": "Futebol Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-15000.png": {
+      "revision": "cb:20190817053737",
+      "file": "Unipeg Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-25000.png": {
+      "revision": "cb:20190817053738",
+      "file": "Ying Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-active-charms-20000.png": {
+      "revision": "cb:20190817053736",
+      "file": "Skating Skeleton Charm.PNG"
+    },
+    "r6_images/skins/charms-alpha-pack-charms-common.png": {
+      "revision": "cb:20190818193322",
+      "file": "Twitch Medallion Charm.PNG"
+    },
+    "r6_images/skins/charms-alpha-pack-charms-uncommon.png": {
+      "revision": "cb:20190819023855",
+      "file": "Valkyrie's Icon Charm.PNG"
+    },
+    "r6_images/skins/charms-alpha-pack-charms-rare.png": {
+      "revision": "cb:20190820035309",
+      "file": "Zofia Medallion Charm.PNG"
+    },
+    "r6_images/skins/charms-alpha-pack-charms-epic.png": {
+      "revision": "cb:20190820035309",
+      "file": "Valkyrie Medallion Charm.PNG"
+    },
+    "r6_images/skins/charms-alpha-pack-charms-legendary.png": {
+      "revision": "cb:20190817224802",
+      "file": "Wow Charm.PNG"
+    },
+    "r6_images/skins/charms-ranked-charms.png": {
+      "revision": "cb:20240610030852",
+      "file": "Solar Raid ranked charms.jpg"
+    },
+    "r6_images/skins/charms-challenge-charms-get-a-minimum-score-of-3-000-in-multiplayer.png": {
+      "revision": "cb:20200714031002",
+      "file": "Countdown Charm.png"
+    },
+    "r6_images/skins/charms-challenge-charms-get-a-minimum-score-of-4-000-in-multiplayer.png": {
+      "revision": "cb:20190820035304",
+      "file": "Party 2018 Charm.png"
+    },
+    "r6_images/skins/charms-challenge-charms-win-10-rounds-in-multiplayer-with-the-gign-operators.png": {
+      "revision": "cb:20190820042914",
+      "file": "French Roundel Charm.png"
+    },
+    "r6_images/skins/charms-challenge-charms-win-10-rounds-in-multiplayer-with-the-gsg-9-operators.png": {
+      "revision": "cb:20200714134555",
+      "file": "German Roundel Charm.png"
+    },
+    "r6_images/skins/charms-challenge-charms-play-5-rounds-of-multiplayer-with-doc.png": {
+      "revision": "cb:20190820042916",
+      "file": "Ma Mie Charm.png"
+    },
+    "r6_images/skins/charms-challenge-charms-win-5-rounds-in-multiplayer-with-the-bope-operators.png": {
+      "revision": "cb:20190819065759",
+      "file": "Brazilian Trinket Charm.png"
+    },
+    "r6_images/skins/charms-challenge-charms-win-5-rounds-in-multiplayer-with-twitch-montagne-doc-or-.png": {
+      "revision": "cb:20200714132002",
+      "file": "Bastille Day Charm.png"
+    },
+    "r6_images/skins/charms-challenge-charms-win-5-rounds-in-multiplayer-with-glaz-fuze-tachanka-or-k.png": {
+      "revision": "cb:20200714120949",
+      "file": "Nesting Mares Charm.png"
+    },
+    "r6_images/skins/charms-challenge-charms-win-5-rounds-in-multiplayer-with-ash-thermite-castle-or-.png": {
+      "revision": "cb:20200714131921",
+      "file": "Patriot's Confection Charm.png"
+    },
+    "r6_images/skins/charms-streamer-charms-epic.png": {
+      "revision": "cb:20190821005725",
+      "file": "Zironic Charm.png"
+    },
+    "r6_images/skins/charms-battle-pass-charms-rank-2.png": {
+      "revision": "cb:20191016044158",
+      "file": "Harry's Work Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-rank-4.png": {
+      "revision": "cb:20191016044157",
+      "file": "Harry's Life Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-rank-6.png": {
+      "revision": "cb:20191016044158",
+      "file": "Harry's Project Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-rank-7.png": {
+      "revision": "cb:20191016044157",
+      "file": "Harry Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-premium-rank-17.png": {
+      "revision": "cb:20200630041521",
+      "file": "Blacksmith Buck Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-premium-rank-4.png": {
+      "revision": "cb:20200326051321",
+      "file": "Blacksmith Valkyrie Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-free-rank-20.png": {
+      "revision": "cb:20200116060910",
+      "file": "Team Germany 2020 Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-free-rank-2.png": {
+      "revision": "cb:20200630035405",
+      "file": "Full Throttle Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-premium-rank-23.png": {
+      "revision": "cb:20200326053228",
+      "file": "Brawler's Pair Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-free-rank-9.png": {
+      "revision": "cb:20200630035534",
+      "file": "Ticker Badge Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-premium-rank-1.png": {
+      "revision": "cb:20200117034338",
+      "file": "S.I. 2020 Starter Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-free-rank-35.png": {
+      "revision": "cb:20200326050845",
+      "file": "Boonie Beaver Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-premium-rank-10.png": {
+      "revision": "cb:20200326052415",
+      "file": "Blacksmith Ela Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-free-rank-25.png": {
+      "revision": "cb:20200326053428",
+      "file": "Director Mira Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-premium-rank-36.png": {
+      "revision": "cb:20200630042501",
+      "file": "Blacksmith Jager Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-free-rank-16.png": {
+      "revision": "cb:20200630035619",
+      "file": "Equine Trinket Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-free-rank-34.png": {
+      "revision": "cb:20200630035932",
+      "file": "Cubby Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-premium-rank-41.png": {
+      "revision": "cb:20200630042808",
+      "file": "Flash Drive Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-premium-rank-22.png": {
+      "revision": "cb:20200630041721",
+      "file": "Snowballer Charm.PNG"
+    },
+    "r6_images/skins/charms-battle-pass-charms-free-rank-45.png": {
+      "revision": "cb:20200630040123",
+      "file": "Chief Rooster Charm.PNG"
+    },
+    "r6_images/skins/charms-twitch-prime-charms-june-4th-2020-july-3rd-2020.png": {
+      "revision": "cb:20200617041833",
+      "file": "Aegis Flask Charm.png"
+    },
+    "r6_images/skins/charms-twitch-drop-charms-june-7th-2019-june-9th-2019.png": {
+      "revision": "cb:20200714120036",
+      "file": "Aegis Six Charm.png"
+    },
+    "r6_images/skins/charms-twitch-drop-charms-november-8th-2019-november-10th-2019.png": {
+      "revision": "cb:20200714125851",
+      "file": "Six Major Japan Diamond 2019 Charm.png"
+    },
+    "r6_images/skins/charms-twitch-drop-charms-june-17th-2020-21-00-june-18th-2020-01-00.png": {
+      "revision": "cb:20200620014156",
+      "file": "Teevee Buddy Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-axle-13.png": {
+      "revision": "cb:20190826140433",
+      "file": "Bandit Elite Chibi Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-guerrilla.png": {
+      "revision": "cb:20190821035229",
+      "file": "Elite Blackbeard Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-panzerst-rke.png": {
+      "revision": "cb:20200111093855",
+      "file": "Elite Blitz Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-trench-medic.png": {
+      "revision": "cb:20190821033826",
+      "file": "Elite Doc Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-huntress.png": {
+      "revision": "cb:20190821033827",
+      "file": "Elite Frost Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-2nd-shock-army.png": {
+      "revision": "cb:20190821033827",
+      "file": "Elite Fuze Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-lethal-citizen.png": {
+      "revision": "cb:20200111093930",
+      "file": "Elite Glaz Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-onkochishin.png": {
+      "revision": "cb:20190826140004",
+      "file": "Elite Hibana Chibi Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-reunification.png": {
+      "revision": "cb:20190821033828",
+      "file": "Elite IQ Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-flying-ace.png": {
+      "revision": "cb:20190821035230",
+      "file": "Elite Jager Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-vympel.png": {
+      "revision": "cb:20190821033828",
+      "file": "Elite Kapkan Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-nano-tox-32.png": {
+      "revision": "cb:20200111093803",
+      "file": "Elite Lesion Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-inspiraci-n.png": {
+      "revision": "cb:20200111093414",
+      "file": "Elite Mira Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-f-squadron.png": {
+      "revision": "cb:20190821033829",
+      "file": "Elite Mute Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-lucky-seventh.png": {
+      "revision": "cb:20190821033829",
+      "file": "Elite Pulse Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-gendarmerie.png": {
+      "revision": "cb:20190821035231",
+      "file": "Elite Rook Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-l-detachment.png": {
+      "revision": "cb:20190821033830",
+      "file": "Elite Sledge Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-sanguine-arsenic.png": {
+      "revision": "cb:20200111093458",
+      "file": "Elite Smoke Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-operation-nimrod.png": {
+      "revision": "cb:20190821033831",
+      "file": "Elite Thatcher Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-vintage-bureau.png": {
+      "revision": "cb:20190821033831",
+      "file": "Elite Thermite Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-maquis.png": {
+      "revision": "cb:20190821035233",
+      "file": "Elite Twitch Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-war-photographer-72.png": {
+      "revision": "cb:20190821033832",
+      "file": "Elite Valkyrie Chibi Charm.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-play-assassin-s-creed-odyssey.png": {
+      "revision": "cb:20190815073903",
+      "file": "AC Odyssey Charm Reward.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-play-assassin-s-creed-origins.png": {
+      "revision": "cb:20190815073904",
+      "file": "AC Origins Charm Reward.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-play-tom-clancy-s-the-division-2-after-april-22nd-2020.png": {
+      "revision": "cb:20200714121600",
+      "file": "Division Watch Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-play-far-cry-5.png": {
+      "revision": "cb:20190815073907",
+      "file": "Eden's Gate Charm Reward.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-play-tom-clancy-s-ghost-recon-breakpoint.png": {
+      "revision": "cb:20200714121804",
+      "file": "Ghost Recon Breakpoint Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-download-the-ubisoft-club-mobile-app-and-use-the-daily-login.png": {
+      "revision": "cb:20190815073913",
+      "file": "Happy Sam Charm Reward.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-play-far-cry-new-dawn.png": {
+      "revision": "cb:20190815073914",
+      "file": "Rainbow Trout Charm Reward.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-play-starlink-battle-for-atlas.png": {
+      "revision": "cb:20190815074447",
+      "file": "Starlink Charm Reward.PNG"
+    },
+    "r6_images/skins/charms-elite-charms-play-https-steep-gamepedia-com-steep-steep.png": {
+      "revision": "cb:20200714051140",
+      "file": "Steep Snowboard Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-play-tom-clancy-s-the-division-2.png": {
+      "revision": "cb:20200625064152",
+      "file": "The Division 2 Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-play-trials-rising.png": {
+      "revision": "cb:20200714121857",
+      "file": "Trials Rising Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-play-for-honor.png": {
+      "revision": "cb:20190815073910",
+      "file": "Valkeinheim Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-play-tom-clancy-s-rainbow-six-siege-at-any-official-2018-gam.png": {
+      "revision": "cb:20190815073908",
+      "file": "R6 Mega Fan Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-attend-an-r6-esports-global-event-during-year-4.png": {
+      "revision": "cb:20190815074450",
+      "file": "Esports Chibi '19 Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-get-game-reward-qr-code-scanned-at-select-ubisoft-events.png": {
+      "revision": "cb:20200714104251",
+      "file": "R6 Extreme Fan Charm.png"
+    },
+    "r6_images/skins/charms-elite-charms-play-tom-clancy-s-rainbow-six-siege-at-any-official-gaming-e.png": {
+      "revision": "cb:20190815073907",
+      "file": "R6 Fan Charm.png"
+    },
+    "r6_images/skins/charms-miscellaneous-charms-participate-as-a-https-playtest-ubisoft-com-playtest.png": {
+      "revision": "cb:20211021110143",
+      "file": "Playtester Charm.png"
+    },
+    "r6_images/skins/charms-miscellaneous-charms-play-the-midseason-phantom-sight-patch-on-the-test-s.png": {
+      "revision": "cb:20220515193337",
+      "file": "Screenshot 2022-05-15 203319.png"
+    },
+    "r6_images/skins/attachments-universal-skins-default.png": {
+      "revision": "cb:20200803075218",
+      "file": "None Attachment Skin.jpeg"
+    },
+    "r6_images/skins/attachments-universal-skins-free.png": {
+      "revision": "cb:20200619072159",
+      "file": "Gray Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-universal-skins-480.png": {
+      "revision": "cb:20220228004923",
+      "file": "Teal Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-seasonal-skins-720.png": {
+      "revision": "cb:20210505201540",
+      "file": "Thermal Antipodes Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-seasonal-skins-apocalypse-pack.png": {
+      "revision": "cb:20210505201542",
+      "file": "Dystopian Survival Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-north-star-720.png": {
+      "revision": "cb:20210615073514",
+      "file": "Wisdom and Hospitality Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-north-star-containment-pack.png": {
+      "revision": "cb:20210804070738",
+      "file": "Sentient Growth Universal Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-tom-clancy-s-rainbow-six-siege-crystal-guard-720.png": {
+      "revision": "cb:20210922022920",
+      "file": "Prismatic Glisten Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-tom-clancy-s-rainbow-six-siege-crystal-guard-doktor-s-curse-pack.png": {
+      "revision": "cb:20211020053915",
+      "file": "Moveable Apothecary V308 Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-tom-clancy-s-rainbow-six-siege-high-calibre-720.png": {
+      "revision": "cb:20220227214203",
+      "file": "Moss-Grown Ruin Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-tom-clancy-s-rainbow-six-siege-high-calibre-snow-brawl-pack.png": {
+      "revision": "cb:20211222060722",
+      "file": "Hibernal Solstice Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-tour-de-force-universal.png": {
+      "revision": "cb:20200630043007",
+      "file": "Velveteen Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-class-of-zero-universal.png": {
+      "revision": "cb:20200911081241",
+      "file": "Chroma Streaks Universal Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-operation-neon-dawn-road-to-s-i-2021-battle-pass-vector-45-acp.png": {
+      "revision": "cb:20201205154315",
+      "file": "SI 2021 Orange Team Vector 45 Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-operation-neon-dawn-road-to-s-i-2021-battle-pass-para-308.png": {
+      "revision": "cb:20201212123204",
+      "file": "SI 2021 Green Team PARA Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-operation-neon-dawn-road-to-s-i-2021-battle-pass-universal.png": {
+      "revision": "cb:20210111000942",
+      "file": "SI_2021_Attachment_Skin_R6S.png"
+    },
+    "r6_images/skins/attachments-crimson-heist-arx200.png": {
+      "revision": "cb:20210226174754",
+      "file": "Tall Grass ARX200 Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-crimson-heist-universal.png": {
+      "revision": "cb:20210225202007",
+      "file": "First Class Burglary Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-north-star-r4-c.png": {
+      "revision": "cb:20210615073503",
+      "file": "Trekking Miscellany R4-C Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-north-star-universal.png": {
+      "revision": "cb:20210615073453",
+      "file": "Search and Rescue Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-tom-clancy-s-rainbow-six-siege-crystal-guard-universal.png": {
+      "revision": "cb:20210914053538",
+      "file": "World-Class Apparatus Universal Attachment Skin.PNG"
+    },
+    "r6_images/skins/attachments-tom-clancy-s-rainbow-six-siege-high-calibre-universal.png": {
+      "revision": "cb:20220227231956",
+      "file": "S.I 2022 Triumphant Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-tom-clancy-s-rainbow-six-siege-high-calibre-m762.png": {
+      "revision": "cb:20220227235810",
+      "file": "Aethereal Flux Att\u0430chm\u1eb9nt Skin.png"
+    },
+    "r6_images/skins/attachments-demon-veil-universal.png": {
+      "revision": "cb:20220405045252",
+      "file": "Lifeblood Flower Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-operation-vector-glare-p90.png": {
+      "revision": "cb:20220717182958",
+      "file": "P90 Experimental Unit Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-operation-brutal-swarm-universal.png": {
+      "revision": "cb:20221113144404",
+      "file": "Poisonous Membrane Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-others-smoke-pickle-rick-bundle.png": {
+      "revision": "cb:20210505201543",
+      "file": "Portal Gun Attachment Skin.png"
+    },
+    "r6_images/skins/attachments-others-night-sight-bundle.png": {
+      "revision": "cb:20210922012144",
+      "file": "Crepuscular Attachment Skin.png"
+    },
+    "r6_images/skins/uniforms-doc-n-a.png": {
+      "revision": "cb:20190928044730",
+      "file": "Doc Quasar Uniform.png"
+    },
+    "r6_images/skins/uniforms-doc-20000.png": {
+      "revision": "cb:20190922143658",
+      "file": "Doc Palewood Uniform.png"
+    },
+    "r6_images/skins/uniforms-doc-25000.png": {
+      "revision": "cb:20190922142201",
+      "file": "Doc CE Woodland Uniform.png"
+    },
+    "r6_images/skins/uniforms-sledge-n-a.png": {
+      "revision": "cb:20200623050923",
+      "file": "Sledge Six Invitational 2020 Uniform.png"
+    },
+    "r6_images/skins/uniforms-sledge-25000.png": {
+      "revision": "cb:20190910043942",
+      "file": "Sledge Hazardous Uniform.png"
+    },
+    "r6_images/skins/uniforms-sledge-20000.png": {
+      "revision": "cb:20190910043956",
+      "file": "Sledge S.A.S. Dark Woodland Uniform.png"
+    },
+    "r6_images/skins/uniforms-thatcher-n-a.png": {
+      "revision": "cb:20190923044055",
+      "file": "Thatcher Auxiliary Unit Uniform.png"
+    },
+    "r6_images/skins/uniforms-thatcher-25000.png": {
+      "revision": "cb:20191206064017",
+      "file": "Thatcher Mountain Contingent Uniform.png"
+    },
+    "r6_images/skins/uniforms-thatcher-20000.png": {
+      "revision": "cb:20190910045937",
+      "file": "Thatcher S.A.S. Chemical Warfare Uniform.png"
+    },
+    "r6_images/skins/headgear-doc-n-a.png": {
+      "revision": "cb:20191014065128",
+      "file": "Doc Isolation Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-20000.png": {
+      "revision": "cb:20191013022838",
+      "file": "Doc Bitumen Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-10000.png": {
+      "revision": "cb:20191013022839",
+      "file": "Doc Exner Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-12500.png": {
+      "revision": "cb:20191013022840",
+      "file": "Doc Hypochondriac Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-17500.png": {
+      "revision": "cb:20191013022841",
+      "file": "Doc KT Banshee P.D. Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-30000.png": {
+      "revision": "cb:20191013022837",
+      "file": "Doc Anatomical Headgear.png"
+    },
+    "r6_images/skins/headgear-doc-25000.png": {
+      "revision": "cb:20191013022842",
+      "file": "Doc Saharan Courage Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-n-a.png": {
+      "revision": "cb:20200116061347",
+      "file": "Sledge Competitor Sledge '20 Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-12500.png": {
+      "revision": "cb:20191009044908",
+      "file": "Sledge Midnight Owl Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-20000.png": {
+      "revision": "cb:20191009044909",
+      "file": "Sledge Murky Waters Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-10000.png": {
+      "revision": "cb:20191009044910",
+      "file": "Sledge Scorched Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-30000.png": {
+      "revision": "cb:20191009044906",
+      "file": "Sledge Evil Jack Headgear.png"
+    },
+    "r6_images/skins/headgear-sledge-25000.png": {
+      "revision": "cb:20191009044910",
+      "file": "Sledge Stythe Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-n-a.png": {
+      "revision": "cb:20191014062646",
+      "file": "Thatcher Cursory Command Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-12500.png": {
+      "revision": "cb:20191010040917",
+      "file": "Thatcher Solitude Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-25000.png": {
+      "revision": "cb:20191010040915",
+      "file": "Thatcher Midnight Owl Headgear.png"
+    },
+    "r6_images/skins/headgear-thatcher-10000.png": {
+      "revision": "cb:20191010040917",
+      "file": "Thatcher Scorched Headgear.png"
+    },
+    "r6_images/skins/weapons-ar33-n-a.png": {
+      "revision": "cb:20200320041546",
+      "file": "Maggie's Resolve AR33 Skin.png"
+    },
+    "r6_images/skins/weapons-fmg-9-n-a.png": {
+      "revision": "cb:20190826090540",
+      "file": "Retro Steel FMG-9 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-n-a.png": {
+      "revision": "cb:20200125061426",
+      "file": "Signature Six '20 L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-2500.png": {
+      "revision": "cb:20190821065351",
+      "file": "Sapien L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-12500.png": {
+      "revision": "cb:20190821065005",
+      "file": "Cold War-USA L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-10000.png": {
+      "revision": "cb:20190821065354",
+      "file": "USA Winter Camo L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-40.png": {
+      "revision": "cb:20190827073304",
+      "file": "Elephant L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-6000.png": {
+      "revision": "cb:20190821065344",
+      "file": "Gridlock L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-3750.png": {
+      "revision": "cb:20190821065353",
+      "file": "Union Jack L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-7500.png": {
+      "revision": "cb:20190821065008",
+      "file": "Engraved L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-l85-300.png": {
+      "revision": "cb:20191004160057",
+      "file": "G2 Esports 2019 L85A2 Skin.png"
+    },
+    "r6_images/skins/weapons-m500-2500.png": {
+      "revision": "cb:20190822020356",
+      "file": "Armor M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-m500-n-a.png": {
+      "revision": "cb:20200213025157",
+      "file": "Six Invitational Player '20 M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-m500-300.png": {
+      "revision": "cb:20200304062855",
+      "file": "Cloud9 2019 M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-m500-7500.png": {
+      "revision": "cb:20190822020402",
+      "file": "Woody M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-m500-12500.png": {
+      "revision": "cb:20190822020358",
+      "file": "Kentucky Long M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-m500-10000.png": {
+      "revision": "cb:20200209004653",
+      "file": "SWE Reganomics M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-mac-11-2500.png": {
+      "revision": "cb:20190821213705",
+      "file": "Trafalgar SMG-11 Skin.png"
+    },
+    "r6_images/skins/weapons-mac-11-n-a.png": {
+      "revision": "cb:20200122061838",
+      "file": "Conduit SMG-11 Skin.png"
+    },
+    "r6_images/skins/weapons-mac-11-3750.png": {
+      "revision": "cb:20190821213705",
+      "file": "Union Jack SMG-11 Skin.png"
+    },
+    "r6_images/skins/weapons-mp5k-2500.png": {
+      "revision": "cb:20190824051239",
+      "file": "Tally MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-mp5k-3750.png": {
+      "revision": "cb:20190824051349",
+      "file": "Union Jack MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-mp5k-7500.png": {
+      "revision": "cb:20190824051233",
+      "file": "Engraved MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-mp5k-n-a.png": {
+      "revision": "cb:20200514063817",
+      "file": "Royal Fusiliers MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-p226-n-a.png": {
+      "revision": "cb:20200131024251",
+      "file": "Signature Six '20 P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-p226-2500.png": {
+      "revision": "cb:20190821211304",
+      "file": "Waves P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-p226-12500.png": {
+      "revision": "cb:20190821211258",
+      "file": "Broadway P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-p226-2-99-usd.png": {
+      "revision": "cb:20200131013339",
+      "file": "Ruby P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-p226-10000.png": {
+      "revision": "cb:20200131031602",
+      "file": "USA Winter Camo P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-p226-40.png": {
+      "revision": "cb:20200131021029",
+      "file": "Elephant P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-p226-4-99-usd.png": {
+      "revision": "cb:20200131013345",
+      "file": "Tiger P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-p226-3750.png": {
+      "revision": "cb:20200131013347",
+      "file": "Union Jack P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-p226-7500.png": {
+      "revision": "cb:20190821211300",
+      "file": "Engraved P226 Mk 25 Skin.png"
+    },
+    "r6_images/skins/weapons-weapon-skins-type-89.png": {
+      "revision": "cb:20200116054512",
+      "file": "Competitor Hibana 20 Weapon Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-556xi.png": {
+      "revision": "cb:20200403071908",
+      "file": "Retrofit Weapon Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-m12.png": {
+      "revision": "cb:20200116054011",
+      "file": "Competitor Caveira 20 Weapon Skin.png"
+    },
+    "r6_images/skins/weapons-weapon-skins-mpx.png": {
+      "revision": "cb:20200116060805",
+      "file": "S.I. 2020 Chevron Dark Weapon Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-all.png": {
+      "revision": "cb:20201205190337",
+      "file": "Signature Six '21 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-ar33.png": {
+      "revision": "cb:20210226183916",
+      "file": "Luxury Goods AR33 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-vector-45-acp.png": {
+      "revision": "cb:20200403073538",
+      "file": "Inspiracion Weapon Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-ak-12.png": {
+      "revision": "cb:20210226173408",
+      "file": "Roulette Wheel AK12 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-mp7.png": {
+      "revision": "cb:20200630035454",
+      "file": "Vital Flow MP7 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-alda-5-56.png": {
+      "revision": "cb:20200630041312",
+      "file": "Mountainous Mimicry ALDA Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-mp5.png": {
+      "revision": "cb:20200630042103",
+      "file": "Swift Ammunition MP5 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-6p41.png": {
+      "revision": "cb:20200911045517",
+      "file": "Blue Electric 6P41 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-l85a2.png": {
+      "revision": "cb:20200128024516",
+      "file": "Ferrum M590A1 Skin.png"
+    },
+    "r6_images/skins/weapons-weapon-skins-m1014.png": {
+      "revision": "cb:20210226180151",
+      "file": "Four Of A Kind M1014 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-t-5-smg.png": {
+      "revision": "cb:20191222085535",
+      "file": "Nano_Tox_32.jpg"
+    },
+    "r6_images/skins/weapons-weapon-skins-spear-308.png": {
+      "revision": "cb:20200911050240",
+      "file": "Sharp Vendetta Spear 308 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-9x19vsn.png": {
+      "revision": "cb:20201212122212",
+      "file": "Desert Infantry 9x19 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-f2.png": {
+      "revision": "cb:20201205154051",
+      "file": "Mission Blacksmith F2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-para-308.png": {
+      "revision": "cb:20201205154852",
+      "file": "Viridescence PARA Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-aug-a2.png": {
+      "revision": "cb:20201205160431",
+      "file": "Blazing Aqua AUG A2 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-t-95-lsw.png": {
+      "revision": "cb:20201212124517",
+      "file": "High Circuitry T95 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-commando-9.png": {
+      "revision": "cb:20201212120157",
+      "file": "High Circuitry Commando 9 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-g36c.png": {
+      "revision": "cb:20201205190707",
+      "file": "Red Captain Ash G36C Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-arx200.png": {
+      "revision": "cb:20210225194527",
+      "file": "Tall Grass ARX200 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-mk17-cqb.png": {
+      "revision": "cb:20210226150015",
+      "file": "Cartography MK17 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-m870.png": {
+      "revision": "cb:20210306194640",
+      "file": "Snakeskin M870 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-mx4-storm.png": {
+      "revision": "cb:20210226173014",
+      "file": "Precious Ingot Mx4 Storm Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-g8a1.png": {
+      "revision": "cb:20210226182513",
+      "file": "Haute Couture G8A1 Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-m590a1.png": {
+      "revision": "cb:20200514063817",
+      "file": "Royal Fusiliers MP5K Skin.png"
+    },
+    "r6_images/skins/weapons-weapon-skins-outbreak-pack.png": {
+      "revision": "cb:20201224121957",
+      "file": "Death Adder Weapon Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-1800.png": {
+      "revision": "cb:20210317220955",
+      "file": "Onkochishin Weapon Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-p90.png": {
+      "revision": "cb:20200403072206",
+      "file": "No Man's Land Weapon Skin.PNG"
+    },
+    "r6_images/skins/weapons-weapon-skins-p12.png": {
+      "revision": "cb:20191215062634",
+      "file": "Red_devil.jpg"
+    },
+    "r6_images/skins/weapons-weapon-skins-lmg-e.png": {
+      "revision": "cb:20210317220409",
+      "file": "Duch Bojowy LMG-E Skin.png"
+    },
+    "r6_images/skins/r6-sledge-elite-l-detachment.png": {
+      "revision": "cb:20260304072723",
+      "file": "Sledge L Detachment Uniform.png"
+    },
+    "r6_images/skins/r6-sledge-elite-l-detachment-contents.png": {
+      "revision": "cb:20190613053808",
+      "file": "Sledge - L Detachment Content.PNG"
+    },
+    "r6_images/skins/r6-sledge-elite-l-detachment-gadget.png": {
+      "revision": "cb:20260304072353",
+      "file": "Sledge - L Detachment Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-sledge-elite-spartan-117.png": {
+      "revision": "cb:20260304071745",
+      "file": "Sledge Spartan-117 in-game.webp"
+    },
+    "r6_images/skins/r6-sledge-elite-spartan-117-contents.png": {
+      "revision": "cb:20260426020650",
+      "file": "Sledge - Spartan-117 Content.png"
+    },
+    "r6_images/skins/r6-sledge-elite-spartan-117-gadget.png": {
+      "revision": "cb:20260304072359",
+      "file": "Sledge - Spartan-117 Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-thatcher-elite-operation-nimrod.png": {
+      "revision": "cb:20251118165342",
+      "file": "Thatcher Operation Nimrod Uniform.png"
+    },
+    "r6_images/skins/r6-thatcher-elite-operation-nimrod-contents.png": {
+      "revision": "cb:20260221141019",
+      "file": "Thatcher - Operation Nimrod Content.PNG"
+    },
+    "r6_images/skins/r6-thatcher-elite-operation-nimrod-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Thatcher - Operation Nimrod Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-thatcher-elite-no-half-measures.png": {
+      "revision": "cb:20251118165434",
+      "file": "Thatcher - No Half Measures in-game.webp"
+    },
+    "r6_images/skins/r6-thatcher-elite-no-half-measures-contents.png": {
+      "revision": "cb:20260221143246",
+      "file": "Thatcher - No Half Measures Content.webp"
+    },
+    "r6_images/skins/r6-thatcher-elite-no-half-measures-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Thatcher - No Half Measures Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-smoke-elite-sanguine-arsenic.png": {
+      "revision": "cb:20260330194156",
+      "file": "Smoke - Sanguine Arsenic.PNG"
+    },
+    "r6_images/skins/r6-smoke-elite-sanguine-arsenic-contents.png": {
+      "revision": "cb:20190817071857",
+      "file": "Smoke - Sanguine Arsenic Content.PNG"
+    },
+    "r6_images/skins/r6-smoke-elite-sanguine-arsenic-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Smoke - Sanguine Arsenic Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-mute-elite-f-squadron.png": {
+      "revision": "cb:20260330194048",
+      "file": "Mute - F Squadron.PNG"
+    },
+    "r6_images/skins/r6-mute-elite-f-squadron-contents.png": {
+      "revision": "cb:20190613054133",
+      "file": "Mute - F Squadron Content.PNG"
+    },
+    "r6_images/skins/r6-mute-elite-f-squadron-gadget.png": {
+      "revision": "cb:20260304072445",
+      "file": "Mute - F Squadron Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-mute-elite-the-polymath-rule.png": {
+      "revision": "cb:20260330194055",
+      "file": "Mute - The Polymath Rule in-game.webp"
+    },
+    "r6_images/skins/r6-mute-elite-the-polymath-rule-contents.png": {
+      "revision": "cb:20260426020651",
+      "file": "Mute - The Polymath Rule Content.png"
+    },
+    "r6_images/skins/r6-mute-elite-the-polymath-rule-gadget.png": {
+      "revision": "cb:20260304072453",
+      "file": "Mute - The Polymath Rule Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-ash-elite-sidewinder.png": {
+      "revision": "cb:20260221140453",
+      "file": "Ash - Sidewinder.PNG"
+    },
+    "r6_images/skins/r6-ash-elite-sidewinder-contents.png": {
+      "revision": "cb:20260221141246",
+      "file": "Ash - Sidewinder Content.PNG"
+    },
+    "r6_images/skins/r6-ash-elite-sidewinder-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Ash - Sidewinder Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-ash-elite-black-viper.png": {
+      "revision": "cb:20260221140505",
+      "file": "Ash Black Viper Elite Set.PNG"
+    },
+    "r6_images/skins/r6-ash-elite-black-viper-contents.png": {
+      "revision": "cb:20260221141329",
+      "file": "Ash Black Viper Content.jpeg"
+    },
+    "r6_images/skins/r6-ash-elite-black-viper-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Ash - Black Viper Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-ash-elite-tomb-raider.png": {
+      "revision": "cb:20260330193242",
+      "file": "Ash Tomb Raider Elite Set.PNG"
+    },
+    "r6_images/skins/r6-ash-elite-tomb-raider-contents.png": {
+      "revision": "cb:20260221141258",
+      "file": "Ash Tomb Raider Content.PNG"
+    },
+    "r6_images/skins/r6-ash-elite-tomb-raider-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Ash - Tomb Raider Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-thermite-elite-vintage-bureau.png": {
+      "revision": "cb:20210801124737",
+      "file": "Thermite - Vintage Bureau.PNG"
+    },
+    "r6_images/skins/r6-thermite-elite-vintage-bureau-contents.png": {
+      "revision": "cb:20190613061806",
+      "file": "Thermite - Vintage Bureau Content.PNG"
+    },
+    "r6_images/skins/r6-thermite-elite-vintage-bureau-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Thermite - Vintage Bureau Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-pulse-elite-lucky-seventh.png": {
+      "revision": "cb:20210801124747",
+      "file": "Pulse - Lucky Seventh.PNG"
+    },
+    "r6_images/skins/r6-pulse-elite-lucky-seventh-contents.png": {
+      "revision": "cb:20190613061840",
+      "file": "Pulse - Lucky Seventh Content.PNG"
+    },
+    "r6_images/skins/r6-pulse-elite-lucky-seventh-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Pulse - Lucky Seventh Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-castle-elite-point-blank-justice.png": {
+      "revision": "cb:20221122221339",
+      "file": "Castle - Point Blank Justice in-game.png"
+    },
+    "r6_images/skins/r6-castle-elite-point-blank-justice-contents.png": {
+      "revision": "cb:20221122221338",
+      "file": "Castle - Point Blank Justice Content.png"
+    },
+    "r6_images/skins/r6-castle-elite-point-blank-justice-gadget.png": {
+      "revision": "cb:20260302000100",
+      "file": "Castle - Point Blank Justice Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-twitch-elite-maquis.png": {
+      "revision": "cb:20260304095313",
+      "file": "Twitch - Maquis.PNG"
+    },
+    "r6_images/skins/r6-twitch-elite-maquis-contents.png": {
+      "revision": "cb:20190613061923",
+      "file": "Twitch - Maquis Content.PNG"
+    },
+    "r6_images/skins/r6-twitch-elite-maquis-gadget.png": {
+      "revision": "cb:20260304095305",
+      "file": "Twitch - Maquis Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-montagne-elite-mtg-mk-ii.png": {
+      "revision": "cb:20220723102508",
+      "file": "Montagne - MTG MK.II in-game.png"
+    },
+    "r6_images/skins/r6-montagne-elite-mtg-mk-ii-contents.png": {
+      "revision": "cb:20220723102506",
+      "file": "Montagne - MTG MK.II Content.png"
+    },
+    "r6_images/skins/r6-montagne-elite-mtg-mk-ii-gadget.png": {
+      "revision": "cb:20260304073333",
+      "file": "Montagne - MTG MK.II Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-doc-elite-trench-medic.png": {
+      "revision": "cb:20210801124845",
+      "file": "Doc Trench Medic Uniform.png"
+    },
+    "r6_images/skins/r6-doc-elite-trench-medic-contents.png": {
+      "revision": "cb:20190613060202",
+      "file": "Doc - Trench Medic Content.PNG"
+    },
+    "r6_images/skins/r6-doc-elite-trench-medic-gadget.png": {
+      "revision": "cb:20260302000100",
+      "file": "Doc - Trench Medic Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-rook-elite-gendarmerie.png": {
+      "revision": "cb:20210801124857",
+      "file": "Rook - Gendarmerie.PNG"
+    },
+    "r6_images/skins/r6-rook-elite-gendarmerie-contents.png": {
+      "revision": "cb:20190613062002",
+      "file": "Rook - Gendarmerie Content.PNG"
+    },
+    "r6_images/skins/r6-rook-elite-gendarmerie-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Rook - Gendarmerie Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-fuze-elite-2nd-shock-army.png": {
+      "revision": "cb:20210801124937",
+      "file": "Fuze - 2nd Shock Army.PNG"
+    },
+    "r6_images/skins/r6-fuze-elite-2nd-shock-army-contents.png": {
+      "revision": "cb:20190613060503",
+      "file": "Fuze - 2nd Shock Army Content.PNG"
+    },
+    "r6_images/skins/r6-fuze-elite-2nd-shock-army-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Fuze - 2nd Shock Army Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-kapkan-elite-vympel.png": {
+      "revision": "cb:20210801124945",
+      "file": "Kapkan - Vympel.PNG"
+    },
+    "r6_images/skins/r6-kapkan-elite-vympel-contents.png": {
+      "revision": "cb:20190613061047",
+      "file": "Kapkan - Vympel Content.PNG"
+    },
+    "r6_images/skins/r6-kapkan-elite-vympel-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Kapkan - Vympel Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-tachanka-elite-slava-korolyu.png": {
+      "revision": "cb:20210801125641",
+      "file": "Tachanka_-_Slava_Korolyu.png"
+    },
+    "r6_images/skins/r6-tachanka-elite-slava-korolyu-contents.png": {
+      "revision": "cb:20200911144659",
+      "file": "Tachanka_-_Slava_Korolyu_Content.png"
+    },
+    "r6_images/skins/r6-tachanka-elite-slava-korolyu-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Tachanka - Slava Korolyu Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-blitz-elite-panzerstarke.png": {
+      "revision": "cb:20210801125017",
+      "file": "Blitz - Panzerstarke.PNG"
+    },
+    "r6_images/skins/r6-blitz-elite-panzerstarke-contents.png": {
+      "revision": "cb:20190613050939",
+      "file": "Blitz - Panzerstarke Content.PNG"
+    },
+    "r6_images/skins/r6-blitz-elite-panzerstarke-gadget.png": {
+      "revision": "cb:20260304073335",
+      "file": "Blitz - Panzerstarke Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-iq-elite-reunification.png": {
+      "revision": "cb:20210801125025",
+      "file": "IQ - Reunification.PNG"
+    },
+    "r6_images/skins/r6-iq-elite-reunification-contents.png": {
+      "revision": "cb:20190613055341",
+      "file": "IQ - Reunification Content.PNG"
+    },
+    "r6_images/skins/r6-iq-elite-reunification-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Iq - Reunification Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-j-ger-elite-flying-ace.png": {
+      "revision": "cb:20260330193922",
+      "file": "Jager - Flying Ace.PNG"
+    },
+    "r6_images/skins/r6-j-ger-elite-flying-ace-contents.png": {
+      "revision": "cb:20190613055436",
+      "file": "Jager - Fyling Ace Content.PNG"
+    },
+    "r6_images/skins/r6-j-ger-elite-flying-ace-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Jager - Flying Ace Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-j-ger-elite-exosphere-guardian.png": {
+      "revision": "cb:20260330193911",
+      "file": "Jager - Exosphere Guardian in-game.webp"
+    },
+    "r6_images/skins/r6-j-ger-elite-exosphere-guardian-contents.png": {
+      "revision": "cb:20260426020652",
+      "file": "Jager - Exosphere Guardian Content.png"
+    },
+    "r6_images/skins/r6-j-ger-elite-exosphere-guardian-gadget.png": {
+      "revision": "cb:20260302000118",
+      "file": "Jager - Exosphere Guardian Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-bandit-elite-axle-13.png": {
+      "revision": "cb:20210801125042",
+      "file": "Bandit - Axle 13.PNG"
+    },
+    "r6_images/skins/r6-bandit-elite-axle-13-contents.png": {
+      "revision": "cb:20190613045935",
+      "file": "Bandit - Axle 13 Content.PNG"
+    },
+    "r6_images/skins/r6-bandit-elite-axle-13-gadget.png": {
+      "revision": "cb:20260302000100",
+      "file": "Bandit - Axle 13 Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-buck-elite-snowdrift-expert.png": {
+      "revision": "cb:20200911192711",
+      "file": "Buck_-_Snowdrift_Expert.png"
+    },
+    "r6_images/skins/r6-buck-elite-snowdrift-expert-contents.png": {
+      "revision": "cb:20200911144642",
+      "file": "Buck_-_Snowdrift_Expert_Content.png"
+    },
+    "r6_images/skins/r6-buck-elite-snowdrift-expert-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Buck - Snowdrift Expert Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-frost-elite-huntress.png": {
+      "revision": "cb:20210801125212",
+      "file": "Frost - Huntress.PNG"
+    },
+    "r6_images/skins/r6-frost-elite-huntress-contents.png": {
+      "revision": "cb:20190613054508",
+      "file": "Frost - Huntress Content.PNG"
+    },
+    "r6_images/skins/r6-frost-elite-huntress-gadget.png": {
+      "revision": "cb:20260302000118",
+      "file": "Frost - Huntress Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-blackbeard-elite-guerrilla.png": {
+      "revision": "cb:20260221140400",
+      "file": "Blackbeard - Guerrilla.PNG"
+    },
+    "r6_images/skins/r6-blackbeard-elite-guerrilla-contents.png": {
+      "revision": "cb:20190613050854",
+      "file": "Blackbeard - Guerrilla Content.PNG"
+    },
+    "r6_images/skins/r6-blackbeard-elite-guerrilla-gadget.png": {
+      "revision": "cb:20260304073144",
+      "file": "Blackbeard - Guerilla Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-valkyrie-elite-photographer-72.png": {
+      "revision": "cb:20210801125227",
+      "file": "Valkyrie - War Photographer '72.PNG"
+    },
+    "r6_images/skins/r6-valkyrie-elite-photographer-72-contents.png": {
+      "revision": "cb:20190613062050",
+      "file": "Valkyrie - Photographer '72 Content.PNG"
+    },
+    "r6_images/skins/r6-valkyrie-elite-photographer-72-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Valkyrie - War Photographer '72 Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-capit-o-elite-responsa.png": {
+      "revision": "cb:20210801125233",
+      "file": "Capitao Responsa Elite Set.PNG"
+    },
+    "r6_images/skins/r6-capit-o-elite-responsa-contents.png": {
+      "revision": "cb:20191204063056",
+      "file": "Capitao Responsa Content.PNG"
+    },
+    "r6_images/skins/r6-capit-o-elite-responsa-gadget.png": {
+      "revision": "cb:20260302000100",
+      "file": "Capitao - Responsa Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-caveira-elite-mata-leao.png": {
+      "revision": "cb:20210801125241",
+      "file": "Caveira Mata Leao Elite Set.PNG"
+    },
+    "r6_images/skins/r6-caveira-elite-mata-leao-contents.png": {
+      "revision": "cb:20200221042402",
+      "file": "Caveira Mata Leao Content.PNG"
+    },
+    "r6_images/skins/r6-caveira-elite-mata-leao-gadget.png": {
+      "revision": "cb:20260304073221",
+      "file": "Caveira - Mata Leao Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-hibana-elite-onkochishin.png": {
+      "revision": "cb:20210801125248",
+      "file": "Hibana - Onkochishin.PNG"
+    },
+    "r6_images/skins/r6-hibana-elite-onkochishin-contents.png": {
+      "revision": "cb:20190613060831",
+      "file": "Hibana - Onkochishin Content.PNG"
+    },
+    "r6_images/skins/r6-hibana-elite-onkochishin-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Hibana - Onkochishin Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-echo-elite-tenkamusou.png": {
+      "revision": "cb:20210801125254",
+      "file": "Echo Tenkamusou Uniform.png"
+    },
+    "r6_images/skins/r6-echo-elite-tenkamusou-contents.png": {
+      "revision": "cb:20200623053823",
+      "file": "Echo Tenkamusou Content.png"
+    },
+    "r6_images/skins/r6-echo-elite-tenkamusou-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Echo - Tenkamusou Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-echo-elite-mad-dog-of-shimano.png": {
+      "revision": "cb:20221122221354",
+      "file": "Echo Mad Dog of Shimano Uniform.png"
+    },
+    "r6_images/skins/r6-echo-elite-mad-dog-of-shimano-contents.png": {
+      "revision": "cb:20221122221344",
+      "file": "Echo Mad Dog of Shimano Content.png"
+    },
+    "r6_images/skins/r6-echo-elite-mad-dog-of-shimano-gadget.png": {
+      "revision": "cb:20260302000100",
+      "file": "Echo - Mad Dog Of Shimano Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-mira-elite-inspiracion.png": {
+      "revision": "cb:20210801125301",
+      "file": "Mira - Inspiracion.PNG"
+    },
+    "r6_images/skins/r6-mira-elite-inspiracion-contents.png": {
+      "revision": "cb:20190925005200",
+      "file": "Mira - Inspiracion Content.PNG"
+    },
+    "r6_images/skins/r6-mira-elite-inspiracion-gadget.png": {
+      "revision": "cb:20260330195138",
+      "file": "Mira - Inspiraci\u00f3n Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-ying-elite-augmented-reality.png": {
+      "revision": "cb:20250909191117",
+      "file": "Ying - Augmented Reality in-game.webp"
+    },
+    "r6_images/skins/r6-ying-elite-augmented-reality-contents.png": {
+      "revision": "cb:20250909191051",
+      "file": "Ying - Augmented Reality Content.webp"
+    },
+    "r6_images/skins/r6-ying-elite-augmented-reality-gadget.png": {
+      "revision": "cb:20260304095043",
+      "file": "Ying - Augmented Reality Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-lesion-elite-nano-tox-32.png": {
+      "revision": "cb:20210801125309",
+      "file": "Lesion - Nano-Tox.PNG"
+    },
+    "r6_images/skins/r6-lesion-elite-nano-tox-32-contents.png": {
+      "revision": "cb:20190621213231",
+      "file": "B8e012a4-d369-4f48-8f29-f381d8495278.png"
+    },
+    "r6_images/skins/r6-lesion-elite-nano-tox-32-gadget.png": {
+      "revision": "cb:20260330195128",
+      "file": "Lesion - Nano-Tox 32 Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-zofia-elite-duch-bojowy.png": {
+      "revision": "cb:20210801125327",
+      "file": "Zofia Duch Bojowy Uniform.png"
+    },
+    "r6_images/skins/r6-zofia-elite-duch-bojowy-contents.png": {
+      "revision": "cb:20200526202234",
+      "file": "Zofia - Duch Bojowy Content.png"
+    },
+    "r6_images/skins/r6-zofia-elite-duch-bojowy-gadget.png": {
+      "revision": "cb:20260304095109",
+      "file": "Zofia - Duch Bojowy Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-zofia-elite-s-t-a-r-s-unit.png": {
+      "revision": "cb:20210801125334",
+      "file": "Zofia STARS Unit Uniform.png"
+    },
+    "r6_images/skins/r6-zofia-elite-s-t-a-r-s-unit-contents.png": {
+      "revision": "cb:20210323201022",
+      "file": "Zofia STARS Unit Content.png"
+    },
+    "r6_images/skins/r6-zofia-elite-s-t-a-r-s-unit-gadget.png": {
+      "revision": "cb:20260304095113",
+      "file": "Zofia - S.T.A.R.S. Unit Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-ela-elite-huk-sztuki.png": {
+      "revision": "cb:20210801125458",
+      "file": "Ela Huk Sztuk Elite Set.png"
+    },
+    "r6_images/skins/r6-ela-elite-huk-sztuki-contents.png": {
+      "revision": "cb:20191213135037",
+      "file": "Ela Huk Sztuk Content.PNG"
+    },
+    "r6_images/skins/r6-ela-elite-huk-sztuki-gadget.png": {
+      "revision": "cb:20260330195116",
+      "file": "Ela - Huk Sztuki Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-dokkaebi-elite-electro-beat.png": {
+      "revision": "cb:20210801125349",
+      "file": "dokk elite 2.png"
+    },
+    "r6_images/skins/r6-dokkaebi-elite-electro-beat-contents.png": {
+      "revision": "cb:20200520082559",
+      "file": "dokk elite content lowq.png"
+    },
+    "r6_images/skins/r6-dokkaebi-elite-electro-beat-gadget.png": {
+      "revision": "cb:20260304095132",
+      "file": "Dokkaebi - Electro Beat Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-vigil-elite-zero-day-threat.png": {
+      "revision": "cb:20211219030319",
+      "file": "Vigil - Zero-Day Threat in-game.png"
+    },
+    "r6_images/skins/r6-vigil-elite-zero-day-threat-contents.png": {
+      "revision": "cb:20211219030312",
+      "file": "Vigil - Zero-Day Threat Content.png"
+    },
+    "r6_images/skins/r6-vigil-elite-zero-day-threat-gadget.png": {
+      "revision": "cb:20260330195122",
+      "file": "Vigil - Zero- Day Threat Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-lion-elite-leon-s-kennedy.png": {
+      "revision": "cb:20210627005644",
+      "file": "Lion - Leon S Kennedy.png"
+    },
+    "r6_images/skins/r6-lion-elite-leon-s-kennedy-contents.png": {
+      "revision": "cb:20210825060856",
+      "file": "Lion - Leon S Kennedy Content.jpeg"
+    },
+    "r6_images/skins/r6-lion-elite-leon-s-kennedy-gadget.png": {
+      "revision": "cb:20260304095607",
+      "file": "Lion - Leon S. Kennedy Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-finka-elite-qcr-exo-prototype-nh02.png": {
+      "revision": "cb:20230326211713",
+      "file": "Finka - QCR Exo Prototype NH02 in-game.png"
+    },
+    "r6_images/skins/r6-finka-elite-qcr-exo-prototype-nh02-contents.png": {
+      "revision": "cb:20230326211714",
+      "file": "Finka - QCR Exo Prototype NH02 Content.png"
+    },
+    "r6_images/skins/r6-maestro-elite-one-last-job.png": {
+      "revision": "cb:20250909191105",
+      "file": "Maestro - One Last Job in-game.webp"
+    },
+    "r6_images/skins/r6-maestro-elite-one-last-job-contents.png": {
+      "revision": "cb:20250909191038",
+      "file": "Maestro - One Last Job Content.webp"
+    },
+    "r6_images/skins/r6-maestro-elite-one-last-job-gadget.png": {
+      "revision": "cb:20260330195316",
+      "file": "Maestro - One Last Job Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-alibi-elite-sophisticated-veener.png": {
+      "revision": "cb:20250909200012",
+      "file": "Alibi - Sophisticated Veener in-game.webp"
+    },
+    "r6_images/skins/r6-alibi-elite-sophisticated-veener-contents.png": {
+      "revision": "cb:20250909200013",
+      "file": "Alibi - Sophisticated Veener Content.webp"
+    },
+    "r6_images/skins/r6-alibi-elite-sophisticated-veener-gadget.png": {
+      "revision": "cb:20260302000100",
+      "file": "Alibi - Sophisticated Veneer Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-maverick-elite-hotshot-welder.png": {
+      "revision": "cb:20201111013626",
+      "file": "Maverick - Hotshot Welder in-game.png"
+    },
+    "r6_images/skins/r6-maverick-elite-hotshot-welder-contents.png": {
+      "revision": "cb:20201110014624",
+      "file": "Maverick - Hotshot Welder Content.png"
+    },
+    "r6_images/skins/r6-maverick-elite-hotshot-welder-gadget.png": {
+      "revision": "cb:20260304095455",
+      "file": "Maverick - Hotshot Welder Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-clash-elite-honor-bound-shield.png": {
+      "revision": "cb:20250909200011",
+      "file": "Clash - Honor-Bound Shield in-game.webp"
+    },
+    "r6_images/skins/r6-clash-elite-honor-bound-shield-contents.png": {
+      "revision": "cb:20250909200012",
+      "file": "Clash - Honor-Bound Shield Content.webp"
+    },
+    "r6_images/skins/r6-clash-elite-honor-bound-shield-gadget.png": {
+      "revision": "cb:20260304073424",
+      "file": "Clash - Honor-Bound Shield Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-nomad-elite-infinite-journey.png": {
+      "revision": "cb:20220723102510",
+      "file": "Nomad - Infinite Journey in-game.png"
+    },
+    "r6_images/skins/r6-nomad-elite-infinite-journey-contents.png": {
+      "revision": "cb:20220723102509",
+      "file": "Nomad - Infinite Journey Content.png"
+    },
+    "r6_images/skins/r6-nomad-elite-infinite-journey-gadget.png": {
+      "revision": "cb:20260304095600",
+      "file": "Nomad - Infinite Journey Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-kaid-elite-agent-el-fassi.png": {
+      "revision": "cb:20220723102505",
+      "file": "Kaid - Agent El Fassi in-game.png"
+    },
+    "r6_images/skins/r6-kaid-elite-agent-el-fassi-contents.png": {
+      "revision": "cb:20220723102503",
+      "file": "Kaid - Agent El Fassi Content.png"
+    },
+    "r6_images/skins/r6-kaid-elite-agent-el-fassi-gadget.png": {
+      "revision": "cb:20260301235902",
+      "file": "Kaid - Agent El Fassi Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-gridlock-elite-koality-rescue.png": {
+      "revision": "cb:20250910082544",
+      "file": "Gridlock - Koality Rescue in-game.webp"
+    },
+    "r6_images/skins/r6-gridlock-elite-koality-rescue-contents.png": {
+      "revision": "cb:20250910082544",
+      "file": "Gridlock - Koality Rescue Content.webp"
+    },
+    "r6_images/skins/r6-gridlock-elite-koality-rescue-gadget.png": {
+      "revision": "cb:20260302000118",
+      "file": "Gridlock - Koality Rescue Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-mozzie-elite-deadset-hero.png": {
+      "revision": "cb:20210627005653",
+      "file": "Mozzie - Deadset Hero.png"
+    },
+    "r6_images/skins/r6-mozzie-elite-deadset-hero-contents.png": {
+      "revision": "cb:20210804074811",
+      "file": "Mozzie - Deadset Hero Content.PNG"
+    },
+    "r6_images/skins/r6-mozzie-elite-deadset-hero-gadget.png": {
+      "revision": "cb:20260301235900",
+      "file": "Mozzie - Deadset Hero Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-n-kk-elite-midnight-crown.png": {
+      "revision": "cb:20250909200012",
+      "file": "Nokk - Midnight Crown in-game.webp"
+    },
+    "r6_images/skins/r6-n-kk-elite-midnight-crown-contents.png": {
+      "revision": "cb:20250909200011",
+      "file": "Nokk - Midnight Crown Content.webp"
+    },
+    "r6_images/skins/r6-warden-elite-spec-ops-beach.png": {
+      "revision": "cb:20221122221401",
+      "file": "Warden - Spec Ops Beach in-game.png"
+    },
+    "r6_images/skins/r6-warden-elite-spec-ops-beach-contents.png": {
+      "revision": "cb:20221122221359",
+      "file": "Warden - Spec Ops Beach Content.png"
+    },
+    "r6_images/skins/r6-warden-elite-spec-ops-beach-gadget.png": {
+      "revision": "cb:20260304095648",
+      "file": "Warden - Spec Ops Beach Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-goyo-elite-drastic-measures.png": {
+      "revision": "cb:20250930180335",
+      "file": "Goyo - Drastic Measures in-game.webp"
+    },
+    "r6_images/skins/r6-goyo-elite-drastic-measures-contents.png": {
+      "revision": "cb:20260221143244",
+      "file": "Goyo - Drastic Measures Content.webp"
+    },
+    "r6_images/skins/r6-goyo-elite-drastic-measures-gadget.png": {
+      "revision": "cb:20260304095711",
+      "file": "Goyo - Drastic Measures Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-kali-elite-masterframe-prototype-i.png": {
+      "revision": "cb:20201111013616",
+      "file": "Kali - Masterframe Prototype I in-game.png"
+    },
+    "r6_images/skins/r6-kali-elite-masterframe-prototype-i-contents.png": {
+      "revision": "cb:20201110014619",
+      "file": "Kali - Masterframe Prototype I Content.png"
+    },
+    "r6_images/skins/r6-kali-elite-masterframe-prototype-i-gadget.png": {
+      "revision": "cb:20260304095716",
+      "file": "Kali - Masterframe Prototype I Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-wamai-elite-director-of-acquisitions.png": {
+      "revision": "cb:20250909200010",
+      "file": "Wamai - Director Of Acquisitions in-game.webp"
+    },
+    "r6_images/skins/r6-wamai-elite-director-of-acquisitions-contents.png": {
+      "revision": "cb:20250909200011",
+      "file": "Wamai - Director Of Acquisitions Content.webp"
+    },
+    "r6_images/skins/r6-wamai-elite-director-of-acquisitions-gadget.png": {
+      "revision": "cb:20260304095727",
+      "file": "Wamai - Director Of Acquisitions Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-iana-elite-unit-designation-iana.png": {
+      "revision": "cb:20221122221358",
+      "file": "Iana - Unit Designation Iana in-game.png"
+    },
+    "r6_images/skins/r6-iana-elite-unit-designation-iana-contents.png": {
+      "revision": "cb:20221122221357",
+      "file": "Iana - Unit Designation Iana Content.png"
+    },
+    "r6_images/skins/r6-ace-elite-altruistic-ego.png": {
+      "revision": "cb:20211219030333",
+      "file": "Ace - Altruistic Ego in-game.png"
+    },
+    "r6_images/skins/r6-ace-elite-altruistic-ego-contents.png": {
+      "revision": "cb:20211219030326",
+      "file": "Ace - Altruistic Ego Content.png"
+    },
+    "r6_images/skins/r6-ace-elite-altruistic-ego-gadget.png": {
+      "revision": "cb:20260304094750",
+      "file": "Ace - Altruistic Ego Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-aruni-elite-always-forward.png": {
+      "revision": "cb:20250910082544",
+      "file": "Aruni - Always Forward in-game.webp"
+    },
+    "r6_images/skins/r6-aruni-elite-always-forward-contents.png": {
+      "revision": "cb:20250910082545",
+      "file": "Aruni - Always Forward Content.webp"
+    },
+    "r6_images/skins/r6-aruni-elite-always-forward-gadget.png": {
+      "revision": "cb:20260304094817",
+      "file": "Aruni - Always Forward Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-melusi-elite-umvikeli.png": {
+      "revision": "cb:20211111000401",
+      "file": "Melusi - Umvikeli in-game.png"
+    },
+    "r6_images/skins/r6-melusi-elite-umvikeli-contents.png": {
+      "revision": "cb:20211111000416",
+      "file": "Melusi - Umvikeli Content.png"
+    },
+    "r6_images/skins/r6-melusi-elite-umvikeli-gadget.png": {
+      "revision": "cb:20260304094840",
+      "file": "Melusi - Umvikeli Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-zero-elite-third-echelon.png": {
+      "revision": "cb:20230326211710",
+      "file": "Zero - Third Echelon in-game.png"
+    },
+    "r6_images/skins/r6-zero-elite-third-echelon-contents.png": {
+      "revision": "cb:20230326211712",
+      "file": "Zero - Third Echelon Content.png"
+    },
+    "r6_images/skins/r6-zero-elite-third-echelon-gadget.png": {
+      "revision": "cb:20260304094848",
+      "file": "Zero - Third Echelon Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-flores-elite-master-assassin.png": {
+      "revision": "cb:20260330193712",
+      "file": "Flores - Master Assassin in-game.png"
+    },
+    "r6_images/skins/r6-flores-elite-master-assassin-contents.png": {
+      "revision": "cb:20230326211716",
+      "file": "Flores - Master Assassin Content.png"
+    },
+    "r6_images/skins/r6-flores-elite-master-assassin-gadget.png": {
+      "revision": "cb:20260330195323",
+      "file": "Flores - Master Assassin Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-thunderbird-elite-tamer-of-the-white-howl.png": {
+      "revision": "cb:20260330194457",
+      "file": "Thunderbird - Tamer of the White Howl in-game.webp"
+    },
+    "r6_images/skins/r6-thunderbird-elite-tamer-of-the-white-howl-contents.png": {
+      "revision": "cb:20250910082544",
+      "file": "Thunderbird - Tamer of the White Howl Content.webp"
+    },
+    "r6_images/skins/r6-thunderbird-elite-tamer-of-the-white-howl-gadget.png": {
+      "revision": "cb:20260330195332",
+      "file": "Thunderbird - Tamer Of The White Howl Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-osa-elite-star-child.png": {
+      "revision": "cb:20260330194504",
+      "file": "Osa - Star Child in-game.webp"
+    },
+    "r6_images/skins/r6-osa-elite-star-child-contents.png": {
+      "revision": "cb:20250910082544",
+      "file": "Osa - Star Child Content.webp"
+    },
+    "r6_images/skins/r6-osa-elite-star-child-gadget.png": {
+      "revision": "cb:20260330195340",
+      "file": "Osa - Star Child Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-thorn-elite-fearsome-blaze.png": {
+      "revision": "cb:20260330194613",
+      "file": "Thorn - Fearsome Blaze in-game.webp"
+    },
+    "r6_images/skins/r6-thorn-elite-fearsome-blaze-contents.png": {
+      "revision": "cb:20250909175721",
+      "file": "Thorn - Fearsome Blaze Content.webp"
+    },
+    "r6_images/skins/r6-thorn-elite-fearsome-blaze-gadget.png": {
+      "revision": "cb:20260330195349",
+      "file": "Thorn - Fearsome Blaze Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-azami-elite-shade-of-vengeance.png": {
+      "revision": "cb:20260330193358",
+      "file": "Azami - Shade of Vengeance in-game.webp"
+    },
+    "r6_images/skins/r6-azami-elite-shade-of-vengeance-contents.png": {
+      "revision": "cb:20250909175721",
+      "file": "Azami - Shade of Vengeance Content.webp"
+    },
+    "r6_images/skins/r6-azami-elite-shade-of-vengeance-gadget.png": {
+      "revision": "cb:20260304083334",
+      "file": "Azami - Shade Of Vengeance Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-brava-elite-roughshod-charge.png": {
+      "revision": "cb:20260330193452",
+      "file": "Brava - Roughshod Charge in-game.webp"
+    },
+    "r6_images/skins/r6-brava-elite-roughshod-charge-contents.png": {
+      "revision": "cb:20250910090715",
+      "file": "Brava - Roughshod Charge Content.webp"
+    },
+    "r6_images/skins/r6-brava-elite-roughshod-charge-gadget.png": {
+      "revision": "cb:20260304072026",
+      "file": "Brava - Roughshod Charge Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-fenrir-elite-oneirophobia.png": {
+      "revision": "cb:20260330193550",
+      "file": "Fenrir - Oneirophobia in-game.webp"
+    },
+    "r6_images/skins/r6-fenrir-elite-oneirophobia-contents.png": {
+      "revision": "cb:20250909175721",
+      "file": "Fenrir - Oneirophobia Content.webp"
+    },
+    "r6_images/skins/r6-fenrir-elite-oneirophobia-gadget.png": {
+      "revision": "cb:20260304072100",
+      "file": "Fenrir - Oneirophobia Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-ram-elite-fully-equipped-downtime.png": {
+      "revision": "cb:20260330194728",
+      "file": "Ram - Fully-Equipped Downtime in-game.webp"
+    },
+    "r6_images/skins/r6-ram-elite-fully-equipped-downtime-contents.png": {
+      "revision": "cb:20250910090714",
+      "file": "Ram - Fully-Equipped Downtime Content.webp"
+    },
+    "r6_images/skins/r6-ram-elite-fully-equipped-downtime-gadget.png": {
+      "revision": "cb:20260304072118",
+      "file": "Ram - Fully Equipped Downtime Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-tubar-o-elite-hope-carnations.png": {
+      "revision": "cb:20260304072227",
+      "file": "Tubar\u00e3o - Hope Carnations in-game.webp"
+    },
+    "r6_images/skins/r6-tubar-o-elite-hope-carnations-contents.png": {
+      "revision": "cb:20260224211335",
+      "file": "Tubar\u00e3o - Hope Carnations Content.webp"
+    },
+    "r6_images/skins/r6-tubar-o-elite-hope-carnations-gadget.png": {
+      "revision": "cb:20260304072152",
+      "file": "Tubar\u00e3o - Hope Carnations Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-solid-snake-elite-old-snake.png": {
+      "revision": "cb:20260520085717",
+      "file": "Solid Snake - Old Snake in-game.webp"
+    },
+    "r6_images/skins/r6-solid-snake-elite-old-snake-contents.png": {
+      "revision": "cb:20260520085715",
+      "file": "Solid Snake - Old Snake Content.webp"
+    },
+    "r6_images/skins/r6-solid-snake-elite-old-snake-gadget.png": {
+      "revision": "cb:20260520085716",
+      "file": "Solid Snake - Old Snake Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-valkyrie-paragon-quintessence-of-form.png": {
+      "revision": "cb:20260304094330",
+      "file": "Valkyrie - Quintessence of Form in-game.png"
+    },
+    "r6_images/skins/r6-valkyrie-paragon-quintessence-of-form-contents.png": {
+      "revision": "cb:20260221131540",
+      "file": "MPX - Quintessence of Form in-game.png"
+    },
+    "r6_images/skins/r6-valkyrie-paragon-quintessence-of-form-gadget.png": {
+      "revision": "cb:20260304094138",
+      "file": "Valkyrie - Quintessence of Form Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-twitch-paragon-patron-of-a-million-works.png": {
+      "revision": "cb:20260304094259",
+      "file": "Twitch - Patron of a Million Works in-game.webp"
+    },
+    "r6_images/skins/r6-twitch-paragon-patron-of-a-million-works-contents.png": {
+      "revision": "cb:20260304071443",
+      "file": "F2 - Patron of a Million Works in-game.webp"
+    },
+    "r6_images/skins/r6-twitch-paragon-patron-of-a-million-works-gadget.png": {
+      "revision": "cb:20260304094200",
+      "file": "Twitch - Patron of a Million Works Gadget Skin.webp"
+    },
+    "r6_images/skins/r6-ace-paragon-heroic-legend-of-me.png": {
+      "revision": "cb:20260520085215",
+      "file": "Ace - Heroic Legend Of Me in-game.webp"
+    },
+    "r6_images/skins/r6-ace-paragon-heroic-legend-of-me-contents.png": {
+      "revision": "cb:20260520085214",
+      "file": "AK-12 - Heroic Legend Of Me in-game.webp"
+    },
+    "r6_images/skins/r6-ace-paragon-heroic-legend-of-me-gadget.png": {
+      "revision": "cb:20260520085212",
+      "file": "Ace - Heroic Legend Of Me Gadget Skin.webp"
     }
   }
 }
