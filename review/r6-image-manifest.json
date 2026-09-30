@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T18:31:52.303Z",
+  "generatedAt": "2026-09-30T20:15:48.710Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -9943,6 +9943,12 @@
     "r6_images/operators/heroes/r6-striker.png": {
       "url": "https://static.wikia.nocookie.net/rainbowsix/images/3/3a/Striker_Portrait.png/revision/latest?cb=20240528155627",
       "referer": "https://rainbowsix.fandom.com/wiki/Striker%20(Recruit)"
+    },
+    "r6_images/gadgets/r6-sentry.png": {
+      "local": "review/local-assets/gadget-no-unique-sentry.png"
+    },
+    "r6_images/gadgets/r6-striker.png": {
+      "local": "review/local-assets/gadget-no-unique-striker.png"
     }
   }
 }

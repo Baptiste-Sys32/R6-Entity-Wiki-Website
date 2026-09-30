@@ -92,6 +92,12 @@
     table.cx-wikitable .sq-img > div { width: 112px !important; height: 84px !important; max-width: 112px !important; margin: 0 !important; }
     table.cx-wikitable .sq-img img { width: 100% !important; height: 100% !important; object-fit: contain !important; }
     table.cx-wikitable td:first-child { width: 128px; }
+    /* Season patches live in the narrow left column beside the hero:
+       truncate the long highlights there (full text on hover). */
+    table.cx-wikitable.cx-compact-patches td.cx-hl { max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    @media (max-width: 860px) {
+      table.cx-wikitable.cx-compact-patches td.cx-hl { white-space: normal; max-width: none; }
+    }
     @media (max-width: 640px) {
       table.cx-wikitable .sq-img > div { width: 84px !important; height: 64px !important; max-width: 84px !important; }
       table.cx-wikitable td:first-child { width: 96px; }
@@ -424,7 +430,6 @@
       return (
         <div className="cx-article">
           <h1 className="cx-title">Operators</h1>
-          <p className="cx-lead">{OPERATORS.length} operators · {OPERATORS.filter((o) => o.side === 'Attacker').length} attackers · {OPERATORS.filter((o) => o.side === 'Defender').length} defenders</p>
           <WikiHeaderSearchPortal>
             <div className="flex gap-2">
               <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter operators..." aria-label="Filter operators"
@@ -437,7 +442,6 @@
             </div>
           </WikiHeaderSearchPortal>
           <FilterChips options={[{ id: 'All', label: 'All' }, { id: 'Attacker', label: 'Attacker' }, { id: 'Defender', label: 'Defender' }]} value={side} onChange={setSide} label="Filter by side" />
-          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{list.length} operators</p>
           {list.map((op) => (
             <div key={op.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
               <button type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-3 flex-1 min-w-0 text-left">
@@ -597,8 +601,15 @@
       const powerText = (!grosslySame && ubi && ubi.power && ubi.power.text) ? ubi.power.text : op.ability;
       const powerName = (ubi && ubi.power && ubi.power.name) || op.gadget;
       const gadgetNode = (() => {
-        // No art at all (Striker/Sentry have no unique power) -> text only,
-        // no placeholder icon box.
+        // No unique power (Striker/Sentry) -> text only on this page, no
+        // icon box. Their B&W logos live on the Gadgets list instead.
+        if (op.gadget === 'No Unique Gadget') {
+          return (
+            <CxSection id="gadget" title="Gadget">
+              <p><strong>{powerName}.</strong> {powerText}</p>
+            </CxSection>
+          );
+        }
         const gUbi = ubi && ubi.power && ubi.power.icon;
         const gUrl = gUbi ? `./${ubi.power.icon}` : (op.gadgetIcon ? `./${op.gadgetIcon}` : null);
         return (
@@ -694,6 +705,9 @@
               <div className="rounded-2xl p-3 text-center" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
                 <div className="font-semibold text-sm mb-2"><span style={{ color: 'var(--text)' }}>{powerName}</span></div>
                 {(() => {
+                  // Personas stay text-only here too (logo lives on the
+                  // Gadgets list); everyone else shows power art.
+                  if (op.gadget === 'No Unique Gadget') return null;
                   const pUbi = ubi && ubi.power && ubi.power.icon;
                   const pUrl = pUbi ? `./${ubi.power.icon}` : (op.gadgetIcon ? `./${op.gadgetIcon}` : null);
                   return pUrl ? (
@@ -840,12 +854,15 @@
         return map;
       }, []);
       const gadgetUsers = (g) => (g.users || []).map((name) => opByName.get(name) || opByName.get(normOpName(name))).filter(Boolean);
+      // B&W persona logos are true-white line art (vendored): same theme
+      // treatment as whitened Ubi art (inverted back in light mode).
+      const personaArt = (op) => (op.id === 'r6-striker' || op.id === 'r6-sentry') ? ' r6-ubi-art' : '';
       const Group = ({ title, items }) => (
         <div className="mb-6">
           <h2 className="cx-h2">{title}</h2>
           <table className="cx-wikitable"><thead><tr><th></th><th>Gadget</th><th>Operator</th></tr></thead>
             <tbody>{items.map((op) => (
-              <tr key={op.id}><td><span className="sq-img"><AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} /></span></td><td>{op.gadget}</td>
+              <tr key={op.id}><td><span className={`sq-img${personaArt(op)}`}><AssetFrame type="Gadget" imageUrl={op.gadgetIcon ? `./${op.gadgetIcon}` : null} /></span></td><td>{op.gadget}</td>
                 <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('operator', { id: op.id })}>{op.name}</button></td></tr>
             ))}</tbody></table>
         </div>
@@ -854,7 +871,6 @@
       return (
         <div className="cx-article">
           <h1 className="cx-title">Gadgets</h1>
-          <p className="cx-lead">{OPERATORS.length} unique gadgets by operator, plus {GADGETS.length} global secondaries.</p>
           <WikiHeaderSearchPortal>
             <div className="flex gap-2">
               <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter gadgets..." aria-label="Filter gadgets"
@@ -862,7 +878,6 @@
             </div>
           </WikiHeaderSearchPortal>
           <FilterChips options={SIDES} value={side} onChange={setSide} label="Filter by side" />
-          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{attackers.length + defenders.length + secondaries.length} gadgets</p>
           {(side === 'all' || side === 'Attacker') && <Group title="Attacker gadgets" items={attackers} />}
           {(side === 'all' || side === 'Defender') && <Group title="Defender gadgets" items={defenders} />}
           {(side === 'all' || side === 'global') && (
@@ -896,7 +911,6 @@
       return (
         <div className="cx-article">
           <h1 className="cx-title">Weapons</h1>
-          <p className="cx-lead">{WEAPONS.length} firearms across every operator loadout.</p>
           <WikiHeaderSearchPortal>
             <div className="flex gap-2">
               <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter weapons..." aria-label="Filter weapons"
@@ -904,7 +918,6 @@
             </div>
           </WikiHeaderSearchPortal>
           <FilterChips options={[{ id: 'all', label: 'All' }, ...types.map((t) => ({ id: t, label: t }))]} value={type} onChange={setType} label="Filter by type" />
-          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{list.length} weapons</p>
           <table className="cx-wikitable"><thead><tr><th></th><th>Weapon</th><th>Type</th><th>Damage</th><th>Fire rate</th></tr></thead>
             <tbody>{list.map((w) => (
               <tr key={w.name}><td>{(() => { const wU = ubiGunImage(w.name); const wUrl = wU || (w.image ? `./${w.image}` : null); return (<span className={`sq-img${wU ? ' r6-ubi-art' : ''}`}><AssetFrame type="Weapon" imageUrl={wUrl} /></span>); })()}</td>
@@ -951,6 +964,18 @@
         </ArticleShell>
       );
     };
+    // Shared operator row card (weapon "Used by" style): icon + name +
+    // gadget/squad subline. Replaces the old season pills, whose forced
+    // 28px icon span overflowed the rounded pill (icon-on-top bug).
+    const OpUserCard = ({ op, setView }) => (
+      <div className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
+        <button type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-3 flex-1 min-w-0 text-left">
+          <span className="sq-img"><AssetFrame type="Operator" imageUrl={`./r6_images/operators/icons/${op.id}.png`} fallbackIcon={<OpAvatar name={op.name} side={op.side} />} /></span>
+          <span className="min-w-0"><span className="block font-semibold truncate" style={{ color: 'var(--text)' }}>{op.name}</span>
+            <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{op.gadget} · {op.squad}</span></span>
+        </button>
+      </div>
+    );
     const WeaponArticle = ({ id, setView }) => {
       const weapon = weaponsByName.get(id) || resolveWeapon(id);
       if (!weapon) return <div className="cx-article"><h1 className="cx-title">Not found</h1><p style={{ color: 'var(--muted)' }}>Unknown weapon.</p></div>;
@@ -1020,15 +1045,7 @@
           ) : null}
           {users.length ? (
             <CxSection id="users" title="Used by">
-              {users.map((op) => (
-                <div key={op.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
-                  <button type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-3 flex-1 min-w-0 text-left">
-                    <span className="sq-img"><AssetFrame type="Operator" imageUrl={`./r6_images/operators/icons/${op.id}.png`} fallbackIcon={<OpAvatar name={op.name} side={op.side} />} /></span>
-                    <span className="min-w-0"><span className="block font-semibold truncate" style={{ color: 'var(--text)' }}>{op.name}</span>
-                      <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{op.gadget} · {op.squad}</span></span>
-                  </button>
-                </div>
-              ))}
+              {users.map((op) => <OpUserCard key={op.id} op={op} setView={setView} />)}
             </CxSection>
           ) : null}
         </ArticleShell>
@@ -1064,14 +1081,12 @@
       return (
         <div className="cx-article">
           <h1 className="cx-title">Attachments</h1>
-          <p className="cx-lead">{ATTACHMENTS.length} sights, grips, barrels and gadgets.</p>
           <WikiHeaderSearchPortal>
             <div className="flex gap-2">
               <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter attachments..." aria-label="Filter attachments"
                 className="flex-1 rounded-2xl px-4 py-2.5 text-sm" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }} />
             </div>
           </WikiHeaderSearchPortal>
-          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{grouped.reduce((n, g) => n + g.items.length, 0) + rest.length} attachments</p>
           {grouped.map((g) => (g.items.length ? (
             <div key={g.id} className="mb-6">
               <h2 className="cx-h2">{g.title}</h2>
@@ -1098,7 +1113,6 @@
       return (
       <div className="cx-article">
         <h1 className="cx-title">Maps</h1>
-        <p className="cx-lead">{MAPS.length} multiplayer maps.</p>
         <WikiHeaderSearchPortal>
           <div className="flex gap-2">
             <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter maps..." aria-label="Filter maps"
@@ -1109,7 +1123,6 @@
             </select>
           </div>
         </WikiHeaderSearchPortal>
-        <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{list.length} maps</p>
         {list.map((m) => (
           <div key={m.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
             <span className="sq-img"><AssetFrame type="Map" imageUrl={m.thumb ? `./${m.thumb}` : null} /></span>
@@ -1286,7 +1299,19 @@
       const query = q.trim().toLowerCase();
       const years = useMemo(() => [...new Set(SEASONS.map((s) => s.year))].sort((a, b) => b - a), []);
       const filtered = SEASONS.filter((s) => (year === 'all' || s.year === year)
-        && (!query || (s.name + ' ' + s.code + ' ' + (s.operators || []).join(' ')).toLowerCase().includes(query)));
+        && (!query || (s.name + ' ' + s.code + ' ' + (s.operators || []).join(' ') + ' ' + (s.seasonOperators || []).join(' ')).toLowerCase().includes(query)));
+      // Season subtitle: only operator releases/reworks, never dates
+      // (raw "TS:/WW:" strings must not leak). Reworks = infobox names
+      // present in the roster but not released by this season.
+      const rosterNames = useMemo(() => new Set(OPERATORS.map((o) => o.name)), []);
+      const seasonSub = (s) => {
+        const fresh = s.operators || [];
+        const reworked = (s.seasonOperators || []).filter((n) => rosterNames.has(n) && !fresh.includes(n));
+        const parts = [];
+        if (fresh.length) parts.push(`New: ${fresh.join(' · ')}`);
+        if (reworked.length) parts.push(`Rework: ${reworked.join(' · ')}`);
+        return parts.join(' — ');
+      };
       const byYear = (() => {
         const groups = {};
         filtered.forEach((s) => { (groups[s.year] = groups[s.year] || []).push(s); });
@@ -1295,7 +1320,6 @@
       return (
         <div className="cx-article">
           <h1 className="cx-title">Seasons</h1>
-          <p className="cx-lead">{SEASONS.length} seasons from Year 1 to Year {Math.max(...SEASONS.map((s) => s.year))}.</p>
           <WikiHeaderSearchPortal>
             <div className="flex gap-2">
               <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter seasons..." aria-label="Filter seasons"
@@ -1303,7 +1327,6 @@
             </div>
           </WikiHeaderSearchPortal>
           <FilterChips options={[{ id: 'all', label: 'All' }, ...years.map((y) => ({ id: y, label: `Year ${y}` }))]} value={year} onChange={setYear} label="Filter by year" />
-          <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{filtered.length} seasons</p>
           {byYear.map((g) => (
             <div key={g.year} className="mb-6">
               <h2 className="cx-h2">Year {g.year}</h2>
@@ -1311,7 +1334,7 @@
                 <div key={s.id} className="w-full flex items-center gap-3 rounded-2xl p-3 mb-2" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
                   <button type="button" onClick={() => setView('season', { id: s.id })} className="flex-1 min-w-0 text-left">
                     <span className="block font-semibold" style={{ color: 'var(--text)' }}>{s.name} <span className="text-xs font-normal" style={{ color: 'var(--muted)' }}>{s.code}</span></span>
-                    <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{(s.operators || []).join(' · ') || s.released}</span>
+                    <span className="block text-xs truncate" style={{ color: 'var(--muted)' }}>{seasonSub(s)}</span>
                   </button>
                   <FavButton active={(favorites.seasons || []).includes(s.id)} onToggle={() => onToggleFavorite('Season', s.id)} label={`Favorite ${s.name}`} />
                 </div>
@@ -1328,39 +1351,38 @@
       if (!s) return <div className="cx-article"><h1 className="cx-title">Not found</h1></div>;
       const seasonMap = MAPS.find((m) => m.name === s.map);
       const seasonPatches = patchesForSeason(s);
+      const seasonOps = (s.operators || []).map((name) => OPERATORS.find((o) => o.name === name)).filter(Boolean);
+      const seasonOpNames = new Set(seasonOps.map((o) => o.name));
+      const missingOps = (s.operators || []).filter((n) => !seasonOpNames.has(n));
+      const hasOps = seasonOps.length + missingOps.length > 0;
+      // Patches first, operators below — rendered in the left column
+      // (leadExtra) beside the hero infobox, TOC order matches.
+      const patchesNode = seasonPatches.length ? (
+        <CxSection id="patches" title="Patches">
+          <table className="cx-wikitable cx-compact-patches"><thead><tr><th>Patch</th><th>Date</th><th>Highlights</th></tr></thead>
+            <tbody>{seasonPatches.map((p, i) => (
+              <tr key={i}><td className="font-semibold">{p.url ? <a className="cx-alink" href={p.url} target="_blank" rel="noreferrer">{p.version}{p.latest ? ' (latest)' : ''}</a> : <span>{p.version}{p.latest ? ' (latest)' : ''}</span>}</td>
+                <td>{p.date}</td><td className="cx-hl" title={p.highlights || ''}>{p.highlights || '—'}</td></tr>
+            ))}</tbody></table>
+          <p className="text-xs mt-1" style={{ color: 'var(--muted)' }}>Patch history via Liquipedia contributors (CC BY-SA 3.0).</p>
+        </CxSection>
+      ) : null;
+      const operatorsNode = hasOps ? (
+        <CxSection id="operators" title="Operators">
+          {seasonOps.map((op) => <OpUserCard key={op.id} op={op} setView={setView} />)}
+          {missingOps.map((name) => <span key={name} className="block text-sm mb-1" style={{ color: 'var(--muted)' }}>{name}</span>)}
+        </CxSection>
+      ) : null;
       return (
         <ArticleShell
           crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Seasons', onClick: () => setView('seasons') }, { label: s.name }]}
           title={s.name}
           lead={<p>{s.blurb}</p>}
-          toc={[...((s.operators || []).length > 0 ? [{ id: 'operators', label: 'Operators' }] : []), ...(seasonPatches.length ? [{ id: 'patches', label: 'Patches' }] : [])]}
+          toc={[...(seasonPatches.length ? [{ id: 'patches', label: 'Patches' }] : []), ...(hasOps ? [{ id: 'operators', label: 'Operators' }] : [])]}
           categories={['Seasons', s.code]}
           infobox={{ title: s.code, sub: 'Season', image: s.cover ? `./${s.cover}` : (seasonMap && seasonMap.thumb ? `./${seasonMap.thumb}` : null), imageAlt: s.name, imageType: 'Map', rows: [{ label: 'Released', value: s.released || '—' }, ...(s.patch ? [{ label: 'Patch', value: s.patch }] : []), { label: 'Map', value: (s.maps && s.maps.length ? s.maps.join(', ') : (s.map || '—')) }, { label: 'Operators', value: (s.operators || []).join(', ') || '—' }] }}
+          leadExtra={<>{patchesNode}{operatorsNode}</>}
         >
-          {(s.operators || []).length > 0 ? (
-            <CxSection id="operators" title="Operators">
-              <div className="flex flex-wrap gap-2">
-                {s.operators.map((name) => {
-                  const op = OPERATORS.find((o) => o.name === name);
-                  return op ? (
-                    <button key={name} type="button" onClick={() => setView('operator', { id: op.id })} className="flex items-center gap-2 rounded-full pl-1 pr-3 py-1 text-sm font-semibold" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)', color: 'var(--text)' }}>
-                      <span className="sq-img" style={{ width: '28px', height: '28px', display: 'inline-flex' }}><AssetFrame type="Operator" imageUrl={op.icon ? `./${op.icon}` : null} fallbackIcon={<OpAvatar name={op.name} side={op.side} size={28} />} /></span>{op.name}
-                    </button>
-                  ) : <span key={name} className="text-sm" style={{ color: 'var(--muted)' }}>{name}</span>;
-                })}
-              </div>
-            </CxSection>
-          ) : null}
-          {seasonPatches.length ? (
-            <CxSection id="patches" title="Patches">
-              <table className="cx-wikitable"><thead><tr><th>Patch</th><th>Date</th><th>Highlights</th></tr></thead>
-                <tbody>{seasonPatches.map((p, i) => (
-                  <tr key={i}><td className="font-semibold">{p.url ? <a className="cx-alink" href={p.url} target="_blank" rel="noreferrer">{p.version}{p.latest ? ' (latest)' : ''}</a> : <span>{p.version}{p.latest ? ' (latest)' : ''}</span>}</td>
-                    <td>{p.date}</td><td>{p.highlights || '—'}</td></tr>
-                ))}</tbody></table>
-              <p className="text-xs mt-1" style={{ color: 'var(--muted)' }}>Patch history via Liquipedia contributors (CC BY-SA 3.0).</p>
-            </CxSection>
-          ) : null}
           <NotesEditor title="Season Notes" value={note || ''} onChange={onNoteChange} placeholder="Meta reads, bans, strats..." />
         </ArticleShell>
       );

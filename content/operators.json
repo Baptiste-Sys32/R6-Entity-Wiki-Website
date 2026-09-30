@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T18:31:52.303Z",
+  "generatedAt": "2026-09-30T20:15:48.710Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -3882,7 +3882,7 @@
       "speed": 2,
       "icon": null,
       "hero": "r6_images/operators/heroes/r6-sentry.png",
-      "gadgetIcon": null,
+      "gadgetIcon": "r6_images/gadgets/r6-sentry.png",
       "weapons": [
         {
           "slot": "primary",
@@ -3960,7 +3960,7 @@
       "speed": 2,
       "icon": null,
       "hero": "r6_images/operators/heroes/r6-striker.png",
-      "gadgetIcon": null,
+      "gadgetIcon": "r6_images/gadgets/r6-striker.png",
       "weapons": [
         {
           "slot": "primary",

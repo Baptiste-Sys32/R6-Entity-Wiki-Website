@@ -18,6 +18,15 @@ const FANDOM_API = 'https://rainbowsix.fandom.com/api.php';
 const UA = 'R6-Siege-Wiki-Sync/0.1 (fan wiki content sync; contact via repo issues)';
 const SLEEP_MS = 350;
 
+// Pinned B&W persona logos (vendored force-whitened line art, same look as
+// the whitened Ubi set): the Gadgets list shows these for the "No Unique
+// Gadget" rows instead of the "GA" placeholder doc. Operator pages stay
+// text-only by design (art suppressed in index.html for personas).
+const PERSONA_GADGET_ART = {
+  'r6-sentry': 'review/local-assets/gadget-no-unique-sentry.png',
+  'r6-striker': 'review/local-assets/gadget-no-unique-striker.png',
+};
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const sleepFn = sleep;
 async function fandom(params) {
@@ -100,6 +109,11 @@ async function main() {
     // Drop undefined keys (JSON-clean).
     const last = opsDoc.operators[opsDoc.operators.length - 1];
     Object.keys(last).forEach((k) => last[k] === undefined && delete last[k]);
+    if (PERSONA_GADGET_ART[id]) {
+      const rel = `r6_images/gadgets/${id}.png`;
+      manifest.images[rel] = { local: PERSONA_GADGET_ART[id] };
+      last.gadgetIcon = rel;
+    }
     loreDoc.entries[id] = { biography: intro || null, quotes: quote ? [quote] : [] };
     if (!loreDoc.entries[id].biography) delete loreDoc.entries[id].biography;
     added += 1;
@@ -113,6 +127,12 @@ async function main() {
   let seasonsDirty = false;
   for (const u of ubi.filter((o) => ['r6-sentry', 'r6-striker'].includes(o.opId))) {
     const id = u.opId;
+    if (PERSONA_GADGET_ART[id]) {
+      const rel = `r6_images/gadgets/${id}.png`;
+      manifest.images[rel] = { local: PERSONA_GADGET_ART[id] };
+      const op = opsDoc.operators.find((o) => o.id === id);
+      if (op) op.gadgetIcon = rel;
+    }
     const prev = loreDoc.entries[id] || {};
     loreDoc.entries[id] = {
       biography: prev.biography || null,
