@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T06:14:56.010Z",
+  "generatedAt": "2026-09-30T12:48:36.685Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -10123,6 +10123,9 @@
     "r6_images/ubi/mqdefault.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75t7NR33Wx6QqE6GSjX4Bl/0415cdad52a25604ee9eec90a849b5d0/mqdefault.jpg",
       "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+    },
+    "r6_images/ubi-gadgets/r6s-operator-ability-blackbeard-hull.png": {
+      "local": "review/local-assets/r6s-operator-ability-blackbeard-hull.png"
     }
   },
   "r6_images/attachments/r6-attach-scope-1-5x.png": {

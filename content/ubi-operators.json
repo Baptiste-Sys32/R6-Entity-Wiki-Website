@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T07:33:04.337Z",
+  "generatedAt": "2026-09-30T12:48:36.685Z",
   "metadata": {
     "sources": {
       "ubisoft": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/<slug> (downloaded icons+posters; mp4 hotlinked)"
@@ -379,7 +379,7 @@
       "power": {
         "name": "H.U.L.L. ADAPTABLE SHIELD",
         "text": "Blackbeard comes equipped with the H.U.L.L. Adaptable Shield. The shield is capable of adapting it&#x27;s shape to grant the best cover while on foot and in rappel. The shield also includes a breaching pneumatic system that allows Blackbeard to create his own rotations by destroy soft walls. Blackbeard&#x27;s weapon skills allow him to simultaneously equip the H.U.L.L. Adaptable Shield and primary weapons.",
-        "icon": "r6_images/ubi-gadgets/r6s-operator-ability-blackbeard-1-.png",
+        "icon": "r6_images/ubi-gadgets/r6s-operator-ability-blackbeard-hull.png",
         "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4vqZbu81Gncpt5GQPxy3So/93a4e532ee86cb543fe2df8a1763041d/r6s-blackbeard-hull-gadget-video.mp4",
         "mp4Poster": "r6_images/ubi/r6s-blackbeard-hull-gadget.jpg"
       },

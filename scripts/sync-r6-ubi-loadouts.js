@@ -44,6 +44,13 @@ const NAME_MAP = {
   'PROXIMITY ALARM': 'Proximity Alarm',
 };
 
+// Pinned user-supplied power art (vendored under review/local-assets/):
+// Ubisoft hosts no H.U.L.L. schematic; the user's line-art is canonical.
+// Wiki can never clobber it; resyncs converge.
+const POWER_ART_OVERRIDES = {
+  blackbeard: { local: 'review/local-assets/r6s-operator-ability-blackbeard-hull.png' },
+};
+
 function parsePage(html, slug) {
   // --- loadout categories (DOM, stable across locales) ---
   const catRe = /operator__loadout__category__title.*?data-innertext="([^"]+)"/gi;
@@ -185,9 +192,17 @@ async function main() {
     const powerRaw = p.powers[0] || null;
     let power = null;
     if (powerRaw) {
-      const rel = fileOf(powerRaw.url, `${slug}-ability.png`, 'ubi-gadgets');
-      try { await ensureFile(powerRaw.url, rel, referer); }
-      catch (e) { console.warn(`sync-ubi-loadouts: img failed ${slug}:power (${String(e.message).split('\n')[0]})`); }
+      const powerPin = POWER_ART_OVERRIDES[slug];
+      const rel = powerPin?.local
+        ? `r6_images/ubi-gadgets/${powerPin.local.split('/').pop()}`
+        : fileOf(powerRaw.url, `${slug}-ability.png`, 'ubi-gadgets');
+      if (powerPin?.local) {
+        manifest.images[rel] = manifest.images[rel] || { local: powerPin.local };
+        console.log(`sync-ubi-loadouts: pinned power art ${slug} (${powerPin.local})`);
+      } else {
+        try { await ensureFile(powerRaw.url, rel, referer); }
+        catch (e) { console.warn(`sync-ubi-loadouts: img failed ${slug}:power (${String(e.message).split('\n')[0]})`); }
+      }
       let mp4Poster = null;
       if (p.abilityPoster) {
         mp4Poster = fileOf(p.abilityPoster, `${slug}-ability-poster.jpg`, 'ubi');

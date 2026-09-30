@@ -84,8 +84,10 @@
     /* R6: Ubisoft ships dark-on-transparent art (made for light pages);
        on our dark theme it renders as white line-art like in-game.
        Light mode needs no inversion. Fandom full-color art never inverts. */
-    .r6-ubi-art { filter: invert(1); }
-    body.light-mode .r6-ubi-art { filter: none; }
+    /* R6: true-white Ubisoft art renders raw on the dark theme.
+       Light mode inverts it back to dark-on-light. Fandom art untouched. */
+    .r6-ubi-art { filter: none; }
+    body.light-mode .r6-ubi-art { filter: invert(1); }
     table.cx-wikitable .sq-img div { background: none !important; border: none !important; box-shadow: none !important; }
     table.cx-wikitable .sq-img > div { width: 112px !important; height: 84px !important; max-width: 112px !important; margin: 0 !important; }
     table.cx-wikitable .sq-img img { width: 100% !important; height: 100% !important; object-fit: contain !important; }
@@ -205,10 +207,9 @@
       if (hit && hit.file) return `./${hit.file}`;
       return null;
     };
-    // Ubisoft ships dark-on-transparent art (made for light backgrounds);
-    // on our dark theme it renders as white line-art like in-game.
-    // Fandom full-color fallback renders must never invert.
-    const ubiInvert = (url) => (url && /r6_images\/ubi/.test(url) ? 'invert(1)' : undefined);
+    // Ubisoft art files are normalized to true-white line-art (see
+    // scripts + review/local-assets pipeline); the r6-ubi-art class marks
+    // their render spots. Fandom full-color art never gets the class.
     const normPatchKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const patchesForSeason = (season) => {
       if (!season) return [];
@@ -595,14 +596,20 @@
       })();
       const powerText = (!grosslySame && ubi && ubi.power && ubi.power.text) ? ubi.power.text : op.ability;
       const powerName = (ubi && ubi.power && ubi.power.name) || op.gadget;
-      const gadgetNode = (
-        <CxSection id="gadget" title="Gadget">
-          <div className="flex items-center gap-3">
-            <span className="sq-img"><AssetFrame type="Gadget" imageUrl={(ubi && ubi.power && ubi.power.icon) ? `./${ubi.power.icon}` : (op.gadgetIcon ? `./${op.gadgetIcon}` : null)} /></span>
-            <p><strong>{powerName}.</strong> {powerText}</p>
-          </div>
-        </CxSection>
-      );
+      const gadgetNode = (() => {
+        // No art at all (Striker/Sentry have no unique power) -> text only,
+        // no placeholder icon box.
+        const gUbi = ubi && ubi.power && ubi.power.icon;
+        const gUrl = gUbi ? `./${ubi.power.icon}` : (op.gadgetIcon ? `./${op.gadgetIcon}` : null);
+        return (
+          <CxSection id="gadget" title="Gadget">
+            <div className="flex items-center gap-3">
+              {gUrl ? <span className={`sq-img${gUbi ? ' r6-ubi-art' : ''}`}><AssetFrame type="Gadget" imageUrl={gUrl} /></span> : null}
+              <p><strong>{powerName}.</strong> {powerText}</p>
+            </div>
+          </CxSection>
+        );
+      })();
       const gunAnchorId = (name) => `attach-gun-${normWeaponKey(name)}`;
       // Gun art click: expand Attachments and smooth-scroll to that gun's
       // own block (same expand+scroll+retry pattern as TOC navigation).
@@ -628,13 +635,29 @@
                 <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
                   {items.map((w, i) => {
                     const canon = slot === 'gadget' ? null : resolveWeapon(w.name);
-                    const img = slot === 'gadget'
+                    // Track art SOURCE (not URL): Ubisoft downloads render raw
+                    // (true-white files need no filter); Fandom art never inverts.
+                    const art = slot === 'gadget'
                       ? (() => {
                         const ubiIcon = ubiGadgetIcons.get(String(w.name).toLowerCase());
+                        if (ubiIcon) return { url: `./${ubiIcon}`, ubi: true };
                         const gid = w.gadgetId && gadgetsById.get(w.gadgetId);
-                        return ubiIcon ? `./${ubiIcon}` : (gid && gid.image ? `./${gid.image}` : null);
+                        return { url: (gid && gid.image ? `./${gid.image}` : null), ubi: false };
                       })()
-                      : (ubiGunImage(w.name) || (canon && canon.image ? `./${canon.image}` : (w.image ? `./${w.image}` : null)));
+                      : (() => {
+                        const u = ubiGunImage(w.name);
+                        if (u) return { url: u, ubi: true };
+                        const fallback = canon && canon.image ? `./${canon.image}` : (w.image ? `./${w.image}` : null);
+                        // The "weapon" IS the unique power (H.U.L.L. shield):
+                        // show power art instead of an empty card.
+                        if (!fallback && ubi && ubi.power && ubi.power.icon && ubi.power.name
+                          && normWeaponKey(w.name) === normWeaponKey(ubi.power.name)) {
+                          return { url: `./${ubi.power.icon}`, ubi: true };
+                        }
+                        return { url: fallback, ubi: false };
+                      })();
+                    const img = art.url;
+                    const artCls = `sq-img block w-full mx-auto${art.ubi ? ' r6-ubi-art' : ''}`;
                     const nameNode = slot === 'gadget' && w.gadgetId && gadgetsById.get(w.gadgetId) ? (
                       <button type="button" className="cx-alink font-semibold text-sm" onClick={() => setView('gadget', { id: w.gadgetId })}>{w.name}</button>
                     ) : slot !== 'gadget' && canon ? (
@@ -651,9 +674,9 @@
                       <div key={`${w.name}-${i}`} className="rounded-2xl p-3 text-center" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
                         <div className="font-semibold text-sm mb-2">{nameNode}</div>
                         {slot === 'gadget' || !canon ? (
-                          img ? <span className={`sq-img block w-full mx-auto${ubiInvert(img) ? ' r6-ubi-art' : ''}`} style={{ height: '140px' }}><AssetFrame type="Gadget" size="fill" imageUrl={img} /></span> : null
+                          img ? <span className={artCls} style={{ height: '140px' }}><AssetFrame type="Gadget" size="fill" imageUrl={img} /></span> : null
                         ) : (
-                          <button type="button" onClick={() => scrollToGun(w.name)} title={`${w.name} attachments`} aria-label={`Jump to ${w.name} attachments`} className={`sq-img block w-full mx-auto${ubiInvert(img) ? ' r6-ubi-art' : ''}`} style={{ height: '140px', cursor: 'pointer' }}>
+                          <button type="button" onClick={() => scrollToGun(w.name)} title={`${w.name} attachments`} aria-label={`Jump to ${w.name} attachments`} className={artCls} style={{ height: '140px', cursor: 'pointer' }}>
                             <AssetFrame type="Weapon" size="fill" imageUrl={img} />
                           </button>
                         )}
@@ -670,11 +693,15 @@
             <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
               <div className="rounded-2xl p-3 text-center" style={{ background: 'var(--panel)', border: '1px solid var(--stroke)' }}>
                 <div className="font-semibold text-sm mb-2"><span style={{ color: 'var(--text)' }}>{powerName}</span></div>
-                {(ubi && ubi.power && ubi.power.icon) || op.gadgetIcon ? (
-                  <span className={`sq-img block w-full mx-auto${ubiInvert((ubi && ubi.power && ubi.power.icon) ? `./${ubi.power.icon}` : `./${op.gadgetIcon}`) ? ' r6-ubi-art' : ''}`} style={{ height: '140px' }}>
-                    <AssetFrame type="Gadget" size="fill" imageUrl={(ubi && ubi.power && ubi.power.icon) ? `./${ubi.power.icon}` : `./${op.gadgetIcon}`} />
-                  </span>
-                ) : null}
+                {(() => {
+                  const pUbi = ubi && ubi.power && ubi.power.icon;
+                  const pUrl = pUbi ? `./${ubi.power.icon}` : (op.gadgetIcon ? `./${op.gadgetIcon}` : null);
+                  return pUrl ? (
+                    <span className={`sq-img block w-full mx-auto${pUbi ? ' r6-ubi-art' : ''}`} style={{ height: '140px' }}>
+                      <AssetFrame type="Gadget" size="fill" imageUrl={pUrl} />
+                    </span>
+                  ) : null;
+                })()}
               </div>
             </div>
           </div>
@@ -880,7 +907,7 @@
           <p className="text-sm my-2" style={{ color: 'var(--muted)' }}>{list.length} weapons</p>
           <table className="cx-wikitable"><thead><tr><th></th><th>Weapon</th><th>Type</th><th>Damage</th><th>Fire rate</th></tr></thead>
             <tbody>{list.map((w) => (
-              <tr key={w.name}><td><span className={`sq-img${ubiInvert(ubiGunImage(w.name) || (w.image ? `./${w.image}` : null)) ? ' r6-ubi-art' : ''}`}><AssetFrame type="Weapon" imageUrl={ubiGunImage(w.name) || (w.image ? `./${w.image}` : null)} /></span></td>
+              <tr key={w.name}><td>{(() => { const wU = ubiGunImage(w.name); const wUrl = wU || (w.image ? `./${w.image}` : null); return (<span className={`sq-img${wU ? ' r6-ubi-art' : ''}`}><AssetFrame type="Weapon" imageUrl={wUrl} /></span>); })()}</td>
                 <td><button type="button" className="cx-alink font-semibold" onClick={() => setView('weapon', { id: w.name })}>{w.name}</button></td>
                 <td>{w.type || '—'}</td><td>{w.damage || '—'}</td><td>{w.rof ? `${w.rof} RPM` : '—'}</td></tr>
             ))}</tbody></table>
