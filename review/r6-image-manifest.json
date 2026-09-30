@@ -10169,5 +10169,8 @@
   },
   "r6_images/attachments/r6-attach-vertical-grip.png": {
     "local": "review/local-assets/attach-vertical-grip.webp"
+  },
+  "r6_images/attachments/r6-attach-horizontal-grip.png": {
+    "local": "review/local-assets/attach-horizontal-grip.png"
   }
 }

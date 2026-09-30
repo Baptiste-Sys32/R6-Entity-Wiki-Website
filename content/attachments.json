@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T16:36:59.058Z",
+  "generatedAt": "2026-09-30T08:26:39.487Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php (CC-BY-SA)"
@@ -300,7 +300,7 @@
     {
       "name": "Horizontal Grip",
       "type": "Grip",
-      "image": null,
+      "image": "r6_images/attachments/r6-attach-horizontal-grip.png",
       "effect": "The Horizontal Grip is a weapon attachment featured in Tom Clancy's Rainbow Six Siege.",
       "compat": [],
       "id": "r6-attach-horizontal-grip",
