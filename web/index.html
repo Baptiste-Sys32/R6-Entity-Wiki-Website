@@ -1132,6 +1132,11 @@
       const [floorTab, setFloorTab] = useState('all');
       const visibleLayouts = floorTab === 'all' ? layouts : layouts.filter((l) => l.floor === floorTab);
       const floorTabs = [...new Set(layouts.map((l) => l.floor))];
+      const bombSites = m.bombSites || [];
+      const toc = [
+        ...(layouts.length ? [{ id: 'layouts', label: 'Layouts' }] : []),
+        ...(bombSites.length ? [{ id: 'bombsites', label: 'Bomb sites' }] : []),
+      ];
       return (
         <ArticleShell
           crumbs={[{ label: 'Main page', onClick: () => setView('home') }, { label: 'Maps', onClick: () => setView('maps') }, { label: m.name }]}
@@ -1139,7 +1144,7 @@
           lead={<p>{m.blurb || m.setting}</p>}
           categories={['Maps']}
           infobox={{ title: m.name, sub: 'Multiplayer map', image: m.thumb ? `./${m.thumb}` : null, imageAlt: m.name, imageType: 'Map', rows: [{ label: 'Setting', value: m.setting || '—' }, { label: 'Terrain', value: m.terrain || '—' }, { label: 'Modes', value: (m.modes || []).join(' · ') }] }}
-          toc={layouts.length ? [{ id: 'layouts', label: 'Layouts' }] : null}
+          toc={toc}
         >
           <CxSection id="layouts" title="Layouts">
             {!layouts.length ? (
@@ -1174,6 +1179,11 @@
               </div>
             )}
           </CxSection>
+          {bombSites.length ? (
+            <CxSection id="bombsites" title="Bomb sites">
+              <ul>{bombSites.map((pair, i) => <li key={i}>{pair.join(' / ')}</li>)}</ul>
+            </CxSection>
+          ) : null}
           <NotesEditor title="Map Notes" value={note || ''} onChange={onNoteChange} placeholder="Setups, callouts, defaults..." />
         </ArticleShell>
       );

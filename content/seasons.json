@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T08:29:58.491Z",
+  "generatedAt": "2026-09-30T18:31:52.303Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -691,7 +691,10 @@
       "code": "Y9S2",
       "year": 9,
       "released": "TS: May 27, 2024\nWW: June 11, 2024",
-      "operators": [],
+      "operators": [
+        "Sentry",
+        "Striker"
+      ],
       "map": "",
       "maps": [],
       "patch": "",

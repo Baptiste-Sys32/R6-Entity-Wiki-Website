@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T12:48:36.685Z",
+  "generatedAt": "2026-09-30T18:31:52.303Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -1798,52 +1798,16 @@
       "file": "Siege Bank Thumbnail.PNG",
       "width": 400
     },
-    "r6_images/maps/r6-bank-layout-1.png": {
-      "file": "Siege Bank Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-2.png": {
-      "file": "Siege Bank Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-3.png": {
-      "file": "Siege Bank Layout 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-4.png": {
-      "file": "Siege Bank Layout 4.jpg",
-      "width": 800
-    },
     "r6_images/maps/r6-bank-layout-5.png": {
-      "file": "Bank 2nd floor secure area.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-6.png": {
-      "file": "Bank basement secure area.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-7.png": {
-      "file": "Bank first floor secure area.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-8.png": {
-      "file": "Siege Bank 1st-floor rooms.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-9.png": {
-      "file": "Siege Bank 2nd-floor rooms.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-10.png": {
-      "file": "Siege Bank Alley Access (roof).png",
-      "width": 800
-    },
-    "r6_images/maps/r6-bank-layout-11.png": {
       "file": "Siege Bank Alley Access (spawn).png",
       "width": 800
     },
-    "r6_images/maps/r6-bank-layout-12.png": {
+    "r6_images/maps/r6-bank-layout-6.png": {
       "file": "Siege Bank Jewelry Front (spawn).png",
+      "width": 800
+    },
+    "r6_images/maps/r6-bank-layout-7.png": {
+      "file": "Siege Bank Parking Front (spawn).png",
       "width": 800
     },
     "r6_images/maps/r6-bartlett-u-.png": {
@@ -1866,18 +1830,6 @@
       "file": "Border rework.png",
       "width": 400
     },
-    "r6_images/maps/r6-border-layout-1.png": {
-      "file": "R6-maps-border-blueprint-1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-border-layout-2.png": {
-      "file": "R6-maps-border-blueprint-2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-border-layout-3.png": {
-      "file": "R6-maps-border-blueprint-3.jpg",
-      "width": 800
-    },
     "r6_images/maps/r6-calypso-casino.png": {
       "file": "R6S Calypso Casino.webp",
       "width": 400
@@ -1886,137 +1838,25 @@
       "file": "Chalet_Rework_1.png",
       "width": 400
     },
-    "r6_images/maps/r6-chalet-layout-1.png": {
-      "file": "Siege Chalet Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-chalet-layout-2.png": {
-      "file": "Siege Chalet Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-chalet-layout-3.png": {
-      "file": "Siege Chalet Layout 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-chalet-layout-4.png": {
-      "file": "Siege Chalet Layout 4.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-chalet-layout-5.png": {
-      "file": "Chalet basement secure area.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-chalet-layout-6.png": {
-      "file": "Chalet first floor.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-chalet-layout-7.png": {
-      "file": "Chalet rework basement.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-chalet-layout-8.png": {
-      "file": "Chalet rework roof.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-chalet-layout-9.png": {
-      "file": "Chalet second floor.png",
-      "width": 800
-    },
     "r6_images/maps/r6-clubhouse.png": {
       "file": "Siege Clubhouse Thumbnail.jpg",
       "width": 400
-    },
-    "r6_images/maps/r6-clubhouse-layout-1.png": {
-      "file": "Club Floor 1.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-clubhouse-layout-2.png": {
-      "file": "Club Floor 2.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-clubhouse-layout-3.png": {
-      "file": "Club roof.png",
-      "width": 800
     },
     "r6_images/maps/r6-coastline.png": {
       "file": "CoastlineThumbnailDay.png",
       "width": 400
     },
-    "r6_images/maps/r6-coastline-layout-1.png": {
-      "file": "Coastline Floor 1.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-coastline-layout-2.png": {
-      "file": "Coastline Floor 2.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-coastline-layout-3.png": {
-      "file": "Coastline Roof.png",
-      "width": 800
-    },
     "r6_images/maps/r6-consulate.png": {
       "file": "Siege Consulate Thumbnail.PNG",
       "width": 400
-    },
-    "r6_images/maps/r6-consulate-layout-1.png": {
-      "file": "Siege Consulate Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-consulate-layout-2.png": {
-      "file": "Siege Consulate Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-consulate-layout-3.png": {
-      "file": "Siege Consulate Layout 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-consulate-layout-4.png": {
-      "file": "Siege Consulate Layout 4.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-consulate-layout-5.png": {
-      "file": "ConsulateBasement 217070.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-consulate-layout-6.png": {
-      "file": "ConsulateRoof.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-consulate-layout-7.png": {
-      "file": "Consulate Rework-Basement.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-consulate-layout-8.png": {
-      "file": "Consulate Rework-Roof.jpg",
-      "width": 800
     },
     "r6_images/maps/r6-emerald-plains.png": {
       "file": "Emerald Plains.jpeg",
       "width": 400
     },
-    "r6_images/maps/r6-emerald-plains-layout-1.png": {
-      "file": "Emerald-plains-blueprint-floor-1.webp",
-      "width": 800
-    },
-    "r6_images/maps/r6-emerald-plains-layout-2.png": {
-      "file": "Emerald-plains-blueprint-floor-2.webp",
-      "width": 800
-    },
-    "r6_images/maps/r6-emerald-plains-layout-3.png": {
-      "file": "Emerald-plains-blueprint-roof.webp",
-      "width": 800
-    },
     "r6_images/maps/r6-favela.png": {
       "file": "Favela rework.png",
       "width": 400
-    },
-    "r6_images/maps/r6-favela-layout-1.png": {
-      "file": "Favela Roof.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-favela-layout-2.png": {
-      "file": "R6S Live Y6S2 IMG Favela Roof.jpg",
-      "width": 800
     },
     "r6_images/maps/r6-fortress.png": {
       "file": "fortress 1.jpg",
@@ -2027,26 +1867,22 @@
       "width": 400
     },
     "r6_images/maps/r6-hereford-base-original--layout-1.png": {
-      "file": "Headquarters 1st Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-hereford-base-original--layout-2.png": {
-      "file": "Headquarters 2nd Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-hereford-base-original--layout-3.png": {
-      "file": "Headquarters 3rd Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-hereford-base-original--layout-4.png": {
-      "file": "Headquarters Basement.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-hereford-base-original--layout-5.png": {
       "file": "HerefordBasement 217064.jpg",
       "width": 800
     },
-    "r6_images/maps/r6-hereford-base-original--layout-6.png": {
+    "r6_images/maps/r6-hereford-base-original--layout-2.png": {
+      "file": "Headquarters 1st Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-3.png": {
+      "file": "Headquarters 2nd Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-4.png": {
+      "file": "Headquarters 3rd Floor.jpeg",
+      "width": 800
+    },
+    "r6_images/maps/r6-hereford-base-original--layout-5.png": {
       "file": "HerefordRoof.jpg",
       "width": 800
     },
@@ -2058,251 +1894,35 @@
       "file": "House Rework.png",
       "width": 400
     },
-    "r6_images/maps/r6-house-layout-1.png": {
-      "file": "Siege House Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-house-layout-2.png": {
-      "file": "Siege House Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-house-layout-3.png": {
-      "file": "Siege House Layout 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-house-layout-4.png": {
-      "file": "Siege House Layout 4.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-house-layout-5.png": {
-      "file": "HouseBasement 217059.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-house-layout-6.png": {
-      "file": "HouseRoof.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-house-layout-7.png": {
-      "file": "House Basement.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-house-layout-8.png": {
-      "file": "House Roof.png",
-      "width": 800
-    },
     "r6_images/maps/r6-kafe-dostoyevsky.png": {
       "file": "New r6 kafe.jpg",
       "width": 400
-    },
-    "r6_images/maps/r6-kafe-dostoyevsky-layout-1.png": {
-      "file": "Siege Kafe Map Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kafe-dostoyevsky-layout-2.png": {
-      "file": "Siege Kafe Map Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kafe-dostoyevsky-layout-3.png": {
-      "file": "Siege Kafe Map Layout 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kafe-dostoyevsky-layout-4.png": {
-      "file": "Siege Kafe Map Layout 4.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kafe-dostoyevsky-layout-5.png": {
-      "file": "Cafe basement.PNG",
-      "width": 800
-    },
-    "r6_images/maps/r6-kafe-dostoyevsky-layout-6.png": {
-      "file": "Cafe rooftop.PNG",
-      "width": 800
     },
     "r6_images/maps/r6-kanal.png": {
       "file": "Siege Kanal Thumbnail 2.PNG",
       "width": 400
     },
-    "r6_images/maps/r6-kanal-layout-1.png": {
-      "file": "Siege Kanal Blueprint 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kanal-layout-2.png": {
-      "file": "Siege Kanal Blueprint 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kanal-layout-3.png": {
-      "file": "Siege Kanal Blueprint 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kanal-layout-4.png": {
-      "file": "Siege Kanal Blueprint 4.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kanal-layout-5.png": {
-      "file": "Siege Kanal Blueprint 5.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-kanal-layout-6.png": {
-      "file": "Kanal 1st floor 227430.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-kanal-layout-7.png": {
-      "file": "Kanal 2nd floor 227431.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-kanal-layout-8.png": {
-      "file": "Kanal ground floor 227433.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-kanal-layout-9.png": {
-      "file": "Kanal roof 227432.png",
-      "width": 800
-    },
     "r6_images/maps/r6-lair.png": {
       "file": "R6S Lair.webp",
       "width": 400
-    },
-    "r6_images/maps/r6-lair-layout-1.png": {
-      "file": "R6Map Lair Blueprint 1st-Floor.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-lair-layout-2.png": {
-      "file": "R6Map Lair Blueprint 2nd-Floor.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-lair-layout-3.png": {
-      "file": "R6Map Lair Blueprint Basement.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-lair-layout-4.png": {
-      "file": "R6Map Lair Blueprint Roof.jpg",
-      "width": 800
     },
     "r6_images/maps/r6-nighthaven-labs.png": {
       "file": "R6S_Live_Y7S4_IMG_NH_Labs_LoadingScreen_FINAL.png",
       "width": 400
     },
-    "r6_images/maps/r6-nighthaven-labs-layout-1.png": {
-      "file": "R6-maps-nighthavenlabs-blueprint-1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-nighthaven-labs-layout-2.png": {
-      "file": "R6-maps-nighthavenlabs-blueprint-4-thumb.webp",
-      "width": 800
-    },
     "r6_images/maps/r6-oregon.png": {
       "file": "Oregon Rework.jpeg",
       "width": 400
-    },
-    "r6_images/maps/r6-oregon-layout-1.png": {
-      "file": "Siege Oregon Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-2.png": {
-      "file": "Siege Oregon Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-3.png": {
-      "file": "Siege Oregon Layout 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-4.png": {
-      "file": "Siege Oregon Layout 4.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-5.png": {
-      "file": "Siege Oregon Layout 5.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-6.png": {
-      "file": "Oregon 1st floor secure area.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-7.png": {
-      "file": "Oregon 2nd floor secure area.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-8.png": {
-      "file": "Oregon Rework 1st Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-9.png": {
-      "file": "Oregon Rework 2nd Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-10.png": {
-      "file": "Oregon Rework Basement.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-11.png": {
-      "file": "Oregon Rework Roof.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-oregon-layout-12.png": {
-      "file": "Oregon basement secure area.png",
-      "width": 800
     },
     "r6_images/maps/r6-outback.png": {
       "file": "Outback Rework.jpeg",
       "width": 400
     },
-    "r6_images/maps/r6-outback-layout-1.png": {
-      "file": "R6-maps-outback-blueprint-1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-outback-layout-2.png": {
-      "file": "R6-maps-outback-blueprint-2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-outback-layout-3.png": {
-      "file": "R6-maps-outback-blueprint-3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-outback-layout-4.png": {
-      "file": "Siege Outback Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-outback-layout-5.png": {
-      "file": "Siege Outback Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-outback-layout-6.png": {
-      "file": "Siege Outback Layout 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-outback-layout-7.png": {
-      "file": "Siege Outback Layout 4.jpg",
-      "width": 800
-    },
     "r6_images/maps/r6-presidential-plane.png": {
       "file": "Siege Plane Thumbnail.PNG",
       "width": 400
     },
-    "r6_images/maps/r6-presidential-plane-layout-1.png": {
-      "file": "Siege Plane Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-presidential-plane-layout-2.png": {
-      "file": "Siege Plane Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-presidential-plane-layout-3.png": {
-      "file": "Siege Plane Layout 3.jpg",
-      "width": 800
-    },
     "r6_images/maps/r6-presidential-plane-layout-4.png": {
-      "file": "Siege Plane Layout 4.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-presidential-plane-layout-5.png": {
-      "file": "Presidential plane 1st floor secure area.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-presidential-plane-layout-6.png": {
-      "file": "Presidential plane 2nd floor secure area.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-presidential-plane-layout-7.png": {
       "file": "Presidential plane basement secure floor.png",
       "width": 800
     },
@@ -2310,55 +1930,15 @@
       "file": "Skyscraper Rework.png",
       "width": 400
     },
-    "r6_images/maps/r6-skyscraper-layout-1.png": {
-      "file": "R6-maps-skyscraper-blueprint-1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-skyscraper-layout-2.png": {
-      "file": "R6-maps-skyscraper-blueprint-2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-skyscraper-layout-3.png": {
-      "file": "R6-maps-skyscraper-blueprint-3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-skyscraper-layout-4.png": {
-      "file": "Skyscraper floor 1.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-skyscraper-layout-5.png": {
-      "file": "Skyscraper floor 2.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-skyscraper-layout-6.png": {
-      "file": "Skyscraper roof.png",
-      "width": 800
-    },
     "r6_images/maps/r6-stadium.png": {
       "file": "Stadium Concept 2021 1.jpeg",
       "width": 400
     },
     "r6_images/maps/r6-stadium-layout-1.png": {
-      "file": "Stadium 1st Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-stadium-layout-2.png": {
-      "file": "Stadium 2020 1st Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-stadium-layout-3.png": {
-      "file": "Stadium 2020 2nd Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-stadium-layout-4.png": {
-      "file": "Stadium 2nd Floor.jpeg",
-      "width": 800
-    },
-    "r6_images/maps/r6-stadium-layout-5.png": {
       "file": "Stadium Rework 1st Floor.jpeg",
       "width": 800
     },
-    "r6_images/maps/r6-stadium-layout-6.png": {
+    "r6_images/maps/r6-stadium-layout-2.png": {
       "file": "Stadium Rework 2nd Floor.jpeg",
       "width": 800
     },
@@ -2366,85 +1946,17 @@
       "file": "Themepark rework.jpg",
       "width": 400
     },
-    "r6_images/maps/r6-theme-park-layout-1.png": {
-      "file": "Theme Park floor 1.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-theme-park-layout-2.png": {
-      "file": "Theme Park floor 2.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-theme-park-layout-3.png": {
-      "file": "Theme Park roof.png",
-      "width": 800
-    },
     "r6_images/maps/r6-tower.png": {
       "file": "Siege Tower Thumbnail.PNG",
       "width": 400
-    },
-    "r6_images/maps/r6-tower-layout-1.png": {
-      "file": "Siege Tower Layout Roof.PNG",
-      "width": 800
-    },
-    "r6_images/maps/r6-tower-layout-2.png": {
-      "file": "Map - Tower - 1st floor.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-tower-layout-3.png": {
-      "file": "Map - Tower - 2nd floor.png",
-      "width": 800
     },
     "r6_images/maps/r6-villa.png": {
       "file": "Siege Villa Thumbnail.jpg",
       "width": 400
     },
-    "r6_images/maps/r6-villa-layout-1.png": {
-      "file": "Villa 1st Floor.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-villa-layout-2.png": {
-      "file": "Villa 2nd Floor.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-villa-layout-3.png": {
-      "file": "Villa Bottom Floor.jpg",
-      "width": 800
-    },
     "r6_images/maps/r6-yacht.png": {
       "file": "Siege Yacht Thumbnail.PNG",
       "width": 400
-    },
-    "r6_images/maps/r6-yacht-layout-1.png": {
-      "file": "Siege Yacht Layout 1.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-yacht-layout-2.png": {
-      "file": "Siege Yacht Layout 2.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-yacht-layout-3.png": {
-      "file": "Siege Yacht Layout 3.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-yacht-layout-4.png": {
-      "file": "Siege Yacht Layout 4.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-yacht-layout-5.png": {
-      "file": "Siege Yacht Layout 5.jpg",
-      "width": 800
-    },
-    "r6_images/maps/r6-yacht-layout-6.png": {
-      "file": "Yacht basement.PNG",
-      "width": 800
-    },
-    "r6_images/maps/r6-yacht-layout-7.png": {
-      "file": "Yacht floor 01.png",
-      "width": 800
-    },
-    "r6_images/maps/r6-yacht-layout-8.png": {
-      "file": "Yacht roof.png",
-      "width": 800
     },
     "r6_images/seasons/r6-operation-black-ice.png": {
       "file": "Siege Black Ice.jpeg",
@@ -8806,375 +8318,468 @@
     },
     "r6_images/ubi/ak-12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7KAZZgnpqD07y47jVVXEuh/e0d7e67101f8f966aa6e1c59e835454f/AK-12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace",
+      "whiten": true
     },
     "r6_images/ubi/m1014.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2pUiVbwNnQnDTesmWXktqW/f27c1fab9a354bb89cbe309a688f5e02/M1014.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace",
+      "whiten": true
     },
     "r6_images/ubi/p9.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Fd1cl17KA0CtgodEiiY6v/d0f145ea72f2aacbd04260ba7d8f1c74/P9.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace",
+      "whiten": true
     },
     "r6_images/ubi/g8a1.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4TIb7oeJesaROOOfTlCBaZ/ffd6a802f9a779a0d39b2122c49b3254/G8A1.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru",
+      "whiten": true
     },
     "r6_images/ubi/supernova.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2tpjCRFLcc3hogjJGbKDsi/5ad0ab63b7245022aca5c1c1fb42d473/SuperNova.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru",
+      "whiten": true
     },
     "r6_images/ubi/gonne-6-hud-icon-1-.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/23AlSVw8MwI1y3ZakEfqgW/c4561ae6e8da8db2627a146b8b55ee6c/GONNE-6_HUD_Icon__1_.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru",
+      "whiten": true
     },
     "r6_images/ubi/smg-11.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3WExw7Kepz9uAiWAbWW457/875fc631a3cf9fcc2849d9db2989cbcd/SMG-11.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru",
+      "whiten": true
     },
     "r6_images/ubi/ita12s.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5G4DroaSdqHzJWCe7qqbHZ/5dd2e03f853182c78a1e7fcbc642f0cf/ITA12S.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru",
+      "whiten": true
     },
     "r6_images/ubi/g36c.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2SZoqSXKoNPvZFIJsFsDE5/cb109885bf19c8697abf832f10cfd9a6/G36C.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash",
+      "whiten": true
     },
     "r6_images/ubi/r4-c.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/dQbqK9VxczuiscwBDSkT8/777a062f6095dde0371eab5200dcb451/R4-C.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash",
+      "whiten": true
     },
     "r6_images/ubi/5.7-usg.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/tkYcSAJSe5yGkeUhzZqBO/e81feb86df4a7eb6951052bec26b6ed7/5.7_USG.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash",
+      "whiten": true
     },
     "r6_images/ubi/m45-meusoc.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3u5cecgWYl3WuJK50mKEGd/a4a0eb15c710edfc0d29e98c2ee7ea33/M45_MEUSOC.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash",
+      "whiten": true
     },
     "r6_images/ubi/mk17-cqb.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4LytczDQmu0M63gO2WtCCm/331ef3b1938352ae71d7c0bd23de3596/Mk17_CQB.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blackbeard"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blackbeard",
+      "whiten": true
     },
     "r6_images/ubi/sr-25.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3H3sICdj6BK8LhtQPRd2aJ/26826ebba73e0e5fd503256d069f3256/SR-25.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blackbeard"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blackbeard",
+      "whiten": true
     },
     "r6_images/ubi/g52-tactical-shield.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7qmWjGZayvK4t6E80Gvu7g/8b789d6d639744dce100c2cfb9709e6a/G52-Tactical_Shield.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blitz"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blitz",
+      "whiten": true
     },
     "r6_images/ubi/p12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2mpM7rah7rwEW0bViIirUC/ed9caa4db58421519fa4db390b1aa164/P12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blitz"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blitz",
+      "whiten": true
     },
     "r6_images/ubi/para-308.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6ub8y2Cs5EYhVPfDWuVVkW/82ca131a41ee4ba2e0b75f2dc52ed9e3/PARA-308.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava",
+      "whiten": true
     },
     "r6_images/ubi/camrs.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4dBzqVVmnpv1DZi91LAnEN/e374b4ea289fc992280b943cdbb94d60/CAMRS.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava",
+      "whiten": true
     },
     "r6_images/ubi/usp40.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7FxemzWRtlpAhK9MyKp1Gp/817cc25b6b7c3575dc1ba53a6a8170a9/USP40.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava",
+      "whiten": true
     },
     "r6_images/ubi/r6-operator-weapon-sa-supershorty.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7Dq8LDmIxAveRqXM17orUW/8169927dba6976cee92cc53c7b0960aa/r6-operator-weapon-sa-supershorty.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava",
+      "whiten": true
     },
     "r6_images/ubi/c8-sfw.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1itXpz2GnvdwwRyhX1SYa2/b58ff71048fa3bb5ed09d5d935dc90f4/C8-SFW.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck",
+      "whiten": true
     },
     "r6_images/ubi/mk1-9mm-bi.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3tWoNeF3jQYs3w4EOydQYs/434409c96693df1fd3e969d778e70795/Mk1_9mm_BI.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck",
+      "whiten": true
     },
     "r6_images/ubi/m249.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7z8UpVPS3P14OC1oL9dDIn/39c0c657f154218003fd4b2a9250b92f/M249.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao",
+      "whiten": true
     },
     "r6_images/ubi/pmr90a2.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/g1CRNF5Bg8mYPXY8qxsTt/a3fd65c5715d31c8afeb9fad9c478be5/PMR90A2.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao",
+      "whiten": true
     },
     "r6_images/ubi/prb92.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/dl28J1HsE7mzhj66pmd5D/b8d8fc48d2dde13154047de94abbd8ca/PRB92.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao",
+      "whiten": true
     },
     "r6_images/ubi/ak-74m.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1j5HiQP8aFphTe65fqDdg0/23eecb5c603c5ba9f59fc6cbc5e4a531/AK-74M.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos",
+      "whiten": true
     },
     "r6_images/ubi/m590a1.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2zRHmgqENNiZqXQxC9Rsbj/e6542407c642f9b7c5a4546afb6db30a/M590A1.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos",
+      "whiten": true
     },
     "r6_images/ubi/44vendetta.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2kx8YFXaz4l9A3iJctZ33h/30f25aff1e25daf0dff88d258423adcf/44VENDETTA.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos",
+      "whiten": true
     },
     "r6_images/ubi/bosg.12.2.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2ZjVndetsX8WEn5ZfyUQa0/e3a781be7eab22876d25f748e8fd0f5a/BOSG.12.2.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi",
+      "whiten": true
     },
     "r6_images/ubi/mk-14-ebr.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6KIMqp5dA95z1RI3PrG9jv/eb939638169811a3fa858a44e6e5d97e/Mk_14_EBR.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi",
+      "whiten": true
     },
     "r6_images/ubi/xk23.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/dCYPVIvbfXebjPV2K3uaz/83e2cfbc3533b38b83ba3b3febef6677/XK23.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi",
+      "whiten": true
     },
     "r6_images/ubi/c75-auto.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3wUuefwPjU705mZkTdJ9UH/8ccb11884cfa34c176ac5500af139177/C75_Auto.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi",
+      "whiten": true
     },
     "r6_images/ubi/smg-12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/EwJgB7KdgOb6dDm7ro33u/b73f0890f992c1a365210f08efcc6db5/SMG-12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi",
+      "whiten": true
     },
     "r6_images/ubi/6p41.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1wxS2HOCvoPAfnJEDFWjfw/7feddb98582ec37b500243d3f3e19eca/6P41.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka",
+      "whiten": true
     },
     "r6_images/ubi/sasg-12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Q6mL4CbifmIgifV2yV3Hi/2bb2b323f055b03a2c1ba516c262c24e/SASG-12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka",
+      "whiten": true
     },
     "r6_images/ubi/spear-.308.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/29LjYuJ4s6yA8k9Uv2u28C/89ec812559e7d74b7c269279f4c46d92/Spear_.308.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka",
+      "whiten": true
     },
     "r6_images/ubi/gsh-18.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5s5Q33j3MNcXf9lwfxfd7m/4eb3a6af1d431481b6ddcec44fbc7602/GSh-18.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka",
+      "whiten": true
     },
     "r6_images/ubi/pmm.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3y4LIwwm8YNQHAv8oOkWCK/a2375901cee34e68fa39c976d85de8aa/PMM.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka",
+      "whiten": true
     },
     "r6_images/ubi/ar33.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/16U6xEvX8I5xQd9duveBLN/45d22960872cfa3fb6be9eb47fa0be4e/AR33.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/flores"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/flores",
+      "whiten": true
     },
     "r6_images/ubi/t-95-lsw.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/23HCxaNTRUHBlFAvCTMZQm/fe319cc164fac034a29e9b114ae7d5cb/T-95_LSW.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/flores"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/flores",
+      "whiten": true
     },
     "r6_images/ubi/ballistic-shield.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2C21gwsjOka5Rwp8qSM5hA/a38937032260bce4f690fb9bb8adf4c0/Ballistic_Shield.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fuze"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fuze",
+      "whiten": true
     },
     "r6_images/ubi/ots-03.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4fXznwDtLt61VCF8QIF4N3/34e2e6d6c33d4c504c945bdd13c322f6/OTs-03.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/glaz"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/glaz",
+      "whiten": true
     },
     "r6_images/ubi/bearing-9.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4mdftEOh5Vu9KhhpgKLKrT/abedcc75868774018295ec2a08a7b3de/Bearing_9.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/glaz"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/glaz",
+      "whiten": true
     },
     "r6_images/ubi/r6-operator-weapon-ar-f90.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/62tE3th2ThcGHlrcqWkmEX/d69c9de199542e25fa55f6d293f15671/r6-operator-weapon-ar-f90.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock",
+      "whiten": true
     },
     "r6_images/ubi/m249-saw.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3p0oG7GsLIoHaRullf7xsF/e2a9e135af63e8897355023cd34538c4/M249_SAW.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock",
+      "whiten": true
     },
     "r6_images/ubi/sdp-9mm.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Tgsdyz3XEqmgUYi9aZZgb/6755f4da7af7a7179ffab92acf8d477e/SDP_9mm.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock",
+      "whiten": true
     },
     "r6_images/ubi/552-commando.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1LT0N89YaOHvRwn3Pphr8K/02d4a3da9cda132d8201fd134f24fede/552_Commando.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim",
+      "whiten": true
     },
     "r6_images/ubi/sg-cqb.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5JoL3b36Fsztt9Q2XYmrbJ/dacec96948d3f8fe92914a69b9aac593/SG-CQB.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim",
+      "whiten": true
     },
     "r6_images/ubi/bailiff-410.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/N8FLbo4fsNyBe8msKgRhT/8f403dc0b58087bcafab786dd95ba33f/Bailiff_410.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim",
+      "whiten": true
     },
     "r6_images/ubi/p229.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/76ja0RxqzHW9PpvWgpG7Sk/cb753b50b20fe67deaef54d8b2a46b54/P229.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim",
+      "whiten": true
     },
     "r6_images/ubi/type-89.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7wLf325q9amF8bnVP1QGr0/2faff1a197f90dcded4472852a317d6b/Type-89.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/hibana"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/hibana",
+      "whiten": true
     },
     "r6_images/ubi/arx200.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6VgkPBsr1WApI3rWc9kcM0/b18b8e25f3e951e8e722213f2ee59eb0/ARX200.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iana"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iana",
+      "whiten": true
     },
     "r6_images/ubi/aug-a2.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1eO39zRe8XxJXH1KZiIWhM/02049ced0fbfa630833e8b0d3c03de07/AUG_A2.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iq"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iq",
+      "whiten": true
     },
     "r6_images/ubi/c7e.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/63vTDjkXeKq7rOoSBhoJD4/08603e6603d564e0fa38af9ec86b7c1f/C7E.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal",
+      "whiten": true
     },
     "r6_images/ubi/pdw9.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4yYCuRnduMq35CTHfq6wwU/b7d49cdbcb05917e014c99efeaadd33b/PDW9.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal",
+      "whiten": true
     },
     "r6_images/ubi/ita12l.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4Y6ziRzm9RiPii83fm8BV1/1f472744d2c2dec8d9206f4d8733d92c/ITA12L.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal",
+      "whiten": true
     },
     "r6_images/ubi/csrx-300.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7tUB9ZNXJhdN6ejAkCEeFQ/99691bcc19f641cf872925905d08a539/CSRX_300.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali",
+      "whiten": true
     },
     "r6_images/ubi/spsmg9.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5EtwSgylXckBNg4n6gDR9J/bc6fc6c5c12ae11da59aee95828ebd76/SPSMG9.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali",
+      "whiten": true
     },
     "r6_images/ubi/p226-mk-25.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/RTQvPQcywlRwUS1FjIKCX/6fc72fee2191c2e723276bc10ae4114e/P226_Mk_25.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali",
+      "whiten": true
     },
     "r6_images/ubi/417.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5djkS4YtAtOF0vBmg0T60x/ea2b1ff7e5367e66c99bc7ad7e95bfe3/417.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion",
+      "whiten": true
     },
     "r6_images/ubi/v308.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5YBZe76NUDO32eF66wW90g/488c315743d59230962a4d67618223d6/V308.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion",
+      "whiten": true
     },
     "r6_images/ubi/lfp586.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1zc7UtdBfCZakwbiYqBvSz/1fd3f1584de38ca7c9315d498f094276/LFP586.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion",
+      "whiten": true
     },
     "r6_images/ubi/ar-15.50.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4lGGEGZLkbldz114Wl5hCo/78a04c46654f80fae03e730bd79f3563/AR-15.50.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick",
+      "whiten": true
     },
     "r6_images/ubi/m4.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3jhi90ycmuc8mAiuSXFoCi/bcf354459e7becd6ede52ee97917c832/M4.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick",
+      "whiten": true
     },
     "r6_images/ubi/1911-tacops.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/189UukZ6fVnvQR6LJtLYry/6eec29603d5b7b0ca8cab6ac0ef083ac/1911_TACOPS.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick",
+      "whiten": true
     },
     "r6_images/ubi/reaper-mk2.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5RC060K72yG2OXMq43lgrv/83df616f6d4a2dde6293cc97449159eb/reaper-mk2.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick",
+      "whiten": true
     },
     "r6_images/ubi/extendable-shield.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1bmXJOakdA6SOrGxBKA70T/1e489e366d6db287f475963df2040d3d/Extendable-Shield.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/montagne"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/montagne",
+      "whiten": true
     },
     "r6_images/ubi/.44-mag-semi-auto.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6W3Jz0YcQzbZ6BOPr7VVel/4c67f342964132a652f7d5821e887050/.44_Mag_Semi-Auto.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nomad"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nomad",
+      "whiten": true
     },
     "r6_images/ubi/fmg-9.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oneJNsBR06QjuowxwtHG/bd3b391c6eec2bd615f2ed83197a13ac/FMG-9.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk",
+      "whiten": true
     },
     "r6_images/ubi/six12-sd.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1GTua079Xbtkpjhx96sRsW/079ed1a71a0d12b5e48e1b0d40b87110/SIX12_SD.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk",
+      "whiten": true
     },
     "r6_images/ubi/d-50.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6mMQRDsrComRFa7bC6cNkG/8cd17e545e3d28dcc11a040d000cfa16/D-50.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk",
+      "whiten": true
     },
     "r6_images/ubi/556xi.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2dgpAeAWb3SkZV7rxDbVdQ/fa32323256b7c6f8a1977d3f71e7d4b2/556xi.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/osa"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/osa",
+      "whiten": true
     },
     "r6_images/ubi/lmg-e.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7JVJIew6t3iKwgByvrFXyi/7ba44dfda28b525506633e453104a604/LMG-E.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ram"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ram",
+      "whiten": true
     },
     "r6_images/ubi/pof9.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1bhuAox7U6aHN6UriXsAry/3c213cd27f5f64ba01a29b42e5b24ac5/POF9.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sens"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sens",
+      "whiten": true
     },
     "r6_images/ubi/l85a2.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5vYQpoyk36foDzDq49jBd0/1479a2d7189e545555ceccecf6bd7cc3/L85A2.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sledge"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sledge",
+      "whiten": true
     },
     "r6_images/ubi/f2.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5HTvw1cJInVAGxOLXR0war/2f142437f5c0944fdcfcce8a03c37676/F2.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake",
+      "whiten": true
     },
     "r6_images/ubi/tacit-45.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6IMvC7a7IdpJWoMXjjloTE/be8a688d5c64478a254514d48b7bbf47/TACIT_45.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake",
+      "whiten": true
     },
     "r6_images/ubi/six12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2v6MwsHwjOZ5Muid53lyfN/e5f1c4997db93abfe3ac356fce23376c/SIX12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ying"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ying",
+      "whiten": true
     },
     "r6_images/ubi/q-929.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2fRVszR5yGDHbV0AL8muso/0838dac90b66aa810daa49d36382fb64/Q-929.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ying"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ying",
+      "whiten": true
     },
     "r6_images/ubi/mp7.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3a4dgTWGdiJqALhtRp4pKy/f2568d3de3cfe7e4b53179e8653cd2a2/MP7.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zero"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zero",
+      "whiten": true
     },
     "r6_images/ubi/f2000.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7x7eDTm2NNpfGiFMrfQqEX/9898e74c780537be3ca6d88db32ea21e/F2000.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zero"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zero",
+      "whiten": true
     },
     "r6_images/ubi/m762.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4oWAgi7tgQP1Tq0HooRtye/9109a74921ee17610d4bd85a61582823/M762.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zofia"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zofia",
+      "whiten": true
     },
     "r6_images/ubi/rg15.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2LNSsp7B7wUnnPUweir7Jm/9f66d53be7a63a17a55253a0bea6eec1/RG15.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zofia"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zofia",
+      "whiten": true
     },
     "r6_images/ubi/mx4-storm.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4qRh1frGkQZxNyeKA4D6n1/20f89cd1d9953f06207b7340ea77fb17/Mx4_Storm.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi",
+      "whiten": true
     },
     "r6_images/ubi/acs12-pb.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/13z63kT1NLzn1U99o7WC4T/8655d3200f24b87246c36f2622603457/ACS12_PB.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi",
+      "whiten": true
     },
     "r6_images/ubi/keratos-.357.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/15caVAsSCr8Rsb5Hid36uc/59632c4f90727931041ced62a620018b/Keratos_.357.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi",
+      "whiten": true
     },
     "r6_images/ubi/r6-operator-weapon-smg-p10roni.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7K86OBjL3zmYWt0ZvUcCLj/16a947334e39f27da177d787773593e4/r6-operator-weapon-smg-p10roni.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/aruni"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/aruni",
+      "whiten": true
     },
     "r6_images/ubi/9x19svn.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/akx58K4vXn1v2Q4C3sgrB/03425922f23cc8887b6e73c4d06ad387/9X19SVN.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/azami"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/azami",
+      "whiten": true
     },
     "r6_images/ubi/m870.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2rkU6g4Rlg0e0U4rczWGTV/a51589a54c43f476d8eb984c0ea881e9/M870.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/bandit"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/bandit",
+      "whiten": true
     },
     "r6_images/ubi/ump45.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6X2EZPq2s8UKrP67uxz5FI/f0df4c57d5890c79311e4eb62d4470e7/UMP45.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/castle"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/castle",
+      "whiten": true
     },
     "r6_images/ubi/m12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4FxqA5pa8JY9QQ7FEcjwPw/ffc779fcde5b970e7b95db6653637dab/M12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira",
+      "whiten": true
     },
     "r6_images/ubi/spas-15.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/CyofBgipHq4RTafvPFWd4/bc3d0ecc871b70e57735855f852efacf/SPAS-15.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira",
+      "whiten": true
     },
     "r6_images/ubi/luison.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5cSDFUWb8P1BAQUgnTozeM/fd3a3348f42c95d6afa9f105ae23f2e5/Luison.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira",
+      "whiten": true
     },
     "r6_images/ubi/cce-shield.avif": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/31W7L9jDgiPp267Ejt3zYf/ebd5d0fed00a7a1df4fb8d5ebe8ea27c/CCE_Shield.avif",
@@ -9182,175 +8787,234 @@
     },
     "r6_images/ubi/p-10c.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2l4qwB50zSFhFZVYRLNwqg/20df8114f69f96f2adc54779ccc5bbaa/P-10C.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/clash"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/clash",
+      "whiten": true
     },
     "r6_images/ubi/scorpion-evo-3-a1.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6OdwaLWxcnFvhlVwWbP2Du/4f7e94bdb6d34d5c0aa7b7b147b4092e/Scorpion_EVO_3_A1.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari",
+      "whiten": true
     },
     "r6_images/ubi/glaive-12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1vhycVQvB7uCsUpVE2jAw1/ed60286111e0049a3f312a81e828476f/glaive-12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari",
+      "whiten": true
     },
     "r6_images/ubi/mp5.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/60YbOvSBQt6ZUlu8YDXoZm/51ef3857b2986de700262432e8433714/MP5.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/doc"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/doc",
+      "whiten": true
     },
     "r6_images/ubi/p90.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4nGrNspOvII2oS3lEMkg5x/2398a493c298bc654f97c58767aa40f3/P90.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/doc"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/doc",
+      "whiten": true
     },
     "r6_images/ubi/mp5sd.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5HaMldwFltBwiiyDDfkPpD/6de3aa9aaa17458e7f6186ba59b8deff/MP5SD.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/echo"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/echo",
+      "whiten": true
     },
     "r6_images/ubi/fo-12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4TDWnhbgvLkc6HBWDJp2ST/f50cbd83d6d295ab59f17f7e21d713bc/FO-12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ela"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ela",
+      "whiten": true
     },
     "r6_images/ubi/super-90.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1TLWSu0xHJlAsfEfafeC9X/f9647e70a18962bf1627095c8b46832e/Super_90.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/frost"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/frost",
+      "whiten": true
     },
     "r6_images/ubi/9mm-c1.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/60sbThKtOpNOwKu3OP0oGV/672fd9263f7786402a0d855273473a6f/9mm_C1.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/frost"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/frost",
+      "whiten": true
     },
     "r6_images/ubi/vector-.45-acp.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7D1cDf13FqUhoLihzvuPln/068aa7e507155598449c58c0a49a90d6/Vector_.45_ACP.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/goyo"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/goyo",
+      "whiten": true
     },
     "r6_images/ubi/tcsg12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2NDbY7BTBJ9R09LUilTlRf/3728337cd3ba14ed6ab9de0c22e879af/TCSG12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/goyo"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/goyo",
+      "whiten": true
     },
     "r6_images/ubi/416-c-carbine.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2I86r2a2QD8EHTZVZnxcxy/2913450ba952a16c29fac1f5ce58ba1a/416-C_Carbine.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jager"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jager",
+      "whiten": true
     },
     "r6_images/ubi/aug-a3.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3W9XJdMOgpHSw55HfwRSAv/cf8f220678d503e6c3e535c00b2e636a/AUG_A3.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kaid"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kaid",
+      "whiten": true
     },
     "r6_images/ubi/9x19vsn.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/42gH96xTTYaTZsfXI3c0wL/a7edbf11af97091ee884b68e59fe6a4f/9x19VSN.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kapkan"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kapkan",
+      "whiten": true
     },
     "r6_images/ubi/t-5-smg.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Ne8bvX8BdCALevWKMllQN/4baa3e79d323de134dd182e0272b9c3b/T-5_SMG.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lesion"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lesion",
+      "whiten": true
     },
     "r6_images/ubi/alda-5.56.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/39yB6TFl9ph6Rb4bDV4lqK/7f9b3abf8dff19bacc026a7212849ca4/ALDA_5.56.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maestro"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maestro",
+      "whiten": true
     },
     "r6_images/ubi/commando-9.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4P9dpUph5w3MSsLNnW6be/04baba24990fcb75a9c0bcfd01b7d190/Commando_9.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mozzie"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mozzie",
+      "whiten": true
     },
     "r6_images/ubi/mp5k.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1pk8nOI7ybQjYOSI4fuzOm/fcd78df0f729be545e75c09aae85c360/MP5K.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mute"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mute",
+      "whiten": true
     },
     "r6_images/ubi/spas-12.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7Hp6Fbss6uI59OT4nZNB6e/a4d09954803cb2580353cfa03e8c778b/SPAS-12.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/oryx"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/oryx",
+      "whiten": true
     },
     "r6_images/ubi/pcx-33.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/jKFNRujDQyioHLu0PULiR/a3dce57946beba1378566c386cfa0270/pcx-33.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos",
+      "whiten": true
     },
     "r6_images/ubi/primary-gun-dp27.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7LoT7yAe0LK7bDOeq6MZZM/33995bc704667674af1b73fe962d4c7c/Primary_gun_DP27.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tachanka"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tachanka",
+      "whiten": true
     },
     "r6_images/ubi/uzk50gi.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5WMIsPUWTXprZnAwctPsTt/f1c652b681e7e9ba6ba66bcd29e12a76/uzk50gi.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thorn"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thorn",
+      "whiten": true
     },
     "r6_images/ubi/mpx.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5HFewpAJ8npDDCKFnEadhL/d398bb477d6b56fe41bfdb5862ed31c0/MPX.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tubarao"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tubarao",
+      "whiten": true
     },
     "r6_images/ubi/k1a.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5mUa2p8WXbiyD71qUI8sGk/ed753b6f0ae30ab5737486dfcf32ee9f/K1A.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/vigil"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/vigil",
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-breach-charge.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1OgTMhyF1FBsSAo4njk26m/99b7a971f81b9195b3c3536b51d52893/R6S_Breach_charge.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/barbed-wire-1-.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7igaibxuCcSpWDkZensEJS/6d30514b70a4c8b535bb1c113f9cfce0/barbed-wire__1_.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sentry"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sentry",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/claymore.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4T4H5EJgUxorucGVtU2pkm/74fef324b89c220ce6426e8097f915b9/Claymore.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/bulletproof-camera.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/gZuOXvuTu2i8hQX0B6auy/259f379a6283bae618443d722a896f1a/Bulletproof_camera.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sentry"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sentry",
+      "autocrop": true
     },
     "r6_images/ubi-gadgets/observation-blocker.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5toUEasFf4nw1vID6N8fpC/20926248ceedc72dfa2118f68f96c771/observation-blocker.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/deployable-shield.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/W0WE0X2VQlxwWIAFCJ6Jm/523650a39de5a23dd9520d7299c9e25a/Deployable_Shield.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/noor"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/noor",
+      "autocrop": true
     },
     "r6_images/ubi-gadgets/impact-grenade-1-.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7iJK9B1Vr3PDO3rGftU00l/3a02e940b440c30929edf22c49870f65/impact-grenade__1_.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/smoke-grenade.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3LaxoSLC49T5vgKnUAlTLT/c47c4636845a04478432c48be8c29aee/Smoke_Grenade.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rauora"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rauora",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/proximity-alarm.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2TsFLmb2O6LRZpbxzkZDck/c9146913388a9567500b704c95600621/Proximity_alarm.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/nitro-cell.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4pBSTw9U6l9GRnT12G6Xln/e0991bc03b48d217f510af8b611c8828/Nitro_Cell.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sentry"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sentry",
+      "autocrop": true
     },
     "r6_images/ubi-gadgets/frag-grenade.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4GZsPHbm9H0k5EWz7TMkwO/33b9007bc6ee03dab15cfa15eb69e096/Frag_Grenade.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-rauora.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/16gy72yx3AMn6pNE6HJm11/096d33d454536a2da6e5f26bae01d9ff/r6s-operator-ability-rauora.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rauora"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rauora",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-denari.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3vsaJrxndhmGGbRTzuEdaE/cbaa155ed784189c81b538bb787fe0f4/r6s-operator-ability-denari.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/denari",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-noor.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/21hoh2eaTzyLTinbMPi3MY/8a567039b4858d0c88f0227785282eef/r6s-operator-ability-noor.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/noor"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/noor",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/secondarybreacher.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3OvnVPWY1UyrDE913kU0a1/eae4b2a1584234ea2ff4ad6481239f3b/SecondaryBreacher.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-skopos.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/56v8dxuabTfIHtPSmQX7AJ/9079454089effc91c685d7e759728797/r6s-operator-ability-skopos.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/skopos",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/stun-grenade.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3XnK8s1iQJQu5cfr6UyQfK/429480b96d6d6d6b830c32c75d2608f5/Stun_Grenade.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-deimos.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/vfUd3exyKBnSVj7Uj0rD3/c109abe7787520f3e0a3150a343cc4d6/r6s-operator-ability-deimos.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/deimos",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-emp-impact-grenade.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7izurbA5jDmnsmdeBdgKZO/29bca81243dda4084a92521ac0c03592/R6S-EMP-Impact-grenade.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/striker",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-y9s3-gadget-skopos.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2axYKQ374Ld23UIZw6yF6i/b9874b269ef2af3dedbbd03f26cb0940/r6s-y9s3-gadget-skopos.jpg",
@@ -9370,7 +9034,9 @@
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-solidsnake.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Dut9dv8W04uBNgd4oxtw8/ebd70ddec63fd5477385d23431a74add/r6s-operator-ability-solidsnake.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solid-snake",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-deadlyomen-operatorgameplay-h264.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4IBwa0Z59OdwEokzXMbPuc/4c9f8b4272d63f98fbf33bc48d7cb540/R6S_DeadlyOmen_OperatorGameplay_h264.jpg",
@@ -9406,15 +9072,21 @@
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-azami.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1UDhKrAXnm0thdHhsTTAyo/b7771794aea3f00da46c21670af5f5d5/r6s-operator-ability-azami.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/azami"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/azami",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-grim.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Ws6ae13XPN5rcsw0WVt3d/dfacf2c29837553c667d77ca83ee3d0d/r6s-operator-ability-grim.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/grim",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-solis.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6yJdnB2YJGY5lMh9mmKIQT/e41be5242462d00e9343acf8377f90a9/r6s-operator-ability-solis.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solis"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/solis",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-y7s3-gadget-grim.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4n5lXlCh3BqR65tGQWTbB1/04bb598cbc50e773144426faafc380a0/r6s-y7s3-gadget-grim.jpg",
@@ -9430,23 +9102,33 @@
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-sens.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4iEpghBKHF6bcQxAxRKsYU/fa6b27beb730b9f82b79572e479ca658/r6s-operator-ability-sens.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sens"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sens",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-tubarao-v1.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2HBwr95RPJmDlx29Sg5noC/0d0f7d6f78f0a88b684899f1177773d8/r6s-operator-ability-tubarao-v1.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tubarao"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tubarao",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-fenrir-v1.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5JTPi6uZt58wD0GVQJJf2c/a2c782c562393081faf5501f4a41b3cc/r6s-operator-ability-fenrir-v1.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fenrir"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fenrir",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-brava.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7CeEFqxBVGt3yXGCrE8TZq/5e3eb1477ba8eb9c71f0ed6955408b28/r6s-operator-ability-brava.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/brava",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-ram.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7qkMmMKIA8rGhDceraZSvl/36e0500d846245551923f9cf3ecce5c3/r6s-operator-ability-ram.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ram"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ram",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-solarraid-bg-characters-solis.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7roEQuswluyTSRDbVEVgY/4a05990aef08aa1787be8e6a910fa45c/r6s-solarraid-bg-characters-solis.jpg",
@@ -9502,27 +9184,39 @@
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-thorn.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/38hUQdWTb1vgs0Yg8eQHFC/0d7f05420068a41392342a1b38c57c2e/r6s-operator-ability-thorn.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thorn"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thorn",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-osa.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/71VBmyDtBAx788WnNJfEgo/1e6d78a81f8dc381bf4244b87970038f/r6s-operator-ability-osa.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/osa"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/osa",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-ace.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2sjKOnwHeOX2xn3iIpja2A/e265f675c905ac25c23ed11fc85589bb/r6s-operator-ability-ace.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ace",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-thunderbird.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/67J9QnmuA4TMI3rBxoA3Jz/4ec42d8c1bb61dadc5f36893f93142e8/r6s-operator-ability-thunderbird.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thunderbird"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thunderbird",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-flores.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1z7eSI5D8IRIOHi0PJu4yq/3c4a273098a840957a248583f73fa8ff/r6s-operator-ability-flores.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/flores"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/flores",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-aruni.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4hLJAAVKrf50wosG0471od/cde1867daf863c03754969f159ac00de/r6s-operator-ability-aruni.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/aruni"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/aruni",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-y6s4-gadget-thorn.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6OEYC1Z4x9ZWYazokqvT9K/31a68cea5f9682da117fd306a57c97a1/r6s-y6s4-gadget-thorn.jpg",
@@ -9546,11 +9240,15 @@
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-melusi.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/49ixqWhGgjvHu0Ay8JzeSH/c6a3fe584847850186e15c7fb4244385/r6s-operator-ability-melusi.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/melusi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/melusi",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-zero.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6h4hyVSzG8IwAmEl1Objrd/6e51e64eeffcc68746b8ff59445fb103/r6s-operator-ability-zero.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zero"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zero",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-operators-ability-aruni.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2QVB4CPVu1zECICTbZHEu7/6f95d8ce0c57838595404792af32663a/r6s-operators-ability-aruni.jpg",
@@ -9598,23 +9296,33 @@
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-iana.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/K8E4EHWbD8wTjVqro6wVl/62339b2fbe1d3a2319dcd320f7a0b070/r6s-operator-ability-iana.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iana"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iana",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/lv-explosive-lance.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75eebt48ELO4eGGdIMVMpY/9533c7dc8f36651f5b5ad50c8ccb6c5a/LV_Explosive_Lance.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kali",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/glance-smart-glasses.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/40RkJUEmmBCf7bmfTL8ao1/1d973adfe4d002c94655d9818776fb41/Glance-Smart-Glasses.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/warden"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/warden",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/garra-hook.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3WejtMAtiITfpjDMuq6j4t/b52e58da6b2625839aa23f940c8e6639/Garra-Hook.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/amaru",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/mag-net-system.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1IKNZzLv63AJd9vlbXj3Bo/883371432ffb22e5bf35bc82dd706384/Mag-net_System.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/wamai"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/wamai",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/operator-video-ability-kali.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/79QUWQqjpV0W3jq4L6PF23/85511ff11f11164bcba4c39259dfc8ed/operator-video-ability-kali.jpg",
@@ -9622,7 +9330,9 @@
     },
     "r6_images/ubi-gadgets/hel-presence-reduction.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/57miqbOn8xWBh7ne7za3CV/35364108d49380a0ed33998f970e104f/HEL-Presence-Reduction.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nokk",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-operator-video-ability-iana.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4PFjj9dtbO18r5MzEvUmkw/c8998802f9a234d737c57e2f9562cec9/r6s-operator-video-ability-iana.jpg",
@@ -9654,11 +9364,15 @@
     },
     "r6_images/ubi-gadgets/volcan-shield.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1JqlRdbaVA73jDq8y46vX4/82e89f39c479526ace294ba246d0b085/Volcan-Shield.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/goyo"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/goyo",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-oryx.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3dM2B3qCdU0woydIbiy2xn/55aa99443002ad794d3f78dada26d035/r6s-operator-ability-oryx.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/oryx"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/oryx",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6-operator-amaru-keyart.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6OhnGFhZ2XitFXr6hZEIrh/8e4be3f2d787c38024fdc121014decc9/r6-operator-amaru-keyart.jpg",
@@ -9694,23 +9408,33 @@
     },
     "r6_images/ubi-gadgets/cce-shield.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5KSWTzQrMUrG3jMEO1zX9f/e103cb858cbb3b66f29340e2baa48fb5/CCE-Shield.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/clash"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/clash",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/prisma.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7sJYir66zAPq2omSvYeT2u/8fbe3370d32fb5433fb6d3a86d46a1b9/Prisma.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/alibi",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/pest-launcher.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5L0fFKVOwozKMcmJoenfef/56e4efdf77363556b35a76fd4e0e60f6/Pest-Launcher.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mozzie"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mozzie",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/airjab-launcher.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6d0LN1QWzviEkcYu3mTn6v/e49511a479756f71224f14225ad9cbd8/Airjab-Launcher.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nomad"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/nomad",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/breaching-torch.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4rPBvxDKsKiQCMjt7GxJMw/09e45c68bbc41c1721acbbe0257e2465/Breaching-Torch.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maverick",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/operator-video-ability-mozzie.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/62T9CNmz9YPCNT9w9IuGfk/97c031af18ddd81f78133c83c2cbceb7/operator-video-ability-mozzie.jpg",
@@ -9730,11 +9454,15 @@
     },
     "r6_images/ubi-gadgets/evil-eye.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/n2rfPidCv630jQEfnEWwb/42d454d0771218eb8f27f6d17d8a073e/Evil-Eye.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maestro"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/maestro",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/rtila-electroclaw.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7rUOk2LhYIUjvYLot7GT8Y/94b72bfbbfdf50c2c807cdbf9f5b276e/Rtila-Electroclaw.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kaid"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kaid",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/operator-video-small-maverick.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5TM95LPISC9D15sTvuMUe9/d7c13e9f996f7d57039159a656e4a982/operator-video-small-maverick.jpg",
@@ -9742,7 +9470,9 @@
     },
     "r6_images/ubi-gadgets/trax-stingers.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/QGVvmZeZ91FC2X4mvMzgn/601fa45e635872aea31f15ffebb9c366/Trax-Stingers.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/gridlock",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6-operator-mozzie-keyart-343395.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5GqIwHii4G3sHjbpxYkWjK/86a75ab98322c72c9693ddf18b4f6a12/r6-operator-mozzie-keyart_343395.jpg",
@@ -9790,35 +9520,51 @@
     },
     "r6_images/ubi-gadgets/gu-mines.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6PJv86R8CtQCWA7a24sJE2/24f3751b2ed941ce80a4c1ef394ab7d5/Gu-mines.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lesion"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lesion",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/erc-7.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6WbhiNk0evsKWChPneCES6/af08476e2f917878e0326727d2d5fb8a/ERC-7.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/vigil"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/vigil",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/candela.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4vpN9vu5wD9dyb2knMosTy/430796de3c0c2a5c2eb2ac6f4217eba0/Candela.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ying"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ying",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/ks79-lifeline.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1elqIEWJ6XsXKAbMNd0Cai/0b4c0591bad284d957e652cdae0b706b/KS79-Lifeline.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zofia"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/zofia",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/adrenal-surge.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/9xGRNPNznBKssvgQAtQNQ/9352fc88f2911ab40789412856b3e20e/Adrenal-Surge.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/finka",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/ee-one-d.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7fRknnWl2K2qjKle1t79j/0506d25798aeb0691c8a576665050f7d/EE-ONE-D.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/lion",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-dokkaebi.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ej2g1iCMHdfjn8h8qgfmU/75841101d497c601f99375e5f9068308/r6s-operator-ability-dokkaebi.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/dokkaebi",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/grzmot-mine.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/10Md7ccaUO0pE0nCWimeoZ/35dddc67a4141e844d7904051a0314dc/Grzmot-Mine.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ela"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ela",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/y11s2-broll-dokkaebi.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4RSEzrQS0D2it8iM5gEh4C/350ed889f215b8f75031ad574e619903/Y11s2_Broll_Dokkaebi.jpg",
@@ -9830,31 +9576,45 @@
     },
     "r6_images/ubi-gadgets/tactical-crossbow.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ur3NZUGos3i2HR8f0HIzj/46cf23c97453ebfedeaa42a1088ff32f/Tactical-Crossbow.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/capitao",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/black-mirror.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1a1w8epOhWE8VtzvvCJG9d/b20cbb221f7d45e5838f839ce042f409/Black-mirror.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mira"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mira",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/black-eye.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1EPfd4xeuMpt5nItOYm2Eb/b59223248a508d205264ece3c3553d36/Black-Eye.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/valkyrie"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/valkyrie",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/silent-step.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6PTsBBBGTT5oixxzvYv1Y4/18e31c74ba1ca73ed2694134acd9c078/Silent-Step.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/caveira",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-blackbeard-1-.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7hk4QZge2W9nWQzzGorbu8/914085068bf97e6b1d0b83a40a354b9a/r6s-operator-ability-blackbeard__1_.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blackbeard"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blackbeard",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/x-kairos.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1QSzVxpGhswXix3vn8XGKj/c4f64fa0895bdaf164448e3ae49950a0/X-Kairos.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/hibana"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/hibana",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/eyenox-model-iii.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2gexf5zLDsa74J7urCoDxk/50da09626395cbe1bf2a58e00a57a514/Eyenox-Model-III.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jackal",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-blackbeard-hull-gadget.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6NoHTeYlS9ZJ9ObjvybP31/6f26dc1a0f6ad7e38d818e98c24c8941/r6s-blackbeard-hull-gadget.jpg",
@@ -9862,35 +9622,49 @@
     },
     "r6_images/ubi/r6-operators-gadget-hibana.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/557QbWSKs8UidULEclu8KU/ed0f9e687dfdec5d4a1a27ac496fbef6/R6-operators-gadget-hibana.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/hibana"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/hibana",
+      "whiten": true
     },
     "r6_images/ubi-gadgets/yokai.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/TdDZyrKpjt9EQo8tHpIJk/d987db4da22046a0663be8be82dcda88/Yokai.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/echo"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/echo",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6-operators-gadget-valkyrie.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6UeW7TqInu2gDfieF8frQ5/7193bba1740b55a9c499c3988f80ae66/R6-operators-gadget-valkyrie.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/valkyrie"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/valkyrie",
+      "whiten": true
     },
     "r6_images/ubi-gadgets/armor-panel.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/29N9nMqB8ZZxGCPz128ccD/439cb1fcb2f6d5385378cf073a5fbc30/Armor-Panel.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/castle"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/castle",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/signal-disruptor.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1M5fsUELbaAzImzMte2ESa/9de588693ec317c87ef1a2021bd43b86/Signal-Disruptor.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mute"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mute",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/skeleton-key.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2w8EQtN4FFtEMa9lBYyWGg/36bbc6d819761c11418c868d2e483991/Skeleton-Key.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/breaching-rounds.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0114WqhzsMsnvaKc4FypkN/5ebb9b86e216a2d9e6b2ea01eb3346e8/Breaching-Rounds.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-thatcher.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/F9Db64AbhCe2l2ijtJQpC/13cd53a46d0d868452772ae8a854cca7/r6s-operator-ability-thatcher.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thatcher"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thatcher",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/operator-video-ability-castle.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0BBT1Iwn1vyTV3bjcdhrb/7dc1b48a6b3eddc3f73c75dc8ac30285/operator-video-ability-castle.jpg",
@@ -9898,11 +9672,15 @@
     },
     "r6_images/ubi-gadgets/remote-gas-grenade.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3ZbADU6FxBqdvcA8vCpYhn/6c69d61202364fa420e2a319d817c6f3/Remote-Gas-Grenade.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/smoke"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/smoke",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/welcome-mate.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/xsIzH7XCAqvn7F3tEfAPe/c41e59a9d7f2ed7ee38b16ed0a882351/Welcome-Mate.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/frost"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/frost",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6-operators-gadget-frost.webp": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3xlKismScJsEbZgXdMgu5v/261f291604550bc4039b7dde00ba551e/R6-operators-gadget-frost.webp",
@@ -9918,11 +9696,14 @@
     },
     "r6_images/ubi-gadgets/tactical-breaching-hammer.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Vyo9CrQ1J7IZe43XpT4pV/4bc02e829d1b1745b9a527ff34f8fafb/Tactical-Breaching-Hammer.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sledge"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/sledge",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6-operators-gadget-buck.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1zq3lDkrHsMJAzm1xofKS0/dfa03c4570f1b41c7e3b663ce8fcfcbe/R6-operators-gadget-buck.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/buck",
+      "whiten": true
     },
     "r6_images/ubi/operator-video-small-smoke.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2TyzyuAsIYm6bWj6QPYPzn/9468d5d2b649b1b16735a62ac973cc28/operator-video-small-smoke.jpg",
@@ -9950,27 +9731,39 @@
     },
     "r6_images/ubi-gadgets/extendable-shield.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1bmXJOakdA6SOrGxBKA70T/1e489e366d6db287f475963df2040d3d/Extendable-Shield.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/montagne"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/montagne",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/armor-pack.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/MeoKw7iPY6EFYvjS07CRg/b2d7eba623f3c63d6b7097a8f2253954/Armor-Pack.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rook"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/rook",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/shock-wire.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/129HTNU2A5kIcMj0KZ5UjU/858b60dd0e9b8692e2dc693eded50e14/Shock-Wire.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/bandit"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/bandit",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/exothermic-charge.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/R5giHT90R2XOMMuUENZeK/840a5a391ed57a0c62208e72258407a7/Exothermic-Charge.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thermite"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/thermite",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/active-defense-system.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1YCujceutAcJ7F10yhHC41/c5f870e7789b6396c9997ed45ccd3beb/Active-Defense-System.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jager"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/jager",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/shock-drones.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dZ9kaUfUSF3piuFIUKf2t/7ebfc51caee42a776492b56251d45d92/Shock-Drones.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/twitch"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/twitch",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/operator-video-small-montagne.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7hp0B7pHFlaGNoUFdHOP1F/7bf3aa6da598773ce5ee89a1832c041c/operator-video-small-montagne.jpg",
@@ -9986,7 +9779,9 @@
     },
     "r6_images/ubi-gadgets/heartbeat-sensor.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7dPXIadD3D2a3uEqrCPvj2/103ad9d0d3b71adee3b92a5db96fe24d/Heartbeat-Sensor.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/pulse"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/pulse",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-jager-see-without-being-seen.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/784H4xVJGvSH6APj6jRoap/6493eac1ee27c0c3832781e719712809/r6s_jager_see_without_being_seen.jpg",
@@ -9998,7 +9793,9 @@
     },
     "r6_images/ubi-gadgets/stim-pistol.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7njaeUjJj27iYH27HnH6jn/c5533d2d7191b879c313013f278f5f59/Stim-Pistol.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/doc"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/doc",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/r6s-twitch-be-careful.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/32NkyUcHU0xJR6BvDBteAP/82be910e7c86fa00f61c870a784e4171/r6s_twitch_be_careful.jpg",
@@ -10026,27 +9823,39 @@
     },
     "r6_images/ubi-gadgets/flash-shield.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7EXDIOjPFMhPKZWY5OcEQC/f2df48ebe5673dca7773d81efd940b66/Flash-Shield.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blitz"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/blitz",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/entry-denial-device.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/FLgwGbMiZTrWcK62KxPq8/d4e584420f85fa61c09e5e57e12d9dd9/Entry-Denial-Device.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kapkan"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/kapkan",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/shumikha-launcher.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/37wX75QnY7XA6KbjM4aF5n/0ab116d398cf71463e11d43913818ec1/Shumikha-Launcher.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tachanka"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/tachanka",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/electronics-detector.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/23Nk2ie06rb3DcZnStryIY/e06226196dd582c905c33fad87dfdd63/Electronics-Detector.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iq"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/iq",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/flip-sight.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/73bNPGhlIuhlWvi497sYqE/b68414436088f62f9da44cd42f702df7/Flip-Sight.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/glaz"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/glaz",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi-gadgets/cluster-charge.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3YaoPPUbFYeVSCemdj57EL/a4a4a8c0a935640f7d9a1d1ea82bc48c/Cluster-Charge.png",
-      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fuze"
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/fuze",
+      "autocrop": true,
+      "whiten": true
     },
     "r6_images/ubi/operator-video-small-blitz.jpg": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3DXcPrPIbedPiY7oNg3bk4/e5cac2ae586e53f7b7be37f6b4ff6888/operator-video-small-blitz.jpg",
@@ -10126,54 +9935,14 @@
     },
     "r6_images/ubi-gadgets/r6s-operator-ability-blackbeard-hull.png": {
       "local": "review/local-assets/r6s-operator-ability-blackbeard-hull.png"
+    },
+    "r6_images/operators/heroes/r6-sentry.png": {
+      "url": "https://static.wikia.nocookie.net/rainbowsix/images/e/e5/Sentry.png/revision/latest?cb=20240528155153",
+      "referer": "https://rainbowsix.fandom.com/wiki/Sentry%20(Recruit)"
+    },
+    "r6_images/operators/heroes/r6-striker.png": {
+      "url": "https://static.wikia.nocookie.net/rainbowsix/images/3/3a/Striker_Portrait.png/revision/latest?cb=20240528155627",
+      "referer": "https://rainbowsix.fandom.com/wiki/Striker%20(Recruit)"
     }
-  },
-  "r6_images/attachments/r6-attach-scope-1-5x.png": {
-    "local": "review/local-assets/attach-scope-1-5x.webp"
-  },
-  "r6_images/attachments/r6-attach-scope-2-5x.png": {
-    "local": "review/local-assets/attach-scope-2-5x.webp"
-  },
-  "r6_images/attachments/r6-attach-angled-grip.png": {
-    "local": "review/local-assets/attach-angled-grip.webp"
-  },
-  "r6_images/attachments/r6-attach-compensator.png": {
-    "local": "review/local-assets/attach-compensator.webp"
-  },
-  "r6_images/attachments/r6-attach-extended-barrel.png": {
-    "local": "review/local-assets/attach-extended-barrel.png"
-  },
-  "r6_images/attachments/r6-attach-flash-hider.png": {
-    "local": "review/local-assets/attach-flash-hider.webp"
-  },
-  "r6_images/attachments/r6-attach-holographic-sight.png": {
-    "local": "review/local-assets/attach-holographic.webp"
-  },
-  "r6_images/attachments/r6-attach-laser.png": {
-    "local": "review/local-assets/attach-laser.png"
-  },
-  "r6_images/attachments/r6-attach-muzzle-brake.png": {
-    "local": "review/local-assets/attach-muzzle-brake.webp"
-  },
-  "r6_images/attachments/r6-attach-red-dot-sight.png": {
-    "local": "review/local-assets/attach-red-dot.webp"
-  },
-  "r6_images/attachments/r6-attach-reflex-sight.png": {
-    "local": "review/local-assets/attach-reflex.webp"
-  },
-  "r6_images/attachments/r6-attach-telescopic-a.png": {
-    "local": "review/local-assets/attach-telescopic-a.webp"
-  },
-  "r6_images/attachments/r6-attach-scope-3-0x.png": {
-    "local": "review/local-assets/attach-scope-3-0x.webp"
-  },
-  "r6_images/attachments/r6-attach-suppressor.png": {
-    "local": "review/local-assets/attach-suppressor.webp"
-  },
-  "r6_images/attachments/r6-attach-vertical-grip.png": {
-    "local": "review/local-assets/attach-vertical-grip.webp"
-  },
-  "r6_images/attachments/r6-attach-horizontal-grip.png": {
-    "local": "review/local-assets/attach-horizontal-grip.png"
   }
 }

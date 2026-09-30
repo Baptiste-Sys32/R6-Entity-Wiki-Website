@@ -369,7 +369,51 @@ function parseMap(title, wt) {
     galleryImage,
     modes: ['Bomb', 'Secure Area', 'Hostage'],
     blurb: intro.slice(0, 400),
+    bombSites: parseBombSites(wt),
   };
+}
+
+// Bomb site pairs from the map page Features section. Two formats:
+//  bullets: a Bomb header bullet (`*[[Bomb]]`, `:*[[Bomb (Siege)|Bomb]]`)
+//  followed by deeper-bullet site lines until the next category;
+//  table: a wikitable with `!rowspan|[[Bomb (Siege)|Bomb]]` followed by
+//  `|A & B` cells until the next rowspan category or `|}`.
+function parseBombSites(wt) {
+  const text = String(wt || '').replace(/\r/g, '');
+  const tableRow = text.match(/!rowspan="\d+"\|+.*?\[\[Bomb[^\]]*\]\][^\n]*\n([\s\S]*?)(?=!rowspan|\|})/i);
+  if (tableRow) {
+    const tablePairs = [];
+    for (const cell of tableRow[1].split('\n')) {
+      const m = cell.trim().match(/^\|([^|]+?)\s*$/);
+      if (!m || /rowspan|colspan/i.test(m[1]) || /^-+$/.test(m[1].trim())) continue;
+      const clean = stripMarkup(m[1]).replace(/\s+/g, ' ').trim();
+      if (!clean) continue;
+      const parts = clean.split(/\s+and\s+|\s*&\s*|\s*\/\s*/).map((s) => s.trim()).filter(Boolean);
+      if (parts.length) tablePairs.push(parts.slice(0, 3));
+    }
+    if (tablePairs.length) return tablePairs;
+  }
+  const lines = text.split('\n');
+  const pairs = [];
+  let inBomb = false;
+  for (const raw of lines) {
+    const line = raw.trim();
+    if (!inBomb) {
+      if (/^:{0,2}\*+\s*(\[\[[^\]]*Bomb[^\]]*\]\]|Bomb)/i.test(line) && !/Secure|Hostage/i.test(line)) inBomb = true;
+      continue;
+    }
+    if (/^==/.test(line)) break;
+    if (/hatch/i.test(line)) break;
+    if (/^:{0,1}\*[^*:]/.test(line)) break;
+    const m = line.match(/^[:*]{2,}\s*(.+?)\s*$/);
+    if (!m) continue;
+    const clean = stripMarkup(m[1]).replace(/\[\[[^\]]*\]\]/g, '').replace(/\s+/g, ' ').trim();
+    if (!clean) continue;
+    const parts = clean.split(/\s+and\s+|\s*&\s*|\s*\/\s*/).map((s) => s.trim()).filter(Boolean);
+    if (parts.length) pairs.push(parts.slice(0, 3));
+    if (pairs.length >= 6) break;
+  }
+  return pairs;
 }
 
 // --- seasons ----------------------------------------------------------------
@@ -645,54 +689,192 @@ async function main() {
   }
   console.log(`sync-r6: maps=${maps.length}`);
 
-  console.log('sync-r6: resolving map thumbnails...');
+  console.log('sync-r6: resolving map thumbnails + official blueprint layouts...');
   const mapImages = await pageImages(mapTitles);
   const mapTitleById = new Map(maps.map((m) => [m.id, mapTitles.find((t) => t === m.name || t === `${m.name} (Siege)`) || m.name]));
+  // Official Ubisoft blueprint zips (current Siege X renders, fetched live).
+  // Per-map level stacks verified Sept 2026 against Fandom galleries + visual
+  // inspection of every zip. `levels` = [floor, label?] in zip-file order
+  // (blueprint-N ascending, low to high); `use` selects 1-based indices when
+  // the zip carries overview/void extras. Labels default to canonical names.
+  const UBI_BP = 'https://ubistatic-a.ubisoft.com/0106/gamesites/rainbow6/blueprints/';
+  const B = 'basement', F1 = 'floor-1', F2 = 'floor-2', F3 = 'floor-3', RF = 'roof';
+  const MAP_BLUEPRINTS = {
+    'r6-bank': { zip: 'r6-maps-bank-blueprints.zip', levels: [[B], [F1], [F2], [RF]] },
+    'r6-border': { zip: 'r6-maps-border-blueprints.zip', levels: [[F1], [F2], [RF]] },
+    'r6-calypso-casino': { zip: 'r6-maps-calypso-casino-blueprints.zip', named: true },
+    'r6-chalet': { zip: 'r6-maps-chalet-blueprints.zip', levels: [[B], [F1], [F2], [RF]] },
+    'r6-clubhouse': { zip: 'r6-maps-clubhouse-blueprints.zip', levels: [[B], [F1], [F2], [RF]] },
+    'r6-coastline': { zip: 'r6-maps-coastline-blueprints.zip', levels: [[F1], [F2], [RF]] },
+    'r6-consulate': { zip: 'r6-maps-consulate-blueprints_may23.zip', levels: [[B], [F1], [F2], [RF]] },
+    'r6-emerald-plains': { zip: 'r6-maps-emeraldplains-blueprints.zip', levels: [[F1], [F2], [RF]] },
+    'r6-favela': { zip: 'r6-maps-favela-blueprints.zip', use: [1, 2, 3, 4], levels: [[F1], [F2], [F3], [RF]] },
+    'r6-fortress': { zip: 'r6-maps-fortress-blueprints.zip', levels: [[F1], [F2], [RF]] },
+    'r6-hereford-base-rework-': { zip: 'r6-maps-hereford-blueprints.zip', levels: [[B], [F1], [F2], [F3], [RF]] },
+    'r6-house': { zip: 'r6-maps-house-blueprints.zip', levels: [[B], [F1], [F2], [RF]] },
+    'r6-kafe-dostoyevsky': { zip: 'r6-maps-kafe-blueprints.zip', levels: [[F1], [F2], [F3], [RF]] },
+    'r6-kanal': {
+      zip: 'r6-maps-kanal-blueprints.zip',
+      levels: [[F1, 'Ground'], [F1, 'Ground 2'], [F2, '1st Floor'], [F2, '2nd Floor'], [RF, 'Roof']],
+    },
+    'r6-lair': { zip: 'r6-maps-lair-blueprints.zip', levels: [[B], [F1], [F2], [RF]] },
+    'r6-nighthaven-labs': { zip: 'r6-maps-nighthavenlabs-blueprints.zip', levels: [[B], [F1], [F2], [RF]] },
+    'r6-oregon': {
+      zip: 'r6-maps-oregon-blueprints.zip',
+      levels: [[B, 'Basement'], [F1, 'Ground'], [F1, '1st Floor'], [F2, '2nd Floor'], [RF, 'Roof']],
+    },
+    'r6-outback': { zip: 'r6-maps-outback-blueprints.zip', levels: [[F1], [F2], [RF]] },
+    'r6-presidential-plane': { zip: 'r6-maps-plane-blueprints.zip', use: [2, 3, 4], levels: [[F1], [F2], [RF]] },
+    'r6-skyscraper': { zip: 'r6-maps-skyscraper-blueprints.zip', levels: [[F1], [F2], [RF]] },
+    'r6-theme-park': { zip: 'r6-maps-themepark-blueprints.zip', levels: [[F1], [F2], [RF]] },
+    'r6-tower': { zip: 'r6-maps-tower-blueprints.zip', levels: [[B], [F1], [F2], [RF]] },
+    'r6-villa': { zip: 'r6-maps-villa-blueprints.zip', use: [1, 3, 4], levels: [[B], [F1], [F2]] },
+    'r6-yacht': {
+      zip: 'r6-maps-yacht-blueprints.zip',
+      levels: [[B, 'Basement'], [F1, 'Ground'], [F1, '1st Floor'], [F2, '2nd Floor'], [RF, 'Roof']],
+    },
+  };
+  // Legacy Fandom supplements: explicit per-file rules (no Ubi source for
+  // bartlett/stadium/hereford-orig, or a level zips lack). One layout max
+  // per rule — the old grab-everything behavior piled 37 files on Bartlett.
+  const RETAIN_FANDOM = {
+    'r6-bank': [
+      { match: /Alley Access \(spawn\)/i, floor: 'spawn', label: 'Alley Access' },
+      { match: /Jewelry Front \(spawn\)/i, floor: 'spawn', label: 'Jewelry Front' },
+      { match: /Parking Front \(spawn\)/i, floor: 'spawn', label: 'Parking Front' },
+    ],
+    'r6-presidential-plane': [
+      { match: /basement secure floor/i, floor: 'basement', label: 'Basement' },
+    ],
+    'r6-bartlett-u-': [
+      { match: /floor 1/i, floor: 'floor-1' },
+      { match: /floor 2/i, floor: 'floor-2' },
+      { match: /roof/i, floor: 'roof' },
+    ],
+    'r6-stadium': [
+      { match: /Rework 1st Floor/i, floor: 'floor-1' },
+      { match: /Rework 2nd Floor/i, floor: 'floor-2' },
+    ],
+    'r6-hereford-base-original-': [
+      { match: /HerefordBasement/i, floor: 'basement' },
+      { match: /Headquarters 1st Floor/i, floor: 'floor-1' },
+      { match: /Headquarters 2nd Floor/i, floor: 'floor-2' },
+      { match: /Headquarters 3rd Floor/i, floor: 'floor-3' },
+      { match: /HerefordRoof/i, floor: 'roof' },
+    ],
+  };
+  const FLOOR_ORDER = { basement: 0, 'floor-1': 1, 'floor-2': 2, 'floor-3': 3, roof: 4, spawn: 5, overview: 6 };
+  const FLOOR_LABEL = { basement: 'Basement', 'floor-1': 'Floor 1', 'floor-2': 'Floor 2', 'floor-3': 'Floor 3', roof: 'Roof', spawn: 'Spawns' };
+  const { execFileSync } = require('child_process');
+  const os = require('os');
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'r6-bp-'));
+  const fetchBin = async (url) => {
+    const r = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0' } });
+    if (!r.ok) throw new Error(`HTTP ${r.status} for ${url}`);
+    return Buffer.from(await r.arrayBuffer());
+  };
+  // Downscale huge sources (Calypso PNGs) to web-size JPEG via PIL.
+  const toWebJpg = (src, dest) => {
+    execFileSync('python3', ['-c', [
+      'import sys',
+      'from PIL import Image',
+      'im = Image.open(sys.argv[1]).convert("RGB")',
+      'im.thumbnail((1600, 1600))',
+      'im.save(sys.argv[2], "JPEG", quality=82)',
+    ].join(';'), src, dest], { stdio: 'pipe' });
+  };
   maps.forEach((map) => {
     const files = mapImages[mapTitleById.get(map.id)] || [];
     const thumbFile = map.galleryImage || pickFile(files, [/Siege_.*_Thumbnail/i, /Thumbnail/i]);
     map.thumb = local(`r6_images/maps/${map.id}.png`, thumbFile, 400);
-    const layouts = [];
-    for (const f of files) {
-      if (layouts.length >= 12) break;
-      if (!/\.(png|webp|jpg|jpeg)$/i.test(f)) continue;
-      if (/Layout|Blueprint/i.test(f) && !/R6M |Mobile/i.test(f)) layouts.push(f);
-    }
-    for (const f of files) {
-      if (layouts.length >= 12) break;
-      if (!/\.(png|webp|jpg|jpeg)$/i.test(f)) continue;
-      if (/\bfloor\b|roof|basement|spawn/i.test(f) && !layouts.includes(f)) layouts.push(f);
-    }
-    const FLOOR_ORDER = { basement: 0, 'floor-1': 1, 'floor-2': 2, 'floor-3': 3, roof: 4, spawn: 5, overview: 6 };
-    const classifyFloor = (f) => {
-      const n = f.toLowerCase();
-      if (/basement/.test(n)) return 'basement';
-      if (/roof|rooftop/.test(n)) return 'roof';
-      if (/spawn|exterior/.test(n)) return 'spawn';
-      if (/(^|[^a-z])(ground|1st|first|floor[- ]?0?1|[^0-9]1f)([^a-z]|$)/.test(n)) return 'floor-1';
-      if (/(^|[^a-z])(2nd|second|floor[- ]?2)([^a-z]|$)/.test(n)) return 'floor-2';
-      if (/(^|[^a-z])(3rd|third|floor[- ]?3)([^a-z]|$)/.test(n)) return 'floor-3';
-      return 'overview';
-    };
-    const humanizeLabel = (f, floor) => {
-      const base = f.replace(/\.(png|webp|jpg|jpeg)$/i, '').replace(/_/g, ' ').replace(/\s+/g, ' ').trim();
-      if (floor === 'overview') {
-        const m = base.match(/(Layout|Blueprint)\s*(\d+)/i);
-        if (m) return `${m[1][0].toUpperCase() + m[1].slice(1).toLowerCase()} ${m[2]}`;
-        return base.length > 40 ? base.slice(0, 37).trimEnd() + '…' : base;
+    map.layouts = [];
+  });
+  // 1) Official blueprints first (uniform, current).
+  let bpCount = 0;
+  const bpJobs = Object.entries(MAP_BLUEPRINTS).filter(([id]) => maps.some((m) => m.id === id));
+  console.log(`sync-r6: downloading ${bpJobs.length} blueprint zips...`);
+  const bpDownloads = [];
+  const runBp = async ([id, cfg]) => {
+    const map = maps.find((m) => m.id === id);
+    try {
+      const bin = await fetchBin(UBI_BP + cfg.zip);
+      const zipPath = path.join(tmpDir, `${id}.zip`);
+      fs.writeFileSync(zipPath, bin);
+      const list = execFileSync('unzip', ['-Z1', zipPath], { encoding: 'utf8' })
+        .split('\n').map((s) => s.trim()).filter(Boolean)
+        .filter((n) => !n.endsWith('/') && !n.split('/').pop().startsWith('._') && /\.(png|jpe?g|webp)$/i.test(n));
+      let inners;
+      if (cfg.named) {
+        const pick = (re) => list.find((n) => re.test(n));
+        const order = [/basement/i, /[^a-z]1f[^a-z]/i, /[^a-z]2f[^a-z]/i, /roof/i];
+        const floors = ['basement', 'floor-1', 'floor-2', 'roof'];
+        const labels = ['Basement', '1st Floor', '2nd Floor', 'Roof'];
+        inners = order.map((re, i) => ({ inner: pick(re), floor: floors[i], label: labels[i] }));
+        if (inners.some((e) => !e.inner)) throw new Error(`named match failed in ${cfg.zip}`);
+      } else {
+        const numbered = list
+          .map((n) => ({ n, num: parseInt((n.match(/blueprint-(\d+)/i) || [])[1], 10) }))
+          .filter((e) => Number.isInteger(e.num)).sort((a, b) => a.num - b.num);
+        const use = cfg.use || numbered.map((e) => e.num);
+        inners = use.map((num, i) => {
+          const hit = numbered.find((e) => e.num === num);
+          if (!hit) throw new Error(`blueprint-${num} missing in ${cfg.zip}`);
+          const [floor, label] = cfg.levels[i];
+          return { inner: hit.n, floor, label: label || FLOOR_LABEL[floor] };
+        });
       }
-      const names = { basement: 'Basement', 'floor-1': 'Floor 1', 'floor-2': 'Floor 2', 'floor-3': 'Floor 3', roof: 'Roof', spawn: 'Spawns' };
-      return names[floor] || base;
-    };
-    map.layouts = layouts.map((f, i) => {
-      const rel = `r6_images/maps/${map.id}-layout-${i + 1}.png`;
-      const floor = classifyFloor(f);
-      return { label: humanizeLabel(f, floor), source: f, floor, order: FLOOR_ORDER[floor], image: local(rel, f, 800) };
-    }).filter((l) => l.image);
+      inners.forEach(({ inner, floor, label }, i) => {
+        const rel = `r6_images/maps/${map.id}-layout-${i + 1}.jpg`;
+        const abs = path.join(ROOT, 'web', rel);
+        fs.mkdirSync(path.dirname(abs), { recursive: true });
+        const tmpImg = path.join(tmpDir, `${map.id}-${i}.bin`);
+        fs.writeFileSync(tmpImg, execFileSync('unzip', ['-p', zipPath, inner], { encoding: 'buffer', maxBuffer: 128 * 1024 * 1024 }));
+        toWebJpg(tmpImg, abs);
+        map.layouts.push({ label, source: `ubi:${cfg.zip}#${inner.split('/').pop()}`, floor, order: FLOOR_ORDER[floor], image: rel });
+      });
+      bpCount += inners.length;
+      bpDownloads.push(`${id}=${inners.length}`);
+    } catch (error) {
+      console.warn(`sync-r6: blueprints failed for ${map.name} (${error.message.split('\n')[0]})`);
+    }
+  };
+
+  for (const job of bpJobs) {
+    await runBp(job);
+    await sleep(SLEEP_MS);
+  }
+  console.log(`sync-r6: blueprints ok (${bpDownloads.length} maps): ${bpDownloads.join(' ')}`);
+
+  // 2) Legacy Fandom supplements (no Ubi source, or a level zips lack).
+  for (const [id, rules] of Object.entries(RETAIN_FANDOM)) {
+    const map = maps.find((m) => m.id === id);
+    if (!map) continue;
+    const files = mapImages[mapTitleById.get(map.id)] || [];
+    for (const rule of rules) {
+      const f = files.find((name) => rule.match.test(name)
+        && /\.(png|webp|jpg|jpeg)$/i.test(name)
+        && !map.layouts.some((l) => l.source === name));
+      if (!f) { console.warn(`sync-r6: retain miss ${map.name} (${rule.match})`); continue; }
+      const idx = map.layouts.length + 1;
+      const rel = `r6_images/maps/${map.id}-layout-${idx}.png`;
+      const saved = local(rel, f, 800);
+      if (!saved) continue;
+      map.layouts.push({ label: rule.label || FLOOR_LABEL[rule.floor], source: f, floor: rule.floor, order: FLOOR_ORDER[rule.floor], image: saved });
+    }
+  }
+  maps.forEach((map) => {
     map.layouts.sort((a, b) => (a.order - b.order) || a.label.localeCompare(b.label));
+    const seen = new Set();
+    (map.layouts || []).forEach((l) => {
+      const key = `${l.floor}|${l.label}`;
+      if (seen.has(key)) console.warn(`sync-r6: duplicate layout ${map.name} [${l.floor}] ${l.label} (${l.source})`);
+      seen.add(key);
+    });
     delete map.galleryImage;
   });
-  console.log(`sync-r6: thumbs=${maps.filter((m) => m.thumb).length}/${maps.length}`);
+  const emptyMaps = maps.filter((m) => !(m.layouts || []).length).map((m) => m.name);
+  if (emptyMaps.length) console.warn(`sync-r6: maps with zero layouts: ${emptyMaps.join(', ')}`);
+  console.log(`sync-r6: thumbs=${maps.filter((m) => m.thumb).length}/${maps.length} layouts=${maps.reduce((n, m) => n + (m.layouts || []).length, 0)}`);
 
   // Sweep orphaned per-map layout files (indices shift when floor order changes).
   const referenced = new Set();
@@ -705,13 +887,23 @@ async function main() {
     let swept = 0;
     for (const file of fs.readdirSync(mapsDir)) {
       const rel = `r6_images/maps/${file}`;
-      if (/-layout-\d+\.png$/.test(file) && !referenced.has(rel)) {
+      if (/-layout-\d+\.(png|jpg)$/.test(file) && !referenced.has(rel)) {
         fs.unlinkSync(path.join(mapsDir, file));
         swept += 1;
       }
     }
     if (swept) console.log(`sync-r6: swept ${swept} orphaned layout files`);
   }
+  // Prune stale map keys from the image manifest (same orphan logic —
+  // otherwise the image sync keeps re-downloading dead Fandom files).
+  let pruned = 0;
+  for (const key of Object.keys(manifest)) {
+    if (key.startsWith('r6_images/maps/') && !referenced.has(key)) {
+      delete manifest[key];
+      pruned += 1;
+    }
+  }
+  if (pruned) console.log(`sync-r6: pruned ${pruned} stale map manifest keys`);
 
   console.log('sync-r6: resolving season covers...');
   seasons.forEach((season) => {
@@ -749,6 +941,11 @@ async function main() {
   fs.writeFileSync(path.join(ROOT, 'review', 'r6-image-manifest.json'), JSON.stringify({ generatedAt, images: manifest }, null, 2) + '\n');
   fs.writeFileSync(path.join(CONTENT_DIR, 'operators.json'), JSON.stringify({ generatedAt, metadata: { sources, count: operators.length }, operators }, null, 2) + '\n');
   fs.writeFileSync(path.join(CONTENT_DIR, 'maps.json'), JSON.stringify({ generatedAt, metadata: { sources, count: maps.length }, maps }, null, 2) + '\n');
+  const bombSites = {};
+  maps.forEach((m) => { bombSites[m.id] = m.bombSites || []; });
+  const emptySites = Object.entries(bombSites).filter(([, v]) => !v.length).map(([k]) => k);
+  if (emptySites.length) console.warn(`sync-r6: maps without parsed bomb sites: ${emptySites.join(', ')}`);
+  fs.writeFileSync(path.join(CONTENT_DIR, 'bomb-sites.json'), JSON.stringify({ generatedAt, metadata: { sources: { wiki: 'https://rainbowsix.fandom.com/api.php (Features > Bomb, CC-BY-SA)' }, count: maps.length }, sites: bombSites }, null, 2) + '\n');
   fs.writeFileSync(path.join(CONTENT_DIR, 'seasons.json'), JSON.stringify({ generatedAt, metadata: { sources, count: seasons.length }, seasons }, null, 2) + '\n');
   console.log('sync-r6: wrote content/operators.json, maps.json, seasons.json');
 }

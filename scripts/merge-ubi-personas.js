@@ -44,9 +44,9 @@ async function main() {
   manifest.images = manifest.images || {};
   const haveIds = new Set(opsDoc.operators.map((o) => o.id));
   let added = 0;
-  for (const u of ubi.filter((o) => !o.opId)) {
-    const id = `r6-${u.slug}`;
-    if (haveIds.has(id)) { console.log(`merge-personas: ${u.slug} already present, skip`); continue; }
+  for (const u of ubi) {
+    const id = u.opId || `r6-${u.slug}`;
+    if (haveIds.has(id)) continue;
     const title = `${u.name[0].toUpperCase()}${u.name.slice(1)} (Recruit)`;
     let wt = '';
     try {
@@ -104,6 +104,34 @@ async function main() {
     if (!loreDoc.entries[id].biography) delete loreDoc.entries[id].biography;
     added += 1;
     console.log(`merge-personas: added ${id} (${u.side}, ${weapons.length} loadout entries)`);
+  }
+  // Ensure pass (runs every time, including for already-merged personas):
+  // lore stats must survive re-runs, and the season roster must stay whole
+  // (the data sync only adds ops present at its run). Personas are
+  // Recruit-standard 2 health / 2 speed.
+  const seasonsDoc = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, 'seasons.json'), 'utf8'));
+  let seasonsDirty = false;
+  for (const u of ubi.filter((o) => ['r6-sentry', 'r6-striker'].includes(o.opId))) {
+    const id = u.opId;
+    const prev = loreDoc.entries[id] || {};
+    loreDoc.entries[id] = {
+      biography: prev.biography || null,
+      quotes: prev.quotes || [],
+      health: prev.health !== undefined ? prev.health : 2,
+      speed: prev.speed !== undefined ? prev.speed : 2,
+      difficulty: prev.difficulty !== undefined ? prev.difficulty : 1,
+    };
+    if (!loreDoc.entries[id].biography) delete loreDoc.entries[id].biography;
+    const displayName = u.name[0].toUpperCase() + u.name.slice(1);
+    const nb = seasonsDoc.seasons.find((s) => s.name === 'Operation New Blood');
+    if (nb && !nb.operators.includes(displayName)) {
+      nb.operators.push(displayName);
+      seasonsDirty = true;
+    }
+  }
+  if (seasonsDirty) {
+    seasonsDoc.generatedAt = new Date().toISOString();
+    fs.writeFileSync(path.join(CONTENT_DIR, 'seasons.json'), JSON.stringify(seasonsDoc, null, 2) + '\n');
   }
   opsDoc.generatedAt = new Date().toISOString();
   fs.writeFileSync(OPERATORS_PATH, JSON.stringify(opsDoc, null, 2) + '\n');

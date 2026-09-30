@@ -76,6 +76,17 @@ function validateMaps(maps) {
     if (!Array.isArray(map.modes) || map.modes.length === 0) throw new Error(`${label} is missing modes`);
     if (seen.has(map.id)) throw new Error(`duplicate map id ${map.id}`);
     seen.add(map.id);
+    if (!Array.isArray(map.layouts) || map.layouts.length === 0) {
+      throw new Error(`${label} (${map.name}) has zero layouts`);
+    }
+    if (map.bombSites !== undefined) {
+      if (!Array.isArray(map.bombSites)) throw new Error(`${label} bombSites not an array`);
+      map.bombSites.forEach((pair, i) => {
+        if (!Array.isArray(pair) || !pair.length || pair.some((s) => typeof s !== 'string' || !s)) {
+          throw new Error(`${label} bombSites[${i}] invalid`);
+        }
+      });
+    }
   });
 }
 

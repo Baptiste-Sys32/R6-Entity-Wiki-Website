@@ -1,0 +1,381 @@
+{
+  "generatedAt": "2026-09-30T15:56:34.784Z",
+  "metadata": {
+    "sources": {
+      "wiki": "https://rainbowsix.fandom.com/api.php (Features > Bomb, CC-BY-SA)"
+    },
+    "count": 27
+  },
+  "sites": {
+    "r6-bank": [],
+    "r6-bartlett-u-": [
+      [
+        "2F Trophy Room",
+        "2F Rowing Museum"
+      ],
+      [
+        "2F Classroom",
+        "2F Upper Library"
+      ],
+      [
+        "1F Kitchen",
+        "1F Piano Lounge"
+      ],
+      [
+        "1F Reading Room",
+        "1F Lower Library"
+      ]
+    ],
+    "r6-border": [
+      [
+        "2F Armory Lockers",
+        "2F Archives"
+      ],
+      [
+        "1F Workshop",
+        "1F Ventilation Room"
+      ],
+      [
+        "1F Customs Inspection",
+        "1F Supply Room"
+      ],
+      [
+        "1F Tellers",
+        "1F Bathroom"
+      ],
+      [
+        "Secure Area"
+      ],
+      [
+        "2F Armory Lockers"
+      ]
+    ],
+    "r6-calypso-casino": [],
+    "r6-chalet": [
+      [
+        "2F Master Bedroom",
+        "2F Office"
+      ],
+      [
+        "1F Bar",
+        "1F Gaming Room"
+      ],
+      [
+        "1F Dining Room",
+        "1F Kitchen"
+      ],
+      [
+        "B Wine Cellar",
+        "B Snowmobile Garage"
+      ],
+      [
+        "Secure Area"
+      ],
+      [
+        "2F Piano Room"
+      ]
+    ],
+    "r6-clubhouse": [
+      [
+        "Gym",
+        "Bedroom"
+      ],
+      [
+        "CCTV Room",
+        "Cash Room"
+      ],
+      [
+        "Bar",
+        "Stage"
+      ],
+      [
+        "Church",
+        "Arsenal Room"
+      ]
+    ],
+    "r6-coastline": [
+      [
+        "2F Theater",
+        "2F Penthouse"
+      ],
+      [
+        "2F Hookah Lounge",
+        "2F Billiards Room"
+      ],
+      [
+        "1F Blue Bar",
+        "1F Sunrise Bar"
+      ],
+      [
+        "1F Service Entrance",
+        "1F Kitchen"
+      ]
+    ],
+    "r6-consulate": [
+      [
+        "2F Consul Office",
+        "2F Meeting Room"
+      ],
+      [
+        "1F Lobby",
+        "1F Press Room"
+      ],
+      [
+        "B Garage",
+        "B Cafeteria"
+      ],
+      [
+        "1F Tellers",
+        "B Archives"
+      ],
+      [
+        "Secure Area"
+      ],
+      [
+        "Administration Office"
+      ]
+    ],
+    "r6-emerald-plains": [],
+    "r6-favela": [],
+    "r6-fortress": [],
+    "r6-hereford-base-original-": [],
+    "r6-hereford-base-rework-": [
+      [
+        "3F Ammo Storage",
+        "3F Tractor Storage"
+      ],
+      [
+        "2F Kids Bedroom",
+        "2F Master Bedroom"
+      ],
+      [
+        "1F Kitchen",
+        "1F Dining Room"
+      ],
+      [
+        "B Brewery",
+        "B Fermentation Chamber"
+      ]
+    ],
+    "r6-house": [
+      [
+        "2F Pink Room",
+        "2F Car Room"
+      ],
+      [
+        "2F Master Bedroom",
+        "2F Car Room"
+      ],
+      [
+        "1F TV Room",
+        "1F Music Room"
+      ],
+      [
+        "B Gym",
+        "B Garage"
+      ]
+    ],
+    "r6-kafe-dostoyevsky": [
+      [
+        "3F Cocktail Lounge",
+        "3F Bar"
+      ],
+      [
+        "2F Mining Room",
+        "2F Fireplace Hall"
+      ],
+      [
+        "2F Reading Room",
+        "2F Fireplace Hall"
+      ],
+      [
+        "1F Kitchen Service",
+        "1F Kitchen Cooking"
+      ]
+    ],
+    "r6-kanal": [
+      [
+        "2F Server Room",
+        "2F Radar Room"
+      ],
+      [
+        "1F Security Room",
+        "1F Maps Room"
+      ],
+      [
+        "1F Coast Guard Meeting Room",
+        "1F Lounge"
+      ],
+      [
+        "B1 Supply Room",
+        "B1 Kayaks"
+      ]
+    ],
+    "r6-lair": [],
+    "r6-nighthaven-labs": [],
+    "r6-oregon": [
+      [
+        "2F Main Dorms Hall",
+        "2F Kids Dormitory"
+      ],
+      [
+        "1F Dining Hall",
+        "1F Kitchen"
+      ],
+      [
+        "1F Meeting Hall",
+        "1F Kitchen"
+      ],
+      [
+        "B Laundry Room",
+        "B Supply Room"
+      ]
+    ],
+    "r6-outback": [
+      [
+        "2F Piano Room",
+        "2F Laundry"
+      ],
+      [
+        "2F Party Room",
+        "2F Office"
+      ],
+      [
+        "1F Green Bedroom",
+        "1F Red Bedroom"
+      ],
+      [
+        "1F Mechanic Shop",
+        "1F Kitchen"
+      ]
+    ],
+    "r6-presidential-plane": [
+      [
+        "2F Meeting Room",
+        "2F Executive Office"
+      ],
+      [
+        "2F Executive Bedroom",
+        "2F Staff Section"
+      ],
+      [
+        "1F Cargo Hold",
+        "1F Luggage Hold"
+      ],
+      [
+        "Secure Area"
+      ],
+      [
+        "2F Meeting Room"
+      ],
+      [
+        "2F Executive Bedroom"
+      ]
+    ],
+    "r6-skyscraper": [
+      [
+        "2F Tea Room",
+        "2F Karaoke"
+      ],
+      [
+        "2F Exhibition Room",
+        "2F Office"
+      ],
+      [
+        "1F Kitchen",
+        "1F BBQ"
+      ],
+      [
+        "1F Bedroom",
+        "1F Bathroom"
+      ],
+      [
+        "Secure Area"
+      ],
+      [
+        "2F Karaoke"
+      ]
+    ],
+    "r6-stadium": [],
+    "r6-theme-park": [
+      [
+        "2F Office",
+        "2F Initiation Room"
+      ],
+      [
+        "2F Bunk",
+        "2F Day Care"
+      ],
+      [
+        "1F Armory",
+        "1F Throne Room"
+      ],
+      [
+        "1F Lab",
+        "1F Storage"
+      ]
+    ],
+    "r6-tower": [
+      [
+        "2F Gift Shop",
+        "Lantern Room"
+      ],
+      [
+        "2F Media Center",
+        "2F Exhibit Room"
+      ],
+      [
+        "1F Restaurant",
+        "1F Bird Room"
+      ],
+      [
+        "1F Tea Room",
+        "1F Bar"
+      ],
+      [
+        "Secure Area"
+      ],
+      [
+        "2F CEO's Office"
+      ]
+    ],
+    "r6-villa": [
+      [
+        "2F Aviator Room",
+        "2F Games Room"
+      ],
+      [
+        "2F Trophy Room",
+        "2F Statuary Room"
+      ],
+      [
+        "1F Living Room",
+        "1F Library"
+      ],
+      [
+        "1F Dining Room",
+        "1F Kitchen"
+      ]
+    ],
+    "r6-yacht": [
+      [
+        "4F Cockpit + 4F Maps Room"
+      ],
+      [
+        "2F Kitchen + 2F Engine Control"
+      ],
+      [
+        "2F Cafeteria + 2F Staff Dormitory"
+      ],
+      [
+        "1F Server Room + 1F Storage Room"
+      ],
+      [
+        "Secure Area"
+      ],
+      [
+        "4F Cockpit"
+      ]
+    ]
+  }
+}

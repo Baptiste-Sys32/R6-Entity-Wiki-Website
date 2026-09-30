@@ -90,6 +90,55 @@ function negatePng(dest) {
   }
 }
 
+// Recolors dark line-art to true-white (RGB 255, alpha untouched) for dark
+// UI (manifest entries with `whiten: true`). Skips files already bright —
+// safe to flag broadly, only dark art converts. Warns and keeps the
+// original when PIL is unavailable.
+function whitenPng(dest) {
+  try {
+    execFileSync('python3', ['-c', [
+      'import sys',
+      'from PIL import Image',
+      'p = sys.argv[1]',
+      'im = Image.open(p).convert("RGBA")',
+      'px = list(im.getdata())',
+      'op = [q for q in px if q[3] > 128]',
+      'avg = sum((r + g + b) / 3 for r, g, b, a in op) / len(op) if op else 255',
+      'out = Image.new("RGBA", im.size, (0, 0, 0, 0))',
+      'ox = out.load(); w, h = im.size; sp = im.load()',
+      '[(ox.__setitem__((x, y), (255, 255, 255, sp[x, y][3])) if avg < 128 else None) for y in range(h) for x in range(w)]',
+      'out.save(p) if avg < 128 else None',
+      'print("converted" if avg < 128 else "skipped-bright")',
+    ].join('; '), dest], { stdio: 'pipe' });
+    return true;
+  } catch (error) {
+    console.warn(`sync-r6-images: whiten skipped for ${dest} (${error.message.split('\n')[0]})`);
+    return false;
+  }
+}
+
+// Trims transparent padding to content bbox (+10px margin) so small centered
+// glyphs fill their frames (manifest entries with `autocrop: true`).
+function autocropPng(dest, margin = 10) {
+  try {
+    execFileSync('python3', ['-c', [
+      'import sys',
+      'from PIL import Image',
+      'p = sys.argv[1]; m = int(sys.argv[2])',
+      'im = Image.open(p).convert("RGBA")',
+      'bb = im.split()[3].getbbox()',
+      'w, h = im.size',
+      'x0, y0, x1, y1 = max(0, bb[0]-m), max(0, bb[1]-m), min(w, bb[2]+m), min(h, bb[3]+m)',
+      'im.crop((x0, y0, x1, y1)).save(p) if bb and (x0, y0, x1, y1) != (0, 0, w, h) else None',
+      'print("cropped" if bb and (x0, y0, x1, y1) != (0, 0, w, h) else "skipped-tight")',
+    ].join('; '), dest, String(margin)], { stdio: 'pipe' });
+    return true;
+  } catch (error) {
+    console.warn(`sync-r6-images: autocrop skipped for ${dest} (${error.message.split('\n')[0]})`);
+    return false;
+  }
+}
+
 async function main() {
   const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')).images;
   const stateFile = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, 'utf8')) : {};
@@ -111,6 +160,11 @@ async function main() {
         remoteUrl = spec.url || await resolveUrl(spec.file, spec.width);
         revision = revisionOf(remoteUrl, spec.file);
       }
+      // Art transforms are part of the revision: toggling a flag forces one
+      // re-download + transform, then converges back to skips.
+      if (!spec.local && (spec.whiten || spec.autocrop)) {
+        revision += `|${spec.autocrop ? 'crop' : ''}${spec.whiten ? '+white' : ''}`;
+      }
       const fileKey = spec.local || spec.file || spec.url;
       const fresh = fs.existsSync(dest) && fs.statSync(dest).size > 0
         && state[local] && state[local].revision === revision && state[local].file === fileKey;
@@ -127,6 +181,12 @@ async function main() {
         bytes += await download(remoteUrl, dest, spec.referer);
       }
       if (spec.invert) negatePng(dest);
+      // Transforms apply to downloads only — repo-vendored `local` pins are
+      // canonical as-supplied and copied verbatim.
+      if (!payload) {
+        if (spec.autocrop) autocropPng(dest);
+        if (spec.whiten) whitenPng(dest);
+      }
       state[local] = { revision, file: fileKey };
       done += 1;
       if (hadFile) refreshed += 1;
