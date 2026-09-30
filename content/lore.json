@@ -1541,8 +1541,8 @@
         "BREACH",
         "ANTI-GADGET"
       ],
-      "health": 3,
-      "speed": 1,
+      "health": 2,
+      "speed": 2,
       "difficulty": 1,
       "realName": "Zofia Bosak",
       "dob": "January 28th (Age 36)",
@@ -2518,8 +2518,8 @@
         "ANTI-GADGET",
         "CROWD CONTROL"
       ],
-      "health": 2,
-      "speed": 2,
+      "health": 3,
+      "speed": 1,
       "difficulty": 1,
       "realName": "Mark R. Chandar",
       "dob": "October 11th (Age 25)",

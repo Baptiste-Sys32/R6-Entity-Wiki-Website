@@ -8,6 +8,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { lookupStatOverride } = require('./r6-stat-truth');
 
 const ROOT = path.resolve(__dirname, '..');
 const CONTENT_DIR = path.join(ROOT, 'content');
@@ -302,6 +303,13 @@ async function main() {
       await sleep(SLEEP_MS);
     } else {
       console.warn(`sync-lore: no ubisoft slug for ${op.name} (tried ${slug})`);
+    }
+    // Known-stale Ubi pages (see scripts/r6-stat-truth.js): live truth wins.
+    const statFix = lookupStatOverride(slug);
+    if (statFix) {
+      console.log(`sync-lore: stat-truth override ${op.name} -> ${statFix.health}-${statFix.speed}`);
+      ubi.health = statFix.health;
+      ubi.speed = statFix.speed;
     }
     entries[op.id] = {
       ubiBio: ubi.bio, ubiQuote: ubi.quote, ubiPsych: ubi.psychReport, tips: ubi.tips || [],

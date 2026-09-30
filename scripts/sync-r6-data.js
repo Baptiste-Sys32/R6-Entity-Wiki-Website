@@ -11,6 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { lookupStatOverride } = require('./r6-stat-truth');
 
 const ROOT = path.resolve(__dirname, '..');
 const CONTENT_DIR = path.join(ROOT, 'content');
@@ -458,6 +459,14 @@ async function main() {
       const op = parseOperator(title, wt, seasonCats.length === 1 ? seasonCats[0] : null);
       if (op) {
         if (crossover) op.crossover = true;
+        // Known-stale Fandom infoboxes (see scripts/r6-stat-truth.js):
+        // live patch-note truth wins over the parsed dots.
+        const statFix = lookupStatOverride(op.name);
+        if (statFix) {
+          console.log(`sync-r6: stat-truth override ${op.name} -> ${statFix.health}-${statFix.speed}`);
+          op.armor = statFix.health;
+          op.speed = statFix.speed;
+        }
         operators.push(op);
       }
       else console.warn(`sync-r6: skipped ${title} (no attacker/defender infobox)`);

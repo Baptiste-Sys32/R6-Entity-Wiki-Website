@@ -12,6 +12,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const CONTENT_DIR = path.join(ROOT, 'content');
+const { lookupStatOverride } = require('./r6-stat-truth');
 const OPERATORS_PATH = path.join(CONTENT_DIR, 'operators.json');
 const OUT_PATH = path.join(CONTENT_DIR, 'ubi-operators.json');
 const UBI_INDEX = 'https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators';
@@ -155,6 +156,13 @@ async function main() {
       return null;
     }
     const p = parsePage(html, slug);
+    // Known-stale Ubi pages (see scripts/r6-stat-truth.js): live truth wins.
+    const statFix = lookupStatOverride(slug);
+    if (statFix) {
+      console.log(`sync-ubi-loadouts: stat-truth override ${slug} -> ${statFix.health}-${statFix.speed}`);
+      p.health = statFix.health;
+      p.speed = statFix.speed;
+    }
     if (!p.primaries.length && !p.gadgets.length && !p.powers.length) {
       console.warn(`sync-ubi-loadouts: empty loadout ${slug}`);
       return null;

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T06:14:56.010Z",
+  "generatedAt": "2026-09-30T07:33:04.337Z",
   "metadata": {
     "sources": {
       "ubisoft": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/<slug> (downloaded icons+posters; mp4 hotlinked)"
@@ -2385,8 +2385,8 @@
         "youtubeId": "JAljvCbVM1g",
         "poster": "r6_images/ubi/operator-video-small-mute.jpg"
       },
-      "health": 2,
-      "speed": 2,
+      "health": 3,
+      "speed": 1,
       "difficulty": 1
     },
     {
@@ -4013,8 +4013,8 @@
         "mp4Poster": null
       },
       "reveal": null,
-      "health": 3,
-      "speed": 1,
+      "health": 2,
+      "speed": 2,
       "difficulty": 1
     }
   ]
