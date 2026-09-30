@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:40:27.046Z",
+  "generatedAt": "2026-09-30T06:21:10.929Z",
   "metadata": {
     "sources": {
       "wiki": "https://rainbowsix.fandom.com/api.php",
@@ -3845,8 +3845,8 @@
       "ability": "A Medium Health Operator, Warden's unique gadget is a pair of Glance Smart Glasses, special glasses that nullify the effects of Stun Grenades, Smoke Grenades, and other related gadgets.",
       "realname": "Collinn McKinley\n|organization \\ Secret Service Rainbow (formerly) Ghosteyes (fo",
       "quote": "I won't leave you behind, not now, not ever.",
-      "armor": 0,
-      "speed": 0,
+      "armor": 3,
+      "speed": 1,
       "icon": "r6_images/operators/icons/r6-warden.png",
       "hero": "r6_images/operators/heroes/r6-warden.png",
       "gadgetIcon": "r6_images/gadgets/r6-warden.png",

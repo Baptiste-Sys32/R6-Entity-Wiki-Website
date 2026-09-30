@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:30:47.752Z",
+  "generatedAt": "2026-09-30T06:14:56.010Z",
   "metadata": {
     "sources": {
       "ubisoft": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/<slug> (downloaded icons+posters; mp4 hotlinked)"
@@ -49,7 +49,10 @@
       "reveal": {
         "youtubeId": "c41qhi9Pi5A",
         "poster": "r6_images/ubi/r6s-voidedge-bg-characters-ace.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 1
     },
     {
       "slug": "alibi",
@@ -96,7 +99,10 @@
       "reveal": {
         "youtubeId": "HFDpxnXfMHc",
         "poster": "r6_images/ubi/r6-operator-alibi-keyart.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 3
     },
     {
       "slug": "amaru",
@@ -147,7 +153,10 @@
       "reveal": {
         "youtubeId": "4UhbBRklPBQ",
         "poster": "r6_images/ubi/r6-operator-amaru-keyart.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "aruni",
@@ -190,7 +199,10 @@
       "reveal": {
         "youtubeId": "7LLwRc0EUp8",
         "poster": "r6_images/ubi/r6s-aruni-keyart.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 2
     },
     {
       "slug": "ash",
@@ -236,8 +248,11 @@
       },
       "reveal": {
         "youtubeId": "SNWqmPCJyBw",
-        "poster": "r6_images/ubi/ubi-reveal-fallback.jpg"
-      }
+        "poster": "r6_images/ubi/mqdefault.jpg"
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "azami",
@@ -280,7 +295,10 @@
       "reveal": {
         "youtubeId": "ou1HLpJXTb8",
         "poster": "r6_images/ubi/r6s-demonveil-bg-characters-azami.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 3
     },
     {
       "slug": "bandit",
@@ -327,7 +345,10 @@
       "reveal": {
         "youtubeId": "KHV_mpFnfcU",
         "poster": "r6_images/ubi/operator-video-ability-bandit.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 1
     },
     {
       "slug": "blackbeard",
@@ -362,7 +383,10 @@
         "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4vqZbu81Gncpt5GQPxy3So/93a4e532ee86cb543fe2df8a1763041d/r6s-blackbeard-hull-gadget-video.mp4",
         "mp4Poster": "r6_images/ubi/r6s-blackbeard-hull-gadget.jpg"
       },
-      "reveal": null
+      "reveal": null,
+      "health": 3,
+      "speed": 1,
+      "difficulty": 2
     },
     {
       "slug": "blitz",
@@ -398,7 +422,10 @@
         "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4kdZUaHnwqRC6TqdmklGrn/cd99884bba8c0c5bff5f4a4236a7d803/operator-video-small-blitz.mp4",
         "mp4Poster": "r6_images/ubi/operator-video-small-blitz.jpg"
       },
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 3
     },
     {
       "slug": "brava",
@@ -445,7 +472,10 @@
       "reveal": {
         "youtubeId": "JZsdGXuIsbw",
         "poster": "r6_images/ubi/r6s-brava-biography.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 3
     },
     {
       "slug": "buck",
@@ -488,7 +518,10 @@
       "reveal": {
         "youtubeId": "EekYZeaUrx8",
         "poster": "r6_images/ubi/r6-operators-gadget-buck.png"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "capitao",
@@ -540,7 +573,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "castle",
@@ -591,7 +627,10 @@
       "reveal": {
         "youtubeId": "4Ng1Zg8WlMc",
         "poster": "r6_images/ubi/operator-video-ability-castle.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "caveira",
@@ -635,7 +674,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 1,
+      "speed": 3,
+      "difficulty": 3
     },
     {
       "slug": "clash",
@@ -682,7 +724,10 @@
       "reveal": {
         "youtubeId": "j2Xu_0t6Cpc",
         "poster": "r6_images/ubi/r6s-clash-keyart.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 3
     },
     {
       "slug": "deimos",
@@ -725,7 +770,10 @@
       "reveal": {
         "youtubeId": "P5OKSXTiBXg",
         "poster": "r6_images/ubi/r6s-deadlyomen-bg-characters-deimos-1-.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "denari",
@@ -772,7 +820,10 @@
       "reveal": {
         "youtubeId": "FPo3A1TwHOk",
         "poster": "r6_images/ubi/r6s-operator-denari-keyart.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 3
     },
     {
       "slug": "doc",
@@ -824,7 +875,10 @@
         "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6xDPUNLR00b0Gylx34vrwA/c58c6a0781dccd422fe965b3ab2830fc/operator-video-small-doc.mp4",
         "mp4Poster": "r6_images/ubi/operator-video-small-doc.jpg"
       },
-      "reveal": null
+      "reveal": null,
+      "health": 3,
+      "speed": 1,
+      "difficulty": 1
     },
     {
       "slug": "dokkaebi",
@@ -879,7 +933,10 @@
       "reveal": {
         "youtubeId": "FcrrAm4dlGQ",
         "poster": "r6_images/ubi/r6s-y11s2-seasonal-operator-keyart-16x9-1920x1080-1-1-.png"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "echo",
@@ -923,7 +980,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 3
     },
     {
       "slug": "ela",
@@ -967,7 +1027,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "fenrir",
@@ -1010,7 +1073,10 @@
       "reveal": {
         "youtubeId": "QmFQRLoL2kA",
         "poster": "r6_images/ubi/r6s-dreadfactor-bg-characters-fenrir.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 3
     },
     {
       "slug": "finka",
@@ -1062,7 +1128,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "flores",
@@ -1109,7 +1178,10 @@
       "reveal": {
         "youtubeId": "xHuz2Q3NIEE",
         "poster": "r6_images/ubi/r6s-crimsonheist-bg-characters-flores.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "frost",
@@ -1156,7 +1228,10 @@
       "reveal": {
         "youtubeId": "GAQEsRmoJvk",
         "poster": "r6_images/ubi/r6-operators-gadget-frost.webp"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "fuze",
@@ -1210,8 +1285,11 @@
       },
       "reveal": {
         "youtubeId": "isc7ixUnzCc",
-        "poster": "r6_images/ubi/ubi-reveal-fallback.jpg"
-      }
+        "poster": "r6_images/ubi/mqdefault.jpg"
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 1
     },
     {
       "slug": "glaz",
@@ -1261,8 +1339,11 @@
       },
       "reveal": {
         "youtubeId": "HbwhAi0l3KQ",
-        "poster": "r6_images/ubi/ubi-reveal-fallback.jpg"
-      }
+        "poster": "r6_images/ubi/mqdefault.jpg"
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "goyo",
@@ -1309,7 +1390,10 @@
       "reveal": {
         "youtubeId": "4UhbBRklPBQ",
         "poster": "r6_images/ubi/r6-operator-goyo-keyart.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "gridlock",
@@ -1360,7 +1444,10 @@
       "reveal": {
         "youtubeId": "y94HzpWgXus",
         "poster": "r6_images/ubi/r6-operator-gridlock-keyart.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 1
     },
     {
       "slug": "grim",
@@ -1411,7 +1498,10 @@
       "reveal": {
         "youtubeId": "ZbKu0aASDK8",
         "poster": "r6_images/ubi/r6s-brutalswarm-bg-characters-grim.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 1
     },
     {
       "slug": "hibana",
@@ -1466,7 +1556,10 @@
       "reveal": {
         "youtubeId": "4gNbU1Eie8A",
         "poster": "r6_images/ubi/r6-operators-gadget-hibana.png"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 1
     },
     {
       "slug": "iana",
@@ -1513,7 +1606,10 @@
       "reveal": {
         "youtubeId": "3FKq0Ep6RI8",
         "poster": "r6_images/ubi/r6s-voidedge-bg-characters-01.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "iq",
@@ -1564,7 +1660,10 @@
       "reveal": {
         "youtubeId": "E8l2Yx2Nbuc",
         "poster": "r6_images/ubi/operator-video-small-iq.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 3
     },
     {
       "slug": "jackal",
@@ -1616,7 +1715,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 3
     },
     {
       "slug": "jager",
@@ -1662,8 +1764,11 @@
       },
       "reveal": {
         "youtubeId": "v5JSiwSi6g8",
-        "poster": "r6_images/ubi/ubi-reveal-fallback.jpg"
-      }
+        "poster": "r6_images/ubi/mqdefault.jpg"
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "kaid",
@@ -1714,7 +1819,10 @@
       "reveal": {
         "youtubeId": "B8brHA-qSy0",
         "poster": "r6_images/ubi/r6-operator-kaid-keyart.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 2
     },
     {
       "slug": "kali",
@@ -1765,7 +1873,10 @@
       "reveal": {
         "youtubeId": "6bVjjm1XbDM",
         "poster": "r6_images/ubi/r6s-operator-kali-keyart-358311.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "kapkan",
@@ -1812,7 +1923,10 @@
       "reveal": {
         "youtubeId": "xx1tSUC9Ig4",
         "poster": "r6_images/ubi/r6-kapkan-ability-thumbnail.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "lesion",
@@ -1852,7 +1966,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "lion",
@@ -1904,7 +2021,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "maestro",
@@ -1955,7 +2075,10 @@
       "reveal": {
         "youtubeId": "L2is383hoHY",
         "poster": "r6_images/ubi/r6-operator-maestro-keyart.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 2
     },
     {
       "slug": "maverick",
@@ -2010,7 +2133,10 @@
       "reveal": {
         "youtubeId": "azBGjLrWwSs",
         "poster": "r6_images/ubi/r6-operator-maverick-keyart.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "melusi",
@@ -2057,7 +2183,10 @@
       "reveal": {
         "youtubeId": "c41qhi9Pi5A",
         "poster": "r6_images/ubi/r6s-steelwave-bg-characters-melusi.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 1
     },
     {
       "slug": "mira",
@@ -2101,7 +2230,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 3,
+      "speed": 1,
+      "difficulty": 3
     },
     {
       "slug": "montagne",
@@ -2148,7 +2280,10 @@
       "reveal": {
         "youtubeId": "uSr2c6UpXWM",
         "poster": "r6_images/ubi/operator-video-small-montagne.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 3
     },
     {
       "slug": "mozzie",
@@ -2199,7 +2334,10 @@
       "reveal": {
         "youtubeId": "Nymp-HB4kgU",
         "poster": "r6_images/ubi/r6-operator-mozzie-keyart-343395.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "mute",
@@ -2246,7 +2384,10 @@
       "reveal": {
         "youtubeId": "JAljvCbVM1g",
         "poster": "r6_images/ubi/operator-video-small-mute.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "nokk",
@@ -2301,7 +2442,10 @@
       "reveal": {
         "youtubeId": "zoRWqiIjUR0",
         "poster": "r6_images/ubi/r6-operator-nokk-keyart.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 3
     },
     {
       "slug": "nomad",
@@ -2348,7 +2492,10 @@
       "reveal": {
         "youtubeId": "GRss1JtrX8g",
         "poster": "r6_images/ubi/r6-operator-nomad-keyart.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 3
     },
     {
       "slug": "noor",
@@ -2395,7 +2542,10 @@
       "reveal": {
         "youtubeId": "CFDgjIh4BOs",
         "poster": "r6_images/ubi/r6s-splitfire-bg-characters-noor-1-.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "oryx",
@@ -2446,7 +2596,10 @@
       "reveal": {
         "youtubeId": "3FKq0Ep6RI8",
         "poster": "r6_images/ubi/r6s-voidedge-bg-characters-02.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "osa",
@@ -2493,7 +2646,10 @@
       "reveal": {
         "youtubeId": "6ubP14b_yDE",
         "poster": "r6_images/ubi/r6s-crystalguard-bg-characters-osa.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 2
     },
     {
       "slug": "pulse",
@@ -2547,8 +2703,11 @@
       },
       "reveal": {
         "youtubeId": "s_j-K3gSFdM",
-        "poster": "r6_images/ubi/ubi-reveal-fallback.jpg"
-      }
+        "poster": "r6_images/ubi/mqdefault.jpg"
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 3
     },
     {
       "slug": "ram",
@@ -2591,7 +2750,10 @@
       "reveal": {
         "youtubeId": "VqPQJL_tIio",
         "poster": "r6_images/ubi/r6s-heavymettle-bg-characters-ram-1-.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 2
     },
     {
       "slug": "rauora",
@@ -2638,7 +2800,10 @@
       "reveal": {
         "youtubeId": "JwV8C1703s8",
         "poster": "r6_images/ubi/r6-operator-rauora-keyart.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "rook",
@@ -2697,7 +2862,10 @@
       "reveal": {
         "youtubeId": "-q2ZfpRCwh4",
         "poster": "r6_images/ubi/roo.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 1
     },
     {
       "slug": "sens",
@@ -2744,7 +2912,10 @@
       "reveal": {
         "youtubeId": "SIJplrr8Xgc",
         "poster": "r6_images/ubi/r6s-vectorglare-bg-characters-sens.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "sentry",
@@ -2806,7 +2977,10 @@
         }
       ],
       "power": null,
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "skopos",
@@ -2845,7 +3019,10 @@
       "reveal": {
         "youtubeId": "_MAD2DiS1qU",
         "poster": "r6_images/ubi/r6s-operator-bio-skopos.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "sledge",
@@ -2896,7 +3073,10 @@
       "reveal": {
         "youtubeId": "ybhzh5F7rzU",
         "poster": "r6_images/ubi/operator-video-ability-sledge.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "smoke",
@@ -2947,7 +3127,10 @@
       "reveal": {
         "youtubeId": "3B1wIBrjmPM",
         "poster": "r6_images/ubi/operator-video-small-smoke.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "solid-snake",
@@ -3002,7 +3185,10 @@
       "reveal": {
         "youtubeId": "AAbyOXDwRXM",
         "poster": "r6_images/ubi/r6s-silenthunt-bg-characters-snake.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 2
     },
     {
       "slug": "solis",
@@ -3045,7 +3231,10 @@
       "reveal": {
         "youtubeId": "KdmUOcr7sN8",
         "poster": "r6_images/ubi/r6s-solarraid-bg-characters-solis.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 3
     },
     {
       "slug": "striker",
@@ -3107,7 +3296,10 @@
         }
       ],
       "power": null,
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "tachanka",
@@ -3159,7 +3351,10 @@
         "mp4": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/617gxI7a5kE70CN7h60Cmp/199e23b2062d1b6dc0151ecd88e6f61d/R6s_Tachankarework_Ubinews_Vfinal.mp4",
         "mp4Poster": "r6_images/ubi/r6s-tachankarework-ubinews-vfinal.jpg"
       },
-      "reveal": null
+      "reveal": null,
+      "health": 3,
+      "speed": 1,
+      "difficulty": 1
     },
     {
       "slug": "thatcher",
@@ -3210,7 +3405,10 @@
       "reveal": {
         "youtubeId": "hHx9VvaM4iQ",
         "poster": "r6_images/ubi/r6s-operator-thatcher-keyart.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 2
     },
     {
       "slug": "thermite",
@@ -3260,8 +3458,11 @@
       },
       "reveal": {
         "youtubeId": "94QF3hEJq04",
-        "poster": "r6_images/ubi/ubi-reveal-fallback.jpg"
-      }
+        "poster": "r6_images/ubi/mqdefault.jpg"
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "thorn",
@@ -3308,7 +3509,10 @@
       "reveal": {
         "youtubeId": "5Y10o3fJNqc",
         "poster": "r6_images/ubi/r6s-highcalibre-bg-characters-thorn-1-.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "thunderbird",
@@ -3363,7 +3567,10 @@
       "reveal": {
         "youtubeId": "DDJI2VcyL-g",
         "poster": "r6_images/ubi/r6s-northstar-bg-characters-thunderbird.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     {
       "slug": "tubarao",
@@ -3406,7 +3613,10 @@
       "reveal": {
         "youtubeId": "vxNifljKK5o",
         "poster": "r6_images/ubi/r6s-deepfreeze-bg-characters-tubarao.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "twitch",
@@ -3457,7 +3667,10 @@
       "reveal": {
         "youtubeId": "xEuaxniVNV4",
         "poster": "r6_images/ubi/operator-video-ability-twitch.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "valkyrie",
@@ -3500,7 +3713,10 @@
       "reveal": {
         "youtubeId": "VTqJ0g5u3Tw",
         "poster": "r6_images/ubi/r6-operators-gadget-valkyrie.png"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "vigil",
@@ -3544,7 +3760,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 1,
+      "speed": 3,
+      "difficulty": 3
     },
     {
       "slug": "wamai",
@@ -3599,7 +3818,10 @@
       "reveal": {
         "youtubeId": "6bVjjm1XbDM",
         "poster": "r6_images/ubi/r6s-operator-wamai-keyart-358312.jpg"
-      }
+      },
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "warden",
@@ -3650,7 +3872,10 @@
       "reveal": {
         "youtubeId": "qpZBD30L7fo",
         "poster": "r6_images/ubi/r6-operator-warden-keyart.jpg"
-      }
+      },
+      "health": 3,
+      "speed": 1,
+      "difficulty": 2
     },
     {
       "slug": "ying",
@@ -3694,7 +3919,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 2,
+      "speed": 2,
+      "difficulty": 2
     },
     {
       "slug": "zero",
@@ -3741,7 +3969,10 @@
       "reveal": {
         "youtubeId": "I6hswz4rIrU",
         "poster": "r6_images/ubi/r6s-zero-keyart.jpg"
-      }
+      },
+      "health": 1,
+      "speed": 3,
+      "difficulty": 1
     },
     {
       "slug": "zofia",
@@ -3781,7 +4012,10 @@
         "mp4": null,
         "mp4Poster": null
       },
-      "reveal": null
+      "reveal": null,
+      "health": 3,
+      "speed": 1,
+      "difficulty": 1
     }
   ]
 }

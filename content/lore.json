@@ -3132,12 +3132,18 @@
       "biography": "Sentry is a Defending Operator featured in Tom Clancy's Rainbow Six Siege, A remaster of the Recruit, he was introduced in the Operation New Blood expansion alongside Striker.",
       "quotes": [
         "We eat, sleep and dream Rainbow during training. And one day, it’ll pay off."
-      ]
+      ],
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     },
     "r6-striker": {
       "quotes": [
         "We earned the right to be here. Now we just have to earn the right to stay."
-      ]
+      ],
+      "health": 2,
+      "speed": 2,
+      "difficulty": 1
     }
   }
 }

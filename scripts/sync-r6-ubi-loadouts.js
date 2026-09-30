@@ -78,10 +78,23 @@ function parsePage(html, slug) {
   const name = (String(html).match(/operator__header__icons__names">.*?<h1>([^<]{1,40})<\/h1>/is) || [])[1] || slug;
   const sideM = String(html).match(/operator__header__side__detail (attacker|defender)/i);
   const side = sideM ? (sideM[1].toLowerCase() === 'attacker' ? 'Attacker' : 'Defender') : null;
+  // --- health/speed/difficulty stars (header stat blocks) ---
+  const stats = { health: null, speed: null, difficulty: null };
+  const statRe = /operator__header__stat__title[\s\S]*?data-innertext="([^"]+)"([\s\S]*?)(?=operator__header__stat__title|$)/gi;
+  for (const m of String(html).matchAll(statRe)) {
+    const title = m[1].trim().toLowerCase();
+    const seg = m[2].slice(0, 2000);
+    const active = (seg.match(/is-active/g) || []).length;
+    if (active < 1 || active > 3) continue;
+    if (title === 'health') stats.health = active;
+    else if (title === 'speed') stats.speed = active;
+    else if (title === 'difficulty') stats.difficulty = active;
+  }
   return {
     name: String(name).trim(), side, primaries, secondaries, gadgets, powers,
     abilityText: abilityText ? abilityText.trim() : null,
     abilityPoster, mp4: mp4 ? mp4.slice(0, 300) : null, youtubeId, revealPoster,
+    health: stats.health, speed: stats.speed, difficulty: stats.difficulty,
   };
 }
 
@@ -189,6 +202,7 @@ async function main() {
     return {
       slug, opId: match ? match.id : null, name: match ? match.name : p.name,
       side: match ? match.side : p.side, primaries, secondaries, gadgets, power, reveal,
+      health: p.health, speed: p.speed, difficulty: p.difficulty,
     };
   };
   for (let i = 0; i < slugs.length; i += CONCURRENCY) {

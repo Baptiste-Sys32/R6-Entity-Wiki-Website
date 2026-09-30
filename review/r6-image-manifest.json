@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:40:27.046Z",
+  "generatedAt": "2026-09-30T06:14:56.010Z",
   "images": {
     "r6_images/operators/icons/r6-ace.png": {
       "file": "AceIconN.png",
@@ -10123,6 +10123,10 @@
     "r6_images/operators/heroes/r6-mozzie.png": {
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/22Gyn0Z317IfLRGwHPBlmL/1e9e9f041403e8846824337cb53600b8/r6-operator-mozzie_343388.png",
       "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/mozzie"
+    },
+    "r6_images/ubi/mqdefault.jpg": {
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/75t7NR33Wx6QqE6GSjX4Bl/0415cdad52a25604ee9eec90a849b5d0/mqdefault.jpg",
+      "referer": "https://www.ubisoft.com/en-us/game/rainbow-six/siege/game-info/operators/ash"
     }
   },
   "r6_images/attachments/r6-attach-scope-1-5x.png": {

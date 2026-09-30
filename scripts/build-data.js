@@ -43,6 +43,12 @@ function validateOperators(operators) {
       if (typeof op[key] !== 'string' || !op[key]) throw new Error(`${label} is missing ${key}`);
     }
     if (!['Attacker', 'Defender'].includes(op.side)) throw new Error(`${label} has invalid side ${op.side}`);
+    // Armor/speed are 1-3 pips everywhere (Ubisoft header stars, Fandom
+    // infobox dots). A 0 means a failed parse, never a real stat — fail loud.
+    for (const key of ['armor', 'speed']) {
+      const v = op[key];
+      if (!Number.isInteger(v) || v < 1 || v > 3) throw new Error(`${label} (${op.name}) has invalid ${key} ${v}`);
+    }
     if (seen.has(op.id)) throw new Error(`duplicate operator id ${op.id}`);
     seen.add(op.id);
     for (const key of ['role', 'gadget', 'ability']) {
@@ -368,6 +374,13 @@ function validateUbiOperators(doc, operatorIds) {
     }
     if (o.reveal && o.reveal.youtubeId !== null && o.reveal.youtubeId !== undefined && !/^[A-Za-z0-9_-]{6,15}$/.test(o.reveal.youtubeId)) {
       throw new Error(`ubi-operators ${o.slug} bad reveal youtubeId`);
+    }
+    // Header stars are 1-3 pips when present (null = page gave nothing).
+    for (const key of ['health', 'speed', 'difficulty']) {
+      const v = o[key];
+      if (v !== null && v !== undefined && (!Number.isInteger(v) || v < 1 || v > 3)) {
+        throw new Error(`ubi-operators ${o.slug} bad ${key} ${v}`);
+      }
     }
     if (o.opId && !ids.has(o.opId)) throw new Error(`ubi-operators ${o.slug} unknown opId ${o.opId}`);
     if (!o.opId) unmatched.push(o.slug);
