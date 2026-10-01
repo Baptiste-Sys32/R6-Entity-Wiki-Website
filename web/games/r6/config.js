@@ -95,7 +95,7 @@
     const resolveCharacterView = (entity) => 'operator';
     const SEO_SUFFIX = " - R6 Wiki";
     const SEO_DEFAULT_TITLE = "R6 Wiki - Rainbow Six Siege Database";
-    const SEO_SITE_BASE = 'https://r6-siege-wiki.pages.dev';
+    const SEO_SITE_BASE = 'https://r6-wiki.pages.dev';
     const SEO_VIEW_LABELS = {
       operators: 'Operators', operator: 'Operators', gadgets: 'Gadgets', gadget: 'Gadgets', weapons: 'Weapons', weapon: 'Weapons', maps: 'Maps', map: 'Maps',
       seasons: 'Seasons', season: 'Seasons', weapon: 'Weapons', attachments: 'Attachments', settings: 'Settings', favorites: 'Favorites'

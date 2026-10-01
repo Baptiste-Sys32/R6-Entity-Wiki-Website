@@ -18,7 +18,7 @@ const flagValue = (name) => {
   const i = rawArgs.indexOf(`--${name}`);
   return i >= 0 && i + 1 < rawArgs.length ? rawArgs[i + 1] : null;
 };
-const BASE = flagValue('base') || 'https://r6-siege-wiki.pages.dev';
+const BASE = flagValue('base') || 'https://r6-wiki.pages.dev';
 
 function esc(value) {
   return String(value || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
