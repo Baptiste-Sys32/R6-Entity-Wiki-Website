@@ -92,9 +92,12 @@
       z-index: 9999;
       display: flex;
       align-items: center;
-      justify-content: center;
+      /* safe center: short viewports top-align instead of clipping the
+         logo over the progress bar. */
+      justify-content: safe center;
       background: #000000;
       overflow: hidden;
+      overflow-y: auto;
       transition: opacity 520ms ease, visibility 520ms ease;
     }
 
@@ -128,6 +131,18 @@
       filter: none;
       user-select: none;
       -webkit-user-drag: none;
+    }
+
+    /* Short (landscape-phone) viewports: shrink the stack so the
+       logo can never collide with the progress bar. */
+    @media (max-height: 520px) {
+      .launch-stage {
+        gap: 12px;
+        padding: 16px 24px 24px;
+      }
+      .launch-logo {
+        width: min(280px, 60vw);
+      }
     }
 
     .launch-status {

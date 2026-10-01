@@ -75,7 +75,10 @@
       }
     };
   </script>
-  <link rel="stylesheet" href="./engine/engine.css">
+  <!-- Bump ?v= on every engine.css change: Pages serves /engine/*
+       immutable for a year, so a stale cached sheet vs fresh HTML
+       mislays the launch overlay (logo over progress bar). -->
+  <link rel="stylesheet" href="./engine/engine.css?v=20261001">
   <style>
     /* R6 Wiki: blocky wiki imagery, no rounded boxes. */
     .sq-img, .sq-img > div { border-radius: 0 !important; }
